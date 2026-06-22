@@ -343,28 +343,32 @@ iframe {
 }
 
 .playlist-list li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .playlist-list a {
 
-    display: block;
+    display: flex;
 
-    padding: 10px 12px;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    min-height: 75px;
+
+    padding: 12px;
 
     background: rgba(58,168,255,0.08);
 
     border: 1px solid rgba(58,168,255,0.20);
 
-    border-radius: 8px;
+    border-radius: 10px;
 
     color: #d8d8d8;
 
     text-decoration: none;
 
     transition: all 0.2s ease;
-
-    line-height: 1.5;
 }
 
 .playlist-list a:hover {
@@ -381,45 +385,65 @@ iframe {
 }
 
 /* ==========================
-   Plattform-Tags
+   Playlist Titel
+   ========================== */
+
+.playlist-title {
+
+    display: block;
+
+    font-size: 0.95rem;
+
+    line-height: 1.4;
+
+    margin-bottom: 12px;
+
+    color: #ffffff;
+}
+
+/* ==========================
+   Plattform Icons
    ========================== */
 
 .platform-tag {
 
-    display: inline-flex;
+    align-self: flex-end;
+
+    display: flex;
 
     align-items: center;
 
-    gap: 4px;
+    justify-content: center;
 
-    margin-left: 8px;
+    width: 30px;
 
-    padding: 2px 8px;
+    height: 30px;
 
-    border-radius: 12px;
+    border-radius: 50%;
 
     background: rgba(58,168,255,0.12);
 
     border: 1px solid rgba(58,168,255,0.25);
-
-    color: #8fd0ff;
-
-    font-size: 0.75rem;
-
-    font-weight: 500;
-
-    vertical-align: middle;
 }
 
 .platform-tag img {
 
-    width: 14px;
+    width: 18px;
 
-    height: 14px;
+    height: 18px;
 
     object-fit: contain;
+}
 
-    vertical-align: middle;
+/* Für mehrere Plattformen */
+
+.platform-icons {
+
+    display: flex;
+
+    gap: 6px;
+
+    align-self: flex-end;
 }
 
 /* ==========================
