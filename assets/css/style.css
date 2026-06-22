@@ -488,6 +488,28 @@ iframe {
 }
 
 /* ==========================
+   SEO Box
+   ========================== */
+
+.seo-box p {
+
+    color: #cfcfcf;
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+
+    text-align: left;
+
+    margin-bottom: 12px;
+}
+
+.seo-box p:last-child {
+
+    margin-bottom: 0;
+}
+
+/* ==========================
    Footer
    ========================== */
 
@@ -529,6 +551,4 @@ footer {
 
         height: 280px;
     }
-}
-    font-family: 'Orbitron', sans-serif;
 }
