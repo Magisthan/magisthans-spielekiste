@@ -378,6 +378,16 @@ iframe {
     transform: translateX(4px);
 }
 
+.playlist-icon {
+
+    width: 20px;
+    height: 20px;
+
+    margin-right: 8px;
+
+    vertical-align: middle;
+}
+
 /* ==========================
    Footer
    ========================== */
