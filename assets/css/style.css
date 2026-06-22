@@ -510,6 +510,61 @@ iframe {
 }
 
 /* ==========================
+   Social Links
+   ========================== */
+
+.social-list {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.social-list li {
+
+    margin-bottom: 10px;
+}
+
+.social-list li:last-child {
+
+    margin-bottom: 0;
+}
+
+.social-list a {
+
+    display: block;
+
+    padding: 10px 12px;
+
+    background: rgba(58,168,255,0.08);
+
+    border: 1px solid rgba(58,168,255,0.20);
+
+    border-radius: 8px;
+
+    color: #d8d8d8;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.social-list a:hover {
+
+    color: #ffffff;
+
+    border-color: #3aa8ff;
+
+    background: rgba(58,168,255,0.18);
+
+    box-shadow: 0 0 10px rgba(58,168,255,0.35);
+
+    transform: translateX(4px);
+}
+
+/* ==========================
    Footer
    ========================== */
 
