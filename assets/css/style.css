@@ -440,6 +440,13 @@ iframe {
     background-position: center 70%;
 }
 
+.burntime-bg::before {
+
+    background-image:
+    url("../playlists/burntime.png");
+    background-position: center 70%;
+}
+
 /* ==========================
    Playlist Sidebar Weiter
    ========================== */
