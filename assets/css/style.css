@@ -373,7 +373,7 @@ iframe {
 
     background-position: center;
 
-    opacity: 0.10;
+    opacity: 0.18;
 
     transition: opacity 0.25s ease;
 
@@ -382,7 +382,7 @@ iframe {
 
 .playlist-bg:hover::before {
 
-    opacity: 0.16;
+    opacity: 0.25;
 }
 
 .playlist-bg .playlist-title,
@@ -418,9 +418,7 @@ iframe {
 
     justify-content: space-between;
 
-    min-height: 75px;
-
-}
+    min-height: 110px;
 
     padding: 12px;
 
