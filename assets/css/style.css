@@ -418,6 +418,14 @@ iframe {
     url("../playlists/max1869.png");
     background-position: center;
 }
+
+.fugger-bg::before {
+
+    background-image:
+    url("../playlists/fugger.png");
+    background-position: center;
+}
+
 /* ==========================
    Playlist Sidebar Weiter
    ========================== */
