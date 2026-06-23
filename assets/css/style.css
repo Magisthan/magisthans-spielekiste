@@ -206,9 +206,16 @@ h2 {
 
     color: var(--blue);
 
+    margin-top: 45px;
+
     margin-bottom: 20px;
 
     text-shadow: 0 0 10px rgba(58,168,255,0.4);
+}
+
+h2:first-of-type {
+
+    margin-top: 0;
 }
 
 h3 {
