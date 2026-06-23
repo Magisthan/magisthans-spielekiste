@@ -781,6 +781,92 @@ iframe {
 }
 
 /* ==========================
+   Willkommen Box
+   ========================== */
+
+.welcome-box {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    background: var(--panel);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 30px;
+
+    margin-bottom: 35px;
+
+    overflow: hidden;
+}
+
+.welcome-text {
+
+    flex: 1;
+}
+
+.welcome-text h2 {
+
+    margin-bottom: 15px;
+}
+
+.welcome-text p {
+
+    color: #d0d0d0;
+
+    max-width: 500px;
+
+    margin-bottom: 25px;
+}
+
+.welcome-image {
+
+    flex-shrink: 0;
+}
+
+.welcome-image img {
+
+    width: 280px;
+
+    max-width: 100%;
+
+    border-radius: 10px;
+}
+
+.welcome-button {
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background: rgba(58,168,255,0.12);
+
+    border: 1px solid rgba(58,168,255,0.35);
+
+    border-radius: 10px;
+
+    color: white;
+
+    transition: all 0.25s ease;
+}
+
+.welcome-button:hover {
+
+    background: rgba(58,168,255,0.25);
+
+    box-shadow: 0 0 15px rgba(58,168,255,0.35);
+
+    transform: translateY(-2px);
+}
+
+/* ==========================
    Footer
    ========================== */
 
