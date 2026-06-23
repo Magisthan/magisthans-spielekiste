@@ -418,7 +418,10 @@ iframe {
 
     justify-content: space-between;
 
-    min-height: 75px;
+    min-height: 130px;
+
+    padding: 18px;
+}
 
     padding: 12px;
 
