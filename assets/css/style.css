@@ -645,88 +645,104 @@ iframe {
 }
 
 /* ==========================
-   Letzte Videos
+   Letzte Videos Modern
    ========================== */
 
-#latest-videos {
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
-
-    margin-bottom: 35px;
-}
-
-.video-box {
-
-    display: flex;
-
-    flex-direction: column;
+.latest-videos-modern {
 
     background: var(--panel);
 
     border: 1px solid var(--border);
 
-    border-radius: 12px;
+    border-radius: 14px;
 
     overflow: hidden;
+}
 
-    text-decoration: none;
+.video-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 15px;
+
+    border-bottom: 1px solid rgba(58,168,255,0.12);
+
+    color: inherit;
 
     transition: all 0.25s ease;
 }
 
-.video-box:hover {
+.video-row:last-child {
 
-    transform: translateY(-4px);
-
-    border-color: var(--blue);
-
-    box-shadow:
-        0 0 15px rgba(58,168,255,0.25);
+    border-bottom: none;
 }
 
-.video-box img {
+.video-row:hover {
+
+    background: rgba(58,168,255,0.08);
+
+    transform: translateX(6px);
+}
+
+.video-thumb {
+
+    flex-shrink: 0;
+
+    width: 220px;
+}
+
+.video-thumb img {
 
     width: 100%;
 
-    aspect-ratio: 16 / 9;
-
-    object-fit: cover;
+    border-radius: 8px;
 
     display: block;
 }
 
-.video-content {
+.video-info {
 
-    padding: 12px;
+    flex: 1;
 }
 
-.video-content h3 {
+.video-info h3 {
 
-    margin: 0;
+    margin-bottom: 8px;
 
-    font-size: 0.95rem;
-
-    line-height: 1.4;
+    font-size: 1.25rem;
 
     color: #ffffff;
 
-    font-family: 'Inter', sans-serif;
-
-    min-height: 60px;
+    line-height: 1.4;
 }
 
-/* Mobile */
+.video-info p {
 
-@media (max-width: 900px) {
+    color: #a8a8a8;
 
-    #latest-videos {
+    font-size: 0.95rem;
+}
 
-        grid-template-columns: 1fr;
-    }
+.video-arrow {
+
+    font-size: 2rem;
+
+    color: var(--blue);
+
+    padding-right: 10px;
+
+    transition: all 0.25s ease;
+}
+
+.video-row:hover .video-arrow {
+
+    transform: translateX(6px);
+
+    color: var(--pink);
 }
 
 /* ==========================
