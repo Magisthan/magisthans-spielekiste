@@ -648,7 +648,7 @@ iframe {
    Letzte Videos
    ========================== */
 
-.video-grid {
+#latest-videos {
 
     display: grid;
 
@@ -659,7 +659,11 @@ iframe {
     margin-bottom: 35px;
 }
 
-.video-card {
+.video-box {
+
+    display: flex;
+
+    flex-direction: column;
 
     background: var(--panel);
 
@@ -669,18 +673,22 @@ iframe {
 
     overflow: hidden;
 
+    text-decoration: none;
+
     transition: all 0.25s ease;
 }
 
-.video-card:hover {
+.video-box:hover {
 
     transform: translateY(-4px);
+
+    border-color: var(--blue);
 
     box-shadow:
         0 0 15px rgba(58,168,255,0.25);
 }
 
-.video-card img {
+.video-box img {
 
     width: 100%;
 
@@ -691,31 +699,31 @@ iframe {
     display: block;
 }
 
-.video-card h4 {
+.video-content {
 
     padding: 12px;
+}
+
+.video-content h3 {
+
+    margin: 0;
 
     font-size: 0.95rem;
 
-    color: #ffffff;
-
     line-height: 1.4;
 
-    min-height: 70px;
-}
+    color: #ffffff;
 
-.video-card a {
+    font-family: 'Inter', sans-serif;
 
-    text-decoration: none;
-
-    color: inherit;
+    min-height: 60px;
 }
 
 /* Mobile */
 
 @media (max-width: 900px) {
 
-    .video-grid {
+    #latest-videos {
 
         grid-template-columns: 1fr;
     }
