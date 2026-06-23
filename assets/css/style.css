@@ -412,6 +412,12 @@ iframe {
     background-position: center 70%;
 }
 
+.max1869-bg::before {
+
+    background-image:
+    url("../playlists/max1869.png");
+    background-position: center 70%;
+}
 /* ==========================
    Playlist Sidebar Weiter
    ========================== */
