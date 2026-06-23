@@ -461,6 +461,13 @@ iframe {
     background-position: center;
 }
 
+.piratesamiga-bg::before {
+
+    background-image:
+    url("../playlists/piratesamiga.png");
+    background-position: center;
+}
+
 /* ==========================
    Playlist Sidebar Weiter
    ========================== */
