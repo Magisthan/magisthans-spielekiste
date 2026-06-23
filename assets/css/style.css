@@ -394,11 +394,20 @@ iframe {
     z-index: 2;
 }
 
+/* ==========================
+   Playlist Spiele
+   ========================== */
+
 .patrizier-bg::before {
 
     background-image:
     url("../playlists/patrizier.png");
+    background-position: center 70%;
 }
+
+/* ==========================
+   Playlist Sidebar Weiter
+   ========================== */
 
 .playlist-list {
     list-style: none;
