@@ -1096,10 +1096,22 @@ footer a:hover {
 
 @media (max-width: 900px) {
 
-    .layout {
+   .layout {
 
-        grid-template-columns: 1fr;
-    }
+    display: block;
+
+    width: 100%;
+
+    max-width: 100%;
+}
+   .container {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    padding: 20px 10px;
+}
 
     .hero h1 {
 
