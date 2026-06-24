@@ -1082,6 +1082,44 @@ iframe {
     position: relative;
 }
 
+.box-of-day {
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.box-of-day:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 25px rgba(58,168,255,0.15);
+}
+
+.box-day-image {
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.box-day-image img {
+
+    transition: transform 0.35s ease;
+}
+
+.box-of-day:hover .box-day-image img {
+
+    transform: scale(1.03);
+}
+
+.box-of-day:hover::before {
+
+    box-shadow:
+        0 0 12px rgba(255,77,225,0.7);
+}
+
 /* Neon-Leiste */
 
 .box-of-day::before {
