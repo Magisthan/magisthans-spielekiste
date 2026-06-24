@@ -17,11 +17,6 @@ try:
     response.raise_for_status()
     html = response.text
 
-    with open("youtube_debug.html", "w", encoding="utf-8") as f:
-        f.write(html)
-
-    print("Debug-Datei geschrieben")
-
 except Exception as e:
     print(f"Fehler beim Abrufen der Kanalseite: {e}")
     sys.exit(0)
@@ -29,8 +24,9 @@ except Exception as e:
 videos = []
 
 matches = re.findall(
-    r'"videoId":"([^"]+)".*?"title":\{"runs":\[\{"text":"([^"]+)"',
-    html
+    r'"url":"/watch\?v=([^"]+)".{0,3000}?"title":\{"content":"([^"]+)"',
+    html,
+    re.DOTALL
 )
 
 seen = set()
