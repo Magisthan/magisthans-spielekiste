@@ -24,11 +24,11 @@ jobs:
         run: |
          curl -L -A "Mozilla/5.0" \
          -o feed.xml \
-          "https://www.youtube.com/feeds/videos.xml?channel_id=UCvRke7SHMc6oz8FND7u0DPQ"
+         "https://www.youtube.com/feeds/videos.xml?channel_id=UCvRke7SHMc6oz8FND7u0DPQ"
 
-      - name: Show Feed
+      - name: Show Feed Header
         run: |
-         cat feed.xml
+         head -20 feed.xml
 
       - name: Generate JSON
         run: |
