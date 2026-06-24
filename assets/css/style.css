@@ -180,7 +180,7 @@ nav a:hover {
 
 .container {
 
-    max-width: 1300px;
+    max-width: 1240px;
 
     margin: auto;
 
@@ -191,7 +191,7 @@ nav a:hover {
 
     display: grid;
 
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
 
     gap: 25px;
 }
