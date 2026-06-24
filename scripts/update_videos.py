@@ -17,10 +17,10 @@ try:
     response.raise_for_status()
     html = response.text
 
-with open("youtube_debug.html", "w", encoding="utf-8") as f:
-    f.write(html)
+    with open("youtube_debug.html", "w", encoding="utf-8") as f:
+        f.write(html)
 
-print("Debug-Datei geschrieben")
+    print("Debug-Datei geschrieben")
 
 except Exception as e:
     print(f"Fehler beim Abrufen der Kanalseite: {e}")
