@@ -1227,6 +1227,22 @@ footer a:hover {
         height: 24px;
     }
 
+   .welcome-text h2 {
+
+        font-size: 1.8rem;
+
+        line-height: 1.2;
+
+        word-break: break-word;
+    }
+
+   .welcome-text p {
+
+        max-width: 100%;
+
+        width: 100%;
+    }
+
 html,
 body {
 
