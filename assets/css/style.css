@@ -524,6 +524,13 @@ iframe {
     background-position: center;
 }
 
+.vermeer-bg::before {
+
+    background-image:
+    url("../playlists/vermeer.png");
+    background-position: center;
+}
+
 /* ==========================
    Playlist Sidebar Weiter
    ========================== */
