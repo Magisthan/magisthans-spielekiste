@@ -21,7 +21,7 @@ const games = [
     description:
         "Vom kleinen Händler zum mächtigsten Kaufmann der Hanse. Wirtschaftssimulation mit Tiefgang und Langzeitmotivation.",
 
-    link: "spiele/patrizier.html"
+    link: "spiele/der-patrizier.html"
 },
 
 {
