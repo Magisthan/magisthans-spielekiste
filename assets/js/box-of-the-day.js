@@ -16,7 +16,7 @@ const games = [
     title: "Der Patrizier",
     subtitle: "Ascaron · PC · 1992",
 
-    image: "assets/games/patrizier.png",
+    image: "assets/games/patrizier/patrizier-box.png",
 
     description:
         "Vom kleinen Händler zum mächtigsten Kaufmann der Hanse. Wirtschaftssimulation mit Tiefgang und Langzeitmotivation.",
