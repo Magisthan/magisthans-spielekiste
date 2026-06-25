@@ -1435,7 +1435,7 @@ footer a:hover {
 
     width: 0;
 
-    transition: width 2s cubic-bezier(.22,1,.36,1);
+    transition: width 2.8s ease-in-out;
 }
 
 /* Animation wird gestartet */
