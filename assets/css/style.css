@@ -1343,6 +1343,18 @@ iframe {
     line-height: 1.8;
 }
 
+/* Sterne-Klassen */
+
+.stars-5::before { content: "★★★★★"; }
+
+.stars-4::before { content: "★★★★☆"; }
+
+.stars-3::before { content: "★★★☆☆"; }
+
+.stars-2::before { content: "★★☆☆☆"; }
+
+.stars-1::before { content: "★☆☆☆☆"; }
+
 /* ==========================
    Footer
    ========================== */
