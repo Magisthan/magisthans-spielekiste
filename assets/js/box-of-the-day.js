@@ -1,7 +1,5 @@
 const games = [
 
-const games = [
-
 {
     title: "SDI",
     subtitle: "Cinemaware / Mindscape · Amiga · 1987",
