@@ -32,12 +32,19 @@ for entry in info.get("entries", [])[:3]:
     if not video_id:
         continue
 
-    videos.append({
-        "title": entry.get("title", "YouTube Video"),
-        "videoId": video_id,
-        "url": f"https://www.youtube.com/watch?v={video_id}",
-        "thumbnail": f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg"
-    })
+   thumbnail = ""
+
+if entry.get("thumbnails"):
+    thumbnail = entry["thumbnails"][-1]["url"]
+else:
+    thumbnail = f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg"
+
+videos.append({
+    "title": entry.get("title", "YouTube Video"),
+    "videoId": video_id,
+    "url": f"https://www.youtube.com/watch?v={video_id}",
+    "thumbnail": thumbnail
+})
 
 if not videos:
 
