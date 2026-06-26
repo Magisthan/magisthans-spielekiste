@@ -1467,95 +1467,73 @@ iframe {
    Retro News Flash
    ========================== */
 
-.intro-grid {
-
-    display:flex;
-
-    gap:35px;
-
-    flex-wrap:wrap;
-
-    align-items:center;
+.rnf-info-box{
+margin:35px auto 15px;
+max-width:760px;
+text-align:center;
+padding:30px;
+background:var(--panel);
+border:1px solid var(--border);
+border-radius:14px;
 }
 
-.intro-image {
-
-    flex:0 0 340px;
+.rnf-meta{
+margin:25px 0;
+line-height:1.9;
 }
 
-.intro-info {
-
-    flex:1;
-
-    min-width:280px;
+.section{
+margin-top:55px;
 }
 
-.info-box {
-
-    margin:20px 0;
-
-    padding:20px;
-
-    background:rgba(58,168,255,.08);
-
-    border:1px solid var(--border);
-
-    border-radius:12px;
+.section h2{
+margin-bottom:20px;
 }
 
-.mission-box {
-
-    display:flex;
-
-    gap:25px;
-
-    align-items:center;
-
-    background:var(--panel);
-
-    border:1px solid var(--border);
-
-    padding:25px;
-
-    border-radius:14px;
+.section p,
+.section li{
+line-height:1.8;
 }
 
-.mission-box img {
-
-    width:110px;
-
-    height:110px;
-
-    border-radius:50%;
+.mission-box{
+display:flex;
+gap:30px;
+align-items:center;
+padding:35px;
+background:var(--panel);
+border:1px solid var(--border);
+border-radius:14px;
 }
 
-.goal-grid {
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-    gap:20px;
+.mission-box img{
+width:120px;
+height:120px;
+border-radius:50%;
 }
 
-.goal-card {
-
-    padding:20px;
-
-    border:1px solid var(--border);
-
-    border-radius:12px;
-
-    background:rgba(58,168,255,.08);
-
-    transition:.3s;
+.goal-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:25px;
 }
 
-.goal-card:hover {
+.goal-card{
+padding:22px;
+background:rgba(58,168,255,.08);
+border:1px solid var(--border);
+border-radius:12px;
+transition:.3s;
+}
 
-    transform:translateY(-4px);
+.goal-card:hover{
+transform:translateY(-4px);
+box-shadow:0 0 18px rgba(58,168,255,.25);
+}
 
-    box-shadow:0 0 18px rgba(58,168,255,.25);
+.rnf-timeline{
+line-height:2;
+padding-left:28px;
 }
 
 /* ==========================
@@ -1786,13 +1764,9 @@ footer a:hover {
        
     }
 
-       .mission-box,
-    .intro-grid{
-
-        flex-direction:column;
-
-        text-align:center;
-    }
+   flex-direction:column;
+   text-align:center;
+   }
 
 }
    
