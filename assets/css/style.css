@@ -1632,34 +1632,60 @@ padding-left:28px;
 }
 
 /* =====================================================
-   Retro News Flash Logo Shine Effect
+   Retro News Flash Logo
    ===================================================== */
 
 .rnf-logo-wrapper{
 
     position:relative;
 
+    display:inline-block;
+
     overflow:hidden;
+
+    margin:0 auto 30px auto;
+
+}
+
+.rnf-header{
+
+    display:block;
+
+    max-width:900px;
+
+    width:100%;
 
     border-radius:14px;
 
 }
 
-.rnf-logo-wrapper::after{
+/* Lichtreflex */
+
+.rnf-logo-shine{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.rnf-logo-shine::before{
 
     content:"";
 
     position:absolute;
 
-    top:-60%;
+    top:-40%;
 
-    left:-150%;
+    left:-35%;
 
-    width:28%;
+    width:18%;
 
-    height:220%;
-
-    pointer-events:none;
+    height:180%;
 
     transform:rotate(24deg);
 
@@ -1667,39 +1693,43 @@ padding-left:28px;
 
         90deg,
 
-        transparent 0%,
+        transparent,
 
-        rgba(58,168,255,.15) 35%,
+        rgba(58,168,255,.10),
 
-        rgba(255,255,255,.75) 50%,
+        rgba(255,255,255,.45),
 
-        rgba(255,77,225,.20) 65%,
+        rgba(255,77,225,.12),
 
-        transparent 100%
+        transparent
 
     );
 
-    animation:rnfLogoShine 12s ease-in-out infinite;
+    mix-blend-mode:screen;
+
+    opacity:.85;
+
+    animation:rnfShine 16s ease-in-out infinite;
 
 }
 
-@keyframes rnfLogoShine{
+@keyframes rnfShine{
 
     0%{
 
-        left:-150%;
+        left:-35%;
 
     }
 
     8%{
 
-        left:140%;
+        left:125%;
 
     }
 
     100%{
 
-        left:140%;
+        left:125%;
 
     }
 
