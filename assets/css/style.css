@@ -1463,23 +1463,104 @@ iframe {
     --rating-width: 20%;
 }
 
-/* ==========================
-   Retro News Flash
-   ========================== */
+/* =====================================================
+   Retro News Flash Intro
+   ===================================================== */
 
-.rnf-info-box{
-margin:35px auto 15px;
-max-width:760px;
-text-align:center;
-padding:30px;
-background:var(--panel);
-border:1px solid var(--border);
-border-radius:14px;
+.rnf-intro{
+
+    max-width:650px;
+
+    margin:30px auto 60px auto;
+
+    text-align:center;
+
+}
+
+.rnf-intro h1{
+
+    margin-bottom:15px;
+
+}
+
+.rnf-subtitle{
+
+    color:#bfc7dc;
+
+    font-size:1.08rem;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+}
+
+.rnf-divider{
+
+    width:120px;
+
+    height:2px;
+
+    margin:0 auto 30px auto;
+
+    background:linear-gradient(
+        90deg,
+        #3aa8ff,
+        #ff4de1
+    );
+
+    border-radius:2px;
+
 }
 
 .rnf-meta{
-margin:25px 0;
-line-height:1.9;
+
+    max-width:520px;
+
+    margin:0 auto;
+
+}
+
+.rnf-meta div{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.rnf-meta div:last-child{
+
+    border-bottom:none;
+
+}
+
+.rnf-meta span{
+
+    color:#98a7c6;
+
+    font-weight:500;
+
+}
+
+.rnf-meta strong{
+
+    color:#ffffff;
+
+    font-weight:600;
+
+}
+
+.rnf-intro .game-button{
+
+    margin-top:30px;
+
 }
 
 .section{
