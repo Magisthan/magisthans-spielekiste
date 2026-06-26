@@ -1669,39 +1669,37 @@ padding-left:28px;
 
     position:absolute;
 
-    top:-15%;
-   
-    height:130%;
+    top:0;
 
-    left:-35%;
+    left:-15%;
 
-    width:3%;
+    width:6%;
 
-    transform:rotate(12deg);
+    height:100%;
+
+    transform:rotate(8deg);
 
     background:linear-gradient(
 
-    90deg,
+        90deg,
 
-    transparent 0%,
+        transparent,
 
-    rgba(255,255,255,0) 44%,
+        rgba(255,255,255,.08),
 
-    rgba(255,255,255,.15) 48%,
+        rgba(255,255,255,.35),
 
-    rgba(255,255,255,.35) 50%,
+        rgba(255,255,255,.08),
 
-    rgba(255,255,255,.15) 52%,
-
-    transparent 56%
+        transparent
 
     );
 
-    mix-blend-mode:screen;
-
     opacity:.55;
 
-    animation:rnfShine 20s ease-in-out infinite;
+    mix-blend-mode:screen;
+
+    animation:rnfShine 18s linear infinite;
 
 }
 
