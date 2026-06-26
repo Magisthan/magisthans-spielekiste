@@ -1631,6 +1631,13 @@ padding-left:28px;
 
 }
 
+/* Logo Flare Module */
+.rnf-logo-wrapper{position:relative;display:block;width:fit-content;margin:0 auto;overflow:hidden}
+.rnf-header{display:block;width:100%;max-width:900px}
+.logo-flare{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.logo-flare svg{width:100%;height:100%;display:block}
+
+
 /* ==========================
    Footer
    ========================== */
