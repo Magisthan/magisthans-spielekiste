@@ -1471,7 +1471,7 @@ iframe {
 
     max-width:650px;
 
-    margin:30px auto 60px auto;
+    margin:8px auto 60px auto;
 
     text-align:center;
 
@@ -1625,7 +1625,7 @@ padding-left:28px;
 
     max-width:900px;
 
-    margin:0 auto 35px auto;
+    margin:0 auto 8px auto;
 
     border-radius:14px;
 
@@ -1669,13 +1669,13 @@ padding-left:28px;
 
     position:absolute;
 
-    top:-40%;
+    top:-15%;
+   
+    height:130%;
 
     left:-35%;
 
-    width:5%;
-
-    height:140%;
+    width:3%;
 
     transform:rotate(12deg);
 
@@ -1685,23 +1685,21 @@ padding-left:28px;
 
     transparent 0%,
 
-    rgba(58,168,255,0) 35%,
+    rgba(255,255,255,0) 44%,
 
-    rgba(255,255,255,.10) 46%,
+    rgba(255,255,255,.15) 48%,
 
-    rgba(255,255,255,.35) 49%,
+    rgba(255,255,255,.35) 50%,
 
-    rgba(255,255,255,.18) 51%,
+    rgba(255,255,255,.15) 52%,
 
-    rgba(255,77,225,.08) 54%,
-
-    transparent 100%
+    transparent 56%
 
     );
 
     mix-blend-mode:screen;
 
-    opacity:.85;
+    opacity:.55;
 
     animation:rnfShine 20s ease-in-out infinite;
 
@@ -1711,36 +1709,27 @@ padding-left:28px;
 
     0%{
 
-        left:-40%;
-        opacity:0;
+    left:-12%;
+    opacity:0;
 
-    }
+}
 
-    2%{
+2%{
 
-        opacity:.8;
+    opacity:.75;
 
-    }
+}
 
-    8%{
+8%{
 
-        left:125%;
-        opacity:.8;
+    left:108%;
+    opacity:.75;
 
-    }
+}
 
-    10%{
+10%{
 
-        opacity:0;
-
-    }
-
-    100%{
-
-        left:125%;
-        opacity:0;
-
-    }
+    opacity:0;
 
 }
 
