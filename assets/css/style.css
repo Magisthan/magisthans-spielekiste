@@ -1639,23 +1639,13 @@ padding-left:28px;
 
     position:relative;
 
-    display:inline-block;
+    display:block;
 
-    overflow:hidden;
+    width:fit-content;
 
     margin:0 auto 30px auto;
 
-}
-
-.rnf-header{
-
-    display:block;
-
-    max-width:900px;
-
-    width:100%;
-
-    border-radius:14px;
+    overflow:hidden;
 
 }
 
@@ -1683,7 +1673,7 @@ padding-left:28px;
 
     left:-35%;
 
-    width:18%;
+    width:12%;
 
     height:180%;
 
@@ -1709,7 +1699,7 @@ padding-left:28px;
 
     opacity:.85;
 
-    animation:rnfShine 16s ease-in-out infinite;
+    animation:rnfShine 20s ease-in-out infinite;
 
 }
 
@@ -1717,19 +1707,34 @@ padding-left:28px;
 
     0%{
 
-        left:-35%;
+        left:-40%;
+        opacity:0;
+
+    }
+
+    2%{
+
+        opacity:.8;
 
     }
 
     8%{
 
         left:125%;
+        opacity:.8;
+
+    }
+
+    10%{
+
+        opacity:0;
 
     }
 
     100%{
 
         left:125%;
+        opacity:0;
 
     }
 
