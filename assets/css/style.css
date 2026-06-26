@@ -1673,25 +1673,29 @@ padding-left:28px;
 
     left:-35%;
 
-    width:12%;
+    width:5%;
 
-    height:180%;
+    height:140%;
 
-    transform:rotate(24deg);
+    transform:rotate(12deg);
 
     background:linear-gradient(
 
-        90deg,
+    90deg,
 
-        transparent,
+    transparent 0%,
 
-        rgba(58,168,255,.10),
+    rgba(58,168,255,0) 35%,
 
-        rgba(255,255,255,.45),
+    rgba(255,255,255,.10) 46%,
 
-        rgba(255,77,225,.12),
+    rgba(255,255,255,.35) 49%,
 
-        transparent
+    rgba(255,255,255,.18) 51%,
+
+    rgba(255,77,225,.08) 54%,
+
+    transparent 100%
 
     );
 
