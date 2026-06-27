@@ -1507,13 +1507,145 @@ iframe {
 
     width:100%;
 
-    max-width:760px;
+    max-width:900px;
 
-    margin:0 auto;
+    margin:0 auto 8px auto;
+
+    border-radius:14px;
+
+    transition:transform .35s ease;
 
     filter:
-        drop-shadow(0 0 10px rgba(58,168,255,.18))
-        drop-shadow(0 0 20px rgba(255,77,225,.10));
+
+        brightness(1)
+
+        saturate(1)
+
+        drop-shadow(0 0 8px rgba(58,168,255,.20))
+
+        drop-shadow(0 0 14px rgba(255,77,225,.10));
+
+    animation:rnfNeon 12s infinite;
+
+}
+
+.rnf-header:hover{
+
+    transform:scale(1.01);
+
+}
+
+@keyframes rnfNeon{
+
+    /* Normal */
+
+    0%,58%{
+
+        filter:
+
+            brightness(1)
+
+            contrast(1)
+
+            saturate(1)
+
+            drop-shadow(0 0 8px rgba(58,168,255,.20))
+
+            drop-shadow(0 0 14px rgba(255,77,225,.10));
+
+    }
+
+    /* Logo wird langsam heller */
+
+    62%{
+
+        filter:
+
+            brightness(1.08)
+
+            contrast(1.03)
+
+            saturate(1.08)
+
+            drop-shadow(0 0 12px rgba(58,168,255,.35))
+
+            drop-shadow(0 0 24px rgba(255,77,225,.20));
+
+    }
+
+    /* kurzer Peak */
+
+    65%{
+
+        filter:
+
+            brightness(1.15)
+
+            contrast(1.06)
+
+            saturate(1.15)
+
+            drop-shadow(0 0 18px rgba(58,168,255,.55))
+
+            drop-shadow(0 0 36px rgba(255,77,225,.35))
+
+            drop-shadow(0 0 10px rgba(255,255,255,.15));
+
+    }
+
+    /* kleines Flackern */
+
+    67%{
+
+        filter:
+
+            brightness(.97)
+
+            contrast(.98)
+
+            saturate(.96)
+
+            drop-shadow(0 0 6px rgba(58,168,255,.15))
+
+            drop-shadow(0 0 10px rgba(255,77,225,.08));
+
+    }
+
+    /* nochmal heller */
+
+    69%{
+
+        filter:
+
+            brightness(1.12)
+
+            contrast(1.04)
+
+            saturate(1.10)
+
+            drop-shadow(0 0 16px rgba(58,168,255,.45))
+
+            drop-shadow(0 0 28px rgba(255,77,225,.30));
+
+    }
+
+    /* zurück */
+
+    72%,100%{
+
+        filter:
+
+            brightness(1)
+
+            contrast(1)
+
+            saturate(1)
+
+            drop-shadow(0 0 8px rgba(58,168,255,.20))
+
+            drop-shadow(0 0 14px rgba(255,77,225,.10));
+
+    }
 
 }
 
