@@ -4,7 +4,7 @@ const games = [
     title: "SDI",
     subtitle: "Cinemaware / Mindscape · Amiga · 1987",
 
-    image: "assets/games/sdi/sdi/SDI_Box Inhalt.png",
+    image: "assets/games/SDI_Box Inhalt.webp",
 
     description:
         "Die Erde wird von Atomraketen bedroht. Deine Aufgabe besteht darin, mit dem Satellitenabwehrsystem SDI die Welt vor der Vernichtung zu bewahren.",
@@ -16,7 +16,7 @@ const games = [
     title: "Der Patrizier",
     subtitle: "Ascaron · PC · 1992",
 
-    image: "assets/games/patrizier/patrizier-box.png",
+    image: "assets/games/patrizier/patrizier-box.webp",
 
     description:
         "Vom kleinen Händler zum mächtigsten Kaufmann der Hanse. Eine der bis heute besten Wirtschaftssimulationen mit Handel, Politik und Hanseflair.",
@@ -28,7 +28,7 @@ const games = [
     title: "Mega Lo Mania",
     subtitle: "Sensible Software · Amiga · 1991",
 
-    image: "assets/games/megalomania/megalomania-box.png",
+    image: "assets/games/megalomania/megalomania-box.webp",
 
     description:
         "Führe deine Zivilisation von der Steinzeit bis ins Atomzeitalter und besiege deine Gegner mit Forschung, Strategie und taktischem Geschick.",
@@ -40,7 +40,7 @@ const games = [
     title: "1869",
     subtitle: "Max Design · Amiga · 1992",
 
-    image: "assets/games/1869/1869-box.png",
+    image: "assets/games/1869/1869-box.webp",
 
     description:
         "Gründe eine Reederei, kaufe Dampfschiffe und baue ein weltweites Handelsnetz im Zeitalter der großen Ozeandampfer auf.",
@@ -52,7 +52,7 @@ const games = [
     title: "Die Fugger",
     subtitle: "Golden Games · C64 · 1989",
 
-    image: "assets/games/fugger/fugger-box.png",
+    image: "assets/games/fugger/fugger-box.webp",
 
     description:
         "Steige vom einfachen Händler zum reichsten Kaufmann Europas auf und sichere dir politischen Einfluss durch geschicktes Wirtschaften.",
@@ -64,7 +64,7 @@ const games = [
     title: "Die Fugger 2",
     subtitle: "Sunflowers · PC · 1996",
 
-    image: "assets/games/fugger2/fugger2-box.png",
+    image: "assets/games/fugger2/fugger2-box.webp",
 
     description:
         "Der Nachfolger erweitert das Wirtschaftssystem erheblich und verbindet Handel, Produktion und Politik zu einer komplexen Simulation.",
@@ -76,7 +76,7 @@ const games = [
     title: "Rings of Medusa",
     subtitle: "Starbyte · Amiga · 1989",
 
-    image: "assets/games/ringsofmedusa/ringsofmedusa-box.png",
+    image: "assets/games/ringsofmedusa/ringsofmedusa-box.webp",
 
     description:
         "Fantasy, Handel und Strategie verschmelzen zu einem ungewöhnlichen Mix aus Wirtschaftssimulation und Rollenspiel.",
@@ -88,7 +88,7 @@ const games = [
     title: "Burntime",
     subtitle: "Max Design · Amiga · 1993",
 
-    image: "assets/games/burntime/burntime-box.png",
+    image: "assets/games/burntime/burntime-box.webp",
 
     description:
         "Nach einem nuklearen Krieg kämpfst du in einer zerstörten Welt um Nahrung, Ausrüstung und Einfluss in einer einzigartigen Endzeit-Simulation.",
@@ -100,7 +100,7 @@ const games = [
     title: "Champions of Krynn",
     subtitle: "SSI · Amiga · 1990",
 
-    image: "assets/games/cok/cok-box.png",
+    image: "assets/games/cok/cok-box.webp",
 
     description:
         "Ein klassisches Dungeons & Dragons-Rollenspiel im Dragonlance-Universum mit rundenbasierten Kämpfen und großer Partyfreiheit.",
@@ -112,7 +112,7 @@ const games = [
     title: "Cinemaware Games",
     subtitle: "Cinemaware · Amiga / C64 · 1986–1991",
 
-    image: "assets/games/cinemaware/cinemaware-box.png",
+    image: "assets/games/Defender of the Crown US.webp",
 
     description:
         "Eine Hommage an die legendären Cinemaware-Klassiker wie Defender of the Crown, Rocket Ranger und Wings.",
@@ -124,7 +124,7 @@ const games = [
     title: "Vermeer",
     subtitle: "Cinemaware · Amiga / C64 · 1986–1991",
 
-    image: "assets/games/vermeer/vermeer-box.png",
+    image: "assets/games/vermeer/vermeer-box.webp",
 
     description:
         "Eine Hommage an die legendären Cinemaware-Klassiker wie Defender of the Crown, Rocket Ranger und Wings.",
@@ -136,7 +136,7 @@ const games = [
     title: "Sid Meier's Pirates!",
     subtitle: "MicroProse · Amiga · 1987",
 
-    image: "assets/games/pirates-amiga/pirates-amiga-box.png",
+    image: "assets/games/pirates-amiga/pirates-amiga-box.webp",
 
     description:
         "Segle durch die Karibik, kämpfe gegen feindliche Flotten, suche verborgene Schätze und werde zur Legende der sieben Meere.",
@@ -159,7 +159,9 @@ document.getElementById("box-of-the-day").innerHTML = `
     <div class="box-day-image">
 
         <img src="${game.image}"
-             alt="${game.title}">
+             alt="${game.title}"
+             loading="lazy"
+             decoding="async">
 
     </div>
 

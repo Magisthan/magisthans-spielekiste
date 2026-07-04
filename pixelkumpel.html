@@ -13,7 +13,11 @@
 <body>
 
 <header class="hero">
-    <img src="assets/images/banner.png" alt="Magisthans Spielekiste">
+    <img src="assets/images/banner.webp" alt="Magisthans Spielekiste"
+             width="1920"
+             height="550"
+             decoding="async"
+             fetchpriority="high">
 </header>
 
 <nav>
@@ -24,8 +28,12 @@
 
     <a href="pixelkumpel.html" class="pixelkumpel-link">
 
-        <img src="assets/images/pixelkumpel-icon.png"
-             alt="Die Pixelkumpel">
+        <img src="assets/images/pixelkumpel-icon.webp"
+             alt="Die Pixelkumpel"
+             width="48"
+             height="36"
+             decoding="async"
+             loading="lazy">
 
         Die Pixelkumpel
 
@@ -43,25 +51,37 @@
 
         <h1>DIE PIXELKUMPEL</h1>
 
-        <!-- Hero-Video -->
         <div class="pixelkumpel-video">
 
-          <video id="pixelVideo" autoplay muted playsinline>
-          <source src="assets/video/pixelkumpelvideo.mp4" type="video/mp4">
-          </video>
+          <div class="pixel-video-shell">
 
-        <script>
-         const video = document.getElementById("pixelVideo");
+            <video id="pixelVideo" muted playsinline preload="metadata">
+              <source src="assets/video/pixelkumpelvideo.mp4" type="video/mp4">
+            </video>
 
-         video.addEventListener("ended", () => {
-            setTimeout(() => {
-         video.currentTime = 0;
-         video.play();
-              }, 3000); // 3000 ms = 3 Sekunden Pause
-          });
-</script>
+            <button class="pixel-video-start" type="button" aria-label="Pixelkumpel-Video abspielen">
+              <span>Video abspielen</span>
+            </button>
+
+          </div>
 
         </div>
+
+        <script>
+         const videoShell = document.querySelector(".pixel-video-shell");
+         const video = document.getElementById("pixelVideo");
+         const videoStart = document.querySelector(".pixel-video-start");
+
+         videoStart.addEventListener("click", () => {
+            videoShell.classList.add("is-playing");
+            video.play();
+         });
+
+         video.addEventListener("ended", () => {
+            videoShell.classList.remove("is-playing");
+            video.currentTime = 0;
+         });
+        </script>
 
 <h2>Zwei Freunde, zwei Joysticks und viel zu wenig Freizeit</h2>
 

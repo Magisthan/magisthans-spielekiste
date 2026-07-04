@@ -19,15 +19,46 @@ fetch("data/latest-videos.json")
 
         <div class="featured-video-card">
 
-            <iframe
-                src="https://www.youtube-nocookie.com/embed/${firstVideo.videoId}"
-                title="${firstVideo.title}"
-                allowfullscreen>
-            </iframe>
+            <button
+                class="lite-video-button"
+                type="button"
+                data-video-id="${firstVideo.videoId}"
+                aria-label="Video abspielen: ${firstVideo.title}">
+
+                <img
+                    src="${firstVideo.thumbnail}"
+                    alt="${firstVideo.title}"
+                    loading="lazy"
+                    decoding="async">
+
+                <span class="lite-video-play" aria-hidden="true"></span>
+
+            </button>
 
         </div>
 
         `;
+
+        featured
+            .querySelector(".lite-video-button")
+            .addEventListener("click", event => {
+
+                const button = event.currentTarget;
+                const videoId = button.dataset.videoId;
+
+                button.outerHTML = `
+
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1"
+                    title="${firstVideo.title}"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+                `;
+
+            });
     }
 
     /* ==========================
@@ -50,7 +81,9 @@ fetch("data/latest-videos.json")
             <div class="video-thumb">
 
                 <img src="${video.thumbnail}"
-                     alt="${video.title}">
+                     alt="${video.title}"
+                     loading="lazy"
+                     decoding="async">
 
             </div>
 
