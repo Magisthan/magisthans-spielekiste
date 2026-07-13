@@ -414,18 +414,6 @@ iframe {
    Playlist Spiele
    ========================== */
 
-.playlist-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.90;
-    transition:
-        opacity 0.25s ease,
-        transform 0.25s ease;
-    z-index: 0;
-}
 
 .playlist-bg:hover .playlist-image {
     opacity: 1.00;
@@ -442,6 +430,47 @@ iframe {
 /* ==========================
    Playlist Sidebar Weiter
    ========================== */
+
+.playlist-bg{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#20395d;
+
+    min-height:110px;
+
+}
+
+.playlist-image {
+
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    opacity:.90;
+
+    z-index:1;
+
+    transition:opacity .25s ease,
+               transform .25s ease;
+}
+
+.playlist-overlay{
+
+    position:relative;
+
+    z-index:2;
+
+    
+}
 
 .playlist-list {
     list-style: none;
@@ -1909,91 +1938,849 @@ iframe {
 
 }
 
-/* ==========================================
-   Pixelkumpel Hero Video
-   ========================================== */
+/* =====================================================
+   PIXELKUMPEL CRT TV 3.0
+   LAYOUT
+===================================================== */
 
-.pixelkumpel-video{
+.memory-photo > .pixelkumpel-photo{
 
-    width:100%;
-    max-width:1080px;
+    width:700px;
 
-    margin:25px auto 55px auto;
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+    margin:0 auto;
+
+}
+
+.pixelkumpel-tv{
 
     display:flex;
+
     justify-content:center;
-    align-items:center;
+
+    margin:40px auto 60px;
 
 }
 
-.pixel-video-shell {
-    position: relative;
-    width: 100%;
-    border-radius: 18px;
-    overflow: hidden;
-    background: #05050a;
+.crt-tv{
+
+    position:relative;
+
+    width:min(950px,100%);
+
 }
 
-.pixelkumpel-video video{
+.crt-frame{
 
     display:block;
 
     width:100%;
 
-    aspect-ratio:16/9;
+    height:auto;
+
+    user-select:none;
+
+    pointer-events:none;
+
+}
+
+/* =====================================================
+   BILDSCHIRM
+===================================================== */
+
+.crt-screen{
+
+    position:absolute;
+
+    left:12.55%;
+
+    top:18.55%;
+
+    width:59.56%;
+
+    height:57.49%;
+
+    overflow:hidden;
+
+    background:#000;
+
+    border-radius:38px 42px 44px 36px;
+
+    isolation:isolate;
+
+}
+
+/* =====================================================
+   THUMBNAIL / VIDEO
+===================================================== */
+
+.crt-thumbnail,
+.crt-video{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
 
     object-fit:cover;
 
-    object-position:center center;
+}
+
+.crt-video{
+
+    display:none;
 
 }
 
-.pixel-video-start {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    border: 0;
+/* =====================================================
+   GLAS
+===================================================== */
+
+.crt-glass{
+
+    position:absolute;
+
+    inset:0;
+
     background:
-        linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.52)),
-        url("../images/pixelkumpel-logo.webp") center / min(42%, 360px) no-repeat #05050a;
-    color: #ffffff;
-    cursor: pointer;
-}
 
-.pixel-video-start span {
-    margin-top: 210px;
-    padding: 12px 24px;
-    border-radius: 10px;
-    background: rgba(58,168,255,0.18);
-    border: 1px solid rgba(58,168,255,0.35);
-    box-shadow: 0 0 18px rgba(58,168,255,0.28);
-}
+        linear-gradient(
+            130deg,
+            rgba(255,255,255,.18) 0%,
+            rgba(255,255,255,.05) 28%,
+            transparent 55%
+        );
 
-.pixel-video-shell.is-playing .pixel-video-start {
-    display: none;
+    pointer-events:none;
+
+    z-index:12;
 
 }
 
-/* Smartphones */
+/* =====================================================
+   VIGNETTE
+===================================================== */
 
-@media (max-width:768px){
+.crt-vignette{
 
-    .pixelkumpel-video{
+    position:absolute;
 
-        height:auto;
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:13;
+
+    box-shadow:
+
+        inset 0 0 90px rgba(0,0,0,.45);
+
+}
+
+/* =====================================================
+   SCANLINES
+===================================================== */
+
+.crt-scanlines{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:14;
+
+    background:
+
+        repeating-linear-gradient(
+
+            to bottom,
+
+            rgba(255,255,255,.03) 0px,
+
+            rgba(255,255,255,.03) 1px,
+
+            transparent 2px,
+
+            transparent 4px
+
+        );
+
+}
+
+/* =====================================================
+   PLAY BUTTON
+===================================================== */
+
+.crt-play{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:rgba(0,0,0,.72);
+
+    color:#fff;
+
+    cursor:pointer;
+
+    z-index:40;
+
+    font-family:Orbitron,sans-serif;
+
+    transition:
+        opacity .3s ease,
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+
+}
+
+.play-icon{
+
+    font-size:1.3rem;
+
+    color:#79ff43;
+
+}
+
+.play-label{
+
+    letter-spacing:1px;
+
+}
+
+/* =====================================================
+   CHANNEL INFO
+===================================================== */
+
+.crt-channel{
+
+    position:absolute;
+
+    left:18px;
+
+    bottom:18px;
+
+    padding:10px 14px;
+
+    border-radius:8px;
+
+    background:rgba(0,0,0,.72);
+
+    border:1px solid rgba(121,255,67,.35);
+
+    z-index:50;
+
+    pointer-events:none;
+
+    opacity:0;
+
+    transform:translateY(8px);
+
+}
+
+.crt-channel-number{
+
+    color:#79ff43;
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:.70rem;
+
+    letter-spacing:2px;
+
+}
+
+.crt-channel-title{
+
+    margin-top:3px;
+
+    color:#fff;
+
+    font-size:.86rem;
+
+    font-weight:600;
+
+}
+
+/* =====================================================
+   HOVER HINT
+===================================================== */
+
+.crt-hint{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:20px;
+
+    transform:translateX(-50%);
+
+    padding:8px 18px;
+
+    border-radius:8px;
+
+    background:rgba(0,0,0,.82);
+
+    color:#79ff43;
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:.78rem;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    z-index:60;
+
+}
+
+/* =====================================================
+   POWER LED
+===================================================== */
+
+.crt-led{
+
+    position:absolute;
+
+    left:93.00%;
+
+    top:75.50%;
+
+    width:1.56%;
+
+    height:1.49%;
+
+    border-radius:50%;
+
+    background:#380000;
+
+}
+
+/* =====================================================
+   DREHREGLER
+===================================================== */
+
+.crt-knob{
+
+    position:absolute;
+
+    left:82.55%;
+
+    top:14.55%;
+
+    width:9.56%;
+
+    height:17.49%;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    cursor:pointer;
+
+}
+
+/* oberer */
+
+.crt-knob-power{
+
+    position:absolute;
+
+    left:82.55%;
+
+    top:14.55%;
+
+    width:9.56%;
+
+    height:17.49%;
+
+}
+
+/* unterer */
+
+/* unterer */
+
+.crt-knob-channel{
+
+    left:82.55%;
+
+    top:39.25%;
+
+    width:9.56%;
+
+    height:17.49%;
+
+}
+
+/* =====================================================
+   HOVER GLOW
+===================================================== */
+
+.crt-knob-power-glow{
+
+    position:absolute;
+
+    left:82.55%;
+
+    bottom:60.55%;
+
+    width:9.56%;
+
+    height:17.49%;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    opacity:0;
+
+}
+
+
+.crt-knob-channel-glow{
+
+    position:absolute;
+
+    left:81.55%;
+
+    top:38.55%;
+
+    width:9.56%;
+
+    height:17.49%;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    opacity:0;
+
+}
+
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:900px){
+
+    .crt-tv{
+
+        width:100%;
 
     }
 
-    .pixelkumpel-video video{
+}
 
-        height:auto;
+/* =====================================================
+   PIXELKUMPEL CRT TV 3.0
+   ANIMATIONEN & EFFEKTE
+===================================================== */
 
-        object-fit:contain;
+/* -----------------------------------------------------
+   THUMBNAIL AUSBLENDEN
+----------------------------------------------------- */
+
+.crt-thumbnail.fade{
+
+    opacity:0;
+
+    transition:opacity .35s ease;
+
+}
+
+/* -----------------------------------------------------
+   VIDEO EINBLENDEN
+----------------------------------------------------- */
+
+.crt-video.active{
+
+    display:block;
+
+    animation:videoFade .45s ease;
+
+}
+
+/* -----------------------------------------------------
+   PLAY BUTTON
+----------------------------------------------------- */
+
+.crt-play{
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+
+}
+
+.crt-play:hover{
+
+    transform:
+        translate(-50%,-50%)
+        scale(1.05);
+
+    box-shadow:
+        0 0 18px rgba(121,255,67,.35);
+
+}
+
+/* -----------------------------------------------------
+   HOVER INFO
+----------------------------------------------------- */
+
+.crt-hint.show{
+
+    opacity:1;
+
+    animation:hintFade .25s ease;
+
+}
+
+/* -----------------------------------------------------
+   LED
+----------------------------------------------------- */
+
+.crt-led.on{
+
+    background:#ff3d3d;
+
+    box-shadow:
+
+        0 0 8px #ff0000,
+
+        0 0 18px rgba(255,0,0,.7);
+
+}
+
+/* -----------------------------------------------------
+   CRT BOOT
+----------------------------------------------------- */
+
+.crt-boot{
+
+    position:absolute;
+
+    inset:0;
+
+    background:black;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    z-index:90;
+
+}
+
+.crt-boot.active{
+
+    animation:crtBoot .55s forwards;
+
+}
+
+/* -----------------------------------------------------
+   WEISSE LINIE
+----------------------------------------------------- */
+
+.crt-line{
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    top:50%;
+
+    height:2px;
+
+    background:white;
+
+    opacity:0;
+
+    z-index:91;
+
+    pointer-events:none;
+
+}
+
+.crt-line.active{
+
+    animation:crtLine .55s forwards;
+
+}
+
+/* -----------------------------------------------------
+   TV RAUSCHEN
+----------------------------------------------------- */
+
+.crt-static{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    z-index:92;
+
+    background:
+
+        repeating-radial-gradient(
+
+            circle,
+
+            rgba(255,255,255,.18) 0,
+
+            rgba(255,255,255,.05) 2px,
+
+            transparent 4px
+
+        );
+
+}
+
+.crt-static.active{
+
+    animation:crtNoise .45s;
+
+}
+
+/* -----------------------------------------------------
+   POWER KNOB
+----------------------------------------------------- */
+
+.crt-knob-power{
+
+    transition:
+
+        transform .20s ease;
+
+}
+
+.crt-knob-power:hover{
+
+    transform:rotate(-4deg);
+
+}
+
+.crt-knob-power:hover
++
+.crt-knob-power-glow{
+
+    opacity:1;
+
+}
+
+/* -----------------------------------------------------
+   CHANNEL KNOB
+----------------------------------------------------- */
+
+.crt-knob-channel{
+
+    transition:
+
+        transform .20s ease;
+
+}
+
+.crt-knob-channel:hover{
+
+    transform:rotate(-4deg);
+
+}
+
+.crt-knob-channel:hover
++
+.crt-knob-channel-glow{
+
+    opacity:1;
+
+}
+
+/* -----------------------------------------------------
+   GLOW
+----------------------------------------------------- */
+
+.crt-knob-power-glow,
+.crt-knob-channel-glow{
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(121,255,67,.35) 0%,
+
+            rgba(121,255,67,.18) 40%,
+
+            transparent 70%
+
+        );
+
+    transition:opacity .25s ease;
+
+}
+
+/* -----------------------------------------------------
+   CHANNEL INFO
+----------------------------------------------------- */
+
+.crt-channel{
+
+    transition:
+
+        opacity .25s ease,
+
+        transform .25s ease;
+
+}
+
+.crt-tv:hover .crt-channel{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* -----------------------------------------------------
+   KEYFRAMES
+----------------------------------------------------- */
+
+@keyframes videoFade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
 
     }
 
 }
+
+@keyframes hintFade{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+            translateX(-50%)
+
+            translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+            translateX(-50%)
+
+            translateY(0);
+
+    }
+
+}
+
+@keyframes crtNoise{
+
+    0%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes crtBoot{
+
+    0%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes crtLine{
+
+    0%{
+
+        opacity:1;
+
+        transform:scaleX(.1);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:scaleX(1);
+
+    }
+
+}
+
    
 /* ==========================================
    Retro News Flash Trenner
@@ -2472,89 +3259,247 @@ transform:scale(1);
    Retro Redaktion Terminal
    ========================================== */
 
+.terminal-entry{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.terminal-entry img{
+    display:block;
+}
+
+/* ==========================================
+   Retro News Flash Terminal 2.0
+   ========================================== */
+
 .rnf-terminal{
 
-    background:#101522;
+    background:#060606;
 
-    border:1px solid rgba(58,168,255,.18);
+    border:2px solid #353535;
 
-    border-radius:12px;
+    border-radius:10px;
 
     overflow:hidden;
 
     box-shadow:
-        inset 0 0 0 1px rgba(255,255,255,.02);
+        0 0 25px rgba(0,255,150,.08),
+        inset 0 0 25px rgba(0,255,150,.05);
 
 }
 
-.rnf-terminal-title{
+/* =========================
+   Terminal Header
+   ========================= */
 
-    padding:14px 18px;
+.terminal-header{
 
-    background:linear-gradient(
-        90deg,
-        #3aa8ff,
-        #8b63ff
-    );
+    display:flex;
 
-    color:white;
+    align-items:center;
 
-    font-weight:700;
+    gap:10px;
 
-    letter-spacing:1px;
+    background:#1b1b1b;
 
-    font-size:.92rem;
+    padding:12px 16px;
+
+    border-bottom:1px solid #2f2f2f;
 
 }
 
-.rnf-terminal pre{
+.terminal-title{
 
-    margin:0;
+    margin-left:8px;
+
+    color:#bdbdbd;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    letter-spacing:.08em;
+
+}
+
+/* =========================
+   LEDs
+   ========================= */
+
+.terminal-led{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+}
+
+.red{
+
+    background:#ff5f56;
+
+}
+
+.yellow{
+
+    background:#ffbd2f;
+
+}
+
+.green{
+
+    background:#27c93f;
+
+}
+
+/* =========================
+   Bildschirm
+   ========================= */
+
+.terminal-screen{
 
     padding:22px;
 
-    font-family:Consolas,
-                 "Courier New",
-                 monospace;
-
-    color:#d8e5ff;
-
-    font-size:.96rem;
-
-    line-height:2;
-
-    white-space:pre-wrap;
+    font-family:"Courier New",monospace;
 
 }
 
-.rnf-terminal .terminal-icon{
+/* =========================
+   Zeilen
+   ========================= */
 
-    width:72px;
-    height:28px;
+.terminal-line{
 
-    display:inline-block;
+    display:flex;
 
-    vertical-align:middle;
+    align-items:center;
 
-    image-rendering:pixelated;
+    margin-bottom:14px;
+
+    white-space:nowrap;
+
+}
+
+/* Linke Spalte */
+
+.terminal-label{
+
+    width:150px;
+
+    color:#7df9ff;
+
+    font-weight:bold;
+
+    letter-spacing:.04em;
 
 }
 
-.rnf-terminal span{
+/* Punkte */
 
-    color:#ffffff;
+.terminal-dots{
 
-    font-weight:700;
+    flex:1;
+
+    border-bottom:2px dotted rgba(255,255,255,.18);
+
+    margin:0 12px;
 
 }
+
+/* Rechte Spalte */
+
+.terminal-value{
+
+    width:120px;
+
+    text-align:right;
+
+    color:#9eff7a;
+
+    font-weight:bold;
+
+    letter-spacing:.04em;
+
+    text-shadow:0 0 6px rgba(0,255,120,.35);
+
+}
+
+/* =========================
+   Blinkender Cursor
+   ========================= */
+
+.terminal-value.typing::after{
+
+    content:"▌";
+
+    margin-left:3px;
+
+    animation:terminalBlink .8s infinite;
+
+}
+
+@keyframes terminalBlink{
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}
+
+/* =========================
+   Terminal aktiv
+   ========================= */
 
 .rnf-terminal.ready{
 
     box-shadow:
-        0 0 20px rgba(58,168,255,.20),
-        inset 0 0 0 1px rgba(255,255,255,.03);
+
+        0 0 35px rgba(0,255,120,.18),
+
+        inset 0 0 30px rgba(0,255,120,.08);
 
 }
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media(max-width:900px){
+
+    .terminal-screen{
+
+        padding:16px;
+
+    }
+
+    .terminal-line{
+
+        font-size:.86rem;
+
+    }
+
+    .terminal-label{
+
+        width:120px;
+
+    }
+
+    .terminal-value{
+
+        width:90px;
+
+    }
+
+}
+
+/* =========================
+   braucht man evtl. nicht mehr
+   ========================= */
 
 .rnf-terminal pre::selection{
 
@@ -3080,333 +4025,150 @@ transform:scale(1);
 }
 
 /* ==========================================
-   ABOUT HERO
+   UEBER MICH
 ========================================== */
 
-/* ==========================================
-   ABOUT HERO GRID 2.0
-========================================== */
+.about-page{
 
-.about-hero{
+    border:1px solid rgba(121,255,67,.15);
 
-    position:relative;
+    border-radius:22px;
 
-    overflow:hidden;
+    padding:40px;
 
-    display:grid;
-
-    grid-template-columns:minmax(0,1fr) 500px;
-
-    gap:48px;
-
-    padding:48px;
-}
-
-.about-intro-card h1{
-
-    margin:8px 0 24px;
-
-    font-size:3rem;
-
-    line-height:1.15;
-
-    max-width:560px;
+    background:#181a2d;
 
 }
 
-.hero-left{
+.about-header{
 
     display:flex;
-
-    flex-direction:column;
-
-    justify-content:flex-start;
-
-    gap:26px;
-
-    width:100%;
-
-}
-
-.about-hero::before {
-    content:'';
-    position:absolute;
-    right:-220px;
-    top:-220px;
-    width:520px;
-    height:520px;
-    border-radius:50%;
-    background:radial-gradient(rgba(58,168,255,.10),transparent 70%)
-}
-
-.about-hero::after {
-    content:'';
-    position:absolute;
-    left:-180px;
-    bottom:-180px;
-    width:420px;
-    height:420px;
-    border-radius:50%;
-    background:radial-gradient(rgba(143,109,255,.08),transparent 70%)
-}
-
-.about-photo-card{
-
-    width:100%;
-
-    display:flex;
-
-    flex-direction:column;
 
     align-items:center;
 
-    cursor:pointer;
+    gap:12px;
+
+    margin-bottom:18px;
 
 }
 
-.photo-frame{
+.about-icon{
 
-    position:relative;
+    color:#79ff43;
 
-    padding:16px;
+    font-size:1rem;
 
-    border-radius:30px;
-
-    background:linear-gradient(
-        135deg,
-        rgba(58,168,255,.20),
-        rgba(143,109,255,.18)
-    );
-
-    box-shadow:
-        0 18px 40px rgba(0,0,0,.30),
-        0 0 35px rgba(58,168,255,.12);
-
-    transition:
-        transform .30s ease,
-        box-shadow .30s ease;
+    font-weight:bold;
 
 }
 
-.photo-frame::before {
-    content:'';
-    position:absolute;
-    inset:0;
-    border-radius:30px;
-    border:1px solid rgba(255,255,255,.08)
-}
+.about-pretitle{
 
-.photo-frame img{
+    font-family:Orbitron,sans-serif;
 
-    display:block;
-
-    width:100%;
-
-    height:auto;
-
-    max-width:315px;
-
-    border-radius:22px;
-
-    transition:
-
-        transform .30s ease,
-
-        filter .30s ease;
-
-}
-
-.photo-caption{
-
-    margin-top:22px;
-
-    width:240px;
-
-    padding:18px;
-
-    text-align:center;
-
-    background:#161d2d;
-
-    border:1px solid rgba(58,168,255,.18);
-
-    border-radius:16px;
-
-    transition:
-
-        transform .30s ease,
-
-        box-shadow .30s ease,
-
-        border-color .30s ease;
-
-}
-
-.photo-caption span{
-
-    display:block;
-
-    color:#56b6ff;
-
-    letter-spacing:2px;
+    letter-spacing:3px;
 
     font-size:.8rem;
 
-    transition:
+    text-transform:uppercase;
 
-        color .30s ease,
-
-        text-shadow .30s ease;
+    color:#79ff43;
 
 }
 
-.photo-caption strong{
+.about-intro h1{
 
-    display:block;
-
-    margin-top:8px;
-
-    font-size:1.45rem;
-
-    color:#ffffff;
-
-    transition:
-
-        color .30s ease,
-
-        text-shadow .30s ease;
-
-}
-
-.about-pretitle {
-    color:#4eb8ff;
-    font-size:.85rem;
-    font-weight:700;
-    letter-spacing:2px
-}
-
-.about-intro-card{
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:flex-start;
-
-    width:100%;
-
-    max-width:560px;
-
-    padding-top:10px;
-
-}
-
-.about-lead {
-    max-width:680px;
-    font-size:1.18rem;
-    line-height:1.95;
-    color:#d7dceb
-}
-
-.about-quote {
-    margin-top:35px;
-    display:flex;
-    gap:18px
-}
-
-.quote-line {
-    width:4px;
-    border-radius:20px;
-    background:linear-gradient(#46b3ff,#8f6dff)
-}
-
-.about-quote p {
     margin:0;
-    line-height:1.8;
-    font-style:italic;
-    color:#b9c4d9
+
+    margin-bottom:20px;
+
+    font-size:3rem;
+
 }
 
-.about-profile-card{
+.about-divider{
 
-    width:100%;
+    width:180px;
 
-    max-width:500px;
+    height:2px;
 
-    justify-self:center;
+    margin-bottom:28px;
 
-    align-self:flex-start;
+    background:linear-gradient(
+        90deg,
+        #79ff43,
+        transparent
+    );
 
-    padding:28px;
+}
 
-    background:#192234;
-
-    border:1px solid rgba(58,168,255,.18);
-
-    border-radius:22px;
-
-    box-shadow:
-        0 15px 35px rgba(0,0,0,.25);
+.about-lead{
 
     position:relative;
 
-    overflow:hidden;
+    padding-left:22px;
 
-    animation:profileGlow 6s ease-in-out infinite;
-
-}
-
-@keyframes profileGlow{
-
-    0%{
-
-        box-shadow:
-            0 15px 35px rgba(0,0,0,.25),
-            0 0 0 rgba(58,168,255,0);
-
-        border-color:rgba(58,168,255,.18);
-
-    }
-
-    50%{
-
-        box-shadow:
-            0 18px 40px rgba(0,0,0,.35),
-            0 0 24px rgba(58,168,255,.22);
-
-        border-color:rgba(58,168,255,.40);
-
-    }
-
-    100%{
-
-        box-shadow:
-            0 15px 35px rgba(0,0,0,.25),
-            0 0 0 rgba(58,168,255,0);
-
-        border-color:rgba(58,168,255,.18);
-
-    }
+    line-height:1.9;
 
 }
 
-@keyframes profileSweep{
+.about-lead::before{
 
-    0%{
+    content:"";
 
-        transform:translateX(-120%);
+    position:absolute;
 
-    }
+    left:0;
 
-    100%{
+    top:4px;
 
-        transform:translateX(140%);
+    width:3px;
 
-    }
+    height:95%;
+
+    border-radius:2px;
+
+    background:#79ff43;
+
+    box-shadow:
+
+        0 0 12px rgba(121,255,67,.45);
 
 }
 
-.about-profile-card::before{
+.about-intro blockquote{
+
+    margin:34px 0 0;
+
+    padding-left:22px;
+
+    font-style:italic;
+
+    color:#b8c0d0;
+
+    border-left:2px solid rgba(121,255,67,.35);
+
+}
+
+.about-signature{
+
+    margin-top:35px;
+
+    text-align:right;
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:.82rem;
+
+    letter-spacing:2px;
+
+    color:#79ff43;
+
+    opacity:.75;
+
+}
+
+.about-terminal::after{
 
     content:"";
 
@@ -3414,224 +4176,1184 @@ transform:scale(1);
 
     inset:0;
 
-    background:linear-gradient(
+    pointer-events:none;
 
-        110deg,
+    border-radius:14px;
 
-        transparent 30%,
+    opacity:.04;
 
-        rgba(255,255,255,.04) 50%,
+    background:repeating-linear-gradient(
 
-        transparent 70%
+        to bottom,
+
+        transparent 0px,
+
+        transparent 3px,
+
+        rgba(255,255,255,.18) 4px
 
     );
 
-    transform:translateX(-120%);
+}
 
-    animation:profileSweep 8s linear infinite;
 
-    pointer-events:none;
+
+/* ==========================================
+   WILLKOMMEN
+========================================== */
+
+.about-terminal{
+
+    position:relative;
+
+    padding:10px;
 
 }
 
-.about-profile-card h2,
-.about-profile-card h3{
+/* =====================================================
+   PORTRAIT
+===================================================== */
+
+.player-card-portrait{
+
+    position:relative;
+
+    width:300px;
+
+    height:300px;
+
+    margin-bottom:32px;
+
+    margin-top:40px;
+
+    border-radius:49%;
+
+    overflow:hidden;
+
+    border:3px solid rgba(121,255,67,.35);
+
+    background:#1b2433;
+
+    box-shadow:
+
+        0 0 22px rgba(121,255,67,.15),
+
+        0 16px 35px rgba(0,0,0,.45);
+
+    transition:
+
+        transform .45s ease,
+
+        box-shadow .45s ease;
+
+}
+
+
+/* Bild */
+
+.player-card-portrait img{
+
+    width:100%;
+
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:
+
+        transform .45s ease;
+
+}
+
+
+/* Hover */
+
+.player-card:hover .player-card-portrait{
+
+    transform:translateY(-4px) scale(1.02);
+
+    box-shadow:
+
+        0 0 35px rgba(121,255,67,.28),
+
+        0 20px 40px rgba(0,0,0,.50);
+
+}
+
+.player-card:hover .player-card-portrait img{
+
+    transform:scale(1.05);
+
+}
+
+
+/* =====================================================
+   PLAYER
+===================================================== */
+
+.player-card-player{
+
+    margin-bottom:10px;
+
+    font-size:.82rem;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    color:#87a5d8;
+
+}
+
+
+/* =====================================================
+   NAME
+===================================================== */
+
+.player-card-name{
 
     margin:0;
 
+    font-family:Orbitron,sans-serif;
+
+    font-size:2.1rem;
+
     font-weight:700;
 
-    letter-spacing:.5px;
+    letter-spacing:2px;
 
-    color:#4eb8ff;
+    color:#ffffff;
+
+    text-shadow:
+
+        0 0 12px rgba(80,170,255,.25);
+
+}
+
+
+/* =====================================================
+   SUBTITLE
+===================================================== */
+
+.player-card-subtitle{
+
+    margin-top:10px;
+
+    margin-bottom:42px;
+
+    font-size:.9rem;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#79ff43;
+
+    opacity:.85;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.player-card-button{
+
+    margin-top:auto;
+
+    width:240px;
+
+    align-self:center;
+
+    padding:16px 20px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(121,255,67,.35);
+
+    background:#222c3d;
+
+    color:#79ff43;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:
+        background .30s ease,
+        color .30s ease,
+        transform .25s ease,
+        box-shadow .30s ease;
+
+}
+
+.player-card-button{
+
+    margin-top:auto;
+    margin-bottom:36px;
+
+}
+
+/* Hover */
+
+.player-card-button:hover{
+
+    background:#79ff43;
+
+    color:#182132;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+
+        0 0 18px rgba(121,255,67,.30);
+
+}
+
+
+/* Klick */
+
+.player-card-button:active{
+
+    transform:scale(.98);
+
+}
+
+/* =====================================================
+   PLAYER CARD
+===================================================== */
+
+.player-card{
+
+    position:relative;
+
+    width:650px;
+
+    height:650px;
+
+    margin:0 auto 70px;
+
+    perspective:1800px;
+
+    overflow:hidden;
+
+}
+
+.player-card-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+
+/* =====================================================
+   INNER
+===================================================== */
+
+.player-card-inner{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    transform-style:preserve-3d;
+
+    transition:
+        transform .8s cubic-bezier(.23,.92,.32,1);
+
+}
+
+.player-card-front,
+.player-card-back{
+
+    background:#2d384b;
+
+    border:1px solid rgba(121,255,67,.18);
+
+    box-shadow:
+
+        inset 0 1px rgba(255,255,255,.04),
+
+        0 18px 40px rgba(0,0,0,.45);
+
+}
+
+
+/* =====================================================
+   FLIP
+===================================================== */
+
+.player-card.flipped .player-card-inner{
+
+    transform:rotateY(180deg);
+
+}
+
+
+/* =====================================================
+   VORDERSEITE
+===================================================== */
+
+.player-card-front{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    backface-visibility:hidden;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+/* =====================================================
+   RÜCKSEITE
+===================================================== */
+
+.player-card-back{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:28px;
+
+    border-radius:20px;
+
+    overflow:visible;
+
+    backface-visibility:hidden;
+
+    transform:rotateY(180deg);
+
+    background:linear-gradient(
+        180deg,
+        #2f394b 0%,
+        #253040 100%
+    );
+
+    border:1px solid rgba(121,255,67,.18);
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,.04),
+        0 20px 45px rgba(0,0,0,.45);
+
+}
+
+
+/* =====================================================
+   CRT SCANLINES
+===================================================== */
+
+.player-card-back::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    opacity:.025;
+
+    background:repeating-linear-gradient(
+
+        180deg,
+
+        rgba(255,255,255,.7) 0px,
+
+        rgba(255,255,255,.7) 1px,
+
+        transparent 2px,
+
+        transparent 4px
+
+    );
+
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.player-card-title{
+
+    margin:0;
+
+    text-align:center;
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:1.45rem;
+
+    letter-spacing:3px;
+
+    color:#79ff43;
+
+    text-shadow:
+
+        0 0 12px rgba(121,255,67,.25);
+
+}
+
+
+/* =====================================================
+   DIVIDER
+===================================================== */
+
+.player-card-divider{
+
+    width:100%;
+
+    height:1px;
+
+    margin:18px 0;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(121,255,67,.45),
+
+        transparent
+
+    );
+
+}
+
+
+/* =====================================================
+   OBERER BEREICH
+===================================================== */
+
+.player-card-top{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:22px;
+
+    align-items:start;
+
+}
+
+/* =====================================================
+   RECHTE SPALTE
+===================================================== */
+
+.player-card-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+
+/* =====================================================
+   LINKE SPALTE
+===================================================== */
+
+.player-card-values{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+/* =====================================================
+   RECHTE SPALTE
+===================================================== */
+
+.player-card-inventory{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+.player-card-inventory h3{
+
+    margin:0 0 16px;
+
+    font-size:.85rem;
+
+    letter-spacing:2px;
+
+    color:#79ff43;
 
     text-transform:uppercase;
 
 }
 
-.about-profile-card h2{
 
-    font-size:2rem;
 
-    margin-bottom:22px;
+.player-card-stats h3{
 
-}
+    margin:0 0 10px;
 
-.about-profile-card h3{
+    text-align:center;
 
-    font-size:1.35rem;
+    font-size:.9rem;
 
-    margin-bottom:18px;
+    letter-spacing:3px;
 
-}
+    color:#79ff43;
 
-.profile-row{
-
-    display:grid;
-
-    grid-template-columns:155px 1fr;
-
-    align-items:center;
-
-    gap:14px;
-
-    padding:11px 0;
-
-    border-bottom:1px solid rgba(255,255,255,.05);
+    text-transform:uppercase;
 
 }
 
-.profile-row span{
+/* =====================================================
+   PLAYER VALUES
+===================================================== */
 
-    color:#9cabca;
+.player-value{
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:10px 0;
+
+    border-bottom:1px solid rgba(121,255,67,.08);
 
 }
 
-.profile-row strong{
+.player-value:last-child{
 
-    text-align:right;    
+    border-bottom:none;
 
 }
 
-.profile-row strong:not(.online){
+.player-value span{
+
+    font-size:.72rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#7f97b7;
+
+    margin-bottom:5px;
+
+}
+
+.player-value strong{
+
+    font-size:1rem;
+
+    font-weight:600;
 
     color:#ffffff;
 
-}
-
-.profile-divider{
-
-    margin:22px 0;
-
-    border:0;
-
-    height:1px;
-
-    background:rgba(255,255,255,.08);
+    line-height:1.35;
 
 }
 
-.online {
-    color:#52d96d;
-    animation:onlinePulse 2.2s infinite
+.online{
+
+    color:#79ff43;
+
+    text-shadow:0 0 8px rgba(121,255,67,.35);
+
 }
 
-@keyframes onlinePulse {
-    50% {
-        opacity:.45
-    }
 
-    
-}
+/* =====================================================
+   INVENTORY GRID
+===================================================== */
 
 .inventory-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(6,1fr);
+    grid-template-columns:repeat(3,58px);
+
+    grid-template-rows:repeat(2,58px);
 
     gap:12px;
 
+    justify-content:center;
+
 }
 
-.inventory-item{
-    width:60px;
-    height:60px;
+
+/* =====================================================
+   INVENTORY SLOT
+===================================================== */
+
+.inventory-slot{
+
+    width:58px;
+
+    height:58px;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
-    background:#232d43;
-    border:1px solid rgba(255,255,255,.05);
-    border-radius:12px;
+    border-radius:10px;
 
-    transition:.25s;
+    background:rgba(17,24,35,.75);
+
+    border:1px solid rgba(121,255,67,.18);
+
+    box-shadow:
+
+        inset 0 1px rgba(255,255,255,.05),
+
+        0 0 8px rgba(0,0,0,.30);
+
+    transition:
+
+        transform .25s ease,
+
+        border-color .25s ease,
+
+        box-shadow .25s ease,
+
+        background .25s ease;
+
 }
 
-.inventory-item img{
-    width:42px;
-    height:42px;
-    image-rendering:pixelated;
-}
+.item-tooltip{
 
-.inventory-item:hover {
-    transform:translateY(-3px);
-    background:#25304c;
-    border-color:rgba(58,168,255,.45)
-}
-
-.stat {
-
-    margin-top:16px;
+    z-index:999;
 
 }
 
-.stat span {
+/* =====================================================
+   RPG ITEM TOOLTIP
+===================================================== */
+
+.item-tooltip{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:72px;
+
+    transform:translateX(-50%) translateY(10px);
+
+    width:180px;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    background:#101722;
+
+    border:1px solid rgba(121,255,67,.30);
+
+    box-shadow:
+
+        0 10px 25px rgba(0,0,0,.45),
+
+        0 0 12px rgba(121,255,67,.12);
+
+    pointer-events:none;
+
+    opacity:0;
+
+    transition:
+
+        opacity .25s ease,
+
+        transform .25s ease;
+
+    z-index:50;
+
+}
+
+
+/* Titel */
+
+.item-title{
 
     display:block;
 
-    margin-bottom:6px;
+    margin-bottom:8px;
 
-    color:#cfd7eb;
+    font-family:Orbitron,sans-serif;
 
-    font-size:.88rem;
+    font-size:.78rem;
 
-}
+    letter-spacing:1px;
 
-/* ==========================================
-   PHOTO HOVER
-========================================== */
-
-.about-photo-card:hover .photo-frame{
-
-    transform:translateY(-4px);
-
-    box-shadow:
-
-        0 24px 48px rgba(0,0,0,.40),
-
-        0 0 45px rgba(58,168,255,.28);
+    color:#79ff43;
 
 }
 
-.about-photo-card:hover .photo-frame img{
 
-    transform:scale(1.02);
+/* Beschreibung */
 
-    filter:brightness(1.05);
+.item-text{
+
+    display:block;
+
+    font-size:.72rem;
+
+    line-height:1.45;
+
+    color:#d6dde9;
 
 }
 
-.about-photo-card:hover .photo-caption{
+
+/* Hover */
+
+.inventory-slot:hover .item-tooltip{
+
+    opacity:1;
+
+    transform:translateX(-50%) translateY(0);
+
+}
+
+/* =====================================================
+   INVENTORY ICON
+===================================================== */
+
+.inventory-slot img{
+
+    width:30px;
+
+    height:30px;
+
+    object-fit:contain;
+
+    transition:
+
+        transform .25s ease,
+
+        filter .25s ease;
+
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.inventory-slot:hover{
 
     transform:translateY(-3px);
 
-    border-color:rgba(58,168,255,.45);
+    border-color:rgba(121,255,67,.55);
+
+    background:rgba(26,39,54,.95);
 
     box-shadow:
 
-        0 0 20px rgba(58,168,255,.22);
+        0 0 14px rgba(121,255,67,.22),
+
+        inset 0 0 8px rgba(121,255,67,.08);
 
 }
 
-.about-photo-card:hover .photo-caption span{
+.inventory-slot:hover img{
 
-    color:#73c8ff;
+    transform:scale(1.12);
+
+}
+
+
+/* =====================================================
+   EQUIPMENT TITLE
+===================================================== */
+
+.player-card-inventory h3{
+
+    margin-bottom:18px;
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:.85rem;
+
+    letter-spacing:2px;
+
+}
+
+/* =====================================================
+   CHARACTER STATS
+===================================================== */
+
+.player-card-stats{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-top:22px;
+
+}
+
+.player-card-stats h3{
+
+    margin:0 0 18px;
+
+    text-align:center;
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:1rem;
+
+    letter-spacing:3px;
+
+    color:#79ff43;
 
     text-shadow:
-
-        0 0 10px rgba(58,168,255,.55);
+        0 0 10px rgba(121,255,67,.25);
 
 }
 
-.about-photo-card:hover .photo-caption strong{
+
+/* =====================================================
+   STAT ROW
+===================================================== */
+
+.stat-row{
+
+    display:grid;
+
+    grid-template-columns:95px 1fr 42px;
+
+    gap:8px;
+
+    align-items:center;
+
+}
+
+.stat-row span{
+
+    font-size:.78rem;
+
+    color:#a8b7d3;
+
+    letter-spacing:.5px;
+
+}
+
+.stat-row strong{
+
+    text-align:right;
+
+    font-size:.76rem;
 
     color:#ffffff;
 
-    text-shadow:
+}
 
-        0 0 12px rgba(255,255,255,.35);
+
+/* =====================================================
+   BAR
+===================================================== */
+
+/* ==========================================
+   CHARACTER STATS BAR
+========================================== */
+
+.stat-bar{
+
+    width:100%;
+    height:8px;
+
+    background:#1d2430;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(121,255,67,.15);
+
+}
+
+.stat-fill{
+
+    width:0;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #79ff43,
+        #4fc9ff
+    );
+
+    transition: width .9s cubic-bezier(.22,1,.36,1);
+
+}
+
+
+/* =====================================================
+   FILL
+===================================================== */
+
+.stat-fill{
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        #79ff43,
+        #a9ff7c
+    );
+
+    box-shadow:
+        0 0 8px rgba(121,255,67,.35);
+
+}
+
+
+/* =====================================================
+   FILL WIDTHS
+===================================================== */
+
+.fill100{
+
+    width:100%;
+
+}
+
+.fill91{
+
+    width:91%;
+
+}
+
+.fill84{
+
+    width:84%;
+
+}
+
+.fill72{
+
+    width:72%;
+
+}
+
+
+/* =====================================================
+   BOTTOM
+===================================================== */
+
+.player-card-back .player-card-button{
+
+    width:220px;
+
+    align-self:center;
+
+    margin-top:auto;
+
+    margin-bottom:6px;
+
+}
+
+/* =====================================================
+   TERMINAL LOOK
+===================================================== */
+
+.player-value{
+
+    position:relative;
+
+    padding:12px 14px;
+
+    border-radius:10px;
+
+    background:rgba(18,26,37,.28);
+
+    border:1px solid rgba(121,255,67,.05);
+
+    transition:
+        background .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+
+}
+
+.player-value:hover{
+
+    background:rgba(30,43,58,.55);
+
+    border-color:rgba(121,255,67,.20);
+
+    transform:translateX(4px);
+
+}
+
+
+/* =====================================================
+   INVENTORY GLOW
+===================================================== */
+
+.inventory-slot{
+
+    position:relative;
+
+    overflow:visible;
+
+}
+
+.inventory-slot::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(121,255,67,.12),
+
+            transparent 70%
+
+        );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.inventory-slot:hover::before{
+
+    opacity:1;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.player-card-button{
+
+    letter-spacing:.5px;
+
+}
+
+.player-card-button:hover{
+
+    box-shadow:
+
+        0 0 18px rgba(121,255,67,.28),
+
+        inset 0 0 12px rgba(121,255,67,.08);
+
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.player-card-title{
+
+    position:relative;
+
+}
+
+.player-card-title::after{
+
+    content:"PLAYER ID #1987";
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:.60rem;
+
+    letter-spacing:4px;
+
+    color:#7f97b7;
+
+    opacity:.75;
+
+}
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.player-card:hover{
+
+    transform:translateY(-4px);
+
+    transition:transform .35s ease;
+
+}
+
+/* =====================================================
+   SECTION DIVIDER
+===================================================== */
+
+.section-divider{
+
+    width:140px;
+
+    height:2px;
+
+    margin:55px auto;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(121,255,67,.75),
+        transparent
+    );
 
 }
 
@@ -3765,53 +5487,7 @@ transform:scale(1);
 
 }
 
-/* Kaffee */
 
-.coffee-fill{
-
-    background:linear-gradient(
-
-        90deg,
-
-        #f2b24c,
-
-        #ff9747
-
-    );
-
-}
-
-/* Retro */
-
-.passion-fill{
-
-    background:linear-gradient(
-
-        90deg,
-
-        #ff5f87,
-
-        #ff2964
-
-    );
-
-}
-
-/* Freizeit */
-
-.free-fill{
-
-    background:linear-gradient(
-
-        90deg,
-
-        #4ab8ff,
-
-        #746cff
-
-    );
-
-}
 
 
 
@@ -3913,6 +5589,37 @@ transform:scale(1);
 .achievement-text small{
 
     color:#66ff8d;
+
+}
+
+/* ==========================================
+   ACHIEVEMENT SELTENHEIT
+========================================== */
+
+.achievement-common{
+
+    border:2px solid #79ff43;
+
+    box-shadow:
+        0 0 25px rgba(121,255,67,.35);
+
+}
+
+.achievement-rare{
+
+    border:2px solid #4aa8ff;
+
+    box-shadow:
+        0 0 30px rgba(74,168,255,.45);
+
+}
+
+.achievement-legendary{
+
+    border:2px solid #bb66ff;
+
+    box-shadow:
+        0 0 35px rgba(187,102,255,.55);
 
 }
 
@@ -4444,25 +6151,7 @@ img{
 
 }
 
-/* ===========================
-   Savegame Cards
-=========================== */
 
-.memory-card{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:22px;
-
-}
-
-.memory-card img{
-
-    width:100%;
-
-}
 
 /* ===========================
    About Player Profile
@@ -4578,22 +6267,7 @@ section{
    RETRO MEMORY 3.2
 ===================================================== */
 
-.retro-memory{
 
-    margin-top:40px;
-
-    background:#252f42;
-
-    border:1px solid rgba(123,231,77,.18);
-
-    border-radius:24px;
-
-    overflow:hidden;
-
-    box-shadow:
-        0 20px 45px rgba(0,0,0,.30);
-
-}
 
 
 /* =====================================================
@@ -4649,13 +6323,15 @@ section{
 
     display:grid;
 
-    grid-template-columns:260px 1fr;
+    grid-template-columns:240px 1fr;
 
-    gap:50px;
+    gap:55px;
 
-    align-items:center;
+    align-items:start;
 
     padding:45px;
+
+    min-height:260px;
 
 }
 
@@ -4670,7 +6346,8 @@ section{
 
     justify-content:center;
 
-    align-items:center;
+    align-items:flex-start;
+    
 
 }
 
@@ -4692,6 +6369,8 @@ section{
 
     border-radius:18px;
 
+    padding:6px;
+
     background:#1b2130;
 
     border:1px solid rgba(255,255,255,.05);
@@ -4703,6 +6382,7 @@ section{
     transition:
         transform .25s ease,
         box-shadow .25s ease;
+        
 
 }
 
@@ -4763,7 +6443,7 @@ section{
 
     height:100%;
 
-    object-fit:contain;
+    object-fit:cover;
 
     border-radius:12px;
 
@@ -4784,7 +6464,9 @@ section{
 
     flex-direction:column;
 
-    justify-content:center;
+    justify-content:flex-start;
+
+    min-height:220px;
 
 }
 
@@ -4827,6 +6509,8 @@ section{
 
     gap:12px;
 
+    margin-top:auto;
+
 }
 
 .memory-tags span{
@@ -4862,7 +6546,11 @@ section{
 
 .memory-actions{
 
-    padding:0 45px 35px;
+    padding:28px 45px 35px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.05);
 
 }
 
@@ -4885,6 +6573,14 @@ section{
     font-weight:700;
 
     transition:.25s;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:260px;
 
 }
 
@@ -5061,6 +6757,207 @@ section{
 
 }
 
+/* =====================================================
+   RETRO MEMORY
+===================================================== */
+
+.retro-memory{
+
+    margin:40px 0 50px;
+
+}
+
+
+
+.memory-photo img{
+
+    width:100%;
+
+    display:block;
+
+    filter:
+
+        drop-shadow(0 20px 30px rgba(0,0,0,.45));
+
+}
+
+.memory-photo:hover img{
+
+    filter:
+
+        brightness(1.05)
+
+        saturate(1.05);
+
+}
+
+.memory-photo:hover{
+
+    transform:
+
+        rotate(0deg)
+
+        scale(1.03);
+
+    filter:
+
+        drop-shadow(0 26px 45px rgba(0,0,0,.55));
+
+}
+
+
+
+.memory-photo:hover::after{
+
+    opacity:1;
+
+}
+
+.memory-title{
+
+    display:inline-block;
+
+    margin-bottom:10px;
+
+    color:#79ff43;
+
+    font-family:Orbitron,sans-serif;
+
+    letter-spacing:3px;
+
+    font-size:.82rem;
+
+}
+
+.memory-text h2{
+
+    margin-top:0;
+
+}
+
+.memory-text p{
+
+    margin-top:18px;
+
+}
+
+
+.retro-memory.show{
+
+    opacity:1;
+
+    transform:
+
+        translateY(0);
+
+}
+
+/* ==========================================
+   CRT FLASH
+========================================== */
+
+.memory-photo{
+
+    position:relative;
+
+    overflow:hidden;
+
+    transform:rotate(-4deg);
+
+    transition:.45s;
+
+}
+
+.memory-photo::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-20%;
+
+    left:-140%;
+
+    width:60%;
+
+    height:140%;
+
+    pointer-events:none;
+
+    background:
+
+        linear-gradient(
+
+            115deg,
+
+            transparent 0%,
+
+            rgba(255,255,255,.06) 30%,
+
+            rgba(255,255,255,.35) 50%,
+
+            rgba(255,255,255,.06) 70%,
+
+            transparent 100%
+
+        );
+
+    transform:rotate(-14deg);
+
+    opacity:0;
+
+}
+
+.memory-caption{
+
+    position:absolute;
+
+    right:18px;
+
+    bottom:16px;
+
+    padding:6px 12px;
+
+    border-radius:16px;
+
+    background:rgba(0,0,0,.55);
+
+    color:#79ff43;
+
+    font-size:.72rem;
+
+    letter-spacing:1px;
+
+    font-family:Orbitron,sans-serif;
+
+    opacity:0;
+
+    transform:
+
+        translateY(8px);
+
+    transition:
+
+        opacity .35s ease,
+
+        transform .35s ease;
+
+    pointer-events:none;
+
+}
+
+.memory-photo:hover .memory-caption{
+
+    opacity:1;
+
+    transform:
+
+        translateY(0);
+
+}
+
+
+
 
 
 /* ==========================
@@ -5069,9 +6966,9 @@ section{
 
 footer {
 
-    width: 100%;
+    width:100%;
 
-    margin-top: 50px;
+    margin-top: 20px;
 
     padding: 25px;
 
@@ -5101,6 +6998,173 @@ footer a:hover {
 /* ==========================
    Mobile
    ========================== */
+
+
+
+@media (max-width: 900px){
+
+    .memory-photo > .pixelkumpel-photo{
+
+        width:100%;
+
+        max-width:420px;
+
+    }
+
+    .memory-header{
+
+    padding:14px 18px;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    }
+
+}
+/* =====================================================
+   PLAYER CARD RESPONSIVE
+===================================================== */
+
+@media (max-width:900px){
+
+    /* Karte */
+
+    .player-card{
+
+    width:100%;
+
+    max-width:360px;
+
+    min-height:700px;
+
+    height:700px;
+
+    margin:0 auto 40px;
+
+    }
+
+    /* Portrait */
+
+    .player-card-portrait{
+
+        width:170px;
+
+        height:170px;
+
+        margin-top:24px;
+
+        margin-bottom:18px;
+
+    }
+
+    /* Vorderseite */
+
+    .player-card-player{
+
+        font-size:.62rem;
+
+        letter-spacing:3px;
+
+    }
+
+    .player-card-name{
+
+        font-size:1.45rem;
+
+        letter-spacing:1px;
+
+        text-align:center;
+
+        padding:0 18px;
+
+    }
+
+    .player-card-subtitle{
+
+        font-size:.72rem;
+
+        letter-spacing:2px;
+
+        margin-top:8px;
+
+        margin-bottom:22px;
+
+        text-align:center;
+
+        padding:0 15px;
+
+    }
+
+    .player-card-button{
+
+        width:180px;
+
+        padding:12px 16px;
+
+        margin-bottom:20px;
+
+        font-size:.85rem;
+
+    }
+
+    /* Rückseite */
+
+    .player-card-back{
+
+    overflow-y:auto;
+
+    -webkit-overflow-scrolling:touch;
+
+    }
+
+    .player-card-title{
+
+        font-size:1.1rem;
+
+        letter-spacing:2px;
+
+    }
+
+    .player-card-divider{
+
+        margin:14px 0;
+
+    }
+
+    /* Zweispaltiges Layout untereinander */
+
+    .player-card-top{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+    .player-card-right{
+
+        gap:18px;
+
+    }
+
+    .player-card-values{
+
+        gap:12px;
+
+    }
+
+    .player-card-stats h3,
+
+    .player-card-inventory h3{
+
+        font-size:.72rem;
+
+        letter-spacing:2px;
+
+    }
+
+}
 
 @media (max-width: 900px) {
 

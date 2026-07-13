@@ -431,87 +431,73 @@
 
         <div class="rnf-editor-right">
 
-            <div class="rnf-terminal">
+<div class="rnf-terminal">
 
-                <div class="rnf-terminal-title">
+    <div class="terminal-header">
 
-                    RETRO NEWS FLASH REDAKTION
+        <span class="terminal-led red"></span>
+        <span class="terminal-led yellow"></span>
+        <span class="terminal-led green"></span>
 
-                </div>
+        <span class="terminal-title">
+            Retro News Flash Redaktion
+        </span>
 
-<pre>
-
-STATUS ............ <span id="boot-status"></span>
-
-KAFFEE ............ <span id="boot-coffee"></span>
-
-DISKETTEN ......... <span id="boot-disks"></span>
-
-NEUE SPIELE ....... <span id="boot-games"></span>
-
-COMMUNITY ......... <span id="boot-community"></span>
-
-TIPPS ............. <span id="boot-tips"></span>
-
-</pre>
-
-<div class="rnf-terminal-mobile">
-
-    <div class="terminal-row">
-        <span>STATUS</span>
-        <strong id="boot-status-mobile"></strong>
     </div>
 
-    <div class="terminal-row">
-        <span>KAFFEE</span>
-        <div id="boot-coffee-mobile"></div>
-    </div>
+    <div class="terminal-screen">
 
-    <div class="terminal-row">
-        <span>DISKETTEN</span>
-        <div id="boot-disks-mobile"></div>
-    </div>
+        <div class="terminal-line">
+            <span class="terminal-label">STATUS</span>
+            <span class="terminal-dots"></span>
+            <span id="boot-status" class="terminal-value"></span>
+        </div>
 
-    <div class="terminal-row">
-        <span>NEUE SPIELE</span>
-        <strong id="boot-games-mobile"></strong>
-    </div>
+        <div class="terminal-line">
+            <span class="terminal-label">VIDEOS</span>
+            <span class="terminal-dots"></span>
+            <span id="boot-videos" class="terminal-value"></span>
+        </div>
 
-    <div class="terminal-row">
-        <span>COMMUNITY</span>
-        <div id="boot-community-mobile"></div>
-    </div>
+        <div class="terminal-line">
+            <span class="terminal-label">VIEWS GESAMT</span>
+            <span class="terminal-dots"></span>
+            <span id="boot-views" class="terminal-value"></span>
+        </div>
 
-    <div class="terminal-row">
-        <span>TIPPS</span>
-        <strong id="boot-tips-mobile"></strong>
-    </div>
+        <div class="terminal-line">
+            <span class="terminal-label">ABONNENTEN</span>
+            <span class="terminal-dots"></span>
+            <span id="boot-subs" class="terminal-value"></span>
+        </div>
 
-</div>
+        <div class="terminal-line">
+            <span class="terminal-label">C64 SPIELE</span>
+            <span class="terminal-dots"></span>
+            <span id="boot-c64" class="terminal-value"></span>
+        </div>
 
-            </div>
+        <div class="terminal-line">
+            <span class="terminal-label">AMIGA SPIELE</span>
+            <span class="terminal-dots"></span>
+            <span id="boot-amiga" class="terminal-value"></span>
+        </div>
 
-            <a class="welcome-button"
-
-               href="https://www.youtube.com/@MagisthansSpielekiste"
-
-               target="_blank">
-
-                ▶ Projekt melden
-
-            </a>
-
+        <div class="terminal-line">
+            <span class="terminal-label">DEMOS</span>
+            <span class="terminal-dots"></span>
+            <span id="boot-demos" class="terminal-value"></span>
         </div>
 
     </div>
 
-</section>
-       
-    </div>
-
+</div>
+</div>
+</div>
+</div>
 </div>
 
-     <div style="text-align:center;margin-top:60px;">
+     <div style="text-align:center;margin-top:10px;">
 
             <a class="welcome-button" href="index.html">
                 ← Zurück zur Startseite
@@ -635,96 +621,243 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <script>
 
+/* =====================================================
+   Retro News Flash Terminal 2.0
+   Hilfsfunktionen
+===================================================== */
+
+
+/* Deutsche Zahlenformatierung */
+
+function formatNumber(value){
+
+    return value.toLocaleString("de-DE");
+
+}
+
+
+/* -----------------------------------------------------
+   Ease-Out Animation
+----------------------------------------------------- */
+
+function easeOutCubic(t){
+
+    return 1 - Math.pow(1 - t,3);
+
+}
+
+
+/* -----------------------------------------------------
+   Counter
+----------------------------------------------------- */
+
+function animateCounter(element,endValue,duration=1200){
+
+    return new Promise(resolve=>{
+
+        const start=performance.now();
+
+        function update(now){
+
+            const progress=Math.min((now-start)/duration,1);
+
+            const eased=easeOutCubic(progress);
+
+            const current=Math.floor(endValue*eased);
+
+            element.textContent=formatNumber(current);
+
+            if(progress<1){
+
+                requestAnimationFrame(update);
+
+            }else{
+
+                element.textContent=formatNumber(endValue);
+
+                resolve();
+
+            }
+
+        }
+
+        requestAnimationFrame(update);
+
+    });
+
+}
+
+
+/* -----------------------------------------------------
+   Text schreiben
+----------------------------------------------------- */
+
+function typeText(element,text,speed=35){
+
+    return new Promise(resolve=>{
+
+        element.classList.add("typing");
+
+        element.textContent="";
+
+        let i=0;
+
+        function write(){
+
+            element.textContent+=text.charAt(i);
+
+            i++;
+
+            if(i<text.length){
+
+                setTimeout(write,speed);
+
+            }else{
+
+                element.classList.remove("typing");
+
+                resolve();
+
+            }
+
+        }
+
+        write();
+
+    });
+
+}
+
+
+/* -----------------------------------------------------
+   Zahlen anzeigen
+----------------------------------------------------- */
+
+async function showCounter(id,value,duration=1200){
+
+    const element=document.getElementById(id);
+
+    element.classList.add("typing");
+
+    element.textContent="0";
+
+    await animateCounter(element,value,duration);
+
+    element.classList.remove("typing");
+
+}
+
+
+/* -----------------------------------------------------
+   Status anzeigen
+----------------------------------------------------- */
+
+async function showStatus(id,text){
+
+    const element=document.getElementById(id);
+
+    await typeText(element,text,40);
+
+}
+
+
+/* -----------------------------------------------------
+   Kleine Pause
+----------------------------------------------------- */
+
+function delay(ms){
+
+    return new Promise(resolve=>setTimeout(resolve,ms));
+
+}
+
 document.addEventListener("DOMContentLoaded",()=>{
 
 const terminal=document.querySelector(".rnf-terminal");
 
-if(!terminal)return;
-
-const lines=[
-
-["boot-status","ONLINE",false],
-
-["boot-coffee",
-'<img src="assets/images/icons/kaffee-bar.webp" class="terminal-icon" width="123" height="34" decoding="async" loading="lazy">',
-true],
-
-["boot-disks",
-'<img src="assets/images/icons/diskette-bar.webp" class="terminal-icon" width="172" height="41" decoding="async" loading="lazy">',
-true],
-
-["boot-games","GESUCHT",false],
-
-["boot-community",
-'<img src="assets/images/icons/herz-bar.webp" class="terminal-icon" width="198" height="26" decoding="async" loading="lazy">',
-true],
-
-["boot-tips","ERWÜNSCHT",false]
-
-];
+if(!terminal) return;
 
 let played=false;
 
-const observer=new IntersectionObserver(entries=>{
+const observer=new IntersectionObserver(async(entries)=>{
 
-entries.forEach(entry=>{
+for(const entry of entries){
 
-if(entry.isIntersecting){
+    if(entry.isIntersecting){
 
-if(played)return;
+        if(played) return;
 
-played=true;
+        played=true;
 
-terminal.classList.remove("ready");
+        terminal.classList.remove("ready");
 
-lines.forEach(line=>{
+        /* Alles zurücksetzen */
 
-document.getElementById(line[0]).textContent="";
+        const ids=[
 
-});
+            "boot-status",
+            "boot-videos",
+            "boot-views",
+            "boot-subs",
+            "boot-c64",
+            "boot-amiga",
+            "boot-demos"
 
-lines.forEach((line,index)=>{
+        ];
 
-setTimeout(()=>{
+        ids.forEach(id=>{
 
-const element = document.getElementById(line[0]);
-const mobileElement = document.getElementById(line[0] + "-mobile");
+            const element=document.getElementById(id);
 
-if(line[2]){
+            if(element){
 
-    element.innerHTML = line[1];
+                element.textContent="";
 
-    if(mobileElement){
-        mobileElement.innerHTML = line[1];
+            }
+
+        });
+
+        /* Bootsequenz */
+
+        await delay(300);
+
+        await showStatus("boot-status","ONLINE");
+
+        await delay(250);
+
+        await showCounter("boot-videos",91,700);
+
+        await delay(180);
+
+        await showCounter("boot-views",43656,1700);
+
+        await delay(180);
+
+        await showCounter("boot-subs",2063,1100);
+
+        await delay(180);
+
+        await showCounter("boot-c64",123,900);
+
+        await delay(180);
+
+        await showCounter("boot-amiga",155,800);
+
+        await delay(180);
+
+        await showCounter("boot-demos",8,900);
+
+        terminal.classList.add("ready");
+
     }
 
-}else{
+    else{
 
-    element.textContent = line[1];
+        played=false;
 
-    if(mobileElement){
-        mobileElement.textContent = line[1];
     }
 
 }
-
-if(index===lines.length-1){
-
-terminal.classList.add("ready");
-
-}
-
-},index*250);
-
-});
-
-}else{
-
-played=false;
-
-}
-
-});
 
 },
 

@@ -47,49 +47,212 @@
 
 <div class="container">
 
-    <div class="card legal-content">
+    
+<div class="card legal-content">
 
-        <h1>DIE PIXELKUMPEL</h1>
+<!-- =====================================================
+     PIXELKUMPEL CRT TV 3.0
+===================================================== -->
 
-        <div class="pixelkumpel-video">
+<div class="pixelkumpel-tv">
 
-          <div class="pixel-video-shell">
+    <div class="crt-tv">
 
-            <video id="pixelVideo" muted playsinline preload="metadata">
-              <source src="assets/video/pixelkumpelvideo.mp4" type="video/mp4">
+        <!-- Fernseher -->
+
+        <img
+            src="assets/images/crt-tv.webp"
+            class="crt-frame"
+            alt="Retro Fernseher">
+
+        <!-- Bildschirm -->
+
+        <div class="crt-screen">
+
+            <!-- Thumbnail -->
+
+            <img
+                id="crtThumbnail"
+                class="crt-thumbnail"
+                src="assets/images/pixelkumpel-thumbnail.webp"
+                alt="Aktuelle Folge">
+
+            <!-- Lokales Introvideo -->
+
+            <video
+                id="crtVideo"
+                class="crt-video"
+                playsinline
+                preload="metadata">
+
+                <source
+                    id="crtVideoSource"
+                    src="assets/video/pixelkumpelvideo.mp4"
+                    type="video/mp4">
+
             </video>
 
-            <button class="pixel-video-start" type="button" aria-label="Pixelkumpel-Video abspielen">
-              <span>Video abspielen</span>
-            </button>
+            <!-- CRT Effekte -->
 
-          </div>
+            <div class="crt-boot"></div>
+
+            <div class="crt-line"></div>
+
+            <div class="crt-static"></div>
+
+            <div class="crt-glass"></div>
+
+            <div class="crt-scanlines"></div>
+
+            <div class="crt-vignette"></div>
+
+            <!-- Channel Anzeige -->
+
+            <div class="crt-channel">
+
+                <div
+                    id="crtChannelNumber"
+                    class="crt-channel-number">
+
+                </div>
+
+                <div
+                    id="crtChannelTitle"
+                    class="crt-channel-title">
+
+                </div>
+
+            </div>
+
+            <!-- Hinweis -->
+
+            <div
+                id="crtHint"
+                class="crt-hint">
+
+            </div>
+
+            <!-- Play -->
+
+            <button
+                id="crtPlay"
+                class="crt-play">
+
+                <span class="play-icon">
+
+                    ▶
+
+                </span>
+
+                <span class="play-label">
+
+                    VIDEO STARTEN
+
+                </span>
+
+            </button>
 
         </div>
 
-        <script>
-         const videoShell = document.querySelector(".pixel-video-shell");
-         const video = document.getElementById("pixelVideo");
-         const videoStart = document.querySelector(".pixel-video-start");
+        <!-- Power LED -->
 
-         videoStart.addEventListener("click", () => {
-            videoShell.classList.add("is-playing");
-            video.play();
-         });
+        <div
+            id="crtLed"
+            class="crt-led">
 
-         video.addEventListener("ended", () => {
-            videoShell.classList.remove("is-playing");
-            video.currentTime = 0;
-         });
-        </script>
+        </div>
 
-<h2>Zwei Freunde, zwei Joysticks und viel zu wenig Freizeit</h2>
+        <!-- ==========================================
+             OBERER DREHREGLER
+        ========================================== -->
+
+        <button
+
+            id="crtPower"
+
+            class="crt-knob crt-knob-power"
+
+            type="button"
+
+            aria-label="TV einschalten">
+
+        </button>
+
+        <div class="crt-knob-power-glow"></div>
+
+        <!-- ==========================================
+             UNTERER DREHREGLER
+        ========================================== -->
+
+        <button
+
+            id="crtChannelButton"
+
+            class="crt-knob crt-knob-channel"
+
+            type="button"
+
+            aria-label="Kanal wechseln">
+
+        </button>
+
+        <div class="crt-knob-channel-glow"></div>
+
+    </div>
+
+</div>
+
+
+
+    <div class="card">
+
+        <section class="section">
+
+<!-- ==========================================
+     RETRO MEMORY
+========================================== -->
+
+<section class="retro-memory">
+
+    <div class="memory-photo">
+
+    <img
+        class="pixelkumpel-photo"
+        src="assets/images/ersterc64.webp"
+        alt="Andy und Sascha damals am Commodore 64">
+
+    <div class="memory-caption">
+        <span id="memoryType"></span>
+    </div>
+
+</div>
+
+    <div class="memory-text">
+
+        <span class="memory-title">
+
+            DAMALS FING ALLES AN...
+
+        </span>
+
+        <h2>
+
+            Zwei Freunde, zwei Joysticks und viel zu wenig Freizeit
+
+        </h2>
 
         <p>
-            Es begann, wie viele große Geschichten der Computerwelt: mit flimmernden Bildschirmen,
-            knarzenden Joysticks und dem festen Glauben, dass man dieses eine Level diesmal wirklich
-            schaffen würde.
+
+            Es begann, wie viele große Geschichten der Computerwelt:
+            mit flimmernden Bildschirmen, knarzenden Joysticks und
+            dem festen Glauben, dass man dieses eine Level diesmal
+            wirklich schaffen würde.
+
         </p>
+
+    </div>
+
+</section>
 
         <p>
             Wir, die Pixelkumpel – Andy und Sascha – kennen uns bereits seit den goldenen Tagen des
@@ -99,6 +262,7 @@
             Galaxien, erkundeten Dungeons oder scheiterten glorreich an Spielen, die heute vermutlich
             als pädagogisch fragwürdig gelten würden.
         </p>
+        <br>
 
         <p>
             Mit den Jahren wurden die Computer moderner, die Haare teilweise weniger und die Freizeit
@@ -106,6 +270,7 @@
             immer gleich: die Begeisterung für gute Spiele und die Freude daran, gemeinsam virtuelle
             Welten unsicher zu machen.
         </p>
+        <br>
 
         <p>
             Heute trennen uns zwar einige Kilometer mehr als früher, doch dank moderner Technik können
@@ -114,6 +279,7 @@
             heute etwas seltener und deutlich selektiver. Aber der Spaß ist derselbe wie damals, als
             wir zum ersten Mal einen Joystick in die Hand genommen haben.
         </p>
+        <br>
 
         <p>
             Die Idee „Die Pixelkumpel“ entstand aus Andys langjährigem Projekt
@@ -122,16 +288,14 @@
             Seitdem präsentieren wir Spiele unserer Jugend, werfen einen Blick auf vergessene
             Klassiker, sprechen über besondere Erinnerungen und geben natürlich auch unsere ganz
             persönliche Meinung dazu ab – manchmal sachlich, manchmal nostalgisch und gelegentlich
-            mit einem gewissen Hang zur Verklärung der guten alten Zeit.
-        </p>
-
-        <p>
-            Dabei interessieren uns nicht nur die großen Klassiker. Oft sind es gerade die kleinen
+            mit einem gewissen Hang zur Verklärung der guten alten Zeit. Dabei interessieren uns nicht 
+            nur die großen Klassiker. Oft sind es gerade die kleinen
             Besonderheiten, kuriosen Ideen und technischen Meisterleistungen, die den Charme von
             C64 und Amiga bis heute ausmachen. Wir möchten Erinnerungen wecken, interessante
             Hintergründe zeigen und vielleicht auch den einen oder anderen Zuschauer dazu bringen,
             seinen alten Rechner wieder aus dem Keller zu holen.
         </p>
+        <br>
 
         <p>
             Natürlich scheuen wir auch keine größeren Projekte. Unser erstes großes
@@ -141,30 +305,31 @@
             aus Neugier, Begeisterung und gelegentlicher Verzweiflung an, die uns schon seit unserer
             Jugend begleitet.
         </p>
+        <br>
 
         <p>
             Unser Ziel ist dabei denkbar einfach: Wir wollen Spaß haben. Wir wollen über Spiele
             sprechen, die uns geprägt haben, Erinnerungen teilen und vielleicht auch zeigen, dass
             hinter den groben Pixeln und den piepsenden Soundchips oft mehr Herzblut steckt als in
-            manchem modernen Hochglanzspiel.
+            manchem modernen Hochglanzspiel.Denn seien wir ehrlich: Wer einmal nächtelang vor einem C64 
+            oder Amiga gesessen hat, weiß, dass Retro-Gaming keine Phase ist. Es ist eher eine lebenslange 
+            Nebenwirkung.
         </p>
-
-        <p>
-            Denn seien wir ehrlich: Wer einmal nächtelang vor einem C64 oder Amiga gesessen hat,
-            weiß, dass Retro-Gaming keine Phase ist. Es ist eher eine lebenslange Nebenwirkung.
-        </p>
+        <br>
 
         <p>
             Und solange irgendwo noch ein Pixel leuchtet, ein Diskettenlaufwerk rattert oder ein
             Competition-Pro-Joystick heldenhaft seinen letzten Mikroschalter verteidigt, werden die
             Pixelkumpel nicht weit entfernt sein.
         </p>
-
+</section>
     </div>
 
 </div>
+</div>
+</div>
 
-    <div style="text-align:center;margin-top:60px;">
+    <div style="text-align:center;margin-top:10px;">
 
             <a class="welcome-button" href="index.html">
                 ← Zurück zur Startseite
@@ -180,7 +345,7 @@
     <a href="impressum.html">Impressum</a> |
     <a href="datenschutz.html">Datenschutz</a>
 </footer>
-
+<script src="assets/js/pixelkumpel.js"></script>
 </body>
 </html>
  

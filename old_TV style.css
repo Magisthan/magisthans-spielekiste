@@ -1,0 +1,7679 @@
+/* ==========================
+   Lokale Schriftarten
+   ========================== */
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ==========================
+   Farben
+   ========================== */
+
+:root {
+
+    --bg: #080812;
+    --panel: #141424;
+
+    --pink: #ff2ac3;
+    --blue: #3aa8ff;
+
+    --text: #f3f3f3;
+
+    --border: #26264a;
+}
+
+/* ==========================
+   Basis
+   ========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: var(--bg);
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    line-height: 1.7;
+}
+
+a {
+
+    color: var(--blue);
+
+    text-decoration: none;
+}
+
+a:hover {
+
+    color: var(--pink);
+}
+
+/* ==========================
+   Hero Banner
+   ========================== */
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.game-cover,
+.screenshot {
+    height: auto;
+}
+
+/* ==========================
+   Navigation
+   ========================== */
+
+nav {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    background: rgba(13,13,24,0.95);
+
+    backdrop-filter: blur(8px);
+
+    padding: 15px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+nav a {
+
+    font-family: 'Orbitron', sans-serif;
+
+    color: white;
+
+    margin: 0 8px;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    transition: all 0.25s ease;
+
+    display: inline-block;
+}
+
+nav a:hover {
+
+    color: #ffffff;
+
+    background: rgba(58,168,255,0.15);
+
+    box-shadow: 0 0 12px rgba(58,168,255,0.35);
+
+    transform: translateY(-2px);
+}
+
+/* ==========================
+   Pixelkumpel Menüpunkt
+   ========================== */
+
+.pixelkumpel-link {
+
+    display: inline-flex !important;
+
+    align-items: center;
+
+    gap: 8px;
+
+    vertical-align: middle;
+}
+
+.pixelkumpel-link img {
+
+    position: relative;
+
+    top: -1px;
+}
+
+/* ==========================
+   Layout
+   ========================== */
+
+.container {
+
+    max-width: 1240px;
+
+    margin: auto;
+
+    padding: 40px 20px;
+}
+
+.layout {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 25px;
+}
+
+/* ==========================
+   Überschriften
+   ========================== */
+
+h2 {
+
+    font-family: 'Orbitron', sans-serif;
+
+    color: var(--blue);
+
+    margin-top: 45px;
+
+    margin-bottom: 20px;
+
+    text-shadow: 0 0 10px rgba(58,168,255,0.4);
+}
+
+h2:first-of-type {
+
+    margin-top: 0;
+}
+
+h3 {
+
+    font-family: 'Orbitron', sans-serif;
+
+    margin-bottom: 10px;
+}
+
+/* ==========================
+   Retro Ticker
+   ========================== */
+
+.retro-wissen {
+
+    width: 100%;
+
+    height: 38px;
+
+    padding: 0 12px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: rgba(58,168,255,0.05);
+
+    border: 1px solid rgba(58,168,255,0.15);
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+.retro-wissen-label {
+
+    color: #3aa8ff;
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.retro-ticker {
+
+    overflow: hidden;
+
+    flex: 1;
+}
+
+.retro-ticker-content {
+
+    white-space: nowrap;
+
+    display: inline-block;
+
+    padding-left: 100%;
+
+    animation: retroTicker 35s linear infinite;
+
+    font-size: 0.9rem;
+}
+
+@keyframes retroTicker {
+
+    from {
+
+        transform: translateX(0);
+    }
+
+    to {
+
+        transform: translateX(-100%);
+    }
+}
+
+/* ==========================
+   Karten
+   ========================== */
+
+.card {
+
+    background: var(--panel);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 20px rgba(255,42,195,0.15),
+        0 0 30px rgba(58,168,255,0.10);
+}
+
+/* ==========================
+   Kartenraster
+   ========================== */
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+}
+
+/* ==========================
+   Video Thumbnail
+   ========================== */
+
+.thumb {
+
+    height: 180px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--pink),
+            var(--blue)
+        );
+
+    margin-bottom: 15px;
+}
+
+/* ==========================
+   YouTube
+   ========================== */
+
+iframe {
+
+    width: 100%;
+
+    height: 500px;
+
+    border: none;
+
+    border-radius: 14px;
+}
+
+/* ==========================
+   Sidebar
+   ========================== */
+
+.sidebar .card {
+
+    margin-bottom: 20px;
+}
+
+/* ==========================
+   Timeline
+   ========================== */
+
+.timeline .card {
+
+    margin-bottom: 15px;
+}
+
+/* ==========================
+   Social
+   ========================== */
+
+.social a {
+
+    display: inline-block;
+
+    margin-right: 15px;
+}
+
+/* ==========================
+   Playlist Sidebar
+   ========================== */
+
+.playlist-bg {
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.playlist-bg .playlist-title,
+.playlist-bg .platform-tag,
+.playlist-bg .platform-icons {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+/* ==========================
+   Playlist Spiele
+   ========================== */
+
+.playlist-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.90;
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+    z-index: 0;
+}
+
+.playlist-bg:hover .playlist-image {
+    opacity: 1.00;
+    transform: scale(1.03);
+}
+
+.patrizier-bg .playlist-image,
+.fugger2-bg .playlist-image,
+.ringsofmedusa-bg .playlist-image,
+.burntime-bg .playlist-image {
+    object-position: center 70%;
+}
+
+/* ==========================
+   Playlist Sidebar Weiter
+   ========================== */
+
+.playlist-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.playlist-list li {
+    margin-bottom: 10px;
+}
+
+.playlist-list a {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    min-height: 110px;
+
+    padding: 12px;
+
+    background: rgba(58,168,255,0.08);
+
+    border: 1px solid rgba(58,168,255,0.20);
+
+    border-radius: 10px;
+
+    color: #d8d8d8;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.playlist-list a:hover {
+
+    color: #ffffff;
+
+    border-color: #3aa8ff;
+
+    background: rgba(58,168,255,0.18);
+
+    box-shadow: 0 0 10px rgba(58,168,255,0.35);
+
+    transform: translateX(4px);
+}
+
+/* ==========================
+   Playlist Titel
+   ========================== */
+
+.playlist-title {
+
+    display: block;
+
+    font-size: 0.95rem;
+
+    line-height: 1.4;
+
+    margin-bottom: 12px;
+
+    color: #ffffff;
+}
+
+/* ==========================
+   Plattform Icons
+   ========================== */
+
+.platform-tag {
+
+    align-self: flex-end;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.92);
+
+    border: 1px solid rgba(255,255,255,0.10);
+
+    box-shadow: 0 0 6px rgba(255,255,255,0.15);
+}
+
+.platform-tag img {
+
+    width: 20px;
+
+    height: 20px;
+
+    object-fit: contain;
+}
+
+/* Für mehrere Plattformen */
+
+.platform-icons {
+
+    display: flex;
+
+    gap: 6px;
+
+    align-self: flex-end;
+}
+
+/* ==========================
+   Retro News Flash Archiv
+   ========================== */
+
+.archive-card {
+
+    text-align: center;
+}
+
+.archive-card p {
+
+    color: #cfcfcf;
+
+    margin-bottom: 20px;
+}
+
+.archive-button {
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    border-radius: 10px;
+
+    background: rgba(58,168,255,0.12);
+
+    border: 1px solid rgba(58,168,255,0.25);
+
+    color: #ffffff;
+
+    transition: all 0.25s ease;
+}
+
+.archive-button:hover {
+
+    background: rgba(58,168,255,0.20);
+
+    border-color: #3aa8ff;
+
+    box-shadow: 0 0 12px rgba(58,168,255,0.35);
+
+    transform: translateY(-2px);
+}
+
+/* ==========================
+   SEO Box
+   ========================== */
+
+.seo-box p {
+
+    color: #cfcfcf;
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+
+    text-align: left;
+
+    margin-bottom: 12px;
+}
+
+.seo-box p:last-child {
+
+    margin-bottom: 0;
+}
+
+/* ==========================
+   Social Sidebar
+   ========================== */
+
+.social-list {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.social-list li {
+
+    margin-bottom: 10px;
+}
+
+.social-list li:last-child {
+
+    margin-bottom: 0;
+}
+
+.social-list a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 10px 12px;
+
+    background: rgba(58,168,255,0.08);
+
+    border: 1px solid rgba(58,168,255,0.20);
+
+    border-radius: 8px;
+
+    color: #d8d8d8;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.social-list a:hover {
+
+    color: #ffffff;
+
+    border-color: #3aa8ff;
+
+    background: rgba(58,168,255,0.18);
+
+    box-shadow: 0 0 10px rgba(58,168,255,0.35);
+
+    transform: translateX(4px);
+}
+
+.social-list img {
+
+    width: 24px;
+
+    height: 24px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+.legal-content {
+
+    line-height: 1.9;
+
+    color: #d8d8d8;
+}
+
+.legal-content h3 {
+
+    margin-top: 30px;
+
+    color: var(--blue);
+}
+
+.legal-content p {
+
+    margin-bottom: 15px;
+
+    text-align: justify;
+}
+
+/* ==========================
+   Rechtstexte
+   ========================== */
+
+.legal-content h3 {
+
+    margin-top: 30px;
+
+    margin-bottom: 12px;
+
+    color: var(--blue);
+}
+
+.legal-content p {
+
+    margin-bottom: 15px;
+
+    text-align: justify;
+}
+
+.legal-content ul {
+
+    margin: 15px 0 20px 25px;
+}
+
+.legal-content li {
+
+    margin-bottom: 8px;
+}
+
+/* ==========================
+   Letzte Videos Modern
+   ========================== */
+
+.latest-videos-modern {
+
+    background: var(--panel);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+}
+
+.video-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 15px;
+
+    border-bottom: 1px solid rgba(58,168,255,0.12);
+
+    color: inherit;
+
+    transition: all 0.25s ease;
+}
+
+.video-row:last-child {
+
+    border-bottom: none;
+}
+
+.video-row:hover {
+
+    background: rgba(58,168,255,0.08);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 12px rgba(58,168,255,0.20);
+
+}
+
+.video-thumb {
+
+    flex-shrink: 0;
+
+    width: 220px;
+}
+
+.video-thumb img {
+
+    width: 100%;
+
+    border-radius: 8px;
+
+    display: block;
+
+    transition: transform 0.25s ease;
+}
+
+.video-row:hover .video-thumb img {
+
+    transform: scale(1.03);
+}
+
+
+
+.video-info {
+
+    flex: 1;
+}
+
+.video-info h3 {
+
+    margin-bottom: 8px;
+
+    font-size: 1.25rem;
+
+    color: #ffffff;
+
+    line-height: 1.4;
+}
+
+.video-info p {
+
+    color: #a8a8a8;
+
+    font-size: 0.95rem;
+}
+
+.video-arrow {
+
+    font-size: 2rem;
+
+    color: var(--blue);
+
+    padding-right: 10px;
+
+    transition: all 0.25s ease;
+}
+
+.video-row:hover .video-arrow {
+
+    transform: translateX(10px);
+
+    color: var(--pink);
+}
+
+/* ==========================
+   Featured Video
+   ========================== */
+
+.featured-video-card {
+
+    background: var(--panel);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    margin-bottom: 30px;
+}
+
+.featured-video-card iframe {
+
+    width: 100%;
+
+    height: 520px;
+
+    border: none;
+
+    display: block;
+}
+
+.lite-video-button {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: #000;
+    color: #ffffff;
+    cursor: pointer;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    font: inherit;
+}
+
+.lite-video-button img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: 0.88;
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+.lite-video-button:hover img {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+.lite-video-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 78px;
+    height: 78px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(255,42,195,0.88);
+    box-shadow: 0 0 28px rgba(255,42,195,0.45);
+    transform: translate(-50%, -50%);
+}
+
+.lite-video-play::before {
+    content: "";
+    width: 0;
+    height: 0;
+    margin-left: 6px;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 25px solid #ffffff;
+}
+
+/* ==========================
+   Willkommen Box
+   ========================== */
+
+.welcome-box {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    background: var(--panel);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 30px;
+
+    margin-bottom: 35px;
+
+    overflow: hidden;
+}
+
+.welcome-text {
+
+    flex: 1;
+}
+
+.welcome-text h2 {
+
+    margin-bottom: 15px;
+}
+
+.welcome-text p {
+
+    color: #d0d0d0;
+
+    max-width: 500px;
+
+    margin-bottom: 25px;
+}
+
+.welcome-image {
+
+    flex-shrink: 0;
+}
+
+.welcome-image img {
+
+    width: 280px;
+
+    max-width: 100%;
+
+    border-radius: 10px;
+}
+
+.welcome-button {
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background: rgba(58,168,255,0.12);
+
+    border: 1px solid rgba(58,168,255,0.35);
+
+    border-radius: 10px;
+
+    color: white;
+
+    transition: all 0.25s ease;
+}
+
+.welcome-button:hover {
+
+    background: rgba(58,168,255,0.25);
+
+    box-shadow: 0 0 15px rgba(58,168,255,0.35);
+
+    transform: translateY(-2px);
+}
+
+/* ==========================
+   Box of the Day
+   ========================== */
+
+.box-of-day {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+    background: var(--panel);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 30px;
+
+    margin-bottom: 35px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.box-of-day {
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.box-of-day:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 25px rgba(58,168,255,0.15);
+}
+
+.box-day-image {
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.box-day-image img {
+
+    transition: transform 0.35s ease;
+}
+
+.box-of-day:hover .box-day-image img {
+
+    transform: scale(1.03);
+}
+
+.box-of-day:hover::before {
+
+    box-shadow:
+        0 0 12px rgba(255,77,225,0.7);
+}
+
+/* Neon-Leiste */
+
+.box-of-day::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        #3aa8ff,
+        #ff4de1
+    );
+}
+
+/* Bild */
+
+.box-day-image {
+
+    flex-shrink: 0;
+}
+
+.box-day-image img {
+
+    width: 320px;
+
+    max-width: 100%;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+/* Inhalt */
+
+.box-day-content {
+
+    flex: 1;
+}
+
+.box-day-label {
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    background: rgba(255,77,225,0.12);
+
+    border: 1px solid rgba(255,77,225,0.30);
+
+    color: #ff4de1;
+
+    font-weight: 600;
+
+    font-size: 0.85rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.box-day-content h2 {
+
+    color: var(--blue);
+
+    margin-bottom: 8px;
+}
+
+.box-day-subtitle {
+
+    color: #b0b0b0;
+
+    margin-bottom: 18px;
+}
+
+.box-day-description {
+
+    color: #d0d0d0;
+
+    margin-bottom: 20px;
+}
+
+.box-day-button {
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background: rgba(58,168,255,0.12);
+
+    border: 1px solid rgba(58,168,255,0.35);
+
+    border-radius: 10px;
+
+    color: white;
+
+    transition: all 0.25s ease;
+}
+
+.box-day-button:hover {
+
+    background: rgba(58,168,255,0.25);
+
+    box-shadow: 0 0 15px rgba(58,168,255,0.35);
+
+    transform: translateY(-2px);
+}
+
+/* ==========================
+   Magisthans Wertung
+   ========================== */
+
+.review-box {
+
+    display: flex;
+
+    gap: 30px;
+
+    align-items: center;
+
+    background: var(--panel);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 30px;
+
+    margin-top: 40px;
+}
+
+.review-photo {
+
+    flex-shrink: 0;
+
+    text-align: center;
+}
+
+.review-photo img {
+
+    width: 120px;
+
+    height: 120px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid rgba(58,168,255,0.35);
+
+    transition: all .3s ease;
+}
+
+.review-photo img:hover {
+
+    transform: scale(1.05);
+
+    box-shadow: 0 0 18px rgba(58,168,255,.35);
+}
+
+.review-name {
+
+    margin-top: 10px;
+
+    font-size: .9rem;
+
+    color: #bfbfbf;
+}
+
+.review-content {
+
+    flex: 1;
+}
+
+.review-stars {
+
+    font-size: 2rem;
+
+    color: #FFD54A;
+
+    letter-spacing: 3px;
+
+    text-shadow:
+        0 0 8px rgba(255,213,74,.45);
+
+    margin-bottom: 8px;
+}
+
+.review-rating {
+
+    font-weight: bold;
+
+    color: var(--blue);
+
+    margin-bottom: 18px;
+}
+
+.review-text {
+
+    color: #d0d0d0;
+
+    line-height: 1.8;
+}
+
+/* ==========================
+   Animierte Sterne
+   ========================== */
+
+.review-stars {
+
+    position: relative;
+
+    display: inline-block;
+
+    font-size: 2rem;
+
+    letter-spacing: 4px;
+
+    line-height: 1;
+}
+
+/* Graue Sterne */
+
+.review-stars::before {
+
+    content: "★★★★★";
+
+    color: #555;
+}
+
+/* Goldene Sterne */
+
+.review-stars::after {
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    color: #FFD54A;
+
+    text-shadow: 0 0 10px rgba(255,213,74,.6);
+
+    width: 0;
+
+    transition: width 3.8s ease-in-out;
+}
+
+/* Animation wird gestartet */
+
+.review-stars.animate::after {
+
+    width: var(--rating-width);
+}
+
+/* Sterne-Klassen */
+
+.stars-5::after {
+
+    content: "★★★★★";
+
+    --rating-width: 100%;
+}
+
+.stars-4-5::after {
+
+    content: "★★★★★";
+
+    --rating-width: 90%;
+}
+
+.stars-4::after {
+
+    content: "★★★★★";
+
+    --rating-width: 80%;
+}
+
+.stars-3-5::after {
+
+    content: "★★★★★";
+
+    --rating-width: 70%;
+}
+
+.stars-3::after {
+
+    content: "★★★★★";
+
+    --rating-width: 60%;
+}
+
+.stars-2-5::after {
+
+    content: "★★★★★";
+
+    --rating-width: 50%;
+}
+
+.stars-2::after {
+
+    content: "★★★★★";
+
+    --rating-width: 40%;
+}
+
+.stars-1-5::after {
+
+    content: "★★★★★";
+
+    --rating-width: 30%;
+}
+
+.stars-1::after {
+
+    content: "★★★★★";
+
+    --rating-width: 20%;
+}
+
+/* =====================================================
+   Retro News Flash
+   ===================================================== */
+
+/* -----------------------------
+   Hero Bereich
+------------------------------*/
+
+.hero-card{
+
+    padding:45px;
+
+}
+
+/* -----------------------------
+   Logo Karte
+------------------------------*/
+
+.hero-logo-card{
+
+    max-width:920px;
+
+    margin:0 auto 35px auto;
+
+    padding:30px 35px;
+
+    background:rgba(255,255,255,.025);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:18px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.03),
+        0 10px 28px rgba(0,0,0,.18);
+
+}
+
+.rnf-header{
+
+    display:block;
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:0 auto 8px auto;
+
+    border-radius:14px;
+
+    transition:transform .35s ease;
+
+    filter:
+
+        brightness(1)
+
+        saturate(1)
+
+        drop-shadow(0 0 8px rgba(58,168,255,.20))
+
+        drop-shadow(0 0 14px rgba(255,77,225,.10));
+
+    animation:rnfNeon 12s infinite;
+
+}
+
+.rnf-header:hover{
+
+    transform:scale(1.01);
+
+}
+
+@keyframes rnfNeon{
+
+    /* Normal */
+
+    0%,15%{
+
+        filter:
+
+            brightness(1)
+
+            contrast(1)
+
+            saturate(1)
+
+            drop-shadow(0 0 8px rgba(58,168,255,.20))
+
+            drop-shadow(0 0 14px rgba(255,77,225,.10));
+
+    }
+
+    /* Logo wird langsam heller */
+
+    19%{
+
+        filter:
+
+            brightness(1.08)
+
+            contrast(1.03)
+
+            saturate(1.08)
+
+            drop-shadow(0 0 12px rgba(58,168,255,.35))
+
+            drop-shadow(0 0 24px rgba(255,77,225,.20));
+
+    }
+
+    /* kurzer Peak */
+
+    21%{
+
+        filter:
+
+            brightness(1.15)
+
+            contrast(1.06)
+
+            saturate(1.15)
+
+            drop-shadow(0 0 18px rgba(58,168,255,.55))
+
+            drop-shadow(0 0 36px rgba(255,77,225,.35))
+
+            drop-shadow(0 0 10px rgba(255,255,255,.15));
+
+    }
+
+    /* kleines Flackern */
+
+    23%{
+
+        filter:
+
+            brightness(.97)
+
+            contrast(.98)
+
+            saturate(.96)
+
+            drop-shadow(0 0 6px rgba(58,168,255,.15))
+
+            drop-shadow(0 0 10px rgba(255,77,225,.08));
+
+    }
+
+    /* nochmal heller */
+
+    25%{
+
+        filter:
+
+            brightness(1.12)
+
+            contrast(1.04)
+
+            saturate(1.10)
+
+            drop-shadow(0 0 16px rgba(58,168,255,.45))
+
+            drop-shadow(0 0 28px rgba(255,77,225,.30));
+
+    }
+
+    /* zurück */
+
+    72%,100%{
+
+        filter:
+
+            brightness(1)
+
+            contrast(1)
+
+            saturate(1)
+
+            drop-shadow(0 0 8px rgba(58,168,255,.20))
+
+            drop-shadow(0 0 14px rgba(255,77,225,.10));
+
+    }
+
+}
+
+/* -----------------------------
+   Infobox
+------------------------------*/
+
+.hero-info-card{
+
+    max-width:920px;
+
+    margin:0 auto;
+
+    padding:40px 50px;
+
+    background:rgba(255,255,255,.025);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:18px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.03),
+        0 10px 28px rgba(0,0,0,.18);
+
+    text-align:center;
+
+}
+
+.hero-info-card h1{
+
+    margin:0 0 18px;
+
+}
+
+.rnf-subtitle{
+
+    color:#bfc7dc;
+
+    font-size:1.08rem;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.rnf-divider{
+
+    width:180px;
+
+    height:4px;
+
+    margin:0 auto 30px;
+
+    border-radius:2px;
+
+    background:linear-gradient(
+        90deg,
+        #3aa8ff,
+        #ff4de1
+    );
+
+}
+
+/* -----------------------------
+   Metadaten
+------------------------------*/
+
+.rnf-meta{
+
+    max-width:600px;
+
+    margin:0 auto;
+
+}
+
+.rnf-meta div{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.rnf-meta div:last-child{
+
+    border-bottom:none;
+
+}
+
+.rnf-meta span{
+
+    color:#97a5c3;
+
+    font-weight:600;
+
+}
+
+.rnf-meta strong{
+
+    color:#ffffff;
+
+    font-weight:600;
+
+}
+
+.hero-info-card .game-button{
+
+    margin-top:35px;
+
+}
+
+/* -----------------------------
+   Inhaltsbereiche
+------------------------------*/
+
+.section{
+
+    margin-top:45px;
+
+}
+
+.section:first-child{
+
+    margin-top:0;
+
+}
+
+.section h2{
+
+    margin-bottom:20px;
+
+}
+
+.section p,
+
+.section li{
+
+    line-height:1.85;
+
+}
+
+/* -----------------------------
+   Trenner
+------------------------------*/
+
+.content-divider{
+
+    border:0;
+
+    height:1px;
+
+    margin:45px 0;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(58,168,255,.18),
+
+        rgba(255,77,225,.18),
+
+        transparent
+
+    );
+
+}
+
+/* -----------------------------
+   Mission Box
+------------------------------*/
+
+.mission-box{
+
+    display:flex;
+
+    gap:30px;
+
+    align-items:center;
+
+    padding:35px;
+
+    background:rgba(255,255,255,.02);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:16px;
+
+}
+
+.mission-box img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    flex-shrink:0;
+
+}
+
+/* -----------------------------
+   Ziele
+------------------------------*/
+
+.goal-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:24px;
+
+    margin-top:25px;
+
+}
+
+.goal-card{
+
+    padding:22px;
+
+    text-align:center;
+
+    background:rgba(58,168,255,.08);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:14px;
+
+    transition:.25s;
+
+}
+
+.goal-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 18px rgba(58,168,255,.18);
+
+}
+
+/* -----------------------------
+   Timeline
+------------------------------*/
+
+.rnf-timeline{
+
+    padding-left:28px;
+
+    line-height:2;
+
+}
+
+/* -----------------------------
+   Responsive
+------------------------------*/
+
+@media (max-width:800px){
+
+    .hero-card{
+
+        padding:25px;
+
+    }
+
+    .hero-logo-card,
+
+    .hero-info-card{
+
+        padding:25px;
+
+    }
+
+    .mission-box{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .rnf-meta div{
+
+        flex-direction:column;
+
+        gap:6px;
+
+    }
+
+}
+
+/* =====================================================
+   PIXELKUMPEL CRT TV 2.0
+   LAYOUT
+===================================================== */
+
+.pixelkumpel-tv{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:50px auto 70px;
+
+}
+
+/* =====================================================
+   CRT HINT
+===================================================== */
+
+.crt-hint{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:22px;
+
+    transform:
+
+        translateX(-50%)
+        translateY(10px);
+
+    padding:8px 18px;
+
+    border-radius:8px;
+
+    background:rgba(0,0,0,.75);
+
+    border:1px solid rgba(121,255,67,.45);
+
+    color:#79ff43;
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:.82rem;
+
+    letter-spacing:1px;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease;
+
+    z-index:50;
+
+}
+
+.crt-hint.show{
+
+    opacity:1;
+
+    transform:
+
+        translateX(-50%)
+        translateY(0);
+
+}
+
+
+/* =====================================================
+   FERNSEHER
+===================================================== */
+
+.crt-frame{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+    user-select:none;
+
+    pointer-events:none;
+
+}
+
+
+/* =====================================================
+   BILDSCHIRM
+   Exakt aus dem Originalbild berechnet
+===================================================== */
+
+.crt-screen{
+
+    position:absolute;
+
+    overflow:hidden;
+
+    left:12.55%;
+
+    top:18.55%;
+
+    width:59.56%;
+
+    height:57.49%;
+
+    background:#000;
+
+    isolation:isolate;
+
+}
+
+
+/* =====================================================
+   THUMBNAIL
+===================================================== */
+
+.crt-thumbnail{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:
+
+        opacity .35s ease,
+
+        transform .45s ease,
+
+        filter .45s ease;
+
+}
+
+
+/* =====================================================
+   VIDEO
+===================================================== */
+
+.crt-video{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:none;
+
+    background:#000;
+
+}
+
+
+/* =====================================================
+   GLASREFLEX
+===================================================== */
+
+.crt-glass{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+
+        radial-gradient(
+
+            ellipse at 22% 18%,
+
+            rgba(255,255,255,.30),
+
+            transparent 28%
+
+        ),
+
+        radial-gradient(
+
+            ellipse at 78% 16%,
+
+            rgba(255,255,255,.10),
+
+            transparent 36%
+
+        );
+
+    mix-blend-mode:screen;
+
+}
+
+
+/* =====================================================
+   VIGNETTE
+===================================================== */
+
+.crt-vignette{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+
+        radial-gradient(
+
+            ellipse at center,
+
+            transparent 62%,
+
+            rgba(0,0,0,.28) 100%
+
+        );
+
+}
+
+
+/* =====================================================
+   SCANLINES
+===================================================== */
+
+.crt-scanlines{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    opacity:.12;
+
+    background:
+
+        repeating-linear-gradient(
+
+            transparent 0,
+
+            transparent 3px,
+
+            rgba(255,255,255,.05) 4px,
+
+            transparent 5px
+
+        );
+
+}
+
+
+/* =====================================================
+   PLAY OVERLAY
+===================================================== */
+
+.crt-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:
+
+        opacity .35s ease;
+
+}
+
+/* =====================================================
+   CHANNEL INFO
+===================================================== */
+
+.crt-channel{
+
+    position:absolute;
+
+    left:22px;
+
+    bottom:18px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:2px;
+
+    padding:8px 12px;
+
+    border-radius:8px;
+
+    background:rgba(0,0,0,.45);
+
+    backdrop-filter:blur(3px);
+
+    opacity:0;
+
+    transform:translateY(8px);
+
+    transition:
+        opacity .30s ease,
+        transform .30s ease;
+
+    pointer-events:none;
+
+    z-index:40;
+
+    overflow:hidden;
+
+}
+
+.crt-channel::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(121,255,67,.18),
+            transparent
+        );
+
+    transform:translateX(-120%);
+
+    opacity:0;
+
+}
+
+.channel-number{
+
+    font-family:Orbitron,sans-serif;
+
+    color:#79ff43;
+
+    font-size:.70rem;
+
+    letter-spacing:1.5px;
+
+}
+
+.channel-title{
+
+    color:white;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+}
+
+.crt-wrapper:hover .crt-channel{
+
+    opacity:1;
+
+    transform:
+
+        translateY(0);
+
+}
+
+.crt-wrapper:hover .channel-number{
+
+    animation:
+
+        crtText 2s infinite;
+
+}
+
+
+/* =====================================================
+   PLAY BUTTON
+===================================================== */
+
+.crt-play-button{
+
+    background:rgba(0,0,0,.55);
+
+    border:2px solid rgba(121,255,67,.85);
+
+    border-radius:999px;
+
+    padding:14px 28px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    cursor:pointer;
+
+    backdrop-filter:blur(4px);
+
+    transition:
+
+        transform .25s ease,
+
+        box-shadow .25s ease,
+
+        background .25s ease;
+    
+    animation:playPulse 2.5s infinite;
+
+}
+
+
+.crt-play-button:hover{
+
+    transform:translateY(-2px);
+
+    background:rgba(0,0,0,.72);
+
+    box-shadow:
+
+        0 0 18px rgba(121,255,67,.35);
+
+}
+
+
+.play-text{
+
+    font-family:Orbitron,sans-serif;
+
+    letter-spacing:2px;
+
+    font-size:.85rem;
+
+    color:white;
+
+}
+
+
+/* =====================================================
+   POWER LED
+===================================================== */
+
+.crt-led{
+
+    position:absolute;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    right:5.48%;
+
+    bottom:22.75%;
+
+    background:#640000;
+
+    transition:
+
+        background .25s ease,
+
+        box-shadow .25s ease;
+
+}
+
+
+.crt-led.on{
+
+    background:#ff3030;
+
+    box-shadow:
+
+        0 0 8px #ff3030,
+
+        0 0 18px #ff3030,
+
+        0 0 28px rgba(255,60,60,.8);
+
+}
+
+
+
+
+/* =====================================================
+   KNOB GLOW
+===================================================== */
+
+.crt-knob-glow{
+
+    position:absolute;
+
+    right:3.9%;
+
+    top:24.3%;
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    opacity:0;
+
+    transition:
+
+        opacity .25s ease;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(121,255,67,.22),
+
+            transparent 70%
+
+        );
+
+    filter:blur(10px);
+
+}
+
+
+/* Hover */
+
+.crt-wrapper:hover .crt-knob-glow{
+
+    opacity:1;
+
+}
+
+
+/* Thumbnail */
+
+.crt-wrapper:hover .crt-thumbnail{
+
+    transform:scale(1.02);
+
+    filter:brightness(1.06);
+
+}
+
+
+/* =====================================================
+   PIXELKUMPEL CRT TV 2.0
+   LAYOUT
+===================================================== */
+
+.pixelkumpel-tv{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:50px auto 70px;
+
+}
+
+
+/* =====================================================
+   WRAPPER
+===================================================== */
+
+.crt-wrapper{
+
+    position:relative;
+
+    width:min(100%,980px);
+
+    aspect-ratio:1402 / 1122;
+
+    margin:auto;
+
+}
+
+
+/* =====================================================
+   FERNSEHER
+===================================================== */
+
+.crt-frame{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+    user-select:none;
+
+    pointer-events:none;
+
+}
+
+
+/* =====================================================
+   BILDSCHIRM
+   Originalposition des TV
+===================================================== */
+
+.crt-screen{
+
+    position:absolute;
+
+    left:12.55%;
+
+    top:18.55%;
+
+    width:59.56%;
+
+    height:57.49%;
+
+    overflow:hidden;
+
+    background:#000;
+
+    border-radius:38px 42px 44px 36px;
+
+    isolation:isolate;
+
+}
+
+
+/* =====================================================
+   THUMBNAIL
+===================================================== */
+
+.crt-thumbnail{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:
+        opacity .35s ease,
+        transform .35s ease,
+        filter .35s ease;
+
+}
+
+
+/* =====================================================
+   VIDEO
+===================================================== */
+
+.crt-video{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:none;
+
+    background:#000;
+
+}
+
+
+/* =====================================================
+   GLAS
+===================================================== */
+
+.crt-glass{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+
+        radial-gradient(
+
+            ellipse at 20% 18%,
+
+            rgba(255,255,255,.30),
+
+            transparent 28%
+
+        ),
+
+        radial-gradient(
+
+            ellipse at 80% 10%,
+
+            rgba(255,255,255,.12),
+
+            transparent 36%
+
+        );
+
+    mix-blend-mode:screen;
+
+}
+
+
+/* =====================================================
+   VIGNETTE
+===================================================== */
+
+.crt-vignette{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+
+        radial-gradient(
+
+            ellipse,
+
+            transparent 60%,
+
+            rgba(0,0,0,.28) 100%
+
+        );
+
+}
+
+
+/* =====================================================
+   SCANLINES
+===================================================== */
+
+.crt-scanlines{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:.10;
+
+    pointer-events:none;
+
+    background:
+
+        repeating-linear-gradient(
+
+            transparent 0,
+
+            transparent 3px,
+
+            rgba(255,255,255,.05) 4px,
+
+            transparent 5px
+
+        );
+
+}
+
+
+/* =====================================================
+   CHANNEL INFO
+===================================================== */
+
+
+
+
+.channel-number{
+
+    font-family:Orbitron,sans-serif;
+
+    color:#79ff43;
+
+    font-size:.70rem;
+
+    letter-spacing:2px;
+
+}
+
+
+.channel-title{
+
+    color:white;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+}
+
+
+.play-icon{
+
+    color:#79ff43;
+
+    font-size:1.2rem;
+
+}
+
+
+
+
+/* =====================================================
+   POWER LED
+===================================================== */
+
+.crt-led{
+
+    position:absolute;
+
+    left:83.7%;
+
+    top:76.3%;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#520000;
+
+    z-index:80;
+
+}
+
+
+/* =====================================================
+   POWER BUTTON
+===================================================== */
+
+.crt-power{
+
+    position:absolute;
+
+    left:82.2%;
+
+    top:19.0%;
+
+    width:70px;
+
+    height:70px;
+
+    border:none;
+
+    background:transparent;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    z-index:100;
+
+}
+
+
+
+/* =====================================================
+   CHANNEL BUTTON
+===================================================== */
+
+.crt-channel-button{
+
+    position:absolute;
+
+    left:82.2%;
+
+    top:36.8%;
+
+    width:70px;
+
+    height:70px;
+
+    border:none;
+
+    background:transparent;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    z-index:100;
+
+    transition:
+        transform .25s ease;
+
+}
+
+.crt-channel-button:hover{
+
+    transform:rotate(-4deg);
+
+}
+
+
+/* =====================================================
+   POWER GLOW
+===================================================== */
+
+.crt-power-glow{
+
+    position:absolute;
+
+    left:82.2%;
+
+    top:19.0%;
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    opacity:0;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(121,255,67,.22),
+
+            transparent 70%
+
+        );
+
+    filter:blur(12px);
+
+    transition:opacity .25s ease;
+
+}
+
+
+/* =====================================================
+   CHANNEL GLOW
+===================================================== */
+
+.crt-channel-glow{
+
+    position:absolute;
+
+    left:82.2%;
+
+    top:36.8%;
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    opacity:0;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(121,255,67,.22),
+
+            transparent 70%
+
+        );
+
+    filter:blur(12px);
+
+    transition:opacity .25s ease;
+
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.crt-power:hover ~ .crt-power-glow{
+
+    opacity:1;
+
+}
+
+.crt-channel-button:hover ~ .crt-channel-glow{
+
+    opacity:1;
+
+}
+
+.crt-wrapper:hover .crt-thumbnail{
+
+    transform:scale(1.02);
+
+    filter:brightness(1.05);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:900px){
+
+    .crt-play-button{
+
+        padding:10px 20px;
+
+    }
+
+    .play-text{
+
+        font-size:.72rem;
+
+    }
+
+}
+
+/* =====================================================
+   PIXELKUMPEL CRT TV 2.0
+   ANIMATIONEN
+===================================================== */
+
+
+/* ==========================================
+   BOOT SCREEN
+========================================== */
+
+.crt-boot{
+
+    position:absolute;
+
+    inset:0;
+
+    background:#000;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    z-index:15;
+
+}
+
+.crt-boot.active{
+
+    animation:crtBoot .55s forwards;
+
+}
+
+
+/* ==========================================
+   CRT LINE
+========================================== */
+
+.crt-line{
+
+    position:absolute;
+
+    left:0;
+
+    top:50%;
+
+    width:100%;
+
+    height:2px;
+
+    background:#ffffff;
+
+    opacity:0;
+
+    transform:translateY(-50%) scaleY(.1);
+
+    z-index:16;
+
+}
+
+.crt-line.active{
+
+    animation:crtLine .45s ease forwards;
+
+}
+
+
+/* ==========================================
+   TV STATIC
+========================================== */
+
+.crt-static{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    z-index:17;
+
+    background:
+
+        repeating-radial-gradient(
+
+            circle,
+
+            rgba(255,255,255,.18) 0 1px,
+
+            transparent 2px 4px
+
+        );
+
+    mix-blend-mode:screen;
+
+}
+
+.crt-static.active{
+
+    animation:crtStatic .35s linear forwards;
+
+}
+
+
+/* ==========================================
+   VIDEO
+========================================== */
+
+.crt-video{
+
+    opacity:0;
+
+}
+
+.crt-video.active{
+
+    animation:videoFade .45s ease forwards;
+
+}
+
+
+/* ==========================================
+   THUMBNAIL
+========================================== */
+
+.crt-thumbnail.fade{
+
+    animation:thumbFade .35s ease forwards;
+
+}
+
+
+/* ==========================================
+   LED
+========================================== */
+
+.crt-led.on{
+
+    background:#ff3c3c;
+
+    animation:ledPulse 1.6s infinite;
+
+}
+
+
+/* ==========================================
+   CHANNEL SHINE
+========================================== */
+
+.crt-channel::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            rgba(121,255,67,.16),
+
+            transparent
+
+        );
+
+    transform:translateX(-120%);
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+.crt-wrapper:hover .crt-channel::before{
+
+    opacity:1;
+
+    animation:channelShine 2.4s linear infinite;
+
+}
+
+
+/* ==========================================
+   THUMBNAIL HOVER
+========================================== */
+
+.crt-wrapper:hover .crt-thumbnail{
+
+    filter:
+
+        brightness(1.05)
+
+        contrast(1.02);
+
+}
+
+
+/* ==========================================
+   KEYFRAMES
+========================================== */
+
+@keyframes crtBoot{
+
+    0%{
+
+        opacity:1;
+
+    }
+
+    70%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+    }
+
+}
+
+
+@keyframes crtLine{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+
+            translateY(-50%)
+
+            scaleY(.08);
+
+    }
+
+    15%{
+
+        opacity:1;
+
+    }
+
+    55%{
+
+        opacity:1;
+
+        transform:
+
+            translateY(-50%)
+
+            scaleY(18);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+
+            translateY(-50%)
+
+            scaleY(42);
+
+    }
+
+}
+
+
+@keyframes crtStatic{
+
+    0%{
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:.42;
+
+    }
+
+    70%{
+
+        opacity:.28;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+    }
+
+}
+
+
+@keyframes thumbFade{
+
+    from{
+
+        opacity:1;
+
+    }
+
+    to{
+
+        opacity:0;
+
+    }
+
+}
+
+
+@keyframes videoFade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+@keyframes ledPulse{
+
+    0%{
+
+        box-shadow:
+
+            0 0 8px #ff3c3c;
+
+    }
+
+    50%{
+
+        box-shadow:
+
+            0 0 18px #ff3c3c,
+
+            0 0 35px rgba(255,60,60,.7);
+
+    }
+
+    100%{
+
+        box-shadow:
+
+            0 0 8px #ff3c3c;
+
+    }
+
+}
+
+
+@keyframes playPulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.03);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+@keyframes channelShine{
+
+    from{
+
+        transform:translateX(-120%);
+
+    }
+
+    to{
+
+        transform:translateX(120%);
+
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:700px){
+
+    .crt-channel{
+
+        left:10px;
+
+        bottom:10px;
+
+        padding:6px 10px;
+
+    }
+
+    .channel-number{
+
+        font-size:.60rem;
+
+    }
+
+    .channel-title{
+
+        font-size:.72rem;
+
+    }
+
+}
+
+   
+/* ==========================================
+   Retro News Flash Trenner
+   ========================================== */
+
+.content-divider{
+
+    border:0;
+
+    height:1px;
+
+    margin:45px 0;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(58,168,255,.22),
+        rgba(255,77,225,.18),
+        transparent
+    );
+
+}
+
+/* =====================================================
+   Retro News Flash Progress Timeline
+   ===================================================== */
+
+.rnf-progress-section{
+
+    margin-top:60px;
+
+}
+
+.rnf-progress{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-top:70px;
+
+    padding-top:30px;
+
+}
+
+/* -----------------------------------
+   Grundlinie
+----------------------------------- */
+
+.rnf-progress-line{
+
+    position:absolute;
+
+    left:8%;
+
+    right:8%;
+
+    top:11px;
+
+    height:4px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+/* -----------------------------------
+   Animierter Fortschritt
+----------------------------------- */
+
+.rnf-progress-fill{
+
+    width:82%;
+
+    height:100%;
+
+    transform:scaleX(0);
+
+    transform-origin:left center;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        #3aa8ff,
+        #6f8cff,
+        #9b63ff
+    );
+
+    box-shadow:
+        0 0 12px rgba(58,168,255,.45),
+        0 0 24px rgba(155,99,255,.25);
+
+    animation:none;
+
+}
+
+@keyframes rnfProgressFill{
+
+    from{
+
+        transform:scaleX(0);
+
+    }
+
+    to{
+
+        transform:scaleX(1);
+
+    }
+
+}
+
+/* -----------------------------------
+   Ein Punkt
+----------------------------------- */
+
+.rnf-progress-item{
+
+    position:relative;
+
+    width:170px;
+
+    text-align:center;
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+}
+
+@keyframes rnfFadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* -----------------------------------
+   Node
+----------------------------------- */
+
+.rnf-progress-node{
+
+    width:28px;
+
+    height:28px;
+
+    margin:0 auto;
+
+    border-radius:50%;
+
+    background:#3aa8ff;
+
+    border:5px solid #171c2b;
+
+    position:relative;
+
+    z-index:2;
+
+    box-shadow:
+
+        0 0 18px rgba(58,168,255,.7),
+
+        0 0 35px rgba(58,168,255,.35);
+
+    transition:.25s;
+
+}
+
+.rnf-progress-item:hover .rnf-progress-node{
+
+    transform:scale(1.18);
+
+}
+
+/* -----------------------------------
+   Future Node
+----------------------------------- */
+
+.rnf-progress-item.future .rnf-progress-node{
+
+    background:#b365ff;
+
+    box-shadow:
+
+        0 0 20px rgba(179,101,255,.85),
+
+        0 0 40px rgba(179,101,255,.35);
+
+    animation:rnfPulse 2s infinite;
+
+}
+
+@keyframes rnfPulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.25);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/* -----------------------------------
+   Datum
+----------------------------------- */
+
+.rnf-progress-date{
+
+    margin-top:18px;
+
+    color:#8ec8ff;
+
+    font-weight:700;
+
+    font-size:.95rem;
+
+}
+
+/* -----------------------------------
+   Titel
+----------------------------------- */
+
+.rnf-progress-title{
+
+    margin-top:8px;
+
+    color:white;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    line-height:1.35;
+
+}
+
+/* -----------------------------------
+   Progressbar bei Folge 100
+----------------------------------- */
+
+.rnf-progress-counter{
+
+    margin-top:16px;
+
+}
+
+.rnf-progress-counter span{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:.78rem;
+
+    color:#9fa8bc;
+
+}
+
+.rnf-progress-counter-bar{
+
+    width:110px;
+
+    height:7px;
+
+    margin:0 auto;
+
+    border-radius:20px;
+
+    background:#2a3044;
+
+    overflow:hidden;
+
+}
+
+.rnf-progress-counter-fill{
+
+    width:94%;
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        #3aa8ff,
+        #8f6dff
+    );
+
+}
+
+/* -----------------------------------
+   Popup
+----------------------------------- */
+
+.rnf-progress-popup{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:155px;
+
+    transform:translateX(-50%) translateY(12px);
+
+    width:220px;
+
+    padding:15px;
+
+    background:#1a2033;
+
+    border:1px solid rgba(58,168,255,.18);
+
+    border-radius:12px;
+
+    color:#c8d0e2;
+
+    font-size:.85rem;
+
+    line-height:1.6;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.25s;
+
+    box-shadow:
+
+        0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.rnf-progress-popup::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-8px;
+
+    width:16px;
+
+    height:16px;
+
+    background:#1a2033;
+
+    transform:translateX(-50%) rotate(45deg);
+
+    border-right:1px solid rgba(58,168,255,.18);
+
+    border-bottom:1px solid rgba(58,168,255,.18);
+
+}
+
+.rnf-progress-item:hover .rnf-progress-popup{
+
+    opacity:1;
+
+    transform:translateX(-50%) translateY(0);
+
+}
+
+/* -----------------------------------
+   Responsive
+----------------------------------- */
+
+@media(max-width:900px){
+
+.rnf-progress{
+
+    flex-direction:column;
+
+    gap:45px;
+
+    margin-top:40px;
+
+}
+
+.rnf-progress-line{
+
+    left:13px;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    right:auto;
+
+}
+
+.rnf-progress-fill{
+
+    width:100%;
+
+    height:82%;
+
+    transform:scaleY(0);
+
+    transform-origin:top center;
+
+    animation:none;
+
+}
+
+.rnf-progress-item{
+
+    width:100%;
+
+    text-align:left;
+
+    padding-left:55px;
+
+}
+
+.rnf-progress-node{
+
+    position:absolute;
+
+    left:0;
+
+}
+
+.rnf-progress-popup{
+
+    display:none;
+
+}
+
+.rnf-progress-counter-bar{
+
+    margin-left:0;
+
+}
+
+   }
+
+/* ==========================================
+   Retro Redaktion Terminal
+   ========================================== */
+
+.rnf-terminal{
+
+    background:#101522;
+
+    border:1px solid rgba(58,168,255,.18);
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.02);
+
+}
+
+.rnf-terminal-title{
+
+    padding:14px 18px;
+
+    background:linear-gradient(
+        90deg,
+        #3aa8ff,
+        #8b63ff
+    );
+
+    color:white;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    font-size:.92rem;
+
+}
+
+.rnf-terminal pre{
+
+    margin:0;
+
+    padding:22px;
+
+    font-family:Consolas,
+                 "Courier New",
+                 monospace;
+
+    color:#d8e5ff;
+
+    font-size:.96rem;
+
+    line-height:2;
+
+    white-space:pre-wrap;
+
+}
+
+.rnf-terminal .terminal-icon{
+
+    width:72px;
+    height:28px;
+
+    display:inline-block;
+
+    vertical-align:middle;
+
+    image-rendering:pixelated;
+
+}
+
+.rnf-terminal span{
+
+    color:#ffffff;
+
+    font-weight:700;
+
+}
+
+.rnf-terminal.ready{
+
+    box-shadow:
+        0 0 20px rgba(58,168,255,.20),
+        inset 0 0 0 1px rgba(255,255,255,.03);
+
+}
+
+.rnf-terminal pre::selection{
+
+    background:#3aa8ff;
+
+}
+
+.rnf-editor-highlight strong{
+
+    color:#ffffff;
+
+}
+
+.rnf-editor-highlight{
+
+    line-height:1.8;
+
+}
+
+.rnf-editor-list li{
+
+    transition:.25s;
+
+}
+
+.rnf-editor-list li:hover{
+
+    transform:translateX(6px);
+
+    color:#46b3ff;
+
+}
+
+.rnf-terminal{
+
+    transition:.35s;
+
+}
+
+.rnf-terminal:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+        0 10px 30px rgba(58,168,255,.18);
+
+}
+
+/* ==========================================
+   Retro News Flash Redaktion
+   ========================================== */
+
+.rnf-editor-card{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:35px;
+
+    margin-top:30px;
+
+    padding:35px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+}
+
+.rnf-editor-left h3{
+
+    color:#46a8ff;
+
+    font-size:1.6rem;
+
+    margin-bottom:18px;
+
+}
+
+.rnf-editor-left p{
+
+    line-height:1.9;
+
+    color:#d8dbe5;
+
+}
+
+.rnf-editor-list{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:25px 0;
+
+}
+
+.rnf-editor-list li{
+
+    padding:8px 0;
+
+    font-size:1.02rem;
+
+}
+
+.rnf-editor-highlight{
+
+    margin-top:28px;
+
+    padding:18px;
+
+    border-left:4px solid #3aa8ff;
+
+    background:rgba(58,168,255,.08);
+
+    border-radius:8px;
+
+    font-size:1.05rem;
+
+}
+
+.rnf-status{
+
+    background:#151b2b;
+
+    border:1px solid rgba(58,168,255,.15);
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.rnf-status-title{
+
+    padding:12px 18px;
+
+    background:linear-gradient(90deg,#3aa8ff,#8d63ff);
+
+    color:white;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    font-size:.9rem;
+
+}
+
+.rnf-status-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:14px 18px;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.rnf-status-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.rnf-status span{
+
+    color:#9fb2d8;
+
+}
+
+.rnf-status strong{
+
+    color:white;
+
+}
+
+.rnf-editor-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:25px;
+
+}
+
+.rnf-editor-right .welcome-button{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+@media (max-width:900px){
+
+    .rnf-editor-card{
+
+        display:flex;
+        flex-direction:column;
+
+        padding:20px;
+
+        gap:20px;
+
+    }
+
+    .rnf-terminal{
+
+        width:100%;
+
+    }
+
+    .rnf-terminal pre{
+
+        font-size:.82rem;
+
+        line-height:1.6;
+
+        padding:16px;
+
+    }
+
+}
+
+/* =====================================================
+   Workflow - Wie entsteht eine Folge?
+   ===================================================== */
+
+.episode-workflow{
+
+    margin-top:60px;
+
+}
+
+.workflow-intro{
+
+    color:#c7c7d5;
+
+    max-width:760px;
+
+    margin-bottom:45px;
+
+}
+
+.workflow{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:0;
+
+    position:relative;
+
+    margin-left:24px;
+
+}
+
+.workflow-step{
+
+    position:relative;
+
+    padding-left:70px;
+
+    padding-bottom:45px;
+
+}
+
+.workflow-step:last-child{
+
+    padding-bottom:0;
+
+}
+
+/* Verbindung */
+
+.workflow-step::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:18px;
+
+    top:36px;
+
+    width:3px;
+
+    height:100%;
+
+    background:linear-gradient(
+        to bottom,
+        #3aa8ff,
+        #ff4de1
+    );
+
+    opacity:.35;
+
+}
+
+.workflow-step:last-child::before{
+
+    display:none;
+
+}
+
+/* Nummer */
+
+.workflow-circle{
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:38px;
+
+    height:38px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:bold;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #3aa8ff,
+        #6b88ff
+    );
+
+    box-shadow:
+
+        0 0 15px rgba(58,168,255,.35);
+
+    transition:.25s;
+
+}
+
+.workflow-step:hover .workflow-circle{
+
+    transform:scale(1.12);
+
+    box-shadow:
+
+        0 0 25px rgba(58,168,255,.55);
+
+}
+
+.workflow-step h3{
+
+    margin-bottom:8px;
+
+    color:white;
+
+    font-size:1.1rem;
+
+}
+
+.workflow-step p{
+
+    color:#bfc4d3;
+
+    line-height:1.7;
+
+    max-width:700px;
+
+}
+
+/* Letzter Schritt */
+
+.workflow-finish .workflow-circle{
+
+    background:linear-gradient(
+        135deg,
+        #ff4de1,
+        #9b63ff
+    );
+
+}
+
+/* kleine Animation */
+
+.workflow-step{
+
+    transition:.3s;
+
+}
+
+.workflow-step:hover{
+
+    transform:translateX(8px);
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.workflow{
+
+    margin-left:8px;
+
+}
+
+.workflow-step{
+
+    padding-left:60px;
+
+}
+
+.workflow-step p{
+
+    max-width:100%;
+
+}
+
+}
+
+/* ==========================================
+   Mobile Terminal Redaktion
+========================================== */
+
+.rnf-terminal-mobile{
+
+    display:none;
+
+}
+
+/* Smartphone */
+
+@media (max-width:900px){
+
+    /* altes Terminal ausblenden */
+
+    .rnf-terminal pre{
+
+        display:none;
+
+    }
+
+    /* neues anzeigen */
+
+    .rnf-terminal-mobile{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:14px;
+
+        padding:20px;
+
+    }
+
+    .terminal-row{
+
+        display:flex;
+
+        justify-content:space-between;
+
+        align-items:center;
+
+        gap:15px;
+
+        padding:12px 0;
+
+        border-bottom:1px solid rgba(255,255,255,.06);
+
+    }
+
+    .terminal-row:last-child{
+
+        border-bottom:none;
+
+    }
+
+    .terminal-row span{
+
+        color:#93b5d9;
+
+        font-weight:600;
+
+        letter-spacing:1px;
+
+    }
+
+    .terminal-row strong{
+
+        color:white;
+
+    }
+
+    .terminal-row img{
+
+        width:22px;
+
+        height:22px;
+
+        image-rendering:pixelated;
+
+        margin-left:2px;
+
+    }
+
+}
+
+/* ==========================================
+   UEBER MICH
+========================================== */
+
+.about-page{
+
+    border:1px solid rgba(121,255,67,.15);
+
+    border-radius:22px;
+
+    padding:40px;
+
+    background:#181a2d;
+
+}
+
+.about-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:18px;
+
+}
+
+.about-icon{
+
+    color:#79ff43;
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+}
+
+.about-pretitle{
+
+    font-family:Orbitron,sans-serif;
+
+    letter-spacing:3px;
+
+    font-size:.8rem;
+
+    text-transform:uppercase;
+
+    color:#79ff43;
+
+}
+
+.about-intro h1{
+
+    margin:0;
+
+    margin-bottom:20px;
+
+    font-size:3rem;
+
+}
+
+.about-divider{
+
+    width:180px;
+
+    height:2px;
+
+    margin-bottom:28px;
+
+    background:linear-gradient(
+        90deg,
+        #79ff43,
+        transparent
+    );
+
+}
+
+.about-lead{
+
+    position:relative;
+
+    padding-left:22px;
+
+    line-height:1.9;
+
+}
+
+.about-lead::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:4px;
+
+    width:3px;
+
+    height:95%;
+
+    border-radius:2px;
+
+    background:#79ff43;
+
+    box-shadow:
+
+        0 0 12px rgba(121,255,67,.45);
+
+}
+
+.about-intro blockquote{
+
+    margin:34px 0 0;
+
+    padding-left:22px;
+
+    font-style:italic;
+
+    color:#b8c0d0;
+
+    border-left:2px solid rgba(121,255,67,.35);
+
+}
+
+.about-signature{
+
+    margin-top:35px;
+
+    text-align:right;
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:.82rem;
+
+    letter-spacing:2px;
+
+    color:#79ff43;
+
+    opacity:.75;
+
+}
+
+.about-terminal::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    border-radius:14px;
+
+    opacity:.04;
+
+    background:repeating-linear-gradient(
+
+        to bottom,
+
+        transparent 0px,
+
+        transparent 3px,
+
+        rgba(255,255,255,.18) 4px
+
+    );
+
+}
+
+
+
+/* ==========================================
+   WILLKOMMEN
+========================================== */
+
+.about-terminal{
+
+    position:relative;
+
+    padding:10px;
+
+}
+
+/* =====================================================
+   PORTRAIT
+===================================================== */
+
+.player-card-portrait{
+
+    position:relative;
+
+    width:300px;
+
+    height:300px;
+
+    margin-bottom:32px;
+
+    margin-top:40px;
+
+    border-radius:49%;
+
+    overflow:hidden;
+
+    border:3px solid rgba(121,255,67,.35);
+
+    background:#1b2433;
+
+    box-shadow:
+
+        0 0 22px rgba(121,255,67,.15),
+
+        0 16px 35px rgba(0,0,0,.45);
+
+    transition:
+
+        transform .45s ease,
+
+        box-shadow .45s ease;
+
+}
+
+
+/* Bild */
+
+.player-card-portrait img{
+
+    width:100%;
+
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:
+
+        transform .45s ease;
+
+}
+
+
+/* Hover */
+
+.player-card:hover .player-card-portrait{
+
+    transform:translateY(-4px) scale(1.02);
+
+    box-shadow:
+
+        0 0 35px rgba(121,255,67,.28),
+
+        0 20px 40px rgba(0,0,0,.50);
+
+}
+
+.player-card:hover .player-card-portrait img{
+
+    transform:scale(1.05);
+
+}
+
+
+/* =====================================================
+   PLAYER
+===================================================== */
+
+.player-card-player{
+
+    margin-bottom:10px;
+
+    font-size:.82rem;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    color:#87a5d8;
+
+}
+
+
+/* =====================================================
+   NAME
+===================================================== */
+
+.player-card-name{
+
+    margin:0;
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:2.1rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:#ffffff;
+
+    text-shadow:
+
+        0 0 12px rgba(80,170,255,.25);
+
+}
+
+
+/* =====================================================
+   SUBTITLE
+===================================================== */
+
+.player-card-subtitle{
+
+    margin-top:10px;
+
+    margin-bottom:42px;
+
+    font-size:.9rem;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#79ff43;
+
+    opacity:.85;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.player-card-button{
+
+    margin-top:auto;
+
+    width:240px;
+
+    align-self:center;
+
+    padding:16px 20px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(121,255,67,.35);
+
+    background:#222c3d;
+
+    color:#79ff43;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:
+        background .30s ease,
+        color .30s ease,
+        transform .25s ease,
+        box-shadow .30s ease;
+
+}
+
+.player-card-button{
+
+    margin-top:auto;
+    margin-bottom:36px;
+
+}
+
+/* Hover */
+
+.player-card-button:hover{
+
+    background:#79ff43;
+
+    color:#182132;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+
+        0 0 18px rgba(121,255,67,.30);
+
+}
+
+
+/* Klick */
+
+.player-card-button:active{
+
+    transform:scale(.98);
+
+}
+
+/* =====================================================
+   PLAYER CARD
+===================================================== */
+
+.player-card{
+
+    position:relative;
+
+    width:650px;
+
+    height:650px;
+
+    margin:0 auto 70px;
+
+    perspective:1800px;
+
+    overflow:hidden;
+
+}
+
+.player-card-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+
+/* =====================================================
+   INNER
+===================================================== */
+
+.player-card-inner{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    transform-style:preserve-3d;
+
+    transition:
+        transform .8s cubic-bezier(.23,.92,.32,1);
+
+}
+
+.player-card-front,
+.player-card-back{
+
+    background:#2d384b;
+
+    border:1px solid rgba(121,255,67,.18);
+
+    box-shadow:
+
+        inset 0 1px rgba(255,255,255,.04),
+
+        0 18px 40px rgba(0,0,0,.45);
+
+}
+
+
+/* =====================================================
+   FLIP
+===================================================== */
+
+.player-card.flipped .player-card-inner{
+
+    transform:rotateY(180deg);
+
+}
+
+
+/* =====================================================
+   VORDERSEITE
+===================================================== */
+
+.player-card-front{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    backface-visibility:hidden;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+/* =====================================================
+   RÜCKSEITE
+===================================================== */
+
+.player-card-back{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:28px;
+
+    border-radius:20px;
+
+    overflow:visible;
+
+    backface-visibility:hidden;
+
+    transform:rotateY(180deg);
+
+    background:linear-gradient(
+        180deg,
+        #2f394b 0%,
+        #253040 100%
+    );
+
+    border:1px solid rgba(121,255,67,.18);
+
+    box-shadow:
+        inset 0 1px rgba(255,255,255,.04),
+        0 20px 45px rgba(0,0,0,.45);
+
+}
+
+
+/* =====================================================
+   CRT SCANLINES
+===================================================== */
+
+.player-card-back::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    opacity:.025;
+
+    background:repeating-linear-gradient(
+
+        180deg,
+
+        rgba(255,255,255,.7) 0px,
+
+        rgba(255,255,255,.7) 1px,
+
+        transparent 2px,
+
+        transparent 4px
+
+    );
+
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.player-card-title{
+
+    margin:0;
+
+    text-align:center;
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:1.45rem;
+
+    letter-spacing:3px;
+
+    color:#79ff43;
+
+    text-shadow:
+
+        0 0 12px rgba(121,255,67,.25);
+
+}
+
+
+/* =====================================================
+   DIVIDER
+===================================================== */
+
+.player-card-divider{
+
+    width:100%;
+
+    height:1px;
+
+    margin:18px 0;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(121,255,67,.45),
+
+        transparent
+
+    );
+
+}
+
+
+/* =====================================================
+   OBERER BEREICH
+===================================================== */
+
+.player-card-top{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:22px;
+
+    align-items:start;
+
+}
+
+/* =====================================================
+   RECHTE SPALTE
+===================================================== */
+
+.player-card-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+
+/* =====================================================
+   LINKE SPALTE
+===================================================== */
+
+.player-card-values{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+/* =====================================================
+   RECHTE SPALTE
+===================================================== */
+
+.player-card-inventory{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+.player-card-inventory h3{
+
+    margin:0 0 16px;
+
+    font-size:.85rem;
+
+    letter-spacing:2px;
+
+    color:#79ff43;
+
+    text-transform:uppercase;
+
+}
+
+
+
+.player-card-stats h3{
+
+    margin:0 0 10px;
+
+    text-align:center;
+
+    font-size:.9rem;
+
+    letter-spacing:3px;
+
+    color:#79ff43;
+
+    text-transform:uppercase;
+
+}
+
+/* =====================================================
+   PLAYER VALUES
+===================================================== */
+
+.player-value{
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:10px 0;
+
+    border-bottom:1px solid rgba(121,255,67,.08);
+
+}
+
+.player-value:last-child{
+
+    border-bottom:none;
+
+}
+
+.player-value span{
+
+    font-size:.72rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#7f97b7;
+
+    margin-bottom:5px;
+
+}
+
+.player-value strong{
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    color:#ffffff;
+
+    line-height:1.35;
+
+}
+
+.online{
+
+    color:#79ff43;
+
+    text-shadow:0 0 8px rgba(121,255,67,.35);
+
+}
+
+
+/* =====================================================
+   INVENTORY GRID
+===================================================== */
+
+.inventory-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,58px);
+
+    grid-template-rows:repeat(2,58px);
+
+    gap:12px;
+
+    justify-content:center;
+
+}
+
+
+/* =====================================================
+   INVENTORY SLOT
+===================================================== */
+
+.inventory-slot{
+
+    width:58px;
+
+    height:58px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:10px;
+
+    background:rgba(17,24,35,.75);
+
+    border:1px solid rgba(121,255,67,.18);
+
+    box-shadow:
+
+        inset 0 1px rgba(255,255,255,.05),
+
+        0 0 8px rgba(0,0,0,.30);
+
+    transition:
+
+        transform .25s ease,
+
+        border-color .25s ease,
+
+        box-shadow .25s ease,
+
+        background .25s ease;
+
+}
+
+.item-tooltip{
+
+    z-index:999;
+
+}
+
+/* =====================================================
+   RPG ITEM TOOLTIP
+===================================================== */
+
+.item-tooltip{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:72px;
+
+    transform:translateX(-50%) translateY(10px);
+
+    width:180px;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    background:#101722;
+
+    border:1px solid rgba(121,255,67,.30);
+
+    box-shadow:
+
+        0 10px 25px rgba(0,0,0,.45),
+
+        0 0 12px rgba(121,255,67,.12);
+
+    pointer-events:none;
+
+    opacity:0;
+
+    transition:
+
+        opacity .25s ease,
+
+        transform .25s ease;
+
+    z-index:50;
+
+}
+
+
+/* Titel */
+
+.item-title{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:.78rem;
+
+    letter-spacing:1px;
+
+    color:#79ff43;
+
+}
+
+
+/* Beschreibung */
+
+.item-text{
+
+    display:block;
+
+    font-size:.72rem;
+
+    line-height:1.45;
+
+    color:#d6dde9;
+
+}
+
+
+/* Hover */
+
+.inventory-slot:hover .item-tooltip{
+
+    opacity:1;
+
+    transform:translateX(-50%) translateY(0);
+
+}
+
+/* =====================================================
+   INVENTORY ICON
+===================================================== */
+
+.inventory-slot img{
+
+    width:30px;
+
+    height:30px;
+
+    object-fit:contain;
+
+    transition:
+
+        transform .25s ease,
+
+        filter .25s ease;
+
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.inventory-slot:hover{
+
+    transform:translateY(-3px);
+
+    border-color:rgba(121,255,67,.55);
+
+    background:rgba(26,39,54,.95);
+
+    box-shadow:
+
+        0 0 14px rgba(121,255,67,.22),
+
+        inset 0 0 8px rgba(121,255,67,.08);
+
+}
+
+.inventory-slot:hover img{
+
+    transform:scale(1.12);
+
+}
+
+
+/* =====================================================
+   EQUIPMENT TITLE
+===================================================== */
+
+.player-card-inventory h3{
+
+    margin-bottom:18px;
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:.85rem;
+
+    letter-spacing:2px;
+
+}
+
+/* =====================================================
+   CHARACTER STATS
+===================================================== */
+
+.player-card-stats{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-top:22px;
+
+}
+
+.player-card-stats h3{
+
+    margin:0 0 18px;
+
+    text-align:center;
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:1rem;
+
+    letter-spacing:3px;
+
+    color:#79ff43;
+
+    text-shadow:
+        0 0 10px rgba(121,255,67,.25);
+
+}
+
+
+/* =====================================================
+   STAT ROW
+===================================================== */
+
+.stat-row{
+
+    display:grid;
+
+    grid-template-columns:95px 1fr 42px;
+
+    gap:8px;
+
+    align-items:center;
+
+}
+
+.stat-row span{
+
+    font-size:.78rem;
+
+    color:#a8b7d3;
+
+    letter-spacing:.5px;
+
+}
+
+.stat-row strong{
+
+    text-align:right;
+
+    font-size:.76rem;
+
+    color:#ffffff;
+
+}
+
+
+/* =====================================================
+   BAR
+===================================================== */
+
+/* ==========================================
+   CHARACTER STATS BAR
+========================================== */
+
+.stat-bar{
+
+    width:100%;
+    height:8px;
+
+    background:#1d2430;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(121,255,67,.15);
+
+}
+
+.stat-fill{
+
+    width:0;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #79ff43,
+        #4fc9ff
+    );
+
+    transition: width .9s cubic-bezier(.22,1,.36,1);
+
+}
+
+
+/* =====================================================
+   FILL
+===================================================== */
+
+.stat-fill{
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        #79ff43,
+        #a9ff7c
+    );
+
+    box-shadow:
+        0 0 8px rgba(121,255,67,.35);
+
+}
+
+
+/* =====================================================
+   FILL WIDTHS
+===================================================== */
+
+.fill100{
+
+    width:100%;
+
+}
+
+.fill91{
+
+    width:91%;
+
+}
+
+.fill84{
+
+    width:84%;
+
+}
+
+.fill72{
+
+    width:72%;
+
+}
+
+
+/* =====================================================
+   BOTTOM
+===================================================== */
+
+.player-card-back .player-card-button{
+
+    width:220px;
+
+    align-self:center;
+
+    margin-top:auto;
+
+    margin-bottom:6px;
+
+}
+
+/* =====================================================
+   TERMINAL LOOK
+===================================================== */
+
+.player-value{
+
+    position:relative;
+
+    padding:12px 14px;
+
+    border-radius:10px;
+
+    background:rgba(18,26,37,.28);
+
+    border:1px solid rgba(121,255,67,.05);
+
+    transition:
+        background .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+
+}
+
+.player-value:hover{
+
+    background:rgba(30,43,58,.55);
+
+    border-color:rgba(121,255,67,.20);
+
+    transform:translateX(4px);
+
+}
+
+
+/* =====================================================
+   INVENTORY GLOW
+===================================================== */
+
+.inventory-slot{
+
+    position:relative;
+
+    overflow:visible;
+
+}
+
+.inventory-slot::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(121,255,67,.12),
+
+            transparent 70%
+
+        );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.inventory-slot:hover::before{
+
+    opacity:1;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.player-card-button{
+
+    letter-spacing:.5px;
+
+}
+
+.player-card-button:hover{
+
+    box-shadow:
+
+        0 0 18px rgba(121,255,67,.28),
+
+        inset 0 0 12px rgba(121,255,67,.08);
+
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.player-card-title{
+
+    position:relative;
+
+}
+
+.player-card-title::after{
+
+    content:"PLAYER ID #1987";
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:.60rem;
+
+    letter-spacing:4px;
+
+    color:#7f97b7;
+
+    opacity:.75;
+
+}
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.player-card:hover{
+
+    transform:translateY(-4px);
+
+    transition:transform .35s ease;
+
+}
+
+/* =====================================================
+   SECTION DIVIDER
+===================================================== */
+
+.section-divider{
+
+    width:140px;
+
+    height:2px;
+
+    margin:55px auto;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(121,255,67,.75),
+        transparent
+    );
+
+}
+
+/* ==========================================
+   RETRO STATS
+========================================== */
+
+#retro-stats{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+/* Einzelner Stat */
+
+.retro-stat{
+
+    width:100%;
+
+}
+
+/* Kopf */
+
+.retro-stat-header{
+
+    display:grid;
+
+    grid-template-columns:34px 1fr auto;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:10px;
+
+}
+
+/* Icon */
+
+.retro-icon{
+
+    font-size:1.35rem;
+
+    text-align:center;
+
+}
+
+/* Bezeichnung */
+
+.retro-label{
+
+    color:#d9e2f1;
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+}
+
+/* Prozent */
+
+.retro-value{
+
+    color:#53b8ff;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    min-width:52px;
+
+    text-align:right;
+
+}
+
+/* Balken */
+
+.stat-bar{
+
+    position:relative;
+
+    width:100%;
+
+    height:9px;
+
+    overflow:hidden;
+
+    background:#2d3448;
+
+    border-radius:30px;
+
+}
+
+/* Füllung */
+
+.stat-fill{
+
+    position:relative;
+
+    width:0;
+
+    height:100%;
+
+    border-radius:30px;
+
+}
+
+/* kleiner Lichtreflex */
+
+.stat-fill::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    right:0;
+
+    width:16px;
+
+    height:100%;
+
+    background:rgba(255,255,255,.55);
+
+    filter:blur(5px);
+
+}
+
+
+
+
+
+@media(max-width:1100px) {
+    .about-hero {
+        grid-template-columns:1fr;
+        gap:40px
+    }
+
+    .photo-frame img {
+        max-width:280px
+    }
+
+    
+}
+
+/* ==========================================
+   ACHIEVEMENT POPUP
+========================================== */
+
+.achievement-popup{
+
+    position:fixed;
+
+    right:35px;
+
+    bottom:35px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px 24px;
+
+    width:360px;
+
+    background:#171d2c;
+
+    border:2px solid #8f6dff;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 0 25px rgba(143,109,255,.35),
+        0 0 60px rgba(58,168,255,.12);
+
+    transform:translateX(420px);
+
+    opacity:0;
+
+    z-index:9999;
+
+}
+
+.achievement-popup.show{
+
+    animation:achievementIn .7s forwards;
+
+}
+
+.achievement-popup.hide{
+
+    animation:achievementOut .6s forwards;
+
+}
+
+.achievement-icon{
+
+    font-size:3rem;
+
+}
+
+.achievement-text span{
+
+    display:block;
+
+    color:#9d79ff;
+
+    font-size:.78rem;
+
+    letter-spacing:2px;
+
+}
+
+.achievement-text strong{
+
+    display:block;
+
+    margin:6px 0;
+
+    color:#ffffff;
+
+    font-size:1.25rem;
+
+}
+
+.achievement-text small{
+
+    color:#66ff8d;
+
+}
+
+/* ==========================================
+   ACHIEVEMENT SELTENHEIT
+========================================== */
+
+.achievement-common{
+
+    border:2px solid #79ff43;
+
+    box-shadow:
+        0 0 25px rgba(121,255,67,.35);
+
+}
+
+.achievement-rare{
+
+    border:2px solid #4aa8ff;
+
+    box-shadow:
+        0 0 30px rgba(74,168,255,.45);
+
+}
+
+.achievement-legendary{
+
+    border:2px solid #bb66ff;
+
+    box-shadow:
+        0 0 35px rgba(187,102,255,.55);
+
+}
+
+@keyframes achievementIn{
+
+    from{
+
+        transform:translateX(420px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateX(0);
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes achievementOut{
+
+    from{
+
+        transform:translateX(0);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:translateX(420px);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ==========================================
+   Archivemment - Mobile
+========================================== */
+
+@media (max-width:900px){
+
+    #achievement-popup{
+
+        display:none;
+
+    }
+
+}
+
+/* ==========================================
+   SAVEGAME TIMELINE
+========================================== */
+
+.savegame-card{
+
+    margin-top:40px;
+
+    padding:42px;
+
+}
+
+.savegame-title{
+
+    margin:0 0 50px;
+
+    text-align:center;
+
+    font-size:2rem;
+
+    letter-spacing:2px;
+
+    color:#7be74d;
+
+    text-shadow:0 0 14px rgba(123,231,77,.35);
+
+}
+
+
+/* ------------------------------------------
+   Timeline
+------------------------------------------ */
+
+.timeline{
+
+    overflow-x:auto;
+    overflow-y:hidden;
+
+    -webkit-overflow-scrolling:touch;
+
+}
+
+.timeline-track{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    padding-top:10px;
+
+    min-width:920px;
+
+}
+
+
+/* Grundlinie */
+
+.timeline-track::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    top:74px;
+
+    height:4px;
+
+    background:#345122;
+
+    border-radius:20px;
+
+}
+
+
+/* Ladebalken */
+
+.timeline-progress{
+
+    position:absolute;
+
+    left:0;
+
+    top:74px;
+
+    width:0;
+
+    height:4px;
+
+    background:#79ff43;
+
+    border-radius:20px;
+
+    box-shadow:0 0 14px #79ff43;
+
+}
+
+
+/* Ein Savepoint */
+
+.timeline-item{
+
+    position:relative;
+
+    width:150px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    transition:
+
+        transform .30s ease,
+
+        filter .30s ease;
+
+}
+
+
+/* Animation beim Aufbau */
+
+.timeline-item.show{
+
+    animation:timelinePop .55s forwards;
+
+}
+
+
+/* ------------------------------------------
+   Icon
+------------------------------------------ */
+
+.timeline-icon{
+
+    width:64px;
+
+    height:64px;
+
+    margin:0 auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:transform .30s ease;
+
+}
+
+.timeline-icon img{
+
+    width:54px;
+
+    height:auto;
+
+    display:block;
+
+}
+
+
+/* ------------------------------------------
+   Punkt
+------------------------------------------ */
+
+.timeline-dot{
+
+    width:14px;
+
+    height:14px;
+
+    margin:10px auto;
+
+    border-radius:50%;
+
+    background:#666;
+
+    border:2px solid #7cff45;
+
+    transition:all .30s ease;
+
+}
+
+
+/* ------------------------------------------
+   Jahr
+------------------------------------------ */
+
+.timeline-year{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:1.15rem;
+
+    font-weight:600;
+
+    color:#ffffff;
+
+    transition:color .30s ease;
+
+}
+
+
+/* Untertitel */
+
+.timeline small{
+
+    display:block;
+
+    margin-top:8px;
+
+    line-height:1.45;
+
+    color:#cfd5df;
+
+}
+
+
+/* ==========================================
+   Hover + Active
+========================================== */
+
+.timeline-item.active{
+
+    transform:translateY(-8px);
+
+    filter:drop-shadow(0 0 16px rgba(122,255,85,.45));
+
+}
+
+.timeline-item.active .timeline-dot{
+
+    background:#79ff43;
+
+    transform:scale(1.45);
+
+    box-shadow:
+
+        0 0 18px #79ff43,
+
+        0 0 32px rgba(121,255,67,.35);
+
+}
+
+.timeline-item.active .timeline-icon{
+
+    transform:scale(1.12);
+
+}
+
+.timeline-item.active .timeline-year{
+
+    color:#79ff43;
+
+}
+
+
+/* ==========================================
+   Aktueller Punkt
+========================================== */
+
+.current{
+
+    animation:currentPulse 2s infinite;
+
+}
+
+/* ==========================================
+   Keyframes
+========================================== */
+
+@keyframes timelinePop{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(18px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+@keyframes currentPulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.25);
+
+        box-shadow:0 0 20px #7eff4f;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================================
+   RESPONSIVE FRAMEWORK 2.0
+   Mobile & Tablet
+========================================================== */
+
+@media (max-width:900px){
+
+/* ===========================
+   Allgemein
+=========================== */
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+.container{
+
+    width:100%;
+
+    padding:18px;
+
+}
+
+.card{
+
+    padding:24px;
+
+}
+
+/* ===========================
+   Überschriften
+=========================== */
+
+h1{
+
+    font-size:2.2rem;
+
+    line-height:1.2;
+
+}
+
+h2{
+
+    font-size:1.7rem;
+
+}
+
+h3{
+
+    font-size:1.3rem;
+
+}
+
+p{
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.welcome-button{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+/* ===========================
+   Alle Grids
+=========================== */
+
+.hero-card,
+.two-column,
+.about-grid,
+.content-grid,
+.game-grid,
+.profile-grid,
+.rnf-editor-card{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+}
+
+/* ===========================
+   Bilder
+=========================== */
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero-card{
+
+    text-align:center;
+
+}
+
+.hero-card img{
+
+    margin:auto;
+
+}
+
+/* ===========================
+   Timeline
+=========================== */
+
+.timeline{
+
+    overflow-x:auto;
+
+    padding-bottom:15px;
+
+}
+
+.timeline::-webkit-scrollbar{
+
+    height:6px;
+
+}
+
+.timeline-item{
+
+    min-width:140px;
+
+}
+
+/* ===========================
+   Savegame Cards
+=========================== */
+
+.memory-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.memory-card img{
+
+    width:100%;
+
+}
+
+/* ===========================
+   About Player Profile
+=========================== */
+
+.about-profile-card{
+
+    width:100%;
+
+    max-width:none;
+
+    padding:22px;
+
+}
+
+.profile-row{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:6px;
+
+}
+
+.profile-row strong{
+
+    text-align:left;
+
+}
+
+/* ===========================
+   Inventar
+=========================== */
+
+.inventory-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+}
+
+/* ===========================
+   Retro Stats
+=========================== */
+
+.retro-stat{
+
+    display:block;
+
+}
+
+.retro-stat-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:10px;
+
+}
+
+/* ===========================
+   Terminal
+=========================== */
+
+.rnf-terminal{
+
+    width:100%;
+
+}
+
+/* ===========================
+   Workflow
+=========================== */
+
+.workflow{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.workflow-arrow{
+
+    display:none;
+
+}
+
+/* ===========================
+   Weniger Luft
+=========================== */
+
+section{
+
+    margin-bottom:45px;
+
+}
+
+.content-divider{
+
+    margin:40px 0;
+
+}
+
+}
+
+/* =====================================================
+   RETRO MEMORY 3.2
+===================================================== */
+
+.retro-memory{
+
+    margin-top:40px;
+
+    background:#252f42;
+
+    border:1px solid rgba(123,231,77,.18);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.30);
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.memory-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 40px;
+
+    background:#1d2433;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+.memory-slot{
+
+    color:#79ff43;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.memory-date{
+
+    color:#8ea4c6;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+
+/* =====================================================
+   HAUPTBEREICH
+===================================================== */
+
+.memory-main{
+
+    display:grid;
+
+    grid-template-columns:260px 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+    padding:45px;
+
+}
+
+
+/* =====================================================
+   BILD
+===================================================== */
+
+.memory-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+    
+
+}
+
+.memory-image-frame{
+
+    position:relative;
+
+    overflow:hidden;
+
+    width:230px;
+
+    height:230px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:18px;
+
+    padding:6px;
+
+    background:#1b2130;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.03),
+        0 12px 25px rgba(0,0,0,.25);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+        
+
+}
+
+.memory-image-frame:hover{
+
+    transform:
+        translateY(-3px)
+        scale(1.02);
+
+    box-shadow:
+        inset 0 0 0 1px rgba(121,255,67,.20),
+        0 0 20px rgba(121,255,67,.18),
+        0 16px 35px rgba(0,0,0,.35);
+
+}
+
+.memory-image-frame::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-140%;
+
+    width:60%;
+
+    height:100%;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            rgba(255,255,255,.18),
+
+            transparent
+
+        );
+
+    transform:skewX(-22deg);
+
+}
+
+.memory-image-frame:hover::before{
+
+    animation:memoryShine .8s ease;
+
+}
+
+.memory-image-frame img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    transition:
+        transform .35s ease,
+        opacity .35s ease;
+
+}
+
+
+/* =====================================================
+   RECHTE SPALTE
+===================================================== */
+
+.memory-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.memory-title{
+
+    margin:0;
+
+    color:#ffffff;
+
+    font-size:3rem;
+
+    line-height:1.1;
+
+}
+
+.memory-summary{
+
+    margin:22px 0 30px;
+
+    color:#d9e2f1;
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+    max-width:650px;
+
+}
+
+
+/* =====================================================
+   TAGS
+===================================================== */
+
+.memory-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.memory-tags span{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#2d3d59;
+
+    border:1px solid rgba(121,255,67,.18);
+
+    color:#79ff43;
+
+    font-size:.95rem;
+
+    transition:.25s;
+
+}
+
+.memory-tags span:hover{
+
+    background:#79ff43;
+
+    color:#10151f;
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.memory-actions{
+
+    padding:0 45px 35px;
+
+}
+
+.memory-toggle{
+
+    cursor:pointer;
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#79ff43;
+
+    color:#111;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    transition:.25s;
+
+}
+
+.memory-toggle:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 0 18px rgba(121,255,67,.35);
+
+}
+
+
+/* =====================================================
+   STORY
+===================================================== */
+
+.memory-story{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    transition:max-height .40s ease;
+
+}
+
+.memory-story.open{
+
+    max-height:3000px;
+
+}
+
+.memory-story-text{
+
+    padding:25px 45px 45px;
+
+    color:#d9e2f1;
+
+    line-height:2;
+
+    font-size:1.05rem;
+
+    text-align:justify;
+
+}
+
+.memory-story.show-text .memory-story-text{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.memory-story-text h4{
+
+    margin:
+
+        40px 0 18px;
+
+    color:#79ff43;
+
+    font-size:1.3rem;
+
+    letter-spacing:1px;
+
+    margin-top:-20px;
+
+    margin-bottom:20px;
+
+}
+
+.memory-story-text p{
+
+    margin:0 0 24px;
+
+}
+
+
+/* =====================================================
+   MEMORY WECHSEL
+===================================================== */
+
+.memory-image-frame img,
+.memory-title,
+.memory-summary,
+.memory-tags{
+
+    transition:
+
+        opacity .30s ease,
+
+        transform .30s ease;
+
+
+}
+
+.memory-toggle{
+
+    transition:
+        opacity .30s ease,
+        transform .30s ease;
+
+}
+
+.memory-changing .memory-image-frame img{
+
+    opacity:0;
+
+    transform:scale(.94);
+
+}
+
+.memory-changing .memory-title,
+.memory-changing .memory-summary,
+.memory-changing .memory-tags{
+
+    opacity:0;
+
+    transform:translateY(8px);
+
+}
+.memory-changing .memory-toggle{
+
+    opacity:0;
+
+    transform:translateY(10px);
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width:900px){
+
+    .memory-main{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:30px;
+
+    }
+
+    .memory-info{
+
+        align-items:center;
+
+    }
+
+    .memory-summary{
+
+        max-width:100%;
+
+    }
+
+    .memory-tags{
+
+        justify-content:center;
+
+    }
+
+    .memory-actions{
+
+        text-align:center;
+
+        padding:0 25px 30px;
+
+    }
+
+}
+
+
+
+/* ==========================
+   Footer
+   ========================== */
+
+footer {
+
+    width:100%;
+
+    margin-top: 20px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background: #0d0d18;
+
+    border-top: 1px solid var(--border);
+
+    color: #aaa;
+}
+
+footer a {
+
+    color: var(--blue);
+
+    margin: 0 8px;
+
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+
+    color: var(--pink);
+}
+
+/* ==========================
+   Mobile
+   ========================== */
+
+@media (max-width: 900px) {
+
+   .layout {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 100%;
+}
+   .container {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    padding: 20px 10px;
+}
+
+    .hero h1 {
+
+        font-size: 2.3rem;
+    }
+
+    iframe {
+
+        height: 280px;
+    }
+
+    /* Willkommen Box */
+
+    .welcome-box {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 25px;
+    }
+
+    .welcome-text p {
+
+        max-width: 100%;
+    }
+
+    .welcome-image img {
+
+    width: 220px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 10px;
+}
+
+    .welcome-button {
+
+        width: 100%;
+
+        max-width: 250px;
+    }
+
+    /* Letzte Videos */
+
+    .latest-videos-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .video-card img {
+
+        height: auto;
+    }
+
+   /* Navigation */
+
+    nav {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+
+        padding: 12px 8px;
+    }
+
+    nav a {
+
+        font-size: 0.85rem;
+        padding: 6px 8px;
+        margin: 0;
+    }
+
+    /* Banner */
+
+    .hero img {
+
+        width: 100%;
+
+        height: auto;
+
+        display: block;
+    }
+
+    /* Retro-Fakt */
+
+    .retro-wissen {
+
+        font-size: 0.85rem;
+
+        padding: 8px 12px;
+    }
+
+    .retro-wissen-label {
+
+        flex-shrink: 0;
+    }
+
+    /* Sidebar */
+
+    aside {
+
+        margin-top: 20px;
+    }
+
+    /* Playlist Boxen */
+
+    .playlist-list li a {
+
+        min-height: 70px;
+    }
+
+    .playlist-title {
+
+        font-size: 0.95rem;
+    }
+
+    .pixelkumpel-link img {
+
+        width: 24px;
+
+        height: 24px;
+    }
+
+   .welcome-text h2 {
+
+        font-size: 1.8rem;
+
+        line-height: 1.2;
+
+        word-break: break-word;
+    }
+
+   .welcome-text p {
+
+        max-width: 100%;
+
+        width: 100%;
+    }
+
+   .box-of-day {
+
+    flex-direction: column;
+
+    text-align: center;
+    }
+
+    .box-day-image img {
+
+        width: 280px;
+    }
+
+    .box-day-button {
+
+        width: 100%;
+
+        max-width: 250px;
+    }
+
+    .review-box {
+
+    flex-direction: column;
+
+    text-align: center;
+       
+    }
+
+   .rnf-progress-fill{
+
+    width:100%;
+
+    height:82%;
+
+    transform:scaleY(0);
+
+    transform-origin:top center;
+
+    animation:none;
+
+}
+   
+   @keyframes rnfProgressVertical{
+
+    from{
+
+        transform:scaleY(0);
+
+    }
+
+    to{
+
+        transform:scaleY(1);
+
+    }
+      
+   }
+   
+   .about-photo-card{
+
+    width:100%;
+
+}
+
+   .about-profile-card{
+
+    width:100%;
+
+    justify-self:stretch;
+
+}
+
+   .profile-row{
+
+    grid-template-columns:1fr;
+
+    gap:8px;
+
+}
+
+   .profile-row strong{
+
+    text-align:left;
+
+}
+
+   .inventory-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}   
+
+   .retro-stat-header{
+
+    grid-template-columns:32px 1fr;
+
+}
+
+   .retro-value{
+
+    grid-column:2;
+
+    justify-self:end;
+
+}
+   
+   .about-hero::before,
+   .about-hero::after{
+
+        display:none;
+
+    }
+
+   /* ==========================================
+   ÜBER MICH - MOBILE V2
+   ========================================== */
+
+@media (max-width:900px){
+
+/* Hero */
+
+.about-hero{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+    padding:24px;
+
+    overflow:hidden;
+
+}
+
+/* Hintergrundeffekte aus */
+
+.about-hero::before,
+.about-hero::after{
+
+    display:none;
+
+}
+
+/* Linke Spalte */
+
+.hero-left{
+
+    width:100%;
+
+    order:2;
+
+}
+
+/* Portrait */
+
+.about-photo-card{
+
+    width:100%;
+
+    order:1;
+
+}
+
+.photo-frame{
+
+    margin:0 auto;
+
+}
+
+.photo-frame img{
+
+    width:100%;
+
+    max-width:240px;
+
+}
+
+.photo-caption{
+
+    width:100%;
+
+    max-width:260px;
+
+}
+
+/* Einleitung */
+
+.about-intro-card{
+
+    max-width:none;
+
+    width:100%;
+
+    padding-top:0;
+   
+    order:2;
+
+}
+
+.about-profile-card{
+        order:3;
+}
+
+.about-intro-card h1{
+
+    font-size:2rem;
+
+    line-height:1.2;
+
+}
+
+.about-lead{
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+/* Zitat */
+
+.about-quote{
+
+    flex-direction:column;
+
+}
+
+.quote-line{
+
+    width:100%;
+
+    height:4px;
+
+}
+
+} 
+
+}
