@@ -74,6 +74,7 @@ a:hover {
 
 .hero {
     width: 100%;
+    
 }
 
 .hero img {
@@ -110,6 +111,7 @@ nav {
     padding: 15px;
 
     border-bottom: 1px solid var(--border);
+    
 }
 
 nav a {
@@ -127,6 +129,30 @@ nav a {
     transition: all 0.25s ease;
 
     display: inline-block;
+
+    
+}
+
+nav::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        #3aa8ff,
+        #ff4de1
+    );
+
 }
 
 nav a:hover {
@@ -173,6 +199,7 @@ nav a:hover {
     margin: auto;
 
     padding: 40px 20px;
+    
 }
 
 .layout {
@@ -221,7 +248,7 @@ h3 {
 
     width: 100%;
 
-    height: 38px;
+    height: 70px;
 
     padding: 0 12px;
 
@@ -246,7 +273,7 @@ h3 {
 
     color: #3aa8ff;
 
-    font-size: 0.95rem;
+    font-size: 1.25rem;
 
     font-weight: 700;
 
@@ -301,7 +328,10 @@ h3 {
     padding: 20px;
 
     transition: all 0.3s ease;
+
 }
+
+
 
 .card:hover {
 
@@ -975,6 +1005,8 @@ iframe {
 
     display: flex;
 
+    min-height:370px;
+
     justify-content: space-between;
 
     align-items: center;
@@ -1523,6 +1555,79 @@ iframe {
 .rnf-header:hover{
 
     transform:scale(1.01);
+
+}
+
+/*=====================================================
+  MITMACHEN BUTTON
+=====================================================*/
+
+.terminal-actions{
+
+    margin-top:28px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.rnf-join-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #3aa8ff,
+        #5d5fff
+    );
+
+    border:1px solid rgba(58,168,255,.35);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        filter .25s ease;
+
+}
+
+.rnf-join-button:hover{
+
+    transform:translateY(-3px);
+
+    filter:brightness(1.08);
+
+    box-shadow:
+        0 0 20px rgba(58,168,255,.35),
+        0 12px 28px rgba(0,0,0,.25);
+
+}
+
+.rnf-join-button:active{
+
+    transform:translateY(-1px);
+
+    background:linear-gradient(
+    135deg,
+    #3aa8ff,
+    #ff0033
+);
 
 }
 
@@ -6956,7 +7061,1806 @@ section{
 
 }
 
+/* =====================================================
+   MEINE RETRO SAMMLUNG
+   Teil 2.1
+   Hero + Counter + Regale
+===================================================== */
 
+
+/* =====================================================
+   HERO
+===================================================== */
+
+
+.collection-hero .welcome-image{
+
+    overflow:hidden;
+
+    border-radius:12px;
+
+}
+
+.collection-hero .welcome-image img{
+
+    width:480px;
+
+    max-width:100%;
+
+    height:auto;
+
+    transition:
+        transform .6s ease,
+        filter .4s ease;
+
+}
+
+.collection-hero:hover .welcome-image img{
+
+    transform:scale(1.04);
+
+    filter:brightness(1.05);
+
+}
+
+.collection-hero .welcome-text p{
+
+    line-height:1.9;
+
+}
+
+.collection-hero{
+
+    background:
+        linear-gradient(
+            rgba(24,24,40,.88),
+            rgba(24,24,40,.88)
+        ),
+        url("../images/collection/hintergrund.webp")
+        center center / cover no-repeat;
+
+}
+
+
+/* =====================================================
+   COUNTER
+===================================================== */
+
+.collection-counter-row{
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 280px);
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-bottom:60px;
+
+}
+
+.counter-card{
+
+    position:relative;
+
+    text-align:center;
+
+    padding:28px 20px;
+
+    overflow:hidden;
+
+}
+
+.counter-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-repeat:no-repeat;
+
+    background-position:center;
+
+    background-size:cover;
+
+    opacity:.28;
+
+    filter:grayscale(100%);
+
+    pointer-events:none;
+
+}
+
+/* C64 */
+
+.counter-card:nth-child(1)::before{
+
+    background-image:url("../images/c64-timeline.webp");
+
+}
+
+/* Amiga */
+
+.counter-card:nth-child(2)::before{
+
+    background-image:url("../images/amiga-timeline.webp");
+
+}
+
+/* PC */
+
+.counter-card:nth-child(3)::before{
+
+    background-image:url("../images/pc-timeline.webp");
+
+}
+
+
+
+.counter-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        repeating-linear-gradient(
+
+            to bottom,
+
+            rgba(255,255,255,.02) 0px,
+
+            rgba(255,255,255,.02) 1px,
+
+            transparent 2px,
+
+            transparent 4px
+
+        );
+
+    pointer-events:none;
+
+}
+
+.counter-card img{
+
+    width:48px;
+
+    height:48px;
+
+    display:block;
+
+    margin:0 auto 18px;
+
+    transition:transform .25s ease;
+
+    position:relative;
+    z-index:2;
+
+}
+
+.counter-card:hover img{
+
+    transform:rotate(-8deg) scale(1.15);
+
+}
+
+.counter-value{
+
+    font-family:Orbitron,sans-serif;
+
+    font-size:2.5rem;
+
+    color:var(--blue);
+
+    text-shadow:
+
+        0 0 12px rgba(58,168,255,.4);
+
+    margin-bottom:10px;
+
+    position:relative;
+    z-index:2;
+
+}
+
+.counter-card p{
+
+    color:#bdbdbd;
+
+    font-size:.95rem;
+
+    position:relative;
+    z-index:2;
+
+}
+
+/* =====================================================
+   REGALE
+===================================================== */
+
+.collection-shelves{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+    margin-bottom:60px;
+
+}
+
+.shelf-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    padding:0;
+
+}
+
+.shelf-item img{
+
+    width:100%;
+
+    aspect-ratio:3 / 4;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:
+        transform .45s ease,
+        filter .35s ease;
+
+}
+
+.shelf-item:hover img{
+
+    transform:scale(1.06);
+
+    filter:
+
+        brightness(1.06)
+
+        saturate(1.08);
+
+}
+
+.shelf-info{
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    padding:22px;
+
+    background:
+
+        linear-gradient(
+
+            transparent,
+
+            rgba(8,8,18,.95)
+
+        );
+
+}
+
+.shelf-info h3{
+
+    margin:0;
+
+    margin-bottom:6px;
+
+    color:white;
+
+}
+
+.shelf-info p{
+
+    margin:0;
+
+    color:var(--blue);
+
+    font-size:.9rem;
+
+}
+
+
+/* =====================================================
+   PREMIUM HOVER
+===================================================== */
+
+.counter-card,
+.shelf-item{
+
+    transition:
+
+        transform .25s ease,
+
+        box-shadow .25s ease;
+
+}
+
+.counter-card:hover,
+.shelf-item:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+        0 0 18px rgba(58,168,255,.18),
+
+        0 0 30px rgba(255,42,195,.10);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1000px){
+
+.collection-counter-row{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.collection-shelves{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media(max-width:700px){
+
+.collection-counter-row{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.collection-shelves{
+
+    grid-template-columns:1fr;
+
+}
+
+.collection-hero{
+
+    margin-bottom:40px;
+
+}
+
+.collection-hero .welcome-image{
+
+    margin-top:25px;
+
+}
+
+.counter-value{
+
+    font-size:2rem;
+
+}
+
+}
+
+/* =====================================================
+   MEINE RETRO SAMMLUNG
+   Teil 2.2
+   Such & Find + Lieblingsstücke
+===================================================== */
+
+
+/* =====================================================
+   ZWEI SPALTEN
+===================================================== */
+
+.collection-bottom{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+    margin-bottom:60px;
+
+}
+
+
+/* =====================================================
+   SUCH & FIND
+===================================================== */
+
+.search-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    height: 730px;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    padding-right: 6px;
+
+}
+
+.search-list::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+.search-list::-webkit-scrollbar-track {
+
+    background: rgba(255,255,255,.04);
+    border-radius: 999px;
+
+}
+
+.search-list::-webkit-scrollbar-thumb {
+
+    background: linear-gradient(
+        180deg,
+        #3aa8ff 0%,
+        #ff4fd8 100%
+    );
+
+    border-radius: 999px;
+
+    box-shadow:
+        0 0 6px rgba(58,168,255,.4),
+        0 0 12px rgba(255,79,216,.25);
+
+}
+
+.search-list::-webkit-scrollbar-thumb:hover {
+
+    box-shadow:
+        0 0 10px rgba(58,168,255,.7),
+        0 0 20px rgba(255,79,216,.45);
+
+}
+
+.search-entry{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(58,168,255,.10);
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:transparent;
+
+    flex-shrink: 0;
+
+    flex:0 0 calc((100% - 64px) / 5);
+
+}
+
+.search-entry img{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+    flex-shrink:0;
+
+}
+
+.search-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    flex:1;
+
+    min-width:0;
+
+}
+
+.status-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.status-text{
+
+    color:#bfc5d5;
+
+    font-size:.9rem;
+
+}
+
+.search-entry:hover img{
+
+    transform:scale(1.05);
+
+    box-shadow:
+
+        0 0 18px rgba(58,168,255,.25);
+
+}
+
+.search-entry:hover{
+
+    transform:translateX(6px);
+
+    border-color:#3aa8ff;
+
+    box-shadow:
+
+        0 0 18px rgba(58,168,255,.15);
+
+}
+
+.search-entry strong{
+
+    flex:1;
+
+    color:white;
+
+}
+
+.search-entry small{
+
+    color:#bfc5d5;
+
+    white-space:nowrap;
+
+}
+
+.search-entry::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            rgba(18,18,30,.85),
+            rgba(18,18,30,.85)
+        ),
+        var(--search-bg);
+
+    background-position:center;
+
+    background-size:cover;
+
+    background-repeat:no-repeat;
+
+    z-index:0;
+
+}
+
+.search-entry > *{
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+.search-card{
+    height: auto;
+
+}
+
+
+/* =====================================================
+   STATUS LED
+===================================================== */
+
+.status{
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    flex-shrink:0;
+
+    animation:pulseStatus 2.6s infinite;
+
+    margin-bottom:12px;
+
+}
+
+.urgent .status{
+
+    background:#ff4040;
+
+    box-shadow:
+
+        0 0 10px rgba(255,64,64,.7);
+
+}
+
+.watch .status{
+
+    background:#ffd54a;
+
+    box-shadow:
+
+        0 0 10px rgba(255,213,74,.7);
+
+}
+
+.found .status{
+
+    background:#4dff6c;
+
+    box-shadow:
+
+        0 0 10px rgba(77,255,108,.7);
+
+}
+
+
+@keyframes pulseStatus{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.18);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* =====================================================
+   LIEBLINGSSTÜCKE
+===================================================== */
+
+.favorite-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+    margin-top:20px;
+
+}
+
+.favorite-item{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+    padding-bottom:20px;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    transition:
+
+        transform .25s ease;
+
+}
+
+.favorite-item:last-child{
+
+    border-bottom:none;
+
+    padding-bottom:0;
+
+}
+
+.favorite-item:hover{
+
+    transform:translateX(8px);
+
+}
+
+.favorite-item img{
+
+    width:110px;
+
+    height:145px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    flex-shrink:0;
+
+    transition:
+
+        transform .35s ease,
+
+        box-shadow .35s ease;
+
+}
+
+.favorite-item:hover img{
+
+    transform:scale(1.05);
+
+    box-shadow:
+
+        0 0 18px rgba(58,168,255,.30);
+
+}
+
+.favorite-item h3{
+
+    margin-bottom:10px;
+
+    color:white;
+
+    transition:.25s;
+
+}
+
+.favorite-item:hover h3{
+
+    color:var(--blue);
+
+}
+
+.favorite-item p{
+
+    color:#c8c8c8;
+
+    line-height:1.8;
+
+}
+
+.gamebox-viewer{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.gamebox-stage{
+
+    margin:24px;
+
+    border-radius:22px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* ==========================================
+   Game Info Panel
+========================================== */
+
+#game-info-panel{
+
+    margin:24px;
+
+    margin-top:0;
+
+    border-radius:22px;
+
+    position:absolute;
+
+    left:20px;
+    right:20px;
+    bottom:-10px;
+
+    height:46px;
+
+    background:rgba(18,23,35,.96);
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    overflow:hidden;
+
+    transition:height .35s ease;
+
+    z-index:50;
+
+}
+
+#game-info-panel.open{
+
+    height:80%;
+
+}
+
+/* ==========================================
+   Header
+========================================== */
+
+.game-info-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    height:56px;
+
+    padding:0 18px;
+
+}
+
+#game-title{
+
+    margin:0;
+
+    font-size:1.55rem;
+
+    color:var(--accent);
+
+}
+
+/* ==========================================
+   Toggle Button
+========================================== */
+
+#game-info-toggle{
+
+    width:36px;
+
+    height:36px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#f2f2f2;
+
+    color:#111;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+#game-info-toggle:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   Content
+========================================== */
+
+.game-info-content{
+
+    padding:8px 24px 18px;
+
+}
+
+.game-info-row{
+
+    display:grid;
+
+    grid-template-columns:120px 1fr;
+
+    gap:18px;
+
+    margin:5px 0;
+
+    align-items:center;
+
+}
+
+.game-info-row .label{
+
+    color:#9aa3b2;
+
+    font-weight:600;
+
+}
+
+.game-info-row .value{
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   Collection Search
+========================================== */
+
+.game-search{
+
+    position:relative;
+
+    margin-bottom:18px;
+
+}
+
+#game-search{
+
+    width:100%;
+
+    height:48px;
+
+    padding:0 18px;
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:8px;
+
+    color:#ffffff;
+
+    font-size:1rem;
+
+    font-family:"Orbitron",sans-serif;
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+#game-search::placeholder{
+
+    color:#7d8898;
+
+}
+
+#game-search:focus{
+
+    border-color:var(--accent);
+
+    box-shadow:
+        0 0 12px rgba(80,255,170,.25);
+
+}
+
+.game-search-results{
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    top:52px;
+
+    background:#141c29;
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    display:none;
+
+    z-index:500;
+
+}
+
+.game-search-results.show{
+
+    display:block;
+
+}
+
+.search-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 18px;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    transition:.2s;
+
+}
+
+.search-item:hover{
+
+    background:rgba(80,255,170,.15);
+
+}
+
+.search-item small{
+
+    color:#8aa0b4;
+
+    font-size:.8rem;
+
+}
+
+.archive-search{
+
+    position:absolute;
+
+    top:18px;
+
+    left:18px;
+
+    right:18px;
+
+    z-index:20;
+
+}
+
+
+.archive-search-title{
+
+    font-family:"Orbitron",sans-serif;
+
+    color:#67ff9c;
+
+    font-size:1rem;
+
+    letter-spacing:3px;
+
+    margin-bottom:6px;
+
+    text-align:center;
+
+}
+
+.archive-search-input{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 14px;
+
+    background:#101722;
+
+    border:1px solid rgba(90,255,170,.18);
+
+    border-radius:6px;
+
+    font-family:"Courier New",monospace;
+
+}
+
+.prompt{
+
+    color:#67ff9c;
+
+}
+
+#game-search{
+
+    flex:1;
+
+    background:none;
+
+    border:none;
+
+    outline:none;
+
+    color:#ffffff;
+
+    font-family:"Courier New",monospace;
+
+    font-size:1rem;
+
+}
+
+.cursor{
+
+    width:8px;
+
+    height:18px;
+
+    background:#67ff9c;
+
+    animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+    0%,45%{
+
+        opacity:1;
+
+    }
+
+    46%,100%{
+
+        opacity:0;
+
+    }
+
+}
+
+.archive-search-results{
+
+    margin-top:6px;
+
+    border-top:1px solid rgba(90,255,170,.18);
+
+}
+
+.search-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:10px 16px;
+
+    font-family:"Courier New",monospace;
+
+    cursor:pointer;
+
+}
+
+.search-item:hover{
+
+    background:rgba(90,255,170,.12);
+
+}
+
+/* ==========================================
+   Archivbereich Info Box 3D Viewer
+========================================== */
+
+.game-archive{
+
+    position:relative;
+
+    margin-top:28px;
+
+    min-height:320px;
+
+}
+
+
+/* Statuszeile */
+
+.archive-status{
+
+    font-family:"Courier New", monospace;
+
+    font-size:.9rem;
+
+    color:#66ff99;
+
+    opacity:0;
+
+    transform:translateY(8px);
+
+    transition:
+        opacity .45s ease,
+        transform .45s ease;
+
+}
+
+
+/* Fortschrittsanzeige */
+
+.archive-progress{
+
+    margin-top:12px;
+
+    margin-bottom:10px;
+
+}
+
+.archive-bar{
+
+    font-family:"Courier New", monospace;
+
+    letter-spacing:2px;
+
+    color:#44ff88;
+
+    opacity:0;
+
+    transform:translateY(8px);
+
+    transition:
+        opacity .45s ease,
+        transform .45s ease;
+
+}
+
+
+/* Erfolgsmeldung */
+
+.archive-result{
+
+    margin-bottom:18px;
+
+    font-family:"Courier New", monospace;
+
+    color:#8dff8d;
+
+    font-size:.9rem;
+
+    opacity:0;
+
+    transform:translateY(8px);
+
+    transition:
+        opacity .45s ease,
+        transform .45s ease;
+
+}
+
+
+/* ==========================================
+   Archive Content
+========================================== */
+
+.archive-content{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+    opacity:0;
+
+    transform:translateY(18px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+    z-index:3;  
+
+}
+
+.archive-content.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.archive-image{
+
+    max-width:100%;
+
+    max-height:100%;
+
+    width:auto;
+
+    height:auto;
+
+    margin:0 auto;
+
+    border-radius:8px;
+
+    border:1px solid rgba(255,255,255,.18);
+
+    box-shadow:
+        0 14px 30px rgba(0,0,0,.45),
+        0 0 20px rgba(80,255,170,.12);
+
+}
+
+/* Hover */
+
+.archive-image:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 18px 38px rgba(0,0,0,.55),
+        0 0 24px rgba(90,255,170,.18);
+
+}
+
+/* ==========================================
+   Archive Loading
+========================================== */
+
+.archive-loading{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:1;
+
+    transition:
+        opacity .8s ease,
+        filter .8s ease;
+
+    z-index:2;
+
+}
+
+.archive-loading.hide{
+
+    opacity:0;
+
+    filter:blur(3px);
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+}
+
+
+/* ==========================================
+   Archive Header
+========================================== */
+
+.archive-header{
+
+    margin-bottom:20px;
+
+}
+
+.archive-line{
+
+    height:1px;
+
+    background:linear-gradient(
+        to right,
+        transparent,
+        rgba(80,255,170,.45),
+        transparent
+    );
+
+    margin:10px 0;
+
+}
+
+.archive-title{
+
+    font-family:"Orbitron",sans-serif;
+
+    font-size:.9rem;
+
+    letter-spacing:3px;
+
+    color:#66ff99;
+
+    text-shadow:
+        0 0 10px rgba(80,255,170,.35);
+
+}
+
+.archive-status.show,
+.archive-bar.show,
+.archive-result.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* =====================================================
+   PREMIUM CARD
+===================================================== */
+
+.collection-bottom .card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.collection-bottom .card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        #3aa8ff,
+
+        #ff4de1
+
+    );
+
+}
+
+.collection-bottom .card:hover{
+
+    box-shadow:
+
+        0 0 22px rgba(58,168,255,.18),
+
+        0 0 34px rgba(255,77,225,.10);
+
+}
+
+/*----------------------------------
+  Fullscreen Button
+----------------------------------*/
+
+.game-fullscreen-button{
+
+    position:absolute;
+
+    right:70px;
+
+    bottom:20px;
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.92);
+
+    color:#111827;
+
+    font-size:1.35rem;
+
+    cursor:pointer;
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        box-shadow .25s ease;
+
+    z-index:20;
+
+}
+
+.gamebox-stage:fullscreen{
+
+    width:100vw;
+
+    height:100vh;
+
+    background:#1b2230;
+
+}
+
+.gamebox-stage:-webkit-full-screen{
+
+    width:100vw;
+
+    height:100vh;
+
+    background:#1b2230;
+
+}
+
+.game-fullscreen-button:hover{
+
+    transform:translateY(-2px);
+
+    background:white;
+
+    box-shadow:
+
+        0 0 18px rgba(58,168,255,.35);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width:900px){
+
+    .archive-image{
+
+        width:55%;
+
+    }
+
+}
+
+@media (max-width:600px){
+
+    .archive-image{
+
+        width:80%;
+
+    }
+
+}
+
+@media(max-width:900px){
+
+.collection-bottom{
+
+    grid-template-columns:1fr;
+
+}
+
+.favorite-item{
+
+    flex-direction:column;
+
+}
+
+.favorite-item img{
+
+    width:180px;
+
+    height:auto;
+
+}
+
+}
+
+/* ==========================================
+   Lightbox
+========================================== */
+
+.lightbox{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.9);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.lightbox.active{
+
+    display:flex;
+
+}
+
+.lightbox img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    border-radius:10px;
+
+}
+
+.lightbox-close{
+
+    position:absolute;
+
+    top:25px;
+
+    right:35px;
+
+    color:white;
+
+    font-size:3rem;
+
+    cursor:pointer;
+
+}
+
+/* =====================================================
+   3D BIG BOX PREVIEW
+===================================================== */
+
+.viewer-preview-card{
+
+    background:var(--panel);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.viewer-preview-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:2px;
+
+    background:linear-gradient(
+        90deg,
+        #3aa8ff,
+        #ff4fd8
+    );
+
+}
+
+.viewer-preview-header{
+
+    padding:24px 28px;
+
+    display:flex;
+
+    justify-content:center;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.viewer-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(58,168,255,.12);
+
+    border:1px solid rgba(58,168,255,.25);
+
+    color:#7fd0ff;
+
+    font-weight:600;
+
+}
+
+.viewer-badge:hover{
+
+    transform:translateY(-2px);
+
+    background:rgba(58,168,255,.20);
+
+    box-shadow:
+        0 0 18px rgba(58,168,255,.25);
+
+}
+
+
+.viewer-preview-stage{
+
+    height:360px;
+
+    background:#1b2230;
+
+    position:relative;
+
+}
+
+#preview-viewer{
+
+    width:100%;
+
+    height:100%;
+
+    display:block;
+
+    cursor:grab;
+
+}
+
+#preview-viewer:active{
+
+    cursor:grabbing;
+
+}
 
 
 

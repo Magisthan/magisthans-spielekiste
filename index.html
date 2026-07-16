@@ -34,11 +34,14 @@
         Die Pixelkumpel
     </a>
 
-    <a href="retro-spiele.html">Retro Spiele</a>
+    <a href="sammlung.html">Meine Sammlung</a>
     <a href="ueber-mich.html">Über mich</a>
 </nav>
 
 <div class="container">
+
+    
+<div class="card legal-content">
 
     <div class="layout">
 
@@ -68,7 +71,7 @@
         <h2>Willkommen in meiner Spielekiste</h2>
 
         <p>
-            Über 80 Retro News Flash Folgen.
+            Über 90 Retro News Flash Folgen.
             Mehr als 700 Videos.
             C64 • Amiga • Demoszene • Interviews
         </p>
@@ -126,6 +129,39 @@
 </main>
 
 <aside>
+
+<!-- =====================================================
+     3D Big Box Preview
+====================================================== -->
+
+<section class="viewer-preview">
+
+    <div class="viewer-preview-card">
+
+        <div class="viewer-preview-header">
+
+    <a
+    href="sammlung.html#viewer3d"
+    class="viewer-badge">
+
+    ✨ Die Sammlung in 3D entdecken
+
+</a>
+
+</div>
+
+        <div class="viewer-preview-stage">
+
+            <canvas id="preview-viewer"></canvas>
+
+        </div>
+
+        
+
+    </div>
+
+</section>
+
 <div class="card">
 
     <h3>Playlists & Serien</h3>
@@ -432,7 +468,7 @@ Leuten aus der Vergangenheit und der Szene.
 
 </div> <!-- layout -->
 </div> <!-- container -->
-
+</div>
 <footer>
     <a href="impressum.html">Impressum</a> |
     <a href="datenschutz.html">Datenschutz</a>
@@ -463,7 +499,10 @@ Leuten aus der Vergangenheit und der Szene.
     <script src="assets/js/retro-facts.js"></script>
     <script src="assets/js/box-of-the-day.js"></script>
     <script src="assets/js/achievement.js"></script>
-        
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="assets/js/game.js"></script>
+    <script src="assets/js/preview.js"></script>   
+    
 </body>
 </html>
 
