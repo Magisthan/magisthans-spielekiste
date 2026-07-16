@@ -155,7 +155,7 @@ async function createScene() {
 
                 img.onerror = reject;
 
-                img.src = `../assets/textures/${folder}/${file}.webp`;
+                img.src = `/assets/textures/${folder}/${file}.webp`;
 
             });
 
