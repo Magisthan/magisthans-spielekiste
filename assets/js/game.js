@@ -81,6 +81,16 @@ const GAMES = [
         developer: "Don Daglow, Cathryn Mataga, David Bunnett."
     },
 
+    {
+        id: 9,
+        folder: "regent-ce",
+        title: "Regent - Collectors Edition",
+        system: "IBM-PC-DOS",
+        year: 1994,
+        publisher: "Martin ECONOMIC Simulations (MES)",
+        developer: "Martin Martin, Elmar Martin, Dietmar Assmann"
+    },
+
 
 
 ];

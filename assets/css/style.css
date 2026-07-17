@@ -273,7 +273,7 @@ h3 {
 
     color: #3aa8ff;
 
-    font-size: 1.25rem;
+    font-size: 0.75rem;
 
     font-weight: 700;
 
@@ -7949,9 +7949,9 @@ section{
 
     justify-content:space-between;
 
-    height:56px;
+    min-height:56px;
 
-    padding:0 18px;
+    padding:12px 18px;
 
 }
 
@@ -7963,6 +7963,10 @@ section{
 
     color:var(--accent);
 
+    line-height:1.1;
+
+    flex:1;
+
 }
 
 /* ==========================================
@@ -7973,7 +7977,7 @@ section{
 
     width:36px;
 
-    height:36px;
+    height:30px;
 
     border:none;
 
@@ -7985,9 +7989,13 @@ section{
 
     font-size:20px;
 
+    margin-left:14px;
+
     cursor:pointer;
 
     transition:.25s;
+
+    flex-shrink:0;
 
 }
 
@@ -9467,5 +9475,172 @@ footer a:hover {
 }
 
 } 
+
+
+@media (max-width:768px){
+
+    .collection-hero .welcome-button{
+
+        display:flex;
+
+        justify-content:center;
+        align-items:center;
+
+        width:100%;
+        max-width:260px;
+
+        margin:2rem auto 0;
+
+        padding:14px 22px;
+
+        font-size:1rem;
+        font-weight:700;
+
+        border-radius:14px;
+
+    }
+
+    
+    .collection-hero .welcome-image{
+
+        margin-top:1rem;
+
+    }
+
+    .collection-hero img{
+
+        max-width:90%;
+
+    }
+
+    .collection-hero{
+
+        text-align:center;
+
+    }
+
+    .collection-hero .welcome-text{
+
+        max-width:100%;
+        margin:0 auto;
+        padding:0 1.4rem;
+
+    }
+
+    .collection-hero h2{
+
+        font-size:1.6rem;
+        line-height:1.05;
+        margin-bottom:1rem;
+
+    }
+
+/* =====================================================
+   MOBILE - CRT HINT
+===================================================== */
+
+@media (max-width:768px){
+
+    @media (max-width:768px){
+
+    @media (max-width:768px){
+
+    .crt-hint{
+
+        left:auto;
+        right:0px;
+        bottom:2px;
+
+        transform:none;
+
+        padding:6px 10px;
+
+        min-width:70px;
+        max-width:100px;
+
+        text-align:center;
+
+        font-size:.62rem;
+
+        border-radius:8px;
+
+        letter-spacing:.5px;
+
+        background:rgba(0,0,0,.82);
+
+        border:1px solid rgba(121,255,67,.35);
+
+        box-shadow:0 0 8px rgba(121,255,67,.18);
+
+        transition:
+            opacity .6s ease,
+            transform .6s ease;
+
+    }
+
+    .crt-hint.hide{
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+}
+
+}
+
+}
+
+@media (max-width:768px){
+
+    .crt-channel{
+
+        left:10px;
+        bottom:10px;
+
+        padding:6px 10px;
+
+        border-radius:6px;
+
+    }
+
+    .crt-channel-number{
+
+        font-size:.55rem;
+        letter-spacing:1px;
+
+    }
+
+    .crt-channel-title{
+
+        margin-top:2px;
+
+        font-size:.70rem;
+
+    }
+
+    .crt-channel{
+
+        transition:
+            opacity .6s ease,
+            transform .6s ease;
+
+    }
+
+    .crt-channel.hide{
+
+    opacity:0 !important;
+
+    visibility:hidden !important;
+
+    display:none !important;
+
+}
+
+}
+
+
+}
 
 }

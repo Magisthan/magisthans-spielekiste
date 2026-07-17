@@ -192,6 +192,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let hintTimer;
 
+    let channelTimer;
+
+function showChannel(){
+
+    const channelInfo = document.querySelector(".crt-channel");
+
+    if(!channelInfo) return;
+
+    channelInfo.classList.remove("hide");
+
+    clearTimeout(channelTimer);
+
+    if(window.innerWidth <= 768){
+
+        channelTimer = setTimeout(()=>{
+
+            channelInfo.classList.add("hide");
+
+        },2500);
+
+    }
+
+}
+
     function showHint(text, autoHide = false){
 
         clearTimeout(hintTimer);
@@ -383,7 +407,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     channelButton.addEventListener("mouseenter",()=>{
 
-        showHint("Kanal wechseln");
+        showHint("CH " + channels[currentChannel].number, true);
 
     });
 
@@ -397,7 +421,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     nextChannel();
 
-    showHint("Kanal gewechselt",true);
+    showChannel();
+
+    showHint("CH " + channels[currentChannel].number, true);
 
     });
 
@@ -485,5 +511,24 @@ memoryPhoto.addEventListener("mouseenter",()=>{
 
 
 updateChannel();
+
+showChannel();
+
+/* ==========================================
+   MOBILE - CHANNEL INFO
+========================================== */
+
+const channelInfo = document.querySelector(".crt-channel");
+
+if(window.innerWidth <= 768 && channelInfo){
+
+    setTimeout(()=>{
+
+        channelInfo.classList.add("hide");
+
+    },2500);
+
+}
+
 
 });

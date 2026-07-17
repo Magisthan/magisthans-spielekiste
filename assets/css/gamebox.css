@@ -126,3 +126,52 @@
     scroll-margin-top:60px;
 
 }
+
+/* ==========================================
+   MOBILE - GAME TITLE
+========================================== */
+
+@media (max-width:768px){
+
+    #game-title{
+
+    font-size:1.15rem;
+    line-height:1.1;
+
+    margin:0;
+
+    text-align:center;
+
+    letter-spacing:0.02em;
+
+}
+
+.game-info-header{
+
+    position:relative;
+
+    min-height:50px;
+
+    padding:0 40px 0 0;
+
+}
+
+    #game-info-toggle{
+
+    position:absolute;
+
+    right:0;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:35px;
+
+    height:35px;
+
+    font-size:18px;
+
+}
+
+}
