@@ -33,35 +33,18 @@ jobs:
 
       - name: Commit Changes
         run: |
-         git config user.name "github-actions"
-         git config user.email "actions@github.com"
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
 
-         git add data/latest-videos.json
-         
-      - name: Commit Changes
-        run: |
-         git config user.name "github-actions"
-         git config user.email "actions@github.com"
+          git add data/latest-videos.json
 
-         git add data/latest-videos.json
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen gefunden."
+            exit 0
+          fi
 
-         if git diff --cached --quiet; then
-           echo "Keine Änderungen gefunden."
-           exit 0
-
-      - name: Commit Changes
-        run: |
-         git config user.name "github-actions"
-         git config user.email "actions@github.com"
-
-         git add data/latest-videos.json
-
-         if git diff --cached --quiet; then
-         echo "Keine Änderungen gefunden."
-         exit 0
-         fi
-
-         git commit -m "Update latest videos"
+          git commit -m "Update latest videos"
+          git push
          git push
 
          git push
