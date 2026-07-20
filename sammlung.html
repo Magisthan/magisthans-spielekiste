@@ -6,6 +6,9 @@
 <title>Retro News Flash | Magisthans Spielekiste</title>
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/gamebox.css">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
@@ -394,6 +397,30 @@
     </div>
 
 </div>
+
+    <div class="search-entry urgent"
+         style="--search-bg:url('../images/collection/queen-of-hearts.webp');">
+
+    <img
+        src="assets/images/collection/queen-of-hearts.webp"
+        alt="Queen of Hearts">
+
+    <div class="search-info">
+
+        <div class="status-row">
+
+            <span class="status"></span>
+
+            <span class="status-text">Suche dringend</span>
+
+        </div>
+
+        <strong>Queen of Hearts</strong>
+
+        <small>Apple/Atari 8-Bit • Big Box</small>
+
+    </div>
+</div>
 </div>
 </div>
 
@@ -449,12 +476,12 @@
 
         <span class="prompt">&gt;</span>
 
+         <span class="cursor"></span>
+
         <input
             id="game-search"
             autocomplete="off">
-
-        <span class="cursor"></span>
-
+        
     </div>
 
     <div
@@ -477,19 +504,25 @@
 
 </div>
 
+    <div class="game-title-bar">
+
+    <h3 id="game-title"></h3>
+
+    <button
+        id="game-info-toggle"
+        aria-label="Spielinformationen">
+
+        ⌃
+
+    </button>
+
+</div>
+
     <div id="game-info-panel">
-
-        <div class="game-info-header">
-
-            <h3 id="game-title"></h3>
-
-            <button id="game-info-toggle">
-                ⌃
-            </button>
-
-        </div>
-
+        
         <div class="game-info-content">
+
+            <div class="game-meta">
 
             <div class="game-info-row">
                 <span class="label">System:</span>
@@ -510,6 +543,9 @@
                 <span class="label">Entwickler:</span>
                 <span class="value" id="game-developer"></span>
             </div>
+
+        </div>
+
 
 <!-- ==========================================
      Archive
@@ -563,16 +599,37 @@
 
     <!-- Content -->
 
-    <div id="archive-content"
-         class="archive-content">
+    <div id="archive-content" class="archive-content">
 
-        <img
-            id="archive-image"
-            class="archive-image"
-            src=""
-            alt="Big Box Content">
+    <div class="archive-frame">
+
+        <div class="archive-image-wrapper">
+
+            <button
+        id="archive-zoom"
+        class="archive-zoom"
+        aria-label="Archivbild vergrößern">
+
+        <i class="fa-solid fa-magnifying-glass-plus"></i>
+
+    </button>
+         
+            <img
+                id="archive-image"
+                class="archive-image"
+                alt="Big Box Content">
+
+            <div class="archive-image-overlay">
+
+                
+
+            </div>
+
+        </div>
 
     </div>
+
+</div>
 
 </div> 
 
@@ -584,7 +641,7 @@
 
 </div>
 
-</div>
+
 
    <div style="text-align:center;margin:40px 0 -40px;">
 
@@ -602,6 +659,20 @@
     <a href="impressum.html">Impressum</a> |
     <a href="datenschutz.html">Datenschutz</a>
 </footer>
+
+<!-- ==========================================
+     ARCHIVE LIGHTBOX
+========================================== -->
+
+<div id="archive-lightbox" class="archive-lightbox">
+
+    <img
+        id="archive-lightbox-image"
+        class="archive-lightbox-image"
+        alt="Archivbild">
+
+</div>
+
 <script src="assets/js/sammlung.js"></script>
 
 <div id="lightbox" class="lightbox">

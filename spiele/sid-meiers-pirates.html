@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sid Meier's Pirates! | Magisthans Spielekiste</title>
+<title>1869 Hart am Wind | Magisthans Spielekiste</title>
 <link rel="stylesheet" href="../assets/css/style.css">
 
 <style>
@@ -59,49 +59,66 @@
 
 <div class="container">
 
-<div class="card" style="padding:35px;">
+    <div class="card" style="padding:35px;">
 
-<div style="display:flex;flex-wrap:wrap;gap:35px;align-items:center;">
+        <div style="display:flex;flex-wrap:wrap;gap:35px;align-items:center;">
 
-<div style="flex:0 0 320px;">
-<img src="../assets/games/pirates-amiga/pirates-amiga-box.webp"
-class="game-cover"
-alt="Sid Meier's Pirates!"
-             width="1280"
-             height="1538"
-             decoding="async"
-             loading="lazy">
-</div>
+            <!-- Coverbild -->
+            <div style="flex:0 0 320px;">
 
-<div style="flex:1;min-width:280px;">
+                <img id="game-cover"
+                     class="game-cover"
+                     src=""
+                     alt=""
+                     decoding="async"
+                     loading="lazy">
 
-<h1>Sid Meier's Pirates!</h1>
+            </div>
 
-<p><strong>Entwickler:</strong> MicroProse</p>
-<p><strong>Publisher:</strong> MicroProse</p>
-<p><strong>Genre:</strong> Action / Strategie / Wirtschaftssimulation</p>
-<p><strong>Plattform:</strong> C64, Amiga, Apple II, Atari ST, DOS, u.a.</p>
-<p><strong>Erscheinungsjahr:</strong> 1987</p>
+            <!-- Spielinformationen -->
+            <div style="flex:1;min-width:280px;">
+
+                <h1 id="game-title"></h1>
+
+                <p>
+                    <strong>Entwickler:</strong>
+                    <span id="game-developer"></span>
+                </p>
+
+                <p>
+                    <strong>Publisher:</strong>
+                    <span id="game-publisher"></span>
+                </p>
+
+                <p>
+                    <strong>Genre:</strong>
+                    <span id="game-genre"></span>
+                </p>
+
+                <p>
+                    <strong>System:</strong>
+                    <span id="game-system"></span>
+                </p>
+
+                <p>
+                    <strong>Erscheinungsjahr:</strong>
+                    <span id="game-year"></span>
+                </p>
 
 <div class="section">
 
 <h2>📖 Geschichte des Spiels</h2>
 
-<p>
-In Sid Meier's Pirates! schlüpfst du in die Rolle eines Freibeuters in der
-Karibik des 17. Jahrhunderts. Du segelst zwischen den Kolonien der europäischen
-Großmächte, handelst Waren, kämpfst gegen feindliche Schiffe, suchst nach
-verborgenen Schätzen und jagst berüchtigte Piraten. Dabei entscheidest du selbst,
-ob du als gefürchteter Pirat oder angesehener Freibeuter in die Geschichte
-eingehst.
-</p>
+<div id="game-history"></div>
 
 </div>
 
-<a class="welcome-button game-button"
-href="https://www.youtube.com/playlist?list=PL2UVSU7imqhFU8Qi_xGF2_n3Pvlt85LXt"
-target="_blank">
-▶ Mein Let's Play
+<a id="game-letsplay"
+   class="welcome-button game-button"
+   href="#"
+   target="_blank"
+   rel="noopener noreferrer">
+    ▶ Let's Play ansehen
 </a>
 
 </div>
@@ -133,27 +150,15 @@ target="_blank">
 
             <h2>Meine persönliche Wertung</h2>
 
-            <div class="review-stars stars-5"></div>
+            <div id="game-rating-stars"
+                 class="review-stars">
+        </div>
 
-            <div class="review-rating">
+            <div id="game-rating-text"
+                 class="review-rating">
+        </div>
 
-                5 von 5 Sternen
-
-            </div>
-
-            <div class="review-text">
-
-                Sid Meier's Pirates! gehört für mich zu den zeitlosesten
-                Klassikern überhaupt. Die perfekte Mischung aus
-                Seeschlachten, Handel, Schatzsuche und Erkundung sorgt
-                auch heute noch für unzählige Stunden Spielspaß. Kaum ein
-                anderes Spiel vermittelt das Gefühl, selbst ein Pirat zu
-                sein, so überzeugend wie dieses Meisterwerk. Für mich
-                zählt Pirates! bis heute zu den besten Spielen, die
-                jemals entwickelt wurden. Egal ob man es auf dem C64 oder dem Amiga
-                spielt, der Titel ist ein absolutes Highlight der Videospielgeschichte.
-
-            </div>
+            <div id="game-review"></div>
 
         </div>
 
@@ -165,11 +170,7 @@ target="_blank">
 
 <h2>💡 Trivia und interessante Fakten</h2>
 
-<ul>
-<li>Entworfen von Spielelegende Sid Meier.</li>
-<li>Verbindet Action, Strategie, Handel und Rollenspielelemente in einem Spiel.</li>
-<li>Das Spiel wurde 2004 als Remake neu veröffentlicht.</li>
-</ul>
+<ul id="game-trivia"></ul>
 
 </div>
 
@@ -177,33 +178,12 @@ target="_blank">
 
 <h2>📷 Screenshots</h2>
 
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
+<div class="section">
 
-<img src="../assets/games/pirates-amiga/pirates-amiga-screen1.webp"
-class="screenshot"
-alt=""
-             width="640"
-             height="512"
-             decoding="async"
-             loading="lazy">
-
-<img src="../assets/games/pirates-amiga/pirates-amiga-screen2.webp"
-class="screenshot"
-alt=""
-             width="640"
-             height="512"
-             decoding="async"
-             loading="lazy">
-
-<img src="../assets/games/pirates-amiga/pirates-amiga-screen3.webp"
-class="screenshot"
-alt=""
-             width="640"
-             height="512"
-             decoding="async"
-             loading="lazy">
-
-</div>
+    <div
+        id="game-screenshots"
+        style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
+    </div>
 
 </div>
 
@@ -211,25 +191,19 @@ alt=""
 
 <h2>🏆 Warum das Spiel heute noch spielenswert ist</h2>
 
-<p>
-Sid Meier's Pirates! überzeugt bis heute durch seine enorme spielerische
-Freiheit. Jede Partie entwickelt sich anders und bietet eine gelungene Mischung
-aus Seeschlachten, Erkundung, Handel und Piratenromantik. Gerade diese Vielfalt
-macht den Titel auch Jahrzehnte nach seiner Veröffentlichung zu einem
-zeitlosen Klassiker.
-</p>
+<div id="game-worth-playing"></div>
 
 </div>
-
-<div class="section" style="text-align:center;">
-
-<a class="welcome-button" href="../index.html">
-
-← Zurück zur Startseite
-
-</a>
-
 </div>
+</div>
+
+<div style="text-align:center;margin:40px 0 -40px;">
+
+            <a class="welcome-button" href="index.html">
+                ← Zurück zur Startseite
+            </a>
+
+        </div>
 
 </div>
 
@@ -241,6 +215,7 @@ zeitlosen Klassiker.
 <a href="../datenschutz.html">Datenschutz</a>
 
 </footer>
-<script src="../assets/js/review-animation.js"></script>
+<script src="../assets/js/game.js"></script>
+<script src="../assets/js/gamepage.js"></script>
 </body>
 </html>

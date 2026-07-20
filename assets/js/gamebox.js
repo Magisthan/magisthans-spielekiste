@@ -276,6 +276,8 @@ function disposeBox(box) {
 
 }
 
+
+
 //--------------------------------------------------
     // Automatischer Spielwechsel
     //--------------------------------------------------
@@ -350,9 +352,13 @@ return current;
 
 function startAutoChange(){
 
+    console.trace("startAutoChange");
+
     clearInterval(autoChangeTimer);
 
     autoChangeTimer = setInterval(async ()=>{
+
+        console.log("AUTO CHANGE");
 
         currentGame++;
 
@@ -370,6 +376,8 @@ function startAutoChange(){
 
 function stopAutoChange(){
 
+    console.log("stopAutoChange");
+
     clearInterval(autoChangeTimer);
 
     autoChangeTimer = null;
@@ -381,6 +389,8 @@ function userInteraction(){
     stopAutoChange();
 
     clearTimeout(inactivityTimer);
+
+    if(autoSwitchPaused) return;
 
     inactivityTimer = setTimeout(()=>{
 
@@ -800,6 +810,7 @@ createScene().then(() => {
 //--------------------------------------------------
 
 let archiveTimers = [];
+let autoSwitchPaused = false;
 
 function resetArchive(){
 
@@ -817,6 +828,12 @@ function resetArchive(){
 
     const bar =
         document.getElementById("archive-bar");
+
+    const archiveLightbox =
+        document.getElementById("archive-lightbox");
+
+    const archiveLightboxImage =
+        document.getElementById("archive-lightbox-image");
 
     const result =
         document.getElementById("archive-result");
@@ -875,6 +892,12 @@ function startArchive(folder){
     const image =
         document.getElementById("archive-image");
 
+    const archiveLightbox =
+        document.getElementById("archive-lightbox");
+
+    const archiveLightboxImage =
+        document.getElementById("archive-lightbox-image");
+    
     if(!loading) return;
 
     console.log(folder);
@@ -883,8 +906,30 @@ function startArchive(folder){
         `assets/textures/${folder}/content.webp`
     );
 
-    image.src =
-        `assets/textures/${folder}/content.webp`;
+    image.src = `assets/textures/${folder}/content.webp`;
+
+    image.onload = () => {
+
+    // Panelhöhe nach dem Laden des Bildes neu berechnen
+    if (panel.classList.contains("open")) {
+
+        panel.style.height = panel.scrollHeight + "px";
+
+    }
+
+};
+
+    image.onclick = () => {
+
+    autoSwitchPaused = true;
+
+    stopAutoChange();
+
+    archiveLightboxImage.src = image.src;
+
+    archiveLightbox.classList.add("show");
+
+};
 
     image.onerror = ()=>{
 
@@ -1004,28 +1049,105 @@ function startArchive(folder){
 
 const toggle = document.getElementById("game-info-toggle");
 const panel = document.getElementById("game-info-panel");
+const titleBar = document.querySelector(".game-title-bar");
+const gameboxStage =
+    document.querySelector(".gamebox-stage");
 
-toggle.addEventListener("click", () => {
+function toggleInfoPanel() {
 
-    userInteraction();
+    const isOpen = panel.classList.contains("open");
 
-    panel.classList.toggle("open");
+    if (!isOpen) {
 
-    const open =
-        panel.classList.contains("open");
+        panel.classList.add("open");
 
-    toggle.textContent =
-        open ? "⌄" : "⌃";
+        panel.style.height = panel.scrollHeight + "px";
 
-    if(panel.classList.contains("open")){
+        toggle.textContent = "⌄";
 
-    startArchive(currentFolder);
+        document
+            .querySelector(".gamebox-stage")
+            .classList.add("archive-open");
 
-}else{
+        autoSwitchPaused = true;
 
-    resetArchive();
+        stopAutoChange();
+
+        clearTimeout(inactivityTimer);
+
+        startArchive(currentFolder);
+
+    } else {
+
+        panel.style.height = panel.scrollHeight + "px";
+
+        requestAnimationFrame(() => {
+
+            panel.style.height = "0px";
+
+        });
+
+        toggle.textContent = "⌃";
+
+        document
+            .querySelector(".gamebox-stage")
+            .classList.remove("archive-open");
+
+        autoSwitchPaused = false;
+
+        resetArchive();
+
+        startAutoChange();
+
+        panel.addEventListener("transitionend", function handler() {
+
+            panel.classList.remove("open");
+
+            panel.removeEventListener("transitionend", handler);
+
+        }, { once: true });
+
+    }
 
 }
 
+toggle.addEventListener("click", (event) => {
+
+    event.stopPropagation();
+
+    toggleInfoPanel();
+
 });
 
+titleBar.addEventListener("click", toggleInfoPanel);
+
+//--------------------------------------------------
+// Archive Lightbox
+//--------------------------------------------------
+
+const archiveLightbox =
+    document.getElementById("archive-lightbox");
+
+archiveLightbox.addEventListener("click", (e) => {
+
+    if(e.target === archiveLightbox){
+
+        archiveLightbox.classList.remove("show");
+        
+    }
+
+
+
+document.addEventListener("keydown", (e) => {
+
+    if(e.key === "Escape"){
+
+        archiveLightbox.classList.remove("show");
+        
+
+    }
+
+});
+
+
+});
