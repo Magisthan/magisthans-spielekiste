@@ -1,0 +1,470 @@
+/*
+==================================================
+Buttons
+==================================================
+*/
+
+.rd-filter-bar{
+
+    display:flex;
+
+    gap:16px;
+
+    margin-bottom:40px;
+
+}
+
+.rd-filter,
+.rd-random{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:15px 28px;
+
+    border-radius:14px;
+
+    background:var(--panel);
+
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+    transition:.25s;
+
+    font-size:1rem;
+
+}
+
+.rd-filter:hover,
+.rd-random:hover{
+
+    border-color:var(--accent);
+
+}
+
+.rd-active{
+
+    border-color:var(--accent);
+
+    color:var(--accent);
+
+}
+
+.rd-filter-btn{
+
+    height:34px;
+
+    padding:0 20px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+.rd-filter-group{
+
+    margin-top:18px;
+}
+
+/* ==========================================
+   Discovery Knob
+   Sprint 27.1
+========================================== */
+
+.rd-discovery{
+
+    position:absolute;
+
+    left:44%;
+    top:80.4%;
+
+    transform:translate(-50%,-50%);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    z-index:60;
+
+}
+
+
+
+.rd-discovery-button:hover{
+
+    transform:translateY(-3px);
+
+    border-color:#d7a437;
+
+    box-shadow:
+        0 0 24px rgba(215,164,55,.35);
+
+}
+
+.rd-discovery-knob{
+
+    width:162px;
+
+    height:auto;
+
+    display:block;
+
+    user-select:none;
+
+    transition:
+        transform .35s ease,
+        filter .35s ease;
+
+    filter:
+        drop-shadow(0 2px 4px rgba(0,0,0,.35));
+
+}
+
+.rd-discovery-button h3{
+
+    margin:0;
+
+    color:#f2c14e;
+
+    font-size:1.35rem;
+
+    letter-spacing:1px;
+
+}
+
+.rd-discovery-button p{
+
+    margin:0;
+
+    color:#bfbfbf;
+
+    text-align:center;
+
+    line-height:1.5;
+
+    font-size:.92rem;
+
+}
+
+.rd-discovery-text h3{
+
+    margin:0;
+
+    font-size:1.35rem;
+
+    color:#f1c34c;
+
+}
+
+.rd-discovery-text p{
+
+    margin:2px 0 0;
+
+    color:#ddd;
+
+    font-size:.95rem;
+
+}
+
+.rd-discovery:hover .rd-discovery-knob{
+
+    transform:rotate(14deg) scale(1.02);
+
+    filter:
+
+        brightness(1.08)
+
+        drop-shadow(0 10px 18px rgba(0,0,0,.45));
+
+}
+
+/* ==========================================
+   System Switches
+   Sprint 27.3
+========================================== */
+
+.rd-system-btn{
+
+    position:absolute;
+
+    width:88px;
+    height:50px;
+
+    padding:0;
+
+    margin:0;
+
+    border:none;
+
+    background:transparent;
+
+    cursor:pointer;
+
+}
+
+.system-row{
+
+    width:150px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+/* C64 */
+
+.rd-system-btn:nth-child(1){
+
+    top:0;
+
+}
+
+/* AMIGA */
+
+.rd-system-btn:nth-child(2){
+
+    top:70px;
+
+}
+
+/* DOS */
+
+.rd-system-btn:nth-child(3){
+
+    top:135px;
+
+}
+
+/* APPLE */
+
+.rd-system-btn:nth-child(4){
+
+    top:200px;
+
+}
+
+/* ATARI */
+
+.rd-system-btn:nth-child(5){
+
+    top:260px;
+
+}
+
+.switch-rocker{
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    pointer-events:none;
+
+    transform-origin:center center;
+
+    transition:
+        transform .15s ease;
+
+}
+
+.rd-system-btn.active .switch-rocker{
+
+    transform:scaleX(-1);
+
+}
+
+.rd-system-btn.active .switch-rocker{
+
+    transform:scaleX(-1);
+
+}
+
+.rd-system-label{
+
+    display:none;
+
+}
+
+.system-led{
+
+    width:20px;
+    height:20px;
+
+    margin-left:90px;
+    margin-top:-35px;
+
+    opacity:.2;
+
+    pointer-events:none;
+
+}
+
+.rd-system-btn.active .system-led{
+
+    opacity:1;
+
+    transition-delay: .12s;
+
+    filter:
+        brightness(2.2)
+        saturate(1.8)
+        drop-shadow(0 0 3px rgba(255,140,20,.35));
+
+}
+
+/* ==========================================
+   Genre Buttons
+   Sprint 28.1
+========================================== */
+
+
+.rd-genre-btn{
+
+    position:relative;
+
+    width:160px;
+    height:63px;
+
+    padding:0;
+
+    border:none;
+    background:transparent;
+
+    cursor:pointer;
+
+    z-index:3;
+
+}
+
+.rd-filter-buttons .rd-genre-btn{
+
+    padding:0 !important;
+
+}
+
+.genre-panel{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+    pointer-events:none;
+
+    user-select:none;
+
+    z-index:1;
+
+}
+
+.genre-label{
+
+    position:absolute;
+
+    left:22px;
+    right:34px;
+
+    top:25px;
+
+    text-align:center;
+
+    color:#e8c27a;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    pointer-events:none;
+
+    z-index:3;
+
+}
+
+/* ==========================================
+   Genre Panel
+========================================== */
+
+#genre-filter-container{
+
+    position:absolute;
+
+    left:1010px;
+    top:50px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    column-gap:0px;
+    row-gap:5px;
+
+}
+
+/* ==========================================
+   Genre LED
+========================================== */
+
+.rd-genre-btn.active .genre-label{
+
+    color:#ffd98b;
+
+    text-shadow:
+        0 0 4px rgba(255,180,70,.7);
+
+}
+
+.rd-genre-btn.active .genre-led{
+
+    opacity:1;
+
+    transition-delay:.12s;
+
+    filter:
+        brightness(2.2)
+        saturate(1.8)
+        drop-shadow(0 0 3px rgba(255,140,20,.35));
+
+}
+
+.genre-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+}
+
+.genre-led{
+
+    position:absolute;
+
+    right:15px;
+
+    top:22px;
+
+    width:20px;
+
+    height:20px;
+
+    opacity:.2;
+
+    z-index:2;
+
+}

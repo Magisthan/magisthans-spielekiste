@@ -1,0 +1,148 @@
+/* ==========================================================
+   DISCOVERY CONSOLE
+========================================================== */
+
+#rd-console{
+
+    position:relative;
+
+    width:min(96%,1500px);
+
+    margin:24px auto 40px;
+
+    aspect-ratio: 1500 / 430;
+
+}
+
+
+/* ==========================================================
+   CHASSIS
+========================================================== */
+
+#rd-console-chassis{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    display:block;
+
+}
+
+
+/* ==========================================================
+   DISPLAY
+========================================================== */
+
+#rd-console-display{
+
+    position:absolute;
+
+    left:31.5%;
+
+    top:10.8%;
+
+    width:28.0%;
+
+    height:33%;
+
+}
+
+
+/* ==========================================================
+   SYSTEMS
+========================================================== */
+
+#rd-console-systems{
+
+    position:absolute;
+
+    left:7.6%;
+
+    top:17.5%;
+
+    width:16%;
+
+    height:42%;
+
+}
+
+
+/* ==========================================================
+   GENRES
+========================================================== */
+
+#rd-console-genres{
+
+    position:absolute;
+
+    right:15.3%;
+
+    top:17.5%;
+
+    width:17%;
+
+    height:46%;
+
+}
+
+
+/* ==========================================================
+   DISCOVERY KNOB
+========================================================== */
+
+#rd-console-knob{
+
+    position:absolute;
+
+    left:40.2%;
+
+    top:56.8%;
+
+    width:9.2%;
+
+    aspect-ratio:1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+#rd-console-knob img{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+
+/* ==========================================================
+   STATUS
+========================================================== */
+
+#rd-console-status{
+
+    position:absolute;
+
+    right:2.4%;
+
+    top:14%;
+
+    width:13%;
+
+    height:53%;
+
+}

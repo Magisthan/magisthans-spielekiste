@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flatpack – nativer Babylon-Farbtest</title>
+    <style>
+        :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+        * { box-sizing: border-box; }
+        body { margin: 0; min-height: 100vh; background: #07101d; color: #eef2f8; }
+        #viewer { display: block; width: 100vw; height: 100vh; touch-action: none; cursor: grab; }
+        #viewer:active { cursor: grabbing; }
+        .panel { position: fixed; z-index: 2; top: 20px; left: 20px; max-width: 500px; padding: 14px; border: 1px solid #4e5d70; border-radius: 10px; background: rgb(10 16 26 / 90%); }
+        h1 { margin: 0 0 6px; font-size: 16px; }
+        p { margin: 0 0 12px; color: #bdc8d7; font-size: 13px; line-height: 1.4; }
+        .controls { display: flex; flex-wrap: wrap; gap: 8px; }
+        button { border: 1px solid #65748a; border-radius: 6px; padding: 7px 10px; background: #1b293b; color: inherit; cursor: pointer; }
+        button:hover { background: #2c405a; }
+        #state { display: block; margin-top: 10px; font-size: 12px; color: #e5b84d; }
+    </style>
+</head>
+<body>
+    <aside class="panel">
+        <h1>Flatpack – Babylon-Farbtest v2</h1>
+        <p>Feste Kameras, keine Labels, keine Texturen. Magenta: front · Orange: back · Gelb: right · Grün: inside-left · Rot: inside-spin · Blau: inside-right · Grau/Cyan/Violett: left/top/bottom. Ziehen im Viewer dreht die Testbox.</p>
+        <div class="controls">
+            <button type="button" data-pose="closed-front">Geschlossen: außen vorne</button>
+            <button type="button" data-pose="closed-back">Geschlossen: außen hinten</button>
+            <button type="button" data-pose="open-outer">Geöffnet: außen</button>
+            <button type="button" data-pose="open-inner">Geöffnet: innen</button>
+        </div>
+        <span id="state">Initialisiere …</span>
+    </aside>
+    <canvas id="viewer" aria-label="Nativer Babylon-Flatpack-Farbtest"></canvas>
+    <script src="../../../assets/libs/babylon.js"></script>
+    <script src="native-box-test.js?v=20260811-002"></script>
+</body>
+</html>

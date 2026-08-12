@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Retro Discovery</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/viewer.css">
+    <link rel="stylesheet" href="css/rating.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/community.css">
+
+</head>
+
+<body>
+
+<main id="app">
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="rd-header">
+
+    <div class="rd-header-left">
+
+        <div class="rd-logo">
+
+            <img
+                src="assets/icons/logo.webp"
+                alt="Retro Discovery Logo">
+
+        </div>
+
+        <div class="rd-title">
+
+            <h1>RETRO DISCOVERY</h1>
+
+        </div>
+
+    </div>    
+
+</header>
+
+<!-- ==========================================
+     DISCOVERY CONSOLE
+========================================== -->
+
+<div class="rd-console">
+
+<!-- ==========================================
+     TOP CONSOLE
+========================================== -->
+
+<section class="rd-console-top">
+
+    <img
+        class="rd-console-chassis"
+        src="assets/ui/console_chassis_top.webp"
+        alt="">
+
+<div class="rd-console-overlay">
+
+    <div id="rd-lcd">
+
+    <img
+        class="rd-lcd-glass"
+        src="assets/ui/lcd-glass.webp"
+        alt="LCD">
+
+    <div class="rd-lcd-screen">
+
+        <!-- ======================================
+             READY SCREEN
+        ======================================= -->
+
+        <div id="lcd-ready" class="rd-lcd-page">
+
+            <div class="rd-lcd-title">
+
+                RETRO DISCOVERY
+
+            </div>
+
+            <div class="rd-lcd-status">
+
+                READY
+
+            </div>
+
+            <div class="rd-lcd-divider"></div>
+
+            <div class="rd-lcd-body">
+
+                <div class="rd-lcd-label">
+                    GAME
+                </div>
+
+                <div class="rd-lcd-colon">
+                    :
+                </div>
+
+                <div class="rd-lcd-value">
+                    <span id="rd-current-game">0</span>
+                    /
+                    <span id="rd-total-games">0</span>
+                </div>
+
+                <div class="rd-lcd-label">
+                    SYSTEMS
+                </div>
+
+                <div class="rd-lcd-colon">
+                    :
+                </div>
+
+                <div class="rd-lcd-value">
+                    <span id="lcd-systems">ALL</span>
+                </div>
+
+                <div class="rd-lcd-label">
+                    GENRES
+                </div>
+
+                <div class="rd-lcd-colon">
+                    :
+                </div>
+
+                <div class="rd-lcd-value">
+                    <span id="lcd-genres">ALL</span>
+                </div>
+
+            </div>
+
+            <div class="rd-lcd-footer">
+
+                PRESS THE BUTTON
+
+            </div>
+
+        </div>
+
+        <!-- ======================================
+             SEARCHING SCREEN
+        ======================================= -->
+
+        <div id="lcd-searching"
+     class="rd-lcd-page hidden">
+
+    <div class="rd-lcd-title">
+
+        RETRO DISCOVERY
+
+    </div>
+
+    <div
+        id="lcd-search-status"
+        class="rd-lcd-status">
+
+        SEARCHING
+
+    </div>
+
+    <div
+        id="lcd-search-progress"
+        class="rd-lcd-progress">
+
+        █░░░░░░░░░
+
+    </div>
+
+    <div class="rd-lcd-footer">
+
+        PLEASE WAIT
+
+    </div>
+
+</div>
+
+<!-- ======================================
+     FOUND SCREEN
+====================================== -->
+
+<div id="lcd-found"
+     class="rd-lcd-page hidden">
+
+    <div class="rd-lcd-status">
+
+        FOUND
+
+    </div>
+
+    <div
+        id="lcd-found-title"
+        class="rd-lcd-found-title">
+
+        GAME
+
+    </div>
+
+    <div
+        id="lcd-found-system"
+        class="rd-lcd-found-system">
+
+        SYSTEM
+
+    </div>
+
+    <div
+        id="lcd-found-year"
+        class="rd-lcd-found-year">
+
+        YEAR
+
+    </div>
+
+</div>
+
+<!-- ======================================
+     NO MATCH SCREEN
+====================================== -->
+
+<div id="lcd-nomatch"
+     class="rd-lcd-page hidden">
+
+    <div class="rd-lcd-status">
+
+        NO MATCH
+
+    </div>
+
+    <div class="rd-lcd-found-title">
+
+        CHANGE FILTERS
+
+    </div>
+
+    <div class="rd-lcd-found-system">
+
+        TRY AGAIN
+
+    </div>
+
+</div>
+
+    </div>
+
+</div>
+
+<!-- Discovery Button -->
+
+        <div
+            id="discovery-button"
+            class="rd-discovery">
+
+            <img
+                src="assets/icons/drehbutton.webp"
+                class="rd-discovery-knob"
+                alt="Discovery Knopf">
+
+            <!--<div class="rd-discovery-text">
+
+                <h3>DREH AM KNOPF</h3>
+
+                <p>und lass dich überraschen!</p>
+
+            </div>-->
+
+        </div> <!-- rd-discovery -->
+
+        <!-- ======================================
+             CONTROL PANEL
+        ======================================= -->
+
+        <section id="rd-control-panel">
+
+            <div class="rd-filter-group">
+
+                <div
+                    id="system-filter-container"
+                    class="rd-filter-buttons">
+                </div>
+
+            </div>
+
+            <div class="rd-filter-group">
+
+                <div
+                    id="genre-filter-container"
+                    class="rd-filter-buttons">
+                </div>
+
+            </div>
+
+        </section> <!-- rd-control-panel -->
+
+    </div> <!-- rd-console-overlay -->
+
+</section> <!-- rd-console-top -->
+
+<!-- ==========================================
+     MIDDLE CONSOLE
+========================================== -->
+
+<section class="rd-console-shelf">
+
+    <img
+        class="rd-console-chassis"
+        src="assets/ui/console_chassis_middle.webp"
+        alt="">
+
+    <div class="rd-console-overlay">
+
+        <section class="rd-carousel-section">
+
+            <div class="rd-stage-background"></div>
+
+            <div class="rd-grid"></div>
+
+            <div class="rd-shelf-light"></div>
+
+            <div class="rd-shelf-image">                
+
+                <div
+                    id="rd-carousel-track"
+                    class="rd-carousel-track">
+                </div>
+
+            </div> <!-- rd-shelf-image -->
+
+        </section> <!-- rd-carousel-section -->
+
+    </div> <!-- rd-console-overlay -->
+
+</section> <!-- rd-console-shelf -->
+<!-- ==========================================
+     VIEWER CONSOLE
+========================================== -->
+
+<section class="rd-console-viewer">
+
+    <div class="rd-main-layout">
+
+        <!-- ======================================
+             COMMUNITY PANEL
+        ======================================= -->
+
+        
+
+        <!-- ======================================
+             VIEWER
+        ======================================= -->
+
+        <section id="viewer-stage">
+
+            <!-- Hintergrund -->
+
+            <div id="viewer-background">
+
+                <div class="floor-glow"></div>
+
+                <div id="viewer-vignette"></div>
+
+            </div>
+
+            <div class="ui-vignette"></div>
+
+            <aside id="community-panel">
+
+            <div class="community-card">
+
+                <h3>COMMUNITY-WERTUNG</h3>
+
+                <div class="rating-item">
+
+                    <div class="rating-header">
+
+                        <span>Spiel</span>
+                        <span id="rating-game-value">0.0</span>
+
+                    </div>
+
+                    <div class="rating-bar">
+
+                        <div
+                            id="rating-game-fill"
+                            class="rating-fill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="rating-item">
+
+                    <div class="rating-header">
+
+                        <span>Boxdesign</span>
+                        <span id="rating-box-value">0.0</span>
+
+                    </div>
+
+                    <div class="rating-bar">
+
+                        <div
+                            id="rating-box-fill"
+                            class="rating-fill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="rating-item">
+
+                    <div class="rating-header">
+
+                        <span>Kultstatus</span>
+                        <span id="rating-cult-value">0.0</span>
+
+                    </div>
+
+                    <div class="rating-bar">
+
+                        <div
+                            id="rating-cult-fill"
+                            class="rating-fill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div
+                    id="community-votes"
+                    class="community-count">
+
+                    0 Bewertungen
+
+                </div>
+
+                <button class="community-button">
+
+                    Jetzt bewerten
+
+                </button>
+
+            </div>
+
+        </aside>
+
+            <!-- Babylon Viewer -->
+
+            <div id="viewer-container">
+
+                <canvas id="viewer3d"></canvas>              
+
+                               
+            </div> <!-- viewer-container -->
+
+            <button id="package-open-hint" type="button" aria-label="Box öffnen">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M8.4 11.2V5.9a1.55 1.55 0 0 1 3.1 0v4.35l.6-.6a1.5 1.5 0 0 1 2.12 0l.58.58.35-.35a1.5 1.5 0 0 1 2.12 0l.64.63.2-.2a1.5 1.5 0 0 1 2.12 0l.56.57c.75.74.9 1.88.36 2.78l-2.28 3.8a4.2 4.2 0 0 1-3.6 2.04h-2.6a4.2 4.2 0 0 1-3.07-1.33l-3.5-3.7a1.55 1.55 0 0 1 2.25-2.13l.13.14Z" />
+                </svg>
+            </button>
+
+    <aside id="viewer-info-panel">
+
+    <div class="viewer-info-content">
+
+        <div class="viewer-info-header">
+
+    <h2
+    id="info-title"
+    class="info-title">
+
+    -
+
+</h2>
+
+    <button
+        id="viewer-info-close"
+        aria-label="Schließen">
+
+        ✕
+
+    </button>
+
+</div>
+
+        <div
+    id="info-meta"
+    class="info-meta">
+
+    -
+
+</div>
+
+        <div class="info-divider"></div>
+
+        <div class="info-row">
+            <span class="info-label">Entwickler</span>
+            <span
+    id="info-developer"
+    class="info-value">
+
+    -
+
+</span>
+        </div>
+
+        <div class="info-row">
+            <span class="info-label">Publisher</span>
+            <span
+    id="info-publisher"
+    class="info-value">
+
+    -
+
+</span>
+        </div>
+
+        <div class="info-row">
+            <span class="info-label">Box Art</span>
+            <span
+    id="info-boxartist"
+    class="info-value">
+
+    keine Angaben
+
+</span>
+        </div>
+
+        <div class="info-divider"></div>
+
+        <div class="info-links">
+
+        <div class="info-divider"></div>
+
+            <button
+    id="info-mobygames"
+    class="info-link">
+
+    <span>
+
+        🌐 MobyGames
+
+    </span>
+
+    <span class="link-arrow">
+
+        ↗
+
+    </span>
+
+<button
+    id="info-wikipedia"
+    class="info-link">
+
+    <span>
+
+        📖 Wikipedia
+
+    </span>
+
+    <span class="link-arrow">
+
+        ↗
+
+    </span>
+
+</button>
+
+<button
+    id="info-gog"
+    class="info-link">
+
+    <span>
+
+        🎮 GOG (Good Old Games)
+
+    </span>
+
+    <span class="link-arrow">
+
+        ↗
+
+    </span>
+
+    
+
+</button>
+
+            <button
+    id="info-letsplay"
+    class="info-link">
+
+    ▶ Let's Play
+
+</button>
+
+<div class="info-divider"></div>
+
+<div class="info-section-title">
+
+    Discovery
+
+</div>
+
+
+<button
+    id="copy-game-link"
+    class="share-link-btn">
+
+    🔗 Spiel teilen / share game
+
+</button>
+
+    </div>
+
+</aside>
+
+</aside>
+
+            <!-- Rahmen ganz zum Schluss -->
+
+<div id="viewer-actions">
+
+    <button
+        id="viewer-info-btn"
+        aria-label="Spielinformationen">
+
+        <span class="info-icon">
+
+            ⓘ
+
+        </span>
+
+        <span class="info-text">
+
+            Spielinfos
+
+        </span>
+
+    </button>
+
+</div>
+
+<button
+    id="fullscreen-btn"
+    aria-label="Fullscreen">
+
+    ⛶
+
+</button>
+
+            <img
+                class="rd-console-chassis rd-console-bottom"
+                src="assets/ui/console_chassis_bottom.webp"
+                alt="">
+
+        </section> <!-- viewer-stage -->
+
+        <div id="viewer-ui">
+
+    <div id="viewer-guide">
+
+        <div class="guide-item">
+
+            <div class="guide-icon">🖱</div>
+
+            <div>
+
+                <div class="guide-title">Linke Taste</div>
+
+                <div class="guide-text">Drehen</div>
+
+            </div>
+
+        </div>
+
+        <div class="guide-divider"></div>
+
+        <div class="guide-item">
+
+            <div class="guide-icon">🖱</div>
+
+            <div>
+
+                <div class="guide-title">Mausrad</div>
+
+                <div class="guide-text">Zoomen</div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</div>
+
+</div> <!-- rd-main-layout -->
+
+<div id="viewer-mobile-panels"></div>
+
+</section> <!-- rd-console-viewer -->
+
+<!-- ==========================================
+     BESCHREIBUNG
+========================================== -->
+
+</div> <!-- rd-console -->
+
+</main>
+
+<!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+<script src="https://cdn.babylonjs.com/babylon.js"></script>
+
+<script src="../assets/js/game.js"></script>
+<script src="js/package-builder.js"></script>
+<script src="js/package-materials.js"></script>
+<script src="js/package-animation.js"></script>
+<script src="js/flatpack-builder.js"></script>
+<script src="js/package.js"></script>
+
+<script src="js/viewer.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/app.js"></script>
+<script src="js/console-scale.js"></script>
+<script src="js/shelf-layout.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/slotrenderer.js"></script>
+<script src="js/events.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/community.js"></script>
+<script src="js/rating-dialog.js"></script>
+
+<!-- ==========================================
+     RATING DIALOG
+========================================== -->
+
+<div id="rating-modal">
+
+    <div class="rating-dialog">
+
+        <!-- Header -->
+
+        <div class="rating-header">
+
+            <h2>Bewerte dieses Spiel</h2>
+
+            <button
+                id="rating-close"
+                class="rating-close"
+                aria-label="Schließen">
+
+                ✕
+
+            </button>
+
+        </div>
+
+        <!-- Spiel -->
+
+        <div class="rating-group">
+
+            <label>Spiel</label>
+
+            <div
+                class="stars"
+                data-name="gameplay">
+            </div>
+
+            <div
+                id="rating-text-gameplay"
+                class="rating-text">
+
+                Noch keine Bewertung
+
+            </div>
+
+        </div>
+
+        <!-- Boxdesign -->
+
+        <div class="rating-group">
+
+            <label>Boxdesign</label>
+
+            <div
+                class="stars"
+                data-name="boxdesign">
+            </div>
+
+            <div
+                id="rating-text-boxdesign"
+                class="rating-text">
+
+                Noch keine Bewertung
+
+            </div>
+
+        </div>
+
+        <!-- Kultstatus -->
+
+        <div class="rating-group">
+
+            <label>Kultstatus</label>
+
+            <div
+                class="stars"
+                data-name="cultstatus">
+            </div>
+
+            <div
+                id="rating-text-cultstatus"
+                class="rating-text">
+
+                Noch keine Bewertung
+
+            </div>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="rating-actions">
+
+            <button id="rating-cancel">
+
+                Abbrechen
+
+            </button>
+
+            <button id="rating-submit">
+
+                Bewertung senden
+
+            </button>
+
+        </div>
+
+    </div> <!-- rating-dialog -->
+
+</div> <!-- rating-modal -->
+
+</body>
+
+</html>

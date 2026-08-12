@@ -1,0 +1,603 @@
+/* ==========================================
+   COMMUNITY PANEL
+========================================== */
+
+#community-panel{
+
+    position:absolute;
+
+    left:130px;
+
+    top:85px;
+
+    width:290px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+    transform:translateX(-80px,20px);
+
+    transition:
+        opacity .65s ease,
+        transform .65s cubic-bezier(.22,1,.36,1),
+        visibility 0s linear .65s;
+
+    z-index:140;
+
+}
+
+#community-panel.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    pointer-events:auto;
+
+    transform:translateX(0,0);
+
+    opacity:1;
+
+    visibility:visible;
+
+    pointer-events:auto;
+
+    transition:
+
+        transform .65s ease,
+
+        opacity .65s ease;
+
+}
+
+/* ==========================================
+   Card
+========================================== */
+
+.community-card{
+
+    padding:22px;
+
+    border-radius:18px;
+
+    background:
+
+        linear-gradient(
+
+            180deg,
+
+            rgba(24,24,24,.96),
+
+            rgba(18,18,18,.96)
+
+        );
+
+    border:1px solid rgba(255,190,70,.10);
+
+    box-shadow:
+
+        0 18px 45px rgba(0,0,0,.45),
+
+        inset 0 1px rgba(255,255,255,.03);
+
+}
+
+/* ==========================================
+   Titel
+========================================== */
+
+.community-card h3{
+
+    margin:0 0 18px;
+
+    font-size:1.45rem;
+
+    font-weight:800;
+
+    letter-spacing:.08em;
+
+    color:#f0bf44;
+
+}
+
+/* ==========================================
+   Rating Item
+========================================== */
+
+.rating-item{
+
+    margin-bottom:18px;
+
+}
+
+.rating-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:8px;
+
+    font-size:15px;
+
+}
+
+.rating-header span:last-child{
+
+    color:#d6a32d;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   Balken
+========================================== */
+
+.rating-bar{
+
+    height:8px;
+
+    border-radius:999px;
+
+    background:#303030;
+
+    overflow:hidden;
+
+}
+
+.rating-fill{
+
+    height:8px;
+
+    border-radius:999px;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #d8a52a,
+
+            #f6c84d
+
+        );
+
+    box-shadow:
+
+        0 0 8px rgba(246,200,77,.25);
+
+}
+
+/* ==========================================
+   Stimmen
+========================================== */
+
+.community-count{
+
+    margin:24px 0;
+
+    text-align:center;
+
+    color:#8b8b8b;
+
+    font-size:14px;
+
+}
+
+/* ==========================================
+   Button
+========================================== */
+
+.community-button{
+
+    margin-top:22px;
+
+    width:100%;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    background:
+
+        linear-gradient(
+
+            180deg,
+
+            #f4c54a,
+
+            #dfad2c
+
+        );
+
+    transition:.25s;
+
+}
+
+.community-button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.community-button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+
+        0 10px 25px rgba(214,163,45,.35);
+
+}
+
+.community-button:active{
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+   Modal
+========================================== */
+
+#rating-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.72);
+
+    backdrop-filter:blur(6px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.25s;
+
+    z-index:5000;
+
+}
+
+#rating-modal.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+/* ==========================================
+   Dialog
+========================================== */
+
+.rating-dialog{
+
+    width:460px;
+
+    max-width:90vw;
+
+    background:#1b1b1b;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:30px;
+
+    transform:scale(.95);
+
+    transition:.25s;
+
+}
+
+#rating-modal.show .rating-dialog{
+
+    transform:scale(1);
+
+}
+
+.rating-dialog h2{
+
+    margin:0 0 30px;
+
+    text-align:center;
+
+    color:#d6a32d;
+
+}
+
+/* ==========================================
+   Gruppen
+========================================== */
+
+.rating-group{
+
+    margin-bottom:30px;
+
+}
+
+.rating-group label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   Sterne
+========================================== */
+
+.stars{
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+.star{
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    color:#5b5b5b;
+
+    transition:.15s;
+
+}
+
+.star.active{
+
+    color:#efbf52;
+
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.rating-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:14px;
+
+    margin-top:35px;
+
+}
+
+.rating-actions button{
+
+    min-width:150px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+}
+
+#rating-submit{
+
+    background:#d6a32d;
+
+    color:#111;
+
+}
+
+#rating-cancel{
+
+    background:#333;
+
+    color:#fff;
+
+}
+
+/* ==========================================
+   Dialog Header
+========================================== */
+
+.rating-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:28px;
+
+}
+
+.rating-header h2{
+
+    margin:0;
+
+}
+
+/* ==========================================
+   Close Button
+========================================== */
+
+.rating-close{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    color:#999;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.rating-close:hover{
+
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
+}
+
+/* ==========================================
+   Rating Text
+========================================== */
+
+.rating-text{
+
+    margin-top:8px;
+
+    text-align:right;
+
+    font-size:13px;
+
+    color:#999;
+
+    min-height:18px;
+
+}
+
+/* ==========================================
+   Sterne
+========================================== */
+
+.star{
+
+    transform:scale(1);
+
+    transition:
+
+        color .15s,
+
+        transform .15s;
+
+}
+
+.star:hover{
+
+    transform:scale(1.18);
+
+}
+
+.star.active{
+
+    color:#efbf52;
+
+}
+
+/* ==========================================
+   Toast
+========================================== */
+
+.rating-toast{
+
+    position:fixed;
+
+    right:35px;
+
+    bottom:35px;
+
+    background:#202020;
+
+    color:#fff;
+
+    padding:14px 22px;
+
+    border-radius:12px;
+
+    border-left:4px solid #d6a32d;
+
+    box-shadow:
+
+        0 15px 40px rgba(0,0,0,.35);
+
+    opacity:0;
+
+    transform:
+
+        translateY(30px);
+
+    transition:.3s;
+
+    z-index:9000;
+
+}
+
+.rating-toast.show{
+
+    opacity:1;
+
+    transform:
+
+        translateY(0);
+
+}
+
+/* The laptop overlay keeps its desktop composition while the stage scales. */
+#viewer-stage > #community-panel{
+    left:var(--community-left,130px);
+    top:var(--community-top,85px);
+    transform-origin:top left;
+    scale:var(--community-scale,1);
+}
+
+@media (max-width:900px){
+
+    #community-panel{
+        left:16px;
+        right:16px;
+        top:16px;
+        width:auto;
+    }
+
+    .rating-toast{
+        right:16px;
+        bottom:16px;
+        max-width:calc(100vw - 32px);
+    }
+
+}

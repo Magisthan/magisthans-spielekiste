@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wimmer Flatpack – Babylon-Prototyp</title>
+    <style>
+        :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+        * { box-sizing: border-box; }
+        body { margin: 0; min-height: 100vh; background: #0e1520; color: #eef2f8; }
+        #viewer { display: block; width: 100vw; height: 100vh; touch-action: none; }
+        .panel {
+            position: fixed; z-index: 2; top: 20px; left: 20px; max-width: 420px;
+            padding: 14px; border: 1px solid #4e5d70; border-radius: 10px;
+            background: rgb(10 16 26 / 88%); box-shadow: 0 8px 30px rgb(0 0 0 / 35%);
+        }
+        h1 { margin: 0 0 6px; font-size: 16px; }
+        p { margin: 0 0 12px; color: #bdc8d7; font-size: 13px; line-height: 1.4; }
+        .controls { display: flex; flex-wrap: wrap; gap: 8px; }
+        button {
+            border: 1px solid #65748a; border-radius: 6px; padding: 7px 10px;
+            background: #1b293b; color: inherit; cursor: pointer;
+        }
+        button:hover { background: #2c405a; }
+        #state { display: block; margin-top: 10px; font-size: 12px; color: #e5b84d; }
+    </style>
+</head>
+<body>
+    <aside class="panel">
+        <h1>Wimmer Flatpack – isolierter Test</h1>
+        <p>Geschlossen: Front · Außenrücken · Back. Offen: Inside Left · Inside Spine · Inside Right.</p>
+        <div class="controls">
+            <button type="button" data-state="0">Geschlossen</button>
+            <button type="button" data-state="0.5">Halb geöffnet</button>
+            <button type="button" data-state="1">Voll geöffnet</button>
+            <button type="button" id="toggle">Öffnen / schließen</button>
+        </div>
+        <span id="state">Initialisiere …</span>
+    </aside>
+
+    <canvas id="viewer" aria-label="Interaktiver Flatpack-Testviewer"></canvas>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="flatpack-viewer.js?v=20260810-2030"></script>
+</body>
+</html>

@@ -1,0 +1,1018 @@
+/*
+Retro Discovery
+
+layout.css
+*/
+
+/*
+==================================================
+Retro Discovery
+layout.css
+==================================================
+*/
+
+#app{
+
+    width:min(1700px,96%);
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+
+    padding:18px 0 50px;
+}
+
+/* ------------------------------------------ */
+/* Header                                     */
+/* ------------------------------------------ */
+
+.rd-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:24px;
+
+    padding:16px 0;
+
+    margin:0 0 12px;
+
+    flex-shrink:0;
+
+}
+
+.rd-header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.rd-discovery{
+
+    position:absolute;
+
+    left:50%;
+
+    top:150px;
+
+    transform:translateX(-50%) scale(.88);
+    
+    z-index:40;
+
+    margin-bottom:30px;
+
+    opacity:.95;    
+
+}
+
+.rd-top-layout{
+
+    position:relative;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:0;
+
+    width:100%;
+
+    max-width:1900px;
+
+    margin:0 auto 20px;
+
+    padding-top:28px;
+
+    padding-bottom:36px;
+
+}
+
+/* ==========================================
+   Console Top
+========================================== */
+
+.rd-logo{
+
+    width:56px;
+
+    height:56px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--panel);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+}
+
+.rd-logo img{
+
+    width:42px;
+
+    
+
+}
+
+.rd-title h1{
+
+    font-size:2.6rem;
+
+    letter-spacing:2px;
+
+    margin-bottom:2px;
+
+    line-height:1.3;
+
+}
+
+.rd-title p{
+
+    color:var(--text-light);
+
+}
+
+.rd-carousel-section{
+
+    position:relative;
+
+    width:100%;
+
+    height:90%;
+
+    z-index:10;
+
+}
+
+.rd-stage{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    overflow:visible;
+
+}
+
+.rd-carousel-track{
+
+    position:absolute;
+
+    bottom:12%;
+
+    inset:0;
+
+    z-index:20;
+
+}
+
+#viewer-stage{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    min-height:720px;
+
+    overflow:hidden;
+
+}
+
+#viewer-container{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:20;
+
+}
+
+#viewer3d{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    display:block;
+
+}
+
+/* ==========================================
+   VIEWER BACKGROUND
+========================================== */
+
+
+
+.rd-filter-bar{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    align-items:stretch;
+
+}
+
+.rd-filter-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    padding-top:35px;
+
+}
+
+.rd-viewer-column{
+
+    min-height:520px;
+
+}
+
+.rd-info-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.rd-description{
+
+    margin-top:35px;
+
+    min-height:250px;
+
+    border-radius:18px;
+
+    background:#171717;
+
+}
+
+
+body{
+
+    background:
+
+        linear-gradient(
+
+            180deg,
+
+            #1c1c1c 0%,
+
+            #141414 45%,
+
+            #0b0b0b 100%
+
+        );
+
+}
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:-3;
+
+    background:
+
+        radial-gradient(
+
+            ellipse at 50% -15%,
+
+            rgba(255,245,220,.08),
+
+            rgba(255,245,220,.03) 35%,
+
+            transparent 70%
+
+        );
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:-2;
+
+    background:
+
+        radial-gradient(
+
+            circle at 50% 42%,
+
+            rgba(255,235,190,.05),
+
+            transparent 60%
+
+        );
+
+}
+
+.ui-surface-pattern{
+
+    opacity:.045;
+
+}
+
+.ui-vignette{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:40;
+
+}
+
+/* ------------------------------------------ */
+/* NEUES CONTROL PANEL                        */
+/* ------------------------------------------ */
+
+#rd-control-panel{
+
+    position:absolute;
+
+    left:5px;
+
+    top:3px;
+
+    z-index:30;
+
+    margin:30px auto;
+
+    width:100%;
+
+    max-width:900px;
+
+}
+
+/* ==========================================
+   System Switch Positionierung
+   Sprint 27.3
+========================================== */
+
+#system-filter-container{
+
+    position:absolute;
+
+    left:180px;
+    top:60px;
+
+    width:96px;
+    height:220px;
+
+}
+
+.rd-filter-group{
+
+    margin-bottom:24px;
+
+}
+
+.rd-filter-group h3{
+
+    margin-bottom:12px;
+
+    color:#d6b04a;
+
+    font-size:18px;
+
+    text-transform:uppercase;
+
+}
+
+.rd-filter-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+.rd-filter-buttons button{
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+/* ------------------------------------------ */
+/* Stage Top                                  */
+/* ------------------------------------------ */
+
+.rd-console-top-stage{
+
+    position:relative;
+
+}
+
+/* ==========================================
+   Console Top Chassis
+========================================== */
+
+/* ==========================================
+   Console Middle Stage
+========================================== */
+
+.rd-console-middle-stage{
+
+    position:relative;
+
+    margin-top:-12px;
+
+}
+
+/* ==========================================
+   Console Middle Chassis
+========================================== */
+
+
+
+/* ==========================================
+   Console Bottom Stage
+========================================== */
+
+.rd-console-bottom-stage{
+
+    position:relative;
+
+    margin-top:-8px;
+
+}
+
+/* ==========================================
+   Console Chassis Images
+========================================== */
+
+.rd-console-chassis{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+    user-select:none;
+
+    pointer-events:none;
+
+}
+
+.rd-console-top-stage>*:not(.rd-console-chassis){
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.rd-console-middle-stage>*:not(.rd-console-chassis){
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.rd-console-bottom-stage>*:not(.rd-console-chassis){
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+/* ==========================================
+   Console Bottom Chassis
+========================================== */
+
+
+
+.rd-discovery-column{
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:10;
+
+}
+
+/* ==========================================
+   Retro Discovery Console
+========================================== */
+
+.rd-console{
+
+    width:min(1700px,96%);
+
+    margin:0 auto;
+
+}
+
+/* Nur die Chassisbilder automatisch skalieren */
+
+.rd-console-chassis{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+/* ==========================================
+   Middle Chassis
+========================================== */
+
+.rd-console-shelf > img{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:fill;
+
+    display:block;
+
+    user-select:none;
+
+    pointer-events:none;
+
+}
+
+.rd-console-shelf .rd-console-overlay{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    padding-bottom:2.5%;
+
+}
+
+
+/* =====================================================
+   Sprint 43 – Overlay Architektur
+===================================================== */
+
+.rd-console-top,
+.rd-console-shelf{
+
+    position:relative;
+
+}
+
+.rd-console-shelf{
+
+    height:420px;          /* später frei anpassbar */
+    overflow:hidden;
+
+}
+
+/* ==========================================
+   VIEWER CONSOLE
+========================================== */
+
+.rd-console-viewer{
+
+    position:relative;
+
+    width:100%;
+
+    overflow:hidden;
+
+}
+
+.rd-console-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:visible;
+
+}
+
+/* ==========================================
+   Bottom Chassis
+========================================== */
+
+.rd-main-layout{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:720px;
+
+}
+
+.rd-console-front{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    z-index:100;
+
+    pointer-events:none;
+
+}
+
+/* ==========================================
+   LCD Display
+   Sprint 27.2
+========================================== */
+
+
+
+/* ==========================================
+   LCD Component
+========================================== */
+
+#rd-lcd{
+
+    position:absolute;
+
+    left:45%;
+    top:34%;
+
+    transform:translate(-50%,-50%);
+
+    width:535px;
+    height:180px;
+
+    z-index:25;
+
+    pointer-events:none;
+
+}
+
+.rd-lcd-glass{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    display:block;
+
+}
+
+.rd-lcd-screen{
+
+    position:absolute;
+
+    left:34px;
+    right:34px;
+
+    top:10px;
+    bottom:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    z-index:2;
+
+    font-family: "Share Tech Mono", monospace;
+
+    color:#8cff95;
+
+    text-shadow:
+    0 0 3px rgba(90,255,140,.35);
+
+    letter-spacing:.6px;
+
+    box-shadow:
+
+    inset 0 0 18px rgba(70,255,120,.05);
+
+}
+
+.rd-lcd-title{
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.rd-lcd-status{
+
+    text-align:center;
+
+    font-size:18px;
+
+    opacity:.95;
+
+}
+
+.rd-lcd-divider{
+
+    width:82%;
+
+    height:1px;
+
+    margin:auto;
+
+    background:
+
+        linear-gradient(
+
+            to right,
+
+            transparent,
+
+            rgba(120,255,150,.35),
+
+            transparent
+
+        );
+
+    opacity:.45;
+
+}
+
+.rd-lcd-body{
+
+    display:grid;
+
+    grid-template-columns:
+
+        88px
+        12px
+        1fr;
+
+    row-gap:8px;
+
+    column-gap:8px;
+
+    width:250px;
+
+    margin:0 auto;
+
+    font-size:16px;
+
+}
+
+
+.rd-lcd-label{
+
+    text-align:left;
+
+}
+
+.rd-lcd-colon{
+
+    text-align:center;
+
+}
+
+.rd-lcd-value{
+
+    text-align:left;
+
+}
+
+
+
+.rd-lcd-body span{
+
+    display:inline-block;
+
+    min-width:36px;
+
+    text-align:left;
+
+}
+
+.rd-lcd-footer{
+
+    text-align:center;
+
+    font-size:15px;
+
+    opacity:.9;
+
+    letter-spacing:1px;
+
+}
+
+.rd-lcd-page{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+.rd-lcd-progress{
+
+    text-align:center;
+
+    font-size:22px;
+
+    letter-spacing:2px;
+
+    margin-top:18px;
+
+}
+
+/* ==========================================
+   FOUND SCREEN
+========================================== */
+
+.rd-lcd-found-title{
+
+    margin-top:18px;
+
+    text-align:center;
+
+    font-size:26px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+.rd-lcd-found-system{
+
+    margin-top:16px;
+
+    text-align:center;
+
+    font-size:17px;
+
+    opacity:.95;
+
+}
+
+.rd-lcd-found-year{
+
+    margin-top:4px;
+
+    text-align:center;
+
+    font-size:17px;
+
+    opacity:.85;
+
+}
+
+@keyframes lcdPulse{
+
+    0%{
+
+        opacity:.65;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:.65;
+
+    }
+
+}
+
+#lcd-search-status{
+
+    animation:lcdPulse .9s infinite;
+
+}
+#lcd-nomatch{
+
+    text-align:center;
+
+    letter-spacing:1px;
+
+}
+
+.rd-lcd-screen::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+
+        repeating-linear-gradient(
+
+            180deg,
+
+            rgba(255,255,255,.02) 0px,
+
+            rgba(255,255,255,.02) 1px,
+
+            transparent 2px,
+
+            transparent 4px
+
+        );
+
+    opacity:.18;
+
+}
+

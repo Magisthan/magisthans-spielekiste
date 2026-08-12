@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flatpack – Geometrie-Test</title>
+    <style>
+        :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+        * { box-sizing: border-box; }
+        body { margin: 0; min-height: 100vh; background: #07101d; color: #eef2f8; }
+        #viewer { display: block; width: 100vw; height: 100vh; touch-action: none; }
+        .panel {
+            position: fixed; z-index: 2; top: 20px; left: 20px; max-width: 440px;
+            padding: 14px; border: 1px solid #4e5d70; border-radius: 10px;
+            background: rgb(10 16 26 / 90%); box-shadow: 0 8px 30px rgb(0 0 0 / 35%);
+        }
+        h1 { margin: 0 0 6px; font-size: 16px; }
+        p { margin: 0 0 12px; color: #bdc8d7; font-size: 13px; line-height: 1.4; }
+        .controls { display: flex; flex-wrap: wrap; gap: 8px; }
+        button { border: 1px solid #65748a; border-radius: 6px; padding: 7px 10px; background: #1b293b; color: inherit; cursor: pointer; }
+        button:hover { background: #2c405a; }
+        #state { display: block; margin-top: 10px; font-size: 12px; color: #e5b84d; }
+    </style>
+</head>
+<body>
+    <aside class="panel">
+        <h1>Flatpack – reine Geometrieprüfung</h1>
+        <p>Keine Texturen, keine UV-Flips und keine Animation. Jede sichtbare Fläche hat eine eindeutige Farbe und Beschriftung.</p>
+        <div class="controls">
+            <button type="button" data-pose="closed-front">Geschlossen: Front</button>
+            <button type="button" data-pose="closed-back">Geschlossen: Back</button>
+            <button type="button" data-pose="closed-spine">Geschlossen: right</button>
+            <button type="button" data-pose="half-open">Halb geöffnet</button>
+            <button type="button" data-pose="open-inner">Offen: Innen</button>
+            <button type="button" data-pose="open-outer">Offen: Außen</button>
+        </div>
+        <span id="state">Initialisiere …</span>
+    </aside>
+    <canvas id="viewer" aria-label="Flatpack-Geometrie-Test"></canvas>
+    <script src="../../../assets/libs/babylon.js"></script>
+    <script src="viewer-test.js?v=20260811-006"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flatpack – Geometrie-Debugger</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; overflow: hidden; background: #07101b; color: #e8eef8; font: 14px system-ui, sans-serif; }
+        #viewer { display: block; width: 100vw; height: 100vh; touch-action: none; }
+        .panel { position: fixed; z-index: 2; width: min(390px, calc(100vw - 32px)); padding: 13px; border: 1px solid #53667e; border-radius: 10px; background: rgb(7 15 26 / .93); box-shadow: 0 10px 30px rgb(0 0 0 / .35); }
+        #controls { top: 16px; left: 16px; }
+        #coordinates { right: 16px; bottom: 16px; width: min(410px, calc(100vw - 32px)); }
+        h1, h2 { margin: 0 0 8px; font-size: 15px; }
+        h2 { font-size: 13px; color: #eac35e; }
+        p, small { color: #b7c5d7; line-height: 1.4; }
+        p { margin: 0 0 10px; }
+        .row { display: flex; flex-wrap: wrap; gap: 7px; margin: 9px 0; }
+        button { border: 1px solid #62758d; border-radius: 6px; padding: 6px 9px; background: #1b2b40; color: inherit; cursor: pointer; }
+        button:hover { background: #2c4460; }
+        input[type="range"] { width: 100%; accent-color: #e5b84d; }
+        #angle { color: #eac35e; font-weight: 700; }
+        #surfaces { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px 12px; margin-top: 8px; }
+        label { display: flex; align-items: center; gap: 6px; font-size: 12px; cursor: pointer; }
+        .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+        #coordinates pre { margin: 0; max-height: 250px; overflow: auto; color: #cae2ff; font: 12px/1.45 ui-monospace, Consolas, monospace; white-space: pre-wrap; }
+        .legend { margin-top: 8px; font-size: 12px; color: #b7c5d7; }
+    </style>
+</head>
+<body>
+    <aside id="controls" class="panel">
+        <h1>Flatpack-Geometrie-Debugger</h1>
+        <p>Nur Farbkörper und Bezeichnungen. Der Regler setzt die Öffnung direkt; die Maussteuerung bleibt immer aktiv.</p>
+        <label for="open-range">Öffnung: <span id="angle">0° / 0 %</span></label>
+        <input id="open-range" type="range" min="0" max="100" step="1" value="0">
+        <div class="row">
+            <button type="button" data-pose="closed-front">Geschlossen: Front</button>
+            <button type="button" data-pose="open-outside">Offen: Außen</button>
+            <button type="button" data-pose="open-inside">Offen: Innen</button>
+        </div>
+        <h2>Flächen ein-/ausblenden</h2>
+        <div id="surfaces"></div>
+        <div class="legend">Achsen: X <span style="color:#ff4e4e">rot</span> · Y <span style="color:#58df72">grün</span> · Z <span style="color:#4e9fff">blau</span></div>
+    </aside>
+    <aside id="coordinates" class="panel">
+        <h2>Transform-Koordinaten</h2>
+        <pre id="coordinates-output"></pre>
+    </aside>
+    <canvas id="viewer" aria-label="Interaktiver Flatpack-Geometrie-Debugger"></canvas>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="geometry-debug.js"></script>
+</body>
+</html>

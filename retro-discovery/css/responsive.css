@@ -1,0 +1,226 @@
+/*
+Retro Discovery
+
+responsive.css
+*/
+
+/*
+==================================================
+Responsive
+==================================================
+*/
+
+@media(max-width:900px){
+
+    .rd-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .rd-filter-bar{
+
+        flex-wrap:wrap;
+
+    }
+
+}
+
+@media(max-width:900px){
+
+.rd-carousel{
+
+    height:240px;
+
+}
+
+.rd-box{
+
+    width:110px;
+
+}
+
+.rd-carousel-track{
+
+    gap:15px;
+
+}
+
+}
+
+/* ==================================================
+   Virtual console canvas
+   The original desktop overlay was composed for a
+   1700px-wide chassis.  It remains unchanged and is
+   scaled as one interactive layer by console-scale.js.
+   ================================================== */
+
+.rd-console-top{
+    --console-scale:1;
+}
+
+.rd-console-top > .rd-console-overlay{
+    top:0;
+    right:auto;
+    bottom:auto;
+    left:0;
+    width:1700px;
+    height:442.939px;
+    transform:scale(var(--console-scale));
+    transform-origin:top left;
+}
+
+/* The shelf uses its own 1700 x 420px desktop reference canvas. */
+.rd-console-shelf{
+    height:auto;
+    aspect-ratio:1700 / 420;
+}
+
+.rd-console-shelf > .rd-console-overlay{
+    top:0;
+    right:auto;
+    bottom:auto;
+    left:0;
+    width:1700px;
+    height:420px;
+    transform:scale(var(--shelf-scale, 1));
+    transform-origin:top left;
+}
+
+/* The lower chassis defines both the viewer stage and its visible opening. */
+.rd-main-layout{
+    min-height:0;
+}
+
+#viewer-stage{
+    height:auto;
+    min-height:0;
+    aspect-ratio:2100 / 1000;
+}
+
+/* Values correspond to the open display area in console_chassis_bottom.webp. */
+#viewer-container{
+    top:5.1%;
+    right:1.7%;
+    bottom:18.2%;
+    left:1.6%;
+}
+
+#fullscreen-btn{
+    top:6.794%;
+    left:29.412%;
+}
+
+#viewer-actions{
+    right:6.765%;
+    bottom:18.529%;
+}
+
+#viewer-mobile-panels{
+    display:none;
+}
+
+/* The virtual canvas already provides the scale.  Keep the original
+   centre anchor instead of the carousel's viewport-specific scale. */
+.rd-console-top #discovery-button{
+    transform:translate(-50%,-50%);
+    margin-bottom:0;
+}
+
+/* Move the complete genre control unit together: panel, label and LED. */
+.rd-console-top #genre-filter-container{
+    left:1060px;
+}
+
+@media (max-width:900px){
+
+    .rd-main-layout,
+    #viewer-stage{
+        min-height:min(720px,135vw);
+    }
+
+    #viewer-info-panel{
+        left:16px;
+        right:16px;
+        top:16px;
+        bottom:72px;
+    }
+
+    #viewer-info-panel.open{
+        width:auto;
+    }
+
+    #viewer-actions{
+        right:16px;
+        bottom:82px;
+    }
+
+}
+
+@media (max-width:1200px){
+
+    #viewer-mobile-panels{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        width:100%;
+        margin-top:20px;
+    }
+
+    #viewer-mobile-panels #community-panel{
+        position:relative;
+        top:auto;
+        right:auto;
+        bottom:auto;
+        left:auto;
+        width:100%;
+        transform:none;
+    }
+
+    #viewer-mobile-panels #viewer-info-panel{
+        position:relative;
+        top:auto;
+        right:auto;
+        bottom:auto;
+        left:auto;
+        display:none;
+        width:100%;
+        height:auto;
+        max-height:none;
+        overflow:visible;
+        opacity:1;
+    }
+
+    #viewer-mobile-panels #viewer-info-panel.open{
+        display:block;
+        width:100%;
+    }
+
+    #viewer-mobile-panels .viewer-info-content{
+        height:auto;
+        max-height:none;
+        overflow:visible;
+    }
+
+}
+
+/* On tablet and mobile, use the viewer itself as the presentation surface.
+   The lower chassis is intentionally a desktop-only frame. */
+@media (max-width:1024px){
+
+    .rd-console-bottom{
+        display:none;
+    }
+
+    #viewer-stage{
+        aspect-ratio:auto;
+        min-height:clamp(420px,90vw,720px);
+    }
+
+    #viewer-container{
+        inset:0;
+    }
+
+}

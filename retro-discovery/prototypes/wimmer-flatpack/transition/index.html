@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Closed Package → Wimmer Gatefold</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; overflow: hidden; color: #e8eef8; background: #09111d; font: 14px system-ui, sans-serif; }
+        #viewer { width: 100vw; height: 100vh; display: block; touch-action: none; }
+        .panel { position: fixed; z-index: 1; left: 18px; top: 18px; width: min(410px, calc(100vw - 36px)); padding: 14px; border: 1px solid #52647b; border-radius: 10px; background: rgb(7 14 24 / .9); }
+        h1 { margin: 0 0 7px; font-size: 16px; }
+        p { margin: 0 0 12px; color: #bac7d8; line-height: 1.45; }
+        button { padding: 7px 10px; border: 1px solid #62758d; border-radius: 6px; color: inherit; background: #1b2b40; cursor: pointer; }
+        button:hover { background: #2b425e; }
+        #state { display: block; margin-top: 10px; color: #edc052; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <aside class="panel">
+        <h1>Geschlossene Referenz → Wimmer-Gatefold</h1>
+        <p>Der Startzustand ist unverändert die produktive Closed-Box aus <code>PackageBuilder.buildClosed()</code>. Erst beim Öffnen übernimmt der separate Gatefold-Builder die Bewegung.</p>
+        <button id="toggle" type="button">Öffnen / schließen</button>
+        <button id="closed" type="button">Geschlossen</button>
+        <button id="open" type="button">Geöffnet</button>
+        <span id="state">Initialisiere …</span>
+    </aside>
+    <canvas id="viewer"></canvas>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="../../../js/package-builder.js"></script>
+    <script src="../../../js/package-materials.js"></script>
+    <script src="closed-package-adapter.js"></script>
+    <script src="wimmer-gatefold-builder.js"></script>
+    <script src="transition-viewer.js"></script>
+</body>
+</html>
