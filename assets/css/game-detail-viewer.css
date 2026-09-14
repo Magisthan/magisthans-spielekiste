@@ -1,0 +1,205 @@
+/* =====================================================
+   Reusable 3D box viewer for individual game pages
+===================================================== */
+
+.game-detail-viewer-section{
+    margin-top:40px;
+}
+
+.game-detail-viewer{
+    position:relative;
+    isolation:isolate;
+    width:100%;
+    height:clamp(460px,58vw,680px);
+    margin-top:20px;
+    overflow:hidden;
+    border:1px solid rgba(112,179,224,.22);
+    border-radius:16px;
+    background:
+        radial-gradient(ellipse at 50% 82%,rgba(124,179,230,.29),transparent 42%),
+        radial-gradient(ellipse at 50% 8%,rgba(255,207,119,.1),transparent 34%),
+        linear-gradient(180deg,#172334 0%,#101927 54%,#080d15 100%);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.08),
+        inset 0 -50px 90px rgba(0,0,0,.3),
+        0 24px 45px -28px rgba(0,0,0,.92),
+        0 0 28px rgba(58,168,255,.08);
+}
+
+.game-detail-viewer::before{
+    content:"";
+    position:absolute;
+    z-index:0;
+    left:10%;
+    right:10%;
+    bottom:9%;
+    height:16%;
+    border-radius:50%;
+    background:rgba(160,201,238,.2);
+    filter:blur(22px);
+    pointer-events:none;
+}
+
+.game-detail-viewer::after{
+    content:"";
+    position:absolute;
+    z-index:1;
+    inset:0;
+    background:radial-gradient(ellipse at center,transparent 48%,rgba(0,0,0,.35) 100%);
+    pointer-events:none;
+}
+
+.game-detail-viewer-canvas{
+    position:relative;
+    z-index:2;
+    display:block;
+    width:100%;
+    height:100%;
+    outline:none;
+    touch-action:none;
+    opacity:0;
+    transition:opacity .65s ease;
+}
+
+.game-detail-viewer.is-ready .game-detail-viewer-canvas{
+    opacity:1;
+}
+
+.game-detail-viewer-loading{
+    position:absolute;
+    z-index:4;
+    inset:0;
+    display:grid;
+    place-items:center;
+    padding:24px;
+    color:#efc75b;
+    font:600 .82rem/1.5 "Orbitron",sans-serif;
+    letter-spacing:.1em;
+    text-align:center;
+    text-shadow:0 0 12px rgba(240,191,68,.35);
+    transition:opacity .3s ease,visibility .3s ease;
+}
+
+.game-detail-viewer.is-ready .game-detail-viewer-loading{
+    opacity:0;
+    visibility:hidden;
+}
+
+.game-detail-viewer.has-error .game-detail-viewer-loading{
+    color:#fff;
+    text-shadow:none;
+}
+
+.game-detail-viewer-controls{
+    position:absolute;
+    z-index:5;
+    left:18px;
+    bottom:18px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px 16px;
+    padding:9px 12px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:10px;
+    color:rgba(255,255,255,.72);
+    background:rgba(9,13,20,.72);
+    backdrop-filter:blur(6px);
+    font-size:.75rem;
+    pointer-events:none;
+}
+
+.game-detail-viewer-actions{
+    position:absolute;
+    z-index:6;
+    right:18px;
+    bottom:18px;
+    display:flex;
+    align-items:center;
+    gap:9px;
+}
+
+.game-detail-viewer-actions button{
+    min-height:44px;
+    border:1px solid rgba(255,255,255,.14);
+    color:#f2f2f2;
+    background:rgba(13,17,24,.88);
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    cursor:pointer;
+    transition:transform .2s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease;
+}
+
+.game-detail-viewer-actions button:hover{
+    border-color:rgba(240,191,68,.55);
+    background:rgba(44,38,24,.94);
+    box-shadow:0 8px 24px rgba(0,0,0,.36),0 0 15px rgba(240,191,68,.13);
+    transform:translateY(-1px);
+}
+
+.game-detail-viewer-actions button:focus-visible{
+    outline:2px solid #ffe293;
+    outline-offset:3px;
+}
+
+.game-detail-viewer-open{
+    padding:9px 14px;
+    border-radius:11px;
+    font:700 .7rem/1.2 "Orbitron",sans-serif;
+    letter-spacing:.07em;
+}
+
+.game-detail-viewer-fullscreen{
+    width:44px;
+    padding:0;
+    border-radius:50%;
+    font-size:1.25rem;
+}
+
+.game-detail-viewer:fullscreen{
+    width:100vw;
+    height:100vh;
+    border:0;
+    border-radius:0;
+}
+
+@media (max-width:768px){
+    .game-detail-viewer{
+        height:clamp(420px,112vw,590px);
+        border-radius:13px;
+    }
+
+    .game-detail-viewer-controls{
+        left:12px;
+        right:72px;
+        bottom:12px;
+        gap:3px 10px;
+        padding:7px 9px;
+        font-size:.66rem;
+    }
+
+    .game-detail-viewer-actions{
+        right:12px;
+        bottom:12px;
+        flex-direction:column;
+        align-items:flex-end;
+    }
+
+    .game-detail-viewer-open{
+        min-height:40px;
+        padding:8px 10px;
+        font-size:.62rem;
+    }
+}
+
+@media (max-width:480px){
+    .game-detail-viewer-controls{
+        flex-direction:column;
+    }
+}
+
+@media (prefers-reduced-motion:reduce){
+    .game-detail-viewer-canvas,
+    .game-detail-viewer-loading,
+    .game-detail-viewer-actions button{
+        transition:none;
+    }
+}

@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/viewer.css">
-    <link rel="stylesheet" href="css/rating.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/community.css">
+    <link rel="stylesheet" href="css/top-discoveries.css">
 
 </head>
 
@@ -45,6 +45,16 @@
         <div class="rd-title">
 
             <h1>RETRO DISCOVERY</h1>
+
+            <p class="rd-title-tagline">
+                Klassische Spiele. Echte Boxen. Neue Entdeckungen.
+            </p>
+
+            <div class="rd-publisher-label" aria-label="Eine Magisthans Spielekiste Produktion">
+                <span>A MAGISTHANS SPIELEKISTE PRODUCTION</span>
+                <i aria-hidden="true">◆</i>
+                <span>CURATED RETRO COLLECTION</span>
+            </div>
 
         </div>
 
@@ -86,16 +96,10 @@
 
         <div id="lcd-ready" class="rd-lcd-page">
 
-            <div class="rd-lcd-title">
+            <div class="rd-lcd-title">RD // COLLECTION TERMINAL</div>
 
-                RETRO DISCOVERY
-
-            </div>
-
-            <div class="rd-lcd-status">
-
-                READY
-
+            <div class="rd-lcd-status lcd-status-ready">
+                <i aria-hidden="true"></i> SYSTEM READY
             </div>
 
             <div class="rd-lcd-divider"></div>
@@ -142,11 +146,9 @@
 
             </div>
 
-            <div class="rd-lcd-footer">
+            <div class="rd-lcd-divider rd-lcd-divider-bottom"></div>
 
-                PRESS THE BUTTON
-
-            </div>
+            <div class="rd-lcd-footer">PRESS DISCOVERY TO BEGIN<span class="rd-lcd-cursor" aria-hidden="true">_</span></div>
 
         </div>
 
@@ -157,19 +159,13 @@
         <div id="lcd-searching"
      class="rd-lcd-page hidden">
 
-    <div class="rd-lcd-title">
-
-        RETRO DISCOVERY
-
-    </div>
+    <div class="rd-lcd-title">RD // COLLECTION TERMINAL</div>
 
     <div
         id="lcd-search-status"
-        class="rd-lcd-status">
+        class="rd-lcd-status lcd-status-searching"><i aria-hidden="true"></i> SEARCHING ARCHIVE</div>
 
-        SEARCHING
-
-    </div>
+    <div class="rd-lcd-divider"></div>
 
     <div
         id="lcd-search-progress"
@@ -179,11 +175,11 @@
 
     </div>
 
-    <div class="rd-lcd-footer">
+    <div class="rd-lcd-search-detail">MATCHING SYSTEM + GENRE DATA</div>
 
-        PLEASE WAIT
+    <div class="rd-lcd-divider rd-lcd-divider-bottom"></div>
 
-    </div>
+    <div class="rd-lcd-footer">PLEASE WAIT<span class="rd-lcd-cursor" aria-hidden="true">_</span></div>
 
 </div>
 
@@ -194,11 +190,11 @@
 <div id="lcd-found"
      class="rd-lcd-page hidden">
 
-    <div class="rd-lcd-status">
+    <div class="rd-lcd-title">RD // COLLECTION TERMINAL</div>
 
-        FOUND
+    <div class="rd-lcd-status lcd-status-found"><i aria-hidden="true"></i> DISCOVERY FOUND</div>
 
-    </div>
+    <div class="rd-lcd-divider"></div>
 
     <div
         id="lcd-found-title"
@@ -224,6 +220,10 @@
 
     </div>
 
+    <div class="rd-lcd-divider rd-lcd-divider-bottom"></div>
+
+    <div class="rd-lcd-footer">LOADING PACKAGE VIEW…</div>
+
 </div>
 
 <!-- ======================================
@@ -233,11 +233,11 @@
 <div id="lcd-nomatch"
      class="rd-lcd-page hidden">
 
-    <div class="rd-lcd-status">
+    <div class="rd-lcd-title">RD // COLLECTION TERMINAL</div>
 
-        NO MATCH
+    <div class="rd-lcd-status lcd-status-nomatch"><i aria-hidden="true"></i> NO MATCH</div>
 
-    </div>
+    <div class="rd-lcd-divider"></div>
 
     <div class="rd-lcd-found-title">
 
@@ -251,11 +251,35 @@
 
     </div>
 
+    <div class="rd-lcd-divider rd-lcd-divider-bottom"></div>
+
+    <div class="rd-lcd-footer">ADJUST FILTER PARAMETERS</div>
+
 </div>
 
     </div>
 
 </div>
+
+<!-- Community-Rangliste: wird zunächst mit lokalen Testdaten gespeist. -->
+<section
+    id="top-discoveries"
+    aria-label="Top Discoveries der Community">
+
+    <header class="top-discoveries-header">
+        <span class="top-discoveries-live">
+            LIVE <i aria-hidden="true"></i>
+        </span>
+    </header>
+
+    <div class="top-discoveries-viewport">
+        <div
+            id="top-discoveries-track"
+            class="top-discoveries-track">
+        </div>
+    </div>
+
+</section>
 
 <!-- Discovery Button -->
 
@@ -307,6 +331,30 @@
     </div> <!-- rd-console-overlay -->
 
 </section> <!-- rd-console-top -->
+
+<!-- Auf kleinen Bildschirmen bewusst außerhalb der skalierten Chassis-Fläche. -->
+<section
+    id="top-discoveries-mobile"
+    aria-label="Top Discoveries der Community">
+
+    <header class="top-discoveries-mobile-header">
+        <span>TOP DISCOVERIES</span>
+        <span class="top-discoveries-live">
+            LIVE <i aria-hidden="true"></i>
+        </span>
+    </header>
+
+    <div
+        id="top-discoveries-mobile-current"
+        class="top-discoveries-mobile-current"
+        aria-live="polite">
+    </div>
+
+    <p class="top-discoveries-mobile-note">
+        Community-Rangliste · Top 20
+    </p>
+
+</section>
 
 <!-- ==========================================
      MIDDLE CONSOLE
@@ -385,8 +433,8 @@
 
                     <div class="rating-header">
 
-                        <span>Spiel</span>
-                        <span id="rating-game-value">0.0</span>
+                        <span>Spielspaß / Fun</span>
+                        <span id="rating-game-value">-</span>
 
                     </div>
 
@@ -397,6 +445,18 @@
                             class="rating-fill">
                         </div>
 
+                        <input
+                            id="rating-game-slider"
+                            class="rating-slider"
+                            type="range"
+                            min="0"
+                            max="10"
+                            step="0.1"
+                            value="5"
+                            data-rating="gameplay"
+                            aria-label="Spielspaß"
+                            disabled>
+
                     </div>
 
                 </div>
@@ -405,8 +465,8 @@
 
                     <div class="rating-header">
 
-                        <span>Boxdesign</span>
-                        <span id="rating-box-value">0.0</span>
+                        <span>Boxdesign / Package Design</span>
+                        <span id="rating-box-value">-</span>
 
                     </div>
 
@@ -417,6 +477,18 @@
                             class="rating-fill">
                         </div>
 
+                        <input
+                            id="rating-box-slider"
+                            class="rating-slider"
+                            type="range"
+                            min="0"
+                            max="10"
+                            step="0.1"
+                            value="5"
+                            data-rating="boxdesign"
+                            aria-label="Boxdesign"
+                            disabled>
+
                     </div>
 
                 </div>
@@ -425,8 +497,8 @@
 
                     <div class="rating-header">
 
-                        <span>Kultstatus</span>
-                        <span id="rating-cult-value">0.0</span>
+                        <span>Erinnerungswert / Memorability</span>
+                        <span id="rating-cult-value">-</span>
 
                     </div>
 
@@ -437,6 +509,18 @@
                             class="rating-fill">
                         </div>
 
+                        <input
+                            id="rating-cult-slider"
+                            class="rating-slider"
+                            type="range"
+                            min="0"
+                            max="10"
+                            step="0.1"
+                            value="5"
+                            data-rating="cultstatus"
+                            aria-label="Erinnerungswert"
+                            disabled>
+
                     </div>
 
                 </div>
@@ -445,28 +529,210 @@
                     id="community-votes"
                     class="community-count">
 
-                    0 Bewertungen
+                    - Bewertungen / Votes
 
                 </div>
 
-                <button class="community-button">
+                <div class="community-rating-actions">
 
-                    Jetzt bewerten
+                <button
+                    id="community-rate-button"
+                    class="community-button"
+                    type="button">
+
+                    Jetzt bewerten / Vote now
 
                 </button>
+
+                <button
+                    id="community-rating-cancel"
+                    class="community-cancel-button"
+                    type="button"
+                    hidden>
+
+                    Abbrechen
+
+                </button>
+
+                </div>
+
+                <section
+                    id="scan-contribution"
+                    class="scan-contribution">
+
+                    <button
+                        id="scan-contribution-toggle"
+                        class="scan-contribution-toggle"
+                        type="button"
+                        aria-expanded="false"
+                        aria-haspopup="dialog"
+                        aria-controls="scan-contribution-dialog">
+
+                        <span class="scan-contribution-icon" aria-hidden="true">▣</span>
+                        <span class="scan-contribution-button-label">
+                            <span>MITMACHEN! SCANS EINSENDEN</span>
+                            <span>JOIN AND CONTRIBUTE SCANS.</span>
+                        </span>
+
+                    </button>
+
+                </section>
 
             </div>
 
         </aside>
 
+            <div
+                id="scan-contribution-dialog"
+                class="scan-contribution-dialog"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="scan-dialog-title"
+                aria-describedby="scan-dialog-description"
+                aria-hidden="true"
+                inert>
+
+                <div class="scan-contribution-backdrop" data-scan-dialog-close></div>
+
+                <div class="scan-contribution-dialog-panel" role="document">
+
+                    <button
+                        id="scan-dialog-close"
+                        class="scan-dialog-close"
+                        type="button"
+                        aria-label="Dialog schließen">
+                        ×
+                    </button>
+
+                    <div class="scan-dialog-language" role="group" aria-label="Sprache / Language">
+                        <button type="button" data-scan-language="de" aria-pressed="true">
+                            <span aria-hidden="true">🇩🇪</span> Deutsch
+                        </button>
+                        <button type="button" data-scan-language="en" aria-pressed="false">
+                            <span aria-hidden="true">🇬🇧</span> English
+                        </button>
+                    </div>
+
+                    <div id="scan-dialog-kicker" class="scan-dialog-kicker">ARCHIV UNTERSTÜTZEN</div>
+                    <h3 id="scan-dialog-title">BOX-SCANS BEITRAGEN</h3>
+
+                    <p id="scan-dialog-description" class="scan-dialog-lead">
+                        Du hast eine seltene Spielebox?<br>
+                        Hilf mit, sie digital zu bewahren.
+                    </p>
+
+                    <ul class="scan-dialog-checklist">
+                        <li id="scan-guideline-sides">Vorderseite, Rückseite und Seitenflächen (insgesamt 6 Bilder)</li>
+                        <li id="scan-guideline-content">Inhalt und Beilagen gerne separat auf einem Bild</li>
+                        <li id="scan-guideline-angle">Gerade fotografiert oder gescannt</li>
+                        <li id="scan-guideline-resolution">Auflösung mindestens 300 dpi</li>
+                        <li id="scan-guideline-compression">Möglichst ohne vorherige Komprimierung</li>
+                    </ul>
+
+                    <a
+                        id="scan-contribution-email"
+                        class="scan-contribution-email"
+                        href="mailto:magisthansspielekiste@disroot.org">
+                        SCANS PER E-MAIL SENDEN
+                    </a>
+
+                    <p id="scan-dialog-note" class="scan-dialog-note">
+                        Für größere Dateien kannst du mir zunächst schreiben.
+                    </p>
+
+                    <button
+                        id="scan-dialog-cancel"
+                        class="scan-dialog-cancel"
+                        type="button">
+                        SCHLIESSEN / CLOSE
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div
+                id="editorial-dialog"
+                class="editorial-dialog"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="editorial-dialog-heading"
+                aria-describedby="editorial-dialog-copy"
+                aria-hidden="true"
+                inert>
+
+                <div class="editorial-dialog-backdrop" data-editorial-dialog-close></div>
+
+                <article class="editorial-dialog-panel">
+
+                    <button
+                        id="editorial-dialog-close"
+                        class="editorial-dialog-close"
+                        type="button"
+                        aria-label="Lesefenster schließen">
+                        ×
+                    </button>
+
+                    <div id="editorial-dialog-kicker" class="editorial-dialog-kicker">
+                        RETRO DISCOVERY ARCHIVE
+                    </div>
+
+                    <h2 id="editorial-dialog-heading">MAGISTHANS REVIEW</h2>
+                    <div id="editorial-dialog-game" class="editorial-dialog-game"></div>
+                    <div id="editorial-dialog-copy" class="editorial-dialog-copy"></div>
+
+                    <button
+                        id="editorial-dialog-cancel"
+                        class="editorial-dialog-cancel"
+                        type="button">
+                        SCHLIESSEN / CLOSE
+                    </button>
+
+                </article>
+
+            </div>
+
             <!-- Babylon Viewer -->
 
             <div id="viewer-container">
 
-                <canvas id="viewer3d"></canvas>              
+                <canvas id="viewer3d"></canvas>
 
-                               
             </div> <!-- viewer-container -->
+
+            <div
+                id="viewer-game-title"
+                class="viewer-game-title">
+
+                <span class="viewer-game-title-line">
+
+                    <span
+                        id="viewer-game-title-text"
+                        class="viewer-game-title-text"
+                        aria-hidden="true">
+                    </span>
+
+                    <span
+                        class="viewer-game-title-cursor"
+                        aria-hidden="true">
+                    </span>
+
+                </span>
+
+                <span
+                    id="viewer-scan-credit"
+                    class="viewer-scan-credit"
+                    aria-hidden="true">
+                </span>
+
+                <span
+                    id="viewer-game-title-status"
+                    class="viewer-game-title-status"
+                    role="status"
+                    aria-live="polite">
+                </span>
+
+            </div>
 
             <button id="package-open-hint" type="button" aria-label="Box öffnen">
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -509,7 +775,7 @@
         <div class="info-divider"></div>
 
         <div class="info-row">
-            <span class="info-label">Entwickler</span>
+            <span class="info-label">Entwickler / Developer</span>
             <span
     id="info-developer"
     class="info-value">
@@ -520,7 +786,7 @@
         </div>
 
         <div class="info-row">
-            <span class="info-label">Publisher</span>
+            <span class="info-label">Verleger / Publisher</span>
             <span
     id="info-publisher"
     class="info-value">
@@ -539,6 +805,32 @@
     keine Angaben
 
 </span>
+        </div>
+
+        <div class="info-section-title">
+            Mehr zum Spiel / More about the game
+        </div>
+
+        <div class="info-editorial-actions">
+
+            <button
+                id="info-review"
+                class="info-link info-editorial-button"
+                type="button"
+                aria-haspopup="dialog">
+                <span>★ Magisthans Review / Review</span>
+                <span class="link-arrow" aria-hidden="true">›</span>
+            </button>
+
+            <button
+                id="info-worth-playing"
+                class="info-link info-editorial-button"
+                type="button"
+                aria-haspopup="dialog">
+                <span>◆ Heute noch spielenswert? / Worth Playing</span>
+                <span class="link-arrow" aria-hidden="true">›</span>
+            </button>
+
         </div>
 
         <div class="info-divider"></div>
@@ -638,7 +930,7 @@
 
     <button
         id="viewer-info-btn"
-        aria-label="Spielinformationen">
+        aria-label="Spielinformationen / Game information">
 
         <span class="info-icon">
 
@@ -648,7 +940,7 @@
 
         <span class="info-text">
 
-            Spielinfos
+            INFO
 
         </span>
 
@@ -740,125 +1032,12 @@
 <script src="js/filters.js"></script>
 <script src="js/app.js"></script>
 <script src="js/console-scale.js"></script>
-<script src="js/shelf-layout.js"></script>
-<script src="js/carousel.js"></script>
 <script src="js/slotrenderer.js"></script>
 <script src="js/events.js"></script>
 <script src="js/navigation.js"></script>
 <script src="js/ui.js"></script>
 <script src="js/community.js"></script>
-<script src="js/rating-dialog.js"></script>
-
-<!-- ==========================================
-     RATING DIALOG
-========================================== -->
-
-<div id="rating-modal">
-
-    <div class="rating-dialog">
-
-        <!-- Header -->
-
-        <div class="rating-header">
-
-            <h2>Bewerte dieses Spiel</h2>
-
-            <button
-                id="rating-close"
-                class="rating-close"
-                aria-label="Schließen">
-
-                ✕
-
-            </button>
-
-        </div>
-
-        <!-- Spiel -->
-
-        <div class="rating-group">
-
-            <label>Spiel</label>
-
-            <div
-                class="stars"
-                data-name="gameplay">
-            </div>
-
-            <div
-                id="rating-text-gameplay"
-                class="rating-text">
-
-                Noch keine Bewertung
-
-            </div>
-
-        </div>
-
-        <!-- Boxdesign -->
-
-        <div class="rating-group">
-
-            <label>Boxdesign</label>
-
-            <div
-                class="stars"
-                data-name="boxdesign">
-            </div>
-
-            <div
-                id="rating-text-boxdesign"
-                class="rating-text">
-
-                Noch keine Bewertung
-
-            </div>
-
-        </div>
-
-        <!-- Kultstatus -->
-
-        <div class="rating-group">
-
-            <label>Kultstatus</label>
-
-            <div
-                class="stars"
-                data-name="cultstatus">
-            </div>
-
-            <div
-                id="rating-text-cultstatus"
-                class="rating-text">
-
-                Noch keine Bewertung
-
-            </div>
-
-        </div>
-
-        <!-- Buttons -->
-
-        <div class="rating-actions">
-
-            <button id="rating-cancel">
-
-                Abbrechen
-
-            </button>
-
-            <button id="rating-submit">
-
-                Bewertung senden
-
-            </button>
-
-        </div>
-
-    </div> <!-- rating-dialog -->
-
-</div> <!-- rating-modal -->
-
+<script src="js/top-discoveries.js"></script>
 </body>
 
 </html>

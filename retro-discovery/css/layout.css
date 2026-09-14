@@ -50,6 +50,45 @@ layout.css
 
     gap:20px;
 
+    position:relative;
+
+    isolation:isolate;
+
+}
+
+.rd-header-left::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-18px;
+    right:-34px;
+    top:50%;
+
+    height:70px;
+
+    transform:translateY(-50%);
+
+    z-index:-1;
+
+    opacity:.68;
+
+    border-radius:999px;
+
+    background:
+        linear-gradient(90deg,
+            transparent 0%,
+            rgba(214,163,45,.05) 12%,
+            rgba(247,225,153,.16) 49%,
+            rgba(214,163,45,.05) 86%,
+            transparent 100%);
+
+    box-shadow:
+        0 0 18px rgba(214,163,45,.14),
+        inset 0 1px 0 rgba(255,232,164,.22),
+        inset 0 -1px 0 rgba(96,57,10,.5);
+
 }
 
 .rd-discovery{
@@ -114,6 +153,10 @@ layout.css
 
     border-radius:16px;
 
+    box-shadow:
+        0 0 0 1px rgba(255,223,138,.07),
+        0 0 18px rgba(214,163,45,.12);
+
 }
 
 .rd-logo img{
@@ -134,11 +177,131 @@ layout.css
 
     line-height:1.3;
 
+    color:#f3e8c5;
+
+    text-shadow:
+        0 1px 0 rgba(255,255,255,.1),
+        0 0 14px rgba(214,163,45,.13);
+
 }
 
-.rd-title p{
+.rd-title-tagline{
 
-    color:var(--text-light);
+    color:#cfc49f;
+
+    font-size:.82rem;
+
+    letter-spacing:.035em;
+
+    line-height:1.25;
+
+}
+
+.rd-publisher-label{
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    width:max-content;
+    max-width:100%;
+
+    margin-top:7px;
+    padding:4px 9px 4px 10px;
+
+    overflow:hidden;
+
+    color:#cdb36e;
+
+    border:1px solid rgba(214,163,45,.38);
+    border-radius:3px;
+
+    background:
+        linear-gradient(90deg,
+            rgba(54,42,18,.88),
+            rgba(27,23,15,.94));
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,236,170,.13),
+        0 2px 8px rgba(0,0,0,.24);
+
+    font-size:.56rem;
+    font-weight:700;
+    letter-spacing:.105em;
+    line-height:1;
+    white-space:nowrap;
+
+}
+
+.rd-publisher-label::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    bottom:0;
+    left:-35%;
+
+    width:18%;
+
+    transform:skewX(-24deg);
+
+    background:linear-gradient(90deg,
+        transparent,
+        rgba(255,238,180,.23),
+        transparent);
+
+    animation:rd-publisher-shine 8s ease-in-out infinite;
+
+}
+
+.rd-publisher-label i{
+
+    color:#efd47b;
+
+    font-size:.65rem;
+    font-style:normal;
+
+}
+
+@keyframes rd-publisher-shine{
+
+    0%, 74%, 100%{
+        left:-35%;
+    }
+
+    84%{
+        left:120%;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .rd-header-left{
+        gap:14px;
+    }
+
+    .rd-header-left::before{
+        left:-10px;
+        right:-12px;
+        height:64px;
+    }
+
+    .rd-title-tagline{
+        font-size:.72rem;
+    }
+
+    .rd-publisher-label{
+        gap:5px;
+        margin-top:5px;
+        padding:4px 6px;
+        font-size:.45rem;
+        letter-spacing:.07em;
+    }
 
 }
 
@@ -602,6 +765,8 @@ body::after{
 
     pointer-events:none;
 
+    z-index:10;
+
 }
 
 .rd-console-shelf .rd-console-overlay{
@@ -613,6 +778,8 @@ body::after{
     align-items:flex-end;
 
     padding-bottom:2.5%;
+
+    z-index:20;
 
 }
 
@@ -758,7 +925,7 @@ body::after{
     text-shadow:
     0 0 3px rgba(90,255,140,.35);
 
-    letter-spacing:.6px;
+    letter-spacing:.45px;
 
     box-shadow:
 
@@ -770,11 +937,11 @@ body::after{
 
     text-align:center;
 
-    font-size:22px;
+    font-size:13px;
 
     font-weight:700;
 
-    letter-spacing:2px;
+    letter-spacing:1.1px;
 
     text-transform:uppercase;
 
@@ -784,15 +951,51 @@ body::after{
 
     text-align:center;
 
-    font-size:18px;
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:.85px;
 
     opacity:.95;
 
 }
 
+.rd-lcd-status::before{
+
+    content:"●";
+
+    display:inline-block;
+
+    margin-right:7px;
+
+    font-size:.78em;
+
+    text-shadow:0 0 7px currentColor;
+
+}
+
+.lcd-status-searching{
+
+    color:#efc866;
+
+}
+
+.lcd-status-found{
+
+    color:#a6ffad;
+
+}
+
+.lcd-status-nomatch{
+
+    color:#ec9a72;
+
+}
+
 .rd-lcd-divider{
 
-    width:82%;
+    width:88%;
 
     height:1px;
 
@@ -812,7 +1015,13 @@ body::after{
 
         );
 
-    opacity:.45;
+    opacity:.62;
+
+}
+
+.rd-lcd-divider-bottom{
+
+    margin-top:4px;
 
 }
 
@@ -826,15 +1035,15 @@ body::after{
         12px
         1fr;
 
-    row-gap:8px;
+    row-gap:4px;
 
     column-gap:8px;
 
-    width:250px;
+    width:270px;
 
     margin:0 auto;
 
-    font-size:16px;
+    font-size:13px;
 
 }
 
@@ -842,6 +1051,8 @@ body::after{
 .rd-lcd-label{
 
     text-align:left;
+
+    color:rgba(140,255,149,.62);
 
 }
 
@@ -854,6 +1065,12 @@ body::after{
 .rd-lcd-value{
 
     text-align:left;
+
+    color:#c5ffc7;
+
+    font-size:1.09em;
+
+    font-weight:700;
 
 }
 
@@ -873,11 +1090,27 @@ body::after{
 
     text-align:center;
 
-    font-size:15px;
+    font-size:11px;
 
     opacity:.9;
 
-    letter-spacing:1px;
+    letter-spacing:.8px;
+
+}
+
+.rd-lcd-cursor{
+
+    display:inline-block;
+
+    margin-left:3px;
+
+    animation:lcdCursor 1.1s steps(2, start) infinite;
+
+}
+
+@keyframes lcdCursor{
+
+    50%{ opacity:0; }
 
 }
 
@@ -886,6 +1119,18 @@ body::after{
     position:absolute;
 
     inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+.rd-lcd-page.hidden{
+
+    display:none;
 
 }
 
@@ -899,11 +1144,23 @@ body::after{
 
     text-align:center;
 
-    font-size:22px;
+    font-size:13px;
 
-    letter-spacing:2px;
+    letter-spacing:.55px;
 
-    margin-top:18px;
+    margin-top:2px;
+
+}
+
+.rd-lcd-search-detail{
+
+    text-align:center;
+
+    color:rgba(140,255,149,.72);
+
+    font-size:10px;
+
+    letter-spacing:.48px;
 
 }
 
@@ -913,27 +1170,33 @@ body::after{
 
 .rd-lcd-found-title{
 
-    margin-top:18px;
+    margin-top:3px;
 
     text-align:center;
 
-    font-size:26px;
+    font-size:18px;
 
     font-weight:700;
 
-    letter-spacing:1px;
+    letter-spacing:.75px;
 
     text-transform:uppercase;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+    white-space:nowrap;
 
 }
 
 .rd-lcd-found-system{
 
-    margin-top:16px;
+    margin-top:2px;
 
     text-align:center;
 
-    font-size:17px;
+    font-size:12px;
 
     opacity:.95;
 
@@ -941,13 +1204,15 @@ body::after{
 
 .rd-lcd-found-year{
 
-    margin-top:4px;
+    margin-top:1px;
 
     text-align:center;
 
-    font-size:17px;
+    font-size:10px;
 
     opacity:.85;
+
+    color:rgba(140,255,149,.72);
 
 }
 

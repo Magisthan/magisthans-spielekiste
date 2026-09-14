@@ -1115,15 +1115,10 @@ function renderLCDSearching() {
 
         lcdSearchStep++;
 
-        const dots =
-            ".".repeat(
-                (lcdSearchStep % 3) + 1
-            );
-
         document
             .getElementById("lcd-search-status")
             .textContent =
-            "SEARCHING" + dots;
+            "SEARCHING ARCHIVE";
 
         const blocks =
             (lcdSearchStep % 10) + 1;
@@ -1135,6 +1130,14 @@ function renderLCDSearching() {
             "█".repeat(blocks) +
 
             "░".repeat(10 - blocks);
+
+        document
+            .getElementById("lcd-search-progress")
+            .textContent =
+            "SCANNING ARCHIVE [" +
+            "#".repeat(blocks) +
+            ".".repeat(10 - blocks) +
+            "]";
 
     }, 90);
 
@@ -1181,13 +1184,13 @@ function renderLCDFound(game) {
 
     setTimeout(() => {
 
-        system.textContent = game.system;
+        system.textContent = `${game.system} // ${game.year}`;
 
     }, 300);
 
     setTimeout(() => {
 
-        year.textContent = game.year;
+        year.textContent = "PACKAGE RECORD VERIFIED";
 
     }, 450);
 

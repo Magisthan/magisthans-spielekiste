@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>1869 Hart am Wind | Magisthans Spielekiste</title>
 <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/game-detail-viewer.css">
+<link rel="stylesheet" href="../assets/css/game-archive-navigation.css">
 
 <style>
 .game-cover{
@@ -176,13 +178,38 @@
 
 <div class="section">
 
-<h2>📷 Screenshots</h2>
+<h2>📦 Die Box in 3D</h2>
 
-<div class="section">
+<div class="game-detail-viewer" data-game-detail-viewer>
 
-    <div
-        id="game-screenshots"
-        style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
+    <canvas
+        class="game-detail-viewer-canvas"
+        aria-label="Interaktive 3D-Ansicht der Spielebox">
+    </canvas>
+
+    <div class="game-detail-viewer-loading" role="status">
+        Box wird geladen …
+    </div>
+
+    <div class="game-detail-viewer-controls" aria-hidden="true">
+        <span>Linke Taste: Drehen</span>
+        <span>Mausrad: Zoomen</span>
+    </div>
+
+    <div class="game-detail-viewer-actions">
+        <button
+            class="game-detail-viewer-open"
+            type="button"
+            hidden>
+            BOX ÖFFNEN
+        </button>
+
+        <button
+            class="game-detail-viewer-fullscreen"
+            type="button"
+            aria-label="3D-Ansicht im Vollbild öffnen">
+            ⛶
+        </button>
     </div>
 
 </div>
@@ -199,7 +226,7 @@
 
 <div style="text-align:center;margin:40px 0 -40px;">
 
-            <a class="welcome-button" href="index.html">
+            <a class="welcome-button" href="../index.html">
                 ← Zurück zur Startseite
             </a>
 
@@ -215,7 +242,14 @@
 <a href="../datenschutz.html">Datenschutz</a>
 
 </footer>
+<script src="../assets/libs/babylon.js"></script>
 <script src="../assets/js/game.js"></script>
-<script src="../assets/js/gamepage.js"></script>
+<script src="../retro-discovery/js/package-builder.js"></script>
+<script src="../retro-discovery/js/package-materials.js"></script>
+<script src="../retro-discovery/js/package-animation.js"></script>
+<script src="../retro-discovery/js/flatpack-builder.js"></script>
+<script src="../retro-discovery/js/package.js"></script>
+<script src="../assets/js/game-detail-viewer.js"></script>
+<script src="../assets/js/gamepage.js"></script><script src="../assets/js/game-archive-navigation.js"></script>
 </body>
 </html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <title>Cover Slot-o-mat – Retro Discovery Prototyp</title>
+    <link rel="stylesheet" href="slot-o-mat.css?v=8">
+</head>
+<body>
+    <main class="prototype-shell">
+        <header class="prototype-header">
+            <p class="eyebrow">RETRO DISCOVERY // EXPERIMENTAL UNIT</p>
+            <h1>Cover Slot-o-mat</h1>
+            <p>Ein isolierter Mechanik- und Chassis-Prototyp mit den echten Sammlungsdaten.</p>
+        </header>
+
+        <section class="machine" aria-labelledby="machine-title">
+            <h2 id="machine-title" class="sr-only">Retro Discovery Cover Slot-o-mat</h2>
+
+            <div class="machine-status" aria-live="polite">
+                <span class="status-led" aria-hidden="true"></span>
+                <span id="status-label">READY</span>
+                <span class="status-code">RD-COVER // 01</span>
+            </div>
+
+            <div class="reel-chassis">
+                <div class="rail rail-top" aria-hidden="true"></div>
+                <div class="reel-window">
+                    <div class="reel-track" id="reel-track" aria-label="Cover-Auswahl"></div>
+                    <div class="selection-gate" aria-hidden="true">
+                        <span>SELECT</span>
+                    </div>
+                    <div class="edge-mask edge-mask-left" aria-hidden="true"></div>
+                    <div class="edge-mask edge-mask-right" aria-hidden="true"></div>
+                    <div class="glass" aria-hidden="true"></div>
+                </div>
+                <div class="rail rail-bottom" aria-hidden="true"></div>
+                <span class="chassis-screw screw-tl" aria-hidden="true"></span>
+                <span class="chassis-screw screw-tr" aria-hidden="true"></span>
+                <span class="chassis-screw screw-bl" aria-hidden="true"></span>
+                <span class="chassis-screw screw-br" aria-hidden="true"></span>
+            </div>
+
+            <div class="result-panel">
+                <div>
+                    <span class="result-label">DISCOVERY RESULT</span>
+                    <strong id="result-title">Bereit für eine neue Entdeckung</strong>
+                    <span id="result-meta">Drehknopf drücken</span>
+                    <label class="motion-option">
+                        <input id="full-motion-toggle" type="checkbox" checked>
+                        Volle Walzenanimation
+                    </label>
+                </div>
+
+                <button id="discovery-button" class="discovery-button" type="button" aria-label="Cover-Suche starten">
+                    <img src="../../assets/icons/drehbutton.webp" alt="">
+                    <span>DREHEN</span>
+                </button>
+            </div>
+        </section>
+
+        <p class="prototype-note">Prototyp – keine Verbindung zum produktiven Retro-Discovery-Renderer.</p>
+    </main>
+
+    <script src="../../../assets/js/game.js"></script>
+    <script src="slot-o-mat.js?v=8"></script>
+</body>
+</html>

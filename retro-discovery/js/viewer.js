@@ -10,6 +10,9 @@ let guideTimeout;
 let guideCanShow = true;
 let isFullscreen = false;
 let infoPanelOpen = false;
+let currentInfoGameData = null;
+let editorialDialogReturnFocus = null;
+let editorialDialogInitialized = false;
 
 //--------------------------------------------------
 // Viewer
@@ -21,7 +24,7 @@ const SCALE = 0.014;
 // Viewer Position
 //--------------------------------------------------
 
-const BOX_Y_OFFSET = 0.58;
+const BOX_Y_OFFSET = 0.38;
 
 //--------------------------------------------------
 // Hero Pose
@@ -66,6 +69,7 @@ const SHOWCASE_DELAY = 5000;
 function hideViewerActions(){
 
     infoPanelOpen = false;
+    closeEditorialDialog({ restoreFocus:false });
 
     const actions =
         document.getElementById("viewer-actions");
@@ -184,12 +188,128 @@ function toggleInfoPanel(){
 }
 
 //--------------------------------------------------
+// Editorial reading dialog
+//--------------------------------------------------
+
+function configureEditorialButton(button,content,heading){
+
+    if(!button) return;
+
+    const hasContent = typeof content === "string" && content.trim() !== "";
+
+    button.style.display = hasContent ? "" : "none";
+    button.onclick = hasContent
+        ? ()=>openEditorialDialog(heading,content,button)
+        : null;
+
+}
+
+function openEditorialDialog(heading,content,trigger){
+
+    const dialog = document.getElementById("editorial-dialog");
+    const title = document.getElementById("editorial-dialog-heading");
+    const game = document.getElementById("editorial-dialog-game");
+    const copy = document.getElementById("editorial-dialog-copy");
+    const closeButton = document.getElementById("editorial-dialog-close");
+
+    if(!dialog || !title || !game || !copy) return;
+
+    if(typeof setContributionDialogOpen === "function"){
+        setContributionDialogOpen(false);
+    }
+
+    title.textContent = heading;
+    game.textContent = currentInfoGameData?.title || "";
+    copy.textContent = content;
+    editorialDialogReturnFocus = trigger || document.activeElement;
+
+    dialog.classList.add("is-open");
+    dialog.setAttribute("aria-hidden","false");
+    dialog.removeAttribute("inert");
+    document.body.classList.add("editorial-dialog-open");
+
+    requestAnimationFrame(()=>closeButton?.focus());
+
+}
+
+function closeEditorialDialog({ restoreFocus=true }={}){
+
+    const dialog = document.getElementById("editorial-dialog");
+    if(!dialog?.classList.contains("is-open")) return;
+
+    dialog.classList.remove("is-open");
+    dialog.setAttribute("aria-hidden","true");
+    dialog.setAttribute("inert","");
+    document.body.classList.remove("editorial-dialog-open");
+
+    const returnFocus = editorialDialogReturnFocus;
+    editorialDialogReturnFocus = null;
+
+    if(restoreFocus && returnFocus?.isConnected){
+        requestAnimationFrame(()=>returnFocus.focus());
+    }
+
+}
+
+function initEditorialDialog(){
+
+    if(editorialDialogInitialized) return;
+    editorialDialogInitialized = true;
+
+    const dialog = document.getElementById("editorial-dialog");
+    if(!dialog) return;
+
+    document.getElementById("editorial-dialog-close")
+        ?.addEventListener("click",()=>closeEditorialDialog());
+
+    document.getElementById("editorial-dialog-cancel")
+        ?.addEventListener("click",()=>closeEditorialDialog());
+
+    dialog.querySelector("[data-editorial-dialog-close]")
+        ?.addEventListener("click",()=>closeEditorialDialog());
+
+    document.addEventListener("keydown",event=>{
+
+        if(!dialog.classList.contains("is-open")) return;
+
+        if(event.key === "Escape"){
+            event.preventDefault();
+            closeEditorialDialog();
+            return;
+        }
+
+        if(event.key !== "Tab") return;
+
+        const focusable = Array.from(dialog.querySelectorAll(
+            'a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"])'
+        ));
+
+        if(!focusable.length) return;
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if(event.shiftKey && document.activeElement === first){
+            event.preventDefault();
+            last.focus();
+        }else if(!event.shiftKey && document.activeElement === last){
+            event.preventDefault();
+            first.focus();
+        }
+
+    });
+
+}
+
+//--------------------------------------------------
 // Info Panel Daten
 //--------------------------------------------------
 
 function updateInfoPanel(gameData){
 
     if(!gameData) return;
+
+    currentInfoGameData = gameData;
 
     document.getElementById(
         "info-title"
@@ -222,6 +342,21 @@ document.getElementById(
     artists.length
         ? artists.join(", ")
         : "keine Angabe";
+
+    const reviewButton = document.getElementById("info-review");
+    const worthPlayingButton = document.getElementById("info-worth-playing");
+
+    configureEditorialButton(
+        reviewButton,
+        gameData.review,
+        "MAGISTHANS REVIEW"
+    );
+
+    configureEditorialButton(
+        worthPlayingButton,
+        gameData.worthPlaying,
+        "HEUTE NOCH SPIELENSWERT?"
+    );
 
     //--------------------------------------------------
 // Links
@@ -408,6 +543,8 @@ closeBtn.addEventListener(
     closeInfoPanel
 
 );
+
+    initEditorialDialog();
 
     showViewerGuide();
 
@@ -1678,6 +1815,92 @@ scene.imageProcessingConfiguration.exposure = 1.12;
 // Events
 //--------------------------------------------------
 
+let viewerGameTitleSequence = 0;
+
+function waitForViewerTitle(duration){
+    return new Promise(resolve=>window.setTimeout(resolve,duration));
+}
+
+function splitViewerTitle(text){
+
+    if(typeof Intl?.Segmenter === "function"){
+        const segmenter = new Intl.Segmenter("de",{ granularity:"grapheme" });
+        return Array.from(segmenter.segment(text),part=>part.segment);
+    }
+
+    return Array.from(text);
+
+}
+
+async function showViewerGameTitle(gameData){
+
+    const title = document.getElementById("viewer-game-title");
+    const visualText = document.getElementById("viewer-game-title-text");
+    const scanCredit = document.getElementById("viewer-scan-credit");
+    const status = document.getElementById("viewer-game-title-status");
+
+    if(!title || !visualText || !scanCredit || !status || !gameData?.title) return;
+
+    const sequence = ++viewerGameTitleSequence;
+    const fullTitle = gameData.title;
+
+    title.classList.remove("shine-ready","has-scan-credit");
+    title.classList.add("has-title","is-typing");
+    visualText.textContent = "";
+    scanCredit.textContent = gameData.scanBy
+        ? `SCANNED BY · ${gameData.scanBy}`
+        : "";
+    status.textContent = "";
+
+    const characters = splitViewerTitle(fullTitle);
+    const totalDuration = Math.min(2400,Math.max(900,characters.length*75));
+    const characterDelay = totalDuration / Math.max(1,characters.length);
+
+    for(const character of characters){
+        if(sequence !== viewerGameTitleSequence) return;
+        visualText.textContent += character;
+        await waitForViewerTitle(characterDelay);
+    }
+
+    if(sequence !== viewerGameTitleSequence) return;
+
+    await waitForViewerTitle(320);
+
+    if(sequence !== viewerGameTitleSequence) return;
+
+    title.classList.remove("is-typing");
+    title.classList.toggle("has-scan-credit",Boolean(gameData.scanBy));
+    title.classList.add("shine-ready");
+    status.textContent = gameData.scanBy
+        ? `${fullTitle}. Scanned by ${gameData.scanBy}.`
+        : fullTitle;
+
+
+}
+
+function hideViewerGameTitle(){
+
+    const title = document.getElementById("viewer-game-title");
+    if(!title) return;
+
+    viewerGameTitleSequence += 1;
+    title.classList.remove(
+        "has-title",
+        "is-typing",
+        "shine-ready",
+        "has-scan-credit"
+    );
+
+    const visualText = document.getElementById("viewer-game-title-text");
+    const scanCredit = document.getElementById("viewer-scan-credit");
+    const status = document.getElementById("viewer-game-title-status");
+
+    if(visualText) visualText.textContent = "";
+    if(scanCredit) scanCredit.textContent = "";
+    if(status) status.textContent = "";
+
+}
+
 document.addEventListener(
 
     "gameChanged",
@@ -1687,6 +1910,8 @@ document.addEventListener(
         await showGame(
             event.detail
         );
+
+        await showViewerGameTitle(event.detail);
 
     }
 

@@ -1,243 +1,171 @@
-/* ==========================================
-   Shelf bewegen
-========================================== */
-
-
-/* ==========================================
-   Discovery Spin
-========================================== */
-
-const MIN_SPIN_STEPS = 12;
-const MAX_SPIN_STEPS = 18;
+/* =========================================================
+   Retro Discovery – Navigation und Cover-Slot-o-mat
+========================================================= */
 
 const SHELF_ANIMATION_TIME = 120;
-
+const DISCOVERY_LAUNCH_DELAYS = [320, 250, 190, 145, 110, 90];
+const DISCOVERY_CRUISE_CHANGES = 60;
+const DISCOVERY_CRUISE_DELAY = 82;
+const DISCOVERY_BRAKING_DELAYS = [115, 155, 220, 310, 430, 600, 820];
 
 let isAnimating = false;
-
 let isSpinning = false;
 
+function waitForDiscoveryStep(duration) {
+    return new Promise(resolve => setTimeout(resolve, duration));
+}
+
+function wrapVisibleGameIndex(index) {
+    const total = visibleGames.length;
+    return total ? ((index % total) + total) % total : 0;
+}
+
+function setReelPhase(phase) {
+    const track = document.getElementById("rd-carousel-track");
+    if (track) track.dataset.reelPhase = phase;
+
+    const status = document.getElementById("lcd-search-status");
+    if (!status) return;
+
+    const labels = {
+        launching: "SPINNING UP",
+        "full-speed": "SEARCHING ARCHIVE",
+        braking: "TARGET LOCK",
+        locked: "DISCOVERY FOUND"
+    };
+    if (labels[phase]) status.textContent = labels[phase];
+}
+
+function chooseReelIndex(previousIndex, targetIndex) {
+    const candidates = visibleGames
+        .map((game, index) => index)
+        .filter(index => index !== previousIndex && index !== targetIndex);
+
+    const fallback = visibleGames
+        .map((game, index) => index)
+        .filter(index => index !== previousIndex);
+
+    const pool = candidates.length ? candidates : fallback;
+    if (!pool.length) return targetIndex;
+    return pool[Math.floor(Math.random() * pool.length)];
+}
+
+function showReelGroup(index, animate = true) {
+    renderer.showGroup(index, animate);
+}
+
+async function runDiscoveryReel(targetIndex) {
+    let shownIndex = currentGameIndex;
+
+    setReelPhase("launching");
+    for (const delay of DISCOVERY_LAUNCH_DELAYS) {
+        shownIndex = chooseReelIndex(shownIndex, targetIndex);
+        showReelGroup(shownIndex);
+        await waitForDiscoveryStep(delay);
+    }
+
+    setReelPhase("full-speed");
+    for (let change = 0; change < DISCOVERY_CRUISE_CHANGES; change += 1) {
+        shownIndex = chooseReelIndex(shownIndex, targetIndex);
+        showReelGroup(shownIndex);
+        await waitForDiscoveryStep(DISCOVERY_CRUISE_DELAY);
+    }
+
+    setReelPhase("braking");
+    for (let change = 0; change < DISCOVERY_BRAKING_DELAYS.length; change += 1) {
+        const isFinalChange = change === DISCOVERY_BRAKING_DELAYS.length - 1;
+        shownIndex = isFinalChange
+            ? targetIndex
+            : chooseReelIndex(shownIndex, targetIndex);
+        showReelGroup(shownIndex);
+        if (!isFinalChange) {
+            await waitForDiscoveryStep(DISCOVERY_BRAKING_DELAYS[change]);
+        }
+    }
+}
+
 function moveShelf(direction) {
-
-    if (isAnimating && !isSpinning) return;
-
+    if (isAnimating || isSpinning || !visibleGames.length) return;
     isAnimating = true;
-
-    currentGameIndex =
-    getWrappedIndex(currentGameIndex + direction);
-
-// Nur das Regal aktualisieren
-    // Nur das Regal aktualisieren
-loadGameCounter();
-
-renderer.setCurrentIndex(currentGameIndex);
-renderer.assignInitialGames(currentGameIndex);
+    currentGameIndex = wrapVisibleGameIndex(currentGameIndex + direction);
+    renderer.showGroup(currentGameIndex, true);
+    loadGameCounter();
 
     setTimeout(() => {
-
         isAnimating = false;
-
         hideCommunity();
-
     }, SHELF_ANIMATION_TIME);
-
 }
 
 function nextGame() {
-
     moveShelf(1);
-
 }
 
 function previousGame() {
-
     moveShelf(-1);
-
 }
 
 async function spinShelf(targetIndex) {
-
-    // ==========================================
-// Sprint 2.5
-// Sicherheitsprüfung
-// ==========================================
-
-if (visibleGames.length === 0) {
-
-    return;
-
-}
-
-if (targetIndex < 0) {
-
-    console.warn("Discovery: Ungültiger Zielindex.");
-
-    return;
-
-}
-
-    const viewer = document.getElementById("viewer3d");
-    viewer.style.visibility = "hidden";
-
-    hideViewerActions();
-
-    hideFullscreenButton();
-
-    hideCommunity();
-
+    if (!visibleGames.length || targetIndex < 0) return;
     if (isAnimating || isSpinning) return;
 
     isSpinning = true;
+    const viewer = document.getElementById("viewer3d");
+    const button = document.getElementById("discovery-button");
 
-    const button =
-        document.getElementById("discovery-button");
+    if(typeof hideViewerGameTitle === "function"){
+        hideViewerGameTitle();
+    }
 
-    button.disabled = true;
+    if (viewer) viewer.style.visibility = "hidden";
+    hideViewerActions();
+    hideFullscreenButton();
+    hideCommunity();
+
+    if (button) {
+        button.classList.add("is-spinning");
+        button.setAttribute("aria-disabled", "true");
+    }
 
     setLCDMode("searching");
 
-    // ==========================================
-// Ziel berechnen
-// Sprint 58A
-// ==========================================
+    try {
+        await renderer.preloadPromise;
 
-    const spinSteps =
-    Math.floor(
-        Math.random() *
-        (MAX_SPIN_STEPS - MIN_SPIN_STEPS + 1)
-    ) + MIN_SPIN_STEPS;
-
-    const startIndex =
-    getWrappedIndex(
-        targetIndex - spinSteps +1
-    );
-
-    const direction = 1;
-
-    let delay = 70;
-
-    currentGameIndex = startIndex;
-
-    loadGameCounter();
-
-    renderer.setCurrentIndex(currentGameIndex);
-    renderer.assignInitialGames(currentGameIndex);
-
-    console.log("========== START SPIN ==========");
-    console.log({
-    currentGameIndex,
-    startIndex,
-    targetIndex,
-    spinSteps
-});
-
-    for (let i = 0; i < spinSteps; i++) {
-
-        moveShelf(direction);
-
-        await new Promise(resolve =>
-            setTimeout(resolve, delay));
-
-        if (delay < 220) {
-
-            delay += 8;
-
+        if (visibleGames.length === 1) {
+            renderer.showGroup(targetIndex, false);
+        } else {
+            await runDiscoveryReel(targetIndex);
         }
 
+        currentGameIndex = targetIndex;
+        renderer.showGroup(currentGameIndex, false);
+        renderer.track?.classList.remove("rd-cover-step");
+        setReelPhase("locked");
+        loadGameCounter();
+
+        await waitForDiscoveryStep(520);
+        dispatchGameChanged();
+
+        if (viewer) viewer.style.visibility = "visible";
+        showViewerActions();
+        showFullscreenButton();
+        setLCDMode("found", visibleGames[currentGameIndex]);
+
+        setTimeout(() => {
+            setLCDMode("ready");
+            setReelPhase("ready");
+        }, 2200);
+    } finally {
+        isSpinning = false;
+        if (button) {
+            button.classList.remove("is-spinning");
+            button.removeAttribute("aria-disabled");
+        }
     }
-
-console.log("ENDE", {
-    currentGameIndex,
-    targetIndex,
-    spinSteps,
-    difference:
-        (targetIndex - currentGameIndex + visibleGames.length)
-        % visibleGames.length
-});
-
-button.disabled = false;
-
-isSpinning = false;
-
-dispatchGameChanged();
-
-viewer.style.visibility = "visible";
-
-showViewerActions();
-
-showFullscreenButton();
-
-// aktuelles Spiel anzeigen
-
-console.log("Vor FOUND");
-console.log(visibleGames[currentGameIndex]);
-
-setLCDMode(
-    "found",
-    visibleGames[currentGameIndex]
-);
-
-console.log("Nach FOUND");
-// nach 1,5 Sekunden zurück
-
-setTimeout(() => {
-
-    setLCDMode("ready");
-
-}, 2200);
-
 }
 
-/* ==========================================
-   Tastatursteuerung
-========================================== */
-
-document.addEventListener("keydown", (event) => {
-
-    switch (event.key) {
-
-        case "ArrowLeft":
-
-            previousGame();
-
-            break;
-
-        case "ArrowRight":
-
-            nextGame();
-
-            break;
-
-    }
-
+document.addEventListener("keydown", event => {
+    if (event.key === "ArrowLeft") previousGame();
+    if (event.key === "ArrowRight") nextGame();
 });
-
-/* ==========================================
-   Mausrad
-========================================== */
-
-//document.addEventListener("DOMContentLoaded", () => {
-
-//    const shelf =
-//        document.querySelector(".rd-carousel-section");
-//
-//    if (!shelf) return;
-//
-//  shelf.addEventListener("wheel", (event) => {
-//
-//        event.preventDefault();
-//
-//        if (event.deltaY > 0) {
-//
-//            nextGame();
-//
-//        } else {
-//
-//           previousGame();
-//
-//        }
-//
-//    });
-//
-//});
-

@@ -453,6 +453,9 @@ function showChannel(){
 ===================================================== */
 
 const memory = document.querySelector(".retro-memory");
+const memoryPhoto = document.querySelector(".memory-photo");
+const memoryType  = document.getElementById("memoryType");
+const memoryText = "Unsere ersten C64 Erlebnisse";
 
 if(memory){
 
@@ -463,6 +466,7 @@ if(memory){
             if(entry.isIntersecting){
 
                 memory.classList.add("show");
+                observer.unobserve(entry.target);
 
             }
 
@@ -479,35 +483,105 @@ if(memory){
 }
 
 /* ==========================================
-   MEMORY HOVER
+   MEMORY BOOT CAPTION
 ========================================== */
 
-const memoryPhoto = document.querySelector(".memory-photo");
-const memoryType  = document.getElementById("memoryType");
+if(memoryPhoto && memoryType){
 
-const memoryText = "Unsere ersten C64 Erlebnisse";
+    let typingTimer=null;
+    let cursorTimer=null;
+    let bootStarted=false;
+    let bootComplete=false;
+    let typingComplete=false;
 
-memoryPhoto.addEventListener("mouseenter",()=>{
+    const typeMemoryCaption=()=>{
 
-    memoryType.textContent="";
+        memoryPhoto.classList.add("memory-active");
 
-    let i=0;
-
-    const timer=setInterval(()=>{
-
-        memoryType.textContent+=memoryText.charAt(i);
-
-        i++;
-
-        if(i>=memoryText.length){
-
-            clearInterval(timer);
-
+        if(typingTimer || typingComplete){
+            return;
         }
 
-    },28);
+        memoryType.textContent="";
+        memoryType.classList.add("typing");
 
-});
+        let i=0;
+
+        typingTimer=setInterval(()=>{
+
+            memoryType.textContent+=memoryText.charAt(i);
+            i++;
+
+            if(i>=memoryText.length){
+
+                clearInterval(typingTimer);
+                typingTimer=null;
+                typingComplete=true;
+
+                cursorTimer=setTimeout(()=>{
+                    memoryType.classList.remove("typing");
+                    cursorTimer=null;
+                },1400);
+
+            }
+
+        },28);
+
+    };
+
+    const revealMemoryCaption=()=>{
+
+        if(bootStarted){
+            if(bootComplete){
+                typeMemoryCaption();
+            }
+            return;
+        }
+
+        bootStarted=true;
+        memoryPhoto.classList.add("booted");
+
+        const bootDelay=window.matchMedia("(prefers-reduced-motion: reduce)").matches
+            ? 0
+            : 1250;
+
+        setTimeout(()=>{
+            bootComplete=true;
+
+            if(memoryPhoto.matches(":hover") || document.activeElement===memoryPhoto){
+                typeMemoryCaption();
+            }
+        },bootDelay);
+
+    };
+
+    const hideMemoryCaption=()=>{
+
+        memoryPhoto.classList.remove("memory-active");
+
+        if(typingTimer){
+            clearInterval(typingTimer);
+            typingTimer=null;
+        }
+
+        if(cursorTimer){
+            clearTimeout(cursorTimer);
+            cursorTimer=null;
+        }
+
+        typingComplete=false;
+        memoryType.textContent="";
+        memoryType.classList.remove("typing");
+
+    };
+
+    memoryPhoto.addEventListener("mouseenter",revealMemoryCaption);
+    memoryPhoto.addEventListener("mouseleave",hideMemoryCaption);
+    memoryPhoto.addEventListener("focus",revealMemoryCaption);
+    memoryPhoto.addEventListener("blur",hideMemoryCaption);
+    memoryPhoto.addEventListener("click",revealMemoryCaption);
+
+}
 
 
 updateChannel();

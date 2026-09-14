@@ -1,0 +1,315 @@
+/* ==================================================
+   Top Discoveries
+   Eigenständiger Community-Monitor im oberen Chassis.
+   Alle Werte beziehen sich auf die 1700px-Referenzfläche.
+   ================================================== */
+
+#top-discoveries{
+    position:absolute;
+    left:1408px;
+    top:91px;
+    width:220px;
+    height:292px;
+    overflow:visible;
+    pointer-events:auto;
+    z-index:24;
+    color:#d8cfad;
+    font-family:"Share Tech Mono", "Courier New", monospace;
+    text-shadow:0 1px 1px rgba(0,0,0,.72);
+}
+
+/* Desktop-Lupe: Der Bereich wächst nach links in die freie Konsolenfläche. */
+@media (min-width:1025px){
+
+    #top-discoveries{
+        transform:scale(1);
+        transform-origin:top right;
+        transition:
+            transform .26s cubic-bezier(.22,.8,.24,1),
+            z-index 0s linear .26s;
+    }
+
+    #top-discoveries:hover,
+    #top-discoveries:focus-within{
+        height:254px;
+        padding:6px;
+        border:1px solid rgba(218,180,77,.58);
+        border-radius:7px;
+        background:
+            linear-gradient(145deg, rgba(26,27,23,.98), rgba(10,12,11,.98));
+        box-shadow:
+            0 12px 30px rgba(0,0,0,.48),
+            inset 0 0 20px rgba(220,171,53,.14),
+            0 0 16px rgba(212,165,54,.16);
+        transform:scale(1.75);
+        transition:
+            transform .3s cubic-bezier(.22,.8,.24,1) .15s,
+            box-shadow .3s ease .15s,
+            background .3s ease .15s,
+            border-color .3s ease .15s;
+        z-index:90;
+    }
+
+    #top-discoveries:hover .top-discoveries-viewport,
+    #top-discoveries:focus-within .top-discoveries-viewport{
+        height:219px;
+        mask-image:none;
+    }
+
+    #top-discoveries:hover .top-discovery-row,
+    #top-discoveries:focus-within .top-discovery-row{
+        min-height:43px;
+        padding:5px 4px 3px;
+    }
+
+    #top-discoveries:hover .top-discovery-rank,
+    #top-discoveries:focus-within .top-discovery-rank{
+        font-size:12px;
+    }
+
+    #top-discoveries:hover .top-discovery-title,
+    #top-discoveries:focus-within .top-discovery-title{
+        max-height:15px;
+        font-size:12px;
+        line-height:15px;
+        white-space:nowrap;
+    }
+
+    #top-discoveries:hover .top-discovery-meta,
+    #top-discoveries:focus-within .top-discovery-meta{
+        margin-top:2px;
+        font-size:10px;
+        line-height:11px;
+    }
+
+}
+
+.top-discoveries-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:26px;
+    padding:0 5px 5px;
+    border-bottom:1px solid rgba(204,166,74,.3);
+    color:#d9b75c;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:.55px;
+    line-height:1;
+}
+
+.top-discoveries-live{
+    display:inline-flex;
+    align-items:center;
+    gap:4px;
+    margin-left:auto;
+    color:#ae9d6f;
+    font-size:8px;
+    letter-spacing:.4px;
+}
+
+.top-discoveries-live i{
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:#8cff95;
+    box-shadow:0 0 5px rgba(90,255,140,.95);
+    animation:topDiscoveriesLive 2.2s ease-in-out infinite;
+}
+
+.top-discoveries-viewport{
+    position:relative;
+    height:266px;
+    overflow:hidden;
+    mask-image:linear-gradient(to bottom, transparent 0, #000 7%, #000 93%, transparent 100%);
+}
+
+.top-discoveries-track{
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    will-change:transform;
+}
+
+.top-discovery-row{
+    display:grid;
+    grid-template-columns:25px minmax(0, 1fr);
+    min-height:79px;
+    padding:12px 7px 9px;
+    border-bottom:1px solid rgba(202,181,122,.1);
+    opacity:.84;
+}
+
+.top-discovery-rank{
+    padding-top:2px;
+    color:#d7ae4a;
+    font-size:14px;
+    font-weight:700;
+}
+
+.top-discovery-main{
+    min-width:0;
+}
+
+.top-discovery-title{
+    overflow:hidden;
+    max-height:36px;
+    color:#f1ead0;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:.2px;
+    line-height:18px;
+    text-transform:uppercase;
+}
+
+.top-discovery-meta{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    overflow:hidden;
+    margin-top:4px;
+    color:#cbbd91;
+    font-size:11px;
+    letter-spacing:.1px;
+    line-height:13px;
+    white-space:nowrap;
+}
+
+.top-discovery-score{
+    color:#e5bd55;
+    font-weight:700;
+}
+
+.top-discovery-votes{
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.top-discovery-delta{
+    margin-left:auto;
+    color:#9bcf6d;
+    font-size:10px;
+    font-weight:700;
+}
+
+.top-discovery-delta.is-new{
+    color:#e4c660;
+}
+
+.top-discovery-row.is-highlighted{
+    opacity:1;
+    background:linear-gradient(90deg, rgba(209,153,35,.04), rgba(226,172,54,.25), rgba(209,153,35,.04));
+    box-shadow:inset 0 0 12px rgba(224,165,47,.22);
+    animation:topDiscoveryGlow 2.4s ease-out;
+}
+
+@keyframes topDiscoveriesLive{
+    0%, 100%{ opacity:.38; transform:scale(.82); }
+    50%{ opacity:1; transform:scale(1); }
+}
+
+@keyframes topDiscoveryGlow{
+    0%, 55%{ color:#fff1b2; }
+    100%{ color:inherit; }
+}
+
+/* Mobile nutzt keine winzige, mit dem Chassis skalierte Textanzeige. */
+#top-discoveries-mobile{
+    display:none;
+}
+
+@media (max-width:900px){
+
+    #top-discoveries{
+        display:none;
+    }
+
+    #top-discoveries-mobile{
+        display:block;
+        width:min(100% - 32px, 520px);
+        margin:16px auto 22px;
+        padding:16px;
+        border:1px solid rgba(202,165,72,.48);
+        border-radius:8px;
+        background:
+            linear-gradient(145deg, rgba(35,33,26,.98), rgba(13,14,13,.98));
+        box-shadow:
+            inset 0 0 18px rgba(210,165,53,.07),
+            0 8px 24px rgba(0,0,0,.3);
+        color:#e0d5ac;
+        font-family:"Share Tech Mono", "Courier New", monospace;
+    }
+
+    .top-discoveries-mobile-header{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding-bottom:11px;
+        border-bottom:1px solid rgba(202,165,72,.33);
+        color:#dfba58;
+        font-size:13px;
+        font-weight:700;
+        letter-spacing:1px;
+    }
+
+    .top-discoveries-mobile-current{
+        min-height:106px;
+        padding:17px 2px 10px;
+    }
+
+    .top-discoveries-mobile-entry{
+        display:grid;
+        grid-template-columns:48px minmax(0, 1fr);
+        gap:12px;
+        animation:topDiscoveryMobileEntry .38s ease-out;
+    }
+
+    .top-discoveries-mobile-rank{
+        padding-top:2px;
+        color:#d9ad40;
+        font-size:26px;
+        font-weight:700;
+        line-height:1;
+    }
+
+    .top-discoveries-mobile-title{
+        overflow:hidden;
+        color:#f1ead0;
+        font-size:18px;
+        font-weight:700;
+        letter-spacing:.4px;
+        line-height:1.22;
+        text-overflow:ellipsis;
+        text-transform:uppercase;
+        white-space:nowrap;
+    }
+
+    .top-discoveries-mobile-meta{
+        display:flex;
+        gap:9px;
+        margin-top:9px;
+        color:#cbbd91;
+        font-size:14px;
+    }
+
+    .top-discoveries-mobile-score{
+        color:#e5bd55;
+        font-weight:700;
+    }
+
+    .top-discoveries-mobile-note{
+        margin:0;
+        color:#777b69;
+        font-size:10px;
+        letter-spacing:.6px;
+        text-align:right;
+        text-transform:uppercase;
+    }
+
+    @keyframes topDiscoveryMobileEntry{
+        from{ opacity:0; transform:translateY(5px); }
+        to{ opacity:1; transform:translateY(0); }
+    }
+
+}

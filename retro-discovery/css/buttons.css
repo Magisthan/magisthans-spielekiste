@@ -184,6 +184,18 @@ Buttons
 
 }
 
+.rd-discovery:active .rd-discovery-knob{
+
+    transform:scale(.98);
+
+}
+
+.rd-discovery:hover:active .rd-discovery-knob{
+
+    transform:rotate(14deg) scale(.98);
+
+}
+
 /* ==========================================
    System Switches
    Sprint 27.3

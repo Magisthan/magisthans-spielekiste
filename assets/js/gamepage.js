@@ -57,6 +57,13 @@ function getGameByPage(page) {
 
 function fillGameData(game) {
 
+    const cover = document.getElementById("game-cover");
+
+    if (cover?.parentElement) {
+        cover.parentElement.classList.add("game-cover-stage");
+        cover.parentElement.parentElement?.classList.add("game-detail-intro");
+    }
+
     setText("game-title", game.title);
     setText("game-developer", game.developer);
     setText("game-publisher", game.publisher);
@@ -93,7 +100,8 @@ if (stars) {
         "animate"
     );
 
-    stars.classList.add(`stars-${game.rating}`);
+    const ratingClass = String(game.rating).replace(".", "-");
+    stars.classList.add(`stars-${ratingClass}`);
 
     animateRating(stars);
 

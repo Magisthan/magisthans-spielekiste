@@ -36,12 +36,6 @@ Responsive
 
 }
 
-.rd-box{
-
-    width:110px;
-
-}
-
 .rd-carousel-track{
 
     gap:15px;
@@ -109,7 +103,7 @@ Responsive
 }
 
 #fullscreen-btn{
-    top:6.794%;
+    top:calc(6.794% + var(--viewer-upper-ui-shift));
     left:29.412%;
 }
 
@@ -221,6 +215,22 @@ Responsive
 
     #viewer-container{
         inset:0;
+    }
+
+    #fullscreen-btn,
+    #package-open-hint,
+    .viewer-game-title{
+        top:var(--viewer-upper-ui-mobile-top);
+    }
+
+    #fullscreen-btn,
+    #package-open-hint{
+        right:clamp(14px,3vw,24px);
+        left:auto;
+    }
+
+    #package-open-hint{
+        top:calc(var(--viewer-upper-ui-mobile-top) + 52px);
     }
 
 }

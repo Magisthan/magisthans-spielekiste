@@ -76,129 +76,6 @@ carousel.css
 
 }
 
-.rd-box img{
-
-    filter:
-        drop-shadow(0 8px 18px rgba(0,0,0,.35));
-
-}
-
-/*
-==================================================
-Retro Discovery
-carousel.css
-==================================================
-*/
-
-.rd-box{
-
-    position:absolute;
-
-    bottom:0;
-
-    transform-origin:center bottom;
-
-    transition:
-    transform .28s ease,
-    opacity .28s ease;
-
-    will-change:
-    transform,
-    opacity;
-
-}
-
-.rd-box-focus{
-
-    z-index:20;
-
-    box-shadow:
-
-        0 0 22px rgba(255,220,120,.40),
-
-        0 0 60px rgba(255,190,90,.25),
-
-        0 12px 24px rgba(0,0,0,.35);
-
-}
-
-
-
-/* ==========================================
-   Display Frame
-========================================== */
-
-.rd-display-image{
-
-    width:100%;
-    height:100%;
-
-    display:block;
-
-    object-fit:contain;
-
-    pointer-events:none;
-    user-select:none;
-    backface-visibility: hidden;
-
-    border-radius:2px;
-
-    filter:
-        brightness(.92)
-        drop-shadow(0 20px 24px rgba(0,0,0,.50))
-        drop-shadow(0 4px 4px rgba(0,0,0,.25));
-
-    transition:
-        transform .35s ease,
-        filter .35s ease;
-
-}
-
-.rd-focus .rd-display-image{
-
-    filter:
-
-        brightness(1)
-
-        drop-shadow(0 0 18px rgba(255,225,120,.70))
-
-        drop-shadow(0 0 50px rgba(255,180,60,.30))
-
-        drop-shadow(0 12px 22px rgba(0,0,0,.45));
-
-}
-
-.rd-active{
-
-    z-index:100;
-
-}
-
-.rd-active .rd-display-image{
-
-    filter:
-
-        drop-shadow(0 0 28px rgba(255,205,90,.65))
-
-        drop-shadow(0 0 65px rgba(255,170,40,.35));
-
-}
-
-/* ==========================================
-   Shelf
-========================================== */
-
-/* ==========================================
-   Shelf Light
-========================================== */
-
-.rd-focus img{
-
-    filter:
-        drop-shadow(0 0 18px rgba(255,210,90,.75));
-
-}
-
 /* ==========================================
    Filter Panel
 ========================================== */
@@ -249,43 +126,6 @@ carousel.css
     background:#171717;
 
     border:1px solid rgba(255,170,30,.12);
-
-}
-
-@keyframes shelfSnap{
-
-    0%{
-
-        transform:
-            translateX(-50%)
-            scale(1);
-
-    }
-
-    40%{
-
-        transform:
-            translateX(-50%)
-            scale(1.08);
-
-    }
-
-    100%{
-
-        transform:
-            translateX(-50%)
-            scale(1.03);
-
-    }
-
-}
-
-.rd-box-snap{
-
-    animation:
-        shelfSnap
-        220ms
-        ease-out;
 
 }
 
@@ -369,12 +209,6 @@ carousel.css
 /* ==========================================
    Spielboxen
 ========================================== */
-
-.rd-display-image{
-
-    max-height:165px;
-
-}
 
 }
 
@@ -613,4 +447,324 @@ carousel.css
 
     z-index:2;
 
+}
+
+/* ==================================================
+   Cover Slot-o-mat
+   Einheitliche Coverflächen im bestehenden Chassis.
+================================================== */
+
+.rd-cover-reel{
+    overflow:visible;
+}
+
+.rd-reel-lighting,
+.rd-reel-lighting span{
+    position:absolute;
+    pointer-events:none;
+}
+
+.rd-reel-lighting{
+    inset:0;
+    overflow:hidden;
+    background:
+        linear-gradient(to bottom, rgba(0,0,0,.24) 0 28%, transparent 66%),
+        linear-gradient(to top, rgba(0,0,0,.34), transparent 18%);
+}
+
+.rd-reel-top-transition{
+    top:54px;
+    right:255px;
+    left:255px;
+    height:35px;
+    z-index:0;
+    background:linear-gradient(
+        to bottom,
+        transparent,
+        rgba(4,5,5,.14) 32%,
+        rgba(3,4,4,.52) 100%
+    );
+    filter:blur(2px);
+}
+
+.rd-reel-top-reflection{
+    top:76px;
+    right:285px;
+    left:285px;
+    height:1px;
+    z-index:1;
+    opacity:.3;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(224,193,139,.32) 18%,
+        rgba(245,221,176,.42) 50%,
+        rgba(224,193,139,.32) 82%,
+        transparent
+    );
+    box-shadow:0 1px 7px rgba(195,139,57,.13);
+}
+
+.rd-reel-center-light{
+    left:50%;
+    bottom:38px;
+    width:320px;
+    height:292px;
+    transform:translateX(-50%);
+    z-index:0;
+    background:radial-gradient(
+        ellipse at 50% 64%,
+        rgba(244,174,66,.18) 0,
+        rgba(213,137,37,.075) 38%,
+        transparent 74%
+    );
+    filter:blur(16px);
+    opacity:.68;
+    transition:opacity .5s ease, filter .5s ease;
+}
+
+.rd-reel-edge-mask{
+    top:0;
+    bottom:0;
+    width:390px;
+    z-index:120;
+}
+
+.rd-reel-edge-mask-left{
+    left:0;
+    background:linear-gradient(90deg, rgba(0,0,0,.96), rgba(0,0,0,.58) 42%, transparent);
+}
+
+.rd-reel-edge-mask-right{
+    right:0;
+    background:linear-gradient(270deg, rgba(0,0,0,.96), rgba(0,0,0,.58) 42%, transparent);
+}
+
+.rd-reel-light-sweep{
+    top:56px;
+    bottom:42px;
+    left:-34%;
+    width:28%;
+    z-index:125;
+    opacity:0;
+    transform:skewX(-18deg);
+    background:linear-gradient(90deg, transparent, rgba(255,206,118,.12), transparent);
+    filter:blur(9px);
+}
+
+.rd-reel-rail-shade{
+    right:0;
+    bottom:0;
+    left:0;
+    height:34px;
+    z-index:130;
+    background:linear-gradient(to top, rgba(0,0,0,.56), rgba(0,0,0,.18) 52%, transparent);
+}
+
+.rd-cover-reel[data-reel-phase="launching"] .rd-reel-center-light{
+    opacity:.82;
+    filter:blur(16px) brightness(1.12);
+}
+
+.rd-cover-reel[data-reel-phase="full-speed"] .rd-reel-center-light{
+    opacity:.68;
+}
+
+.rd-cover-reel[data-reel-phase="full-speed"] .rd-reel-light-sweep{
+    opacity:1;
+    animation:rdReelLightSweep .72s linear infinite;
+}
+
+.rd-cover-reel[data-reel-phase="braking"] .rd-reel-center-light{
+    opacity:1;
+    filter:blur(13px) brightness(1.36);
+}
+
+.rd-cover-reel[data-reel-phase="locked"] .rd-reel-center-light{
+    animation:rdCenterLightLock .7s ease-out;
+}
+
+.rd-cover-slot{
+    position:absolute;
+    bottom:0;
+    box-sizing:border-box;
+    width:190px;
+    height:262px;
+    padding:9px;
+    display:grid;
+    place-items:center;
+    overflow:hidden;
+    border:1px solid #44413a;
+    border-radius:5px;
+    background:linear-gradient(145deg,#25292a,#0b0d0e);
+    box-shadow:
+        0 12px 22px rgba(0,0,0,.68),
+        inset 0 1px rgba(255,255,255,.1);
+    transform-origin:center bottom;
+    transition:transform .28s ease, opacity .28s ease;
+    will-change:transform, opacity;
+}
+
+.rd-cover-slot .rd-cover-image{
+    width:100%;
+    height:100%;
+    max-width:none;
+    max-height:none;
+    object-fit:contain;
+    object-position:center center;
+    background:#050607;
+    border-radius:2px;
+    transform:scale(var(--rd-cover-normalization, 1));
+    transform-origin:center center;
+    pointer-events:none;
+    user-select:none;
+    backface-visibility:hidden;
+    filter:
+        brightness(.92)
+        drop-shadow(0 20px 24px rgba(0,0,0,.5))
+        drop-shadow(0 4px 4px rgba(0,0,0,.25));
+    transition:transform .35s ease, filter .35s ease;
+}
+
+.rd-cover-slot.rd-cover-portrait{
+    --rd-cover-normalization:1;
+}
+
+.rd-cover-slot.rd-cover-square{
+    --rd-cover-normalization:1.035;
+}
+
+.rd-cover-slot.rd-cover-wide{
+    --rd-cover-normalization:1.06;
+}
+
+.rd-cover-slot.rd-cover-focus{
+    box-shadow:
+        0 12px 22px rgba(0,0,0,.68),
+        inset 0 1px rgba(255,255,255,.1);
+}
+
+.rd-selection-gate{
+    position:absolute;
+    left:50%;
+    bottom:-12px;
+    width:212px;
+    height:286px;
+    z-index:160;
+    transform:translateX(-50%);
+    border:2px solid rgba(245,178,61,.9);
+    border-top-width:4px;
+    border-bottom-width:4px;
+    border-radius:7px;
+    box-shadow:
+        0 0 16px rgba(238,157,36,.34),
+        inset 0 0 18px rgba(238,157,36,.1);
+    pointer-events:none;
+}
+
+.rd-selection-gate::before,
+.rd-selection-gate::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    border:9px solid transparent;
+}
+
+.rd-selection-gate::before{
+    top:-2px;
+    border-top-color:#ffd37a;
+}
+
+.rd-selection-gate::after{
+    bottom:-2px;
+    border-bottom-color:#ffd37a;
+}
+
+.rd-selection-gate span{
+    position:absolute;
+    left:50%;
+    bottom:-24px;
+    transform:translateX(-50%);
+    color:#e8a83b;
+    font:700 .65rem "Courier New",monospace;
+    letter-spacing:.2em;
+}
+
+.rd-cover-reel.rd-cover-step .rd-cover-slot .rd-cover-image{
+    animation:rdRapidCoverStep 80ms steps(2,end) both;
+}
+
+.rd-cover-reel[data-reel-phase="braking"]
+.rd-cover-slot .rd-cover-image{
+    animation-duration:150ms;
+}
+
+.rd-cover-reel[data-reel-phase="full-speed"]{
+    filter:brightness(1.08) saturate(.92);
+}
+
+.rd-cover-reel[data-reel-phase="braking"]
+.rd-selection-gate{
+    animation:rdTargetPulse .55s ease-in-out infinite alternate;
+}
+
+.rd-cover-reel[data-reel-phase="locked"]
+.rd-selection-gate{
+    animation:rdTargetLock .48s ease-out;
+}
+
+#discovery-button.is-spinning{
+    pointer-events:none;
+}
+
+@keyframes rdRapidCoverStep{
+    0%{
+        opacity:.42;
+        filter:
+            brightness(1.42)
+            saturate(.72)
+            drop-shadow(0 8px 18px rgba(0,0,0,.35));
+    }
+    100%{
+        opacity:1;
+        filter:
+            brightness(1)
+            saturate(1)
+            drop-shadow(0 8px 18px rgba(0,0,0,.35));
+    }
+}
+
+@keyframes rdTargetPulse{
+    from{
+        box-shadow:0 0 16px rgba(255,194,82,.25),0 12px 22px rgba(0,0,0,.65);
+    }
+    to{
+        box-shadow:0 0 34px rgba(255,194,82,.7),0 12px 22px rgba(0,0,0,.65);
+    }
+}
+
+@keyframes rdTargetLock{
+    0%{filter:brightness(1);}
+    42%{filter:brightness(1.75);}
+    100%{filter:brightness(1);}
+}
+
+@keyframes rdReelLightSweep{
+    from{transform:translateX(0) skewX(-18deg);}
+    to{transform:translateX(600%) skewX(-18deg);}
+}
+
+@keyframes rdCenterLightLock{
+    0%{opacity:.74; filter:blur(16px) brightness(1);}
+    38%{opacity:1; filter:blur(11px) brightness(1.72);}
+    100%{opacity:.68; filter:blur(16px) brightness(1);}
+}
+
+@media (prefers-reduced-motion:reduce){
+    .rd-reel-light-sweep,
+    .rd-cover-reel[data-reel-phase="full-speed"] .rd-reel-light-sweep,
+    .rd-cover-reel[data-reel-phase="locked"] .rd-reel-center-light{
+        animation:none;
+    }
 }

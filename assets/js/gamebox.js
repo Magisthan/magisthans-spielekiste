@@ -811,6 +811,7 @@ createScene().then(() => {
 
 let archiveTimers = [];
 let autoSwitchPaused = false;
+let archiveLoadState = "idle";
 
 function resetArchive(){
 
@@ -841,11 +842,22 @@ function resetArchive(){
     const image =
         document.getElementById("archive-image");
 
+    const empty =
+        document.getElementById("archive-empty");
+
+    const zoom =
+        document.getElementById("archive-zoom");
+
+    const imageWrapper =
+        document.querySelector(".archive-image-wrapper");
+
     if(!loading) return;
 
     loading.style.zIndex = "1";
     loading.classList.remove("hide");
     content.classList.remove("show");
+    content.classList.remove("content-available");
+    content.classList.remove("content-missing");
     status.classList.remove("show");
     bar.classList.remove("show");
     result.classList.remove("show");
@@ -865,8 +877,60 @@ function resetArchive(){
     result.textContent =
         "✓ Archive scan complete.";
 
+    archiveLoadState = "idle";
+
+    image.onload = null;
+    image.onerror = null;
     image.classList.remove("show");
+    image.hidden = true;
     image.src = "";
+
+    empty.hidden = true;
+    zoom.hidden = true;
+    imageWrapper.classList.remove("shimmer-run");
+
+}
+
+function runArchiveShimmer(){
+
+    const image = document.getElementById("archive-image");
+    const imageWrapper = document.querySelector(".archive-image-wrapper");
+
+    if(
+        archiveLoadState !== "available" ||
+        !image ||
+        !imageWrapper ||
+        image.hidden
+    ) return;
+
+    const imageRect = image.getBoundingClientRect();
+    const wrapperRect = imageWrapper.getBoundingClientRect();
+    const shimmerWidth = Math.max(54, imageRect.width * .18);
+
+    imageWrapper.style.setProperty(
+        "--archive-image-left",
+        `${imageRect.left - wrapperRect.left}px`
+    );
+    imageWrapper.style.setProperty(
+        "--archive-image-top",
+        `${imageRect.top - wrapperRect.top}px`
+    );
+    imageWrapper.style.setProperty(
+        "--archive-image-width",
+        `${imageRect.width}px`
+    );
+    imageWrapper.style.setProperty(
+        "--archive-image-height",
+        `${imageRect.height}px`
+    );
+    imageWrapper.style.setProperty(
+        "--archive-shimmer-width",
+        `${shimmerWidth}px`
+    );
+
+    imageWrapper.classList.remove("shimmer-run");
+    void imageWrapper.offsetWidth;
+    imageWrapper.classList.add("shimmer-run");
 
 }
 
@@ -892,6 +956,12 @@ function startArchive(folder){
     const image =
         document.getElementById("archive-image");
 
+    const empty =
+        document.getElementById("archive-empty");
+
+    const zoom =
+        document.getElementById("archive-zoom");
+
     const archiveLightbox =
         document.getElementById("archive-lightbox");
 
@@ -906,9 +976,16 @@ function startArchive(folder){
         `assets/textures/${folder}/content.webp`
     );
 
-    image.src = `assets/textures/${folder}/content.webp`;
+    archiveLoadState = "pending";
 
     image.onload = () => {
+
+    archiveLoadState = "available";
+    image.hidden = false;
+    empty.hidden = true;
+    zoom.hidden = false;
+    content.classList.add("content-available");
+    content.classList.remove("content-missing");
 
     // Panelhöhe nach dem Laden des Bildes neu berechnen
     if (panel.classList.contains("open")) {
@@ -920,6 +997,8 @@ function startArchive(folder){
 };
 
     image.onclick = () => {
+
+    if(archiveLoadState !== "available") return;
 
     autoSwitchPaused = true;
 
@@ -933,10 +1012,19 @@ function startArchive(folder){
 
     image.onerror = ()=>{
 
+        archiveLoadState = "missing";
+        image.hidden = true;
+        empty.hidden = false;
+        zoom.hidden = true;
+        content.classList.remove("content-available");
+        content.classList.add("content-missing");
+
         result.textContent =
-            "No archive material available.";
+            "No content at the moment";
 
     };
+
+    image.src = `assets/textures/${folder}/content.webp`;
 
     //--------------------------------------------------
     // Phase 1
@@ -952,7 +1040,7 @@ function startArchive(folder){
             bar.textContent =
                 "[██░░░░░░░░░░]";
 
-        },700)
+        },300)
 
     );
 
@@ -966,7 +1054,7 @@ function startArchive(folder){
             bar.textContent =
                 "[████░░░░░░░░]";
 
-        },1400)
+        },650)
 
     );
 
@@ -980,7 +1068,7 @@ function startArchive(folder){
             bar.textContent =
                 "[███████░░░░░]";
 
-        },2200)
+        },1050)
 
     );
 
@@ -991,7 +1079,7 @@ function startArchive(folder){
             bar.textContent =
                 "[██████████░░]";
 
-        },3000)
+        },1450)
 
     );
 
@@ -1002,7 +1090,7 @@ function startArchive(folder){
             bar.textContent =
                 "[████████████]";
 
-        },3600)
+        },1750)
 
     );
 
@@ -1010,10 +1098,11 @@ function startArchive(folder){
 
         setTimeout(()=>{
 
-            result.textContent =
-                "✓ Archive scan complete.";
+            result.textContent = archiveLoadState === "missing"
+                ? "No content at the moment"
+                : "✓ Archive scan complete.";
 
-        },4100)
+        },1950)
 
     );
 
@@ -1035,13 +1124,17 @@ function startArchive(folder){
 
         content.classList.add("show");
 
+        requestAnimationFrame(()=>{
+            requestAnimationFrame(runArchiveShimmer);
+        });
+
         setTimeout(()=>{
 
             loading.style.zIndex = "2";
 
         },800);
 
-    },5000)
+    },2200)
 
 );
 
