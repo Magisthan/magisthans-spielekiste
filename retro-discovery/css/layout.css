@@ -795,6 +795,12 @@ body::after{
 
 }
 
+.rd-console-top{
+
+    overflow:visible;
+
+}
+
 .rd-console-shelf{
 
     height:420px;          /* später frei anpassbar */

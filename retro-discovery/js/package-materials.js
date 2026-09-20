@@ -11,15 +11,16 @@ window.PackageMaterials = {
         texture.wAng = options.rotation || 0;
         texture.anisotropicFilteringLevel = 16;
         texture.gammaSpace = true;
-        texture.level = 1.18;
+        texture.level = 1.3;
         texture.updateSamplingMode(BABYLON.Texture.TRILINEAR_SAMPLINGMODE);
 
         material.diffuseTexture = texture;
-        material.ambientColor = new BABYLON.Color3(0.42, 0.42, 0.42);
-        material.specularColor = new BABYLON.Color3(0.22, 0.22, 0.22);
+        material.ambientColor = new BABYLON.Color3(0.30, 0.30, 0.30);
+        material.specularColor = new BABYLON.Color3(0.08, 0.08, 0.08);
         material.specularPower = 140;
-        material.emissiveColor = new BABYLON.Color3(0.12, 0.12, 0.12);
+        material.emissiveColor = new BABYLON.Color3(0.045, 0.045, 0.045);
         material.backFaceCulling = options.backFaceCulling ?? false;
+        material.twoSidedLighting = !material.backFaceCulling;
 
         return material;
     },
@@ -42,7 +43,7 @@ window.PackageMaterials = {
             back: closedSurface("back", images.back),
             left: closedSurface("left", images.left),
             right: closedSurface("right", images.right),
-            top: closedSurface("top", images.top, { rotation: Math.PI / 2 }),
+            top: closedSurface("top", images.top, { flipU: false, rotation: Math.PI / 2 }),
             bottom: closedSurface("bottom", images.bottom, { rotation: -Math.PI / 2 })
         };
     },
@@ -64,7 +65,7 @@ window.PackageMaterials = {
             backExterior: gatefoldSurface("backExterior", images.back, { flipU: true }),
             outerSpine: gatefoldSurface("outerSpine", images.right, { flipU: true }),
             fixedLeft: gatefoldSurface("fixedLeft", images.left, { flipU: true }),
-            fixedTop: gatefoldSurface("fixedTop", images.top, { flipU: true, rotation: Math.PI / 2 }),
+            fixedTop: gatefoldSurface("fixedTop", images.top, { flipU: false, rotation: Math.PI / 2 }),
             fixedBottom: gatefoldSurface("fixedBottom", images.bottom, { flipU: true, rotation: -Math.PI / 2 }),
             insideSpin: images.insideSpin
                 ? gatefoldSurface("insideSpin", images.insideSpin, { flipU: false })
@@ -86,11 +87,29 @@ window.PackageMaterials = {
             front: this.createMaterial(scene, "flatpack-front", images.front, option("front", { flipU: true })),
             back: this.createMaterial(scene, "flatpack-back", images.back, option("back", { flipU: true })),
             left: this.createMaterial(scene, "flatpack-left", images.left, option("left", { flipU: true })),
-            top: this.createMaterial(scene, "flatpack-top", images.top, option("top", { flipU: true, rotation: Math.PI / 2 })),
+            top: this.createMaterial(scene, "flatpack-top", images.top, option("top", { flipU: false, rotation: Math.PI / 2 })),
             bottom: this.createMaterial(scene, "flatpack-bottom", images.bottom, option("bottom", { flipU: true, rotation: -Math.PI / 2 })),
             right: this.createMaterial(scene, "flatpack-right", images.right, option("right", { flipU: false, flipV: true })),
             insideLeft: this.createMaterial(scene, "flatpack-inside-left", images.insideLeft, option("insideLeft", { flipU: true })),
             insideRight: this.createMaterial(scene, "flatpack-inside-right", images.insideRight, option("insideRight", { flipU: true }))
+        };
+    },
+
+    createHingedBox(scene, images, surfaceOptions = {}) {
+        const hingedSurface = (name, image, fallback = {}) => this.createMaterial(
+            scene,
+            `hinged-box-${name}`,
+            image,
+            {
+                backFaceCulling: false,
+                ...fallback,
+                ...(surfaceOptions[name] || {})
+            }
+        );
+
+        return {
+            insideLeft: hingedSurface("inside-left", images.insideLeft, { flipU: true }),
+            insideRight: hingedSurface("inside-right", images.insideRight, { flipU: false })
         };
     },
 

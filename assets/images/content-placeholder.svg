@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title description">
+  <title id="title">Noch kein Inhaltsbild vorhanden</title>
+  <desc id="description">No content image available</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151d27"/>
+      <stop offset="0.52" stop-color="#090d13"/>
+      <stop offset="1" stop-color="#111820"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="58%">
+      <stop offset="0" stop-color="#2f7da5" stop-opacity=".24"/>
+      <stop offset=".58" stop-color="#17374a" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#06090d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9e6d16"/>
+      <stop offset=".5" stop-color="#f4c95b"/>
+      <stop offset="1" stop-color="#9e6d16"/>
+    </linearGradient>
+    <pattern id="scanlines" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 7.5H8" stroke="#a8d8ec" stroke-opacity=".035"/>
+    </pattern>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" rx="34" fill="url(#background)"/>
+  <rect width="800" height="1000" rx="34" fill="url(#glow)"/>
+  <rect width="800" height="1000" rx="34" fill="url(#scanlines)"/>
+  <rect x="22" y="22" width="756" height="956" rx="24" fill="none" stroke="#d29b2e" stroke-opacity=".58" stroke-width="3"/>
+  <rect x="39" y="39" width="722" height="922" rx="18" fill="none" stroke="#8cb4c8" stroke-opacity=".14"/>
+
+  <g fill="#6e7c84" stroke="#05080b" stroke-width="3">
+    <circle cx="61" cy="61" r="11"/><circle cx="739" cy="61" r="11"/>
+    <circle cx="61" cy="939" r="11"/><circle cx="739" cy="939" r="11"/>
+  </g>
+  <g stroke="#c6d0d4" stroke-opacity=".42" stroke-width="2">
+    <path d="M55 61h12M61 55v12M733 61h12M739 55v12M55 939h12M61 933v12M733 939h12M739 933v12"/>
+  </g>
+
+  <text x="400" y="162" fill="#96b5c4" fill-opacity=".72" font-family="monospace" font-size="25" letter-spacing="9" text-anchor="middle">ARCHIVE FILE</text>
+  <path d="M216 195H584" stroke="url(#gold)" stroke-width="2"/>
+
+  <g transform="translate(244 284)" fill="none" stroke="#e4b845" stroke-width="12" stroke-linejoin="round" filter="url(#softGlow)">
+    <path d="M42 40h228v276H42z"/>
+    <path d="M42 40 94 0h228v276l-52 40"/>
+    <path d="M270 40 322 0M270 316V40"/>
+    <path d="M92 113h128M92 157h128M92 201h82" stroke-width="8" stroke-opacity=".65"/>
+  </g>
+
+  <text x="400" y="706" fill="#f1c653" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="700" text-anchor="middle">
+    <tspan x="400">Noch kein Inhaltsbild</tspan>
+    <tspan x="400" dy="48">vorhanden</tspan>
+  </text>
+  <text x="400" y="826" fill="#edf4f7" fill-opacity=".86" font-family="Arial, Helvetica, sans-serif" font-size="27" text-anchor="middle">No content image available</text>
+
+  <g font-family="monospace" font-size="17" fill="#82a6b8" fill-opacity=".52" letter-spacing="3">
+    <text x="75" y="921">STATUS: PENDING</text>
+    <text x="725" y="921" text-anchor="end">RBA / CONTENT</text>
+  </g>
+</svg>

@@ -5,7 +5,7 @@ const GAMES = [
         id: 1,
         folder: "pirates",
         scanBy: "Magisthan",
-        page: "sid-meiers-pirates.html",
+        page: "pirates.html",
         featured: true,
         title: "Sid Meiers Pirates!",
         system: "Amiga",
@@ -361,7 +361,7 @@ const GAMES = [
 
     {
         id: 7,
-        folder: "dotc-c64-us",
+        folder: "dotc",
         scanBy: "Magisthan",
         page: "dotc.html",
         featured: false,
@@ -3054,7 +3054,7 @@ const GAMES = [
 
     {
         id: 52,
-        folder: "command_conquer_tiberian_sun",
+        folder: "command_conquer_tiberian_sun_deutsch",
         scanBy: "Magisthan",
         page: "command_conquer_tiberian_sun_deutsch.html",
         featured: false,
@@ -4550,6 +4550,5608 @@ const GAMES = [
  
 ] 
          
+    },
+
+    {
+        id: 77,
+        folder: "battle_isle_platinum",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "battle_isle_platinum.html",
+        featured: false,
+        title: "Battle Isle Platinum",
+        system: "PC",
+        year: 2000,
+        publisher: "Blue Byte Software",
+        developer: "Blue Byte Software",
+        genre: [
+            "Compilation",
+            "Rundenstrategie",
+            "Taktik"
+        ],
+        description: "Battle Isle Platinum bündelt Blue Bytes klassische Hexfeld-Strategiereihe samt Erweiterungen und Incubation zu einer umfangreichen PC-Sammlung für Fans taktischer Rundenschlachten.",
+        history: `Battle Isle Platinum erschien 2000 in Deutschland bei Blue Byte Software und entstand als große Rückschau auf die Reihe vor Battle Isle: Der Andosia Konflikt. Die Sammlung vereint Battle Isle, beide Data Disks, Battle Isle 2, dessen Scenery CD, Battle Isle 3 sowie Incubation und dessen Mission Pack; die deutsche Zusammenstellung führt außerdem History Line 1914–1918. Dadurch spannt die Box beinahe ein Jahrzehnt Blue-Byte-Strategiegeschichte auf. Die älteren Battle-Isle-Teile setzen auf rundenbasierte Hexfeldkämpfe, während Incubation das Universum in taktische 3D-Gefechte überträgt. Für Sammler ist die Ausgabe besonders reizvoll, weil Hauptspiele und Erweiterungen in einer einzigen großen Compilation zusammenkommen.  Die Veröffentlichung diente damit zugleich als umfangreiche Bestandsaufnahme der bis dahin erschienenen klassischen Serienepisoden.`,
+        review: `Als Gesamtpaket ist Battle Isle Platinum fast ein kleines Strategiearchiv. Die frühen Teile wirken grafisch naturgemäß schlicht, ihre klaren Regeln und das taktische Stellungsspiel funktionieren jedoch weiterhin. Battle Isle 2 und 3 erweitern das Prinzip erheblich, während Incubation mit kleineren Einheitenverbänden und dreidimensionalen Karten einen angenehm anderen Schwerpunkt setzt. Der größte Vorteil der Sammlung liegt in ihrer Bandbreite: Man kann sehr gut verfolgen, wie Blue Byte dieselbe Welt über Jahre weiterentwickelte. Einige ältere Bedienkonzepte verlangen Geduld, doch für Freunde klassischer Rundenstrategie bietet die Box außergewöhnlich viel Inhalt.  Durch den direkten Vergleich der einzelnen Generationen werden Unterschiede bei Oberfläche, Missionsdesign und taktischer Tiefe besonders gut sichtbar.`,
+        trivia: [
+            "Die deutsche Platinum-Ausgabe erschien 2000 bei Blue Byte Software.",
+            "Die Sammlung enthält Hauptspiele und mehrere Data Disks beziehungsweise Mission Packs.",
+            "Incubation überträgt das Battle-Isle-Universum in taktische 3D-Gefechte.",
+            "History Line 1914–1918 ist in der deutschen Zusammenstellung ebenfalls enthalten.",
+            "Die Compilation erschien zum Ende der klassischen Battle-Isle-Ära."
+        ],
+        worthPlaying: `Battle Isle Platinum lohnt sich heute vor allem als kompakte Zeitreise durch Blue Bytes Strategiegeschichte. Wer Hexfeldtaktik mag, erhält mehrere umfangreiche Kampagnen und mit Incubation zusätzlich einen deutlich anders spielenden Ableger. Für eine Retro-Sammlung ist die Box außerdem attraktiv, weil sie zahlreiche Einzelveröffentlichungen in einem Paket bündelt.  Gerade für Neueinsteiger ist das praktischer, als die vielen ursprünglichen Einzelboxen und Erweiterungen separat zusammenzutragen.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/3806/battle-isle-platinum/",
+        wikipedia: "https://en.wikipedia.org/wiki/Battle_Isle",
+        gog: "https://www.gog.com/game/battle_isle_platinum",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 233,
+        depth: 50
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 78,
+        folder: "bioforge",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "bioforge.html",
+        featured: false,
+        title: "BioForge",
+        system: "PC",
+        year: 1995,
+        publisher: "Electronic Arts",
+        developer: "ORIGIN Systems",
+        genre: [
+            "Action-Adventure",
+            "Science-Fiction",
+            "Survival Horror"
+        ],
+        description: "BioForge verbindet vorgerenderte Kulissen, polygonale Figuren und cineastische Kameras zu einem düsteren Science-Fiction-Action-Adventure über einen Cyborg ohne Erinnerung mit deutlichen Survival-Horror-Anklängen.",
+        history: `BioForge erschien 1995 für MS-DOS und wurde von ORIGIN Systems entwickelt. Das Projekt wurde als besonders filmisch inszeniertes Action-Adventure konzipiert und kombiniert feste Kameraperspektiven mit vollständig polygonalen Figuren, Sprachausgabe und aufwendigen Animationen. Der Spieler erwacht als amnesischer Cyborg in einer Forschungsanlage auf dem Mond Daedalus und versucht herauszufinden, wer er war und warum sein Körper verändert wurde. Erkundung, Nahkampf, Schusswaffen und Rätsel wechseln sich ab. Technisch war BioForge ambitioniert und griff Ideen auf, die man heute mit Survival Horror verbindet. Eine geplante Fortsetzung beziehungsweise Erweiterung wurde begonnen, aber nie veröffentlicht.  Die deutsche Fassung wurde ebenfalls 1995 vertrieben und vollständig für den hiesigen Markt lokalisiert.`,
+        review: `BioForge ist heute vor allem wegen seiner Atmosphäre und ungewöhnlichen Präsentation spannend. Die starren Kameras und die sogenannte Tank-Steuerung verlangen Eingewöhnung, doch die langsame Erkundung der Forschungsstation erzeugt viel Spannung. Besonders gut funktioniert die Unsicherheit der Hauptfigur: Informationen über Vergangenheit und Experiment werden Stück für Stück zusammengesetzt. Kämpfe sind deutlich weniger elegant gealtert als Grafikstil und Inszenierung, und einige Rätsel können sperrig wirken. Trotzdem besitzt BioForge eine starke eigene Identität. Zwischen Alone in the Dark, interaktivem Film und düsterer Science-Fiction entstand ein Spiel, das sich noch immer erstaunlich eigenständig anfühlt.  Besonders die fest inszenierten Kameraperspektiven geben vielen Räumen noch heute einen überraschend filmischen und bedrohlichen Charakter.`,
+        trivia: [
+            "BioForge erschien 1995 für MS-DOS.",
+            "ORIGIN Systems entwickelte das Spiel.",
+            "Die Hauptfigur ist ein Cyborg mit verlorener Erinnerung.",
+            "Polygonale Figuren bewegen sich vor vorgerenderten Hintergründen.",
+            "Eine geplante Fortsetzung wurde nicht fertiggestellt."
+        ],
+        worthPlaying: `BioForge lohnt sich heute für Spieler, die frühe filmische Action-Adventures und düstere Science-Fiction mögen. Steuerung und Kämpfe sind gealtert, doch Atmosphäre, Kameraführung und die langsam enthüllte Identität des Protagonisten bleiben wirkungsvoll. Historisch ist der Titel außerdem ein interessanter Vorläufer späterer Survival-Horror-Inszenierungen.  Auch als technisches Experiment von Origin ist BioForge heute deutlich mehr als nur eine kuriose Fußnote.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/561/bioforge/",
+        wikipedia: "https://en.wikipedia.org/wiki/BioForge",
+        gog: "https://www.gog.com/game/bioforge",
+        },
+        boxArtists: [
+        "Trey Hermann"
+    ],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 189,
+        height: 240,
+        depth: 47
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 79,
+        folder: "blackhawk",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "blackhawk.html",
+        featured: false,
+        title: "Blackhawk",
+        system: "PC",
+        year: 1994,
+        publisher: "Interplay Productions",
+        developer: "Blizzard Entertainment",
+        genre: [
+            "Cinematic Platformer",
+            "Action",
+            "Science-Fiction"
+        ],
+        description: "Blackhawk ist die europäische Fassung von Blackthorne, einem düsteren Cinematic Platformer mit Deckungsmechanik, Schrotflinte und einer Mischung aus Prince of Persia und Science-Fiction.",
+        history: `Blackhawk erschien 1994 für MS-DOS und ist der in Teilen Europas verwendete Titel von Blackthorne. Entwickelt wurde das Spiel von Blizzard Entertainment, veröffentlicht von Interplay Productions. Hauptfigur Kyle Blackthorne kehrt auf den Planeten Tuul zurück, um sein Volk von den Sarlac zu befreien. Spielerisch verbindet der Titel präzise Plattformpassagen mit Schusswechseln. Besonders markant ist die Möglichkeit, sich an Wände zurückzulehnen, um gegnerischem Feuer auszuweichen, und anschließend aus der Deckung zu schießen. Bewegungsabläufe und Bildschirmaufbau erinnern deutlich an Cinematic Platformer wie Prince of Persia und Flashback. Die DOS-Fassung erschien in Europa unter anderem in Frankreich, Deutschland und Großbritannien.  Der Name Blackhawk wurde dabei speziell für mehrere europäische Märkte verwendet.`,
+        review: `Blackhawk spielt sich bewusst schwer und kontrolliert. Sprünge, Klettern und Schießen besitzen Gewicht, wodurch hektisches Herumlaufen selten zum Erfolg führt. Die Deckungsmechanik gibt den Feuergefechten einen eigenen Rhythmus und passt gut zum düsteren Stil. Manche Bewegungen benötigen heute etwas Geduld, besonders wenn ein falsch gesetzter Schritt direkt bestraft wird. Dafür sind Animationen, Levelaufbau und Atmosphäre bemerkenswert stimmig. Wer Flashback oder Another World mag, findet hier Blizzards deutlich actionreichere Interpretation des Cinematic Platformers. Dass ausgerechnet Blizzard dieses eher ernste Science-Fiction-Abenteuer entwickelte, macht es rückblickend zusätzlich interessant.  Auch die detailreichen Animationen tragen dazu bei, dass Kyles Bewegungen trotz der niedrigen Auflösung sehr glaubwürdig wirken.`,
+        trivia: [
+            "Blackhawk ist der europäische Titel von Blackthorne.",
+            "Blizzard Entertainment entwickelte das Spiel.",
+            "Interplay veröffentlichte die DOS-Fassung 1994.",
+            "Kyle Blackthorne kämpft auf dem Planeten Tuul.",
+            "Die Wand- und Deckungsmechanik ist ein zentrales Spielelement."
+        ],
+        worthPlaying: `Blackhawk lohnt sich heute besonders für Fans von Flashback, Prince of Persia und anderen Cinematic Platformern. Die Steuerung ist absichtlich methodisch, aber das Deckungssystem und die düstere Welt verleihen dem Spiel einen eigenen Charakter. Gleichzeitig zeigt der Titel eine frühe, heute weniger bekannte Seite von Blizzard Entertainment.  Die europäische Blackhawk-Ausgabe ist darüber hinaus eine interessante regionale Variante desselben Spiels.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1445/blackthorne/",
+        wikipedia: "https://en.wikipedia.org/wiki/Blackthorne",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 211,
+        height: 242,
+        depth: 45
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 80,
+        folder: "bleifuss",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "bleifuss.html",
+        featured: false,
+        title: "Bleifuss",
+        system: "PC",
+        year: 1995,
+        publisher: "Virgin Interactive Entertainment",
+        developer: "Graffiti",
+        genre: [
+            "Rennspiel",
+            "Arcade-Racer",
+            "3D"
+        ],
+        description: "Bleifuss, international als Screamer bekannt, ist ein schneller DOS-Arcade-Racer mit polygonalen Sportwagen, spektakulären Kursen und deutlicher Orientierung an Segas Virtua-Racing-Schule.",
+        history: `Bleifuss erschien 1995 für MS-DOS und trägt international den Titel Screamer. Entwickelt wurde das Spiel vom italienischen Studio Graffiti, das später unter dem Namen Milestone bekannt wurde, veröffentlicht wurde es von Virgin Interactive. Statt einer realistischen Simulation steht schnelles Arcade-Racing im Mittelpunkt. Die Fahrzeuge erinnern an bekannte Supersportwagen, verwenden jedoch fiktive Namen. Polygonale Strecken, starke Höhenunterschiede und ein hohes Geschwindigkeitsempfinden sollten auf dem PC ein Erlebnis bieten, das sich an zeitgenössischen Arcade-Rennspielen orientierte. Der Erfolg führte bereits 1996 zu Bleifuss 2 beziehungsweise Screamer 2 und begründete eine länger laufende PC-Rennspielreihe.  In Deutschland wurde der Titel unter dem markanten Namen Bleifuss vermarktet.`,
+        review: `Bleifuss lebt von Tempo und unkomplizierter Fahrbarkeit. Die kantige 3D-Grafik verrät sofort ihr Alter, vermittelt aber noch immer erstaunlich gut Geschwindigkeit. Kurven verlangen mehr Aufmerksamkeit, als die Arcade-Ausrichtung zunächst vermuten lässt, und die Strecken bieten genügend Unterschiede, um nicht nur aus langen Geraden zu bestehen. Gegen moderne Rennspiele wirkt der Umfang überschaubar, doch genau diese Konzentration macht den Einstieg angenehm. Besonders interessant ist Bleifuss als früher europäischer Versuch, das Gefühl großer 3D-Arcade-Racer auf den DOS-PC zu übertragen. Für kurze Rennen funktioniert das Konzept weiterhin sehr ordentlich.  Musik und Motorengeräusche verstärken dabei den bewusst überzeichneten Arcade-Charakter des Spiels zusätzlich. Besonders heute.`,
+        trivia: [
+            "Bleifuss heißt international Screamer.",
+            "Das Spiel erschien 1995 für MS-DOS.",
+            "Entwickler Graffiti wurde später als Milestone bekannt.",
+            "Virgin Interactive veröffentlichte das Spiel.",
+            "1996 folgte Bleifuss 2 beziehungsweise Screamer 2."
+        ],
+        worthPlaying: `Bleifuss lohnt sich heute als unkomplizierter DOS-Arcade-Racer mit viel Neunziger-Charme. Die Technik ist sichtbar gealtert, doch Geschwindigkeit, Streckenführung und direkte Steuerung funktionieren weiterhin. Für Fans früher polygonaler Rennspiele ist außerdem spannend zu sehen, wie sich daraus die spätere Milestone-Rennspieltradition entwickelte.  Die deutsche Bleifuss-Box besitzt für PC-Sammler zudem einen hohen Wiedererkennungswert.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/screamer",
+        wikipedia: "https://de.wikipedia.org/wiki/Bleifuss_(Computerspiel)",
+        gog: "https://www.gog.com/game/screamer",
+        },
+        boxArtists: [
+        "Kevin Jenkins"
+    ],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 186,
+        height: 236,
+        depth: 52
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 81,
+        folder: "boppin",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "boppin.html",
+        featured: false,
+        title: "Boppin'",
+        system: "PC",
+        year: 1994,
+        publisher: "Apogee Software",
+        developer: "Accursed Toys",
+        genre: [
+            "Puzzle",
+            "Action-Puzzle",
+            "Multiplayer"
+        ],
+        description: "Boppin' ist ein ungewöhnliches DOS-Puzzlespiel, in dem Yeet und Boik farbige Blöcke werfen, passende Symbole verbinden und dabei zunehmend verschachtelte Bildschirmrätsel lösen.",
+        history: `Boppin' begann Anfang der Neunziger als Projekt von Accursed Toys und erschien 1994 in einer erweiterten DOS-Fassung bei Apogee Software. Im Mittelpunkt stehen Yeet und Boik, die durch einzelne Puzzlebilder reisen und Blöcke auf das Spielfeld werfen. Treffen passende Symbole in geeigneter Anordnung zusammen, verschwinden sie und lösen häufig Kettenreaktionen aus. Die Vollversion bietet eine große Zahl handgebauter Levels und unterstützt auch gemeinsames Spiel. Boppin' fiel außerdem durch einen ungewöhnlich erwachsenen Ton auf, der deutlich mit der niedlichen Grafik kontrastiert. Später stellten die Entwickler das Spiel kostenlos zur Verfügung und veröffentlichten 2005 zusätzlich eine Windows-Fassung.  Mehrere Fassungen unterschieden sich dabei im Umfang und in der Anzahl der enthaltenen Levels.`,
+        review: `Boppin' braucht ein paar Minuten, bis seine Regeln wirklich sitzen. Sobald man versteht, wie geworfene Blöcke, Symbole und Abpraller zusammenarbeiten, entwickelt sich jedoch ein cleveres räumliches Puzzlespiel. Die kleinen Bildschirme laden dazu ein, Lösungen vorauszuplanen, und spätere Levels kombinieren die Mechaniken angenehm hinterhältig. Präsentation und Benutzerführung sind typisch DOS und wirken heute etwas spröde. Dafür besitzt das Spiel deutlich mehr Persönlichkeit als viele abstrakte Puzzleprogramme. Besonders im Zweispielermodus entsteht eine eigenartige Mischung aus Zusammenarbeit, Timing und dem freundlichen Verdacht, dass der Mitspieler gerade alles schlimmer gemacht hat.  Wer gerne experimentiert, entdeckt dadurch immer wieder Lösungen, die zunächst überhaupt nicht offensichtlich erscheinen.`,
+        trivia: [
+            "Die DOS-Fassung erschien 1994 bei Apogee Software.",
+            "Entwickelt wurde Boppin' von Accursed Toys.",
+            "Yeet und Boik sind die beiden Spielfiguren.",
+            "Die Vollfassung enthält eine große Zahl einzelner Puzzleräume.",
+            "2005 erschien eine kostenlose Windows-Version."
+        ],
+        worthPlaying: `Boppin' lohnt sich heute für Puzzle-Fans, die etwas Abseitigeres als klassische Fallblockspiele suchen. Die Mechanik ist eigenständig, später überraschend anspruchsvoll und im Mehrspielermodus besonders unterhaltsam. Gleichzeitig ist das Spiel ein schönes Beispiel dafür, wie experimentierfreudig die Shareware- und DOS-Szene der Neunziger sein konnte.  Die eigenwillige Präsentation sorgt zusätzlich dafür, dass Boppin' kaum mit einem anderen Puzzlespiel verwechselt wird.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/2570/boppin/",
+        wikipedia: "https://en.wikipedia.org/wiki/Boppin%27",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 150,
+        height: 202,
+        depth: 11
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 82,
+        folder: "captain_blood",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "captain_blood.html",
+        featured: false,
+        title: "Captain Blood",
+        system: "PC",
+        year: 1988,
+        publisher: "Exxos",
+        developer: "ERE Informatique",
+        genre: [
+            "Adventure",
+            "Science-Fiction",
+            "Exploration"
+        ],
+        description: "Captain Blood ist ein eigenwilliges Science-Fiction-Adventure, das Planetenreisen, Gespräche mit Außerirdischen und eine ikonbasierte Fremdsprache zu einer ausgesprochen ungewöhnlichen Weltraumsuche verbindet.",
+        history: `Captain Blood erschien 1988 und wurde vom französischen Studio ERE Informatique entwickelt, das das Spiel unter seinem Exxos-Label veröffentlichte. Der Spieler verkörpert einen Programmierer, dessen Bewusstsein in eine künstliche Welt geraten ist und der durch Klonbildung seine Menschlichkeit verliert. Um sich zu retten, müssen fünf sogenannte Numbers gefunden und absorbiert werden. Dafür reist Captain Blood zu zahlreichen Planeten und spricht mit fremden Lebensformen. Besonders charakteristisch ist UPCOM, eine grafische Sprache aus Symbolen, mit der Informationen und Koordinaten ausgetauscht werden. Das Spiel erschien auf vielen Heimcomputern; die DOS-Fassung wurde 1988 in Europa veröffentlicht.  Die DOS-Umsetzung gehörte zu den zahlreichen Portierungen des ursprünglich auf dem Atari ST realisierten Konzepts.`,
+        review: `Captain Blood ist schwer mit gewöhnlichen Adventures zu vergleichen. Es gibt weder klassische Inventarrätsel noch eine lineare Abfolge von Räumen. Stattdessen lebt das Spiel von Gesprächen, Beobachtung und dem Entschlüsseln seiner eigenartigen Symbolsprache. Das kann faszinieren, aber auch verwirren, weil Hinweise bewusst fremdartig formuliert sind. Technisch wirkt die Planetenoberfläche heute minimalistisch, doch die Gesichter der Außerirdischen und die gesamte audiovisuelle Gestaltung besitzen einen unverwechselbaren Stil. Wer bereit ist, sich auf ein langsames und experimentelles Konzept einzulassen, erlebt einen der sonderbarsten Science-Fiction-Titel der späten Achtziger.  Gerade die fehlende Vertrautheit mit üblichen Adventure-Konventionen macht die ersten Begegnungen mit fremden Wesen bemerkenswert unberechenbar.`,
+        trivia: [
+            "Captain Blood erschien 1988.",
+            "ERE Informatique entwickelte das Spiel unter dem Exxos-Label.",
+            "Die Symbolsprache UPCOM dient zur Kommunikation mit Außerirdischen.",
+            "Fünf verlorene Klone müssen aufgespürt werden.",
+            "Jean-Michel Jarres Stück Ethnicolor wurde für das Spiel verwendet."
+        ],
+        worthPlaying: `Captain Blood lohnt sich heute weniger als bequemes Adventure und mehr als außergewöhnliches Spieledesign-Experiment. Die Kommunikation mit Symbolen, die surreale Science-Fiction-Geschichte und die fremdartige Atmosphäre sind weiterhin einzigartig. Wer ungewöhnliche französische Computerspiele der Achtziger entdecken möchte, sollte diesen Titel zumindest einmal kennenlernen.  Kaum ein anderes Spiel seiner Zeit vermittelt ein vergleichbar fremdartiges Gefühl bei der Kommunikation mit seinen Figuren.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/134/captain-blood/",
+        wikipedia: "https://en.wikipedia.org/wiki/Captain_Blood_(1988_video_game)",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 217,
+        height: 261,
+        depth: 53
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 83,
+        folder: "casebook1899",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "casebook1899.html",
+        featured: false,
+        title: "Casebook 1899 - The Leipzig Murders",
+        system: "PC",
+        year: 2025,
+        publisher: "Homo Narrans Studio",
+        developer: "Homo Narrans Studio",
+        genre: [
+            "Point-and-Click-Adventure",
+            "Detektiv",
+            "Pixel-Art"
+        ],
+        description: "Casebook 1899 versetzt Spieler ins historische Leipzig, wo Kriminalcommissar Joseph Kreiser vier Mordfälle untersucht, Zeugen befragt und Hinweise auf einem Deduktionsbrett logisch verknüpft.",
+        history: `Casebook 1899 - The Leipzig Murders erschien am 4. September 2025 und wurde vom deutschen Homo Narrans Studio entwickelt und veröffentlicht. Das Projekt von Gregor Müller wurde zuvor per Kickstarter unterstützt und verbindet klassische Point-and-Click-Strukturen mit historischer Recherche. Als Kriminalcommissar Joseph Kreiser untersucht der Spieler vier Mordfälle im Leipzig des ausgehenden 19. Jahrhunderts. Tatorte werden abgesucht, Gegenstände kombiniert und Verdächtige verhört. Eine zentrale Rolle spielt das Notizbuch mit Deduktionsbrett: Nur richtig miteinander verknüpfte Hinweise führen zu neuen Schlussfolgerungen. Jeder Fall kann unterschiedlich enden, und eine Verhaftung bedeutet nicht automatisch, dass tatsächlich der richtige Täter gefunden wurde.  Die deutsche Sprachausgabe und die historisch recherchierten Schauplätze gehören zu den zentralen Merkmalen der fertigen Version.`,
+        review: `Casebook 1899 fühlt sich bewusst wie ein Adventure aus den Neunzigern an, ohne seine Detektivmechanik einfach nur auf Nostalgie zu reduzieren. Besonders das Kombinieren von Aussagen und Beweisen verlangt, dass man dem Fall wirklich folgt. Die Pixelgrafik ist klar lesbar, und das historische Leipzig hebt sich angenehm von den üblichen Fantasy- oder Noir-Kulissen ab. Dass falsche Schlussfolgerungen möglich sind, gibt den Ermittlungen zusätzlich Gewicht. Wer ausschließlich komplizierte Inventarrätsel sucht, findet hier einen stärkeren Fokus auf Gesprächen und Beweisführung. Gerade dadurch besitzt das Spiel eine sehr eigene, sachlich-detektivische Spannung.  Dadurch entsteht eher echte Ermittlungsarbeit als das übliche Adventure-Prinzip, einfach jeden Gegenstand mit jedem anderen auszuprobieren.`,
+        trivia: [
+            "Das Spiel erschien am 4. September 2025.",
+            "Homo Narrans Studio entwickelte und veröffentlichte den Titel.",
+            "Vier Mordfälle spielen im Leipzig des Jahres 1899.",
+            "Hinweise werden im Notizbuch zu Schlussfolgerungen kombiniert.",
+            "Jeder Fall besitzt mehrere mögliche Enden."
+        ],
+        worthPlaying: `Casebook 1899 lohnt sich für Fans klassischer Point-and-Click-Adventures und historischer Kriminalgeschichten. Die Stärke liegt weniger in spektakulärer Action als im sorgfältigen Sammeln und Kombinieren von Beweisen. Das Leipziger Setting und die Möglichkeit, einen falschen Verdächtigen zu überführen, geben dem Spiel eine ungewöhnlich glaubwürdige Detektivnote.  Für deutschsprachige Spieler ist außerdem die vollständige deutsche Vertonung ein besonders reizvoller Bestandteil der Veröffentlichung.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "https://de.wikipedia.org/wiki/Casebook_1899_%E2%80%93_The_Leipzig_Murders",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 190,
+        height: 241,
+        depth: 49
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 84,
+        folder: "castle_of_dr_brain",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "castle_of_dr_brain.html",
+        featured: false,
+        title: "Castle of Dr. Brain",
+        system: "PC",
+        year: 1991,
+        publisher: "Sierra On-Line",
+        developer: "Sierra On-Line",
+        genre: [
+            "Puzzle-Adventure",
+            "Lernspiel",
+            "Logik"
+        ],
+        description: "Castle of Dr. Brain kombiniert Sierra-Adventure-Präsentation mit Logik-, Mathematik-, Gedächtnis- und Sprachrätseln auf dem Weg zum begehrten Posten als Assistent des exzentrischen Dr. Brain.",
+        history: `Castle of Dr. Brain erschien 1991 für DOS und wurde von Sierra On-Line entwickelt und veröffentlicht. Designer Corey Cole entwickelte das Konzept als Mischung aus Lernspiel und Adventure. Der Spieler beantwortet eine Stellenanzeige von Dr. Brain und muss dessen Schloss voller Prüfungen durchqueren, um sich als Assistent zu qualifizieren. Statt einer klassischen Geschichte stehen zahlreiche Logik-, Mathematik-, Musik-, Sprach- und Gedächtnisaufgaben im Mittelpunkt. Zusätzlich gibt es mehrere Labyrinthe, durch die ein Aufzug gesteuert wird. Die Präsentation nutzt Sierras SCI-Technik und verpackt die Übungen in eine humorvolle Schlosskulisse. Das erfolgreiche Konzept führte zu mehreren weiteren Dr.-Brain-Spielen.  Verschiedene Schwierigkeitsgrade sollten die Aufgaben dabei für unterschiedliche Altersgruppen zugänglich machen.`,
+        review: `Castle of Dr. Brain ist ein gutes Beispiel dafür, dass ein Lernspiel nicht wie Hausaufgaben aussehen muss. Die Rätsel wechseln häufig ihr Thema und vermeiden dadurch längere monotone Abschnitte. Manche Aufgaben setzen englische Sprachkenntnisse oder Wissen voraus, andere funktionieren universell über Logik und Mustererkennung. Die Adventure-Hülle ist eher Rahmen als echte Erzählung, verleiht dem Ganzen aber viel Charme. Besonders angenehm ist, dass das Spiel den Spieler nicht ständig belehrt, sondern Wissen als Teil einer schrulligen Prüfung präsentiert. Für Sierra-Fans ist es zudem ein ungewöhnlicher Seitenzweig neben den großen Quest-Reihen.  Viele Rätsel lassen sich deshalb auch heute noch hervorragend ohne nostalgischen Bonus spielen und nachvollziehen.`,
+        trivia: [
+            "Castle of Dr. Brain erschien 1991 für DOS.",
+            "Sierra On-Line entwickelte und veröffentlichte das Spiel.",
+            "Corey Cole war der zentrale Designer.",
+            "Die Aufgaben decken mehrere Wissens- und Logikbereiche ab.",
+            "Der Erfolg führte zu weiteren Spielen der Dr.-Brain-Reihe."
+        ],
+        worthPlaying: `Castle of Dr. Brain lohnt sich heute besonders für Puzzle-Fans und alle, die Sierras weniger bekannte Lernspiele entdecken möchten. Viele Aufgaben funktionieren unabhängig vom Alter der Technik noch erstaunlich gut. Die humorvolle Präsentation macht aus einer Sammlung von Denksportaufgaben ein sympathisches kleines Schlossabenteuer.  Auch gemeinsam vor dem Bildschirm funktioniert das Knobeln erstaunlich gut und lädt zum Diskutieren über Lösungen ein.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1523/castle-of-dr-brain/",
+        wikipedia: "https://en.wikipedia.org/wiki/Castle_of_Dr._Brain",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 226,
+        depth: 57
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 85,
+        folder: "catacomb_3d",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "catacomb_3d.html",
+        featured: false,
+        title: "Catacomb 3-D: Ancient Vault Edition",
+        system: "PC",
+        year: 2024,
+        publisher: "Romero Games",
+        developer: "id Software",
+        genre: [
+            "Ego-Shooter",
+            "Fantasy",
+            "Collector's Edition"
+        ],
+        description: "Die Ancient Vault Edition bringt id Softwares wegweisenden Fantasy-Shooter Catacomb 3-D erstmals als aufwendige Big-Box-Sammlerausgabe mit USB-Medium, Disketten und umfangreichen Extras zurück.",
+        history: `Catacomb 3-D wurde ursprünglich 1991 von id Software für Softdisk entwickelt. Der Fantasy-Shooter gilt als wichtiger technischer Zwischenschritt auf dem Weg zu Wolfenstein 3D und DOOM, weil die Spielwelt aus der Ego-Perspektive mit texturierten Wänden dargestellt wird und die Hand des Zauberers sichtbar im Bild erscheint. 2024 kündigte Romero Games erstmals eine hochwertige physische Big-Box-Veröffentlichung in drei Varianten an. Die Ancient Vault Edition ist die umfangreichste Fassung: Sie ergänzt die signierte Box und einen sargförmigen USB-Stick unter anderem um echte 3,5- und 5,25-Zoll-Disketten sowie weitere Sammlerstücke. Das eigentliche Spiel bleibt das historische Original von id Software.  Damit erhielt das Spiel mehr als drei Jahrzehnte nach seinem Debüt erstmals eine besonders aufwendig gestaltete Sammlerverpackung.`,
+        review: `Spielerisch ist Catacomb 3-D heute deutlich einfacher als die Shooter, die kurz darauf folgten. Korridore, Gegner und Feuerbälle wirken archaisch, doch genau darin liegt der Reiz. Man sieht praktisch live, wie sich die technische Sprache des frühen Ego-Shooters formt. Die Fantasy-Thematik und Zauberprojektilen geben dem Spiel zudem ein anderes Gesicht als Wolfenstein 3D. Die Ancient Vault Edition richtet sich natürlich vor allem an Sammler; als physisches Objekt dokumentiert sie einen Titel, der ursprünglich nie eine solche repräsentative Big Box besaß. Historisch ist das ausgesprochen charmant.  Gerade im direkten Vergleich mit späteren id-Spielen wird sichtbar, welche Ideen bereits vorhanden waren und welche noch fehlten.`,
+        trivia: [
+            "Das Original Catacomb 3-D erschien 1991 bei Softdisk.",
+            "Entwickelt wurde das Spiel von id Software.",
+            "Romero Games kündigte 2024 erstmals eine offizielle Big-Box-Ausgabe an.",
+            "Die Ancient Vault Edition enthält 3,5- und 5,25-Zoll-Disketten.",
+            "Ein sargförmiger USB-Stick enthält das Spiel und Zusatzmaterial."
+        ],
+        worthPlaying: `Die Ancient Vault Edition lohnt sich vor allem für Sammler und Freunde früher id-Software-Geschichte. Spielerisch ist Catacomb 3-D heute simpel, historisch aber enorm interessant. Die aufwendige Neuveröffentlichung macht aus einem ursprünglich eher unscheinbar vertriebenen Titel ein greifbares Stück Vorgeschichte von Wolfenstein 3D und DOOM.  Für eine Sammlung früher PC-Shooter ist diese Edition deshalb sowohl spielerisch als auch als physisches Ausstellungsstück interessant.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/3120/catacomb-3-d/",
+        wikipedia: "https://en.wikipedia.org/wiki/Catacomb_3-D",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 197,
+        height: 241,
+        depth: 42
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 86,
+        folder: "command_conquer_der_tiberiumkonflikt",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "command_conquer_der_tiberiumkonflikt.html",
+        featured: false,
+        title: "Command & Conquer: Der Tiberiumkonflikt",
+        system: "PC",
+        year: 1995,
+        publisher: "Virgin Interactive",
+        developer: "Westwood Studios",
+        genre: [
+            "Echtzeitstrategie",
+            "Military Science-Fiction",
+            "Strategie"
+        ],
+        description: "Der Tiberiumkonflikt stellt GDI und Bruderschaft von Nod gegeneinander und verbindet rasante Echtzeitstrategie, Ressourcenabbau, Basisbau und markante FMV-Zwischensequenzen zu Westwoods Serienauftakt.",
+        history: `Command & Conquer: Der Tiberiumkonflikt erschien 1995 und wurde von Westwood Studios entwickelt sowie von Virgin Interactive veröffentlicht. Zwei Kampagnen erzählen den globalen Krieg zwischen der Global Defense Initiative und der Bruderschaft von Nod um das außerirdische Mineral Tiberium. Spieler sammeln Ressourcen, errichten Basen, produzieren Einheiten und greifen gegnerische Stellungen in Echtzeit an. Westwood legte großen Wert auf eine direkte Maussteuerung und ein deutlich höheres Tempo als bei vielen früheren Strategiespielen. Auffällig waren außerdem die umfangreichen Full-Motion-Video-Zwischensequenzen, die auf zwei CDs verteilt wurden. Der Erfolg etablierte Command & Conquer als eine der prägenden Echtzeitstrategiereihen der Neunziger.  Frank Klepackis markanter Soundtrack trug ebenfalls wesentlich zum unverwechselbaren Ton des Spiels bei.`,
+        review: `Der erste Command-&-Conquer-Teil wirkt erstaunlich unmittelbar. Basisbau und Einheitenproduktion sind leicht verständlich, während die Missionen schnell taktische Entscheidungen verlangen. Die Wegfindung ist aus heutiger Sicht gelegentlich störrisch, und das gemeinsame Markieren großer Einheitenverbände ist weniger komfortabel als in späteren Strategiespielen. Dafür besitzt jede Kampagne viel Persönlichkeit. GDI und Nod unterscheiden sich nicht nur optisch, sondern auch bei Einheiten und Spielgefühl. Die FMV-Sequenzen sind herrlich zeittypisch und tragen erheblich zur Identität bei. Als Verbindung aus Tempo, Präsentation und zugänglichem Ressourcenmodell funktioniert der Serienauftakt weiterhin überraschend gut.  Auch Frank Klepackis Musik verleiht selbst einfachen Gefechten eine Energie, die eng mit der Reihe verbunden geblieben ist.`,
+        trivia: [
+            "Der Tiberiumkonflikt erschien 1995.",
+            "Westwood Studios entwickelte das Spiel.",
+            "GDI und Nod besitzen jeweils eine eigene Kampagne.",
+            "Das Spiel wurde auf zwei CDs ausgeliefert.",
+            "Tiberium dient als zentrale Ressource des Spiels."
+        ],
+        worthPlaying: `Der Tiberiumkonflikt lohnt sich heute als Grundstein einer der wichtigsten Echtzeitstrategiereihen. Einige Komfortfunktionen fehlen, doch Basisbau, Fraktionsunterschiede und Missionsdesign funktionieren weiterhin. Die FMV-Szenen und der unverwechselbare Westwood-Stil machen die deutsche Originalbox zusätzlich zu einem schönen Stück PC-Geschichte.  Wer verstehen möchte, warum Echtzeitstrategie Mitte der Neunziger so populär wurde, findet hier eines der anschaulichsten Beispiele überhaupt.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/658/command-conquer/",
+        wikipedia: "https://de.wikipedia.org/wiki/Command_%26_Conquer:_Der_Tiberiumkonflikt",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 186,
+        height: 238,
+        depth: 51
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 87,
+        folder: "command_conquer_der_tiberiumkonflikt_mission_cd",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "command_conquer_der_tiberiumkonflikt_mission_cd.html",
+        featured: false,
+        title: "Command & Conquer: Mission CD - Der Ausnahmezustand",
+        system: "PC",
+        year: 1996,
+        publisher: "Virgin Interactive",
+        developer: "Westwood Studios",
+        genre: [
+            "Echtzeitstrategie",
+            "Add-on",
+            "Military Science-Fiction"
+        ],
+        description: "Die Mission CD Der Ausnahmezustand erweitert den Tiberiumkonflikt um anspruchsvolle Einzelmissionen, zusätzliche Mehrspielerkarten, neue Musikstücke und ein verstecktes Dinosaurier-Szenario für erfahrene Kommandeure.",
+        history: `Command & Conquer: Mission CD - Der Ausnahmezustand erschien 1996 als deutsche Ausgabe von The Covert Operations. Die Erweiterung wurde von Westwood Studios entwickelt und von Virgin Interactive veröffentlicht. Sie setzt das Hauptspiel voraus und ergänzt insgesamt fünfzehn neue Einzelmissionen für GDI und Nod. Anders als in den ursprünglichen Kampagnen werden diese Einsätze weitgehend unabhängig voneinander ausgewählt und setzen häufig gute Kenntnisse der vorhandenen Einheiten voraus. Hinzu kommen neue Mehrspielerkarten und zusätzliche Musikstücke. Besonders bekannt wurde das versteckte Funpark-Szenario, in dem Dinosaurier auftauchen. Die Mission CD erweitert also weniger die Geschichte als vor allem Umfang und Schwierigkeitsgrad des Grundspiels.  Für Fans war das damals eine klassische Möglichkeit, ein bereits abgeschlossenes Spiel mit neuem Material weiterzuspielen.`,
+        review: `Der Ausnahmezustand richtet sich eindeutig an Spieler, die den Tiberiumkonflikt bereits beherrschen. Viele Missionen beginnen unter ungünstigen Bedingungen und verlangen genaueres Ressourcenmanagement oder einen sehr gezielten Einsatz weniger Einheiten. Dadurch fühlt sich das Add-on schwieriger und stellenweise experimenteller an als die Hauptkampagnen. Eine durchgehende neue Geschichte sollte man nicht erwarten; die einzelnen Szenarien stehen stärker für sich. Dafür bekommt man konzentrierte Westwood-Taktik ohne lange Einführung. Das Dinosaurier-Geheimnis ist heute längst kein Geheimnis mehr, bleibt aber ein herrlich schräger Bonus in einem ansonsten ziemlich militärischen Paket.  Gerade deshalb eignet sich die Erweiterung gut als Herausforderung nach dem Abspann des Hauptspiels, nicht als eigenständiger Einstieg.`,
+        trivia: [
+            "Die Erweiterung erschien 1996.",
+            "Der deutsche Titel lautet Mission CD - Der Ausnahmezustand.",
+            "International heißt das Add-on The Covert Operations.",
+            "Fünfzehn zusätzliche Einzelmissionen sind enthalten.",
+            "Ein verstecktes Funpark-Szenario bringt Dinosaurier ins Spiel."
+        ],
+        worthPlaying: `Der Ausnahmezustand lohnt sich vor allem für Spieler, denen die beiden ursprünglichen Kampagnen nicht genug waren. Die Missionen sind anspruchsvoller und verzichten weitgehend auf Einsteigerhilfen. Als physische Erweiterung dokumentiert die CD außerdem sehr schön die klassische Add-on-Kultur der Neunziger, lange bevor zusätzliche Inhalte einfach heruntergeladen wurden.  Für Sammler gehört sie außerdem unmittelbar zur vollständigen klassischen Tiberiumkonflikt-Veröffentlichung.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/883/command-conquer-the-covert-operations/",
+        wikipedia: "https://en.wikipedia.org/wiki/Command_%26_Conquer_(1995_video_game)",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 186,
+        height: 237,
+        depth: 34
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    }
+
+]
+
+    },
+	
+	{
+        id: 88,
+        folder: "cybermage",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "cybermage.html",
+        featured: false,
+        title: "CyberMage: Darklight Awakening",
+        system: "PC",
+        year: 1995,
+        publisher: "Electronic Arts",
+        developer: "ORIGIN Systems",
+        genre: [
+            "Action",
+            "Ego-Shooter",
+            "Cyberpunk"
+        ],
+        description: "CyberMage: Darklight Awakening ist ein düsterer Science-Fiction-Shooter, der klassische Ego-Action mit Rollenspiel-Elementen, Fahrzeugen und übernatürlichen Darklight-Kräften verbindet.",
+        history: `CyberMage: Darklight Awakening erschien 1995 für DOS und wurde von ORIGIN Systems entwickelt. Das Spiel entstand in einer Phase, in der viele Studios nach Wegen suchten, den Erfolg von Doom mit komplexeren Welten und mehr Handlung zu verbinden. CyberMage setzt deshalb nicht nur auf Feuergefechte, sondern auch auf Gespräche, Missionen, Fahrzeuge und besondere Darklight-Fähigkeiten. Schauplatz ist eine cyberpunkartige Zukunft, in der der Spieler als genetisch veränderter Kämpfer gegen den Konzernherrscher NeCrom und dessen Truppen antritt. Für seine Zeit war das Projekt technisch und spielerisch ambitioniert, blieb kommerziell aber deutlich hinter den großen Genrevertretern zurück.`,
+        review: `CyberMage wirkt heute wie ein faszinierendes Bindeglied zwischen klassischem Doom-Shooter und späteren Action-Rollenspielen. Die Steuerung und manche Levelabschnitte sind spürbar gealtert, doch die Mischung aus Waffen, Kräften, Fahrzeugen und einer vergleichsweise ausgearbeiteten Welt besitzt noch immer Charme. Besonders interessant ist das Spiel für alle, die sehen möchten, wie Mitte der Neunziger mit dem Ego-Shooter-Genre experimentiert wurde.`,
+        trivia: [
+            "Das Spiel erschien 1995 für DOS.",
+            "Entwickelt wurde CyberMage von ORIGIN Systems.",
+            "Neben Schusswaffen stehen sogenannte Darklight-Kräfte zur Verfügung.",
+            "Das Spiel kombiniert Ego-Shooter-Action mit Rollenspiel- und Adventure-Elementen.",
+            "Ashley Underwood wird für das Box-Artwork geführt."
+        ],
+        worthPlaying: `CyberMage lohnt sich heute vor allem als ungewöhnliches Stück Shooter-Geschichte. Wer klassische DOS-Action mag und bereit ist, sich auf eine etwas sperrige Bedienung einzulassen, bekommt eine eigenwillige Mischung aus Cyberpunk, Rollenspiel und Ego-Shooter, die deutlich mehr ausprobiert als viele zeitgenössische Doom-Klone.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/791/cybermage-darklight-awakening/",
+        wikipedia: "https://en.wikipedia.org/wiki/CyberMage:_Darklight_Awakening",
+        gog: "",
+        },
+        boxArtists: [
+            "Ashley Underwood"
+        ],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 215,
+        height: 259,
+        depth: 52
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 89,
+        folder: "cyberpunk2077",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "cyberpunk2077.html",
+        featured: false,
+        title: "Cyberpunk 2077",
+        system: "PC",
+        year: 2020,
+        publisher: "CD Projekt",
+        developer: "CD Projekt RED",
+        genre: [
+            "Action-Rollenspiel",
+            "Open World",
+            "Cyberpunk"
+        ],
+        description: "Cyberpunk 2077 ist ein Open-World-Action-Rollenspiel in der futuristischen Metropole Night City, in dem der Spieler als Söldner V Aufträge, Kämpfe, Charakterentwicklung und eine verzweigte Geschichte miteinander verbindet.",
+        history: `Cyberpunk 2077 erschien am 10. Dezember 2020 für Windows sowie zunächst für PlayStation 4 und Xbox One. Entwickelt wurde das Spiel von CD Projekt RED auf Grundlage des Pen-and-Paper-Universums Cyberpunk von Mike Pondsmith. Die Produktion war über viele Jahre eines der meistbeachteten Spieleprojekte überhaupt. Nach dem problematischen Start, insbesondere auf den damaligen Konsolen, wurde das Spiel über zahlreiche Updates technisch und spielerisch umfangreich überarbeitet. Night City, die Figur Johnny Silverhand und die Mischung aus Rollenspiel, Shooter und offener Spielwelt machten Cyberpunk 2077 dennoch schnell zu einem der bekanntesten Spiele seiner Generation.`,
+        review: `Abseits der turbulenten Veröffentlichung steckt in Cyberpunk 2077 eine beeindruckend dichte Spielwelt. Night City lebt von Architektur, Nebenfiguren und kleinen Geschichten, die oft interessanter sind als der reine Weg von Missionsmarker zu Missionsmarker. Rollenspielsystem und Kämpfe bieten viele Möglichkeiten, auch wenn nicht jede Idee gleich tief ausgearbeitet ist. Für eine Retro-Sammlung ist die PC-Box zudem ein schönes Beispiel dafür, wie klassische physische Spieleverpackungen selbst im Download-Zeitalter noch weiterlebten.`,
+        trivia: [
+            "Cyberpunk 2077 basiert auf dem Cyberpunk-Pen-and-Paper-Universum von Mike Pondsmith.",
+            "Die Windows-Version erschien am 10. Dezember 2020.",
+            "Keanu Reeves verkörpert die Figur Johnny Silverhand.",
+            "CD Projekt RED entwickelte das Spiel nach The Witcher 3.",
+            "Das Spiel wurde nach Veröffentlichung über mehrere Jahre mit großen Updates überarbeitet."
+        ],
+        worthPlaying: `Heute lohnt sich Cyberpunk 2077 vor allem wegen Night City, der starken Inszenierung und der großen Freiheit bei Charakteraufbau und Missionslösung. Wer offene Science-Fiction-Welten und erzählerische Action-Rollenspiele mag, findet hier ein umfangreiches Abenteuer, dessen heutiger Zustand deutlich stärker ist als sein ursprünglicher Ruf zum Verkaufsstart.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/128136/cyberpunk-2077/",
+        wikipedia: "https://en.wikipedia.org/wiki/Cyberpunk_2077",
+        gog: "https://www.gog.com/game/cyberpunk_2077",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 187,
+        height: 235,
+        depth: 40
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 90,
+        folder: "die_siedler",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "die_siedler.html",
+        featured: false,
+        title: "Die Siedler",
+        system: "PC",
+        year: 1994,
+        publisher: "Blue Byte Software",
+        developer: "Blue Byte Software",
+        genre: [
+            "Aufbaustrategie",
+            "Wirtschaftssimulation",
+            "Echtzeitstrategie"
+        ],
+        description: "Die Siedler verbindet Wirtschaftssimulation und Aufbaustrategie mit einem bis heute unverwechselbaren Warenkreislauf, in dem kleine Siedler Rohstoffe transportieren, Gebäude versorgen und ein wachsendes Reich am Laufen halten.",
+        history: `Die Siedler wurde von Blue Byte entwickelt und erschien zunächst 1993 auf dem Amiga; die DOS-Version folgte 1994. Das Spiel setzte weniger auf hektische Echtzeitkämpfe als auf den Aufbau funktionierender Produktionsketten. Holz, Stein, Nahrung, Werkzeuge und Waffen müssen erzeugt, transportiert und sinnvoll verteilt werden. Besonders auffällig war die große Zahl kleiner Figuren, die sichtbar durch die Landschaft laufen und damit die wirtschaftlichen Abläufe unmittelbar nachvollziehbar machen. Das Konzept wurde zum Grundstein einer langen deutschen Strategiespielreihe.`,
+        review: `Die Siedler ist auch heute noch erstaunlich entspannend. Der eigentliche Star ist nicht das Militär, sondern die Logistik. Wenn ein scheinbar kleiner Engpass plötzlich die halbe Wirtschaft lahmlegt, versteht man schnell, warum das Spiel so viele Fans gewonnen hat. Bedienung und Tempo sind natürlich Kinder ihrer Zeit, aber die sichtbaren Warenketten besitzen bis heute eine besondere Qualität, die viele moderne Strategiespiele nicht in derselben Form bieten.`,
+        trivia: [
+            "Die Amiga-Version erschien 1993, die DOS-Fassung 1994.",
+            "Entwickelt wurde Die Siedler von Blue Byte.",
+            "International wurde das Spiel unter anderem als The Settlers beziehungsweise Serf City veröffentlicht.",
+            "Die sichtbaren Warentransporte wurden zu einem Markenzeichen der Reihe.",
+            "Das Spiel unterstützt auch Mehrspielerpartien."
+        ],
+        worthPlaying: `Die Siedler lohnt sich noch immer für Spieler, die Wirtschaftskreisläufe lieber beobachten und optimieren als permanent Einheiten über die Karte zu hetzen. Gerade die Mischung aus gemächlichem Aufbau, nachvollziehbarer Logistik und liebevoll animierten Arbeitern hat kaum von ihrem Reiz verloren.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/425/serf-city-life-is-feudal/",
+        wikipedia: "https://en.wikipedia.org/wiki/The_Settlers",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 232,
+        depth: 40
+
+    },
+        screenshots: []
+
+    },
+
+    {
+        id: 91,
+        folder: "discworld",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "discworld.html",
+        featured: false,
+        title: "Discworld",
+        system: "PC",
+        year: 1995,
+        publisher: "Psygnosis",
+        developer: "Perfect 10 Productions / Teeny Weeny Games",
+        genre: [
+            "Point-and-Click-Adventure",
+            "Fantasy",
+            "Humor"
+        ],
+        description: "Discworld ist ein humorvolles Point-and-Click-Adventure nach Terry Pratchetts Scheibenwelt-Romanen, in dem Rincewind einen Drachenfall untersucht und dabei vor allem mit absurden Rätseln und noch absurderen Bewohnern von Ankh-Morpork kämpft.",
+        history: `Discworld erschien 1995 unter anderem für DOS und wurde von Perfect 10 Productions und Teeny Weeny Games entwickelt. Das Adventure greift Figuren und Motive aus Terry Pratchetts Scheibenwelt auf, erzählt jedoch eine eigene, aus mehreren Romanideen zusammengesetzte Geschichte. Rincewind muss herausfinden, warum plötzlich ein Drache Ankh-Morpork bedroht. Die Präsentation setzte stark auf gezeichnete Hintergründe, Animationen und Sprachausgabe. In der englischen Fassung war unter anderem Eric Idle als Rincewind zu hören. Das Cover stammt von Josh Kirby, dessen Illustrationen das visuelle Bild der frühen Discworld-Bücher entscheidend prägten.`,
+        review: `Discworld ist charmant, wunderschön gezeichnet und stellenweise herrlich albern. Gleichzeitig gehört es zu jener Adventure-Schule, in der Rätsellogik gelegentlich eher wie ein persönlicher Streit zwischen Designer und Spieler wirkt. Wer sich darauf einlässt oder notfalls eine Lösung griffbereit hält, bekommt jedoch sehr viel Atmosphäre und Pratchett-Humor. Besonders die Hintergründe und Figurenanimationen haben ihren Reiz hervorragend bewahrt.`,
+        trivia: [
+            "Discworld erschien 1995 für DOS.",
+            "Rincewind ist die Hauptfigur des Adventures.",
+            "Eric Idle sprach Rincewind in der englischen Version.",
+            "Das Cover-Artwork stammt von Josh Kirby.",
+            "Das Spiel verwendet Figuren und Motive aus Terry Pratchetts Scheibenwelt-Romanen."
+        ],
+        worthPlaying: `Discworld lohnt sich heute wegen seines Humors, der liebevollen Grafik und der ungewöhnlichen Atmosphäre. Die Rätsel können frustrierend sein, aber wer klassische Point-and-Click-Adventures und Terry Pratchetts Welt mag, bekommt eine der markantesten Adventure-Umsetzungen der Neunziger.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/184/discworld/",
+        wikipedia: "https://en.wikipedia.org/wiki/Discworld_(video_game)",
+        gog: "",
+        },
+        boxArtists: [
+            "Josh Kirby"
+        ],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 183,
+        height: 233,
+        depth: 42
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 92,
+        folder: "doom_2_cdv",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "doom_2_cdv.html",
+        featured: false,
+        title: "Doom II",
+        system: "PC",
+        year: 1994,
+        publisher: "id Software / CDV Software",
+        developer: "id Software",
+        genre: [
+            "Ego-Shooter",
+            "Action",
+            "Science-Fiction"
+        ],
+        description: "Doom II setzt das rasante Ego-Shooter-Prinzip des ersten Doom nahezu ohne Umwege fort und erweitert es um größere Levels, neue Gegner und die legendäre Super Shotgun.",
+        history: `Doom II erschien 1994 für DOS und wurde von id Software entwickelt. Anders als der erste Teil wurde Doom II von Beginn an als reguläres kommerzielles Produkt vertrieben. Technisch basiert es weitgehend auf dem Vorgänger, erweitert dessen Gegner- und Waffenarsenal aber deutlich. Besonders die doppelläufige Schrotflinte wurde schnell zu einer der bekanntesten Waffen der Shooter-Geschichte. Die hier erfasste Box verweist auf eine von CDV Software vertriebene Ausgabe für den deutschsprachigen Markt.`,
+        review: `Doom II ist weniger Revolution als konzentrierte Fortsetzung. Genau das funktioniert bis heute hervorragend: Bewegung, Gegnerdesign und Waffenfeedback greifen unmittelbar ineinander. Einige spätere Levels sind verwinkelter und experimenteller als im Vorgänger, aber das Grundgefühl bleibt hervorragend. Wer verstehen möchte, warum klassische Ego-Shooter noch Jahrzehnte später gespielt und modifiziert werden, findet hier eines der besten Beispiele.`,
+        trivia: [
+            "Doom II erschien 1994 für DOS.",
+            "Entwickelt wurde das Spiel von id Software.",
+            "Die Super Shotgun wurde in Doom II erstmals eingeführt.",
+            "Viele neue Gegner wie Revenant, Mancubus und Arch-vile stammen aus diesem Teil.",
+            "Das Box-Artwork wird Gerald Brom zugeschrieben."
+        ],
+        worthPlaying: `Doom II spielt sich noch immer schnell, direkt und präzise. Das Leveldesign wirkt gelegentlich eigenwillig, doch Waffen, Gegner und Bewegung sind zeitlos gut aufeinander abgestimmt. Dazu kommt eine bis heute aktive Modding-Szene, die das Spiel praktisch unerschöpflich macht.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/299/doom-ii/",
+        wikipedia: "https://en.wikipedia.org/wiki/Doom_II",
+        gog: "https://www.gog.com/game/doom_doom_ii",
+        },
+        boxArtists: [
+            "Gerald Brom"
+        ],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 231,
+        depth: 39
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 93,
+        folder: "doom_mailorder",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "doom_mailorder.html",
+        featured: false,
+        title: "Doom",
+        system: "PC",
+        year: 1993,
+        publisher: "id Software",
+        developer: "id Software",
+        genre: [
+            "Ego-Shooter",
+            "Action",
+            "Horror"
+        ],
+        description: "Doom ist der Ego-Shooter-Klassiker von id Software, der 1993 mit rasanter Action, Netzwerkspiel, Shareware-Vertrieb und einer enormen Modding-Freundlichkeit das PC-Spielen nachhaltig veränderte.",
+        history: `Doom erschien im Dezember 1993 für DOS. id Software verbreitete die erste Episode zunächst als Shareware, während die registrierte Vollversion direkt bestellt werden konnte. Diese Mail-Order-Vertriebsform ist ein wichtiger Teil der frühen Doom-Geschichte und erklärt die besondere Verpackungsvariante dieses Eintrags. Technisch setzte Doom Maßstäbe bei Geschwindigkeit, Leveldarstellung und Mehrspielerfunktion. Gleichzeitig erleichterte die offen dokumentierte Datenstruktur später das Erstellen eigener Levels und Modifikationen.`,
+        review: `Doom braucht auch heute kaum Anlaufzeit. Ein paar Sekunden genügen und man versteht, warum das Spiel so einflussreich wurde. Bewegung, Waffen und Gegner funktionieren mit einer Direktheit, die viele modernere Shooter bewusst wieder nachahmen. Die originale Steuerung sollte man heute sinnvoll konfigurieren, ansonsten ist Doom erstaunlich wenig gealtert. Gerade eine Mail-Order-Box macht den Titel zusätzlich zu einem spannenden Stück Vertriebsgeschichte.`,
+        trivia: [
+            "Doom erschien im Dezember 1993.",
+            "Die erste Episode wurde als Shareware verbreitet.",
+            "Die registrierte Vollversion konnte direkt bei id Software bestellt werden.",
+            "Das ikonische Cover-Artwork stammt von Don Ivan Punchatz.",
+            "Doom machte Deathmatch-Netzwerkspiele und Modding einem großen Publikum bekannt."
+        ],
+        worthPlaying: `Doom lohnt sich heute nicht nur aus historischer Neugier. Das Spiel ist schnell, übersichtlich und spielmechanisch äußerst sauber. Mit modernen Source Ports lässt es sich komfortabel spielen, ohne den Kern des Originals zu verlieren.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1068/doom/",
+        wikipedia: "https://en.wikipedia.org/wiki/Doom_(1993_video_game)",
+        gog: "https://www.gog.com/game/doom_doom_ii",
+        },
+        boxArtists: [
+            "Don Ivan Punchatz"
+        ],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 152,
+        height: 229,
+        depth: 19
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 94,
+        folder: "duke_nukem_3d",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "duke_nukem_3d.html",
+        featured: false,
+        title: "Duke Nukem 3D",
+        system: "PC",
+        year: 1996,
+        publisher: "FormGen",
+        developer: "3D Realms",
+        genre: [
+            "Ego-Shooter",
+            "Action",
+            "Science-Fiction"
+        ],
+        description: "Duke Nukem 3D ist ein schneller Ego-Shooter mit interaktiven Levels, markigen Sprüchen und einer bewusst überdrehten B-Movie-Atmosphäre, die ihn zu einem der bekanntesten Shooter der Neunziger machte.",
+        history: `Duke Nukem 3D erschien 1996 für DOS und wurde von 3D Realms entwickelt. Der Build-Engine-Shooter setzte sich vor allem durch seine interaktiven Umgebungen von vielen Konkurrenten ab. Spiegel, Toiletten, Billardtische, Lichtschalter und zerstörbare Elemente ließen die Levels ungewöhnlich lebendig wirken. Die deutsche und österreichische Retail-Ausgabe wurde unter anderem durch CDV Software vertrieben, während FormGen als Publisher der kommerziellen DOS-Fassung auftrat. Duke selbst wurde mit seinen Einzeilern zu einer der bekanntesten Figuren der damaligen PC-Actionspiele.`,
+        review: `Duke Nukem 3D lebt bis heute von seinem Leveldesign. Hinter dem lauten Humor steckt ein Shooter, dessen Räume erstaunlich glaubwürdig aufgebaut sind und zum Erkunden einladen. Manche Sprüche und Anspielungen sind sehr deutlich Produkte der Neunziger, spielerisch funktioniert der Titel aber weiterhin hervorragend. Besonders die Mischung aus Tempo, Geheimräumen und interaktiver Umgebung bleibt stark.`,
+        trivia: [
+            "Duke Nukem 3D erschien 1996 für DOS.",
+            "Entwickelt wurde das Spiel von 3D Realms.",
+            "Es nutzt Ken Silvermans Build Engine.",
+            "Die Levels enthalten für damalige Verhältnisse ungewöhnlich viele interaktive Objekte.",
+            "CDV Software vertrieb DOS-Ausgaben im deutschsprachigen Raum."
+        ],
+        worthPlaying: `Wer klassische Ego-Shooter mag, sollte Duke Nukem 3D auch heute noch spielen. Die Waffen fühlen sich gut an, die Levels sind abwechslungsreich und voller Geheimnisse, und die Build Engine ermöglicht ein Spieltempo, das selbst Jahrzehnte später kaum alt wirkt.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/365/duke-nukem-3d/",
+        wikipedia: "https://en.wikipedia.org/wiki/Duke_Nukem_3D",
+        gog: "",
+        },
+        boxArtists: [
+            "Robert Grace"
+        ],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 232,
+        depth: 39
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 95,
+        folder: "dynablaster",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "dynablaster.html",
+        featured: false,
+        title: "Dyna Blaster",
+        system: "PC",
+        year: 1992,
+        publisher: "Ubi Soft",
+        developer: "Hudson Soft",
+        genre: [
+            "Action",
+            "Arcade",
+            "Maze"
+        ],
+        description: "Dyna Blaster ist die europäische Computerfassung eines Bomberman-Spiels: Bomben legen, Mauern sprengen, Power-ups sammeln und möglichst vermeiden, sich mit der eigenen Explosion aus dem Rennen zu nehmen.",
+        history: `Dyna Blaster erschien 1992 unter anderem für DOS, Amiga und Atari ST. Das Spiel basiert auf Hudson Softs Bomberman-Konzept und wurde in Europa unter dem Namen Dyna Blaster veröffentlicht. Die DOS-Fassung wurde von Ubi Soft publiziert. Im Einzelspielermodus arbeitet man sich durch labyrinthartige Arenen voller Gegner, während der Mehrspielermodus das einfache Grundprinzip in eine äußerst direkte Wettbewerbssituation verwandelt. Gerade diese lokale Mehrspielerkomponente machte das Spiel auf Heimcomputern besonders beliebt.`,
+        review: `Dyna Blaster gehört zu den Spielen, deren Regeln in wenigen Sekunden verstanden sind und die trotzdem stundenlang funktionieren. Im Einzelspielermodus wiederholen sich Abläufe irgendwann, im Mehrspielerbetrieb entsteht dagegen fast automatisch Chaos. Bombenketten, schlecht geplante Fluchtwege und vermeintlich sichere Ecken sorgen zuverlässig für Schadenfreude. Genau deshalb ist das Spiel hervorragend gealtert.`,
+        trivia: [
+            "Dyna Blaster ist eng mit Hudson Softs Bomberman-Reihe verbunden.",
+            "Die DOS-Version erschien 1992.",
+            "Ubi Soft veröffentlichte die europäischen Computerfassungen.",
+            "Der Mehrspielermodus unterstützt mehrere Spieler auf einem Bildschirm.",
+            "Power-ups verändern unter anderem Bombenanzahl, Explosionsreichweite und Bewegungsgeschwindigkeit."
+        ],
+        worthPlaying: `Dyna Blaster lohnt sich vor allem im lokalen Mehrspieler. Das Spiel benötigt kaum Erklärung, läuft schnell an und erzeugt durch seine Kettenreaktionen immer wieder neue Situationen. Als Partyspiel ist das Grundprinzip praktisch zeitlos.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/5143/bomberman/",
+        wikipedia: "https://en.wikipedia.org/wiki/Bomberman",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 185,
+        height: 235,
+        depth: 42
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 96,
+        folder: "epic_pinball_cd",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "epic_pinball_cd.html",
+        featured: false,
+        title: "Epic Pinball: The Complete Collection",
+        system: "PC",
+        year: 1995,
+        publisher: "Epic MegaGames",
+        developer: "Digital Extremes / Epic MegaGames",
+        genre: [
+            "Flipper",
+            "Action",
+            "Arcade"
+        ],
+        description: "Epic Pinball: The Complete Collection bündelt die beliebten DOS-Flipper-Tische von Epic MegaGames auf CD-ROM und präsentiert schnelle, farbenfrohe Pinball-Action mit mehreren sehr unterschiedlich gestalteten Tischen.",
+        history: `Epic Pinball begann 1993 als Shareware-Veröffentlichung für DOS. Entwickelt wurde das Spiel maßgeblich von Digital Extremes und Epic MegaGames. Die Complete Collection beziehungsweise Enhanced CD-ROM bündelte später die zuvor in einzelnen Packs vertriebenen Tische. Eine deutsche und britische Smile-Edition wurde 1995 über CDV Software vertrieben. Die Serie war ein frühes Beispiel dafür, wie Epic mit Shareware und direktem Vertrieb eine große PC-Spielerschaft erreichte.`,
+        review: `Epic Pinball ist technisch simpel, aber spielerisch erstaunlich haltbar. Die Tische scrollen vertikal, wodurch die Kugel nicht immer im gesamten Spielfeld sichtbar ist, doch Tempo, Musik und Tischdesign funktionieren weiterhin gut. Die Complete Collection ist besonders reizvoll, weil sie einen großen Querschnitt der Serie in einer einzigen Box bündelt.`,
+        trivia: [
+            "Epic Pinball erschien ursprünglich 1993 für DOS.",
+            "Digital Extremes und Epic MegaGames waren an der Entwicklung beteiligt.",
+            "Die Complete Collection erschien als CD-ROM-Zusammenstellung.",
+            "CDV Software vertrieb 1995 eine Smile-Edition in Deutschland und Großbritannien.",
+            "Epic Pinball wurde zunächst stark über das Shareware-Modell bekannt."
+        ],
+        worthPlaying: `Epic Pinball ist ein sehr zugänglicher DOS-Flipper mit vielen unterschiedlichen Tischen. Wer klassische PC-Arcade-Spiele mag, bekommt eine unkomplizierte Mischung aus Highscore-Jagd, kräftigem Sound und typischem Neunziger-PC-Look.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/78698/epic-pinball-the-complete-collection/",
+        wikipedia: "https://en.wikipedia.org/wiki/Epic_Pinball",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 235,
+        depth: 35
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 97,
+        folder: "fire_and_forget_2",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "fire_and_forget_2.html",
+        featured: false,
+        title: "Fire & Forget II: The Death Convoy",
+        system: "PC",
+        year: 1990,
+        publisher: "Titus France",
+        developer: "Titus France",
+        genre: [
+            "Action",
+            "Rennspiel",
+            "Arcade"
+        ],
+        description: "Fire & Forget II verbindet futuristisches Rennspiel und Shooter: Mit einem bewaffneten Fahrzeug jagt der Spieler durch postapokalyptische Strecken, bekämpft Gegner und kann sein Gefährt sogar kurzzeitig in die Luft bringen.",
+        history: `Fire & Forget II erschien 1990 für mehrere Heimcomputer und Konsolen, darunter DOS. Entwickelt und veröffentlicht wurde das Spiel von Titus France. Es setzt die Idee des Vorgängers fort und kombiniert schnelles Fahren mit Schusswechseln in einer futuristischen Umgebung. In fünf Abschnitten muss der Spieler einen sogenannten Death Convoy einholen und dessen Anführer ausschalten. Das eigene Fahrzeug kann dabei nicht nur fahren, sondern für bestimmte Passagen auch fliegen.`,
+        review: `Fire & Forget II ist ein typischer Vertreter jener Zeit, in der Rennspiel und Action ohne große Scheu zusammengemischt wurden. Das Ergebnis ist schnell, bunt und unkompliziert, aber auch recht repetitiv. Die Flugmechanik sorgt für Abwechslung, während Steuerung und Gegnerverhalten heute eher schlicht wirken. Als kurze Arcade-Zeitreise funktioniert der Titel dennoch ordentlich.`,
+        trivia: [
+            "Fire & Forget II erschien 1990 für DOS.",
+            "Entwickler und Publisher war Titus France.",
+            "Das Fahrzeug kann sowohl fahren als auch fliegen.",
+            "Das Spiel umfasst fünf große Abschnitte.",
+            "Es verbindet Rennspiel- und Shooter-Elemente in einem postapokalyptischen Szenario."
+        ],
+        worthPlaying: `Fire & Forget II lohnt sich vor allem für Fans früher Arcade-Rennspiele und Titus-Titel. Es ist kein tiefes Spiel, besitzt aber einen charmanten Mix aus Geschwindigkeit, Schießen und futuristischer B-Movie-Ästhetik.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/4639/fire-forget-ii/",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 175,
+        height: 241,
+        depth: 40
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 98,
+        folder: "fire_king",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "fire_king.html",
+        featured: false,
+        title: "Fire King",
+        system: "PC",
+        year: 1990,
+        publisher: "Electronic Arts / Strategic Studies Group",
+        developer: "Micro Forté",
+        genre: [
+            "Action-Rollenspiel",
+            "Fantasy",
+            "Top-Down"
+        ],
+        description: "Fire King ist ein Fantasy-Action-Rollenspiel aus der Vogelperspektive, das Erkundung, Kämpfe und Charakterentwicklung in einer zusammenhängenden Welt miteinander verbindet.",
+        history: `Fire King erschien zuerst 1989 für den Commodore 64 und 1990 auch für DOS. Entwickelt wurde das Spiel von Micro Forté in Australien; als Publisher werden Strategic Studies Group und Electronic Arts geführt. Spielerisch knüpft Fire King an Demon Stalkers an und erweitert dessen Grundidee zu einem stärker rollenspielorientierten Abenteuer. Die Spielfigur erkundet Städte, Dungeons und Außenbereiche, kämpft in Echtzeit gegen Monster und verbessert nach und nach ihre Fähigkeiten und Ausrüstung.`,
+        review: `Fire King ist heute vor allem wegen seiner ungewöhnlichen Mischung interessant. Es wirkt wie ein Bindeglied zwischen frühem Action-Adventure und klassischem Computer-Rollenspiel. Die Präsentation ist schlicht und die Orientierung kann anstrengend sein, doch die offene Erkundung und das Echtzeitkampfsystem sorgen für ein eigenes Spielgefühl. Wer gern in weniger bekannten RPGs der späten Achtziger stöbert, findet hier eine spannende Entdeckung.`,
+        trivia: [
+            "Fire King erschien 1989 auf dem Commodore 64 und 1990 für DOS.",
+            "Entwickelt wurde das Spiel von Micro Forté.",
+            "Strategic Studies Group und Electronic Arts werden als Publisher geführt.",
+            "Das Spiel nutzt eine Top-Down-Perspektive.",
+            "Fire King verbindet Echtzeitkämpfe mit klassischen Rollenspielelementen."
+        ],
+        worthPlaying: `Fire King lohnt sich für Spieler, die frühe Action-Rollenspiele und ungewöhnliche DOS-Titel entdecken möchten. Es ist deutlich sperriger als moderne Genrevertreter, besitzt aber durch seine Mischung aus Erkundung, Echtzeitkampf und Fantasywelt einen eigenen historischen Reiz.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1002/fire-king/",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 176,
+        height: 233,
+        depth: 13
+
+    },
+        screenshots: []
+
+    },
+	
+	{
+        id: 99,
+        folder: "flight_unlimited",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "flight_unlimited.html",
+        featured: false,
+        title: "Flight Unlimited",
+        system: "PC",
+        year: 1995,
+        publisher: "Softgold Computerspiele",
+        developer: "Looking Glass Technologies",
+        genre: [
+            "Flugsimulation",
+            "Simulation",
+            "Aerobatik"
+        ],
+        description: "Flight Unlimited ist eine zivile Flugsimulation mit starkem Schwerpunkt auf realistischer Aerodynamik und Kunstflug, die Mitte der Neunziger vor allem durch ihr damals ungewöhnlich anspruchsvolles Flugmodell auffiel.",
+        history: `Flight Unlimited erschien 1995 für DOS und wurde von Looking Glass Technologies entwickelt. Das Studio, das zuvor vor allem mit System Shock und Ultima Underworld bekannt geworden war, setzte bei seiner Flugsimulation bewusst auf eine physikalisch anspruchsvolle Darstellung des Fliegens. Statt großer Verkehrsflugzeuge stehen wendige Kunstflugmaschinen im Mittelpunkt. In Deutschland wurde die DOS-Fassung unter anderem von Softgold vertrieben. Das Spiel war als ernsthafte Alternative zum Microsoft Flight Simulator gedacht und wurde besonders für seine Aerodynamik und die umfangreichen Fluglektionen gelobt.`,
+        review: `Flight Unlimited fühlt sich heute weniger wie ein bequemes Feierabendspiel und mehr wie ein Stück Simulationsgeschichte an. Wer einfach nur starten und ein paar Loopings drehen will, merkt schnell, dass das Flugmodell einiges verlangt. Gerade dadurch besitzt das Spiel aber noch Reiz. Die Grafik ist natürlich gealtert, doch die Konzentration auf Kunstflug und glaubwürdige Physik hebt es weiterhin von vielen zeitgenössischen Simulationen ab.`,
+        trivia: [
+            "Die DOS-Version erschien 1995.",
+            "Entwickelt wurde das Spiel von Looking Glass Technologies.",
+            "Der Schwerpunkt liegt auf Kunstflug und ziviler Fliegerei.",
+            "Die Simulation verwendet ein auf realer Physik basierendes Flugmodell.",
+            "In Deutschland erschien eine lokalisierte Fassung über Softgold Computerspiele."
+        ],
+        worthPlaying: `Flight Unlimited lohnt sich heute für Simulationsfans, die erleben möchten, wie ernsthaft sich PC-Spiele schon 1995 mit Aerodynamik beschäftigten. Die Lernkurve ist steiler als bei vielen moderneren Titeln, aber genau das macht den historischen Reiz aus.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/806/flight-unlimited/",
+        wikipedia: "https://en.wikipedia.org/wiki/Flight_Unlimited",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 184,
+        height: 234,
+        depth: 41
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 100,
+        folder: "heartlight",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "heartlight.html",
+        featured: false,
+        title: "Heartlight",
+        system: "PC",
+        year: 1994,
+        publisher: "Epic MegaGames",
+        developer: "xLand Games",
+        genre: [
+            "Puzzle",
+            "Geschicklichkeit",
+            "Logik"
+        ],
+        description: "Heartlight ist ein klassisches Puzzle-Spiel im Stil von Boulder Dash, in dem Diamanten gesammelt, Steine verschoben und zunehmend verzwickte Levels mit genauer Planung gelöst werden müssen.",
+        history: `Heartlight entstand ursprünglich in Polen und wurde von Janusz Pelc entwickelt. Die PC-Fassung erschien Anfang der Neunziger und wurde international über Epic MegaGames verbreitet. Spieler steuern einen kleinen Charakter durch ein Bildschirmraster, sammeln Herzen beziehungsweise Diamanten und müssen dabei Felsen, Bomben und andere Gefahren geschickt nutzen oder vermeiden. Das Spiel lebt weniger von Reflexen als von genauer Planung, denn ein falscher Schritt kann einen kompletten Lösungsweg blockieren.`,
+        review: `Heartlight ist eines dieser Spiele, die in wenigen Sekunden erklärt sind und einen trotzdem erstaunlich lange beschäftigen können. Die Grafik ist schlicht, aber klar lesbar, und die besten Levels erzeugen genau die richtige Mischung aus Aha-Moment und leichter Verzweiflung. Wer Boulder-Dash-artige Rätsel mag, wird sich sofort zurechtfinden.`,
+        trivia: [
+            "Heartlight wurde ursprünglich von Janusz Pelc entwickelt.",
+            "Epic MegaGames veröffentlichte die PC-Version international.",
+            "Das Spiel orientiert sich deutlich am Grundprinzip von Boulder Dash.",
+            "Viele Levels verlangen exakte Zugfolgen und vorausschauende Planung.",
+            "Später wurde Heartlight als Freeware verfügbar gemacht."
+        ],
+        worthPlaying: `Heartlight lohnt sich heute als unkompliziertes, aber forderndes Logikspiel. Die Regeln sind sofort verständlich, die Level werden jedoch schnell anspruchsvoll und funktionieren deshalb auch Jahrzehnte später noch.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/heartlight/",
+        wikipedia: "https://en.wikipedia.org/wiki/Heartlight_(video_game)",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 172,
+        height: 224,
+        depth: 32
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+    {
+        id: 101,
+        folder: "heretic_mailorder",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "heretic_mailorder.html",
+        featured: false,
+        title: "Heretic",
+        system: "PC",
+        year: 1994,
+        publisher: "id Software",
+        developer: "Raven Software",
+        genre: [
+            "Ego-Shooter",
+            "Fantasy",
+            "Action"
+        ],
+        description: "Heretic verbindet die schnelle Doom-Schule des Ego-Shooters mit einer düsteren Fantasywelt, magischen Waffen, Inventargegenständen und einer für 1994 ungewöhnlich eigenständigen Atmosphäre.",
+        history: `Heretic wurde von Raven Software entwickelt und 1994 von id Software veröffentlicht. Technisch basiert das Spiel auf einer erweiterten Doom-Engine, erweitert das bekannte Prinzip aber um Fantasywaffen, ein Inventarsystem und neue Blick- und Bewegungsmöglichkeiten. Die ursprünglich direkt beziehungsweise per Mailorder vertriebene Vollversion enthielt drei Episoden. Später erschien mit Shadow of the Serpent Riders eine erweiterte Fassung mit zusätzlichen Episoden.`,
+        review: `Heretic ist weit mehr als nur Doom mit Zauberstäben. Das Leveldesign, die Waffen und vor allem das Inventar geben dem Spiel ein eigenes Tempo. Einige Abschnitte wirken heute labyrinthartig, doch die klare Steuerung und das flotte Kampfsystem tragen erstaunlich gut. Die Mailorder-Box ist außerdem ein schönes Sammlerstück aus der Zeit des direkten PC-Spielevertriebs.`,
+        trivia: [
+            "Heretic erschien 1994.",
+            "Entwickelt wurde das Spiel von Raven Software.",
+            "id Software fungierte als Publisher.",
+            "Technisch basiert Heretic auf einer erweiterten Doom-Engine.",
+            "Die spätere Fassung Shadow of the Serpent Riders ergänzte zwei weitere Episoden."
+        ],
+        worthPlaying: `Heretic lohnt sich für Fans klassischer Shooter, die Doom-Tempo mit Fantasy-Atmosphäre verbinden möchten. Das Inventarsystem und die eigenständigen Waffen sorgen dafür, dass sich das Spiel auch heute noch deutlich von seinem technischen Vorbild absetzt.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/355/heretic/",
+        wikipedia: "https://en.wikipedia.org/wiki/Heretic_(video_game)",
+        gog: "https://www.gog.com/game/heretic_hexen_collection",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 152,
+        height: 229,
+        depth: 18
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 102,
+        folder: "hero_quest_return_of_the_witch_lord",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "hero_quest_return_of_the_witch_lord.html",
+        featured: false,
+        title: "HeroQuest + Return of the Witch Lord",
+        system: "C64",
+        year: 1992,
+        publisher: "Gremlin Graphics",
+        developer: "Gremlin Graphics",
+        genre: [
+            "Brettspielumsetzung",
+            "Rollenspiel",
+            "Strategie"
+        ],
+        description: "HeroQuest + Return of the Witch Lord überträgt das bekannte Fantasy-Brettspiel samt Erweiterung auf den C64 und verbindet rundenbasierte Bewegung, Würfelkämpfe, Schatzsuche und Dungeon-Erkundung.",
+        history: `Die Computerumsetzung von HeroQuest basiert auf dem erfolgreichen Brettspiel von Games Workshop und Milton Bradley. Gremlin Graphics veröffentlichte 1992 eine Special Edition, die das Hauptspiel und die Erweiterung Return of the Witch Lord gemeinsam enthielt. Die digitale Umsetzung hält sich eng an das Brettspielprinzip: Helden bewegen sich feldweise durch Dungeons, öffnen Türen, kämpfen gegen Monster und suchen nach Schätzen. Die Erweiterung ergänzt zusätzliche Quests und führt die Kampagne gegen den Hexenfürsten fort.`,
+        review: `HeroQuest funktioniert auf dem C64 vor allem dann gut, wenn man das Brettspielprinzip mag. Das Tempo ist deutlich gemächlicher als bei modernen Dungeon Crawlern, doch genau diese klare, rundenbasierte Struktur macht den Charme aus. Die Kombination aus Hauptspiel und Erweiterung bietet zudem angenehm viel Inhalt in einer Box.`,
+        trivia: [
+            "Die Special Edition erschien 1992.",
+            "Enthalten sind HeroQuest und Return of the Witch Lord.",
+            "Gremlin Graphics entwickelte und veröffentlichte die Computerfassung.",
+            "Das Spiel basiert auf dem gleichnamigen Fantasy-Brettspiel.",
+            "Die C64-Version nutzt eine rundenbasierte Dungeon-Darstellung."
+        ],
+        worthPlaying: `Für Fans klassischer Brettspielumsetzungen ist HeroQuest noch immer interessant. Die Regeln sind leicht nachvollziehbar, die Atmosphäre angenehm altmodisch und die enthaltene Erweiterung sorgt für zusätzliche Quests.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/41620/heroquest-heroquest-return-of-the-witch-lord/",
+        wikipedia: "https://en.wikipedia.org/wiki/HeroQuest_(video_game)",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 154,
+        height: 184,
+        depth: 33
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 103,
+        folder: "indiana_jones_fate_of_atlantis",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "indiana_jones_fate_of_atlantis.html",
+        featured: false,
+        title: "Indiana Jones and the Fate of Atlantis",
+        system: "Amiga",
+        year: 1992,
+        publisher: "LucasArts / Softgold",
+        developer: "LucasArts",
+        genre: [
+            "Point-and-Click-Adventure",
+            "Adventure",
+            "Archäologie"
+        ],
+        description: "Indiana Jones and the Fate of Atlantis ist ein klassisches LucasArts-Adventure, in dem Indy und Sophia Hapgood 1939 nach Atlantis suchen und dabei Nazis, antike Rätsel und jede Menge SCUMM-typischen Humor überstehen müssen.",
+        history: `Indiana Jones and the Fate of Atlantis erschien 1992 und wurde von LucasArts entwickelt. Hal Barwood und Noah Falstein entwarfen eine eigenständige Geschichte, die bewusst nicht auf einem bestehenden Film basiert. Das Adventure nutzt die SCUMM-Engine und bietet drei unterschiedliche Lösungswege für größere Abschnitte: Team, Wits und Fists. Die Amiga-Version folgte dem DOS-Original und brachte eines der bekanntesten LucasArts-Adventures auf Commodores 16-Bit-Rechner. Das Cover-Artwork stammt von William Eaken.`,
+        review: `Fate of Atlantis gehört zu den Adventures, bei denen Rätsel, Dialoge und Atmosphäre fast ideal zusammenpassen. Die Amiga-Version ist technisch nicht ganz so komfortabel wie spätere CD-Fassungen, aber das eigentliche Spiel funktioniert hervorragend. Besonders die drei Pfade erhöhen den Wiederspielwert und geben Indy tatsächlich unterschiedliche Möglichkeiten, Probleme zu lösen.`,
+        trivia: [
+            "Das Spiel erschien 1992.",
+            "Die Geschichte wurde eigens für das Spiel geschrieben.",
+            "Hal Barwood und Noah Falstein waren die zentralen Designer.",
+            "Es gibt drei unterschiedliche Lösungswege: Team, Wits und Fists.",
+            "William Eaken gestaltete das bekannte Cover-Artwork."
+        ],
+        worthPlaying: `Indiana Jones and the Fate of Atlantis ist auch heute noch eines der stärksten klassischen Adventures. Humor, Rätsel und Indy-Atmosphäre greifen hervorragend ineinander, und die unterschiedlichen Lösungswege machen das Spiel ungewöhnlich flexibel.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/316/indiana-jones-and-the-fate-of-atlantis/",
+        wikipedia: "https://en.wikipedia.org/wiki/Indiana_Jones_and_the_Fate_of_Atlantis",
+        gog: "https://www.gog.com/game/indiana_jones_and_the_fate_of_atlantis",
+        },
+        boxArtists: [
+            "William Eaken"
+        ],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 183,
+        height: 234,
+        depth: 40
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 104,
+        folder: "mad_news",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "mad_news.html",
+        featured: false,
+        title: "Mad News",
+        system: "PC",
+        year: 1994,
+        publisher: "Ikarion Software",
+        developer: "Ikarion Software",
+        genre: [
+            "Wirtschaftssimulation",
+            "Management",
+            "Satire"
+        ],
+        description: "Mad News ist eine deutsche Wirtschaftssimulation, in der der Spieler eine Boulevardzeitung leitet, Schlagzeilen plant, Anzeigen verkauft und versucht, die Konkurrenz mit möglichst sensationellen Geschichten auszustechen.",
+        history: `Mad News erschien 1994 für DOS und wurde von Ikarion Software veröffentlicht. Das Spiel versteht sich als geistiger Verwandter von Mad TV, verlegt das Management aber vom Fernsehsender in die Redaktion einer Boulevardzeitung. Als Chefredakteur entscheidet der Spieler über Themen, Anzeigen, Personal und die Ausrichtung der Zeitung. Ralph Stock lieferte das ursprüngliche Konzept, während unter anderem Chris Hülsbeck an Musik und Sound beteiligt war.`,
+        review: `Mad News lebt von seiner herrlich überdrehten Idee. Die eigentliche Wirtschaftssimulation ist zugänglich, aber nicht banal, und die satirischen Schlagzeilen geben dem Spiel viel Persönlichkeit. Wer deutsche Managementspiele der Neunziger mag, findet hier einen angenehm eigenwilligen Vertreter.`,
+        trivia: [
+            "Mad News erschien 1994 für DOS.",
+            "Publisher war Ikarion Software.",
+            "Ralph Stock entwickelte das ursprüngliche Konzept.",
+            "Chris Hülsbeck war an Musik und Soundprogrammierung beteiligt.",
+            "Das Spiel wird häufig als inoffizieller Verwandter von Mad TV bezeichnet."
+        ],
+        worthPlaying: `Mad News lohnt sich vor allem wegen seines speziellen Humors und des ungewöhnlichen Zeitungsszenarios. Als kompakte Wirtschaftssimulation ist es leicht zugänglich und gleichzeitig typisch deutsch-neunziger Jahre.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/5556/mad-news/",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 184,
+        height: 232,
+        depth: 43
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 105,
+        folder: "might_and_magic_sixpack",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "might_and_magic_sixpack.html",
+        featured: false,
+        title: "Might and Magic Sixpack",
+        system: "PC",
+        year: 1998,
+        publisher: "Ubi Soft Entertainment",
+        developer: "New World Computing",
+        genre: [
+            "Rollenspiel",
+            "Compilation",
+            "Fantasy"
+        ],
+        description: "Might and Magic Sixpack ist eine große PC-Sammlung der klassischen Rollenspielreihe und bündelt die ersten sechs nummerierten Might-and-Magic-Abenteuer in einer einzigen Special Edition.",
+        history: `Das Sixpack erschien als deutsche Special Edition über Ubi Soft und fasst die frühen Teile der von New World Computing entwickelten Might-and-Magic-Reihe zusammen. Die Box wirbt ausdrücklich mit den Teilen I bis VI und deckt damit einen gewaltigen Zeitraum der Computer-Rollenspielgeschichte ab: von den frühen, rasterbasierten Abenteuern der Achtziger bis zum technisch deutlich moderneren Might and Magic VI. Gerade als Sammlung zeigt die Edition sehr anschaulich, wie sich Präsentation, Bedienung und Spieldesign der Reihe über mehr als ein Jahrzehnt verändert haben.`,
+        review: `Als Einzelspiel betrachtet ist das Sixpack kaum sinnvoll zu bewerten, als Sammlung dagegen umso mehr. Hier bekommt man praktisch eine kleine Ausstellung zur Entwicklung westlicher Computer-Rollenspiele. Die frühen Teile verlangen viel Geduld, Kartenzeichnen und Lesebereitschaft, während Teil VI wesentlich zugänglicher wirkt. Für Sammler ist die Box deshalb besonders reizvoll.`,
+        trivia: [
+            "Die Box enthält die nummerierten Teile I bis VI.",
+            "Die Reihe wurde von New World Computing geprägt.",
+            "Ubi Soft vertrieb diese deutsche Special Edition.",
+            "Die enthaltenen Spiele decken mehrere Generationen von Computer-Rollenspielen ab.",
+            "Might and Magic VI markiert innerhalb der Sammlung den technisch größten Sprung."
+        ],
+        worthPlaying: `Das Sixpack lohnt sich weniger als schneller Einstieg und mehr als umfassende RPG-Zeitreise. Wer klassische Rollenspiele mag, kann hier die Entwicklung einer der wichtigsten westlichen Serien direkt nachvollziehen.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/group/149/might-and-magic-series/",
+        wikipedia: "https://en.wikipedia.org/wiki/Might_and_Magic",
+        gog: "https://www.gog.com/game/might_and_magic_6_limited_edition",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 183,
+        height: 234,
+        depth: 42
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 106,
+        folder: "mortal_kombat_1_2",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "mortal_kombat_1_2.html",
+        featured: false,
+        title: "Mortal Kombat & Mortal Kombat II",
+        system: "PC",
+        year: 1996,
+        publisher: "Acclaim Entertainment",
+        developer: "Midway / Probe Entertainment",
+        genre: [
+            "Prügelspiel",
+            "Compilation",
+            "Arcade"
+        ],
+        description: "Mortal Kombat & Mortal Kombat II bündelt die beiden ersten PC-Umsetzungen der berühmten Arcade-Prügelspiele in einer gemeinsamen Veröffentlichung.",
+        history: `Die PC-Compilation erschien 1996 und wurde von Acclaim Entertainment veröffentlicht. Enthalten sind Mortal Kombat und Mortal Kombat II, deren Arcade-Originale von Midway stammen. Die DOS-Portierungen wurden von Probe Entertainment umgesetzt. Beide Spiele machten die Reihe mit digitalisierten Kämpfern, Fatalities und ihrem bewusst überzeichneten Gewaltgrad zu einem der bekanntesten Namen des Genres.`,
+        review: `Als Doppelpack ist die Sammlung eine schöne Momentaufnahme der frühen Mortal-Kombat-Jahre. Teil eins wirkt heute deutlich einfacher und sperriger, während Mortal Kombat II bereits merklich ausgereifter spielt. Die DOS-Umsetzungen erreichen nicht ganz das Arcade-Gefühl, sind aber historisch interessant und für damalige PC-Spieler wichtige Versionen gewesen.`,
+        trivia: [
+            "Die PC-Compilation erschien 1996.",
+            "Enthalten sind Mortal Kombat und Mortal Kombat II.",
+            "Acclaim Entertainment veröffentlichte die Sammlung.",
+            "Die DOS-Portierungen stammen von Probe Entertainment.",
+            "Die Arcade-Originale wurden von Midway entwickelt."
+        ],
+        worthPlaying: `Für Serienfans ist der Doppelpack eine kompakte Reise zu den Anfängen von Mortal Kombat. Vor allem Teil II spielt sich noch überraschend ordentlich, während Teil I hauptsächlich aus historischem Interesse fasziniert.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/54481/mortal-kombat-mortal-kombat-ii/",
+        wikipedia: "https://en.wikipedia.org/wiki/Mortal_Kombat",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 181,
+        height: 231,
+        depth: 41
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 107,
+        folder: "mortal_kombat_2",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "mortal_kombat_2.html",
+        featured: false,
+        title: "Mortal Kombat II",
+        system: "PC",
+        year: 1994,
+        publisher: "Acclaim Entertainment",
+        developer: "Midway / Probe Software",
+        genre: [
+            "Prügelspiel",
+            "Arcade",
+            "Action"
+        ],
+        description: "Mortal Kombat II erweitert das brutale Arcade-Prügelspiel mit mehr Kämpfern, mehr Arenen, spektakuläreren Fatalities und einem deutlich ausgefeilteren Kampfsystem.",
+        history: `Mortal Kombat II erschien 1993 zunächst in der Spielhalle und wurde anschließend auf zahlreiche Heimplattformen portiert. Die DOS-Fassung kam 1994 auf den Markt. Das Original stammt von Midway, während Probe Software die PC-Portierung übernahm. Im Vergleich zum Vorgänger wurde nahezu alles ausgebaut: Charakterauswahl, Spezialattacken, Arenen und Finishing Moves.`,
+        review: `Mortal Kombat II ist der Punkt, an dem die frühe Serie richtig rund wurde. Die Kämpfer unterscheiden sich stärker, die Arenen sind markanter und das Kampfsystem wirkt weniger steif als im ersten Teil. Die DOS-Version ist nicht die perfekte Umsetzung, vermittelt den Charme des Originals aber erstaunlich gut.`,
+        trivia: [
+            "Das Arcade-Original erschien 1993.",
+            "Die DOS-Version folgte 1994.",
+            "Midway entwickelte das Original.",
+            "Probe Software portierte das Spiel auf DOS.",
+            "Mortal Kombat II erweiterte die Zahl der Fatalities und Kämpfer deutlich."
+        ],
+        worthPlaying: `Mortal Kombat II ist auch heute noch einer der stärksten klassischen Teile der Serie. Wer digitale Kämpfer, Arcade-Tempo und herrlich überzogene Finishing Moves mag, bekommt hier genau die Essenz des frühen Mortal Kombat.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/600/mortal-kombat-ii/",
+        wikipedia: "https://en.wikipedia.org/wiki/Mortal_Kombat_II",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 233,
+        depth: 41
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 108,
+        folder: "mortal_kombat_4",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "mortal_kombat_4.html",
+        featured: false,
+        title: "Mortal Kombat 4",
+        system: "PC",
+        year: 1998,
+        publisher: "Midway Home Entertainment",
+        developer: "Midway Games / Eurocom",
+        genre: [
+            "Prügelspiel",
+            "3D-Fighting",
+            "Arcade"
+        ],
+        description: "Mortal Kombat 4 führte die Hauptreihe erstmals vollständig in polygonale 3D-Grafik und ergänzte den bekannten Nahkampf um Waffen und seitliche Ausweichbewegungen.",
+        history: `Mortal Kombat 4 erschien 1997 in der Arcade und 1998 unter anderem für Windows. Entwickelt wurde das Original von Midway Games, die PC-Umsetzung entstand mit Unterstützung von Eurocom. Nach drei 2D-Hauptteilen sollte die Reihe damit technisch mit den damals erfolgreichen 3D-Prügelspielen konkurrieren. Charaktere, Arenen und Waffen wurden vollständig polygonal dargestellt, während Fatalities und bekannte Spezialattacken erhalten blieben.`,
+        review: `Mortal Kombat 4 ist heute vor allem spannend, weil man den Übergang der Reihe von 2D zu 3D unmittelbar sehen kann. Die Polygonmodelle wirken kantig und die Animationen teilweise steif, aber das Spieltempo ist hoch und die bekannten MK-Mechaniken bleiben erkennbar. Für Serienfans ist es ein wichtiges Übergangskapitel.`,
+        trivia: [
+            "Die Arcade-Version erschien 1997.",
+            "Die Windows-Version folgte 1998.",
+            "Mortal Kombat 4 war der erste Hauptteil der Reihe mit vollständig polygonaler 3D-Grafik.",
+            "Midway Games entwickelte das Original.",
+            "Eurocom war an den Heimversionen beteiligt."
+        ],
+        worthPlaying: `Mortal Kombat 4 lohnt sich heute vor allem als historischer Wendepunkt der Serie. Spielerisch ist es rauer als spätere 3D-Teile, besitzt aber den unverwechselbaren Stil der klassischen Mortal-Kombat-Ära.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1128/mortal-kombat-4/",
+        wikipedia: "https://en.wikipedia.org/wiki/Mortal_Kombat_4",
+        gog: "https://www.gog.com/game/mortal_kombat_4",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 234,
+        depth: 43
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 109,
+        folder: "pinball_dreams",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "pinball_dreams.html",
+        featured: false,
+        title: "Pinball Dreams",
+        system: "PC",
+        year: 1993,
+        publisher: "21st Century Entertainment",
+        developer: "Digital Illusions / Spidersoft",
+        genre: [
+            "Flipper",
+            "Arcade",
+            "Simulation"
+        ],
+        description: "Pinball Dreams ist ein wegweisender Computerflipper mit vier unterschiedlich gestalteten Tischen, flüssigem Scrolling und einem bis heute eingängigen Mix aus Highscore-Jagd und präziser Ballphysik.",
+        history: `Pinball Dreams wurde von Digital Illusions entwickelt und erschien 1992 zunächst auf dem Amiga. Die DOS-Version folgte 1993 und wurde von Spidersoft portiert. Das Spiel enthält vier Tische und prägte zusammen mit seinen Nachfolgern die Vorstellung davon, wie ein Computerflipper aussehen und klingen konnte. Vor allem die flüssige Präsentation, Musik und Physik sorgten dafür, dass das Spiel weit über die Amiga-Szene hinaus bekannt wurde.`,
+        review: `Pinball Dreams ist ein Paradebeispiel dafür, wie wenig ein gutes Arcade-Konzept altern muss. Natürlich scrollt der Tisch vertikal und die Grafik ist technisch bescheiden, aber Ballgefühl, Musik und Tischideen funktionieren weiterhin hervorragend. Besonders die Jagd nach einem besseren Highscore hat kaum von ihrem Reiz verloren.`,
+        trivia: [
+            "Pinball Dreams erschien 1992 zuerst auf dem Amiga.",
+            "Die DOS-Version folgte 1993.",
+            "Digital Illusions entwickelte das Original.",
+            "Spidersoft portierte die PC-Fassung.",
+            "Das Spiel enthält vier unterschiedliche Flipper-Tische."
+        ],
+        worthPlaying: `Pinball Dreams gehört noch immer zu den unterhaltsamsten klassischen Computerflippern. Wer Highscores und schnelles Arcade-Gameplay mag, kann hier auch heute sofort loslegen.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/703/pinball-dreams/",
+        wikipedia: "https://en.wikipedia.org/wiki/Pinball_Dreams",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 186,
+        height: 237,
+        depth: 40
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 110,
+        folder: "quake_mission_pack_v1",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "quake_mission_pack_v1.html",
+        featured: false,
+        title: "Quake Mission Pack No. 1: Scourge of Armagon",
+        system: "PC",
+        year: 1997,
+        publisher: "Activision / id Software",
+        developer: "Hipnotic Interactive",
+        genre: [
+            "Ego-Shooter",
+            "Add-on",
+            "Action"
+        ],
+        description: "Scourge of Armagon ist das erste offizielle Quake-Mission-Pack und erweitert den Shooter um neue Levels, Gegner, Waffen und einen eigenständigen Endgegner.",
+        history: `Quake Mission Pack No. 1: Scourge of Armagon erschien 1997 und wurde von Hipnotic Interactive entwickelt. Das Add-on setzt nach dem Ende von Quake an und schickt den Spieler erneut durch düstere Basen und bizarre Dimensionen. Neben neuen Einzelspielerlevels kamen zusätzliche Waffen, Gegner und Power-ups hinzu. Hipnotic wurde später als Ritual Entertainment bekannt.`,
+        review: `Scourge of Armagon fühlt sich erfreulich nah am Original an, bringt aber genug neue Ideen mit, um nicht wie eine bloße Levelsammlung zu wirken. Die neuen Waffen passen gut ins Quake-Arsenal und einige Karten gehören zu den stärkeren klassischen Quake-Abschnitten. Wer das Hauptspiel mag, bekommt hier mehr davon ohne großen Stilbruch.`,
+        trivia: [
+            "Das erste offizielle Quake-Mission-Pack erschien 1997.",
+            "Entwickelt wurde es von Hipnotic Interactive.",
+            "Hipnotic wurde später in Ritual Entertainment umbenannt.",
+            "Das Add-on ergänzt neue Waffen, Gegner und Power-ups.",
+            "Armagon ist der namensgebende Endgegner."
+        ],
+        worthPlaying: `Scourge of Armagon ist für Quake-Fans nahezu Pflichtprogramm. Es erweitert das Original sinnvoll, ohne dessen Atmosphäre und Tempo zu verändern.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/2335/quake-mission-pack-no-1-scourge-of-armagon/",
+        wikipedia: "https://en.wikipedia.org/wiki/Quake_(video_game)",
+        gog: "https://www.gog.com/game/quake_the_offering",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 203,
+        height: 239,
+        depth: 40
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 111,
+        folder: "quake_mission_pack_v2",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "quake_mission_pack_v2.html",
+        featured: false,
+        title: "Quake Mission Pack No. 2: Dissolution of Eternity",
+        system: "PC",
+        year: 1997,
+        publisher: "Activision / id Software",
+        developer: "Rogue Entertainment",
+        genre: [
+            "Ego-Shooter",
+            "Add-on",
+            "Action"
+        ],
+        description: "Dissolution of Eternity ist das zweite offizielle Quake-Mission-Pack und erweitert das Hauptspiel um neue Episoden, Gegner, Waffenvarianten und zusätzliche Multiplayer-Inhalte.",
+        history: `Quake Mission Pack No. 2: Dissolution of Eternity erschien 1997 und wurde von Rogue Entertainment entwickelt. Das Add-on folgt auf Scourge of Armagon und bietet zwei neue Episoden mit zahlreichen Levels. Rogue ergänzte das vorhandene Waffenarsenal um modifizierte Varianten und führte neue Gegner ein, ohne das grundlegende Quake-Spielgefühl stark zu verändern.`,
+        review: `Dissolution of Eternity ist etwas konservativer als das erste Mission Pack, bietet aber solide, anspruchsvolle Quake-Kost. Die Levels sind abwechslungsreich und die neuen Gegner sorgen für Überraschungen. Wer bereits das Hauptspiel und Armagon durchgespielt hat, bekommt hier einen weiteren kräftigen Nachschlag.`,
+        trivia: [
+            "Das zweite offizielle Quake-Mission-Pack erschien 1997.",
+            "Entwickelt wurde es von Rogue Entertainment.",
+            "Das Add-on enthält zwei neue Episoden.",
+            "Neue Gegner und Waffenvarianten ergänzen das Grundspiel.",
+            "Rogue Entertainment entwickelte später unter anderem weitere Shooter-Erweiterungen."
+        ],
+        worthPlaying: `Dissolution of Eternity lohnt sich für jeden, der vom klassischen Quake noch nicht genug hat. Es bleibt nah am Original, erweitert aber Umfang und Gegnerauswahl spürbar.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/4326/quake-mission-pack-no-2-dissolution-of-eternity/",
+        wikipedia: "https://en.wikipedia.org/wiki/Quake_(video_game)",
+        gog: "https://www.gog.com/game/quake_the_offering",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 203,
+        height: 239,
+        depth: 40
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 112,
+        folder: "raptor_call_of_the_shadows",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "raptor_call_of_the_shadows.html",
+        featured: false,
+        title: "Raptor: Call of the Shadows",
+        system: "PC",
+        year: 1994,
+        publisher: "Apogee Software",
+        developer: "Cygnus Studios",
+        genre: [
+            "Shoot em up",
+            "Vertikal-Shooter",
+            "Arcade"
+        ],
+        description: "Raptor: Call of the Shadows ist ein vertikal scrollendes DOS-Shoot-em-up, bei dem abgeschossene Gegner Geld bringen, das zwischen den Missionen in neue Waffen und Ausrüstung investiert wird.",
+        history: `Raptor: Call of the Shadows wurde von Cygnus Studios entwickelt und 1994 von Apogee Software veröffentlicht. Wie viele Apogee-Titel nutzte das Spiel ein Shareware-Modell: Der erste Abschnitt konnte frei ausprobiert werden, weitere Episoden gehörten zur Vollversion. Die Kombination aus klassischem Vertikal-Shooter und dauerhaftem Waffenarsenal gab Raptor eine eigene Identität und machte es zu einem der bekanntesten DOS-Shooter seiner Art.`,
+        review: `Raptor ist herrlich direkt: starten, schießen, Geld sammeln, bessere Waffen kaufen. Dieses Grundprinzip funktioniert auch heute noch erstaunlich gut. Die Grafik wiederholt sich stellenweise, doch das Treffergefühl und der sichtbare Fortschritt durch neue Bewaffnung motivieren zuverlässig.`,
+        trivia: [
+            "Raptor erschien am 1. April 1994 für DOS.",
+            "Entwickelt wurde das Spiel von Cygnus Studios.",
+            "Apogee Software veröffentlichte es im Shareware-Modell.",
+            "Der erste Abschnitt war als Shareware verfügbar.",
+            "Verdientes Geld kann zwischen Missionen in Waffen und Ausrüstung investiert werden."
+        ],
+        worthPlaying: `Raptor ist ein idealer Retro-Shooter für kurze Sessions. Die Mischung aus Arcade-Action und Waffen-Upgrades ist unkompliziert, motivierend und erstaunlich zeitlos.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1805/raptor-call-of-the-shadows/",
+        wikipedia: "https://en.wikipedia.org/wiki/Raptor:_Call_of_the_Shadows",
+        gog: "https://www.gog.com/game/raptor_call_of_the_shadows_2010_edition",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 190,
+        height: 228,
+        depth: 27
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 113,
+        folder: "realms_of_chaos",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "realms_of_chaos.html",
+        featured: false,
+        title: "Realms of Chaos",
+        system: "PC",
+        year: 1995,
+        publisher: "Apogee Software",
+        developer: "Apogee Software",
+        genre: [
+            "Action",
+            "Plattformspiel",
+            "Fantasy"
+        ],
+        description: "Realms of Chaos ist ein seitlich scrollendes Fantasy-Actionspiel, in dem der Spieler jederzeit zwischen dem Schwertkämpfer Endrick und der Magierin Elandra wechseln kann.",
+        history: `Realms of Chaos erschien 1995 für DOS und wurde von Apogee veröffentlicht. Das Spiel kombiniert klassisches Plattform- und Action-Gameplay mit zwei sehr unterschiedlichen spielbaren Figuren. Endrick kämpft mit dem Schwert und besitzt mehr Ausdauer, während Elandra aus der Distanz mit Magie angreift und andere Bewegungsmöglichkeiten bietet. Insgesamt umfasst das Spiel 26 Levels in mehreren thematisch unterschiedlichen Bereichen.`,
+        review: `Realms of Chaos ist kein perfekter Plattformklassiker, besitzt aber eine sympathische Eigenständigkeit. Der Figurenwechsel ist mehr als nur Dekoration und eröffnet unterschiedliche Lösungswege für Kämpfe und Sprungpassagen. Die Steuerung kann etwas kantig wirken, doch Grafik und Tempo haben echten DOS-Charme.`,
+        trivia: [
+            "Realms of Chaos erschien 1995 für DOS.",
+            "Das Spiel umfasst 26 Levels.",
+            "Spielbar sind Endrick und Elandra.",
+            "Beide Figuren besitzen unterschiedliche Angriffe und Fähigkeiten.",
+            "Die Musik und Soundeffekte stammen unter anderem von Bobby Prince."
+        ],
+        worthPlaying: `Realms of Chaos lohnt sich für Fans klassischer DOS-Actionspiele, die etwas abseits der ganz großen Namen suchen. Der Wechsel zwischen zwei Figuren verleiht dem Spiel eine interessante taktische Note.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/807/realms-of-chaos/",
+        wikipedia: "https://en.wikipedia.org/wiki/Realms_of_Chaos_(video_game)",
+        gog: "https://www.gog.com/game/realms_of_chaos",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 183,
+        height: 233,
+        depth: 40
+
+    },
+        screenshots: []
+
+    },
+	
+	{
+        id: 114,
+        folder: "rise_of_the_dragon",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "rise_of_the_dragon.html",
+        featured: false,
+        title: "Rise of the Dragon",
+        system: "PC",
+        year: 1990,
+        publisher: "Sierra On-Line",
+        developer: "Dynamix",
+        genre: [
+            "Point-and-Click-Adventure",
+            "Cyberpunk",
+            "Science-Fiction"
+        ],
+        description: "Rise of the Dragon ist ein düsteres Cyberpunk-Adventure von Dynamix, das Detektivgeschichte, Comic-Optik und einen ungewöhnlich starken Zeitablauf miteinander verbindet.",
+        history: `Rise of the Dragon erschien 1990 für MS-DOS und wurde von Dynamix entwickelt sowie von Sierra On-Line veröffentlicht. Im Los Angeles des Jahres 2053 übernimmt der Spieler die Rolle des Privatdetektivs William "Blade" Hunter. Die Geschichte verbindet klassische Detektivmotive mit Cyberpunk, Drogenschmuggel und einer Verschwörung. Auffällig waren die comicartige Präsentation, großformatige Grafiken und ein Spielablauf, bei dem Zeit tatsächlich vergeht und verpasste Termine Folgen haben können.`,
+        review: `Das Adventure ist heute vor allem wegen seiner Atmosphäre bemerkenswert. Die düstere Zukunftsvision und die Comic-Präsentation besitzen weiterhin Charakter, während manche Bedienungs- und Aktionspassagen deutlich aus ihrer Zeit stammen. Wer frühe Cyberpunk-Spiele mag, findet hier ein wichtiges und eigenwilliges Beispiel.`,
+        trivia: [
+            "Die DOS-Version erschien 1990.",
+            "Entwickelt wurde das Spiel von Dynamix.",
+            "Die Handlung spielt im Los Angeles des Jahres 2053.",
+            "Zeit vergeht im Spiel und beeinflusst Ereignisse.",
+            "Später erschienen Umsetzungen für Amiga, Macintosh und Sega CD."
+        ],
+        worthPlaying: `Rise of the Dragon lohnt sich für Adventure- und Cyberpunk-Fans, die frühe Experimente mit filmischer Präsentation und zeitabhängigem Spieldesign erleben möchten.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/98/rise-of-the-dragon/",
+        wikipedia: "https://en.wikipedia.org/wiki/Rise_of_the_Dragon",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 181,
+        height: 228,
+        depth: 30
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 115,
+        folder: "rise_of_the_triad",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "rise_of_the_triad.html",
+        featured: false,
+        title: "Rise of the Triad: Dark War",
+        system: "PC",
+        year: 1995,
+        publisher: "Apogee Software",
+        developer: "Apogee Software",
+        genre: [
+            "Ego-Shooter",
+            "Action",
+            "Shareware"
+        ],
+        description: "Rise of the Triad: Dark War ist ein schneller DOS-Ego-Shooter, der mit absurden Waffen, Sprungplattformen, Fallen und bewusst überdrehter Action einen eigenen Weg neben Doom und Wolfenstein 3D ging.",
+        history: `Rise of the Triad: Dark War erschien 1995 bei Apogee Software. Das Spiel begann ursprünglich als Nachfolgeprojekt zu Wolfenstein 3D, entwickelte sich aber zu einer eigenständigen Marke. Neben konventionellen Waffen bietet es Raketenwerfer, magische Power-ups, Trampoline, Fallen und stark vertikal aufgebaute Arenen. Die Vollversion wurde wie viele Apogee-Titel durch eine Shareware-Ausgabe bekannt gemacht.`,
+        review: `Rise of the Triad ist chaotisch, schnell und mitunter herrlich albern. Technisch wirkt es neben Doom eigenwillig, doch gerade seine Fallen, Raketenorgien und verrückten Power-ups geben ihm eine unverwechselbare Identität.`,
+        trivia: [
+            "Veröffentlicht wurde Dark War 1995.",
+            "Apogee entwickelte und veröffentlichte das Spiel.",
+            "Das Projekt begann als Wolfenstein-3D-Nachfolger.",
+            "Es gibt zahlreiche Fallen, Sprungflächen und explosive Waffen.",
+            "Eine Shareware-Version half bei der Verbreitung."
+        ],
+        worthPlaying: `Wer klassische DOS-Shooter mag und etwas jenseits der üblichen Doom-Klone sucht, bekommt mit Rise of the Triad ein schnelles und ungewöhnlich verspieltes Stück Shooter-Geschichte.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/644/rise-of-the-triad-dark-war/",
+        wikipedia: "https://en.wikipedia.org/wiki/Rise_of_the_Triad",
+        gog: "https://www.gog.com/game/rise_of_the_triad_dark_war",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 185,
+        height: 232,
+        depth: 41
+
+    },
+        screenshots: []
+
+    },
+
+    {
+        id: 116,
+        folder: "sams_journey",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "sams_journey.html",
+        featured: false,
+        title: "Sam's Journey",
+        system: "C64",
+        year: 2017,
+        publisher: "Protovision",
+        developer: "Knights of Bytes",
+        genre: [
+            "Jump & Run",
+            "Plattformer",
+            "C64"
+        ],
+        description: "Sam's Journey ist ein modernes C64-Jump-'n'-Run von Knights of Bytes mit farbenfroher Grafik, schnellem Scrolling, großen Levels und Spezialkostümen mit zusätzlichen Fähigkeiten.",
+        history: `Sam's Journey erschien 2017 für den Commodore 64. Entwickelt wurde es von Knights of Bytes und über Protovision veröffentlicht. Das Projekt entstand mit dem Anspruch, auf dem C64 ein Plattformspiel zu schaffen, das sich an großen 8-Bit-Konsolenspielen orientiert. Sam kann rennen, springen, klettern und schwimmen; sechs Kostüme erweitern seine Fähigkeiten. Das Spiel umfasst mehrere Weltkarten und zahlreiche große Level und wurde auch als aufwendig produzierte physische Edition angeboten.`,
+        review: `Sam's Journey zeigt eindrucksvoll, was sich aus dem C64 noch Jahrzehnte nach seiner Blütezeit herausholen lässt. Steuerung, Scrolling und Präsentation wirken erstaunlich modern, ohne den Charakter der Plattform zu verlieren. Für neue C64-Spiele ist es zu Recht ein wichtiger Referenztitel.`,
+        trivia: [
+            "Veröffentlicht wurde das Spiel 2017.",
+            "Entwickelt wurde es von Knights of Bytes.",
+            "Protovision vertreibt digitale und physische Editionen.",
+            "Sam verfügt über sechs Spezialkostüme.",
+            "Die NTSC-Version nutzt für flüssiges Scrolling eine REU-Unterstützung."
+        ],
+        worthPlaying: `Für C64-Fans ist Sam's Journey nahezu Pflichtprogramm: technisch beeindruckend, spielerisch zugänglich und ein starkes Beispiel für moderne Entwicklung auf klassischer Hardware.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/100415/sams-journey/",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 155,
+        height: 225,
+        depth: 35
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 117,
+        folder: "sensible_world_of_soccer",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "sensible_world_of_soccer.html",
+        featured: false,
+        title: "Sensible World of Soccer",
+        system: "PC",
+        year: 1994,
+        publisher: "Renegade",
+        developer: "Sensible Software",
+        genre: [
+            "Fußball",
+            "Sport",
+            "Management"
+        ],
+        description: "Sensible World of Soccer verbindet das direkte, schnelle Spielgefühl von Sensible Soccer mit einem umfangreichen Karriere- und Managementmodus und einer riesigen Datenbank internationaler Teams.",
+        history: `Sensible World of Soccer erschien ab 1994 für Amiga und DOS. Sensible Software kombinierte die bekannte Vogelperspektive und präzise Ein-Knopf-Steuerung der Serie mit einem erstaunlich umfangreichen Managementteil. Tausende Spieler, internationale Wettbewerbe, Transfers und lange Karrieren machten SWOS zu weit mehr als einem einfachen Arcade-Fußballspiel.`,
+        review: `Kaum ein Fußballspiel dieser Zeit schafft den Spagat zwischen sofort verständlicher Action und langfristiger Karriere so gut. Die Grafik ist minimalistisch, doch Ballgefühl und Tempo funktionieren weiterhin hervorragend.`,
+        trivia: [
+            "Der erste Teil erschien 1994.",
+            "Entwickelt wurde SWOS von Sensible Software.",
+            "Das Spiel kombiniert Fußballaction und Management.",
+            "Die Datenbank umfasst Tausende Spieler und zahlreiche Ligen.",
+            "SWOS entwickelte eine bis heute aktive Fangemeinde."
+        ],
+        worthPlaying: `Sensible World of Soccer lohnt sich noch immer für Spieler, die unkomplizierten Fußball mit überraschend viel Managementtiefe verbinden möchten.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/2323/sensible-world-of-soccer/",
+        wikipedia: "https://en.wikipedia.org/wiki/Sensible_World_of_Soccer",
+        gog: "https://www.gog.com/game/sensible_world_of_soccer_9697",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 184,
+        height: 234,
+        depth: 41
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 118,
+        folder: "shenzhen_solitaire",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "shenzhen_solitaire.html",
+        featured: false,
+        title: "SHENZHEN SOLITAIRE",
+        system: "PC",
+        year: 2016,
+        publisher: "Zachtronics",
+        developer: "Zachtronics",
+        genre: [
+            "Kartenspiel",
+            "Solitaire",
+            "Puzzle"
+        ],
+        description: "SHENZHEN SOLITAIRE ist eine eigenständige Solitaire-Variante von Zachtronics, die Elemente von Mahjong und FreeCell zu einem kompakten, ungewöhnlich taktischen Kartenspiel verbindet.",
+        history: `SHENZHEN SOLITAIRE wurde ursprünglich als Ablenkung innerhalb von SHENZHEN I/O entwickelt und Ende 2016 als eigenständiges Spiel veröffentlicht. Zachtronics reduzierte dabei bewusst auf Karten, klare Regeln und wiederholbare Partien. Ziel ist es, Kartenfolgen und spezielle Drachenkarten geschickt zu ordnen und das Spielfeld vollständig abzuräumen.`,
+        review: `Das Spiel ist klein, elegant und gefährlich gut darin, aus einer kurzen Pause plötzlich eine halbe Stunde zu machen. Die Regeln sind schnell verstanden, doch nicht jede Auslage lässt sich sofort durchschauen.`,
+        trivia: [
+            "Die eigenständige Version erschien am 15. Dezember 2016.",
+            "Entwickler und Publisher ist Zachtronics.",
+            "Die Variante wurde ursprünglich für SHENZHEN I/O entwickelt.",
+            "Sie kombiniert Ideen aus Mahjong und FreeCell.",
+            "Zachtronics gibt an, dass der überwiegende Teil der Deals lösbar ist."
+        ],
+        worthPlaying: `Ideal für Puzzle- und Kartenspielfans, die ein schnelles Regelwerk mit erstaunlich viel taktischer Tiefe mögen.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/83056/shenzhen-solitaire/",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 96,
+        height: 97,
+        depth: 16
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 119,
+        folder: "sid_meiers_pirates_limited_edition",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "sid_meiers_pirates_limited_edition.html",
+        featured: false,
+        title: "Sid Meier's Pirates! Limited Edition",
+        system: "PC",
+        year: 2004,
+        publisher: "Atari",
+        developer: "Firaxis Games",
+        genre: [
+            "Action-Adventure",
+            "Strategie",
+            "Piraten"
+        ],
+        description: "Sid Meier's Pirates! ist die moderne Neuinterpretation des MicroProse-Klassikers und kombiniert Seefahrt, Handel, Schatzsuche, Duelle, Tänze und taktische Schiffsgefechte in einer offenen Karibik.",
+        history: `Firaxis veröffentlichte Sid Meier's Pirates! 2004 als Neuinterpretation des Klassikers von 1987. Statt einer linearen Kampagne lebt das Spiel erneut von einer offenen Karriere: Der Spieler sucht verlorene Familienmitglieder, jagt Piraten, handelt mit Städten, kapert Schiffe und arbeitet mit oder gegen die europäischen Kolonialmächte. Die Limited Edition wurde als besondere physische Ausgabe vermarktet.`,
+        review: `Die Mischung aus kurzen, klaren Spielsystemen funktioniert noch immer hervorragend. Kaum ein anderes Piratenspiel vermittelt so schnell das Gefühl, selbst eine Karriere zwischen Handel, Kaperfahrt und Schatzsuche zu gestalten.`,
+        trivia: [
+            "Die Neuauflage erschien 2004.",
+            "Entwickelt wurde sie von Firaxis Games.",
+            "Das Spiel basiert auf Sid Meiers Klassiker von 1987.",
+            "Mehrere kleine Spielsysteme bilden gemeinsam die Piratenkarriere.",
+            "Die PC-Version erschien auch in besonderen Editionen."
+        ],
+        worthPlaying: `Wer offene Spielwelten ohne endlose Checklisten mag, findet hier einen zeitlosen Piraten-Sandkasten mit hohem Wiederspielwert.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/15830/sid-meiers-pirates/",
+        wikipedia: "https://en.wikipedia.org/wiki/Sid_Meier%27s_Pirates!_(2004_video_game)",
+        gog: "https://www.gog.com/game/sid_meiers_pirates",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 297,
+        height: 219,
+        depth: 36
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 120,
+        folder: "sigil",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "sigil.html",
+        featured: false,
+        title: "SIGIL",
+        system: "PC",
+        year: 2019,
+        publisher: "Limited Run Games",
+        developer: "Romero Games",
+        genre: [
+            "Ego-Shooter",
+            "Doom-Mod",
+            "Megawad"
+        ],
+        description: "SIGIL ist ein von John Romero gestaltetes Megawad für das originale Doom, das als inoffizielles fünftes Kapitel mit neun neuen Einzelspielerlevels gedacht ist.",
+        history: `John Romero veröffentlichte SIGIL 2019 zum 25-jährigen Jubiläum von Doom. Das Megawad benötigt das registrierte Originalspiel und setzt unmittelbar auf dessen Technik und Spielmechanik. Neben dem kostenlosen Download entstanden aufwendig gestaltete physische Editionen mit Big Box, Musik und Artwork.`,
+        review: `SIGIL fühlt sich bewusst wie Doom an, aber wie Doom durch die Augen eines Designers, der Jahrzehnte später noch einmal mit denselben Bausteinen arbeitet. Die Karten sind eng, trickreich und deutlich anspruchsvoller als viele Levels des Originals.`,
+        trivia: [
+            "SIGIL erschien 2019.",
+            "John Romero entwarf die Levels.",
+            "Es benötigt das originale Doom.",
+            "Das Paket enthält neun Einzelspielerlevels.",
+            "Es erschienen limitierte physische Editionen."
+        ],
+        worthPlaying: `Für Doom-Fans ist SIGIL besonders reizvoll, weil es Originaltechnik mit einem modernen Blick auf klassisches Leveldesign verbindet.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/127451/sigil/",
+        wikipedia: "https://en.wikipedia.org/wiki/Sigil_(mod)",
+        gog: "",
+        },
+        boxArtists: [
+            "Christopher Lovell"
+        ],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 196,
+        height: 240,
+        depth: 43
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 121,
+        folder: "sigil_2",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "sigil_2.html",
+        featured: false,
+        title: "SIGIL II",
+        system: "PC",
+        year: 2023,
+        publisher: "Romero Games",
+        developer: "Romero Games",
+        genre: [
+            "Ego-Shooter",
+            "Doom-Mod",
+            "Megawad"
+        ],
+        description: "SIGIL II setzt John Romeros Doom-Megawad fort und bietet erneut neun Einzelspieler- sowie neun Deathmatch-Levels für das originale Doom.",
+        history: `SIGIL II erschien am 10. Dezember 2023, exakt dreißig Jahre nach dem ursprünglichen Doom. John Romero knüpfte direkt an SIGIL an und veröffentlichte das Megawad als kostenlosen Download sowie in erweiterten und physischen Fassungen. Für die Big-Box-Ausgabe wurde erneut besonderes Artwork produziert.`,
+        review: `SIGIL II ist kompromisslos klassisches Doom: enge Arenen, Fallen, knappe Ressourcen und ein Leveldesign, das die jahrzehntealte Engine sehr bewusst ausreizt.`,
+        trivia: [
+            "Veröffentlicht wurde SIGIL II am 10. Dezember 2023.",
+            "Es enthält neun Einzelspielerlevels.",
+            "Zusätzlich gibt es neun Deathmatch-Maps.",
+            "Das Original-Doom wird zum Spielen benötigt.",
+            "Christopher Lovell gestaltete das Artwork der Big-Box-Ausgabe."
+        ],
+        worthPlaying: `Wer SIGIL mochte oder Doom bis heute aktiv spielt, bekommt eine anspruchsvolle Fortsetzung mit sehr klassischem Fundament.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [
+            "Christopher Lovell"
+        ],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 195,
+        height: 241,
+        depth: 43
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 122,
+        folder: "simon_the_sorcerer_1_2",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "simon_the_sorcerer_1_2.html",
+        featured: false,
+        title: "Simon the Sorcerer I & II",
+        system: "PC",
+        year: 1995,
+        publisher: "Adventure Soft",
+        developer: "Adventure Soft",
+        genre: [
+            "Point-and-Click-Adventure",
+            "Fantasy",
+            "Humor"
+        ],
+        description: "Diese Sammlung vereint die ersten beiden Simon-the-Sorcerer-Adventures mit ihrer britischen Fantasy-Parodie, klassischem Point-and-Click-Gameplay und reichlich respektlosem Humor.",
+        history: `Simon the Sorcerer erschien 1993, die Fortsetzung Simon the Sorcerer II folgte 1995. Beide Spiele wurden von Adventure Soft entwickelt und machten sich mit farbenfroher Grafik, Sprachausgabe und einer gehörigen Portion britischem Humor einen Namen. Sammlungen beider Teile boten PC-Spielern die beiden klassischen Abenteuer gemeinsam in einer Box.`,
+        review: `Die ersten beiden Simon-Spiele gehören zu den charmantesten europäischen Adventures der Neunziger. Nicht jedes Rätsel ist elegant, doch Figuren, Dialoge und Fantasy-Parodien tragen auch heute noch.`,
+        trivia: [
+            "Der erste Teil erschien 1993.",
+            "Simon the Sorcerer II folgte 1995.",
+            "Adventure Soft entwickelte beide Spiele.",
+            "Die Reihe parodiert zahlreiche Fantasy-Motive.",
+            "Spätere Ausgaben bündelten beide Abenteuer."
+        ],
+        worthPlaying: `Eine gute Wahl für Fans klassischer LucasArts- und Sierra-ähnlicher Adventures, die britischen Humor und Fantasy mögen.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/161/simon-the-sorcerer/",
+        wikipedia: "https://en.wikipedia.org/wiki/Simon_the_Sorcerer",
+        gog: "https://www.gog.com/game/simon_the_sorcerer",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 184,
+        height: 236,
+        depth: 43
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 123,
+        folder: "simon_the_sorcerer_2_rerelease",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "simon_the_sorcerer_2_rerelease.html",
+        featured: false,
+        title: "Simon the Sorcerer II: The Lion, the Wizard and the Wardrobe",
+        system: "PC",
+        year: 1995,
+        publisher: "Adventure Soft",
+        developer: "Adventure Soft",
+        genre: [
+            "Point-and-Click-Adventure",
+            "Fantasy",
+            "Humor"
+        ],
+        description: "Simon the Sorcerer II setzt die respektlose Fantasy-Parodie des ersten Teils fort und schickt Simon erneut in eine Welt voller Zauberer, Klischees und absurder Rätsel.",
+        history: `Der zweite Teil erschien 1995 und wurde erneut von Adventure Soft entwickelt. Simon wird gegen seinen Willen in die magische Welt zurückgebracht und muss sich wieder mit dem Zauberer Sordid auseinandersetzen. Die Fortsetzung setzte stärker auf CD-ROM, Sprachausgabe und aufwendigere Animationen. Spätere Re-Releases machten den Titel erneut für PC-Spieler verfügbar.`,
+        review: `Simon II ist größer, bunter und oft noch frecher als sein Vorgänger. Der Humor kann bewusst kindisch sein, doch genau darin liegt ein großer Teil seines Charmes.`,
+        trivia: [
+            "Das Spiel erschien 1995.",
+            "Adventure Soft entwickelte und veröffentlichte es.",
+            "Simon trifft erneut auf Sordid.",
+            "CD-ROM-Ausgaben boten umfangreiche Sprachausgabe.",
+            "Der Titel wurde später mehrfach neu veröffentlicht."
+        ],
+        worthPlaying: `Wer klassische Point-and-Click-Adventures mit britischem Humor sucht, findet hier einen der markantesten europäischen Vertreter der Neunziger.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/162/simon-the-sorcerer-ii-the-lion-the-wizard-and-the-wardrobe/",
+        wikipedia: "https://en.wikipedia.org/wiki/Simon_the_Sorcerer_II:_The_Lion,_the_Wizard_and_the_Wardrobe",
+        gog: "https://www.gog.com/game/simon_the_sorcerer_2",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 233,
+        depth: 42
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 124,
+        folder: "simon_the_sorcerer_rereleaase",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "simon_the_sorcerer_rereleaase.html",
+        featured: false,
+        title: "Simon the Sorcerer",
+        system: "PC",
+        year: 1993,
+        publisher: "Adventure Soft",
+        developer: "Adventure Soft",
+        genre: [
+            "Point-and-Click-Adventure",
+            "Fantasy",
+            "Humor"
+        ],
+        description: "Simon the Sorcerer ist ein klassisches Fantasy-Point-and-Click-Adventure, in dem ein widerwilliger Teenager in eine Zauberwelt gerät und dort vor allem mit Sarkasmus statt Heldenpathos auffällt.",
+        history: `Simon the Sorcerer erschien 1993 für Amiga und DOS und wurde von Adventure Soft entwickelt. Das Spiel orientierte sich an der damals populären Point-and-Click-Schule, setzte aber deutlich auf britischen Humor und Parodien bekannter Fantasy-Motive. Spätere Re-Releases brachten den Klassiker erneut in den Handel.`,
+        review: `Simon ist bis heute sympathisch respektlos. Die wunderschöne Pixelgrafik und viele Dialoge funktionieren weiterhin, auch wenn einzelne Rätsel typisch für ihre Zeit recht eigenwillig sind.`,
+        trivia: [
+            "Das Original erschien 1993.",
+            "Entwickler war Adventure Soft.",
+            "Simon wird durch ein magisches Buch in die Fantasywelt gezogen.",
+            "Die CD-ROM-Fassung erhielt Sprachausgabe.",
+            "Das Spiel wurde später mehrfach neu aufgelegt."
+        ],
+        worthPlaying: `Ein Klassiker für Adventure-Fans, besonders wenn Monkey Island, Discworld und britischer Fantasy-Humor zum eigenen Geschmack passen.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/161/simon-the-sorcerer/",
+        wikipedia: "https://en.wikipedia.org/wiki/Simon_the_Sorcerer",
+        gog: "https://www.gog.com/game/simon_the_sorcerer",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 232,
+        depth: 41
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 125,
+        folder: "slip_speed",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "slip_speed.html",
+        featured: false,
+        title: "SlipSpeed",
+        system: "PC",
+        year: 2026,
+        publisher: "voxel / tijn",
+        developer: "voxel / tijn",
+        genre: [
+            "Rennspiel",
+            "DOS",
+            "Arcade"
+        ],
+        description: "SlipSpeed ist ein modernes Retro-Rennspiel für DOS und Windows 95, das sich bewusst wie ein futuristisches Shareware-Spiel aus den Neunzigern präsentiert.",
+        history: `SlipSpeed erschien 2026 als neues Spiel für klassische DOS- und Windows-95-PCs. Entwickelt wurde es von voxel und tijn. Der Spieler steuert futuristische Slip-Crafts durch 16 Strecken, die von bekannten Städten bis zu exotischen Dimensionsrissen reichen. Präsentation und Vertriebsmodell greifen bewusst die Shareware-Kultur der Neunziger auf.`,
+        review: `Das Projekt ist besonders spannend, weil es Retro nicht nur optisch imitiert, sondern tatsächlich für alte PC-Plattformen entwickelt wurde. Dadurch wirkt die Präsentation ungewöhnlich authentisch.`,
+        trivia: [
+            "SlipSpeed erschien 2026.",
+            "Es läuft auf DOS und Windows 95.",
+            "Das Spiel bietet 16 Strecken.",
+            "Es orientiert sich bewusst am Shareware-Modell.",
+            "Die Entwickler sind voxel und tijn."
+        ],
+        worthPlaying: `Für Fans neuer Spiele auf alter Hardware ist SlipSpeed ein besonders interessantes Beispiel dafür, wie lebendig die DOS-Szene noch ist.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 159,
+        height: 219,
+        depth: 28
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 126,
+        folder: "soul_crystal",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "soul_crystal.html",
+        featured: false,
+        title: "Soul Crystal",
+        system: "PC",
+        year: 1992,
+        publisher: "Starbyte Software",
+        developer: "Avantgardistic Arts",
+        genre: [
+            "Adventure",
+            "Fantasy",
+            "Point-and-Click"
+        ],
+        description: "Soul Crystal ist ein deutsches Fantasy-Adventure von Avantgardistic Arts und Starbyte, das klassische Rätsel mit einer märchenhaften Reise zwischen verschiedenen Schauplätzen verbindet.",
+        history: `Soul Crystal erschien 1992 für Amiga, Atari ST und DOS. Entwickelt wurde das Adventure von Avantgardistic Arts und veröffentlicht von Starbyte. Der Spieler reist durch eine Fantasywelt, untersucht Orte, sammelt Gegenstände und löst klassische Adventure-Rätsel. Das Spiel gehört zur besonders produktiven deutschen Adventure-Szene der frühen Neunziger.`,
+        review: `Soul Crystal ist heute vor allem als charmantes Stück deutscher Adventure-Geschichte interessant. Grafik und Bedienung sind klar ihrer Zeit verpflichtet, besitzen aber einen eigenen handgemachten Reiz.`,
+        trivia: [
+            "Das Spiel erschien 1992.",
+            "Publisher war Starbyte Software.",
+            "Entwickelt wurde es von Avantgardistic Arts.",
+            "Es erschien unter anderem für DOS und Amiga.",
+            "Das Spiel gehört zum klassischen Point-and-Click-Genre."
+        ],
+        worthPlaying: `Empfehlenswert für Sammler und Adventure-Fans, die weniger bekannte deutschsprachige Produktionen der frühen Neunziger entdecken möchten.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/14646/soul-crystal/",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 153,
+        height: 183,
+        depth: 34
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 127,
+        folder: "space_job",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "space_job.html",
+        featured: false,
+        title: "Space Job",
+        system: "PC",
+        year: 1993,
+        publisher: "Karstadt AG",
+        developer: "Karstadt AG",
+        genre: [
+            "Simulation",
+            "Werbespiel",
+            "Strategie"
+        ],
+        description: "Space Job ist ein ungewöhnliches deutsches Werbespiel von Karstadt, das im Jahr 2350 eine futuristische Karriere- und Lebenssimulation mit Minispielen verbindet.",
+        history: `Space Job erschien 1993 für DOS und Amiga und wurde von Karstadt AG veröffentlicht. Der Spieler beginnt als einfacher Angestellter in einer futuristischen Karstadt-Filiale und versucht, beruflich aufzusteigen. Gleichzeitig müssen Geld, Wohnung, soziale Kontakte und weitere Bedürfnisse organisiert werden. Damit kombiniert das Spiel Werbung, Karriereplanung, Simulation und Minispiele auf für damalige Werbespiele ungewöhnlich ambitionierte Weise.`,
+        review: `Space Job ist weniger wegen technischer Perfektion als wegen seines Konzepts faszinierend. Eine Art futuristische Lebenssimulation als Werbespiel eines Kaufhauses ist selbst für die experimentierfreudigen Neunziger bemerkenswert.`,
+        trivia: [
+            "Space Job erschien 1993.",
+            "Es gab Versionen für DOS und Amiga.",
+            "Herausgeber war Karstadt AG.",
+            "Die Handlung spielt im Jahr 2350.",
+            "Das Spiel kombiniert Karriere, Bedürfnisse und Minispiele."
+        ],
+        worthPlaying: `Als kurioses Stück deutscher Software- und Werbegeschichte ist Space Job ausgesprochen interessant und deutlich ambitionierter als viele klassische Werbespiele.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/11411/space-job/",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 180,
+        height: 229,
+        depth: 39
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 128,
+        folder: "spellcasting_101",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "spellcasting_101.html",
+        featured: false,
+        title: "Spellcasting 101: Sorcerers Get All the Girls",
+        system: "PC",
+        year: 1990,
+        publisher: "Legend Entertainment",
+        developer: "Legend Entertainment",
+        genre: [
+            "Textadventure",
+            "Grafikadventure",
+            "Fantasy"
+        ],
+        description: "Spellcasting 101 ist ein humorvolles Grafik-Textadventure von Steve Meretzky, das Zauberschule, Studentenleben und eine gehörige Portion erwachsenen Humor miteinander verbindet.",
+        history: `Legend Entertainment veröffentlichte Spellcasting 101 1990 für DOS. Autor Steve Meretzky, zuvor unter anderem bei Infocom tätig, kombinierte einen klassischen Textparser mit Grafiken und Mausunterstützung. Hauptfigur Ernie Eaglebeak beginnt sein Studium an der Sorcerer University und stolpert in eine Reihe magischer und komischer Abenteuer.`,
+        review: `Das Spiel ist stark textorientiert und verlangt Geduld, belohnt diese aber mit Wortwitz und überraschend aufwendiger Weltbeschreibung. Für reine Point-and-Click-Spieler wirkt der Parser ungewohnt, Adventure-Historiker finden hier dagegen viel zu entdecken.`,
+        trivia: [
+            "Das Spiel erschien 1990.",
+            "Autor war Steve Meretzky.",
+            "Entwickler und Publisher war Legend Entertainment.",
+            "Es ist der erste Teil einer Trilogie.",
+            "Textparser und Grafiken werden miteinander kombiniert."
+        ],
+        worthPlaying: `Für Freunde klassischer Interactive Fiction und früher Grafikadventures ist Spellcasting 101 ein humorvoller und historisch interessanter Vertreter.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/2153/spellcasting-101-sorcerers-get-all-the-girls/",
+        wikipedia: "https://en.wikipedia.org/wiki/Spellcasting_101:_Sorcerers_Get_All_the_Girls",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 205,
+        height: 238,
+        depth: 40
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 129,
+        folder: "spellcasting_201",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "spellcasting_201.html",
+        featured: false,
+        title: "Spellcasting 201: The Sorcerer's Appliance",
+        system: "PC",
+        year: 1991,
+        publisher: "Legend Entertainment",
+        developer: "Legend Entertainment",
+        genre: [
+            "Textadventure",
+            "Grafikadventure",
+            "Fantasy"
+        ],
+        description: "Spellcasting 201: The Sorcerer's Appliance setzt Ernie Eaglebeaks chaotisches Magiestudium fort und verbindet Textparser, Grafiken, Rätsel und satirischen College-Humor.",
+        history: `Der zweite Teil der Spellcasting-Reihe erschien 1991 für DOS. Steve Meretzky schrieb erneut die Geschichte um Ernie Eaglebeak, der nun sein zweites Semester an der Sorcerer University erlebt. Legend Entertainment blieb dem hybriden Konzept aus Textadventure und grafischer Präsentation treu.`,
+        review: `Wer den ersten Teil mochte, bekommt mehr davon: Wortspiele, absurde Situationen und Rätsel, die sorgfältiges Lesen belohnen. Die starke Textlastigkeit ist heute zugleich größte Hürde und größter Reiz.`,
+        trivia: [
+            "Spellcasting 201 erschien 1991.",
+            "Es ist der zweite Teil der Spellcasting-Trilogie.",
+            "Steve Meretzky schrieb das Spiel.",
+            "Legend Entertainment entwickelte und veröffentlichte es.",
+            "Hauptfigur ist erneut Ernie Eaglebeak."
+        ],
+        worthPlaying: `Vor allem für Fans klassischer Textadventures und humorvoller Fantasy lohnt sich die Fortsetzung noch immer.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/2154/spellcasting-201-the-sorcerers-appliance/",
+        wikipedia: "https://en.wikipedia.org/wiki/Spellcasting_201",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 204,
+        height: 237,
+        depth: 40
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 130,
+        folder: "star_wars_x_wing_collectors_cd",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "star_wars_x_wing_collectors_cd.html",
+        featured: false,
+        title: "Star Wars: X-Wing Collector's CD-ROM",
+        system: "PC",
+        year: 1994,
+        publisher: "LucasArts",
+        developer: "LucasArts / Totally Games",
+        genre: [
+            "Weltraumsimulation",
+            "Action",
+            "Star Wars"
+        ],
+        description: "Star Wars: X-Wing Collector's CD-ROM bündelt die klassische Weltraumkampfsimulation mit Erweiterungen und CD-ROM-Verbesserungen zu einer besonders umfangreichen Ausgabe.",
+        history: `Das ursprüngliche Star Wars: X-Wing erschien 1993. Die Collector’s CD-ROM folgte 1994 und vereinte das Hauptspiel mit den Erweiterungen Imperial Pursuit und B-Wing. Die von Totally Games unter LucasArts entwickelte Simulation versetzt den Spieler auf die Seite der Rebellenallianz und verbindet anspruchsvolle Raumkämpfe mit Missionen im Stil der klassischen Filmtrilogie.`,
+        review: `X-Wing verlangt deutlich mehr Aufmerksamkeit als ein reines Actionspiel, vermittelt dafür aber bis heute hervorragend das Gefühl, tatsächlich Teil einer Rebellenstaffel zu sein.`,
+        trivia: [
+            "Das Original X-Wing erschien 1993.",
+            "Die Collector’s CD-ROM folgte 1994.",
+            "Enthalten sind zusätzliche Missionspakete.",
+            "Entwickelt wurde die Reihe maßgeblich von Totally Games.",
+            "Die Missionen sind in die klassische Star-Wars-Ära eingebettet."
+        ],
+        worthPlaying: `Für Fans klassischer Weltraumsimulationen und Star Wars bleibt X-Wing ein Meilenstein, insbesondere in einer umfangreichen CD-ROM-Ausgabe.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/958/star-wars-x-wing-collectors-cd-rom/",
+        wikipedia: "https://en.wikipedia.org/wiki/Star_Wars:_X-Wing_(video_game)",
+        gog: "https://www.gog.com/game/star_wars_xwing_special_edition",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 196,
+        height: 250,
+        depth: 38
+
+    },
+        screenshots: []
+
+    },
+
+    {
+        id: 131,
+        folder: "stunts",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "stunts.html",
+        featured: false,
+        title: "Stunts",
+        system: "PC",
+        year: 1990,
+        publisher: "Broderbund",
+        developer: "Distinctive Software",
+        genre: [
+            "Rennspiel",
+            "Stunt-Racing",
+            "Streckeneditor"
+        ],
+        description: "Stunts ist ein DOS-Rennspiel mit Loopings, Sprungschanzen, Steilkurven und einem außergewöhnlich flexiblen Streckeneditor, der für den langfristigen Kultstatus entscheidend wurde.",
+        history: `Stunts erschien 1990 und wurde von Distinctive Software entwickelt. Je nach Region wurde es unter anderem von Broderbund beziehungsweise Mindscape veröffentlicht. Neben Rennen gegen Computergegner bot das Spiel einen Editor, mit dem eigene Strecken aus Straßenstücken, Loopings, Rampen und Hindernissen gebaut werden konnten.`,
+        review: `Die eigentlichen Rennen sind technisch schlicht, aber die Kombination aus Fahrphysik und Streckenbau macht Stunts bis heute erstaunlich unterhaltsam. Der Editor ist der eigentliche Star.`,
+        trivia: [
+            "Stunts erschien 1990.",
+            "Entwickelt wurde es von Distinctive Software.",
+            "Das Spiel besitzt einen integrierten Streckeneditor.",
+            "Loopings und Sprungschanzen gehören zu den Bauteilen.",
+            "Eine aktive Community erstellt bis heute neue Strecken und Wettbewerbe."
+        ],
+        worthPlaying: `Wer kreative Rennspiele mag, sollte Stunts zumindest einmal erlebt haben. Der Streckeneditor macht es zu weit mehr als nur einem frühen 3D-Racer.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/329/stunts/",
+        wikipedia: "https://en.wikipedia.org/wiki/Stunts_(video_game)",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 168,
+        height: 223,
+        depth: 26
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 132,
+        folder: "tass_times",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "tass_times.html",
+        featured: false,
+        title: "Tass Times in Tonetown",
+        system: "PC",
+        year: 1986,
+        publisher: "Activision",
+        developer: "Interplay Productions / Brainwave Creations",
+        genre: [
+            "Adventure",
+            "Interactive Fiction",
+            "Fantasy"
+        ],
+        description: "Tass Times in Tonetown ist ein skurriles Adventure von 1986, das Textbefehle mit grafischen Bedienfeldern verbindet und den Spieler in eine bizarre New-Wave-Paralleldimension schickt.",
+        history: `Tass Times in Tonetown erschien 1986 auf mehreren Heimcomputern und auch als PC-Booter-Version. Entwickelt wurde es von Interplay und Brainwave Creations, veröffentlicht von Activision. Die Geschichte dreht sich um einen Großvater, dessen Traumapparat eine alternative Realität erschafft. Der Spieler reist nach Tonetown, einer bewusst bizarren Welt voller New-Wave-Mode, seltsamer Begriffe und sprechender Figuren.`,
+        review: `Das Spiel ist heute eine Zeitkapsel der Achtziger. Gerade die Mischung aus Textparser, Icons und völlig eigenwilliger Popkultur-Ästhetik macht es besonders.`,
+        trivia: [
+            "Das Spiel erschien 1986.",
+            "Interplay war an der Entwicklung beteiligt.",
+            "Publisher war Activision.",
+            "Es kombiniert Textbefehle mit grafischen Aktionssymbolen.",
+            "Tonetown ist stark von New-Wave- und Punk-Ästhetik geprägt."
+        ],
+        worthPlaying: `Für Adventure-Sammler und Fans ungewöhnlicher Achtziger-Ästhetik ist Tass Times in Tonetown ein kleines, sehr eigenständiges Schmuckstück.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/90/tass-times-in-tonetown/",
+        wikipedia: "https://en.wikipedia.org/wiki/Tass_Times_in_Tonetown",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 180,
+        height: 231,
+        depth: 26
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 133,
+        folder: "the_catacombs_3",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "the_catacombs_3.html",
+        featured: false,
+        title: "Catacomb 3-D",
+        system: "PC",
+        year: 1991,
+        publisher: "Softdisk",
+        developer: "id Software",
+        genre: [
+            "Ego-Shooter",
+            "Action",
+            "Fantasy"
+        ],
+        description: "Catacomb 3-D ist ein früher First-Person-Shooter von id Software und ein direkter technischer Vorläufer von Wolfenstein 3D.",
+        history: `Catacomb 3-D erschien 1991 für DOS unter dem Gamer’s-Edge-Label von Softdisk. Entwickelt wurde es von id Software. Der Spieler erkundet aus der Ego-Perspektive Fantasy-Katakomben und bekämpft Gegner mit magischen Projektilen. Technisch war das Spiel ein wichtiger Schritt auf dem Weg zu Wolfenstein 3D und später Doom.`,
+        review: `Spielerisch ist Catacomb 3-D heute sehr einfach, historisch aber enorm spannend. Man erkennt bereits viele Ideen, aus denen nur kurze Zeit später der moderne Ego-Shooter entstehen sollte.`,
+        trivia: [
+            "Catacomb 3-D erschien 1991.",
+            "Entwickler war id Software.",
+            "Publisher war Softdisk.",
+            "Das Spiel gilt als technischer Vorläufer von Wolfenstein 3D.",
+            "Es zeigt bereits die Hand des Spielers in der Ego-Perspektive."
+        ],
+        worthPlaying: `Vor allem als Stück Shooter-Geschichte lohnt sich Catacomb 3-D: roh, simpel, aber unmittelbar mit der Entstehung eines ganzen Genres verbunden.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/308/catacomb-3-d/",
+        wikipedia: "https://en.wikipedia.org/wiki/Catacomb_3-D",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 168,
+        height: 224,
+        depth: 38
+
+    },
+        screenshots: []
+
+    },
+	
+	{
+        id: 134,
+        folder: "the_even_more_Incredible_machine",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "the_even_more_Incredible_machine.html",
+        featured: false,
+        title: "The Even More Incredible Machine",
+        system: "PC",
+        year: 1993,
+        publisher: "Sierra On-Line",
+        developer: "Dynamix",
+        genre: [
+            "Puzzle",
+            "Denkspiel",
+            "Physik"
+        ],
+        description: "The Even More Incredible Machine ist die erweiterte Fassung des klassischen Tüftelspiels, in dem aus Zahnrädern, Bällen, Seilen, Förderbändern und allerlei Alltagsgegenständen möglichst absurde, aber funktionierende Maschinen gebaut werden.",
+        history: `The Even More Incredible Machine erschien 1993 für DOS und erweitert das von Dynamix entwickelte Prinzip der Incredible-Machine-Reihe um zusätzliche Aufgaben und Bauteile. Ziel ist es, mit einer begrenzten Auswahl an Gegenständen physikalische Kettenreaktionen zu konstruieren. Gerade die Mischung aus Logik, Experimentierfreude und slapstickartigem Scheitern machte die Serie zu einem festen Bestandteil der frühen PC-Spielkultur.`,
+        review: `Das Spiel funktioniert auch heute noch erstaunlich gut, weil seine Rätsel weniger von Technik als von verständlicher Physik und Kreativität leben. Manche Lösungen sind herrlich elegant, andere sehen aus, als hätte jemand einen Werkzeugkasten eine Treppe hinuntergeworfen. Genau darin liegt der Reiz.`,
+        trivia: [
+            "Erschien 1993 für DOS.",
+            "Entwickelt wurde die Reihe von Dynamix.",
+            "Das Spiel erweitert The Incredible Machine um zusätzliche Rätsel und Bauteile.",
+            "Viele Aufgaben lassen mehrere Lösungswege zu."
+        ],
+        worthPlaying: `Wer Logikspiele und physikalische Knobeleien mag, bekommt hier einen zeitlosen Klassiker, der auch Jahrzehnte später noch hervorragend zu kurzen oder langen Tüftelsitzungen einlädt.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 225,
+        depth: 31
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 135,
+        folder: "the_island_of_dr_brain",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "the_island_of_dr_brain.html",
+        featured: false,
+        title: "The Island of Dr. Brain",
+        system: "PC",
+        year: 1992,
+        publisher: "Sierra On-Line",
+        developer: "Sierra On-Line",
+        genre: [
+            "Adventure",
+            "Lernspiel",
+            "Puzzle"
+        ],
+        description: "The Island of Dr. Brain verbindet Adventure-Struktur mit einer ganzen Reihe von Logik-, Mathematik- und Wissensrätseln und verpackt das Ganze in eine schräge Expedition auf die Insel des titelgebenden Dr. Brain.",
+        history: `Das Spiel erschien 1992 als Nachfolger von Castle of Dr. Brain. Sierra setzte erneut auf eine Mischung aus Lernspiel und klassischem Adventure, bei der der Spieler unterschiedliche Prüfungen bestehen muss. Die Aufgaben reichen von Logik über Sprache und Mathematik bis zu naturwissenschaftlichen Themen und lassen sich teilweise im Schwierigkeitsgrad anpassen.`,
+        review: `Island of Dr. Brain ist ein gutes Beispiel dafür, wie unterhaltsam Lernspiele sein können, wenn sie ihre Aufgaben nicht wie Hausaufgaben präsentieren. Nicht jedes Rätsel ist heute gleich elegant, aber die abwechslungsreiche Gestaltung und der typische Sierra-Humor tragen erstaunlich weit.`,
+        trivia: [
+            "Erschien 1992 für DOS.",
+            "Ist der Nachfolger von Castle of Dr. Brain.",
+            "Die Rätsel decken mehrere Wissens- und Logikbereiche ab.",
+            "Sierra verband hier Lernspiel und Adventure-Struktur."
+        ],
+        worthPlaying: `Für Freunde klassischer Sierra-Spiele und intelligenter Rätsel ist The Island of Dr. Brain noch immer eine charmante Entdeckung.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 227,
+        depth: 56
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 136,
+        folder: "the_need_for_speed",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "the_need_for_speed.html",
+        featured: false,
+        title: "The Need for Speed",
+        system: "PC",
+        year: 1995,
+        publisher: "Electronic Arts",
+        developer: "EA Canada / Pioneer Productions",
+        genre: [
+            "Rennspiel",
+            "Simulation"
+        ],
+        description: "The Need for Speed ist der Auftakt einer der bekanntesten Rennspielreihen überhaupt und kombiniert exotische Sportwagen, realitätsnähere Fahrphysik und spektakuläre Strecken mit einer damals ungewöhnlich aufwendigen Präsentation.",
+        history: `Nach dem Start auf 3DO erschien The Need for Speed 1995 auch für DOS. Electronic Arts und das spätere EA Canada setzten auf lizenzierte Sportwagen, ausführliche Fahrzeugpräsentationen und ein Fahrgefühl, das stärker in Richtung Simulation ging als viele reine Arcade-Racer der Zeit. Daraus entwickelte sich eine Serie, die in den folgenden Jahrzehnten zahlreiche Stilwechsel durchlaufen sollte.`,
+        review: `Der erste Need for Speed wirkt heute deutlich ruhiger als spätere Teile, besitzt aber einen eigenen Charme. Die Wagen fühlen sich unterschiedlich an, die Präsentation versprüht pures Neunziger-Automagazin und der Gegenverkehr sorgt zuverlässig dafür, dass aus einer sauberen Runde plötzlich moderne Kunst wird.`,
+        trivia: [
+            "Die DOS-Version erschien 1995.",
+            "Das Spiel war zuvor bereits für 3DO veröffentlicht worden.",
+            "Es verwendet lizenzierte Sportwagen.",
+            "Aus dem Titel entstand die langjährige Need-for-Speed-Reihe."
+        ],
+        worthPlaying: `Wer nachvollziehen möchte, wie Need for Speed begann, findet hier einen technisch beeindruckenden und überraschend ernsthaften Rennspielklassiker.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1073/the-need-for-speed/",
+        wikipedia: "https://en.wikipedia.org/wiki/The_Need_for_Speed",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 188,
+        height: 234,
+        depth: 39
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 137,
+        folder: "the_typing_of_the_dead",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "the_typing_of_the_dead.html",
+        featured: false,
+        title: "The Typing of the Dead",
+        system: "PC",
+        year: 2000,
+        publisher: "SEGA",
+        developer: "SEGA / Smilebit",
+        genre: [
+            "Action",
+            "Typing Game",
+            "Horror"
+        ],
+        description: "The Typing of the Dead verwandelt den Lightgun-Shooter The House of the Dead 2 in ein Tipptraining mit Zombies: Statt zu schießen, muss der Spieler Wörter und Sätze möglichst schnell korrekt eintippen.",
+        history: `Die ungewöhnliche Variante von The House of the Dead 2 erschien zunächst in Japan und wurde 2000 auch für Windows veröffentlicht. Das Grundgerüst des Rail-Shooters blieb erhalten, doch Gegner werden nun durch Texteingaben besiegt. Gerade der Kontrast zwischen dramatischer Zombie-Apokalypse und Tastaturübungen machte das Spiel schnell zum Kulttitel.`,
+        review: `Kaum ein Lernspiel hat je so überzeugend bewiesen, dass Zehnfingerschreiben und Untote hervorragend zusammenpassen. Das Spiel ist hektisch, albern und gleichzeitig tatsächlich brauchbar, um schneller zu tippen. Ein Konzept, das auf dem Papier wie ein Scherz klingt und in der Praxis erstaunlich gut funktioniert.`,
+        trivia: [
+            "Basiert auf The House of the Dead 2.",
+            "Gegner werden durch korrektes Tippen besiegt.",
+            "Die Windows-Version erschien um 2000.",
+            "Das Spiel entwickelte sich wegen seines ungewöhnlichen Konzepts zum Kulttitel."
+        ],
+        worthPlaying: `Wer ungewöhnliche Arcade-Spiele mag, sollte The Typing of the Dead wenigstens einmal erlebt haben. Es ist gleichzeitig Parodie, Actionspiel und Tipptrainer.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 206,
+        height: 245,
+        depth: 46
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 138,
+        folder: "thimbleweed_park",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "thimbleweed_park.html",
+        featured: false,
+        title: "Thimbleweed Park",
+        system: "PC",
+        year: 2017,
+        publisher: "Terrible Toybox",
+        developer: "Terrible Toybox",
+        genre: [
+            "Point-and-Click-Adventure",
+            "Mystery",
+            "Comedy"
+        ],
+        description: "Thimbleweed Park ist ein klassisches Point-and-Click-Adventure von Ron Gilbert und Gary Winnick, das bewusst an Maniac Mansion und frühe Lucasfilm-Adventures erinnert, ohne lediglich Nostalgie zu kopieren.",
+        history: `Das Spiel erschien 2017 nach einer erfolgreichen Crowdfunding-Kampagne. Ron Gilbert und Gary Winnick griffen viele Prinzipien ihrer frühen Adventure-Arbeiten wieder auf: mehrere spielbare Figuren, verbale Aktionen, Inventarrätsel und eine Geschichte voller skurriler Charaktere. Gleichzeitig kommentiert das Spiel seine eigenen Genretraditionen mit reichlich Selbstironie.`,
+        review: `Thimbleweed Park trifft den Ton klassischer Lucasfilm-Adventures bemerkenswert gut. Die Rätsel sind meist fair, die Figuren sympathisch verschroben und die Pixelgrafik funktioniert nicht als billige Retro-Maske, sondern als bewusstes Stilmittel. Gelegentlich wird der Meta-Humor etwas sehr selbstbewusst, aber insgesamt ist das ein ausgesprochen liebevoll gebautes Adventure.`,
+        trivia: [
+            "Erschien 2017.",
+            "Entwickelt von Ron Gilbert, Gary Winnick und Terrible Toybox.",
+            "Wurde über Crowdfunding finanziert.",
+            "Orientiert sich bewusst an klassischen Lucasfilm-Adventures."
+        ],
+        worthPlaying: `Für Fans klassischer Point-and-Click-Adventures ist Thimbleweed Park praktisch Pflichtprogramm und zugleich ein guter Einstieg für Spieler, die das Genre erst kennenlernen möchten.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/85048/thimbleweed-park/",
+        wikipedia: "https://en.wikipedia.org/wiki/Thimbleweed_Park",
+        gog: "https://www.gog.com/game/thimbleweed_park",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 190,
+        height: 241,
+        depth: 40
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 139,
+        folder: "tiny_toons_adventure_buster_und_die_bohnenstange",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "tiny_toons_adventure_buster_und_die_bohnenstange.html",
+        featured: false,
+        title: "Tiny Toon Adventures: Buster und die Bohnenstange",
+        system: "PC",
+        year: 1996,
+        publisher: "Warner Bros.",
+        developer: "Terraglyph Interactive Studios",
+        genre: [
+            "Adventure",
+            "Kinder",
+            "Minispiele"
+        ],
+        description: "Tiny Toon Adventures: Buster und die Bohnenstange ist ein familienorientiertes Adventure rund um Buster Bunny und seine Freunde, das die bekannte Bohnenstangen-Geschichte mit dem Humor der Tiny Toons verbindet.",
+        history: `Das PC-Spiel entstand Mitte der Neunziger im Umfeld zahlreicher interaktiver Cartoon-Produktionen. Spieler begleiten Buster und weitere Tiny-Toons-Figuren durch eine märchenhafte Geschichte, lösen einfache Aufgaben und erleben zahlreiche animierte Szenen. Der Titel richtet sich klar an ein jüngeres Publikum und setzt stärker auf Präsentation und Humor als auf schwierige Adventure-Rätsel.`,
+        review: `Heute ist das Spiel vor allem als Zeitkapsel interessant. Die Cartoon-Präsentation besitzt Charme und die einfache Bedienung passt zur Zielgruppe, erfahrene Adventure-Spieler werden jedoch kaum gefordert. Wer mit den Tiny Toons aufgewachsen ist, bekommt dafür eine ordentliche Portion Neunziger-Nostalgie.`,
+        trivia: [
+            "Erschien Mitte der 1990er für Windows-PCs.",
+            "Basiert auf den Figuren der Tiny Toon Adventures.",
+            "Die Geschichte greift Motive von Jack und die Bohnenstange auf.",
+            "Das Spiel richtet sich vor allem an jüngere Spieler."
+        ],
+        worthPlaying: `Vor allem für Fans der Tiny Toons und Sammler ungewöhnlicher Cartoon-Adventures ist der Titel heute interessant.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 232,
+        depth: 40
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 140,
+        folder: "tomb_raider",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "tomb_raider.html",
+        featured: false,
+        title: "Tomb Raider",
+        system: "PC",
+        year: 1996,
+        publisher: "Eidos Interactive",
+        developer: "Core Design",
+        genre: [
+            "Action-Adventure",
+            "3D",
+            "Archäologie"
+        ],
+        description: "Tomb Raider schickt Lara Croft durch Gräber, Ruinen und unterirdische Anlagen voller Plattformpassagen, Rätsel und Gegner und wurde zu einem der prägendsten 3D-Action-Adventures der Neunziger.",
+        history: `Tomb Raider erschien 1996 für Saturn, PlayStation und MS-DOS. Entwickelt wurde es von Core Design. Das Spiel verband dreidimensionale Erkundung mit akrobatischen Sprüngen, Schalterrätseln und Kämpfen. Lara Croft wurde praktisch über Nacht zu einer der bekanntesten Figuren der Videospielgeschichte und machte Tomb Raider zu einer der großen Marken der Ära.`,
+        review: `Der erste Teil verlangt heute etwas Eingewöhnung, besonders bei Steuerung und Kamera. Hat man den Rhythmus der rasterbasierten Sprünge verstanden, funktioniert das Leveldesign jedoch weiterhin hervorragend. Die oft einsamen Ruinen erzeugen eine Atmosphäre, die spätere Serienteile trotz besserer Technik nicht immer erreichen.`,
+        trivia: [
+            "Erschien 1996.",
+            "Entwickelt wurde Tomb Raider von Core Design.",
+            "Lara Croft wurde zu einer Ikone der Videospielkultur.",
+            "Die DOS-Version nutzt softwaregerenderte 3D-Grafik und erhielt später verschiedene 3D-Beschleuniger-Unterstützungen."
+        ],
+        worthPlaying: `Tomb Raider ist trotz gealterter Steuerung weiterhin spielenswert, besonders für Fans von Erkundung, präzisen Plattformpassagen und klassischem Leveldesign.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/223/tomb-raider/",
+        wikipedia: "https://en.wikipedia.org/wiki/Tomb_Raider_(1996_video_game)",
+        gog: "https://www.gog.com/game/tomb_raider_123",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 232,
+        depth: 41
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 141,
+        folder: "vermeer_die_kunst_zu_erben",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "vermeer_die_kunst_zu_erben.html",
+        featured: false,
+        title: "Vermeer: Die Kunst zu erben",
+        system: "PC",
+        year: 1997,
+        publisher: "Ascaron",
+        developer: "Ascaron",
+        genre: [
+            "Wirtschaftssimulation",
+            "Strategie"
+        ],
+        description: "Vermeer: Die Kunst zu erben ist eine Neuinterpretation des deutschen Wirtschaftsspiel-Klassikers, in der Handel, Plantagen, Auktionen und die Jagd nach wertvollen Gemälden miteinander verbunden werden.",
+        history: `Das Spiel erschien in den Neunzigerjahren als modernisierte Rückkehr zu Vermeer, einem der bekanntesten deutschen Wirtschaftsspiele der Heimcomputerära. Wie im Vorbild konkurrieren mehrere Erben darum, Vermögen aufzubauen und verschollene Kunstwerke zurückzukaufen. Dafür werden Rohstoffe angebaut, Waren gehandelt und auf Auktionen geboten.`,
+        review: `Die Mischung aus Wirtschaftssimulation und Kunsthandel ist bis heute ungewöhnlich. Das Spiel ist weniger hektisch als moderne Strategiespiele und lebt davon, langfristig zu planen, Preise zu beobachten und den Mitspielern im richtigen Moment ein Gemälde vor der Nase wegzuschnappen. Gerade im Mehrspieler besitzt das Konzept viel Charme.`,
+        trivia: [
+            "Basiert auf dem Wirtschaftsspiel-Klassiker Vermeer.",
+            "Zentrales Ziel ist der Rückkauf wertvoller Gemälde.",
+            "Handel und Plantagenwirtschaft bilden die finanzielle Grundlage.",
+            "Das Konzept eignet sich besonders für Mehrspielerpartien."
+        ],
+        worthPlaying: `Für Freunde deutscher Wirtschaftssimulationen ist Vermeer: Die Kunst zu erben ein sehr interessantes Stück PC-Geschichte und wegen seiner ungewöhnlichen Themenmischung noch heute sehenswert.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 184,
+        height: 233,
+        depth: 40
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 142,
+        folder: "wacky_wheels_deluxe",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "wacky_wheels_deluxe.html",
+        featured: false,
+        title: "Wacky Wheels Deluxe",
+        system: "PC",
+        year: 1994,
+        publisher: "Apogee Software",
+        developer: "Beavis Soft",
+        genre: [
+            "Rennspiel",
+            "Kart-Racer",
+            "Arcade"
+        ],
+        description: "Wacky Wheels Deluxe ist die erweiterte Ausgabe des DOS-Kart-Racers von Apogee, in dem tierische Fahrer über bunte Strecken rasen und sich mit Igeln und anderen Gegenständen gegenseitig das Leben schwer machen.",
+        history: `Wacky Wheels erschien 1994 und entstand bei Beavis Soft. Apogee veröffentlichte das Spiel im bekannten Shareware-Modell. Technisch und spielerisch orientiert es sich an frühen Konsolen-Kart-Racern, brachte dieses Prinzip aber überzeugend auf den DOS-PC. Die Deluxe- beziehungsweise Vollversion bietet den kompletten Umfang mit zusätzlichen Strecken und Spielmodi.`,
+        review: `Wacky Wheels ist unkompliziert, schnell und sympathisch. Das Fahrmodell ist simpel, aber im Mehrspieler und bei der Jagd nach besseren Zeiten funktioniert es noch immer. Besonders charmant ist die typisch überdrehte Apogee-Präsentation, die das Spiel sofort in die Mitte der Neunziger katapultiert.`,
+        trivia: [
+            "Erschien 1994 für DOS.",
+            "Entwickelt von Beavis Soft und veröffentlicht von Apogee.",
+            "Wurde über das Shareware-Modell bekannt.",
+            "Verwendet tierische Fahrer und Igel als Wurfgeschosse."
+        ],
+        worthPlaying: `Wer frühe PC-Kart-Racer oder Apogee-Spiele mag, bekommt mit Wacky Wheels einen einfachen, aber sehr unterhaltsamen Klassiker.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 182,
+        height: 231,
+        depth: 39
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 143,
+        folder: "wacky_wheels_mailorder",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "wacky_wheels_mailorder.html",
+        featured: false,
+        title: "Wacky Wheels",
+        system: "PC",
+        year: 1994,
+        publisher: "Apogee Software",
+        developer: "Beavis Soft",
+        genre: [
+            "Rennspiel",
+            "Kart-Racer",
+            "Arcade"
+        ],
+        description: "Wacky Wheels ist ein farbenfroher DOS-Kart-Racer mit tierischen Fahrern, schnellen Rennen und einer guten Portion Chaos.",
+        history: `Das 1994 veröffentlichte Spiel wurde von Beavis Soft entwickelt und von Apogee vertrieben. Wie viele Apogee-Titel nutzte Wacky Wheels das Shareware-Modell: Ein Teil konnte frei ausprobiert werden, die Vollversion wurde anschließend direkt bestellt. Diese Mailorder-Ausgabe ist deshalb auch als physisches Sammlerstück besonders interessant.`,
+        review: `Spielerisch ist Wacky Wheels angenehm direkt. Es bietet keine komplizierte Fahrphysik, sondern schnelle Arcade-Rennen, Hindernisse und Angriffe auf Konkurrenten. Der technische Zahn der Zeit ist sichtbar, doch der Mehrspielercharme und die klare Spielidee funktionieren weiterhin.`,
+        trivia: [
+            "Erschien 1994 für DOS.",
+            "Die Vollversion konnte direkt bei Apogee bestellt werden.",
+            "Entwickler war Beavis Soft.",
+            "Das Spiel gehört zu den frühen Kart-Racern auf dem PC."
+        ],
+        worthPlaying: `Die Mailorder-Ausgabe ist nicht nur spielerisch charmant, sondern auch als Beispiel für den direkten Softwarevertrieb der Shareware-Ära besonders interessant.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 181,
+        height: 232,
+        depth: 39
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 144,
+        folder: "wasteland",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "wasteland.html",
+        featured: false,
+        title: "Wasteland",
+        system: "Apple II",
+        year: 1988,
+        publisher: "Electronic Arts",
+        developer: "Interplay Productions",
+        genre: [
+            "Rollenspiel",
+            "Postapokalypse",
+            "Party-RPG"
+        ],
+        description: "Wasteland ist ein postapokalyptisches Computer-Rollenspiel, in dem eine Gruppe von Desert Rangers die zerstörten Gebiete des amerikanischen Südwestens erkundet und auf Mutanten, Roboter und moralisch zweifelhafte Überlebende trifft.",
+        history: `Wasteland erschien 1988 für Apple II, Commodore 64 und DOS. Entwickelt wurde es von Interplay Productions und veröffentlicht von Electronic Arts. Das Spiel verband Party-Rollenspiel, offene Erkundung und vergleichsweise dauerhafte Entscheidungen. Viele Jahre später diente es als geistige Grundlage für Fallout und wurde schließlich selbst mit modernen Fortsetzungen wiederbelebt.`,
+        review: `Wasteland ist aus heutiger Sicht sperrig, aber faszinierend. Die textlastige Präsentation verlangt Fantasie und Geduld, dafür überrascht das Spiel mit großer Freiheit und ungewöhnlichen Konsequenzen. Wer sich auf die Bedienung einlässt, erkennt schnell, warum der Titel einen so nachhaltigen Einfluss auf westliche Rollenspiele hatte.`,
+        trivia: [
+            "Erschien 1988.",
+            "Entwickelt von Interplay Productions.",
+            "Veröffentlicht von Electronic Arts.",
+            "Gilt als wichtiger Vorläufer von Fallout.",
+            "Die ursprüngliche Version verwendet zusätzlich gedruckte Paragraphentexte."
+        ],
+        worthPlaying: `Für Rollenspielhistoriker ist Wasteland fast Pflicht. Moderne Spieler benötigen Geduld, werden aber mit einem erstaunlich offenen und einflussreichen Klassiker belohnt.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/478/wasteland/",
+        wikipedia: "https://en.wikipedia.org/wiki/Wasteland_(video_game)",
+        gog: "https://www.gog.com/game/wasteland_the_classic_original",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 222,
+        height: 218,
+        depth: 8
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 145,
+        folder: "wwf_in_your_house",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "wwf_in_your_house.html",
+        featured: false,
+        title: "WWF In Your House",
+        system: "PC",
+        year: 1996,
+        publisher: "Acclaim Entertainment",
+        developer: "Sculptured Software",
+        genre: [
+            "Wrestling",
+            "Sport",
+            "Arcade"
+        ],
+        description: "WWF In Your House ist ein bewusst überzogenes Arcade-Wrestlingspiel mit bekannten WWF-Stars, digitalisierten Kämpfern und spektakulären Spezialaktionen.",
+        history: `Das Spiel erschien 1996 für PlayStation, Sega Saturn und PC. Es folgt dem Stil von WWF WrestleMania: The Arcade Game und setzt weniger auf realistische Ringkämpfe als auf schnelle, fast prügelspielartige Action. Bekannte Wrestler der damaligen WWF treten mit überzeichneten Moves und thematisch gestalteten Arenen an.`,
+        review: `Als Wrestling-Simulation taugt In Your House kaum, als schräge Arcade-Zeitkapsel dagegen umso mehr. Die digitalisierten Figuren und absurden Effekte vermitteln genau jene Mischung aus Wrestling und Prügelspiel, die Mitte der Neunziger erstaunlich gut funktionierte.`,
+        trivia: [
+            "Erschien 1996 auch für PC.",
+            "Orientiert sich spielerisch an WWF WrestleMania: The Arcade Game.",
+            "Verwendet digitalisierte Wrestler.",
+            "Setzt deutlich stärker auf Arcade-Action als auf Simulation."
+        ],
+        worthPlaying: `Für Fans der WWF-Ära der Neunziger und Freunde kurioser Arcade-Sportspiele ist In Your House heute noch einen Blick wert.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 180,
+        height: 232,
+        depth: 41
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 146,
+        folder: "x_men_children_of_the_atom",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "x_men_children_of_the_atom.html",
+        featured: false,
+        title: "X-Men: Children of the Atom",
+        system: "PC",
+        year: 1997,
+        publisher: "Acclaim Entertainment",
+        developer: "Capcom",
+        genre: [
+            "Fighting",
+            "Arcade",
+            "Comic"
+        ],
+        description: "X-Men: Children of the Atom ist Capcoms klassisches 2D-Prügelspiel mit Figuren aus dem Marvel-X-Men-Universum und bildet einen wichtigen Vorläufer der späteren Marvel-vs.-Capcom-Reihe.",
+        history: `Das Spiel startete 1994 in der Spielhalle und wurde anschließend auf mehrere Heimsysteme portiert; eine Windows-Version folgte in der zweiten Hälfte der Neunziger. Capcom kombinierte das schnelle Kampfsystem seiner Arcade-Prügler mit bekannten X-Men-Figuren wie Wolverine, Cyclops und Storm. Viele Mechaniken wurden später in Marvel Super Heroes und der Marvel-vs.-Capcom-Reihe weiterentwickelt.`,
+        review: `Die Kämpfe sind schnell, farbenfroh und deutlich wilder als klassische Street-Fighter-Duelle. Die PC-Version ist historisch interessant, auch wenn andere Umsetzungen technisch oft näher am Arcade-Vorbild liegen. Das Figurenaufgebot und Capcoms Animationskunst tragen den Titel bis heute.`,
+        trivia: [
+            "Das Arcade-Original erschien 1994.",
+            "Entwickelt wurde das Spiel von Capcom.",
+            "Es gehört zu den Vorläufern der Marvel-vs.-Capcom-Reihe.",
+            "Mehrere bekannte X-Men sind spielbar."
+        ],
+        worthPlaying: `Für Fans klassischer Capcom-Fighting-Games und Marvel-Spiele ist Children of the Atom ein wichtiger und weiterhin unterhaltsamer Genrebaustein.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: "",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 181,
+        height: 231,
+        depth: 40
+
+    },
+        screenshots: []
+
+    },
+
+{
+        id: 147,
+        folder: "z",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "z.html",
+        featured: false,
+        title: "Z",
+        system: "PC",
+        year: 1996,
+        publisher: "Renegade Software",
+        developer: "The Bitmap Brothers",
+        genre: [
+            "Echtzeitstrategie",
+            "Science-Fiction",
+            "Taktik"
+        ],
+        description: "Z ist ein Echtzeitstrategiespiel der Bitmap Brothers, in dem zwei Roboterarmeen um Sektoren, Fabriken und strategische Punkte kämpfen, statt wie in vielen Genrevertretern zunächst stundenlang Basen aufzubauen.",
+        history: `Z erschien 1996 für DOS und Windows und wurde von The Bitmap Brothers entwickelt. Das Spiel setzt auf die Eroberung von Gebieten: Wer eine Flagge kontrolliert, übernimmt meist auch die dortige Produktionsanlage. Dadurch entstehen ständig verschobene Frontlinien und deutlich dynamischere Gefechte als in vielen klassischen Basisbau-Strategiespielen.`,
+        review: `Z spielt sich auch heute überraschend frisch. Die Karte zwingt permanent zu Entscheidungen, weil jeder verlorene Sektor direkt die eigene Produktion schwächen kann. Dazu kommen herrlich respektlose Roboteranimationen und Sprachsamples. Die Bedienung ist nicht immer elegant, doch das Grundprinzip bleibt hervorragend.`,
+        trivia: [
+            "Erschien 1996.",
+            "Entwickelt von The Bitmap Brothers.",
+            "Gebiete werden durch das Erobern von Flaggen kontrolliert.",
+            "Die Roboter sind für ihre humorvollen Animationen und Kommentare bekannt."
+        ],
+        worthPlaying: `Wer Echtzeitstrategie mit wenig Basisbau und viel Bewegung auf der Karte bevorzugt, findet in Z noch immer eine ausgesprochen eigenständige Alternative.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/346/z/",
+        wikipedia: "https://en.wikipedia.org/wiki/Z_(video_game)",
+        gog: "https://www.gog.com/de/game/z",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 181,
+        height: 233,
+        depth: 40
+
+    },
+        screenshots: [
+
+    {
+        file: "screen1.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen2.webp",
+        caption: ""
+    },
+
+    {
+        file: "screen3.webp",
+        caption: ""
+    }
+
+]
+
+    },
+
+{
+        id: 148,
+        folder: "zak_mc_kracken",
+        scanBy: "MK2k - https://bigbox3d.net",
+        page: "zak_mc_kracken.html",
+        featured: false,
+        title: "Zak McKracken and the Alien Mindbenders",
+        system: "PC",
+        year: 1988,
+        publisher: "Lucasfilm Games",
+        developer: "Lucasfilm Games",
+        genre: [
+            "Point-and-Click-Adventure",
+            "Comedy",
+            "Science-Fiction"
+        ],
+        description: "Zak McKracken and the Alien Mindbenders ist ein frühes Lucasfilm-Adventure über einen Boulevardreporter, außerirdische Verschwörer, globale Reisen und einige der herrlichsten absurden Rätsel der Achtziger.",
+        history: `Das Spiel erschien 1988 zunächst für Commodore 64 und später unter anderem für DOS und Amiga. Entwickelt wurde es bei Lucasfilm Games mit der SCUMM-Technik, die zuvor für Maniac Mansion geschaffen worden war. Zak reist rund um die Welt und sogar zum Mars, um eine außerirdische Verschwörung zu stoppen, die die Menschheit mit einer Verdummungsmaschine kontrollieren will.`,
+        review: `Zak McKracken besitzt viel Charme, Humor und Ideenreichtum, zeigt aber auch die härtere Seite früher Adventures. Einige Rätsel sind kryptisch und Fehlentscheidungen können den Fortschritt erschweren. Trotzdem ist die Kombination aus Science-Fiction-Parodie, Weltreise und Lucasfilm-Humor bis heute unverwechselbar.`,
+        trivia: [
+            "Erschien 1988.",
+            "Verwendet die SCUMM-Engine von Lucasfilm Games.",
+            "Der Spieler steuert neben Zak zeitweise weitere Figuren.",
+            "Die Handlung führt an zahlreiche Orte auf der Erde und zum Mars."
+        ],
+        worthPlaying: `Für Adventure-Fans ist Zak McKracken ein wichtiger Klassiker. Wer mit den Eigenheiten früher Point-and-Click-Spiele leben kann, bekommt eines der fantasievollsten Lucasfilm-Abenteuer.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/305/zak-mckracken-and-the-alien-mindbenders/",
+        wikipedia: "https://en.wikipedia.org/wiki/Zak_McKracken_and_the_Alien_Mindbenders",
+        gog: "https://www.gog.com/game/zak_mckracken_and_the_alien_mindbenders",
+        },
+        boxArtists: [],
+        rating: 0,
+        stars: 0,
+        dimensions: {
+
+        width: 178,
+        height: 230,
+        depth: 26
+
+    },
+        screenshots: []
+
+    },
+
+    {
+        id: 149,
+        folder: "gnome_ranger",
+        scanBy: "Magisthan",
+        page: "gnome_ranger.html",
+        featured: false,
+        title: "Gnome Ranger",
+        system: "Amiga",
+        year: 1987,        
+        publisher: "Level 9 Computing",
+        developer: "Level 9 Computing",
+        genre: ["Textadventure", "Interactive Fiction", "Fantasy"],
+        description: "Gnome Ranger ist ein humorvolles Fantasy-Textadventure von Level 9, in dem die junge Gnomin Ingrid Bottomlow nach einer missglückten Teleportation den Weg zurück nach Hause finden muss.",
+        history: `Gnome Ranger erschien 1987 und wurde von der britischen Adventureschmiede Level 9 Computing entwickelt und veröffentlicht. Im Mittelpunkt steht Ingrid Bottomlow, eine junge Gnomin, die nach einem Streit mit ihrer Familie von ihrer Großmutter kurzerhand per Zauberspruch fortgeschickt wird. Leider funktioniert die magische Reise nicht ganz wie geplant und Ingrid landet weit entfernt von ihrer Heimat. Von dort beginnt eine ausgesprochen ungewöhnliche Heimreise durch eine humorvolle Fantasy-Welt voller skurriler Figuren und Situationen. Spielerisch folgt Gnome Ranger der klassischen Tradition von Level 9: Die Umgebung wird hauptsächlich über ausführliche Texte beschrieben, während Befehle über einen Parser eingegeben werden. Ergänzt wird das Geschehen auf dem Amiga durch grafische Darstellungen der Schauplätze. Technisch basiert das Spiel auf Level 9s KAOS-System, das komplexere Figuren und deren Verhalten ermöglichen sollte. Statt einer klassischen Heldengeschichte setzt Gnome Ranger stark auf britischen Humor, Wortspiele und eine Hauptfigur, die sich mit alltäglichen Problemen ebenso herumschlagen muss wie mit den üblichen Gefahren einer Fantasy-Welt.`,
+        review: `Gnome Ranger ist ein schönes Beispiel dafür, warum Level 9 innerhalb der britischen Adventure-Szene einen besonderen Ruf genoss. Schon die Ausgangssituation macht deutlich, dass hier niemand versucht, Tolkien besonders ernst zu nehmen: Eine Gnomin wird von ihrer eigenen Großmutter weggebeamt und muss anschließend irgendwie wieder nach Hause kommen. Das Spiel lebt deshalb weniger von dramatischen Weltuntergangsszenarien als von seinen Figuren, Dialogen und dem typisch britischen Humor. Der Parser ist für seine Zeit leistungsfähig und die Welt fühlt sich durch die zahlreichen Charaktere angenehm belebt an. Aus heutiger Sicht muss man natürlich Freude daran haben, Befehle einzutippen und gelegentlich darüber nachzudenken, welche Formulierung der Parser gerade hören möchte. Wer klassische Interactive Fiction mag, bekommt aber ein charmantes, umfangreiches und angenehm eigenwilliges Adventure, das sich deutlich von vielen ernsteren Fantasy-Abenteuern seiner Zeit abhebt.`,
+        trivia: [
+                  "Ingrid Bottomlow wurde zur Hauptfigur einer eigenen kleinen Reihe: Auf Gnome Ranger folgte 1988 Ingrid's Back!, in dem sie in ihre Heimat zurückkehrt.",
+                  "Gnome Ranger verwendet Level 9s KAOS-System, das unter anderem komplexere computergesteuerte Figuren und deren Interaktion mit der Spielwelt ermöglichen sollte.",
+                  "Das Spiel wurde für zahlreiche Heimcomputer veröffentlicht, darunter Amiga, Atari ST, Commodore 64, ZX Spectrum, Amstrad CPC und verschiedene weitere Systeme."
+        ],
+        worthPlaying: `Gnome Ranger lohnt sich heute besonders für Freunde klassischer Textadventures und britischen Humors. Ingrid Bottomlow ist eine ungewöhnlich sympathische Hauptfigur und die Mischung aus Fantasy-Parodie, Rätseln und zahlreichen skurrilen Charakteren hebt das Spiel von vielen zeitgenössischen Adventures ab. Wer sich auf Parsersteuerung und viel Text einlassen kann, entdeckt hier einen interessanten Vertreter der späten Level-9-Ära.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/4897/gnome-ranger/",
+        wikipedia: "https://en.wikipedia.org/wiki/Gnome_Ranger",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 4, 
+        stars: 4, 
+        dimensions: { 
+ 
+        width: 110, 
+        height: 140, 
+        depth: 17 
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 150,
+        folder: "golden_classics_volume_1",
+        scanBy: "Magisthan",
+        page: "golden_classics_volume_1.html",
+        featured: false,
+        title: "Golden Classics Volume 1",
+        system: "C64",
+        year: 1991,        
+        publisher: "Epyx, Inc. / Softgold GmbH",
+        developer: "Action Graphics, Inc.",
+        genre: ["Sport", "Multi-Event", "Geschicklichkeit"],
+        description: "Golden Classics Volume 1 ist eine 1991 in Deutschland veröffentlichte Neuauflage des Epyx-Klassikers Winter Games für den C64 mit sieben winterlichen Sportdisziplinen.",
+        history: `Golden Classics Volume 1 erschien 1991 in Deutschland als Neuauflage von Winter Games für den Commodore 64. Die Golden-Classics-Ausgabe wurde über Softgold vertrieben und präsentierte den bereits 1985 erschienenen Epyx-Klassiker in einer neuen Verpackung. Das eigentliche Spiel blieb Winter Games, das ursprünglich von Action Graphics entwickelt worden war und zu den bekanntesten Titeln aus Epyx' erfolgreicher Games-Reihe gehört. Bis zu acht Spieler können nacheinander für verschiedene Nationen antreten und sich in sieben Disziplinen messen: Hot Dog, Biathlon, Skisprung, Bobfahren, Eisschnelllauf, Eiskunstlauf und Kürlauf. Anders als bei vielen zeitgenössischen Sportspielen geht es dabei nicht ausschließlich darum, den Joystick möglichst schnell in seine Einzelteile zu zerlegen. Zahlreiche Disziplinen setzen stärker auf Timing, Rhythmus und präzise Bewegungen. Gerade im Mehrspielermodus entwickelte sich Winter Games dadurch zu einem der beliebtesten C64-Sportspiele. Golden Classics Volume 1 ist somit spielerisch keine Fortsetzung oder eigenständige Compilation, sondern eine spätere deutsche Wiederveröffentlichung dieses Epyx-Klassikers.`,
+        review: `Hinter dem etwas feierlichen Namen Golden Classics Volume 1 steckt mit Winter Games tatsächlich ein Spiel, das sich die Bezeichnung Klassiker verdient hat. Die sieben Disziplinen unterscheiden sich angenehm voneinander und verlangen deutlich mehr als hektisches Joystick-Rütteln. Besonders Biathlon, Bobfahren und Skisprung funktionieren auch heute noch erstaunlich gut, während die beiden Eiskunstlauf-Disziplinen etwas gewöhnungsbedürftiger sind. Seine größte Stärke entwickelt Winter Games allerdings mit mehreren Spielern. Bis zu acht Teilnehmer können antreten, Länder auswählen, Rekorde jagen und anschließend darüber diskutieren, warum der perfekt aussehende Skisprung trotzdem wieder mit einer Landung endete, die eher nach medizinischem Notfall aussah. Technisch war das Spiel 1985 hervorragend und auch die 1991 veröffentlichte Golden-Classics-Ausgabe zeigt noch sehr deutlich, warum Winter Games zu den großen Epyx-Titeln auf dem C64 gehört.`,
+        trivia: [
+                  "Golden Classics Volume 1 ist keine eigenständige Spielentwicklung, sondern eine deutsche Neuauflage von Epyx' Winter Games aus dem Jahr 1985.",
+                  "Die deutsche Golden-Classics-Ausgabe erschien 1991 und ist mit der Seriennummer 09813 dokumentiert.",
+                  "Winter Games unterstützt bis zu acht Spieler und enthält auf dem C64 sieben Disziplinen: Hot Dog, Biathlon, Skisprung, Bobfahren, Eisschnelllauf, Eiskunstlauf und Kürlauf."
+        ],
+        worthPlaying: `Golden Classics Volume 1 beziehungsweise Winter Games gehört noch immer zu den stärksten Mehrspieler-Sportspielen auf dem C64. Die verschiedenen Disziplinen setzen stärker auf Timing und Übung als auf simples Joystick-Rütteln und funktionieren deshalb auch heute noch erstaunlich gut. Besonders mit mehreren Spielern entsteht schnell wieder genau der Wettbewerb, der Winter Games schon Mitte der 1980er zu einem der großen Epyx-Klassiker machte. Für Sammler ist die Golden-Classics-Ausgabe zusätzlich als spätere deutsche Wiederveröffentlichung interessant.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1215/winter-games/",
+        wikipedia: "https://en.wikipedia.org/wiki/Winter_Games",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 4, 
+        stars: 4, 
+        dimensions: { 
+ 
+        width: 152, 
+        height: 185, 
+        depth: 32 
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 151,
+        folder: "golden_classics_volume_2",
+        scanBy: "Magisthan",
+        page: "golden_classics_volume_2.html",
+        featured: false,
+        title: "Golden Classics Volume 2",
+        system: "C64",
+        year: 1991,        
+        publisher: "Softgold GmbH",
+        developer: "Access Software, Inc.",
+        genre: ["Sport", "Golf", "Simulation"],
+        description: "Golden Classics Volume 2 ist eine deutsche Wiederveröffentlichung des C64-Golfklassikers Leader Board von Access Software, einer der einflussreichsten Golfsimulationen der 8-Bit-Ära.",
+        history: `Golden Classics Volume 2 erschien als deutsche Wiederveröffentlichung des erfolgreichen C64-Spiels Leader Board. Das eigentliche Spiel wurde ursprünglich 1986 von Access Software veröffentlicht und von den Brüdern Bruce und Roger Carver entwickelt. Leader Board versuchte, Golf auf dem Commodore 64 nicht als abstraktes Geschicklichkeitsspiel, sondern als möglichst nachvollziehbare Sportsimulation umzusetzen. Bis zu vier Spieler können gegeneinander antreten und zwischen verschiedenen Schwierigkeitsgraden wählen. Während Einsteiger hauptsächlich Schläger, Richtung und Schlagstärke bestimmen müssen, kommen auf höheren Stufen zusätzliche Faktoren wie Wind sowie Hook und Slice hinzu. Besonders bemerkenswert war die Darstellung des Golfers aus einer Perspektive hinter der Spielfigur. Die flüssige Animation und der sich abschnittsweise aufbauende Golfplatz erzeugten für damalige Verhältnisse einen erstaunlich plastischen Eindruck. Leader Board wurde zu einem großen Erfolg und bildete den Auftakt einer ganzen Serie, die später mit Leader Board Tournament, Leader Board: Executive Edition und World Class Leader Board fortgesetzt wurde. Golden Classics Volume 2 brachte diesen frühen C64-Golfklassiker Jahre später noch einmal in einer deutschen Softgold-Ausgabe in den Handel.`,
+        review: `Golf und Computerspiele sind eigentlich eine merkwürdige Kombination. Beim einen läuft man stundenlang über eine Wiese, beim anderen sitzt man stundenlang vor einem Bildschirm. Leader Board bewies allerdings schon 1986, dass sich zumindest der zweite Teil hervorragend mit dem ersten verbinden lässt. Die Steuerung ist angenehm einfach zu verstehen, bietet auf den höheren Schwierigkeitsgraden aber genügend Möglichkeiten, um tatsächlich besser zu werden. Besonders das Timing beim Schlag sorgt dafür, dass ein vermeintlich perfekter Versuch plötzlich irgendwo im Wasser endet. Grafisch ist Leader Board natürlich deutlich gealtert, doch die Animation des Golfers sieht noch immer erstaunlich ordentlich aus. Vor allem im Mehrspielermodus funktioniert das Spiel auch heute noch hervorragend. Die wenigen Hindernisse und relativ schlichten Kurse zeigen allerdings, dass wir es mit dem ersten Teil der Serie zu tun haben. Spätere Leader-Board-Spiele bauten das Konzept deutlich aus. Trotzdem ist Golden Classics Volume 2 beziehungsweise Leader Board ein hervorragendes Beispiel dafür, wie wenig ein gutes Sportspiel eigentlich braucht, wenn Steuerung und Spielgefühl stimmen.`,
+        trivia: [
+                  "Golden Classics Volume 2 enthält Leader Board, das ursprünglich 1986 von Access Software veröffentlicht wurde.",
+                  "Leader Board wurde von den Brüdern Bruce und Roger Carver entwickelt und bildete den Ausgangspunkt für eine ganze Reihe erfolgreicher Golfspiele von Access Software.",
+                  "Das Spiel unterstützt bis zu vier Spieler und bietet drei Schwierigkeitsstufen, bei denen auf höheren Stufen unter anderem Wind sowie Hook und Slice berücksichtigt werden."
+        ],
+        worthPlaying: `Golden Classics Volume 2 beziehungsweise Leader Board ist auch heute noch erstaunlich spielbar. Die übersichtliche Steuerung lässt sich innerhalb weniger Minuten verstehen, während das Timing der Schläge genügend Tiefe bietet, um langfristig bessere Ergebnisse zu erzielen. Besonders mit mehreren Spielern funktioniert das Konzept hervorragend. Wer sich für die Entwicklung von Sport- und Golfspielen interessiert, bekommt außerdem einen Titel, dessen grundlegende Ideen Access Software später bis hin zur erfolgreichen Links-Serie weiterentwickelte.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1516/leader-board/",
+        wikipedia: "",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 4, 
+        stars: 4, 
+        dimensions: { 
+ 
+        width: 152, 
+        height: 185, 
+        depth: 32 
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 152,
+        folder: "great_naval_battles_volume_2",
+        scanBy: "Magisthan",
+        page: "great_naval_battles_volume_2.html",
+        featured: false,
+        title: "Great Naval Battles Vol. II: Guadalcanal 1942-43",
+        system: "PC",
+        year: 1994,        
+        publisher: "Strategic Simulations, Inc.",
+        developer: "IO Design Group Inc.",
+        genre: ["Strategiespiel", "Seekriegssimulation", "Historisch"],
+        description: "Great Naval Battles Vol. II: Guadalcanal 1942-43 ist eine umfangreiche Seekriegssimulation von SSI, die die See- und Luftkämpfe um Guadalcanal während des Pazifikkrieges nachbildet.",
+        history: `Great Naval Battles Vol. II: Guadalcanal 1942-43 erschien 1994 für DOS und ist der zweite Teil von SSIs Great-N Naval-Battles-Reihe. Entwickelt wurde das Spiel von IO Design Group, während Strategic Simulations die Veröffentlichung übernahm. Nach den Gefechten im Nordatlantik des ersten Teils verlagert Volume II das Geschehen in den Südpazifik und konzentriert sich auf die Kämpfe um Guadalcanal und die Salomonen in den Jahren 1942 und 1943. Der Spieler kann sowohl die amerikanischen als auch die japanischen Streitkräfte übernehmen. Das Spiel kombiniert strategische Planung mit detaillierten Echtzeit-Seeschlachten und berücksichtigt neben Kriegsschiffen auch Flugzeuge und Flugzeugträger. Enthalten sind fünf taktische Gefechte, drei Trägerschlachten und zwei vollständige Kampagnen. Insgesamt stehen rund 100 verschiedene Schiffstypen und 20 Flugzeugtypen zur Verfügung. Dabei geht es nicht nur darum, möglichst viele gegnerische Schiffe auf den Meeresgrund zu schicken. Aufklärung, Reichweite, Geschwindigkeit, Formation, Luftunterstützung und der richtige Zeitpunkt für einen Angriff spielen eine entscheidende Rolle. Entworfen wurde das Spiel von Roy B. Gibson, der gemeinsam mit Bill Becker auch für die Programmierung verantwortlich war.`,
+        review: `Great Naval Battles Vol. II ist eines dieser Spiele, bei denen bereits das Handbuch deutlich macht, dass hier niemand nur fünf Minuten lang ein paar Schlachtschiffe versenken wollte. SSI richtet sich ganz klar an Spieler, die wissen möchten, warum ein Flugzeugträger besser nicht allein durch den Südpazifik fährt und weshalb Aufklärung manchmal wichtiger ist als die größten Kanonen. Die Mischung aus strategischer Planung und direkter Kontrolle während der Gefechte bietet enorm viel Tiefe. Besonders die unterschiedlichen Eigenschaften der zahlreichen Schiffe und Flugzeuge sorgen dafür, dass sich die Schlachten nicht einfach durch rohe Feuerkraft entscheiden lassen. Dafür verlangt das Spiel allerdings eine ordentliche Einarbeitung. Menüs, Tabellen und zahlreiche taktische Möglichkeiten können Einsteiger zunächst erschlagen. Wer sich davon nicht abschrecken lässt, bekommt jedoch eine ausgesprochen umfangreiche und anspruchsvolle Seekriegssimulation, die auch heute noch zeigt, warum SSI in den 1990er Jahren bei historischen Strategiespielen einen hervorragenden Ruf hatte.`,
+        trivia: [
+                  "Great Naval Battles Vol. II enthält fünf taktische Seeschlachten, drei Flugzeugträgerschlachten und zwei vollständige Kampagnen rund um Guadalcanal.",
+                  "Das Spiel simuliert ungefähr 100 verschiedene Schiffstypen und 20 Flugzeugtypen der amerikanischen und japanischen Streitkräfte.",
+                  "Roy B. Gibson entwarf das Spiel und programmierte es gemeinsam mit Bill Becker; Daniel Cermak fungierte als Producer."
+        ],
+        worthPlaying: `Great Naval Battles Vol. II lohnt sich heute vor allem für Spieler, die historische Strategiespiele und detaillierte militärische Simulationen mögen. Die enorme Auswahl an Schiffen, Flugzeugen und taktischen Möglichkeiten bietet deutlich mehr Tiefe als eine einfache Seeschlacht-Simulation. Die Benutzeroberfläche und die umfangreiche Einarbeitung verraten zwar deutlich das Alter des Spiels, doch wer sich darauf einlässt, bekommt eine faszinierende Simulation des Seekrieges im Pazifik.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/5268/great-naval-battles-vol-ii-guadalcanal-1942-43/",
+        wikipedia: "",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 4, 
+        stars: 4, 
+        dimensions: { 
+ 
+        width: 180, 
+        height: 235, 
+        depth: 40
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 153,
+        folder: "gun_smoke",
+        scanBy: "Magisthan",
+        page: "gun_smoke.html",
+        featured: false,
+        title: "Gun.Smoke",
+        system: "C64",
+        year: 1987,        
+        publisher: "Capcom U.S.A., Inc.",
+        developer: "Software Creations Ltd.",
+        genre: ["Shoot 'em Up", "Arcade", "Western"],
+        description: "Gun.Smoke ist die C64-Umsetzung von Capcoms Western-Arcade-Shooter, in dem Kopfgeldjäger Billy Bob durch den Wilden Westen zieht und eine Reihe gesuchter Banditen zur Strecke bringt.",
+        history: `Gun.Smoke begann 1985 als vertikal scrollendes Arcade-Spiel von Capcom und verlegte das klassische Shoot-'em-up-Prinzip kurzerhand in den Wilden Westen. Die C64-Version folgte 1987 und wurde von Software Creations umgesetzt. In der amerikanischen Capcom-Disk-Pak-Ausgabe übernahm Capcom selbst die Veröffentlichung. Der Spieler steuert den Kopfgeldjäger Billy Bob, der sich durch von Banditen bevölkerte Western-Schauplätze kämpft und am Ende der Abschnitte jeweils einen gesuchten Gesetzlosen stellen muss. Statt Raumschiffen und Lasergeschützen gibt es Revolver, Cowboys, Dynamit und jede Menge Kugeln. Eine Besonderheit ist das Schusssystem: Billy kann geradeaus sowie diagonal nach links und rechts feuern, wodurch sich Gegner aus mehreren Richtungen bekämpfen lassen, ohne die eigene Bewegungsrichtung verändern zu müssen. Zusätzlich können verschiedene Waffen beziehungsweise Verbesserungen eingesammelt werden. Die C64-Umsetzung wurde von Jason H. Perkins programmiert, Mark R. Wilson zeichnete die Grafik und Ben Daglish steuerte die Musik bei. Trotz der technischen Unterschiede zum Arcade-Automaten blieb das schnelle, vertikal scrollende Grundprinzip weitgehend erhalten.`,
+        review: `Gun.Smoke beweist ziemlich überzeugend, dass ein Shoot 'em Up nicht zwingend Raumschiffe braucht. Ein Cowboy, zwei Revolver und ungefähr so viele Banditen, dass selbst ein durchschnittlicher Western-Regisseur irgendwann gesagt hätte: Jetzt reicht es aber, funktionieren ebenfalls hervorragend. Die größte Stärke ist das ungewöhnliche Schusssystem. Geradeaus und diagonal feuern zu können, sorgt dafür, dass man Gegner gezielt bekämpfen kann, während man gleichzeitig ihren Kugeln ausweicht. Die C64-Version ist technisch natürlich einfacher als das Arcade-Original, spielt sich aber schnell und direkt. Dazu kommt Ben Daglishs Musik, die dem Ganzen den passenden 8-Bit-Western-Sound verpasst. Der Schwierigkeitsgrad zieht allerdings ordentlich an und spätestens bei den Bossgegnern wird aus dem gemütlichen Ausritt sehr schnell ein Termin beim Bestatter. Wer klassische Arcade-Shooter mag, bekommt trotzdem eine der interessanteren Capcom-Umsetzungen für den C64.`,
+        trivia: [
+                  "Gun.Smoke erschien ursprünglich 1985 als Arcade-Spiel von Capcom; die C64-Umsetzung folgte 1987 und wurde von Software Creations entwickelt.",
+                  "Die C64-Version wurde von Jason H. Perkins programmiert, die Grafik stammt von Mark R. Wilson und die Musik komponierte Ben Daglish.",
+                  "Das ungewöhnliche Schusssystem erlaubt es, geradeaus sowie diagonal nach links und rechts zu feuern und ist eines der charakteristischen Merkmale von Gun.Smoke."
+        ],
+        worthPlaying: `Gun.Smoke ist auch heute noch ein sehr unterhaltsamer C64-Shooter. Das Western-Szenario hebt ihn angenehm von den zahllosen Weltraum-Shootern der Zeit ab und das Drei-Richtungs-Schusssystem verleiht dem Spiel eine eigene taktische Note. Die Action ist schnell, die Steuerung direkt und Ben Daglishs Musik sorgt für zusätzlichen C64-Charme. Wer klassische Arcade-Umsetzungen mag, sollte Gun.Smoke definitiv einmal ausprobieren.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/13338/gunsmoke/",
+        wikipedia: "https://en.wikipedia.org/wiki/Gun.Smoke",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 4, 
+        stars: 4, 
+        dimensions: { 
+ 
+        width: 170, 
+        height: 245, 
+        depth: 22 
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 154,
+        folder: "heroes_of_the_lance_special_edition",
+        scanBy: "Magisthan",
+        page: "heroes_of_the_lance_special_edition.html",
+        featured: false,
+        title: "Heroes of the Lance - Special Edition mit Roman",
+        system: "C64",
+        year: 1989,        
+        publisher: "Strategic Simulations, Inc.",
+        developer: "U.S. Gold Ltd.",
+        genre: ["Action-Adventure", "Fantasy", "Rollenspielelemente"],
+        description: "Heroes of the Lance ist ein auf Dragonlance basierendes Action-Adventure von SSI, in dem die Helden der Lanze die Ruinen von Xak Tsaroth erkunden; diese Special Edition verbindet das C64-Spiel mit einem Dragonlance-Roman.",
+        history: `Heroes of the Lance gehört zu den ersten Computerspielen, die die Welt von Dragonlance auf den Bildschirm brachten. Das Spiel basiert auf dem klassischen AD&D-Abenteuer DL1 Dragons of Despair und schickt die bekannten Gefährten der Lanze in die Ruinen von Xak Tsaroth. Ziel ist es, die Disks of Mishakal zu finden und damit einen entscheidenden Schritt im Kampf gegen die zurückkehrenden Drachenarmeen zu machen. Zur Gruppe gehören unter anderem Tanis Half-Elven, Sturm Brightblade, Raistlin Majere, Caramon Majere, Goldmoon und Riverwind. Obwohl Heroes of the Lance auf den Regeln und Figuren von Advanced Dungeons & Dragons basiert, ist es kein klassisches Computerrollenspiel. Statt einer frei erkundbaren Rollenspielwelt bewegt sich die Gruppe durch seitlich dargestellte Räume und Korridore, kämpft in Echtzeit gegen Gegner, setzt Magie ein und muss die Fähigkeiten der verschiedenen Gruppenmitglieder geschickt nutzen. Das Spiel erschien zunächst 1988 auf mehreren Computersystemen; die Commodore-64-Version folgte 1989. Entwickelt wurde die Umsetzung von U.S. Gold in Zusammenarbeit mit SSI. Die hier erfasste Special Edition ist für die Sammlung besonders interessant, weil sie das Computerspiel mit einem Roman aus dem Dragonlance-Umfeld verbindet und damit den engen Zusammenhang zwischen Spiel, AD&D-Regelwerk und literarischer Vorlage besonders deutlich macht.`,
+        review: `Heroes of the Lance ist ein interessantes Beispiel dafür, dass eine großartige Lizenz noch lange kein großartiges Spiel garantiert. Auf dem Papier klingt eigentlich alles hervorragend: Dragonlance, Raistlin, Tanis, Sturm, Goldmoon, düstere Ruinen, Monster und dazu das AD&D-Logo auf der Verpackung. Spielerisch entschied man sich allerdings nicht für ein umfangreiches Rollenspiel, sondern für eine Mischung aus Action, Erkundung und einigen Rollenspielelementen. Genau dort beginnen die Schwierigkeiten. Die Steuerung ist sperrig, die Kämpfe wirken häufig unbeholfen und der Wechsel zwischen den verschiedenen Helden ist weniger elegant, als man es sich wünschen würde. Gleichzeitig besitzt das Spiel gerade für Dragonlance-Fans einen gewissen Reiz. Die bekannten Figuren tatsächlich durch Xak Tsaroth zu führen und Orte aus der Vorlage wiederzuerkennen, funktioniert als Fanservice erstaunlich gut. Die Special Edition mit Roman macht die Ausgabe zusätzlich zu einem schönen Sammlerstück. Spielerisch ist Heroes of the Lance sicherlich kein Höhepunkt der SSI-Ära, historisch und als frühe Umsetzung der Dragonlance-Welt aber ausgesprochen interessant.`,
+        trivia: [
+                  "Heroes of the Lance basiert auf DL1 Dragons of Despair, dem ersten veröffentlichten Abenteuer der ursprünglichen Dragonlance-Kampagne.",
+                  "Die Commodore-64-Credits nennen Greg Duddle als Autor, James McDermott für die Grafik und Jeff Easley ausdrücklich für die Cover-Illustration.",
+                  "Heroes of the Lance war der erste Teil einer Dragonlance-Computerspielreihe und wurde mit Dragons of Flame und Shadow Sorcerer fortgesetzt."
+        ],
+        worthPlaying: `Heroes of the Lance ist heute vor allem für Dragonlance- und AD&D-Fans sowie für Sammler interessant. Spielerisch ist die Mischung aus Action und Rollenspielelementen deutlich gealtert und verlangt einiges an Geduld. Dafür bietet das Spiel einen faszinierenden Blick auf eine Zeit, in der SSI erstmals versuchte, die Welt und Figuren von Dragonlance in ein Computerspiel zu übertragen. Gerade die Special Edition mit Roman ist außerdem ein schönes Beispiel dafür, wie eng Computerspiele, Pen-and-Paper-Rollenspiele und Fantasy-Literatur damals miteinander verbunden wurden.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/3601/heroes-of-the-lance/",
+        wikipedia: "https://en.wikipedia.org/wiki/Advanced_Dungeons_%26_Dragons:_Heroes_of_the_Lance",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "Jeff Easley" 
+    ], 
+        rating: 1, 
+        stars: 1, 
+        dimensions: { 
+ 
+        width: 213, 
+        height: 153, 
+        depth: 42 
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 155,
+        folder: "hired_guns",
+        scanBy: "Magisthan",
+        page: "hired_guns.html",
+        featured: false,
+        title: "Hired Guns",
+        system: "Amiga",
+        year: 1993,        
+        publisher: "Psygnosis Limited",
+        developer: "DMA Design Limited",
+        genre: ["Action-Rollenspiel", "Dungeon Crawler", "Science-Fiction"],
+        description: "Hired Guns ist ein futuristischer Action-Dungeon-Crawler von DMA Design, in dem bis zu vier Söldner gleichzeitig eine von gefährlichen Bioexperimenten verseuchte Welt erkunden.",
+        history: `Hired Guns erschien 1993 für den Amiga und wurde von DMA Design entwickelt, dem Studio, das zuvor mit Lemmings weltbekannt geworden war. Publisher war Psygnosis. Das Spiel versetzt den Spieler in das Jahr 2712 und schickt eine Gruppe von Söldnern auf den Planeten Graveyard. Dort warten nicht nur zahlreiche genetisch veränderte Kreaturen, sondern auch eine Mission, die wesentlich unangenehmer ausfällt, als es die ursprüngliche Stellenbeschreibung vermutlich vermuten ließ. Aus zwölf unterschiedlichen Charakteren wird ein Team aus vier Söldnern zusammengestellt. Jeder besitzt eigene Eigenschaften und Ausrüstung. Spielerisch erinnert Hired Guns zunächst an Dungeon Master: Die Umgebung wird aus der Ego-Perspektive dargestellt und die Figuren bewegen sich schrittweise durch labyrinthartige Anlagen. Der entscheidende Unterschied liegt jedoch darin, dass die vier Charaktere unabhängig voneinander agieren können. Der Bildschirm wird dafür in bis zu vier separate Ansichten geteilt. Besonders bemerkenswert ist der Mehrspielermodus, denn bis zu vier Personen können gleichzeitig am selben Amiga spielen. Neben Kämpfen spielen Erkundung, Schalterrätsel, unterschiedliche Umgebungsbedingungen, Inventarverwaltung und die richtige Zusammenstellung der Gruppe eine wichtige Rolle. Konzept und Programmierung stammen maßgeblich von Scott Johnston, während unter anderem Graeme Anderson und David Osborne an der Grafik arbeiteten. Die Musik komponierte Brian Johnston.`,
+        review: `Hired Guns gehört zu den Spielen, bei denen man sich zunächst fragt, wer freiwillig einen Amiga-Bildschirm in vier kleine Fenster aufteilen würde. Nach einigen Minuten lautet die wesentlich wichtigere Frage allerdings: Warum haben das nicht viel mehr Spiele gemacht? Das Konzept funktioniert erstaunlich gut. Jeder Söldner besitzt seine eigene Perspektive und kann unabhängig durch die Spielwelt bewegt werden. Alleine verlangt das einiges an Organisation, mit mehreren Spielern entwickelt sich daraus dagegen eine Mischung aus Dungeon Crawler, Science-Fiction-Shooter und kooperativem Chaos. Dazu kommen eine große Auswahl an Waffen, unterschiedliche Charaktere und abwechslungsreiche Missionen. Die schrittweise Bewegung wirkt aus heutiger Sicht natürlich etwas behäbig und bei vier Ansichten wird der eigentliche Spielbereich ziemlich klein. Trotzdem besitzt Hired Guns eine Atmosphäre und spielerische Eigenständigkeit, die viele technisch modernere Titel nicht erreichen. Vor allem gemeinsam mit einem oder mehreren Mitspielern ist das Spiel noch immer ein außergewöhnliches Amiga-Erlebnis.`,
+        trivia: [
+                  "Hired Guns unterstützt bis zu vier Spieler gleichzeitig an einem Amiga und teilt den Bildschirm dafür in bis zu vier unabhängige Ego-Perspektiven.",
+                  "Aus insgesamt zwölf Söldnern kann ein Team aus vier Charakteren zusammengestellt werden, wobei jeder Charakter eigene Eigenschaften und Ausrüstung besitzt.",
+                  "Einige Jahre nach Veröffentlichung stellte Designer Scott Johnston einen Editor zur Verfügung, mit dem unter anderem Levels, Gegner, Texturen und Missionsbeschreibungen verändert werden konnten."
+        ],
+        worthPlaying: `Hired Guns ist heute noch spielenswert, weil seine Kombination aus Dungeon Crawler, Action-Rollenspiel und gleichzeitigem Vier-Spieler-Modus auch Jahrzehnte später ungewöhnlich ist. Besonders gemeinsam mit Freunden entfaltet das Spiel eine Qualität, die sich kaum mit einem anderen Amiga-Titel vergleichen lässt. Wer Dungeon Master mag, aber gerne etwas mehr Feuerkraft, Science-Fiction und kontrolliertes Mehrspielerchaos hätte, sollte Hired Guns unbedingt ausprobieren.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/6742/hired-guns/",
+        wikipedia: "https://en.wikipedia.org/wiki/Hired_Guns",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "Jamie Grant" 
+    ], 
+        rating: 4, 
+        stars: 4, 
+        dimensions: { 
+ 
+        width: 187, 
+        height: 237, 
+        depth: 42 
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 156,
+        folder: "hurra_deutschland",
+        scanBy: "Magisthan",
+        page: "hurra_deutschland.html",
+        featured: false,
+        title: "Hurra Deutschland",
+        system: "PC",
+        year: 1994,        
+        publisher: "Rainbow Arts Software GmbH / Softgold GmbH",
+        developer: "Promotion Software GmbH",
+        genre: ["Politiksimulation", "Satire", "Strategie"],
+        description: "Hurra Deutschland ist eine satirische Politiksimulation zur Bundestagswahl 1994, in der ein unbekannter Kanzlerkandidat mit Wahlkampf, Intrigen und reichlich politischem Spott den Weg ins Kanzleramt sucht.",
+        history: `Hurra Deutschland erschien 1994 für DOS und entstand passend zur damaligen Bundestagswahl. Das Spiel greift die Figuren und den Stil der gleichnamigen deutschen Fernsehsatire auf, deren Markenzeichen karikierte Gummipuppen bekannter Politiker waren. Der Spieler übernimmt allerdings keinen der realen Kandidaten, sondern schlüpft in die Rolle des zunächst völlig unbekannten Kanzlerkandidaten Paul. Ihm bleiben nur wenige Tage, um seinen Wahlkampf voranzutreiben, die Bevölkerung für sich zu gewinnen und gleichzeitig einer Verschwörung auf die Spur zu kommen. Spielerisch verbindet Hurra Deutschland Elemente einer Politik- und Wirtschaftssimulation mit Adventure-artigen Situationen und zahlreichen satirischen Ereignissen. Die bekannten Politiker der damaligen Bundesrepublik erscheinen dabei als grotesk überzeichnete Puppenfiguren. Die Idee zum Spiel stammt von Ralph Stock, der auch als Producer fungierte. Klaus Wardinski und Michael Stigler schrieben die Texte, Andreas Epple und Uli Weidle übernahmen die Programmierung. Für die Musik und den Sound waren Klaus Erhardt und Chris Hülsbeck verantwortlich. Hurra Deutschland ist dadurch nicht nur ein Computerspiel, sondern heute beinahe eine digitale Zeitkapsel der deutschen Politik Mitte der 1990er Jahre.`,
+        review: `Hurra Deutschland ist heute vermutlich noch kurioser als 1994. Wer Helmut Kohl, Rudolf Scharping und die politischen Diskussionen jener Zeit noch kennt, bekommt eine erstaunlich bissige Zeitreise in die Bundesrepublik kurz vor der Bundestagswahl. Spielerisch ist das Ganze allerdings wesentlich dünner als die Verpackung zunächst vermuten lässt. Die strategischen Möglichkeiten bleiben überschaubar und viele Situationen leben stärker von ihren Gags als von komplexen Entscheidungen. Genau deshalb gingen die zeitgenössischen Wertungen auch weit auseinander. Wer eine tiefgehende Politiksimulation erwartet, dürfte ziemlich schnell feststellen, dass hier eher die Satire als der Bundeshaushalt regiert. Dafür besitzt das Spiel einen Charme, den man heute kaum noch reproduzieren könnte. Die grotesken Politikerfiguren, die Dialoge und die zahlreichen Anspielungen funktionieren gleichzeitig als Unterhaltung und als kleines Stück deutscher Mediengeschichte. Als Strategiespiel nur durchschnittlich, als digitale Zeitkapsel dagegen ausgesprochen interessant.`,
+        trivia: [
+                  "Hurra Deutschland entstand passend zur Bundestagswahl 1994 und lässt den Spieler als fiktiven Kanzlerkandidaten Paul gegen die politischen Größen jener Zeit antreten.",
+                  "Die Figuren basieren auf der gleichnamigen deutschen Fernsehsatire, deren Politiker und Prominente als karikierte Gummipuppen dargestellt wurden.",
+                  "Die Idee zum Spiel stammt von Ralph Stock; Klaus Erhardt und der durch Turrican bekannte Chris Hülsbeck waren für Sound und Musik verantwortlich."
+        ],
+        worthPlaying: `Hurra Deutschland ist heute weniger wegen seiner spielerischen Tiefe als wegen seines historischen Kontextes interessant. Das Spiel konserviert die politische Stimmung, Personen und Satire der Bundesrepublik des Jahres 1994 auf eine Weise, die inzwischen fast dokumentarischen Unterhaltungswert besitzt. Wer deutsche Computerspielgeschichte, politische Satire oder einfach ungewöhnliche Spiele der DOS-Ära mag, sollte sich diese ziemlich einmalige Mischung einmal ansehen.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/37360/hurra-deutschland/",
+        wikipedia: "https://de.wikipedia.org/wiki/Hurra_Deutschland",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 2, 
+        stars: 2, 
+        dimensions: { 
+ 
+        width: 182, 
+        height: 232, 
+        depth: 40 
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 157,
+        folder: "indiana_jones_fate_of_atlantis_action_game",
+        scanBy: "Magisthan",
+        page: "indiana_jones_fate_of_atlantis_action_game.html",
+        featured: false,
+        title: "Indiana Jones and the Fate of Atlantis: The Action Game",
+        system: "Amiga",
+        year: 1992,        
+        publisher: "U.S. Gold Ltd. / LucasArts",
+        developer: "Attention to Detail Limited",
+        genre: ["Action-Adventure", "Arcade", "Isometrisch"],
+        description: "Indiana Jones and the Fate of Atlantis: The Action Game ist die actionorientierte Umsetzung der Atlantis-Geschichte, in der Indy und Sophia Habgood in sechs isometrischen Levels gegen die Nazis antreten.",
+        history: `Indiana Jones and the Fate of Atlantis: The Action Game erschien 1992 parallel zum wesentlich bekannteren Point-and-Click-Adventure gleichen Namens. Beide Spiele verwenden dieselbe von Hal Barwood entwickelte Grundgeschichte, spielerisch könnten sie jedoch kaum unterschiedlicher sein. Während das LucasArts-Adventure auf Dialoge, Rätsel und das SCUMM-System setzt, verwandelt die Action-Version Indys Suche nach Atlantis in ein isometrisch dargestelltes Action-Adventure. Indiana Jones und Sophia Habgood geraten dabei auf die Spur der Nazis, die nach der geheimnisvollen Energiequelle Orichalcum suchen und damit die Macht des versunkenen Atlantis für ihre eigenen Zwecke nutzen wollen. Das Spiel besteht aus sechs größeren Abschnitten und führt unter anderem durch Monte Carlo, eine U-Boot-Basis und weitere aus der Atlantis-Handlung bekannte Schauplätze. Neben Kämpfen müssen Gegenstände gefunden und kleinere Rätsel gelöst werden. Eine Besonderheit ist die Möglichkeit, die isometrische Ansicht aus verschiedenen Richtungen zu betrachten. Die grundlegende PC-Entwicklung übernahm Attention to Detail, während Jon Steele für die Amiga- und Atari-ST-Versionen verantwortlich war. Die Musik und Soundeffekte stammen von Martin Walker, Produktion und Design lagen bei Jon Dean. Herausgegeben wurde die Amiga-Version von U.S. Gold unter Lizenz von Lucasfilm.`,
+        review: `Indiana Jones und Actionspiel klingt zunächst nach einer ziemlich sicheren Kombination. Peitsche, Nazis, verlorene Tempel und ein Archäologe, dessen Vorstellung wissenschaftlicher Feldarbeit erstaunlich häufig Faustkämpfe beinhaltet – was sollte da schon schiefgehen? Leider eine ganze Menge. Fate of Atlantis: The Action Game übernimmt zwar die hervorragende Grundgeschichte des Adventures, kann daraus spielerisch aber nur wenig Kapital schlagen. Die isometrische Perspektive sieht zunächst interessant aus und die Möglichkeit, den Blickwinkel zu verändern, ist durchaus clever. Trotzdem wirken Bewegung und Kämpfe häufig langsam und umständlich. Dazu kommen wenig abwechslungsreiche Auseinandersetzungen und Passagen, die eher Geduld als archäologischen Spürsinn verlangen. Die Amiga-Version ist technisch ordentlich, aber kaum spektakulär. Besonders problematisch ist natürlich der direkte Vergleich mit dem gleichzeitig erschienenen Adventure, das dieselbe Geschichte erheblich spannender erzählt. Ganz ohne Reiz ist die Action-Version trotzdem nicht. Als ungewöhnlicher Ableger der Indiana-Jones-Reihe und als alternative Interpretation von Fate of Atlantis besitzt sie heute einen gewissen historischen Charme. Man sollte nur nicht erwarten, hier den verschollenen Actionspiel-Schatz von Atlantis ausgegraben zu haben.`,
+        trivia: [
+                  "1992 erschienen zwei völlig unterschiedliche Spiele unter dem Namen Fate of Atlantis: das berühmte LucasArts-Point-and-Click-Adventure und dieses separat entwickelte Action-Adventure.",
+                  "Die Geschichte basiert wie beim Adventure auf Hal Barwoods Fate-of-Atlantis-Handlung; die Amiga- und Atari-ST-Versionen des Actionspiels wurden von Jon Steele umgesetzt.",
+                  "Das Spiel besteht aus sechs Abschnitten und verwendet eine isometrische Perspektive, deren Blickrichtung während des Spiels verändert werden kann."
+        ],
+        worthPlaying: `Indiana Jones and the Fate of Atlantis: The Action Game ist heute vor allem für Indiana-Jones- und Lucasfilm-Sammler interessant. Spielerisch kann es mit dem gleichzeitig erschienenen Adventure nicht konkurrieren, doch gerade deshalb ist es ein faszinierendes Stück Spielegeschichte: dieselbe Geschichte, im selben Jahr, aber als vollkommen anderes Spiel umgesetzt. Wer ungewöhnliche Lizenzspiele und isometrische Action-Adventures der frühen 1990er mag, sollte zumindest einmal einen Blick darauf werfen.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/4289/indiana-jones-and-the-fate-of-atlantis-the-action-game/",
+        wikipedia: "https://de.wikipedia.org/wiki/Indiana_Jones_and_the_Fate_of_Atlantis:_The_Action_Game",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 2, 
+        stars: 2, 
+        dimensions: { 
+ 
+        width: 184, 
+        height: 234, 
+        depth: 40 
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 158,
+        folder: "indiana_jones_last_crusade_action_game",
+        scanBy: "Magisthan",
+        page: "indiana_jones_last_crusade_action_game.html",
+        featured: false,
+        title: "Indiana Jones and the Last Crusade: The Action Game",
+        system: "C64",
+        year: 1989,        
+        publisher: "Lucasfilm Games / U.S. Gold Ltd.",
+        developer: "Tiertex Ltd.",
+        genre: ["Action-Adventure", "Platformer", "Filmumsetzung"],
+        description: "Indiana Jones and the Last Crusade: The Action Game ist die actionorientierte C64-Umsetzung des dritten Indiana-Jones-Films, in der Indy sich mit Peitsche und Fäusten durch mehrere bekannte Filmschauplätze kämpft.",
+        history: `Indiana Jones and the Last Crusade: The Action Game erschien 1989 passend zum dritten Kinofilm mit Harrison Ford und Sean Connery. Anders als das ebenfalls 1989 veröffentlichte Graphic Adventure von Lucasfilm Games setzt diese Version vollständig auf Action. Entwickelt wurde das Spiel von Tiertex, während Lucasfilm Games und U.S. Gold die Veröffentlichung übernahmen. Auf dem Commodore 64 steuert der Spieler Indiana Jones durch mehrere seitlich dargestellte Abschnitte, die Szenen des Films aufgreifen. Dabei muss Indy laufen, springen, klettern, Gegner bekämpfen und natürlich seine berühmte Peitsche einsetzen. Die einzelnen Spielabschnitte orientieren sich an Stationen aus dem Film und führen unter anderem durch Höhlen, Katakomben und weitere gefährliche Schauplätze auf der Suche nach dem Heiligen Gral. Die C64-Version wurde von Alex Fish und Mark Tait programmiert. James Clarke und Blue Turtle werden für die Grafik genannt, während Mark Tait zusätzlich die Musik übernahm. Für die Titelmusik konnte er auf John Williams' Originalmaterial des Raiders March zurückgreifen. Obwohl das Spiel denselben Film und praktisch denselben Titel wie das bekannte Graphic Adventure verwendet, handelt es sich um eine vollkommen eigenständige Entwicklung mit einem deutlich stärkeren Schwerpunkt auf Plattform- und Actionsequenzen.`,
+        review: `Indiana Jones ohne Rätsel, Dialogbäume und Inventar klingt zunächst ein wenig so, als würde man Indy den Archäologieabschluss wegnehmen und ihm einfach sagen: Hier ist deine Peitsche, jetzt mach irgendwas damit. Genau das versucht The Last Crusade: The Action Game. Die C64-Version gehört dabei durchaus zu den brauchbareren Fassungen. Indys Sprite ist ordentlich animiert, einige Schauplätze besitzen nette grafische Details und die Peitsche sorgt zumindest dafür, dass man sich tatsächlich ein wenig wie Indiana Jones fühlt. Das Grundproblem ist allerdings die spielerische Abwechslung. Vieles besteht aus Laufen, Springen, Gegnern und der Suche nach dem richtigen Weg oder bestimmten Gegenständen. Dazu kommen gelegentlich ungenaue Kollisionen und Abstürze, die schneller passieren, als Indy vermutlich "Das gehört in ein Museum!" sagen könnte. Besonders schwer hat es das Spiel natürlich im Vergleich mit dem gleichzeitig erschienenen Graphic Adventure, das den Charakter und die Atmosphäre von Indiana Jones wesentlich besser einfängt. Als C64-Actionspiel ist The Last Crusade dennoch kein Totalausfall, sondern ein durchschnittlicher, stellenweise durchaus unterhaltsamer Film-Plattformer.`,
+        trivia: [
+                  "1989 erschienen zwei völlig unterschiedliche Spiele zu Indiana Jones and the Last Crusade: dieses Action Game von Tiertex und das berühmte Graphic Adventure von Lucasfilm Games.",
+                  "Die C64-Version wurde von Alex Fish und Mark Tait programmiert; Mark Tait war außerdem für die Musik verantwortlich und setzte John Williams' Raiders March für den SID-Chip um.",
+                  "Die C64-Fassung erschien sowohl auf Diskette als auch auf Kassette; 1991 folgte außerdem eine günstigere Kixx-Wiederveröffentlichung."
+        ],
+        worthPlaying: `Indiana Jones and the Last Crusade: The Action Game ist heute vor allem für C64- und Indiana-Jones-Fans interessant. Spielerisch erreicht es weder die Qualität des Graphic Adventures noch die besten Plattformspiele des Systems, bietet aber eine durchaus charmante 8-Bit-Interpretation des Films. Besonders die detaillierte Indy-Figur, die Peitsche und Mark Taits Umsetzung des bekannten Indiana-Jones-Themas sorgen für Wiedererkennungswert. Als Teil der Geschichte der zahlreichen und sehr unterschiedlichen Indiana-Jones-Spiele ist die C64-Version auf jeden Fall einen Blick wert.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1146/indiana-jones-and-the-last-crusade-the-action-game/",
+        wikipedia: "https://en.wikipedia.org/wiki/Indiana_Jones_and_the_Last_Crusade:_The_Action_Game",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 1, 
+        stars: 1, 
+        dimensions: { 
+ 
+        width: 184, 
+        height: 234, 
+        depth: 40
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 159,
+        folder: "der_clou",
+        scanBy: "Magisthan",
+        page: "der_clou.html",
+        featured: false,
+        title: "Der Clou!",
+        system: "Amiga",
+        year: 1994,        
+        publisher: "Max Design GesMBH",
+        developer: "Neo Software Produktions GmbH",
+        genre: ["Adventure", "Strategie", "Einbruchssimulation"],
+        description: "Der Clou! ist eine ungewöhnliche Mischung aus Adventure und Einbruchssimulation, in der der Spieler im London der 1950er Jahre Einbrecherteams zusammenstellt und detailliert geplante Coups durchführt.",
+        history: `Der Clou! erschien 1994 und wurde vom österreichischen Entwickler Neo Software produziert. Die Geschichte spielt im London der 1950er Jahre und beginnt mit Matt Stuvysunt, einem jungen Ganoven, der mit gerade einmal 50 Pfund in der Tasche am Bahnhof Victoria ankommt. Von dort aus soll er sich in der Londoner Unterwelt einen Namen machen. Statt einfach mit gezogener Waffe in die nächste Bank zu marschieren, verlangt Der Clou! jedoch eine erstaunlich sorgfältige Vorbereitung. Zunächst erkundet Matt die Stadt, knüpft Kontakte zu anderen Kriminellen und sucht nach geeigneten Zielen. Für einen Einbruch müssen anschließend Komplizen, Fahrzeuge und Werkzeuge ausgewählt werden. Das Herzstück des Spiels ist die Planungsphase. Auf einer dreidimensionalen Darstellung des Tatorts legt der Spieler die Bewegungen und Aktionen aller Beteiligten Schritt für Schritt fest. Türen werden geöffnet, Schlösser geknackt, Wachen umgangen und Fluchtwege geplant. Anschließend kann der gesamte Coup ausgeführt und beobachtet werden. Dabei zeigt sich sehr schnell, ob der vermeintlich perfekte Plan tatsächlich funktioniert oder ob irgendwo eine Kleinigkeit übersehen wurde. Diese Verbindung aus klassischem Adventure, strategischer Vorbereitung und detaillierter Einbruchssimulation machte Der Clou! zu einem ausgesprochen ungewöhnlichen Vertreter der Amiga-Ära.`,
+        review: `Der Clou! beantwortet eine Frage, die Computerspiele erstaunlich selten stellen: Was passiert eigentlich zwischen "Wir überfallen die Bank" und "Los geht's"? Die Antwort lautet offenbar: sehr viel Planung. Genau darin liegt die große Stärke des Spiels. Einen Einbruch vorzubereiten, die richtigen Leute auszuwählen und anschließend jeden einzelnen Schritt festzulegen, entwickelt schnell einen erstaunlichen Reiz. Besonders schön ist der Moment, wenn der fertige Plan schließlich abgespielt wird und man feststellen darf, ob man ein kriminelles Genie ist oder lediglich sehr sorgfältig geplant hat, wie vier Personen gleichzeitig verhaftet werden. Die Adventure-Passagen sind vergleichsweise gemütlich und die Benutzeroberfläche benötigt etwas Eingewöhnung, doch das eigentliche Planungssystem ist bis heute ungewöhnlich. Dazu kommen der charmante 1950er-Jahre-Schauplatz und eine angenehm humorvolle Präsentation. Der Clou! ist kein Spiel für hektische Actionfans, aber für Spieler, die gerne tüfteln und komplexe Abläufe planen, gehört es zu den interessantesten deutschsprachigen Amiga-Spielen seiner Zeit.`,
+        trivia: [
+                  "Der Clou! wurde vom österreichischen Studio Neo Software entwickelt und international unter dem Titel The Clue! veröffentlicht.",
+                  "Das zentrale Planungssystem erlaubt es, die Aktionen der beteiligten Einbrecher Schritt für Schritt festzulegen und den fertigen Coup anschließend automatisch ausführen zu lassen.",
+                  "2001 veröffentlichte das Entwicklerteam unter dem Namen Massive Development den Nachfolger Der Clou! 2 beziehungsweise The Sting!"
+        ],
+        worthPlaying: `Der Clou! ist heute noch spielenswert, weil sein detailliertes Planungssystem selbst Jahrzehnte später ungewöhnlich wirkt. Statt Reflexe zu verlangen, belohnt das Spiel Beobachtung, Vorbereitung und die Fähigkeit, einen komplizierten Ablauf vorauszuplanen. Die Mischung aus Adventure, Gangsterfilm und Strategiespiel besitzt einen ganz eigenen Charakter. Wer ungewöhnliche Amiga-Spiele oder deutschsprachige Produktionen der 1990er Jahre mag, sollte Der Clou! unbedingt ausprobieren.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/4435/the-clue/",
+        wikipedia: "https://de.wikipedia.org/wiki/Der_Clou!",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 4, 
+        stars: 4, 
+        dimensions: { 
+ 
+        width: 182, 
+        height: 232, 
+        depth: 42 
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 160,
+        folder: "innocent_until_caught",
+        scanBy: "Magisthan",
+        page: "innocent_until_caught.html",
+        featured: false,
+        title: "Innocent Until Caught",
+        system: "Amiga",
+        year: 1994,        
+        publisher: "Psygnosis Limited",
+        developer: "Divide By Zero, Ltd.",
+        genre: ["Point-and-Click-Adventure", "Science-Fiction", "Comedy"],
+        description: "Innocent Until Caught ist ein humorvolles Science-Fiction-Adventure, in dem der intergalaktische Dieb Jack T. Ladd innerhalb von 28 Tagen seine Steuerschulden begleichen muss, bevor die Steuerbehörde zu drastischeren Mitteln greift.",
+        history: `Innocent Until Caught wurde von Divide By Zero entwickelt und erschien zunächst 1993 für DOS; die Amiga-Version folgte 1994 über Psygnosis. Im Mittelpunkt steht Jack T. Ladd, ein intergalaktischer Dieb, der ausgerechnet an einer Institution scheitert, gegen die selbst der abgebrühteste Weltraumganove wenig ausrichten kann: dem Finanzamt. Die interstellare Steuerbehörde IRDS stellt fest, dass Jack erhebliche Steuerschulden besitzt und gibt ihm 28 Tage Zeit, das benötigte Geld aufzutreiben. Andernfalls droht ihm eine ausgesprochen endgültige Form der Steuervollstreckung. Gestrandet auf dem heruntergekommenen Planeten Tayte beginnt Jack deshalb, nach Möglichkeiten zu suchen, möglichst schnell an Geld zu kommen. Spielerisch handelt es sich um ein klassisches Point-and-Click-Adventure mit einem iconbasierten Interface. Eine kleine Anzeige kann unter anderem als Karte oder Vergrößerungsglas verwendet werden, um Ausgänge beziehungsweise schwer erkennbare Gegenstände zu finden. Das Inventar funktioniert als frei organisierbare Fläche, auf der Gegenstände abgelegt werden können. Die Geschichte führt Jack durch zahlreiche Schauplätze und entwickelt sich schließlich weit über seine ursprünglichen Steuerschulden hinaus. Die Amiga-Konvertierung wurde von Glyn Kendall programmiert, während Alexander Martin und Aziz Rashid die Grafiken umsetzten. Die Originalgrafiken stammen unter anderem von Jack Wilkes, Stuart Hughes, Gary Welch und Tahir Rashid.`,
+        review: `Innocent Until Caught beginnt mit einer wunderbaren Idee: Ein galaktischer Meisterdieb wird nicht von der Polizei, Kopfgeldjägern oder außerirdischen Monstern in die Knie gezwungen, sondern vom Finanzamt. Leider ist das eigentliche Adventure nicht immer so clever wie seine Ausgangssituation. Die Science-Fiction-Welt ist abwechslungsreich gestaltet, Jack T. Ladd besitzt reichlich Persönlichkeit und einige der Grafiken können sich auch auf dem Amiga wirklich sehen lassen. Gleichzeitig macht einem die Bedienung das Leben unnötig schwer. Der Mauszeiger reagiert teilweise träge, manche Aktionen verlangen ziemlich präzises Klicken und einige Rätsel bewegen sich irgendwo zwischen ungewöhnlich und "Wie sollte man darauf kommen?". Dazu kommt ein Humor, der bewusst frech und erwachsen sein möchte, aber nicht jeder Pointe gelingt die Landung. Trotzdem besitzt Innocent Until Caught einen eigenen Charakter. Es ist kein LucasArts-Klassiker und auch kein perfektes Point-and-Click-Adventure, aber seine schräge Zukunftswelt, Jack T. Ladd und einige interessante Interface-Ideen sorgen dafür, dass das Spiel deutlich mehr Persönlichkeit besitzt als viele durchschnittliche Adventures seiner Zeit.`,
+        trivia: [
+                  "Die DOS-Version erschien bereits 1993; die technisch angepasste Amiga-Fassung folgte 1994 und wurde auf zehn Disketten ausgeliefert.",
+                  "Das Interface besitzt ein kleines Zusatzfenster, das unter anderem als Übersichtskarte oder als Vergrößerungsglas zum Auffinden kleiner Gegenstände verwendet werden kann.",
+                  "1995 erschien mit Guilty ein Nachfolger, der auch unter Bezeichnungen wie Innocent Until Caught 2 beziehungsweise Innocent 2: Into the Corrupticon bekannt ist."
+        ],
+        worthPlaying: `Innocent Until Caught lohnt sich heute besonders für Freunde klassischer Science-Fiction-Adventures, die bereits die großen LucasArts- und Sierra-Titel kennen und etwas Abseitigeres ausprobieren möchten. Bedienung und manche Rätsel sind deutlich gealtert, doch die ungewöhnliche Zukunftswelt, der respektlose Humor und einige interessante Interface-Ideen verleihen dem Spiel einen eigenen Charakter. Für Psygnosis- und Amiga-Sammler ist es außerdem ein interessantes Beispiel dafür, dass der Publisher nicht ausschließlich für Actionspiele und spektakuläre Grafik bekannt war.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/2086/innocent-until-caught/",
+        wikipedia: "",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 3, 
+        stars: 3, 
+        dimensions: { 
+ 
+        width: 187, 
+        height: 237, 
+        depth: 42 
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 161,
+        folder: "isnogud",
+        scanBy: "Magisthan",
+        page: "isnogud.html",
+        featured: false,
+        title: "Isnogud",
+        system: "C64",
+        year: 1988,        
+        publisher: "Infogrames",
+        developer: "Infogrames",
+        genre: ["Action-Adventure", "Adventure", "Comic-Adaption"],
+        description: "Isnogud ist ein humorvolles Action-Adventure nach den Comics von René Goscinny und Jean Tabary, in dem der intrigante Großwesir endlich Kalif anstelle des Kalifen werden möchte.",
+        history: `Isnogud erschien 1988 für den Commodore 64 und basiert auf der bekannten französischen Comicserie von René Goscinny und Jean Tabary. Im Mittelpunkt steht Großwesir Isnogud, dessen gesamtes Streben nur einem einzigen Ziel dient: Er möchte endlich "Kalif anstelle des Kalifen" werden. Dazu bewegt sich Isnogud durch den Palast und seine Umgebung, spricht mit verschiedenen Figuren und sammelt Gegenstände, die ihm bei seinen zahlreichen Intrigen helfen sollen. Das Spiel verbindet Adventure-Elemente mit einer grafischen Darstellung aus seitlicher Perspektive. Besonders wichtig ist die Interaktion mit den zahlreichen Charakteren. Isnogud kann Gegenstände überreichen, Personen bedrohen oder ihnen schmeicheln und natürlich einen seiner berüchtigten Wutanfälle bekommen. Je nachdem, mit wem er spricht und welche Aktion gewählt wird, reagieren die Figuren unterschiedlich. Die richtige Kombination aus Gegenständen und Aktionen bringt Isnogud seinem Ziel näher, während falsche Entscheidungen schnell im Kerker oder noch unangenehmeren Situationen enden können. Idee und Szenario stammen von Philippe Agripnidis, an der Programmierung arbeiteten unter anderem Philippe Nottoli, Tuan Do Cao und Philippe Campion. Josiane Girard war für die Grafik verantwortlich, während Charles Callet die Musik komponierte.`,
+        review: `Eigentlich müsste Isnogud das perfekte Adventure sein. Schließlich besteht sein gesamtes Leben aus einem einzigen großen Rätsel: Wie werde ich endlich Kalif anstelle des Kalifen? Leider macht ihm dabei nicht nur der gutmütige Harun al Pussah einen Strich durch die Rechnung, sondern auf dem C64 auch die technische Umsetzung. Die Grundidee ist durchaus charmant. Figuren können bedroht, umschmeichelt oder mit Gegenständen bestochen werden und natürlich darf auch ein gepflegter Wutanfall nicht fehlen. Das passt hervorragend zur Comicvorlage. Problematisch sind dagegen die grobe Grafik, die teilweise schwer nachvollziehbaren Abläufe und eine Bedienung, die ohne Anleitung schnell für Ratlosigkeit sorgt. Besonders schade ist, dass die C64-Version gegenüber den grafisch stärkeren Fassungen deutlich abfällt. Fans der Comics können trotzdem ihren Spaß daran haben, die verschiedenen Figuren und Situationen wiederzuerkennen. Als Spiel bleibt Isnogud auf dem C64 allerdings eher eine interessante Kuriosität als ein großer Adventure-Klassiker. Vielleicht hätte der Großwesir weniger Zeit mit Intrigen und etwas mehr Zeit mit der Qualitätskontrolle verbringen sollen.`,
+        trivia: [
+                  "Isnogud basiert auf der Comicfigur von René Goscinny und Jean Tabary; Jean Tabary wird in den Spielcredits außerdem ausdrücklich für das Cover-Artwork genannt.",
+                  "Isnogud besitzt vier grundlegende Möglichkeiten zur Interaktion mit anderen Figuren: Gegenstände überreichen, schmeicheln, bedrohen und einen Wutanfall bekommen.",
+                  "Die C64-Version erschien 1988 und trägt auf ihrem Titelbildschirm kurioserweise den Titel The Grand Vizir."
+        ],
+        worthPlaying: `Isnogud ist heute vor allem für Fans der Comicvorlage und Sammler ungewöhnlicher C64-Adventures interessant. Die spielerische Umsetzung ist sperrig und technisch nicht besonders gelungen, doch die Idee, Isnoguds ewige Versuche selbst zu steuern, endlich Kalif anstelle des Kalifen zu werden, besitzt ihren ganz eigenen Charme. Als frühe Computerspieladaption eines europäischen Comics ist das Spiel außerdem ein interessantes Stück C64-Geschichte.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/8571/iznogoud/",
+        wikipedia: "",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "Jean Tabary" 
+    ], 
+        rating: 1, 
+        stars: 1, 
+        dimensions: { 
+ 
+        width: 182, 
+        height: 235, 
+        depth: 37 
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 162,
+        folder: "john_madden_football",
+        scanBy: "Magisthan",
+        page: "john_madden_football.html",
+        featured: false,
+        title: "John Madden Football",
+        system: "Amiga",
+        year: 1992,        
+        publisher: "Electronic Arts, Inc.",
+        developer: "Electronic Arts, Inc.",
+        genre: ["Sport", "American Football", "Simulation"],
+        description: "John Madden Football ist die 1992 erschienene Amiga-Umsetzung des erfolgreichen EA-Footballspiels und verbindet taktische Spielzugwahl mit direkt gesteuerter American-Football-Action.",
+        history: `John Madden Football erschien 1992 für den Amiga und basiert auf der erfolgreichen Mega-Drive-Version von Electronic Arts aus dem Jahr 1990. Namensgeber und wichtiger Berater war der frühere NFL-Trainer und spätere Fernsehkommentator John Madden, dessen Vorstellungen von einem taktisch anspruchsvollen Footballspiel die Serie entscheidend prägten. Statt American Football lediglich als schnelle Action umzusetzen, verbindet das Spiel die direkte Kontrolle der Spieler mit einer umfangreichen Auswahl verschiedener offensiver und defensiver Spielzüge. Vor jedem Spielzug wird zunächst die passende Taktik gewählt, anschließend übernimmt der Spieler selbst die Kontrolle auf dem Feld. Dabei können Pässe geworfen, Läufe gestartet, Tackles ausgeführt und der Quarterback unter Druck gesetzt werden. Unterschiedliche Wetter- und Platzbedingungen wie Regen, Schnee oder Schlamm beeinflussen zusätzlich das Spielgeschehen. Neben einzelnen Partien können auch Playoffs gespielt werden, und besonders der Zwei-Spieler-Modus entwickelte sich zu einer der großen Stärken des Spiels. Die Amiga-Version wurde von Gary Roberts programmiert. Carl Cropley und Martin Calvert waren für die Grafik verantwortlich, Jason A. S. Whitely übernahm Musik und Soundeffekte. Obwohl bereits neuere Madden-Versionen für Konsolen existierten, basiert die Amiga-Fassung auf dem ursprünglichen Mega-Drive-Konzept und nicht auf John Madden Football '92.`,
+        review: `John Madden Football gehört zu den Sportspielen, bei denen man zunächst ungefähr so viel versteht wie ein europäischer Tourist, der zufällig in einer NFL-Umkleidekabine gelandet ist. Shotgun, Nickel Defense, Audible und plötzlich liegen elf sehr große Männer übereinander. Hat man diese erste Hürde überwunden, zeigt das Spiel allerdings eindrucksvoll, warum Madden zu einer der langlebigsten Sportspielserien überhaupt wurde. Die Mischung aus taktischer Spielzugwahl und direkter Action funktioniert hervorragend. Man entscheidet nicht nur, was die Mannschaft tun soll, sondern muss den Plan anschließend auch selbst auf dem Spielfeld umsetzen. Besonders gegen einen menschlichen Gegner entwickelt sich daraus ein spannendes taktisches Duell, weil beide Seiten versuchen, die Absichten des anderen zu lesen. Die Amiga-Umsetzung präsentiert das Geschehen übersichtlich, bietet ordentliche Animationen und für die damalige Zeit beeindruckende Soundeffekte. Wer mit American Football überhaupt nichts anfangen kann, wird allerdings einige Zeit benötigen, um die zahlreichen Spielzüge und Regeln zu verstehen. Wer diese Einstiegshürde überwindet, bekommt eines der stärksten American-Football-Spiele für den Amiga.`,
+        trivia: [
+                  "Die Amiga-Version von John Madden Football erschien 1992, basiert aber auf dem 1990 veröffentlichten Mega-Drive-Spiel und darf nicht mit John Madden Football '92 verwechselt werden.",
+                  "Gary Roberts programmierte die Amiga-Version; Carl Cropley und Martin Calvert zeichneten die Grafik und Jason A. S. Whitely war für Musik und Soundeffekte verantwortlich.",
+                  "Neben Spielen gegen den Computer unterstützt John Madden Football einen Zwei-Spieler-Modus sowie unterschiedliche Wetter- und Platzbedingungen wie Regen, Schnee und Schlamm."
+        ],
+        worthPlaying: `John Madden Football ist auch heute noch interessant, weil bereits hier das grundlegende Erfolgsrezept der späteren Madden-Serie deutlich zu erkennen ist: taktische Spielzugwahl kombiniert mit direkt steuerbarer Sportaction. Besonders zu zweit funktioniert das Spiel hervorragend, weil nicht nur Reaktionsvermögen, sondern auch das Lesen und Täuschen des Gegners eine wichtige Rolle spielt. Wer American Football mag oder die Ursprünge einer der erfolgreichsten Sportspielserien kennenlernen möchte, findet auf dem Amiga eine überraschend starke Umsetzung.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/11466/john-madden-football/",
+        wikipedia: "",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "David John Rowe" 
+    ], 
+        rating: 4, 
+        stars: 4, 
+        dimensions: { 
+ 
+        width: 172, 
+        height: 222, 
+        depth: 33 
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 163,
+        folder: "jumpman",
+        scanBy: "Magisthan",
+        page: "jumpman.html",
+        featured: false,
+        title: "Jumpman",
+        system: "C64",
+        year: 1983,        
+        publisher: "Epyx, Inc.",
+        developer: "Randy Glover",
+        genre: ["Platformer", "Single-Screen", "Action"],
+        description: "Jumpman ist ein früher Single-Screen-Platformer von Randy Glover, in dem der Spieler auf 30 abwechslungsreichen Bildschirmen Bomben entschärft und dabei Leitern, Seile, Plattformen, Gegner und zahlreiche levelabhängige Hindernisse überwinden muss.",
+        history: `Jumpman erschien 1983 und gehört zu den frühen Klassikern des Commodore 64. Entwickelt wurde das Spiel von Randy Glover, der für Spielidee, Programmierung und Musik verantwortlich war. Die Aufgabe klingt zunächst denkbar einfach: Auf jedem Bildschirm müssen sämtliche Bomben eingesammelt beziehungsweise entschärft werden. Zwischen Jumpman und seinem Ziel liegen allerdings Plattformen, Leitern, Seile, gefährliche Stürze und verschiedene Gegner. Die große Besonderheit liegt in der Gestaltung der insgesamt 30 Level. Statt wenige Bildschirme ständig zu wiederholen, besitzt nahezu jeder Abschnitt eine eigene Idee oder besondere Spielmechanik. Mal verändern sich Plattformen, mal bewegen sich Teile des Levels und an anderer Stelle sorgen Gegner oder Geschosse für zusätzliche Schwierigkeiten. Der Spieler kann verschiedene Spielmodi wählen und entweder bestimmte Levelgruppen spielen oder im Grand Loop versuchen, alle 30 Abschnitte nacheinander zu bewältigen. Zusätzlich lässt sich die Spielgeschwindigkeit verändern. Jumpman entstand in einer Zeit, in der viele Plattformspiele noch stark vom Erfolg Donkey Kongs geprägt waren, entwickelte das Prinzip aber mit seiner großen Anzahl unterschiedlicher Level deutlich weiter. Der Erfolg führte noch 1983 zu Jumpman Junior, das das Grundprinzip mit neuen Bildschirmen fortsetzte.`,
+        review: `Jumpman ist ein hervorragendes Beispiel dafür, wie wenig Grafik man eigentlich braucht, wenn das Spiel dahinter funktioniert. Optisch besteht ein Level hauptsächlich aus Linien, Leitern, Seilen und einer Spielfigur, die ungefähr so aussieht, als hätte jemand ein Strichmännchen zum Leistungssport gezwungen. Trotzdem funktioniert das Spiel erstaunlich gut. Der Grund dafür sind die 30 Level, die sich nicht einfach nur durch eine andere Anordnung der Plattformen unterscheiden. Immer wieder tauchen neue Ideen auf und zwingen den Spieler dazu, seine bisherige Vorgehensweise zu ändern. Dazu kommt eine präzise und angenehm einfache Steuerung. Besonders interessant ist die einstellbare Spielgeschwindigkeit, mit der sich Jumpman von gemütlich bis beinahe absurd hektisch spielen lässt. Einige zufällige Geschosse und spätere Hindernisse können durchaus frustrieren, und technisch wirkt das Spiel aus heutiger Sicht natürlich extrem schlicht. Spielerisch gehört Jumpman aber zu den Titeln, bei denen man schnell versteht, warum Menschen 1983 stundenlang vor einem C64 sitzen konnten. Noch ein Versuch. Noch eine Bombe. Und plötzlich ist wieder eine Stunde verschwunden.`,
+        trivia: [
+                  "Randy Glover war bei der C64-Version gleichzeitig für Game Design, Programmierung und Musik verantwortlich.",
+                  "Jumpman bietet 30 unterschiedliche Level und mehrere Spielvarianten, darunter den Grand Loop, bei dem alle Level nacheinander gespielt werden.",
+                  "Die Spielgeschwindigkeit lässt sich verändern, wodurch derselbe Level je nach Einstellung erheblich leichter oder geradezu hektisch werden kann."
+        ],
+        worthPlaying: `Jumpman ist trotz seiner sehr einfachen Grafik auch heute noch erstaunlich gut spielbar. Die Stärke liegt in der großen Vielfalt der 30 Level, der unkomplizierten Steuerung und dem ausgezeichneten Spielfluss. Wer frühe C64-Spiele kennenlernen möchte oder wissen will, wie Entwickler bereits 1983 mit sehr begrenzten technischen Mitteln abwechslungsreiche Plattformspiele gestalten konnten, sollte Jumpman unbedingt ausprobieren.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/143/jumpman/",
+        wikipedia: "https://en.wikipedia.org/wiki/Jumpman_(video_game)",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 5, 
+        stars: 5, 
+        dimensions: { 
+ 
+        width: 147, 
+        height: 224, 
+        depth: 28 
+ 
+    }, 
+        screenshots: [ 
+ 
+    { 
+        file: "screen1.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen2.webp", 
+        caption: "" 
+    }, 
+ 
+    { 
+        file: "screen3.webp", 
+        caption: "" 
+    } 
+ 
+] 
+         
+    },
+
+    {
+        id: 164,
+        folder: "karate_champ",
+        scanBy: "Magisthan",
+        page: "karate_champ.html",
+        featured: false,
+        title: "Karate Champ",
+        system: "C64",
+        year: 1985,        
+        publisher: "Data East USA, Inc.",
+        developer: "Technos Japan Corp. / Berkeley Softworks",
+        genre: ["Fighting", "Martial Arts", "Arcade"],
+        description: "Karate Champ ist die C64-Umsetzung des einflussreichen Arcade-Karatespiels von Technos Japan und Data East, bei dem nicht Energiebalken, sondern sauber ausgeführte Treffer und die Wertung eines Kampfrichters über Sieg oder Niederlage entscheiden.",
+        history: `Karate Champ erschien ursprünglich 1984 als Arcade-Spiel und gehört zu den frühen Vertretern des später enorm erfolgreichen Fighting-Game-Genres. Das Original wurde von Technos Japan entwickelt und von Data East veröffentlicht. 1985 folgte unter anderem eine Umsetzung für den Commodore 64, die von Berkeley Softworks adaptiert und in den USA von Data East USA veröffentlicht wurde. Anders als spätere Prügelspiele setzt Karate Champ nicht auf Lebensenergiebalken oder wilde Schlagkombinationen. Stattdessen orientiert sich das Spiel an einem Karate-Wettkampf. Zwei Kämpfer treten gegeneinander an und versuchen, mit korrekt ausgeführten Techniken einen Treffer zu erzielen. Ein Kampfrichter bewertet erfolgreiche Aktionen mit einem halben oder ganzen Punkt. Die Arcade-Version war vor allem für ihre ungewöhnliche Steuerung mit zwei Joysticks bekannt. Für die Heimcomputer musste dieses System angepasst werden, wobei auf dem C64 zahlreiche unterschiedliche Schläge, Tritte und Bewegungen über Kombinationen aus Joystickrichtung und Feuerknopf ausgelöst werden. Neben dem Einzelspiel bietet die C64-Fassung einen simultanen Zwei-Spieler-Modus. Zwischen den eigentlichen Kämpfen gibt es außerdem Bonusprüfungen, bei denen der Spieler beispielsweise heranfliegende Gegenstände abwehren muss. Auch wenn die C64-Konvertierung spielerisch nicht die Qualität einiger späterer Karate-Spiele auf dem System erreichte, bleibt Karate Champ historisch interessant, weil das Arcade-Original viele Grundlagen des Eins-gegen-eins-Kampfspiels vorwegnahm.`,
+        review: `Karate Champ ist eines dieser Spiele, bei denen man die historische Bedeutung und den tatsächlichen Spielspaß der C64-Version besser getrennt betrachten sollte. Das Grundprinzip ist nämlich ausgesprochen interessant. Statt so lange auf den Gegner einzuschlagen, bis dessen Energiebalken verschwunden ist, geht es um einzelne sauber platzierte Techniken und die anschließende Bewertung durch den Kampfrichter. Dadurch fühlen sich die Kämpfe tatsächlich ein wenig wie ein sportlicher Wettkampf an. Auf dem C64 verliert das Ganze allerdings einiges von seiner Eleganz. Die Steuerung benötigt viel Eingewöhnung, die Kämpfer bewegen sich vergleichsweise behäbig und nicht jeder Treffer wirkt so eindeutig, wie man es sich wünschen würde. Besonders problematisch ist, dass der C64 mit The Way of the Exploding Fist und wenig später International Karate wesentlich flüssigere Alternativen bekam. Zu zweit kann Karate Champ trotzdem unterhaltsam sein, denn dann kämpfen immerhin beide Spieler mit denselben Eigenheiten der Steuerung. Historisch ist das Spiel zweifellos ein Champion. Auf dem C64 steht es allerdings eher auf dem Siegerpodest der Videospielgeschichte als auf dem des Spielkomforts.`,
+        trivia: [
+                  "Das ursprüngliche Arcade-Spiel Karate Champ erschien 1984 und wurde von Technos Japan entwickelt; die C64-Konvertierung folgte 1985 durch Berkeley Softworks.",
+                  "Statt eines klassischen Energiebalkens bewertet ein Kampfrichter erfolgreiche Techniken mit einem halben oder einem ganzen Punkt.",
+                  "Karate Champ gehört zu den frühen einflussreichen Eins-gegen-eins-Kampfspielen und war später sogar Gegenstand eines Rechtsstreits zwischen Data East und dem Entwickler von International Karate."
+        ],
+        worthPlaying: `Karate Champ ist heute vor allem aus historischer Sicht interessant. Das Spiel zeigt, wie sich das Fighting-Game-Genre entwickelte, bevor Street Fighter II und ähnliche Titel dessen Regeln endgültig festlegten. Die C64-Version ist technisch und spielerisch deutlich gealtert und wird von späteren Karate-Spielen auf dem System übertroffen. Wer sich jedoch für die Geschichte des Genres oder frühe Arcade-Konvertierungen interessiert, sollte zumindest einmal selbst vor dem Kampfrichter antreten.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/7793/karate-champ/",
+        wikipedia: "https://en.wikipedia.org/wiki/Karate_Champ",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 1, 
+        stars: 1, 
+        dimensions: { 
+        width: 150, 
+        height: 226, 
+        depth: 27 
+    }, 
+        screenshots: [ 
+    { file: "screen1.webp", caption: "" }, 
+    { file: "screen2.webp", caption: "" }, 
+    { file: "screen3.webp", caption: "" } 
+] 
+    },
+
+    {
+        id: 165,
+        folder: "kings_quest_2",
+        scanBy: "Magisthan",
+        page: "kings_quest_2.html",
+        featured: false,
+        title: "King's Quest II: Romancing the Throne",
+        system: "Amiga",
+        year: 1987,        
+        publisher: "Sierra On-Line, Inc.",
+        developer: "Sierra On-Line, Inc.",
+        genre: ["Graphic Adventure", "Fantasy", "Text Parser"],
+        description: "King's Quest II: Romancing the Throne ist das zweite Abenteuer von König Graham. Diesmal reist er in das märchenhafte Land Kolyma, um drei magische Schlüssel zu finden und die in einem Quarzturm gefangene Valanice zu befreien.",
+        history: `King's Quest II: Romancing the Throne ist der zweite Teil der von Roberta Williams geschaffenen King's-Quest-Reihe. Das Spiel erschien ursprünglich 1985, während Sierra die Amiga-Version im April 1987 veröffentlichte. Nach den Ereignissen des ersten Teils sitzt Graham inzwischen auf dem Thron von Daventry. König zu sein ist allerdings nur halb so schön, wenn der zweite Platz auf dem Thron dauerhaft leer bleibt. Der magische Spiegel zeigt Graham schließlich die junge Valanice, die von der Hexe Hagatha in einem Quarzturm im fernen Land Kolyma gefangen gehalten wird. Graham macht sich deshalb auf die Reise, um sie zu befreien und seine zukünftige Königin zu finden. Dafür muss er drei magische Schlüssel aufspüren, mit denen sich eine geheimnisvolle Tür öffnen lässt. Wie sein Vorgänger verwendet King's Quest II Sierras AGI-System. Graham wird direkt durch die einzelnen Bildschirme bewegt, während Aktionen über einen Textparser eingegeben werden. Die Spielwelt von Kolyma ist größer und stärker bevölkert als Daventry im ersten Teil und steckt voller Figuren und Motive aus Märchen und Legenden. Unter anderem begegnet Graham Rotkäppchen, einer Meerjungfrau, König Neptun und sogar Dracula. Viele Rätsel lassen sich auf unterschiedliche Weise lösen, wobei friedliche oder besonders clevere Lösungen häufig mehr Punkte einbringen. Entworfen und geschrieben wurde das Spiel von Roberta Williams. Chris Iden und Jeff Stephenson waren für die Programmierung verantwortlich, Doug MacNeill und Mark Crowe arbeiteten an der Grafik und Al Lowe komponierte die Musik.`,
+        review: `King's Quest II macht im Grunde genau das, was man 1985 von einer Fortsetzung erwartet hätte: mehr Welt, mehr Figuren, mehr Märchen und mehr Möglichkeiten, Graham auf möglichst kreative Weise ins Jenseits zu befördern. Die Amiga-Version ändert am grundlegenden AGI-Spielprinzip wenig. Man bewegt Graham durch die Landschaft und tippt Befehle wie "look", "take" oder "give" über die Tastatur ein. Das wirkt heute natürlich antiquiert, besitzt aber seinen ganz eigenen Charme. Kolyma ist abwechslungsreicher als die Welt des ersten King's Quest und die Mischung aus klassischen Märchen, Fantasy und überraschenden Gastauftritten funktioniert hervorragend. Gleichzeitig trägt das Spiel noch einige typische Sierra-Eigenheiten seiner Zeit mit sich herum. Wer einen wichtigen Gegenstand übersieht oder zur falschen Zeit die falsche Entscheidung trifft, kann sich durchaus in eine Sackgasse manövrieren. Speichern sollte deshalb ungefähr so selbstverständlich werden wie Atmen. Technisch nutzt die Amiga-Version die Möglichkeiten des Rechners kaum aus und sieht deutlich älter aus als viele andere Amiga-Spiele von 1987. Spielerisch bleibt King's Quest II aber ein wichtiger Schritt in der Entwicklung der Sierra-Adventures und ein charmantes Stück Adventure-Geschichte.`,
+        trivia: [
+                  "Die ursprünglichen Versionen von King's Quest II erschienen bereits 1985; die Amiga-Fassung folgte im April 1987 als Version 2.2.",
+                  "Roberta Williams entwarf und schrieb das Spiel; Chris Iden und Jeff Stephenson programmierten die Amiga-Version, während Doug MacNeill und Mark Crowe für die Grafik verantwortlich waren.",
+                  "Viele Rätsel besitzen alternative Lösungen. Gewaltfreie oder besonders clevere Lösungswege bringen dabei häufig mehr Punkte als die einfachere Methode."
+        ],
+        worthPlaying: `King's Quest II ist heute vor allem für Adventure-Fans und Spieler interessant, die die Entwicklung der klassischen Sierra-Spiele nachvollziehen möchten. Textparser, AGI-Grafik und einige gnadenlose Sackgassen wirken inzwischen deutlich antiquiert, doch die offene Märchenwelt, die vielen bekannten Figuren und die unterschiedlichen Lösungswege besitzen noch immer Charme. Wer sich auf die Mechaniken der frühen Sierra-Adventures einlassen kann, bekommt ein wichtiges Kapitel der Adventure-Geschichte.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/123/kings-quest-ii-romancing-the-throne/",
+        wikipedia: "https://en.wikipedia.org/wiki/King%27s_Quest_II",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 3, 
+        stars: 3, 
+        dimensions: { 
+        width: 180,
+        height: 227, 
+        depth: 28 
+    }, 
+        screenshots: [ 
+    { file: "screen1.webp", caption: "" }, 
+    { file: "screen2.webp", caption: "" }, 
+    { file: "screen3.webp", caption: "" } 
+] 
+    },
+
+    {
+        id: 166,
+        folder: "kings_quest_4",
+        scanBy: "Magisthan",
+        page: "kings_quest_4.html",
+        featured: false,
+        title: "King's Quest IV: The Perils of Rosella",
+        system: "Amiga",
+        year: 1990,        
+        publisher: "Sierra On-Line, Inc.",
+        developer: "Sierra On-Line, Inc.",
+        genre: ["Graphic Adventure", "Fantasy", "Text Parser"],
+        description: "King's Quest IV: The Perils of Rosella ist der vierte Teil der berühmten Sierra-Reihe und schickt erstmals Prinzessin Rosella als Hauptfigur auf eine märchenhafte Reise in das Land Tamir, um ihren todkranken Vater König Graham zu retten.",
+        history: `King's Quest IV: The Perils of Rosella wurde von Roberta Williams entworfen und erschien ursprünglich 1988. Die Amiga-Version folgte 1990. Die Geschichte setzt unmittelbar nach King's Quest III ein. König Graham erleidet einen schweren Herzanfall und seine Tochter Rosella erfährt durch den magischen Spiegel von der guten Fee Genesta, dass eine seltene magische Frucht das Leben ihres Vaters retten könnte. Rosella wird daraufhin in das ferne Land Tamir gebracht. Dort wartet allerdings gleich ein zweites Problem auf sie: Genestas magischer Talisman wurde von der bösen Königin Lolotte gestohlen. Rosella muss deshalb nicht nur die Frucht finden, sondern auch Genesta helfen. King's Quest IV verwendet Sierras damals neue SCI-Technologie und bietet gegenüber den älteren AGI-Adventures deutlich detailliertere Grafiken und eine umfangreichere musikalische Begleitung. Gesteuert wird Rosella direkt durch die einzelnen Szenen, während Aktionen weiterhin über einen Textparser eingegeben werden. Tamir verbindet zahlreiche Motive aus Märchen und Mythologie. Rosella begegnet unter anderem Einhörnern, Feen, Ogern, Zwergen und anderen fantastischen Gestalten. Einige Ereignisse sind außerdem zeitabhängig und bestimmte Bereiche verändern sich zwischen Tag und Nacht. Roberta Williams schrieb und entwarf das Spiel. Chane Fullmer und Ken Koch werden als Programmierer geführt, William D. Skirvin arbeitete an der Grafik und William Goldstein komponierte die ursprüngliche Musik. Für die Amiga-Konvertierung waren unter anderem John Rettig, Robert W. Lindsley und Steve Coallier verantwortlich.`,
+        review: `King's Quest IV ist der Moment, in dem die Serie optisch einen gewaltigen Schritt nach vorne macht. Verglichen mit den frühen AGI-Abenteuern wirken die Schauplätze von Tamir erheblich detaillierter und farbenfroher. Gleichzeitig bleibt Sierra seiner Philosophie treu: Eine hübsche Märchenwelt bedeutet keineswegs, dass sie freundlich mit dem Spieler umgeht. Wer einen wichtigen Gegenstand übersieht, zur falschen Zeit am falschen Ort steht oder Rosella einen Schritt zu weit in Richtung Abgrund bewegt, lernt schnell wieder die wichtigste Grundregel klassischer Sierra-Adventures: speichern, speichern und sicherheitshalber noch einmal speichern. Spielerisch funktioniert die Mischung aus Erkundung, Textparser und Märchenrätseln trotzdem sehr gut. Besonders gelungen ist Rosella als Hauptfigur, weil sich das Abenteuer dadurch deutlich anders anfühlt als die vorherigen Reisen von Graham und Alexander. Die Amiga-Version leidet gelegentlich unter langsamen Animationen und langen Diskettenzugriffen, bietet aber eine atmosphärische Umsetzung. King's Quest IV ist deshalb nicht nur ein wichtiger Teil der Serie, sondern auch eines der interessantesten Sierra-Adventures der Übergangszeit zwischen den frühen Parser-Spielen und den späteren Point-and-Click-Titeln.`,
+        trivia: [
+                  "King's Quest IV war das erste Spiel der Hauptserie mit Prinzessin Rosella als alleiniger spielbarer Hauptfigur.",
+                  "Die Amiga-Version erschien 1990 auf vier Disketten und benötigt laut zeitgenössischen Angaben einen Amiga mit einem Megabyte Arbeitsspeicher.",
+                  "Das Spiel entstand während Sierras Übergang von AGI zu SCI und bot dadurch deutlich detailliertere Grafik und umfangreichere Musik als die vorherigen King's-Quest-Teile."
+        ],
+        worthPlaying: `King's Quest IV ist auch heute noch besonders für Adventure-Fans interessant. Der Textparser und einige typische Sierra-Sackgassen verlangen Geduld, doch die märchenhafte Welt von Tamir, Rosella als Hauptfigur und die deutlich aufwendigere Präsentation markieren einen wichtigen Entwicklungsschritt der Serie. Wer die Geschichte der Sierra-Adventures nachvollziehen möchte, sollte The Perils of Rosella nicht überspringen.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/129/kings-quest-iv-the-perils-of-rosella/",
+        wikipedia: "https://en.wikipedia.org/wiki/King%27s_Quest_IV",
+        gog: "https://www.gog.com/de/game/kings_quest_4_5_6",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 4, 
+        stars: 4, 
+        dimensions: { 
+        width: 180, 
+        height: 227, 
+        depth: 28 
+    }, 
+        screenshots: [ 
+    { file: "screen1.webp", caption: "" }, 
+    { file: "screen2.webp", caption: "" }, 
+    { file: "screen3.webp", caption: "" } 
+] 
+    },
+
+    {
+        id: 167,
+        folder: "kings_quest_5",
+        scanBy: "Magisthan",
+        page: "kings_quest_5.html",
+        featured: false,
+        title: "King's Quest V: Absence Makes the Heart Go Yonder!",
+        system: "Amiga",
+        year: 1991,        
+        publisher: "Sierra On-Line, Inc.",
+        developer: "Sierra On-Line, Inc.",
+        genre: ["Point-and-Click-Adventure", "Fantasy", "Graphic Adventure"],
+        description: "King's Quest V: Absence Makes the Heart Go Yonder! schickt König Graham auf eine märchenhafte Reise durch Serenia, um seine Familie und das gesamte Schloss von Daventry aus den Händen des bösen Zauberers Mordack zu retten.",
+        history: `King's Quest V: Absence Makes the Heart Go Yonder! wurde von Roberta Williams entworfen und erschien ursprünglich 1990 für DOS. Die Amiga-Version folgte 1991. König Graham kehrt zu Beginn des Spiels von einem Spaziergang zurück und stellt fest, dass nicht nur seine Familie verschwunden ist, sondern gleich das komplette Schloss von Daventry. Verantwortlich dafür ist der mächtige Zauberer Mordack, der sich an Prinz Alexander rächen möchte. Hilfe erhält Graham von dem sprechenden Eulenzauberer Cedric und dessen Meister Crispin. Gemeinsam gelangen sie in das Land Serenia, von wo aus Graham seine lange Reise zu Mordacks Schloss beginnt. King's Quest V markierte für die Serie einen erheblichen technischen und spielerischen Wandel. Sierra verwendete eine weiterentwickelte Version des SCI-Systems und ersetzte den bisherigen Textparser durch eine grafische Benutzeroberfläche mit verschiedenen Mauszeiger-Icons. Gegenstände können direkt aus dem Inventar ausgewählt und auf Objekte in der Spielwelt angewendet werden. Die Reise führt Graham durch Wälder, Wüsten, verschneite Berge, dunkle Höhlen und schließlich zu Mordacks Schloss. Dabei begegnet er zahlreichen märchenhaften Figuren und Kreaturen. Wie bei klassischen Sierra-Adventures können allerdings scheinbar unbedeutende Entscheidungen wesentlich später Konsequenzen haben. Wer einen wichtigen Gegenstand nicht mitnimmt oder falsch verwendet, kann sich dadurch in eine Sackgasse manövrieren. Die Amiga-Version wurde von Sierra umgesetzt und bringt die farbenfrohe VGA-orientierte Präsentation des Originals auf den Commodore-Rechner, wobei die Hardware gegenüber der PC-Fassung einige technische Einschränkungen mit sich bringt.`,
+        review: `King's Quest V ist gleichzeitig ein großer Schritt nach vorne und ein wunderbares Beispiel dafür, warum Sierra-Spieler irgendwann angefangen haben, ungefähr alle drei Minuten einen neuen Spielstand anzulegen. Die neue Point-and-Click-Bedienung macht den Einstieg wesentlich angenehmer. Statt "open door", "look tree" oder "please understand what I mean" in einen Parser zu tippen, klickt man einfach auf das gewünschte Objekt. Auch die märchenhafte Präsentation gehört zu den schönsten der damaligen King's-Quest-Reihe. Serenia steckt voller liebevoll gestalteter Orte und Figuren. Weniger elegant sind einige Rätsel. Ein scheinbar unwichtiger Gegenstand kann Stunden später plötzlich unverzichtbar sein, obwohl man längst keine Möglichkeit mehr besitzt, ihn zu holen. Dazu kommt Cedric, Grahams gefiederter Begleiter, der zwar ständig vor Gefahren warnt, aber erstaunlich selten eine wirklich brauchbare Lösung anzubieten hat. Die Amiga-Version leidet zusätzlich unter vielen Diskettenwechseln und einer gegenüber dem PC reduzierten Darstellung. Trotzdem bleibt King's Quest V ein faszinierendes Adventure. Die Welt ist abwechslungsreich, die Geschichte besitzt klassischen Märchencharme und der Wechsel zur Maussteuerung bereitete den Weg für die späteren Sierra-Adventures.`,
+        trivia: [
+                  "King's Quest V war der erste Teil der Hauptserie, der den traditionellen Textparser zugunsten einer grafischen Point-and-Click-Bedienung aufgab.",
+                  "Roberta Williams entwarf King's Quest V und setzte damit die von ihr geschaffene King's-Quest-Reihe fort.",
+                  "Der sprechende Eulenbegleiter Cedric entwickelte sich zu einer der bekanntesten und zugleich umstrittensten Figuren der gesamten King's-Quest-Serie."
+        ],
+        worthPlaying: `King's Quest V ist heute vor allem wegen seines großen Entwicklungsschritts innerhalb der Serie interessant. Die Point-and-Click-Bedienung ist wesentlich zugänglicher als der Textparser der Vorgänger und die märchenhafte Welt besitzt noch immer viel Charme. Einige Sackgassen und Rätsel wirken aus heutiger Sicht unnötig streng, und die Amiga-Version verlangt aufgrund der vielen Disketten einiges an Geduld. Wer klassische Sierra-Adventures mag oder die Entwicklung von King's Quest nachvollziehen möchte, sollte Grahams Reise nach Serenia dennoch gespielt haben.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/130/kings-quest-v-absence-makes-the-heart-go-yonder/",
+        wikipedia: "https://en.wikipedia.org/wiki/King%27s_Quest_V",
+        gog: "https://www.gog.com/game/kings_quest_4_5_6",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 4, 
+        stars: 4, 
+        dimensions: { 
+        width: 182, 
+        height: 225, 
+        depth: 57 
+    }, 
+        screenshots: [ 
+    { file: "screen1.webp", caption: "" }, 
+    { file: "screen2.webp", caption: "" }, 
+    { file: "screen3.webp", caption: "" } 
+] 
+    },
+
+    {
+        id: 168,
+        folder: "kings_quest_6",
+        scanBy: "Magisthan",
+        page: "kings_quest_6.html",
+        featured: false,
+        title: "King's Quest VI: Heir Today, Gone Tomorrow",
+        system: "Amiga",
+        year: 1994,        
+        publisher: "Sierra On-Line, Inc.",
+        developer: "Sierra On-Line, Inc. / Revolution Software Ltd.",
+        genre: ["Point-and-Click-Adventure", "Fantasy", "Graphic Adventure"],
+        description: "King's Quest VI: Heir Today, Gone Tomorrow schickt Prinz Alexander in das geheimnisvolle Land der Grünen Inseln, wo er Prinzessin Cassima wiederfinden und eine Verschwörung um den Großwesir Abdul Alhazred aufdecken muss.",
+        history: `King's Quest VI: Heir Today, Gone Tomorrow wurde von Roberta Williams und Jane Jensen geschrieben und entworfen und erschien ursprünglich 1992 für DOS. Die offizielle Amiga-Version folgte 1994. Im Mittelpunkt steht diesmal Prinz Alexander, der seit seiner Begegnung mit Prinzessin Cassima in King's Quest V nicht mehr aufhören kann, an sie zu denken. Als ihm der magische Spiegel einen Hinweis auf ihren Aufenthaltsort gibt, macht er sich auf den Weg in das Land der Grünen Inseln. Seine Reise endet zunächst wenig königlich mit einem Schiffbruch. Alexander erreicht die Isle of the Crown und erfährt, dass Cassima nach dem Tod ihrer Eltern praktisch unter der Kontrolle des Großwesirs Abdul Alhazred steht. Um sie zu befreien, muss Alexander die verschiedenen Inseln des Reiches erkunden, deren Bewohner kennenlernen und zahlreiche Rätsel lösen. King's Quest VI bietet dabei eine deutlich offenere Struktur als viele seiner Vorgänger. Mehrere Aufgaben können auf unterschiedliche Weise gelöst werden und im späteren Spielverlauf existieren sogar verschiedene Wege zum Finale. Für die Amiga-Version ging Sierra einen ungewöhnlichen Weg. Die Portierung wurde an das britische Studio Revolution Software vergeben, das später vor allem durch Beneath a Steel Sky und Broken Sword bekannt wurde. Revolution verwendete nicht Sierras SCI-System, sondern setzte das Spiel mit der eigenen Virtual-Theatre-Technologie neu um. Die Amiga-Fassung erschien auf zehn Disketten und verwendet 32 Farben. Eine ursprünglich angekündigte 256-Farben-Version wurde nicht veröffentlicht. Trotz einiger Anpassungen und Kürzungen blieb die umfangreiche Geschichte erhalten und machte King's Quest VI zu einem der letzten großen klassischen Sierra-Adventures für den Amiga.`,
+        review: `King's Quest VI zeigt ziemlich eindrucksvoll, was passiert, wenn Sierra seine Märchenwelt mit Jane Jensens Talent für Geschichten und Revolution Softwares Amiga-Erfahrung kombiniert. Alexander bekommt eine deutlich komplexere Geschichte als seine königlichen Vorgänger, und das Land der Grünen Inseln gehört zu den abwechslungsreichsten Schauplätzen der gesamten Serie. Besonders angenehm ist, dass das Spiel dem Spieler häufiger verschiedene Lösungswege anbietet. Natürlich bleibt es ein King's Quest, weshalb man trotzdem nicht völlig sorglos jeden Gegenstand wegwerfen oder jede offensichtliche Gefahr ausprobieren sollte. Der Tod wartet weiterhin gerne hinter der nächsten Ecke. Die Amiga-Version ist technisch ein interessanter Sonderfall. Revolution Software hat das Spiel mit seiner eigenen Virtual-Theatre-Technik umgesetzt und erreicht damit eine wesentlich angenehmere Performance als einige frühere Sierra-Portierungen. Dafür mussten Amiga-Spieler mit 32 Farben, zehn Disketten und einigen gegenüber der PC-Fassung gekürzten oder veränderten Elementen leben. Besonders ohne Festplatte entwickelt sich der Diskettenstapel schnell zum eigentlichen Endgegner. Trotzdem funktioniert die Umsetzung erstaunlich gut. Die Geschichte, die vielen skurrilen Figuren und die unterschiedlichen Wege durch das Abenteuer machen King's Quest VI auch auf dem Amiga zu einem der stärksten Teile der Serie.`,
+        trivia: [
+                  "Die Amiga-Version wurde von Revolution Software portiert und verwendet deren Virtual-Theatre-Technologie anstelle von Sierras SCI-Engine.",
+                  "Auf der Amiga-Verpackung wurden eine 32- und eine 256-Farben-Version angekündigt, veröffentlicht wurde letztlich jedoch nur die 32-Farben-Fassung.",
+                  "King's Quest VI wurde gemeinsam von Roberta Williams und Jane Jensen geschrieben und entworfen; Jane Jensen verfasste außerdem Text und Dialoge."
+        ],
+        worthPlaying: `King's Quest VI gehört auch auf dem Amiga zu den empfehlenswertesten klassischen Sierra-Adventures. Die Geschichte ist umfangreicher und reifer als bei vielen Vorgängern, die verschiedenen Inseln bieten viel Abwechslung und mehrere Rätsel beziehungsweise Abschnitte lassen unterschiedliche Lösungswege zu. Die Amiga-Version muss technisch einige Kompromisse eingehen und zehn Disketten verlangen ohne Festplatte einiges an Geduld. Revolution Softwares ungewöhnliche Portierung macht sie aber gleichzeitig zu einer besonders interessanten Version für Amiga-Fans und Adventure-Sammler.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/131/kings-quest-vi-heir-today-gone-tomorrow/",
+        wikipedia: "https://en.wikipedia.org/wiki/King%27s_Quest_VI",
+        gog: "https://www.gog.com/game/kings_quest_4_5_6",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 4, 
+        stars: 4, 
+        dimensions: { 
+        width: 188, 
+        height: 235, 
+        depth: 42 
+    }, 
+        screenshots: [ 
+    { file: "screen1.webp", caption: "" }, 
+    { file: "screen2.webp", caption: "" }, 
+    { file: "screen3.webp", caption: "" } 
+] 
+    },
+
+    {
+        id: 169,
+        folder: "legends_of_might_and_magic",
+        scanBy: "Magisthan",
+        hasInside: true,
+        package: {
+            type: "hinged-box",
+            hingeSide: "left",
+            spineTexture: "right"
+        },
+        page: "legends_of_might_and_magic.html",
+        featured: false,
+        title: "Legends of Might and Magic",
+        system: "PC",
+        year: 2001,        
+        publisher: "The 3DO Company",
+        developer: "New World Computing, Inc.",
+        genre: ["Action", "First-Person-Shooter", "Fantasy", "Multiplayer"],
+        description: "Legends of Might and Magic ist ein actionorientierter Ableger der bekannten Fantasy-Reihe, der das Might-and-Magic-Universum mit klassenbasierten Ego-Shooter-Gefechten und einem starken Schwerpunkt auf Multiplayer-Partien verbindet.",
+        history: `Legends of Might and Magic erschien 2001 für Windows und wurde von New World Computing entwickelt sowie von The 3DO Company veröffentlicht. Statt die bekannte Reihe als klassisches Rollenspiel fortzusetzen, schlug das Entwicklerteam einen vollkommen anderen Weg ein. Legends of Might and Magic ist ein klassenbasierter First-Person-Actiontitel, dessen Konzept deutlich stärker an damalige Multiplayer-Spiele wie Counter-Strike erinnert als an Might and Magic VI oder VII. Die Spieler treten auf der Seite von Gut oder Böse gegeneinander an und wählen dabei unterschiedliche Charakterklassen mit eigenen Waffen und Fähigkeiten. Zu den Klassen gehören unter anderem Crusader, Archer, Sorceress, Druid, Heretic, Warrior und andere typische Fantasy-Archetypen. Statt Sturmgewehren, Pistolen und Granaten kommen Schwerter, Bögen, Armbrüste und verschiedene magische Angriffe zum Einsatz. Die Mehrspielerpartien bieten unterschiedliche Missionsziele. Teams müssen beispielsweise eine Prinzessin retten, ein Artefakt stehlen oder andere objektbasierte Aufgaben erfüllen. Zusätzlich existiert ein Einzelspielermodus mit computergesteuerten Gegnern, der allerdings deutlich weniger umfangreich ausfällt als die Multiplayer-Komponente. Technisch basiert Legends of Might and Magic auf einer stark modifizierten LithTech-Engine. Ursprünglich war das Projekt als stärker storyorientiertes Action-Rollenspiel geplant, wurde während der Entwicklung jedoch umfassend verändert und auf ein missionsbasiertes Multiplayer-Konzept ausgerichtet. Diese ungewöhnliche Entwicklungsgeschichte erklärt, warum sich das fertige Spiel so deutlich von den übrigen Might-and-Magic-Titeln seiner Zeit unterscheidet.`,
+        review: `Legends of Might and Magic beantwortet eine Frage, die vermutlich nicht besonders viele Might-and-Magic-Fans gestellt hatten: Was wäre, wenn wir aus dem Rollenspiel einfach einen Fantasy-Counter-Strike machen? Auf dem Papier klingt das gar nicht schlecht. Ritter, Bogenschützen und Zauberer kämpfen in Teams gegeneinander, statt Sturmgewehren fliegen Pfeile und Feuerbälle durch die Gegend und klassische Bombenmissionen werden durch Fantasy-Aufgaben ersetzt. Das Problem liegt weniger in der Idee als in ihrer Umsetzung. Die Klassen fühlen sich nicht immer ausgewogen an, die künstliche Intelligenz des Einzelspielermodus ist überschaubar und viele Karten erreichen weder spielerisch noch technisch die Qualität der damaligen Konkurrenz. Besonders Fans der Hauptserie dürften außerdem überrascht gewesen sein, wie wenig klassisches Might and Magic tatsächlich im Spiel steckt. Trotzdem besitzt Legends of Might and Magic einen gewissen Kuriositätenbonus. Zu mehreren Spielern können die unterschiedlichen Klassen und Missionsziele durchaus Spaß machen. Als großes neues Kapitel der Reihe funktioniert es jedoch kaum. Als merkwürdiger Seitenarm der Might-and-Magic-Geschichte ist es dagegen heute fast interessanter als zum Zeitpunkt seiner Veröffentlichung.`,
+        trivia: [
+                  "Legends of Might and Magic war ursprünglich als stärker storyorientiertes Action-Rollenspiel geplant, bevor das Konzept während der Entwicklung auf klassenbasierte Multiplayer-Gefechte umgestellt wurde.",
+                  "Das Spiel verwendet eine modifizierte Version der LithTech-Engine und kombiniert klassische First-Person-Shooter-Mechaniken mit Waffen und Charakterklassen aus einem Fantasy-Szenario.",
+                  "Spieler treten auf den Seiten von Gut und Böse gegeneinander an und erfüllen objektbasierte Missionen, die konzeptionell an damalige Team-Shooter erinnern."
+        ],
+        worthPlaying: `Legends of Might and Magic ist heute weniger wegen seiner spielerischen Qualität als wegen seiner ungewöhnlichen Stellung innerhalb der Serie interessant. Wer ein klassisches Might-and-Magic-Rollenspiel erwartet, wird hier kaum fündig. Als Experiment, Fantasy-Rollenspielmotive mit dem damals populären Konzept klassenbasierter Multiplayer-Shooter zu verbinden, ist das Spiel jedoch ein faszinierendes Zeitdokument. Für Sammler und Fans der Reihe gehört es deshalb zu den kurioseren Kapiteln der Might-and-Magic-Geschichte.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/4140/legends-of-might-and-magic/",
+        wikipedia: "https://en.wikipedia.org/wiki/Legends_of_Might_and_Magic",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 1, 
+        stars: 1, 
+        dimensions: { 
+        width: 200, 
+        height: 242, 
+        depth: 42 
+    }, 
+        screenshots: [ 
+    { file: "screen1.webp", caption: "" }, 
+    { file: "screen2.webp", caption: "" }, 
+    { file: "screen3.webp", caption: "" } 
+] 
+    },
+
+    {
+        id: 170,
+        folder: "221b_baker_street",
+        scanBy: "Magisthan",
+        hasInside: true,
+        package: {
+            type: "hinged-box",
+            hingeSide: "left",
+            spineTexture: "right"
+        },
+        page: "221b_baker_street.html",
+        featured: false,
+        title: "221B Baker Street",
+        system: "C64",
+        year: 1986,        
+        publisher: "Datasoft, Inc.",
+        developer: "IntelliCreations, Inc.",
+        genre: ["Detektivspiel", "Brettspiel", "Adventure", "Mystery"],
+        description: "221B Baker Street ist eine Computerumsetzung des gleichnamigen Detektiv-Brettspiels, in der bis zu vier Spieler als Sherlock Holmes und seine Mitstreiter durch London reisen, Hinweise sammeln und knifflige Kriminalfälle lösen.",
+        history: `221B Baker Street erschien 1986 für den Commodore 64 und basiert auf dem gleichnamigen Brettspiel von Jay Moriarty. Die Computerfassung wurde von IntelliCreations entwickelt und von Datasoft veröffentlicht. Statt ein klassisches Text- oder Grafikadventure zu präsentieren, übernimmt das Spiel viele Elemente seiner Brettspielvorlage. Zu Beginn wird einer von mehreren Kriminalfällen ausgewählt. Jeder Fall beginnt mit einer kurzen Beschreibung des Verbrechens und einer Liste möglicher Verdächtiger beziehungsweise wichtiger Informationen. Anschließend bewegen sich die Spieler durch eine stilisierte Darstellung Londons und besuchen unterschiedliche Orte, um Hinweise zu sammeln. Dazu gehören unter anderem Scotland Yard, verschiedene Geschäfte, Hotels und natürlich Sherlock Holmes' berühmte Adresse in der Baker Street. Die Hinweise bestehen häufig aus kurzen Texten, Wortspielen, Codes oder kleinen Rätseln. Nicht jede Information ist unmittelbar verständlich und mehrere Hinweise müssen miteinander kombiniert werden, um Täter, Motiv oder andere Details des Falls zu ermitteln. Sobald ein Spieler glaubt, die Lösung gefunden zu haben, muss er zur Baker Street zurückkehren und dort seine Antwort abgeben. Bis zu vier Spieler können teilnehmen, wobei die Computerfassung damit einen ungewöhnlich geselligen Ansatz für ein Detektivspiel verfolgt. Die Vorlage orientiert sich zwar deutlich an Sherlock Holmes und dem viktorianischen London, erzählt jedoch eigene Fälle und ist keine direkte Umsetzung einer Geschichte von Arthur Conan Doyle.`,
+        review: `221B Baker Street ist im Grunde die digitale Antwort auf die Frage, was passiert, wenn Sherlock Holmes einen C64 bekommt und anschließend beschließt, seinen nächsten Fall als Brettspielabend zu organisieren. Wer ein klassisches Sierra- oder Infocom-Adventure erwartet, dürfte deshalb zunächst überrascht sein. Hier geht es weniger darum, eine große Spielwelt zu erkunden, sondern darum, Hinweise zu sammeln, Texte aufmerksam zu lesen und daraus die richtige Schlussfolgerung zu ziehen. Genau darin liegt aber auch der Reiz. Besonders mit mehreren Spielern entwickelt sich schnell ein kleiner Wettbewerb darum, wer zuerst versteht, was ein kryptischer Hinweis eigentlich bedeuten soll. Technisch ist das Spiel ausgesprochen schlicht. London besteht aus einfachen Bildschirmen, Animationen spielen kaum eine Rolle und die Präsentation könnte kaum funktionaler sein. Dafür steht das eigentliche Rätseln im Mittelpunkt. Einige Hinweise sind allerdings sehr stark von Wortspielen und englischen Begriffen abhängig, was das Spiel ohne gute Englischkenntnisse erheblich schwieriger macht. Wer Detektivgeschichten, Brettspiele und gemeinsames Knobeln mag, findet hier dennoch einen ungewöhnlichen C64-Titel, der sich deutlich von den typischen Actionspielen seiner Zeit unterscheidet.`,
+        trivia: [
+                  "221B Baker Street basiert auf dem gleichnamigen Brettspiel von Jay Moriarty und überträgt dessen Detektiv- und Hinweismechanik auf den Heimcomputer.",
+                  "Bis zu vier Spieler können an einer Partie teilnehmen und gegeneinander versuchen, den jeweiligen Kriminalfall zuerst vollständig zu lösen.",
+                  "Die Fälle verwenden Sherlock Holmes und das viktorianische London als Rahmen, erzählen aber eigene Kriminalgeschichten und sind keine direkten Umsetzungen der Erzählungen von Arthur Conan Doyle."
+        ],
+        worthPlaying: `221B Baker Street ist heute besonders für Spieler interessant, die gerne gemeinsam rätseln und ungewöhnliche Brettspielumsetzungen ausprobieren. Die Präsentation ist sehr einfach und gute Englischkenntnisse sind für viele Hinweise praktisch unverzichtbar. Dafür besitzt das Spiel ein Konzept, das auf dem C64 eher selten anzutreffen ist. Vor allem mit mehreren Spielern kann die Jagd nach Hinweisen und der Wettlauf zurück zur Baker Street noch immer überraschend unterhaltsam sein.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/2137/221b-baker-st/",
+        wikipedia: "",
+        gog: "",     
+        },  
+        boxArtists: [ 
+        "" 
+    ], 
+        rating: 3, 
+        stars: 3, 
+        dimensions: { 
+        width: 150, 
+        height: 225, 
+        depth: 30 
+    }, 
+        screenshots: [ 
+    { file: "screen1.webp", caption: "" }, 
+    { file: "screen2.webp", caption: "" }, 
+    { file: "screen3.webp", caption: "" } 
+] 
+    },
+
+    {
+        id: 171,
+        folder: "leisure_suit_larry_5",
+        scanBy: "Magisthan",
+        page: "leisure_suit_larry_5.html",
+        featured: false,
+        title: "Leisure Suit Larry 5: Passionate Patti Does a Little Undercover Work",
+        system: "Amiga",
+        year: 1992,
+        publisher: "Sierra On-Line, Inc.",
+        developer: "Sierra On-Line, Inc.",
+        genre: ["Point-and-Click-Adventure", "Comedy", "Adult"],
+        description: "Leisure Suit Larry 5: Passionate Patti Does a Little Undercover Work setzt Sierras Comedy-Adventure-Reihe fort und lässt den Spieler abwechselnd Larry Laffer und Passionate Patti steuern. Während Larry für eine zwielichtige Fernsehproduktion unterwegs ist, arbeitet Patti undercover an einem Fall rund um die Musikindustrie.",
+        history: `Leisure Suit Larry 5: Passionate Patti Does a Little Undercover Work erschien ursprünglich 1991 für DOS; die Amiga-Version folgte 1992. Einen vierten Teil sucht man übrigens vergeblich: Sierra und Al Lowe machten aus dem fehlenden Leisure Suit Larry 4 selbst einen Running Gag und ließen Larry zu Beginn des fünften Spiels schlicht vergessen haben, was während dieses angeblichen Abenteuers passiert sein soll. Larry arbeitet inzwischen für PornProdCorp und erhält von seinem Chef Julius Biggs den Auftrag, durch die USA zu reisen und Kandidatinnen für die Fernsehsendung America's Sexiest Home Videos zu filmen. Parallel dazu übernimmt der Spieler Passionate Patti. Sie arbeitet für das FBI und untersucht unter dem Decknamen eines Musikjournalisten Machenschaften in der Musikbranche. Im Verlauf des Spiels wechseln sich die beiden Handlungsstränge immer wieder ab. Spielerisch markiert Larry 5 einen deutlichen Wandel innerhalb der Serie. Die Texteingabe der älteren Teile wurde durch Sierras grafische Point-and-Click-Oberfläche ersetzt. Aktionen wie Anschauen, Benutzen, Sprechen oder Gehen werden über Symbole ausgewählt. Gleichzeitig wurde das Adventure deutlich verzeihender. Viele der berüchtigten Sierra-Todesfallen und Sackgassen der Vorgänger wurden reduziert oder vollständig entfernt. Die Amiga-Fassung erschien 1992 auf acht Disketten und verwendet wie die PC-Version Sierras SCI1-System. Technisch musste sie jedoch gegenüber der VGA-Fassung deutliche grafische Kompromisse eingehen und wurde insbesondere auf einem Standard-Amiga durch lange Ladezeiten und häufige Diskettenwechsel ausgebremst.`,
+        review: `Leisure Suit Larry 5 ist ein interessantes Beispiel dafür, dass ein gutes Adventure und eine gute Amiga-Umsetzung zwei völlig verschiedene Dinge sein können. Inhaltlich funktioniert Larrys fünftes beziehungsweise eigentlich viertes Abenteuer erstaunlich gut. Al Lowes Humor ist weiterhin Geschmackssache und bewegt sich zuverlässig irgendwo zwischen Wortspiel, schlüpfriger Anspielung und bewusst schlechtem Herrenwitz. Gerade dadurch besitzt das Spiel aber einen unverwechselbaren Charakter. Der Wechsel zwischen Larry und Patti sorgt zudem für Abwechslung und die neue Point-and-Click-Steuerung macht das Abenteuer wesentlich zugänglicher als die älteren Teile. Auch das Rätseldesign ist deutlich freundlicher geworden. Wer bei früheren Sierra-Spielen regelmäßig mehrere Stunden Spielzeit verlor, weil irgendwo drei Disketten zuvor ein Gegenstand vergessen wurde, darf diesmal wesentlich entspannter reisen. Das eigentliche Problem ist die Amiga-Version. Die Umsetzung der ursprünglich farbenfrohen VGA-Grafik wirkt stark reduziert, und auf einem normalen Amiga 500 läuft das Spiel teilweise ausgesprochen gemächlich. Dazu kommen acht Disketten und entsprechend häufige Wechsel. Von Festplatte und auf einem schnelleren Amiga verbessert sich das Erlebnis deutlich. Unter der technisch mäßigen Portierung steckt trotzdem ein unterhaltsames und angenehm spielbares Larry-Abenteuer. Wer gerade die Amiga-Version sammelt, bekommt damit außerdem ein schönes Beispiel dafür, wie unterschiedlich Sierra und LucasArts Anfang der Neunziger mit Commodores Rechner umgingen.`,
+        trivia: [
+                  "Ein Leisure Suit Larry 4 wurde nie veröffentlicht. Das fehlende Spiel wurde stattdessen zum Running Gag der Serie und Larry kann sich zu Beginn von Teil 5 nicht daran erinnern, was darin angeblich passiert sein soll.",
+                  "Die Amiga-Version erschien 1992 auf acht Disketten und wurde mit Sierras SCI1-System umgesetzt.",
+                  "Larry und Passionate Patti werden abwechselnd gespielt. Damit setzt Sierra die bereits in Leisure Suit Larry III eingeführte zweite spielbare Hauptfigur fort."
+        ],
+        worthPlaying: `Leisure Suit Larry 5 ist spielerisch eines der zugänglicheren frühen Larry-Abenteuer. Die Point-and-Click-Steuerung funktioniert gut, die Rätsel sind meist nachvollziehbarer als in den Vorgängern und der Wechsel zwischen Larry und Patti sorgt für Abwechslung. Die Amiga-Portierung ist allerdings technisch klar schwächer als die PC-Version. Wer speziell auf dem Amiga spielen möchte, sollte nach Möglichkeit eine Festplatte und einen schnelleren Rechner verwenden. Für Sierra- und Amiga-Sammler ist die Version trotzdem interessant – nicht zuletzt als typisches Beispiel für Sierras eher zweckmäßige Amiga-Umsetzungen dieser Zeit.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/408/leisure-suit-larry-5-passionate-patti-does-a-little-undercover-w/",
+        wikipedia: "https://en.wikipedia.org/wiki/Leisure_Suit_Larry_5:_Passionate_Patti_Does_a_Little_Undercover_Work",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 180,
+        height: 225,
+        depth: 57
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 172,
+        folder: "leisure_suit_larry_triple_pack",
+        scanBy: "Magisthan",
+        page: "leisure_suit_larry_triple_pack.html",
+        featured: false,
+        title: "Leisure Suit Larry I, II & III: Triple Pack",
+        system: "Amiga",
+        year: 1992,
+        publisher: "Sierra On-Line, Inc.",
+        developer: "Sierra On-Line, Inc.",
+        genre: ["Compilation", "Graphic Adventure", "Comedy", "Adult"],
+        description: "Leisure Suit Larry I, II & III: Triple Pack vereint die ersten drei Abenteuer von Larry Laffer in einer großen Amiga-Sammlung und zeichnet damit seine Entwicklung vom erfolglosen Junggesellen in Lost Wages bis zu den zunehmend absurden Abenteuern der späteren Teile nach.",
+        history: `Leisure Suit Larry I, II & III: Triple Pack bündelt die ersten drei Spiele von Al Lowes Comedy-Adventure-Reihe in einer gemeinsamen Veröffentlichung. Die Compilation erschien auch für den Amiga und enthält Leisure Suit Larry in the Land of the Lounge Lizards, Leisure Suit Larry Goes Looking for Love (In Several Wrong Places) und Leisure Suit Larry III: Passionate Patti in Pursuit of the Pulsating Pectorals. Der erste Teil führt Larry Laffer nach Lost Wages. Larry ist fast vierzig, trägt einen weißen Freizeitanzug und hat beschlossen, seine bisher eher erfolglose Karriere als Frauenheld endlich in Schwung zu bringen. Das Spiel basiert lose auf Sierras frühem Softporn Adventure und verbindet klassische Adventure-Rätsel mit Al Lowes Wortwitz und zahlreichen Anspielungen. In Larry II wird die Geschichte deutlich größer. Eine Reihe von Missverständnissen führt Larry aus Los Angeles über ein Kreuzfahrtschiff bis auf die tropische Insel Nontoonyt, wobei aus dem Bar-Abenteuer des Vorgängers beinahe eine Parodie auf Spionage- und Abenteuerfilme wird. Larry III setzt die Handlung auf Nontoonyt fort. Larrys Beziehung zu Kalalau zerbricht und er stürzt sich erneut ins Liebesleben. Im späteren Verlauf übernimmt der Spieler erstmals Passionate Patti, die sich auf die Suche nach Larry macht. Damit erweitert Sierra nicht nur die Perspektive der Reihe, sondern bereitet gleichzeitig Pattis spätere Rolle in Leisure Suit Larry 5 vor. Spielerisch repräsentieren die drei Titel die klassische Sierra-Adventure-Ära mit grafischen Szenen, Tastatureingaben und zahlreichen Möglichkeiten, durch falsche Entscheidungen spektakulär zu scheitern. Als Sammlung dokumentiert das Triple Pack damit sehr schön die schnelle Entwicklung der Larry-Serie zwischen 1987 und 1989.`,
+        review: `Das Triple Pack ist im Grunde eine kleine Zeitreise durch die frühen Jahre von Leisure Suit Larry. Der erste Teil ist noch relativ kompakt und konzentriert sich fast vollständig auf Larrys chaotische Nacht in Lost Wages. Teil zwei wird plötzlich zum ausgewachsenen Abenteuer mit Kreuzfahrtschiff, Geheimagenten und tropischer Insel, während Teil drei die Serie spielerisch und erzählerisch noch einmal erweitert. Gerade direkt hintereinander gespielt wird deutlich, wie schnell Sierra seine Adventures Ende der Achtziger weiterentwickelte. Gleichzeitig bekommt man allerdings auch die volle Ladung klassisches Sierra-Design. Gegenstände können übersehen werden, falsche Entscheidungen führen gerne in Sackgassen und Larry stirbt mit einer Begeisterung, die man bei einem Adventurehelden eigentlich nicht erwarten würde. Dazu kommt die Texteingabe, die heute deutlich mehr Geduld verlangt als die spätere Point-and-Click-Steuerung. Wer damit leben kann, bekommt jedoch drei Adventures mit sehr unterschiedlichem Charakter. Besonders interessant ist die Sammlung heute als geschlossenes Paket der frühen Larry-Ära. Man erlebt nicht nur Larrys Entwicklung, sondern auch Al Lowes zunehmende Bereitschaft, die eigene Serie und Adventure-Konventionen auf die Schippe zu nehmen.`,
+        trivia: [
+                  "Das Triple Pack enthält Leisure Suit Larry I, Leisure Suit Larry II und Leisure Suit Larry III in einer gemeinsamen Sierra-Veröffentlichung.",
+                  "Die dokumentierte Amiga-Ausgabe enthält Larry I in der 32-Farben-Fassung sowie die Amiga-Versionen von Larry II und Larry III.",
+                  "Zwischen Larry III und Larry 5 erschien kein reguläres Leisure Suit Larry 4. Das fehlende Spiel wurde später zu einem der bekanntesten Running Gags der Serie."
+        ],
+        worthPlaying: `Für Fans klassischer Sierra-Adventures ist das Triple Pack eine besonders schöne Möglichkeit, die frühen Leisure-Suit-Larry-Spiele als zusammengehörige Reihe zu erleben. Die Parser-Steuerung, Sackgassen und zahlreichen Todesmöglichkeiten wirken heute teilweise antiquiert, gehören aber untrennbar zum damaligen Sierra-Stil. Als Amiga-Sammlerstück ist die Box zusätzlich interessant, weil sie drei komplette Adventures samt umfangreichem physischem Material in einer Veröffentlichung zusammenfasst.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/5958/leisure-suit-larry-triple-pack/",
+        wikipedia: "https://en.wikipedia.org/wiki/Leisure_Suit_Larry",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 180,
+        height: 227,
+        depth: 60
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 173,
+        folder: "leisure_suit_larry_2",
+        scanBy: "Magisthan",
+        page: "leisure_suit_larry_2.html",
+        featured: false,
+        title: "Leisure Suit Larry Goes Looking for Love (In Several Wrong Places)",
+        system: "Amiga",
+        year: 1989,
+        publisher: "Sierra On-Line, Inc.",
+        developer: "Sierra On-Line, Inc.",
+        genre: ["Graphic Adventure", "Comedy", "Adult"],
+        description: "Leisure Suit Larry Goes Looking for Love (In Several Wrong Places) ist der zweite Teil von Al Lowes Comedy-Adventure-Reihe. Larry Laffers Suche nach der großen Liebe entwickelt sich diesmal zu einer turbulenten Reise voller Missverständnisse, Geheimagenten, Kreuzfahrtschiffe und tropischer Inseln.",
+        history: `Leisure Suit Larry Goes Looking for Love (In Several Wrong Places) erschien ursprünglich 1988 und folgte auf den überraschenden Erfolg von Leisure Suit Larry in the Land of the Lounge Lizards. Die Amiga-Version folgte 1989. Al Lowe übernahm erneut Design und Programmierung und vergrößerte den Umfang gegenüber dem ersten Spiel erheblich. Zu Beginn lebt Larry Laffer in Los Angeles und versucht nach seiner Trennung von Eve erneut sein Glück bei den Frauen. Eine Verkettung von Missverständnissen führt dazu, dass Larry bei einer Dating-Show landet und anschließend versehentlich in den Besitz eines wichtigen Gegenstandes gerät, hinter dem auch der KGB und der größenwahnsinnige Dr. Nonookee her sind. Damit verwandelt sich Larrys eigentlich überschaubare Partnersuche in eine Reise, die ihn unter anderem auf ein Kreuzfahrtschiff und schließlich auf die tropische Insel Nontoonyt führt. Spielerisch verwendet Larry II Sierras SCI-Technologie und kombiniert grafische Szenen weiterhin mit einem Textparser. Befehle werden also über die Tastatur eingegeben, während Larry mit Tastatur oder Maus durch die Umgebung bewegt werden kann. Gegenüber dem ersten Teil wurde die Spielwelt deutlich größer und linearer aufgebaut. Gleichzeitig besitzt das Adventure viele der für Sierra typischen Gefahren: Larry kann sterben und wichtige Gegenstände können übersehen werden, wodurch sich bestimmte Situationen später nicht mehr lösen lassen. Die Geschichte endet auf Nontoonyt und bildet unmittelbar die Grundlage für Leisure Suit Larry III.`,
+        review: `Leisure Suit Larry II ist der Moment, in dem Sierra aus Larry Laffer endgültig mehr als nur den erfolglosen Typen im weißen Freizeitanzug machte, der eine Nacht lang durch Bars zieht. Das zweite Abenteuer ist wesentlich größer, abwechslungsreicher und vollkommen verrückter. Aus einer simplen Suche nach einer Frau entwickelt sich innerhalb kürzester Zeit eine Mischung aus Liebeskomödie, Spionageparodie und tropischem Abenteuer. Al Lowes Humor funktioniert dabei weiterhin über Wortspiele, Anspielungen und die Tatsache, dass Larry fast jede Situation völlig falsch einschätzt. Spielerisch zeigt Larry II allerdings auch die weniger charmante Seite des klassischen Sierra-Designs. Gegenstände, die man früh im Spiel übersieht, können viel später noch benötigt werden. Wer dann keinen passenden Spielstand besitzt, darf unter Umständen eine größere Strecke noch einmal spielen. Dazu kommen zahlreiche Möglichkeiten, Larry auf mehr oder weniger kreative Weise ins Jenseits zu befördern. Die Parser-Steuerung verlangt ebenfalls etwas mehr Geduld als die späteren Point-and-Click-Teile. Die Amiga-Version präsentiert das Abenteuer ordentlich und bringt Sierras SCI-Stil überzeugend auf Commodores Rechner. Wer sich auf das klassische Adventure-Design einlassen kann, bekommt einen deutlich umfangreicheren und abwechslungsreicheren Nachfolger, dessen teilweise absurdes Reiseszenario einen ganz eigenen Charme besitzt.`,
+        trivia: [
+                  "Der vollständige Titel lautet Leisure Suit Larry Goes Looking for Love (In Several Wrong Places); das Spiel wird üblicherweise schlicht als Leisure Suit Larry 2 bezeichnet.",
+                  "Larry II verwendet Sierras SCI-Technologie, behält aber noch den Textparser bei. Die reine Point-and-Click-Steuerung der späteren Larry-Spiele gab es hier noch nicht.",
+                  "Die Handlung führt Larry auf die Insel Nontoonyt, die anschließend auch eine zentrale Rolle in Leisure Suit Larry III spielt."
+        ],
+        worthPlaying: `Leisure Suit Larry II lohnt sich vor allem für Spieler, die klassische Sierra-Adventures und Al Lowes Humor mögen. Gegenüber dem ersten Teil bietet das Spiel wesentlich mehr Schauplätze und eine deutlich umfangreichere Geschichte. Gleichzeitig sollte man mit mehreren Spielständen arbeiten, denn Sackgassen und überraschende Todesfälle gehören weiterhin zum Konzept. Als Amiga-Version ist Larry II außerdem ein schönes Beispiel für die frühe SCI-Ära von Sierra.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/409/leisure-suit-larry-goes-looking-for-love-in-several-wrong-places/",
+        wikipedia: "https://en.wikipedia.org/wiki/Leisure_Suit_Larry_Goes_Looking_for_Love_(in_Several_Wrong_Places)",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 187,
+        height: 227,
+        depth: 30
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 174,
+        folder: "lemmings_2_the_tribes",
+        scanBy: "Magisthan",
+        page: "lemmings_2_the_tribes.html",
+        featured: false,
+        title: "Lemmings 2: The Tribes",
+        system: "Amiga",
+        year: 1993,
+        publisher: "Psygnosis Limited",
+        developer: "DMA Design Limited",
+        genre: ["Puzzle", "Strategie", "Geschicklichkeit"],
+        description: "Lemmings 2: The Tribes erweitert das geniale Spielprinzip des Vorgängers erheblich. Zwölf unterschiedliche Lemming-Stämme, zahlreiche neue Fähigkeiten und insgesamt 120 Levels machen aus der Rettungsaktion ein deutlich umfangreicheres und abwechslungsreicheres Knobelabenteuer.",
+        history: `Lemmings 2: The Tribes erschien 1993 als direkte Fortsetzung des enorm erfolgreichen Lemmings. Entwickelt wurde das Spiel erneut von DMA Design, während Psygnosis die Veröffentlichung übernahm. Diesmal erhielt die Reise der kleinen grünhaarigen Wesen sogar eine Hintergrundgeschichte. Die Lemminge leben auf einer Insel, deren Bewohner sich in zwölf unterschiedliche Stämme aufgeteilt haben. Jeder Stamm besitzt ein eigenes Thema und bewohnt einen entsprechend gestalteten Teil der Insel. Dazu gehören unter anderem Classic, Medieval, Egyptian, Outdoor, Beach, Sports, Shadow, Cavelem, Circus, Highland, Space und Polar. Um die Insel vor einer bevorstehenden Katastrophe zu retten, müssen die Teile eines Talismans wieder zusammengeführt werden. Jeder Stamm besitzt zehn Levels, womit insgesamt 120 Aufgaben auf den Spieler warten. Das grundlegende Prinzip des Vorgängers bleibt erhalten: Die Lemminge laufen selbstständig durch die Landschaft und müssen durch gezielt vergebene Fähigkeiten sicher zum Ausgang geführt werden. Allerdings erweitert Lemmings 2 das Arsenal drastisch. Statt der überschaubaren Auswahl des ersten Spiels gibt es nun Dutzende Fähigkeiten. Lemminge können unter anderem schwimmen, springen, skaten, mit einem Drachen fliegen, sich an Seilen entlanghangeln, mit einem Speer Plattformen erzeugen oder als Superlem durch die Landschaft fliegen. Einige Aktionen werden zusätzlich direkt mit der Maus beeinflusst. Neu ist auch die Struktur der Kampagne. Jeder der zwölf Stämme beginnt mit einer bestimmten Anzahl Lemminge. Nur die geretteten Figuren stehen im nächsten Level dieses Stammes wieder zur Verfügung. Dadurch lohnt es sich, möglichst viele Lemminge zu retten, obwohl grundsätzlich bereits ein Überlebender ausreichen kann, um weiterzukommen. Die Amiga-Version erschien 1993 auf drei Disketten und gehört zu den technisch und spielerisch aufwendigsten Teilen der klassischen Lemmings-Reihe.`,
+        review: `Lemmings 2 macht genau das, was Fortsetzungen Anfang der Neunziger offenbar tun mussten: von allem mehr. Mehr Landschaften, mehr Animationen, mehr Musik, mehr Fähigkeiten und natürlich mehr Möglichkeiten, seine kleinen grünen Schützlinge auf spektakuläre Weise ins Verderben zu schicken. Die zwölf Stämme sorgen dabei für erstaunlich viel Abwechslung. Nach einigen mittelalterlichen Levels landet man plötzlich bei den Ägyptern, anschließend am Strand oder im Weltraum. Auch grafisch besitzt jeder Stamm einen eigenen Charakter. Die größte Neuerung sind allerdings die vielen zusätzlichen Fähigkeiten. Während das erste Lemmings mit wenigen Werkzeugen auskam, präsentiert Teil zwei einen regelrechten Werkzeugkasten. Das eröffnet den Leveldesignern viele neue Möglichkeiten, erhöht aber gleichzeitig die Lernkurve. Nicht jede Fähigkeit ist sofort verständlich und manche taucht nur selten auf. Genau hier liegt auch die größte Schwäche des Spiels: Der erste Teil war gerade wegen seiner überschaubaren Regeln unglaublich elegant. Lemmings 2 ist kreativer und abwechslungsreicher, gelegentlich aber auch etwas überladen. Trotzdem funktioniert das Grundprinzip hervorragend. Besonders gelungen ist die Entscheidung, die geretteten Lemminge eines Levels in den nächsten mitzunehmen. Plötzlich geht es nicht mehr nur darum, irgendwie den Ausgang zu erreichen. Wer unterwegs zu viele Lemminge opfert, erschwert sich möglicherweise spätere Aufgaben. Technisch gehört die Amiga-Version zu den überzeugenden Fassungen. Die verschiedenen Landschaften, Animationen und die abwechslungsreiche Musik geben jedem Stamm einen eigenen Charakter. Wer das ursprüngliche Lemmings mochte und sich mehr Möglichkeiten gewünscht hat, bekommt hier praktisch die Großpackung.`,
+        trivia: [
+                  "Das Spiel enthält zwölf unterschiedliche Lemming-Stämme mit jeweils zehn Levels und bietet damit insgesamt 120 reguläre Levels.",
+                  "Gegenüber den acht klassischen Fähigkeiten des ersten Lemmings wurde das Arsenal massiv erweitert und umfasst zahlreiche neue Aktionen wie Superlem, Skater, Swimmer, Pole Vaulter und Hang Glider.",
+                  "Die Amiga-Musik stammt von Raymond Usher, Brian Johnston und David Whittaker; die Amiga-Programmierung übernahmen David Jones, Andy Whyte und Brian Watson."
+        ],
+        worthPlaying: `Lemmings 2: The Tribes gehört zu den umfangreichsten klassischen Lemmings-Spielen und ist besonders interessant für Spieler, denen der erste Teil irgendwann zu vertraut geworden ist. Die zwölf Stämme, 120 Levels und zahlreichen neuen Fähigkeiten sorgen für enorme Abwechslung. Gleichzeitig ist das Spiel dadurch weniger geradlinig und etwas komplizierter als der Vorgänger. Wer gerne experimentiert und knifflige Puzzle löst, bekommt auf dem Amiga aber einen der stärksten Vertreter der Serie.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1603/lemmings-2-the-tribes/",
+        wikipedia: "https://en.wikipedia.org/wiki/Lemmings_2:_The_Tribes",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 5,
+        stars: 5,
+        dimensions: {
+        width: 180,
+        height: 232,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 175,
+        folder: "lode_runner",
+        scanBy: "Magisthan",
+        page: "lode_runner.html",
+        featured: false,
+        title: "Lode Runner",
+        system: "C64",
+        year: 1983,
+        publisher: "Brøderbund Software, Inc.",
+        developer: "Brøderbund Software, Inc.",
+        genre: ["Puzzle", "Platformer", "Action"],
+        description: "Lode Runner verbindet Plattform-Action mit cleveren Puzzle-Elementen. In 150 bildschirmfüllenden Levels sammelt der Spieler Gold ein, weicht den Wachen des Bungeling Empire aus und gräbt Löcher in den Boden, um Gegner aufzuhalten oder neue Wege durch die zunehmend komplexen Labyrinthe zu öffnen.",
+        history: `Lode Runner erschien 1983 und wurde von Douglas E. Smith entwickelt. Die Wurzeln des Spiels reichen bis 1980 zurück, als Smith auf einem Commodore PET mit einer frühen Version experimentierte. Nach weiteren Entwicklungsstufen entstand schließlich das Spiel, das Brøderbund veröffentlichte und das sich zu einem der bekanntesten Puzzle-Plattformer der frühen Heimcomputerzeit entwickelte. Die C64-Version erschien im Oktober 1983. Das Spielprinzip ist zunächst erstaunlich einfach: In jedem der 150 Levels müssen sämtliche Goldstücke eingesammelt werden. Danach erscheint beziehungsweise öffnet sich der Weg zum oberen Rand des Bildschirms. Gleichzeitig verfolgen mehrere Wachen den Spieler durch das Labyrinth. Springen kann die Spielfigur nicht. Stattdessen kann sie links und rechts Löcher in bestimmte Bodenblöcke graben. Gegner fallen hinein und können für kurze Zeit festgehalten werden, während der Spieler über sie hinwegkommt oder ihnen das zuvor aufgenommene Gold abnimmt. Nach kurzer Zeit schließen sich die Löcher wieder. Dadurch verbindet Lode Runner schnelle Reaktionen mit vorausschauender Planung. Leitern, Kletterstangen, nicht zerstörbare Böden und versteckte Elemente sorgen später für immer kompliziertere Aufgaben. Bemerkenswert ist außerdem der mitgelieferte Level-Editor, mit dem eigene Spielfelder erstellt und auf Diskette gespeichert werden können. Damit bot Lode Runner bereits 1983 eine Form von benutzergenerierten Inhalten, die den ohnehin großen Umfang noch einmal erheblich erweiterte. Der Erfolg führte schon 1984 zu Championship Lode Runner und begründete eine Serie, die über Jahrzehnte auf zahlreichen Plattformen fortgesetzt wurde.`,
+        review: `Lode Runner ist eines dieser Spiele, bei denen ein Screenshot kaum erklären kann, warum man plötzlich mehrere Stunden verschwunden ist. Grafisch besteht die Welt aus einfachen Plattformen, Leitern, Stangen und kleinen Figuren. Spielerisch steckt dahinter jedoch ein erstaunlich ausgeklügeltes Puzzle-System. Die entscheidende Idee ist, dass man nicht springen kann. Stattdessen werden Löcher in den Boden gegraben. Damit lassen sich Gegner einfangen, neue Wege öffnen oder – bei schlechter Planung – ausgezeichnete Fallen für die eigene Spielfigur bauen. Gerade diese einfache Mechanik sorgt dafür, dass sich Lode Runner irgendwo zwischen Actionspiel und Denkspiel bewegt. Manche Situationen verlangen schnelle Reaktionen, andere müssen beinahe wie ein Schachproblem vorausgeplant werden. Die Gegner sind dabei nicht besonders intelligent, aber hartnäckig genug, um einen perfekt geplanten Weg innerhalb weniger Sekunden in völliges Chaos zu verwandeln. Die Präsentation ist selbst für 1983 ausgesprochen schlicht und akustisch sollte niemand ein SID-Konzert erwarten. Dafür funktioniert die Steuerung hervorragend und die 150 Levels bieten enorm viel Inhalt. Der integrierte Editor setzt dem Ganzen die Krone auf. Eigene Levels bauen zu können war 1983 keineswegs selbstverständlich. Lode Runner ist deshalb ein gutes Beispiel dafür, dass ein Spiel keine spektakuläre Grafik braucht, wenn die grundlegende Mechanik stark genug ist.`,
+        trivia: [
+                  "Douglas E. Smith begann bereits 1980 auf einem Commodore PET mit frühen Vorläufern von Lode Runner; später wurde das Konzept unter anderem auf Systemen der University of Washington weiterentwickelt.",
+                  "Die Originalfassung enthält 150 Levels und zusätzlich einen Editor, mit dem eigene Levels erstellt und auf Diskette gespeichert werden können.",
+                  "Für die C64-Version wird Dane Bigham als Konvertierer genannt; Smith entwickelte das ursprüngliche Spielkonzept und die Originalversion."
+        ],
+        worthPlaying: `Lode Runner gehört zu den C64-Spielen, deren Spielprinzip auch Jahrzehnte später noch problemlos funktioniert. Die Grafik ist minimalistisch und der Sound kaum der Rede wert, doch die Mischung aus Action, Puzzle und Planung ist hervorragend gealtert. 150 Levels und der integrierte Editor sorgen zusätzlich für einen enormen Umfang. Wer klassische Puzzle-Plattformer mag, sollte das Original zumindest einmal gespielt haben.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/243/lode-runner/",
+        wikipedia: "https://de.wikipedia.org/wiki/Lode_Runner",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 140,
+        height: 192,
+        depth: 25
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 176,
+        folder: "lunar_outpost",
+        scanBy: "Magisthan",
+        page: "lunar_outpost.html",
+        featured: false,
+        title: "Lunar Outpost",
+        system: "C64",
+        year: 1984,
+        publisher: "Epyx, Inc.",
+        developer: "Randy Glover / John W. S. Marvin",
+        genre: ["Action", "Strategie", "Science-Fiction"],
+        description: "Lunar Outpost verbindet Arcade-Action mit strategischen Entscheidungen. Als Kommandant eines Lunar Assault Vehicle muss der Spieler eine Mondbasis gegen die angreifenden Zytrons verteidigen, wichtige Versorgungseinrichtungen schützen und bis zu 28 immer schwierigere Mondtage überstehen.",
+        history: `Lunar Outpost erschien 1984 für den Commodore 64 und wurde unter anderem von Epyx veröffentlicht. Hinter dem Spiel stehen Randy Glover und John W. S. Marvin, die für Programmierung, Grafik und Musik genannt werden. Glover war zuvor bereits durch Jumpman bekannt geworden. Lunar Outpost verbindet zwei für die damalige Zeit recht unterschiedliche Spielideen. Auf einer Übersichtskarte der Mondoberfläche verfolgt der Spieler die Positionen feindlicher Zytron-Einheiten und entscheidet, welche Bereiche der Basis verteidigt werden sollen. Wird ein Angriff abgefangen, wechselt das Spiel in eine perspektivische Kampfansicht. Dort steuert der Spieler sein Lunar Assault Vehicle und versucht, die herannahenden Raumschiffe abzuschießen. Besonders wichtig sind die verschiedenen Gebäude der Mondbasis. Sie beherbergen Treibstoff, Munition, Reparatureinrichtungen und Kommandozentralen. Werden diese Gebäude zerstört, verliert der Spieler entsprechend wichtige Versorgungsmöglichkeiten. Dadurch reicht es nicht aus, lediglich möglichst viele Gegner abzuschießen. Man muss gleichzeitig entscheiden, welche Bereiche der Basis besonders wichtig sind und wann sich ein Rückzug oder eine Reparatur lohnt. Vor einer Partie wird festgelegt, wie viele Tage der Angriff dauern soll. Möglich sind ein bis 28 Tage. Zusätzlich stehen drei Schwierigkeitsgrade zur Verfügung. Das langfristige Ziel besteht darin, eine möglichst lange Angriffswelle auf dem höchsten Schwierigkeitsgrad zu überstehen. Lunar Outpost gehört damit zu den frühen C64-Spielen, die Arcade-Action mit strategischem Ressourcenmanagement kombinierten.`,
+        review: `Lunar Outpost ist eines dieser frühen C64-Spiele, die auf den ersten Blick wie ein einfacher Weltraum-Shooter aussehen und dann plötzlich anfangen, über Treibstoff, Reparaturen und taktische Entscheidungen zu sprechen. Einfach nur alles abzuschießen, was sich bewegt, funktioniert nämlich nur begrenzt. Die eigentliche Stärke des Spiels liegt im Zusammenspiel zwischen der Mondkarte und den Arcade-Sequenzen. Man muss beobachten, wo die Zytrons angreifen, entscheiden, welche Gebäude unbedingt geschützt werden müssen, und anschließend selbst ins Lunar Assault Vehicle steigen. Besonders clever ist, dass die Gebäude nicht nur abstrakte Punkte auf einer Karte sind. Geht ein Treibstofflager, eine Reparaturstation oder ein Munitionsdepot verloren, hat das unmittelbare Folgen für die weitere Verteidigung. Dadurch entsteht zumindest ein kleiner strategischer Unterbau, der Lunar Outpost von vielen simpleren Shootern seiner Zeit unterscheidet. Technisch ist das Spiel dagegen eindeutig ein Kind von 1984. Die Grafik ist funktional, die Präsentation spartanisch und die eigentlichen Gefechte werden auf Dauer repetitiv. Außerdem erklärt sich das ungewöhnliche Spielprinzip nicht vollständig von selbst. Wer ohne Anleitung startet, dürfte zunächst einige Zeit damit verbringen herauszufinden, warum seine Mondbasis gerade systematisch zerlegt wird. Hat man die Mechanik verstanden, steckt jedoch überraschend viel Spielidee darin. Kein großer Epyx-Klassiker wie Impossible Mission oder Summer Games, aber definitiv eines der interessanteren Experimente aus der frühen Phase des Publishers.`,
+        trivia: [
+                  "Randy Glover, einer der Programmierer von Lunar Outpost, entwickelte zuvor den C64-Klassiker Jumpman.",
+                  "Vor dem Spiel kann eine Einsatzdauer zwischen einem und 28 Tagen gewählt werden. Ziel ist es, diese Zeit zu überstehen und die Mondbasis gegen die Zytrons zu verteidigen.",
+                  "Die Basisgebäude erfüllen konkrete Funktionen und liefern unter anderem Treibstoff, Munition und Reparaturmöglichkeiten. Ihre Zerstörung beeinflusst deshalb direkt den weiteren Spielverlauf."
+        ],
+        worthPlaying: `Lunar Outpost ist vor allem für Spieler interessant, die ungewöhnliche frühe C64-Titel entdecken möchten. Die Kombination aus strategischer Übersichtskarte, Ressourcenverwaltung und Arcade-Gefechten war 1984 durchaus ambitioniert. Die Kampfsequenzen können sich zwar wiederholen und die Präsentation ist heute sehr schlicht, doch das Spiel besitzt mehr taktische Tiefe, als der erste Eindruck vermuten lässt. Für Epyx- und C64-Sammler ist es außerdem ein interessanter, heute eher wenig bekannter Titel aus der Frühzeit des Publishers.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/121637/lunar-outpost/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 1,
+        stars: 1,
+        dimensions: {
+        width: 147,
+        height: 224,
+        depth: 28
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 177,
+        folder: "magic_carpet_plus",
+        scanBy: "Magisthan",
+        page: "magic_carpet_plus.html",
+        featured: false,
+        title: "Magic Carpet Plus",
+        system: "PC",
+        year: 1995,
+        publisher: "Electronic Arts, Inc.",
+        developer: "Bullfrog Productions Ltd.",
+        genre: ["Action", "First-Person", "Fantasy", "Strategie"],
+        description: "Magic Carpet Plus kombiniert Bullfrogs außergewöhnliches 3D-Actionspiel Magic Carpet mit der Erweiterung The Hidden Worlds. Als Magier fliegt der Spieler auf einem Teppich durch frei begehbare 3D-Welten, bekämpft Kreaturen und rivalisierende Zauberer, sammelt Mana und errichtet daraus immer mächtigere Burgen.",
+        history: `Magic Carpet Plus erschien 1995 für DOS und vereint das ursprüngliche Magic Carpet von 1994 mit der Erweiterung Magic Carpet: The Hidden Worlds. Entwickelt wurde das Spiel von Bullfrog Productions und von Electronic Arts veröffentlicht. Magic Carpet gehörte zu den technisch auffälligsten PC-Spielen seiner Zeit. Der Spieler übernimmt die Rolle eines Magiers und bewegt sich aus der Ego-Perspektive auf einem fliegenden Teppich frei durch dreidimensionale Landschaften. Ziel ist es, Mana zu sammeln und damit das Gleichgewicht der jeweiligen Welt wiederherzustellen. Mana entsteht unter anderem durch besiegte Kreaturen und Gegner und erscheint als Kugeln in der Landschaft. Diese müssen zunächst mit einem Zauber in die eigene Farbe umgewandelt und anschließend von Ballons zur eigenen Burg transportiert werden. Die Burg dient nicht nur als Lagerplatz, sondern wächst mit zunehmender Mana-Menge zu einer immer größeren Festung heran. Gleichzeitig kämpfen rivalisierende Magier um dieselben Ressourcen und können eigene Burgen errichten. Dadurch verbindet Magic Carpet schnelle Action mit territorialen und strategischen Elementen. Besonders beeindruckend war die Möglichkeit, die Landschaft selbst durch Zaubersprüche zu verändern. Erdbeben, Vulkane und andere mächtige Effekte können das Terrain während des Spiels sichtbar umformen. Die Plus-Ausgabe erweitert das Hauptspiel um The Hidden Worlds und fügt zusätzliche Welten und Herausforderungen hinzu. Insgesamt enthält die Sammlung damit erheblich mehr Inhalt als die ursprüngliche Veröffentlichung und stellt eine besonders umfangreiche Fassung des ersten Magic Carpet dar.`,
+        review: `Magic Carpet Plus ist eines dieser Spiele, bei denen Bullfrog offenbar beschlossen hatte, dass ein Genre allein einfach nicht ausreicht. Auf dem Papier ist es ein First-Person-Shooter. Nach wenigen Minuten baut man allerdings Burgen, sammelt Mana, verteidigt Territorium und verändert nebenbei mit Zaubersprüchen die Landschaft. Das Ergebnis fühlt sich deshalb eher wie eine Mischung aus Actionspiel, Strategiespiel und einer sehr frühen offenen 3D-Spielwelt an. Besonders beeindruckend ist noch heute, wie unmittelbar sich der Flug auf dem Teppich anfühlt. Man schwebt über Seen und Berge, entdeckt Kreaturen und feindliche Magier und kann praktisch jederzeit entscheiden, wohin man fliegt. Gleichzeitig sorgt das Mana-System dafür, dass wildes Herumballern allein nicht genügt. Wer seine Burg schlecht platziert oder Ressourcen nicht konsequent einsammelt, bekommt gegen rivalisierende Zauberer schnell Probleme. Technisch war Magic Carpet Mitte der Neunziger spektakulär, verlangte dem damaligen PC aber entsprechend viel ab. Ein schneller Rechner war praktisch Teil des Spielerlebnisses. Die Plus-Version ist besonders interessant, weil sie das Original und The Hidden Worlds in einem Paket vereint. Dadurch erhält man nicht nur die ursprünglichen Welten, sondern zusätzliche Herausforderungen für Spieler, denen das Hauptspiel irgendwann nicht mehr genügte. Die Bedienung und das teilweise hektische Geschehen benötigen etwas Eingewöhnung, aber kaum ein anderes Spiel dieser Zeit fühlt sich wirklich ähnlich an.`,
+        trivia: [
+                  "Magic Carpet Plus enthält sowohl das ursprüngliche Magic Carpet von 1994 als auch die Erweiterung Magic Carpet: The Hidden Worlds von 1995.",
+                  "Die 3D-Engine wurde von Glenn Corpes programmiert; Peter Molyneux war Executive Producer und Sean Cooper Produzent des Spiels.",
+                  "Magic Carpet konnte seine Landschaft während des laufenden Spiels verändern: Mächtige Zauber konnten unter anderem Vulkane erzeugen und das Terrain sichtbar verformen."
+        ],
+        worthPlaying: `Magic Carpet Plus ist auch heute noch interessant, weil Bullfrogs Mischung aus freiem 3D-Flug, Action, Magie, Ressourcenverwaltung und territorialem Kampf kaum direkte Nachahmer gefunden hat. Die Grafik ist natürlich gealtert und die Steuerung benötigt etwas Eingewöhnung, doch das eigentliche Konzept besitzt noch immer einen erstaunlich eigenständigen Charakter. Durch die enthaltene Hidden-Worlds-Erweiterung ist die Plus-Ausgabe außerdem eine besonders umfangreiche Möglichkeit, den ersten Teil zu spielen.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/15665/magic-carpet-plus/",
+        wikipedia: "https://en.wikipedia.org/wiki/Magic_Carpet_(video_game)",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 208,
+        height: 254,
+        depth: 33
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 178,
+        folder: "magic_johnsons_basketball",
+        scanBy: "Magisthan",
+        page: "magic_johnsons_basketball.html",
+        featured: false,
+        title: "Magic Johnson's Basketball",
+        system: "C64",
+        year: 1989,
+        publisher: "Melbourne House",
+        developer: "Software Creations Ltd.",
+        genre: ["Sport", "Basketball", "Arcade"],
+        description: "Magic Johnson's Basketball, auch als Magic Johnson's Fast Break bekannt, bringt schnelle Zwei-gegen-Zwei-Basketball-Action auf den C64. Passen, werfen, Dreipunktewürfe und Slam Dunks stehen im Mittelpunkt, während ein oder zwei Spieler versuchen, den Gegner mit möglichst unkompliziertem Arcade-Basketball zu schlagen.",
+        history: `Magic Johnson's Basketball ist die Heimcomputerumsetzung des ursprünglich als Magic Johnson's Fast Break bekannten Basketballspiels und trägt den Namen des damaligen NBA-Superstars Earvin "Magic" Johnson. Die C64-Version erschien über Melbourne House beziehungsweise später Virgin Mastertronic und wurde von Software Creations umgesetzt. Andrew Routledge übernahm die Programmierung, Chris Collins die Grafik und Tim Follin komponierte die Musik. Statt eine detaillierte Basketballsimulation anzubieten, konzentriert sich das Spiel auf schnelle und leicht zugängliche Zwei-gegen-Zwei-Partien. Die Mannschaften bestehen aus generischen Spielern, während Magic Johnson vor allem als Namensgeber und Aushängeschild dient. Gespielt wird aus einer seitlichen Perspektive. Der Spieler dribbelt über das Feld, passt zu seinem Mitspieler und versucht mit normalen Würfen, Dreipunktewürfen oder spektakuläreren Aktionen wie Slam Dunks Punkte zu erzielen. Gleichzeitig muss in der Verteidigung der gegnerische Angriff gestoppt werden. Die C64-Version unterstützt einen oder zwei Spieler und wird per Joystick gesteuert. Das Konzept stammt aus einer Zeit, in der lizenzierte Sportspiele zunehmend mit bekannten Athleten vermarktet wurden. Magic Johnson's Basketball gehört damit zu einer Reihe von Titeln der späten Achtziger, die reale Sportstars als Zugpferd verwendeten, ohne eine vollständige Liga- oder Karriere-Simulation um sie herum aufzubauen.`,
+        review: `Magic Johnson's Basketball versucht gar nicht erst, den Spieler mit Tabellen, Mannschaftsaufstellungen oder komplizierten Taktikmenüs zu erschlagen. Ball nehmen, nach vorne laufen, passen und möglichst eindrucksvoll im Korb versenken – das ist im Wesentlichen die gesamte Geschäftsgrundlage. Gerade zu zweit kann diese unkomplizierte Ausrichtung durchaus funktionieren. Das Problem der C64-Version liegt eher in der Umsetzung. Die Spielerfiguren sind groß, bewegen sich aber nicht besonders geschmeidig, und das Geschehen kann dadurch deutlich schwerfälliger wirken, als man es von einem schnellen Basketballspiel erwarten würde. Auch spielerisch fehlt langfristig etwas Abwechslung. Eine umfangreiche Liga oder ein komplexer Saisonmodus sind nicht der Schwerpunkt. Dafür ist die Steuerung relativ schnell verstanden und eine Partie lässt sich ohne längeres Studium beginnen. Ein echtes Highlight besitzt die C64-Version allerdings: Tim Follins Musik. Der Soundtrack zeigt einmal mehr, was Follin aus dem SID-Chip herausholen konnte, und ist technisch wesentlich beeindruckender als die eher durchschnittliche Grafik. Insgesamt bleibt Magic Johnson's Basketball damit ein brauchbares, aber wenig tiefgehendes Arcade-Sportspiel. Mit einem zweiten Spieler macht es deutlich mehr Spaß als allein, und für Fans von Tim Follins C64-Musik lohnt sich zumindest ein akustischer Besuch.`,
+        trivia: [
+                  "Das Spiel ist auch unter dem Titel Magic Johnson's Fast Break bekannt; verschiedene regionale Veröffentlichungen verwenden unterschiedliche Titel.",
+                  "Die C64-Version wurde von Andrew Routledge programmiert, während Chris Collins für die Grafik verantwortlich war.",
+                  "Die Musik der C64-Version stammt von Tim Follin, der für zahlreiche technisch außergewöhnliche SID-Soundtracks bekannt wurde."
+        ],
+        worthPlaying: `Magic Johnson's Basketball ist vor allem als unkompliziertes Zwei-Spieler-Sportspiel und als Teil der frühen Welle prominenter Sportler-Lizenzen interessant. Spielerisch fehlt es gegenüber stärkeren C64-Basketballtiteln an Tiefe und die Animationen wirken schwerfällig. Tim Follins hervorragende SID-Musik und die schnelle Zugänglichkeit geben dem Spiel dennoch einen gewissen Reiz. Für Melbourne-House-Sammler und Basketball-Fans ist es außerdem ein interessantes Stück Sportspielgeschichte.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/10376/magic-johnsons-fast-break/",
+        wikipedia: "https://en.wikipedia.org/wiki/Magic_Johnson%27s_Fast_Break",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 2,
+        stars: 2,
+        dimensions: {
+        width: 180,
+        height: 232,
+        depth: 27
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 179,
+        folder: "maupiti_island",
+        scanBy: "Magisthan",
+        page: "maupiti_island.html",
+        featured: false,
+        title: "Maupiti Island",
+        system: "Amiga",
+        year: 1990,
+        publisher: "Lankhor",
+        developer: "Lankhor",
+        genre: ["Adventure", "Detektivspiel", "Mystery", "Point-and-Click"],
+        description: "Maupiti Island ist ein atmosphärisches Detektiv-Adventure von Lankhor. Als Privatdetektiv Jérôme Lange untersucht der Spieler auf einer abgelegenen tropischen Insel das Verschwinden einer jungen Frau und muss durch Befragungen, Beobachtungen und das Sammeln von Indizien einen komplexen Kriminalfall rekonstruieren.",
+        history: `Maupiti Island erschien 1990 für den Amiga und wurde vom französischen Studio Lankhor entwickelt und veröffentlicht. Das Spiel ist die Fortsetzung von Mortville Manor und lässt den Spieler erneut in die Rolle des Detektivs Jérôme Lange schlüpfen. Während einer Seereise zwingt der herannahende Zyklon Harry Langes Schiff zu einem Zwischenstopp auf der abgelegenen Insel Maupiti. Dort erfährt er vom Verschwinden der jungen Marie und beginnt, die Bewohner der Insel zu befragen. Was zunächst wie ein überschaubarer Vermisstenfall wirkt, entwickelt sich zunehmend zu einem komplexen Netz aus Beziehungen, Geheimnissen und widersprüchlichen Aussagen. Anders als viele Adventures seiner Zeit ist Maupiti Island weitgehend nichtlinear aufgebaut. Die Bewohner führen ein eigenes Leben und halten sich abhängig von der Tageszeit an unterschiedlichen Orten auf. Dadurch genügt es nicht, jeden Schauplatz lediglich einmal zu besuchen. Bestimmte Personen, Gespräche und Ereignisse sind nur zu bestimmten Zeiten verfügbar. Jérôme kann Verdächtige und Zeugen befragen, Gegenstände und Räume untersuchen, Personen beobachten und Informationen miteinander vergleichen. Das Spiel gibt dabei nur wenige direkte Hinweise darauf, welche Erkenntnisse wirklich wichtig sind. Der Spieler muss selbst entscheiden, welchen Aussagen er vertraut und welche Zusammenhänge sich aus den gesammelten Informationen ergeben. Das Szenario wird durch detaillierte handgezeichnete Schauplätze, Musik, Umgebungsgeräusche und Sprachausgabe unterstützt. Die Amiga-Version erschien auf zwei Disketten und läuft auf OCS- und ECS-Systemen. Eine geplante dritte Geschichte um Jérôme Lange mit dem Arbeitstitel Suriya wurde begonnen, aber nie veröffentlicht.`,
+        review: `Maupiti Island ist ein Adventure für Spieler, die wirklich Detektiv spielen wollen. Hier wartet kein Inventarrätsel darauf, dass man einen Gummihasen mit einer Seilwinde kombiniert. Stattdessen verbringt man viel Zeit damit, Menschen auszufragen, ihre Aussagen miteinander zu vergleichen und herauszufinden, wer sich wann wo aufgehalten hat. Genau darin liegt die große Stärke des Spiels. Die Insel wirkt nicht wie eine Ansammlung statischer Adventure-Bildschirme, sondern wie ein Ort, an dem auch ohne den Spieler etwas passiert. Wer zur falschen Uhrzeit auftaucht, findet eine Person vielleicht überhaupt nicht vor. Wer jemanden verfolgt oder später zurückkehrt, entdeckt möglicherweise etwas völlig Neues. Das erzeugt eine erstaunlich glaubwürdige Detektivarbeit. Gleichzeitig macht Maupiti Island dem Spieler das Leben nicht leicht. Die Informationsmenge ist groß, manche Hinweise wirken zunächst belanglos und die Bedienung benötigt etwas Eingewöhnung. Dazu kommen auf einem Amiga mit Diskettenlaufwerk teilweise lästige Diskettenwechsel. Dafür ist die Atmosphäre hervorragend. Dominique Sablons' detaillierte Illustrationen, André Besconds Musik und die vielen Umgebungsgeräusche erzeugen ein beinahe entspanntes Urlaubsgefühl – zumindest bis man sich daran erinnert, dass man eigentlich einen ziemlich unangenehmen Kriminalfall untersucht. Wer Adventures hauptsächlich wegen Rätseln und Dialogen spielt, bekommt hier einen ungewöhnlich erwachsenen und anspruchsvollen Vertreter des Genres.`,
+        trivia: [
+                  "Maupiti Island ist die Fortsetzung von Mortville Manor und lässt den Spieler erneut den Detektiv Jérôme Lange übernehmen.",
+                  "Die Spielwelt besitzt einen zeitabhängigen Tagesablauf. Figuren wechseln zwischen den verschiedenen Schauplätzen und bestimmte Ereignisse können nur zu bestimmten Zeiten beobachtet werden.",
+                  "Das Szenario schrieb Sylvian Bruchon, Dominique Sablons war für Design und Illustrationen verantwortlich und André Bescond komponierte Musik und Soundeffekte."
+        ],
+        worthPlaying: `Maupiti Island lohnt sich besonders für Adventure-Spieler, die klassische Kriminalgeschichten und offene Ermittlungen mögen. Statt den Spieler von Rätsel zu Rätsel zu führen, verlangt das Spiel echtes Beobachten, Befragen und Kombinieren von Informationen. Dadurch ist es anspruchsvoller und gelegentlich sperriger als viele zeitgenössische Adventures, besitzt aber eine außergewöhnlich dichte Atmosphäre. Gerade auf dem Amiga sind die detaillierten Grafiken, Musik und Umgebungsgeräusche noch immer sehenswert beziehungsweise hörenswert.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/2567/maupiti-island/",
+        wikipedia: "https://de.wikipedia.org/wiki/Maupiti_Island",
+        gog: ""
+        },
+        boxArtists: [
+        "ABRAHAM"
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 152,
+        height: 220,
+        depth: 27
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 180,
+        folder: "menzoberranzan",
+        scanBy: "Magisthan",
+        page: "menzoberranzan.html",
+        featured: false,
+        title: "Menzoberranzan",
+        system: "PC",
+        year: 1994,
+        publisher: "Strategic Simulations, Inc.",
+        developer: "DreamForge Intertainment, Inc.",
+        genre: ["Rollenspiel", "Dungeon Crawler", "Fantasy", "AD&D"],
+        description: "Menzoberranzan ist ein AD&D-Rollenspiel von DreamForge und SSI, das die Spieler tief in das Underdark der Forgotten Realms führt. Mit einer selbst zusammengestellten Gruppe erkundet man die gefährliche Heimat der Dunkelelfen, kämpft in Echtzeit gegen Monster und trifft dabei auch auf bekannte Figuren wie Drizzt Do'Urden.",
+        history: `Menzoberranzan erschien 1994 für DOS und wurde von DreamForge Intertainment entwickelt und von Strategic Simulations veröffentlicht. Das Spiel basiert auf der zweiten Edition von Advanced Dungeons & Dragons und spielt in den Forgotten Realms. Namensgeber ist Menzoberranzan, die berüchtigte unterirdische Stadt der Drow. Zu Beginn erstellt der Spieler zwei eigene Charaktere und bestimmt unter anderem Rasse, Klasse und Attribute. Im Laufe des Abenteuers können weitere Figuren zur Gruppe stoßen. Die Geschichte beginnt vergleichsweise harmlos in einem Dorf, das von Drow überfallen wird. Mehrere Bewohner werden verschleppt und die Suche nach ihnen führt die Gruppe schließlich tief in das Underdark und bis nach Menzoberranzan. Dort entwickelt sich aus der Rettungsaktion ein wesentlich größeres Abenteuer. Eine besondere Rolle spielt Drizzt Do'Urden, der bekannte Drow-Waldläufer aus den Forgotten-Realms-Romanen von R. A. Salvatore. Er kann sich zeitweise der Gruppe anschließen. Technisch basiert Menzoberranzan auf einer weiterentwickelten Variante der Engine von Ravenloft: Strahd's Possession. Die Spielwelt wird aus der Ego-Perspektive dargestellt und kann frei erkundet werden. Gegner bewegen sich in Echtzeit und die Gruppenmitglieder greifen ebenfalls in Echtzeit an, während Zaubersprüche, Ausrüstung und Charakterwerte weiterhin stark auf den AD&D-Regeln basieren. Neben klassischen Dungeons bietet das Spiel Außenbereiche und die weitläufigen Höhlensysteme des Underdark. Die CD-ROM-Version enthält Sprachausgabe und eine umfangreichere audiovisuelle Präsentation. Menzoberranzan gehört zur späteren Phase der AD&D-Spiele von SSI, als die klassischen Gold-Box-Rollenspiele zunehmend durch frei begehbare 3D-Welten ersetzt wurden.`,
+        review: `Menzoberranzan hat zunächst einmal einen gewaltigen Vorteil: Der Name klingt bereits so, als sollte man besser genügend Heiltränke einpacken. Und tatsächlich ist die Reise ins Underdark alles andere als ein gemütlicher Sonntagsausflug. DreamForge kombiniert hier die AD&D-Regeln mit einer frei begehbaren 3D-Welt und einem Echtzeit-Kampfsystem. Das funktioniert grundsätzlich gut und erzeugt gerade in den unterirdischen Bereichen eine passende Atmosphäre. Besonders für Forgotten-Realms-Fans ist die Möglichkeit interessant, tatsächlich nach Menzoberranzan vorzudringen und unterwegs Drizzt Do'Urden zu treffen. Spielerisch merkt man allerdings, dass das Konzept ambitionierter ist als manche Teile der Umsetzung. Die 3D-Grafik war 1994 beeindruckend, wirkt heute aber naturgemäß sehr grob und kann die Orientierung erschweren. Auch die Kämpfe sind nicht immer so taktisch, wie man es von einem AD&D-Spiel erwarten könnte. Häufig entscheidet schnelles Klicken ebenso viel wie eine sorgfältige Gruppenplanung. Dafür gibt es eine große Welt, zahlreiche Zaubersprüche, unterschiedliche Charakterklassen und viel klassische Rollenspielarbeit mit Ausrüstung und Charakterwerten. Wer Ravenloft: Strahd's Possession gespielt hat, wird sich mit der Bedienung relativ schnell zurechtfinden. Menzoberranzan erreicht nicht ganz die Eleganz der besten SSI-Rollenspiele, ist aber ein faszinierendes Bindeglied zwischen den klassischen Dungeon-Crawlern und den zunehmend dreidimensionalen PC-Rollenspielen der Mitte der Neunziger.`,
+        trivia: [
+                  "Menzoberranzan verwendet eine weiterentwickelte Version der 3D-Engine, die DreamForge zuvor für Ravenloft: Strahd's Possession eingesetzt hatte.",
+                  "Drizzt Do'Urden, der von R. A. Salvatore geschaffene Drow-Waldläufer, tritt im Spiel auf und kann sich zeitweise der Spielergruppe anschließen.",
+                  "Das Spiel basiert auf den Regeln der zweiten Edition von Advanced Dungeons & Dragons und spielt in der Forgotten-Realms-Kampagnenwelt."
+        ],
+        worthPlaying: `Menzoberranzan lohnt sich besonders für Fans klassischer AD&D-Rollenspiele und der Forgotten Realms. Die Kombination aus Echtzeit-3D-Erkundung, Charakterentwicklung und einer Reise ins Underdark besitzt noch immer ihren Reiz. Steuerung und Grafik sind deutlich gealtert und das Kampfsystem erreicht nicht die taktische Tiefe der klassischen SSI-Titel, doch Atmosphäre, Umfang und das ungewöhnliche Szenario machen das Spiel zu einem interessanten Vertreter der späteren SSI-Ära.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1603/menzoberranzan/",
+        wikipedia: "https://en.wikipedia.org/wiki/Menzoberranzan_(video_game)",
+        gog: "https://www.gog.com/en/game/forgotten_realms_the_archives_collection_three"
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 185,
+        height: 235,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 181,
+        folder: "microcosm_cd32",
+        scanBy: "Magisthan",
+        page: "microcosm_cd32.html",
+        featured: false,
+        title: "Microcosm",
+        system: "Amiga CD32",
+        year: 1994,
+        publisher: "Psygnosis Limited",
+        developer: "Psygnosis Limited",
+        genre: ["Rail Shooter", "Action", "Science-Fiction", "FMV"],
+        description: "Microcosm ist ein technisch aufwendiger Rail-Shooter für das Amiga CD32, der den Spieler auf eine Reise durch den menschlichen Körper schickt. In einem mikroskopisch kleinen Gefährt kämpft man sich durch Blutbahnen und organische Strukturen, um einen tödlichen Virus und eine Manipulation des Gehirns von CyberTech-Präsident Tiron Korsby zu stoppen.",
+        history: `Microcosm erschien 1994 für das Amiga CD32 und wurde von Psygnosis entwickelt und veröffentlicht. Ursprünglich entstand das Projekt für den japanischen FM-Towns-Computer, bevor Umsetzungen für weitere CD-basierte Systeme folgten. Die Handlung spielt in einer düsteren Zukunft, in der mächtige Konzerne um die Vorherrschaft kämpfen. Der Präsident von CyberTech, Tiron Korsby, wird von der rivalisierenden Axiom Corporation mit einem Virus infiziert. Zusätzlich befindet sich in seinem Körper eine Maschine, die sein Gehirn manipulieren soll. Der Spieler wird mitsamt einem mikroskopisch kleinen Fahrzeug in Korsbys Körper eingeschleust und muss die Bedrohung von innen bekämpfen. Spielerisch ist Microcosm ein Rail-Shooter. Die Flugroute wird weitgehend vom Spiel vorgegeben, während der Spieler sein Gefährt innerhalb des sichtbaren Bereichs bewegt, Gegner abschießt und Hindernissen ausweicht. Einen großen Teil seiner damaligen Wirkung verdankte Microcosm weniger der eigentlichen Spielmechanik als seiner Präsentation. Die vorgerenderten Sequenzen und Hintergründe wurden mit Silicon-Graphics-Workstations erzeugt und sollten demonstrieren, welche Möglichkeiten CD-ROM und aufwendig berechnete Computergrafik eröffneten. Für das CD32 war Microcosm deshalb ein auffälliger Vorzeigetitel: Statt eines lediglich auf CD übertragenen Amiga-Spiels bekam die Konsole eine Produktion, deren enorme Datenmengen ohne optischen Datenträger kaum realisierbar gewesen wären. Die CD32-Portierung wurde von Stewart Sargaison, Richard Weeks, Peter Marshall und Russell Bartley programmiert. Kevin Collier komponierte die Musik dieser Version. Trotz seiner spektakulären Präsentation wurde Microcosm wegen des vergleichsweise einfachen und repetitiven Spielprinzips kontrovers aufgenommen.`,
+        review: `Microcosm ist beinahe das perfekte Beispiel für die frühe CD-ROM-Ära. Man startet das Spiel, sieht aufwendige Rendersequenzen und denkt zunächst: So sieht also die Zukunft aus. Danach beginnt das eigentliche Spiel und die Zukunft besteht hauptsächlich daraus, auf Dinge zu schießen, die vor einem auftauchen. Technisch war Microcosm auf dem CD32 trotzdem beeindruckend. Die gerenderten Landschaften im Inneren des menschlichen Körpers, die Videosequenzen und die Musik erzeugen eine Präsentation, die mit einem normalen Disketten-Amiga nur schwer vorstellbar gewesen wäre. Gerade deshalb wurde das Spiel damals intensiv als Demonstration der neuen CD-Technik wahrgenommen. Spielerisch ist die Sache deutlich nüchterner. Microcosm ist im Kern ein Rail-Shooter. Der Weg durch die organischen Tunnel wird weitgehend vorgegeben und die Aufgabe besteht hauptsächlich darin, Gegner abzuschießen und Hindernissen auszuweichen. Dadurch fehlt langfristig die spielerische Tiefe, die die beeindruckende Technik erwarten lässt. Hinzu kommt ein teilweise hoher Schwierigkeitsgrad. Besonders interessant ist rückblickend die extreme Spannweite der damaligen Tests. Einige Magazine waren von der Präsentation begeistert und vergaben Wertungen von deutlich über 80 Prozent, während Amiga Power gerade einmal 44 Prozent gab. Selbst Amiga Format korrigierte seine ursprünglichen 87 Prozent später in einem erneuten Test auf nur noch 40 Prozent. Als spielhistorisches Dokument der frühen Multimedia-Euphorie ist Microcosm deshalb fast interessanter als als reiner Shooter. Wer ein CD32 besitzt, sollte es zumindest einmal gesehen haben – denn kaum ein Spiel zeigt deutlicher, womit man Anfang der Neunziger Käufer von CD-ROM-Technik beeindrucken wollte.`,
+        trivia: [
+                  "Die vorgerenderten Grafiken von Microcosm wurden mit damals sehr leistungsfähigen Silicon-Graphics-Workstations erzeugt.",
+                  "Die CD32-Portierung wurde von Stewart Sargaison, Richard Weeks, Peter Marshall und Russell Bartley programmiert; Kevin Collier komponierte die Musik dieser Version.",
+                  "Amiga Format bewertete Microcosm 1994 zunächst mit 87 Prozent, testete es 1995 erneut und reduzierte die Wertung auf nur noch 40 Prozent."
+        ],
+        worthPlaying: `Microcosm ist heute vor allem wegen seiner technischen und historischen Bedeutung interessant. Als früher CD32-Vorzeigetitel demonstriert es sehr anschaulich, wie stark Entwickler Anfang der Neunziger auf vorgerenderte Grafik, Full-Motion-Video und CD-Audio setzten. Spielerisch ist der Rail-Shooter wesentlich einfacher und repetitiver als seine aufwendige Präsentation vermuten lässt. Für CD32-Sammler und Freunde früher Multimedia-Spiele gehört Microcosm dennoch zu den Titeln, die man zumindest einmal erlebt haben sollte.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/2098/microcosm/",
+        wikipedia: "https://en.wikipedia.org/wiki/Microcosm_(video_game)",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 187,
+        height: 237,
+        depth: 42
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 182,
+        folder: "modem_wars",
+        scanBy: "Magisthan",
+        page: "modem_wars.html",
+        featured: false,
+        title: "Modem Wars",
+        system: "C64",
+        year: 1988,
+        publisher: "Electronic Arts, Inc.",
+        developer: "Ozark Softscape",
+        genre: ["Strategie", "Echtzeitstrategie", "Science-Fiction", "Multiplayer"],
+        description: "Modem Wars ist ein ungewöhnliches Echtzeit-Strategiespiel von Ozark Softscape und Dan Bunten. Zwei Kommandanten führen futuristische Armeen über ein taktisches Schlachtfeld, erobern Flaggen, schützen ihren Commander und versuchen, den Gegner durch geschickte Bewegung und den gezielten Einsatz unterschiedlicher Einheiten auszumanövrieren.",
+        history: `Modem Wars erschien 1988 für den Commodore 64 und wurde von Ozark Softscape entwickelt und von Electronic Arts veröffentlicht. Das Spieldesign stammt von Dan Bunten, der bereits mit Titeln wie M.U.L.E. und The Seven Cities of Gold gezeigt hatte, wie interessant Spiele werden können, wenn mehrere Menschen direkt miteinander konkurrieren. Genau dieser Gedanke steht bei Modem Wars im Mittelpunkt. Zwei Spieler übernehmen jeweils das Kommando über eine futuristische Armee und treten auf einem taktischen Schlachtfeld gegeneinander an. Besonders ungewöhnlich war die Möglichkeit, zwei Computer über Modem beziehungsweise Datenverbindung miteinander zu verbinden. Damit konnten Spieler gegeneinander antreten, ohne vor demselben Rechner sitzen zu müssen. Alternativ waren auch lokale Partien möglich. Anders als klassische rundenbasierte Strategiespiele läuft Modem Wars in Echtzeit. Die Spieler wählen ihre Einheiten aus, geben Bewegungs- und Angriffsbefehle und müssen gleichzeitig beobachten, was der Gegner auf dem Schlachtfeld unternimmt. Zur Verfügung stehen verschiedene Einheitentypen mit unterschiedlichen Eigenschaften und Aufgaben. Eine zentrale Rolle spielt der Commander, dessen Verlust schwerwiegende Folgen haben kann. Gleichzeitig befinden sich Flaggen beziehungsweise strategische Ziele auf dem Spielfeld, um die beide Seiten kämpfen. Gelände und Positionierung beeinflussen die Gefechte ebenfalls. Dadurch entsteht ein Spiel, das weniger von langfristigem Aufbau als von Bewegung, Reaktion und taktischer Kontrolle lebt. Modem Wars gilt rückblickend als ein früher Vertreter kompetitiver Echtzeitstrategie und als bemerkenswertes Experiment mit vernetztem Mehrspielerspiel lange bevor Online-Multiplayer auf Heimcomputern alltäglich wurde.`,
+        review: `Modem Wars ist aus heutiger Sicht vor allem deshalb faszinierend, weil es Dinge ausprobiert, die Ende der Achtziger auf einem C64 alles andere als selbstverständlich waren. Zwei Spieler, zwei Armeen, Echtzeitstrategie und im Idealfall zwei miteinander verbundene Computer – das klingt eher nach einer Idee aus den Neunzigern. Statt Basen zu bauen und minutenlang Ressourcen zu sammeln, beginnt hier praktisch sofort der taktische Schlagabtausch. Einheiten müssen bewegt, Gegner abgefangen und wichtige Positionen verteidigt werden. Dabei entsteht besonders gegen einen menschlichen Gegner eine erstaunliche Dynamik. Wer nur auf einen Teil des Schlachtfelds schaut, stellt möglicherweise einige Sekunden später fest, dass der Gegner längst an einer anderen Stelle durchgebrochen ist. Genau darin liegt die Stärke des Spiels. Modem Wars ist kein Strategiespiel, bei dem man gemütlich über den nächsten Zug nachdenken kann. Entscheidungen müssen unter Zeitdruck getroffen werden. Die Darstellung ist dabei funktional statt spektakulär. Einheiten und Gelände müssen vor allem schnell erkennbar sein, weshalb das Spiel optisch kaum versucht, mit großen Grafikeffekten zu beeindrucken. Allein gespielt verliert das Konzept einen Teil seiner Faszination. Gegen einen menschlichen Gegner zeigt sich dagegen, warum Dan Bunten so stark an Multiplayer-Spielen interessiert war. Modem Wars ist deshalb vielleicht nicht das bekannteste Strategiespiel auf dem C64, aber eines der interessantesten Beispiele dafür, wie früh Entwickler bereits mit vernetztem kompetitivem Spielen experimentierten.`,
+        trivia: [
+                  "Das Spieldesign stammt von Dan Bunten, dem Schöpfer beziehungsweise Mitentwickler von Klassikern wie M.U.L.E. und The Seven Cities of Gold.",
+                  "Modem Wars wurde gezielt für Partien zwischen zwei Spielern entwickelt und unterstützte die Verbindung zweier Computer über Modem beziehungsweise Datenverbindung.",
+                  "Durch seine Echtzeitgefechte und den starken Multiplayer-Fokus gilt Modem Wars rückblickend als ein früher Vorläufer späterer kompetitiver Echtzeit-Strategiespiele."
+        ],
+        worthPlaying: `Modem Wars lohnt sich vor allem für Spieler, die sich für die Entwicklung von Echtzeitstrategie und frühem Computer-Multiplayer interessieren. Gegen einen menschlichen Gegner entfaltet das Spiel deutlich mehr Reiz als allein und zeigt erstaunlich früh viele Ideen, die später bei Strategiespielen selbstverständlich wurden. Präsentation und Bedienung sind klar in den Achtzigern verwurzelt, doch das taktische Grundkonzept ist bemerkenswert modern.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1616/modem-wars/",
+        wikipedia: "https://en.wikipedia.org/wiki/Modem_Wars",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 170,
+        height: 224,
+        depth: 25
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 182,
+        folder: "quake_minus_one",
+        scanBy: "Magisthan",
+        page: "quake_minus_one.html",
+        featured: false,
+        title: "Quake Minus One",
+        system: "C64",
+        year: 1985,
+        publisher: "Monolith",
+        developer: "Warren Foulkes / Mike Singleton",
+        genre: ["Strategie", "Echtzeitstrategie", "Action", "Science-Fiction"],
+        description: "Quake Minus One ist ein ungewöhnlicher Mix aus Echtzeitstrategie und Action von Mike Singleton und Warren Foulkes. Der Spieler übernimmt die Kontrolle über den verbliebenen loyalen Computer einer gigantischen unterseeischen Energieanlage und muss verhindern, dass der Robot Liberation Front die Zerstörung der Anlage und damit eine katastrophale Erdbebenserie gelingt.",
+        history: `Quake Minus One erschien 1985 exklusiv für den Commodore 64 und wurde von Warren Foulkes und Mike Singleton entwickelt. Veröffentlicht wurde das Spiel über Monolith, ein kurzlebiges Label von Beyond Software. Die Handlung spielt in einer nahen Zukunft. Tief unter dem Atlantik befindet sich die gigantische Energieanlage Titan, die geothermische Energie aus dem Bereich des Mittelatlantischen Rückens gewinnt. Die gesamte Anlage wird von fünf mächtigen Computersystemen namens Zeus, Poseidon, Vulcan, Ares und Hermes kontrolliert. Die Robot Liberation Front hat die Anlage infiltriert und vier dieser Computersysteme übernommen. Ihr Ziel ist es, Titan zu sabotieren und dadurch ein gewaltiges Erdbeben auszulösen, das große Teile Europas, Afrikas und Amerikas bedrohen würde. Der Spieler kontrolliert das letzte noch nicht übernommene Computersystem und muss versuchen, die anderen Titanen zurückzuerobern. Dabei werden verschiedene Fahrzeuge und Roboter innerhalb der Anlage gesteuert. Das Spiel verbindet eine strategische Übersicht mit unterschiedlichen Kontroll- und Actionsequenzen. Informationen über die Anlage, gegnerische Bewegungen und verfügbare Einheiten müssen ständig ausgewertet werden, während gleichzeitig konkrete Fahrzeuge übernommen und zu ihren Einsatzorten bewegt werden. Quake Minus One läuft in Echtzeit, sodass die gegnerischen Systeme ihre Aktivitäten fortsetzen, während der Spieler seine nächsten Schritte plant. Diese Kombination aus strategischer Kontrolle, Fahrzeugsteuerung und einer komplexen Benutzeroberfläche machte das Spiel für 1985 ausgesprochen ambitioniert. Mike Singleton war zu diesem Zeitpunkt bereits durch The Lords of Midnight und Doomdark's Revenge bekannt und experimentierte auch hier mit einem ungewöhnlichen Spielkonzept, das sich nur schwer einem einzelnen Genre zuordnen lässt.`,
+        review: `Quake Minus One gehört zu jener Sorte C64-Spiele, bei denen die Anleitung nicht nur dekoratives Zubehör ist. Wer einfach den Joystick anschließt und erwartet, nach dreißig Sekunden verstanden zu haben, was hier passiert, dürfte zunächst hauptsächlich Fragezeichen produzieren. Das Spiel wirft den Spieler mitten in eine komplexe unterseeische Computeranlage und erwartet, dass verschiedene Systeme, Fahrzeuge und strategische Möglichkeiten gleichzeitig verstanden werden. Hat man diese Einstiegshürde überwunden, zeigt sich jedoch ein erstaunlich ambitioniertes Spiel. Besonders interessant ist die Verbindung aus strategischer Planung und direkter Kontrolle einzelner Einheiten. Man betrachtet nicht nur eine abstrakte Karte, sondern greift selbst in die Vorgänge innerhalb der Anlage ein. Gleichzeitig arbeitet der Gegner weiter, wodurch Entscheidungen unter Zeitdruck getroffen werden müssen. Technisch wirkt die Präsentation heute natürlich sehr abstrakt. Viele Bildschirme bestehen aus funktionalen Anzeigen und schematischen Darstellungen. Gerade dadurch entsteht aber eine passende Computerterminal-Atmosphäre. Die größte Schwäche ist eindeutig die Zugänglichkeit. Quake Minus One erklärt sich kaum selbst und verlangt Geduld, bevor seine Mechanik wirklich verständlich wird. Wer diese Geduld mitbringt, entdeckt jedoch einen bemerkenswert eigenständigen Mix aus Strategie, Simulation und Action. Es ist kein Spiel für eine schnelle Runde zwischendurch, aber ein gutes Beispiel dafür, wie experimentierfreudig C64-Entwickler Mitte der Achtziger sein konnten.`,
+        trivia: [
+                  "Quake Minus One wurde von Warren Foulkes und Mike Singleton entwickelt. Singleton war zuvor vor allem durch The Lords of Midnight und Doomdark's Revenge bekannt geworden.",
+                  "Die unterseeische Titan-Anlage wird von fünf Computersystemen namens Zeus, Poseidon, Vulcan, Ares und Hermes kontrolliert.",
+                  "Monolith war ein kurzlebiges Label von Beyond Software. Zu seinen ersten Veröffentlichungen gehörten Quake Minus One, Bounces und Rockford's Riot."
+        ],
+        worthPlaying: `Quake Minus One ist besonders für Spieler interessant, die ungewöhnliche und komplexere C64-Spiele mögen. Die hohe Einstiegshürde und die abstrakte Bedienung können zunächst abschrecken, doch dahinter steckt ein für 1985 erstaunlich ambitionierter Mix aus Echtzeitstrategie und Action. Wer sich für Mike Singletons Spiele oder frühe Experimente mit Echtzeitstrategien interessiert, sollte Quake Minus One definitiv ausprobieren.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/3964/quake-minus-one/",
+        wikipedia: "https://en.wikipedia.org/wiki/Quake_Minus_One",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 70,
+        height: 220,
+        depth: 18
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 183,
+        folder: "mr_heli",
+        scanBy: "Magisthan",
+        page: "mr_heli.html",
+        featured: false,
+        title: "Mr. Heli",
+        system: "Amiga / C64",
+        year: 1989,
+        publisher: "Firebird",
+        developer: "Probe Software Ltd.",
+        genre: ["Shoot 'em Up", "Action", "Arcade", "Science-Fiction"],
+        description: "Mr. Heli ist die Heimcomputerumsetzung des gleichnamigen Irem-Arcade-Shooters. Mit einem kleinen bewaffneten Helikopter kämpft sich der Spieler durch horizontal und vertikal scrollende Höhlensysteme, zerstört Gegner und Felsen, sammelt Kristalle und investiert das verdiente Geld in stärkere Waffen und zusätzliche Ausrüstung.",
+        history: `Mr. Heli erschien ursprünglich 1987 als Arcade-Spiel von Irem und wurde außerhalb Japans auch unter dem Namen Battle Chopper bekannt. 1989 veröffentlichte Firebird Umsetzungen für verschiedene europäische Heimcomputer, darunter Commodore 64 und Amiga. Die Konvertierungen entstanden bei Probe Software. Spielerisch unterscheidet sich Mr. Heli deutlich von vielen klassischen horizontalen Shoot 'em Ups. Der kleine Helikopter fliegt nicht automatisch durch die Levels, sondern kann sich relativ frei durch horizontal und vertikal scrollende Bereiche bewegen. Am Boden kann Mr. Heli sogar auf seinen kleinen Landekufen stehen und sich fortbewegen. Neben zahlreichen Gegnern blockieren Felsen und andere Hindernisse den Weg. Werden bestimmte Gesteinsformationen zerstört, kommen Kristalle zum Vorschein. Diese dienen als Zahlungsmittel. An speziellen Stellen innerhalb der Levels können damit neue Waffen und Verbesserungen gekauft werden. Dadurch verbindet Mr. Heli klassische Shooter-Action mit einem einfachen Upgrade-System und einem gewissen Erkundungsanteil. Die Heimcomputerfassungen mussten das technisch aufwendige Irem-Arcade-Spiel deutlich vereinfachen. Besonders die C64-Version gilt dennoch als gelungene Umsetzung. Sie wurde von Mark W. J. Kelly programmiert, Steve Crow zeichnete die Grafik und Charles Deenen von Maniacs of Noise steuerte die Musik bei. Die Amiga-Version bietet die farbenprächtigere 16-Bit-Präsentation, konnte die Qualität und Geschwindigkeit des Arcade-Originals jedoch ebenfalls nicht vollständig erreichen. Trotz dieser Unterschiede behalten beide Versionen das charakteristische Spielprinzip mit frei beweglichem Helikopter, zerstörbarer Umgebung, Kristallen und käuflichen Waffen bei.`,
+        review: `Mr. Heli sieht zunächst so freundlich aus, als würde der kleine Hubschrauber höchstens Pakete ausliefern. Nach wenigen Sekunden wird allerdings klar, dass Irem andere Pläne hatte. Hinter der niedlichen Grafik steckt ein ziemlich anspruchsvoller Shooter. Besonders interessant ist die Bewegungsfreiheit. Statt einfach nur von links nach rechts geschoben zu werden, kann man Bereiche erkunden, Felsen zerstören und nach Kristallen suchen. Diese Kristalle sind nicht bloß Punkte, sondern bares Geld für neue Waffen und Verbesserungen. Dadurch entsteht ein angenehm taktisches Element: Man muss entscheiden, ob sich ein riskanter Umweg lohnt oder ob man lieber mit der vorhandenen Bewaffnung weitermacht. Bei den beiden Commodore-Versionen gibt es allerdings deutliche Unterschiede. Die Amiga-Fassung sieht auf den ersten Blick erwartungsgemäß hübscher aus, wirkt spielerisch aber nicht immer so flüssig und präzise, wie man es von einer 16-Bit-Arcade-Konvertierung erwarten würde. Überraschenderweise macht gerade die C64-Version vieles richtig. Das Scrolling ist sauber, die Figuren sind gut erkennbar und das Spielgefühl kommt dem Arcade-Konzept erstaunlich nahe. Dazu kommt ein starker SID-Soundtrack von Charles Deenen. Mr. Heli gehört damit zu den Fällen, bei denen die technisch schwächere Maschine keineswegs automatisch die schwächere Version bekommen hat. Unabhängig von der Plattform bleibt das Spiel ein ungewöhnlicher und sympathischer Shooter, der durch seine Mischung aus Action, Erkundung und Waffen-Upgrades mehr bietet als simples Dauerfeuer.`,
+        trivia: [
+                  "Mr. Heli erschien 1987 ursprünglich als Arcade-Spiel von Irem und wurde in Nordamerika unter dem Namen Battle Chopper veröffentlicht.",
+                  "Die C64-Version wurde von Mark W. J. Kelly programmiert, die Grafik stammt von Steve Crow und die Musik von Charles Deenen von Maniacs of Noise.",
+                  "Der Spieler sammelt Kristalle als Zahlungsmittel und kann damit während der Levels stärkere Waffen und andere Verbesserungen kaufen."
+        ],
+        worthPlaying: `Mr. Heli ist besonders für Fans klassischer Shoot 'em Ups interessant, weil es sich deutlich weniger linear spielt als viele Genrevertreter seiner Zeit. Die Mischung aus frei erkundbaren Bereichen, zerstörbarer Umgebung, Kristallsuche und Waffen-Upgrades funktioniert auch heute noch gut. Bei einem direkten Vergleich ist vor allem die C64-Version bemerkenswert gelungen, während die Amiga-Fassung mit ihrer farbenprächtigeren Präsentation punktet. Wer Irem-Spiele wie R-Type oder ungewöhnlichere Arcade-Konvertierungen mag, sollte Mr. Heli ausprobieren.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "https://en.wikipedia.org/wiki/Mr._Heli",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 154,
+        height: 184,
+        depth: 32
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        id: 184,
+        folder: "neverwinter_nights_2_chaotic_evil_edition",
+        scanBy: "Magisthan",
+        page: "neverwinter_nights_2_chaotic_evil_edition.html",
+        featured: false,
+        title: "Neverwinter Nights 2: Chaotic Evil Edition",
+        system: "PC",
+        year: 2006,
+        publisher: "Atari",
+        developer: "Obsidian Entertainment",
+        genre: ["Rollenspiel", "Fantasy", "Dungeons & Dragons", "Party-RPG"],
+        description: "Die Chaotic Evil Edition ist eine aufwendig ausgestattete europäische Sammlerausgabe von Neverwinter Nights 2. Das Rollenspiel von Obsidian Entertainment führt zurück in die Forgotten Realms und verbindet eine umfangreiche Einzelspieler-Kampagne nach den Regeln von Dungeons & Dragons 3.5 mit Gruppensteuerung, Charakterentwicklung, Mehrspielerfunktionen und einem mächtigen Editor für eigene Abenteuer.",
+        history: `Neverwinter Nights 2 erschien 2006 für den PC und wurde von Obsidian Entertainment entwickelt und von Atari veröffentlicht. Als Nachfolger von BioWares Neverwinter Nights übernahm Obsidian viele grundlegende Ideen des Vorgängers, legte bei der Einzelspieler-Kampagne jedoch deutlich größeren Wert auf eine klassische Gruppe aus mehreren Begleitern. Das Spiel basiert auf den Regeln der 3.5 Edition von Dungeons & Dragons und spielt erneut in den Forgotten Realms. Die Geschichte beginnt in dem kleinen Dorf West Harbor. Der Spieler gerät dort in einen Angriff und erfährt schließlich, dass seine Vergangenheit mit den geheimnisvollen Splittern eines mächtigen Artefakts verbunden ist. Auf der Reise nach Neverwinter schließen sich verschiedene Begleiter der Gruppe an, deren Fähigkeiten, Persönlichkeiten und Beziehungen eine wichtige Rolle spielen. Neben Kämpfen, Dialogen und umfangreicher Charakterentwicklung erhält der Spieler später sogar die Kontrolle über die Festung Crossroad Keep, die ausgebaut und verwaltet werden kann. Neverwinter Nights 2 führte außerdem die Tradition des Vorgängers fort, Spielern umfangreiche Werkzeuge zur Erstellung eigener Abenteuer zur Verfügung zu stellen. Die Chaotic Evil Edition war eine von zwei besonderen europäischen Sammlerausgaben. Parallel erschien eine Lawful Good Edition. Die Chaotic Evil Edition wurde in einer speziellen buchartigen Verpackung ausgeliefert und enthält neben Neverwinter Nights 2 auch das ursprüngliche Neverwinter Nights sowie dessen Erweiterungen Shadows of Undrentide und Hordes of the Underdark. Hinzu kommen unter anderem ein Chaotic-Evil-Ring, eine Mountain-Troll-Figur, eine hochwertige Karte, eine Bonus-DVD mit Musik und Artwork sowie ein Chaotic-Evil-Artbook. Außerdem waren spezielle Spielinhalte wie zehn vorgefertigte Chaotic-Evil-Charaktere und zusätzliche Bonusgegenstände enthalten. Damit gehört diese Ausgabe zu den besonders umfangreichen physischen PC-Sammlereditionen der Neverwinter-Nights-Reihe.`,
+        review: `Neverwinter Nights 2 ist ein Spiel, bei dem man schon bei der Charaktererstellung problemlos mehr Zeit verbringen kann als bei manchem kompletten Actionspiel. Rasse, Klasse, Talente, Attribute, Fertigkeiten und Zauber basieren weitgehend auf Dungeons & Dragons 3.5 und bieten entsprechend viele Möglichkeiten. Obsidian setzte beim zweiten Teil außerdem stärker auf eine klassische Rollenspielgruppe. Begleiter laufen nicht nur dekorativ hinter dem Helden her, sondern besitzen eigene Persönlichkeiten, Fähigkeiten und Beziehungen zur Hauptfigur. Dadurch erinnert die Kampagne stärker an traditionelle Party-Rollenspiele wie Baldur's Gate. Die Kämpfe laufen in Echtzeit mit Pausenfunktion ab und können gerade bei größeren Gruppen schnell unübersichtlich werden. Hinzu kamen zum Verkaufsstart technische Probleme, eine teilweise widerspenstige Kamera und eine Begleiter-KI, die gelegentlich eigene Vorstellungen davon entwickelte, was unter taktisch sinnvoll zu verstehen ist. Trotzdem steckt darunter ein ausgesprochen umfangreiches Rollenspiel. Besonders die Charakterentwicklung, die vielen Klassenkombinationen und die zahlreichen taktischen Möglichkeiten funktionieren hervorragend. Die Kampagne bietet zudem deutlich mehr klassische Rollenspielatmosphäre als der Einzelspieler-Modus des ersten Neverwinter Nights. Die Chaotic Evil Edition macht das Ganze für Sammler noch interessanter. Neben dem eigentlichen Spiel erhält man nicht nur physische Extras, sondern gleich das ursprüngliche Neverwinter Nights samt beiden großen Erweiterungen dazu. Damit ist diese Ausgabe weniger eine einfache Collector's Edition als ein ziemlich umfangreiches Neverwinter-Nights-Paket.`,
+        trivia: [
+                  "Die Chaotic Evil Edition erschien ausschließlich in Europa und hatte mit der Lawful Good Edition eine zweite Sammlervariante mit anderen physischen Extras.",
+                  "Zum Lieferumfang gehören unter anderem ein Chaotic-Evil-Ring, eine Mountain-Troll-Figur, eine Karte, eine Bonus-DVD, ein Artbook sowie Neverwinter Nights mit Shadows of Undrentide und Hordes of the Underdark.",
+                  "Neverwinter Nights 2 verwendet die Regeln der Dungeons-&-Dragons-Edition 3.5 und wurde von Obsidian Entertainment entwickelt, das von ehemaligen Black-Isle-Mitarbeitern gegründet worden war."
+        ],
+        worthPlaying: `Neverwinter Nights 2 lohnt sich besonders für Spieler, die klassische Gruppen-Rollenspiele und das Regelwerk von Dungeons & Dragons mögen. Die Bedienung, Kamera und einige technische Eigenheiten sind nicht perfekt gealtert, doch Charakterentwicklung, Begleiter, taktische Kämpfe und die umfangreiche Kampagne bieten weiterhin viel Substanz. Für Sammler ist gerade die Chaotic Evil Edition besonders interessant, weil sie zahlreiche physische Extras und zusätzlich den ersten Neverwinter-Nights-Teil samt Erweiterungen enthält.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/24993/neverwinter-nights-2-chaotic-evil-edition/",
+        wikipedia: "https://en.wikipedia.org/wiki/Neverwinter_Nights_2",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 207,
+        height: 263,
+        depth: 75
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
     },
 
 ];

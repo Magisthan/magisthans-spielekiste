@@ -10,10 +10,29 @@ window.Package = {
         );
 
         if (current.game.hasInside && packageOptions.type !== "flatpack") {
-            current.gatefoldMaterials = PackageMaterials.createGatefold(
+            if (packageOptions.type === "hinged-box") {
+                current.hingedBoxMaterials = PackageMaterials.createHingedBox(
+                    scene,
+                    current.game.images,
+                    packageOptions.hingedBox
+                );
+            } else {
+                current.gatefoldMaterials = PackageMaterials.createGatefold(
+                    scene,
+                    current.game.images,
+                    packageOptions.gatefold
+                );
+            }
+        }
+
+        if (current.game.hasInside && packageOptions.type === "hinged-box") {
+            return HingedBoxBuilder.create(
+                current.game,
                 scene,
-                current.game.images,
-                packageOptions.gatefold
+                pivot,
+                current.closedMaterials,
+                current.hingedBoxMaterials,
+                packageOptions
             );
         }
 
@@ -51,6 +70,9 @@ window.Package = {
     },
 
     setOpen(scene, pkg, amount, onComplete) {
+        if (pkg?.type === "hinged-box") {
+            return HingedBoxBuilder.animateTo(scene, pkg, amount, onComplete);
+        }
         if (pkg?.type === "flatpack") {
             if (pkg.isAnimating) return false;
             const opening = amount > 0.5;
@@ -86,6 +108,11 @@ window.Package = {
 
     dispose(pkg) {
         if (!pkg) return;
+        if (pkg.type === "hinged-box") {
+            HingedBoxBuilder.dispose(pkg);
+            PackageMaterials.dispose(pkg.materials);
+            return;
+        }
         if (pkg.type === "flatpack") {
             FlatpackBuilder.dispose(pkg);
             Object.values(pkg.closed?.meshes || {}).forEach((mesh) => mesh?.dispose());

@@ -735,7 +735,7 @@ material.diffuseTexture.anisotropicFilteringLevel = 16;
 
 material.diffuseTexture.gammaSpace = true;
 
-material.diffuseTexture.level = 1.18;
+material.diffuseTexture.level = 1.0;
 
 material.diffuseTexture.updateSamplingMode(
     BABYLON.Texture.TRILINEAR_SAMPLINGMODE
@@ -749,28 +749,29 @@ material.diffuseTexture.updateSamplingMode(
 
 material.ambientColor =
     new BABYLON.Color3(
-        0.42,
-        0.42,
-        0.42
+        0.30,
+        0.30,
+        0.30
     );
 
 material.specularColor =
     new BABYLON.Color3(
-        0.22,
-        0.22,
-        0.22
+        0.08,
+        0.08,
+        0.08
     );
 
 material.specularPower = 140;
 
 material.emissiveColor =
     new BABYLON.Color3(
-        0.12,
-        0.12,
-        0.12
+        0.045,
+        0.045,
+        0.045
     );
 
 material.backFaceCulling = false;
+material.twoSidedLighting = true;
 
 return material;
 
@@ -1504,14 +1505,6 @@ window.viewerCameraDefaultRadius = camera.radius;
 
 );
 
-    canvas.addEventListener(
-
-    "wheel",
-
-    stopShowcaseRotation
-
-);
-
 // A short tap on an eligible package opens or closes it. Babylon emits
 // POINTERTAP only when the pointer was not dragged, so camera orbit gestures
 // remain untouched.
@@ -1539,13 +1532,19 @@ document.getElementById("package-open-hint").addEventListener("click", () => {
 // Zoom Einstellungen
 //--------------------------------------------------
 
-camera.wheelPrecision = 60;
-
 // minimaler Zoom
 camera.lowerRadiusLimit = 2.0;
 
 // maximaler Zoom
 camera.upperRadiusLimit = 9.0;
+
+window.ViewerInputControls?.setup({
+    camera,
+    canvas,
+    container:document.getElementById("viewer-stage"),
+    onInteraction:stopShowcaseRotation,
+    zoomStep:0.45
+});
 
 console.log("6");
 
@@ -1627,7 +1626,7 @@ const hemi = new BABYLON.HemisphericLight(
 
 );
 
-hemi.intensity = 0.52;
+hemi.intensity = 0.82;
 
 hemi.groundColor =
     new BABYLON.Color3(
@@ -1643,9 +1642,15 @@ hemi.diffuse =
         1
     );
 
-//--------------------------------------------------
-// Studio Spot Left
-//--------------------------------------------------
+const viewerFill = new BABYLON.PointLight(
+    "viewerCameraFill",
+    BABYLON.Vector3.Zero(),
+    scene
+);
+viewerFill.intensity = 1.95;
+scene.onBeforeRenderObservable.add(() => {
+    viewerFill.position.copyFrom(camera.globalPosition);
+});
 
 //--------------------------------------------------
 // Key Light Left
@@ -1677,65 +1682,7 @@ keyLightLeft.position =
 
 );
 
-keyLightLeft.intensity = 2.55;
-
-
-//--------------------------------------------------
-// Key Light Right
-//--------------------------------------------------
-
-const keyLightRight =
-    new BABYLON.DirectionalLight(
-
-        "keyLightRight",
-
-        new BABYLON.Vector3(
-
-            0.28,
-            -1,
-            0.12
-
-        ),
-
-        scene
-
-);
-
-keyLightRight.position =
-    new BABYLON.Vector3(
-
-        -2.5,
-        4.5,
-        -2
-
-);
-
-keyLightRight.intensity = 2.55;
-
-
-
-//--------------------------------------------------
-// Studio Spot Right
-//--------------------------------------------------
-
-const fillLight =
-    new BABYLON.PointLight(
-
-        "fillLight",
-
-        new BABYLON.Vector3(
-
-            3,
-            2,
-            3
-
-        ),
-
-        scene
-
-);
-
-fillLight.intensity = 2.95;
+keyLightLeft.intensity = 0.80;
 
 
 
@@ -1760,7 +1707,7 @@ const rimLight =
 
 );
 
-rimLight.intensity = 2.10;
+rimLight.intensity = 0.30;
 
 rimLight.diffuse =
     new BABYLON.Color3(
@@ -1771,41 +1718,11 @@ rimLight.diffuse =
 
 );
 
-//--------------------------------------------------
-// Top Light
-//--------------------------------------------------
-
-const topLight =
-    new BABYLON.PointLight(
-
-        "topLight",
-
-        new BABYLON.Vector3(
-
-            0,
-            6,
-            0
-
-        ),
-
-        scene
-
-);
-
-topLight.intensity = 0.95;
-
-topLight.diffuse =
-    new BABYLON.Color3(
-
-        1,
-        1,
-        1
-
-);
-
-scene.imageProcessingConfiguration.contrast = 1.15;
-
-scene.imageProcessingConfiguration.exposure = 1.12;
+scene.imageProcessingConfiguration.toneMappingEnabled = true;
+scene.imageProcessingConfiguration.toneMappingType =
+    BABYLON.ImageProcessingConfiguration.TONEMAPPING_ACES;
+scene.imageProcessingConfiguration.contrast = 1.06;
+scene.imageProcessingConfiguration.exposure = 1.05;
 
 }
 

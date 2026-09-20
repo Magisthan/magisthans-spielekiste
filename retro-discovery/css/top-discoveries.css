@@ -21,6 +21,11 @@
 /* Desktop-Lupe: Der Bereich wächst nach links in die freie Konsolenfläche. */
 @media (min-width:1025px){
 
+    .rd-console-top:has(#top-discoveries:hover),
+    .rd-console-top:has(#top-discoveries:focus-within){
+        z-index:100;
+    }
+
     #top-discoveries{
         transform:scale(1);
         transform-origin:top right;

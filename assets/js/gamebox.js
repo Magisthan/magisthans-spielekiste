@@ -1,3 +1,19 @@
+const collectionEnhancerScript = document.currentScript?.src;
+const collectionEnhancerReady = loadCollectionContentEnhancer(collectionEnhancerScript);
+
+function loadCollectionContentEnhancer(scriptUrl){
+    if(window.ContentImageEnhancer) return Promise.resolve(window.ContentImageEnhancer);
+    if(window.__contentImageEnhancerReady) return window.__contentImageEnhancerReady;
+    window.__contentImageEnhancerReady = new Promise((resolve,reject)=>{
+        const script = document.createElement("script");
+        script.src = new URL("content-image-enhancer.js",scriptUrl).href;
+        script.onload = ()=>resolve(window.ContentImageEnhancer);
+        script.onerror = reject;
+        document.head.append(script);
+    });
+    return window.__contentImageEnhancerReady;
+}
+
 const canvas = document.getElementById("pirates-viewer");
 const engine = new BABYLON.Engine(canvas, true);
 const fullscreenButton =
@@ -20,7 +36,7 @@ const AUTO_CHANGE_DELAY = 10000;
 // Referenzhöhe
 //--------------------------------------------------
 
-const BOX_HEIGHT = 3.4;
+const BOX_SCALE = 0.014;
 
 //--------------------------------------------------
 // Canvas
@@ -38,40 +54,13 @@ function resizeCanvas() {
 window.addEventListener("resize", resizeCanvas);
 resizeCanvas();
 
-//--------------------------------------------------
-    // Material erzeugen
-    //--------------------------------------------------
-
-    function createMaterial(image) {
-
-        const material = new BABYLON.PBRMaterial(
-            "mat",
-            scene
-        );
-
-        material.albedoTexture = new BABYLON.Texture(
-            image.src,
-            scene
-        );
-
-        material.albedoTexture.uScale = -1;
-        material.albedoTexture.uOffset = 1;
-
-        material.metallic = 0;
-        material.roughness = 0.85;
-        material.backFaceCulling = false;
-
-        return material;
-
-    }
-
     //--------------------------------------------------
     // Spiel laden
     //--------------------------------------------------
 
-    async function loadGame(folder) {
+    async function loadGame(gameData) {
 
-        function loadImage(file) {
+        function loadImage(file, optional = false) {
 
             return new Promise((resolve,reject)=>{
 
@@ -79,204 +68,55 @@ resizeCanvas();
 
                 img.onload = ()=>resolve(img);
 
-                img.onerror = reject;
+                img.onerror = () => optional
+                    ? resolve(null)
+                    : reject(new Error(`Missing texture: ${file}.webp`));
 
-                img.src = `assets/textures/${folder}/${file}.webp`;
+                img.src = `assets/textures/${gameData.folder}/${file}.webp`;
 
             });
 
         }
 
+        const [front, back, left, right, top, bottom, insideLeft, insideRight, insideSpin] =
+            await Promise.all([
+                loadImage("front"),
+                loadImage("back"),
+                loadImage("left"),
+                loadImage("right"),
+                loadImage("top"),
+                loadImage("bottom"),
+                loadImage("inside_left", true),
+                loadImage("inside_right", true),
+                loadImage("inside_spin", true)
+            ]);
+
         const images = {
-
-            front  : await loadImage("front"),
-            back   : await loadImage("back"),
-            left   : await loadImage("left"),
-            right  : await loadImage("right"),
-            top    : await loadImage("top"),
-            bottom : await loadImage("bottom")
-
+            front,
+            back,
+            left,
+            right,
+            top,
+            bottom,
+            insideLeft,
+            insideRight,
+            insideSpin
         };
+
+        const dimensions = gameData.dimensions || {};
 
         return {
 
             images,
 
-            width:
-                BOX_HEIGHT *
-                (images.front.naturalWidth /
-                 images.front.naturalHeight),
-
-            height:
-                BOX_HEIGHT,
-
-            depth:
-                BOX_HEIGHT *
-                (images.left.naturalWidth /
-                 images.left.naturalHeight)
+            width: (dimensions.width || 200) * BOX_SCALE,
+            height: (dimensions.height || 260) * BOX_SCALE,
+            depth: Math.max(dimensions.depth || 20, 3) * BOX_SCALE,
+            hasInside: Boolean(gameData.hasInside && insideLeft && insideRight)
 
         };
 
     }
-
-    //--------------------------------------------------
-    // Box erzeugen
-    //--------------------------------------------------
-
-function buildBox(
-    scene,
-    pivot,
-    current
-) {
-
-    const game = current.game;
-    const materials = current.materials;
-
-    const boxWidth  = game.width;
-    const boxHeight = game.height;
-    const boxDepth  = game.depth;
-
-    const halfW = boxWidth / 2;
-    const halfH = boxHeight / 2;
-    const halfD = boxDepth / 2;
-
-
-    //--------------------------------------------------
-    // Front
-    //--------------------------------------------------
-
-    const front = BABYLON.MeshBuilder.CreatePlane(
-        "front",
-        {
-            width: boxWidth,
-            height: boxHeight
-        },
-        scene
-    );
-
-    front.parent = pivot;
-    front.position.z = halfD;
-    front.material = materials.front;
-
-    //--------------------------------------------------
-    // Back
-    //--------------------------------------------------
-
-    const back = BABYLON.MeshBuilder.CreatePlane(
-        "back",
-        {
-            width: boxWidth,
-            height: boxHeight
-        },
-        scene
-    );
-
-    back.parent = pivot;
-    back.position.z = -halfD;
-    back.rotation.y = Math.PI;
-    back.material = materials.back;
-
-    //--------------------------------------------------
-    // Left
-    //--------------------------------------------------
-
-    const left = BABYLON.MeshBuilder.CreatePlane(
-        "left",
-        {
-            width: boxDepth,
-            height: boxHeight
-        },
-        scene
-    );
-
-    left.parent = pivot;
-    left.position.x = -halfW;
-    left.rotation.y = -Math.PI / 2;
-    left.material = materials.left;
-
-    //--------------------------------------------------
-    // Right
-    //--------------------------------------------------
-
-    const right = BABYLON.MeshBuilder.CreatePlane(
-        "right",
-        {
-            width: boxDepth,
-            height: boxHeight
-        },
-        scene
-    );
-
-    right.parent = pivot;
-    right.position.x = halfW;
-    right.rotation.y = Math.PI / 2;
-    right.material = materials.right;
-
-    //--------------------------------------------------
-    // Top
-    //--------------------------------------------------
-
-    const top = BABYLON.MeshBuilder.CreatePlane(
-        "top",
-        {
-            width: boxWidth,
-            height: boxDepth
-        },
-        scene
-    );
-
-    top.parent = pivot;
-    top.position.y = halfH;
-    top.rotation.x = Math.PI / 2;
-    top.material = materials.top;
-
-    //--------------------------------------------------
-    // Bottom
-    //--------------------------------------------------
-
-    const bottom = BABYLON.MeshBuilder.CreatePlane(
-        "bottom",
-        {
-            width: boxWidth,
-            height: boxDepth
-        },
-        scene
-    );
-
-    bottom.parent = pivot;
-    bottom.position.y = -halfH;
-    bottom.rotation.x = Math.PI / 2;
-    bottom.material = materials.bottom;
-
-    return {
-        front,
-        back,
-        left,
-        right,
-        top,
-        bottom
-    };
-
-}
-
-//--------------------------------------------------
-    // Box entfernen
-    //--------------------------------------------------
-
-function disposeBox(box) {
-
-    if (!box) return;
-
-    box.front.dispose();
-    box.back.dispose();
-    box.left.dispose();
-    box.right.dispose();
-    box.top.dispose();
-    box.bottom.dispose();
-
-}
-
-
 
 //--------------------------------------------------
     // Automatischer Spielwechsel
@@ -303,40 +143,22 @@ async function showGame(index) {
     document.getElementById("game-publisher").textContent = gameData.publisher;
     document.getElementById("game-developer").textContent = gameData.developer;
 
-    const game = await loadGame(gameData.folder);
-
-    const materials = {
-
-    front  : createMaterial(game.images.front),
-    back   : createMaterial(game.images.back),
-    left   : createMaterial(game.images.left),
-    right  : createMaterial(game.images.right),
-    top    : createMaterial(game.images.top),
-    bottom : createMaterial(game.images.bottom)
-
-};
-
-    materials.top.albedoTexture.uScale = 1;
-    materials.top.albedoTexture.uOffset = 0;
-    materials.top.albedoTexture.wAng = Math.PI / 2;
-
-    materials.bottom.albedoTexture.wAng = -Math.PI / 2;
+    const game = await loadGame(gameData);
 
 const current = {
 
     gameData,
-    game,
-    materials
+    game
 
 };
 
 if (currentBox) {
 
-    disposeBox(currentBox);
+    Package.dispose(currentBox);
 
 }
 
-currentBox = buildBox(
+currentBox = Package.create(
     scene,
     pivot,
     current
@@ -565,6 +387,15 @@ async function createScene() {
     
     const NORMAL_CAMERA_RADIUS = 8.8;
     const FULLSCREEN_CAMERA_RADIUS = 10.5;
+    camera.lowerRadiusLimit = 3.0;
+    camera.upperRadiusLimit = 11.0;
+
+    window.ViewerInputControls?.setup({
+        camera,
+        canvas,
+        container:document.querySelector(".gamebox-stage"),
+        onInteraction:userInteraction
+    });
 
     //--------------------------------------------------
     // Licht
@@ -580,7 +411,17 @@ async function createScene() {
 
     );
 
-    hemiLight.intensity = 1.9;
+    hemiLight.intensity = 0.58;
+
+    const viewerFill = new BABYLON.PointLight(
+        "collectionViewerFill",
+        BABYLON.Vector3.Zero(),
+        scene
+    );
+    viewerFill.intensity = 1.55;
+    scene.onBeforeRenderObservable.add(() => {
+        viewerFill.position.copyFrom(camera.globalPosition);
+    });
 
     const dirLight = new BABYLON.DirectionalLight(
 
@@ -593,7 +434,13 @@ async function createScene() {
     );
 
     dirLight.position = new BABYLON.Vector3(5,8,5);
-    dirLight.intensity = 1.4;
+    dirLight.intensity = 0.65;
+
+    scene.imageProcessingConfiguration.toneMappingEnabled = true;
+    scene.imageProcessingConfiguration.toneMappingType =
+        BABYLON.ImageProcessingConfiguration.TONEMAPPING_ACES;
+    scene.imageProcessingConfiguration.contrast = 1.06;
+    scene.imageProcessingConfiguration.exposure = 1.0;
 
     //--------------------------------------------------
     // Pivot
@@ -613,9 +460,7 @@ async function createScene() {
     //--------------------------------------------------
 
     
-const current = await showGame(currentGame);
-
-const game = current.game;
+await showGame(currentGame);
 
 startAutoChange();
 
@@ -630,8 +475,6 @@ startAutoChange();
 
             case BABYLON.PointerEventTypes.POINTERDOWN:
 
-            case BABYLON.PointerEventTypes.POINTERWHEEL:
-
                 userInteraction();
 
                 break;
@@ -642,22 +485,6 @@ startAutoChange();
 
     initSearch(); 
 
-
-    //--------------------------------------------------
-    // Materialien
-    //--------------------------------------------------
-
-    const materials = current.materials;
-
-    
-
-
-
-    //--------------------------------------------------
-    // Texturen korrigieren
-    //--------------------------------------------------
-
-    console.log(currentBox);
 
     //--------------------------------------------------
     // Eigene Steuerung
@@ -938,6 +765,8 @@ function startArchive(folder){
 
     resetArchive();
 
+    let showingContentPlaceholder = false;
+
     const loading =
         document.getElementById("archive-loading");
 
@@ -980,7 +809,28 @@ function startArchive(folder){
 
     image.onload = () => {
 
+    if(showingContentPlaceholder){
+
+        archiveLoadState = "missing";
+        image.hidden = false;
+        empty.hidden = true;
+        zoom.hidden = true;
+        content.classList.remove("content-available");
+        content.classList.add("content-missing");
+
+        if(panel.classList.contains("open")){
+            panel.style.height = panel.scrollHeight + "px";
+        }
+
+        return;
+
+    }
+
     archiveLoadState = "available";
+    const archiveGame = GAMES.find(game=>game.folder === folder);
+    collectionEnhancerReady.then(enhancer=>{
+        enhancer.apply(image,archiveGame?.contentDisplay || {});
+    });
     image.hidden = false;
     empty.hidden = true;
     zoom.hidden = false;
@@ -1005,6 +855,7 @@ function startArchive(folder){
     stopAutoChange();
 
     archiveLightboxImage.src = image.src;
+    collectionEnhancerReady.then(enhancer=>enhancer.copy(image,archiveLightboxImage));
 
     archiveLightbox.classList.add("show");
 
@@ -1012,15 +863,32 @@ function startArchive(folder){
 
     image.onerror = ()=>{
 
+        if(showingContentPlaceholder){
+
+            image.hidden = true;
+            empty.hidden = false;
+            zoom.hidden = true;
+
+            return;
+
+        }
+
+        showingContentPlaceholder = true;
+        collectionEnhancerReady.then(enhancer=>enhancer.reset(image));
         archiveLoadState = "missing";
-        image.hidden = true;
-        empty.hidden = false;
+        image.hidden = false;
+        empty.hidden = true;
         zoom.hidden = true;
         content.classList.remove("content-available");
         content.classList.add("content-missing");
 
         result.textContent =
             "No content at the moment";
+
+        image.alt =
+            "Noch kein Inhaltsbild vorhanden / No content image available";
+
+        image.src = "assets/images/content-placeholder.svg";
 
     };
 

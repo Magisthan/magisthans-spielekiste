@@ -1,3 +1,19 @@
+const homepageEnhancerScript = document.currentScript?.src;
+const homepageEnhancerReady = loadHomepageContentEnhancer(homepageEnhancerScript);
+
+function loadHomepageContentEnhancer(scriptUrl){
+    if(window.ContentImageEnhancer) return Promise.resolve(window.ContentImageEnhancer);
+    if(window.__contentImageEnhancerReady) return window.__contentImageEnhancerReady;
+    window.__contentImageEnhancerReady = new Promise((resolve,reject)=>{
+        const script = document.createElement("script");
+        script.src = new URL("content-image-enhancer.js",scriptUrl).href;
+        script.onload = ()=>resolve(window.ContentImageEnhancer);
+        script.onerror = reject;
+        document.head.append(script);
+    });
+    return window.__contentImageEnhancerReady;
+}
+
 ///--------------------------------------------------
 // Box of the Day
 //--------------------------------------------------
@@ -29,6 +45,10 @@ else {
 
     const image =
         document.getElementById("botd-image");
+
+    image.addEventListener("load",()=>{
+        homepageEnhancerReady.then(enhancer=>enhancer.apply(image,game.contentDisplay || {}));
+    },{ once:true });
 
     image.src =
         `assets/textures/${game.folder}/content.webp`;

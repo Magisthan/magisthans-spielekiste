@@ -118,6 +118,53 @@
     gap:9px;
 }
 
+.game-detail-viewer-scan-credit{
+    position:absolute;
+    z-index:5;
+    left:50%;
+    bottom:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    max-width:min(46%,420px);
+    padding:8px 20px 7px;
+    border-top:1px solid rgba(239,194,76,.55);
+    border-radius:11px 11px 0 0;
+    color:rgba(255,255,255,.82);
+    background:linear-gradient(180deg,rgba(11,15,21,.84),rgba(7,10,15,.68));
+    box-shadow:0 -5px 18px rgba(226,174,54,.07),0 10px 24px rgba(0,0,0,.28);
+    backdrop-filter:blur(6px);
+    opacity:0;
+    transform:translate(-50%,4px);
+    transition:opacity .45s .35s ease,transform .45s .35s ease;
+    pointer-events:none;
+}
+
+.game-detail-viewer.is-ready .game-detail-viewer-scan-credit{
+    opacity:1;
+    transform:translate(-50%,0);
+}
+
+.game-detail-viewer-scan-label{
+    color:rgba(255,255,255,.62);
+    font:600 .58rem/1.2 "Orbitron",sans-serif;
+    letter-spacing:.18em;
+}
+
+.game-detail-viewer-scan-source{
+    display:block;
+    max-width:100%;
+    margin-top:4px;
+    overflow:hidden;
+    color:#efc24c;
+    font:700 clamp(.68rem,.9vw,.84rem)/1.25 "Orbitron",sans-serif;
+    letter-spacing:.09em;
+    text-align:center;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    text-shadow:0 0 10px rgba(239,194,76,.22);
+}
+
 .game-detail-viewer-actions button{
     min-height:44px;
     border:1px solid rgba(255,255,255,.14);
@@ -170,7 +217,7 @@
     .game-detail-viewer-controls{
         left:12px;
         right:72px;
-        bottom:12px;
+        bottom:76px;
         gap:3px 10px;
         padding:7px 9px;
         font-size:.66rem;
@@ -178,7 +225,7 @@
 
     .game-detail-viewer-actions{
         right:12px;
-        bottom:12px;
+        bottom:76px;
         flex-direction:column;
         align-items:flex-end;
     }
@@ -188,11 +235,27 @@
         padding:8px 10px;
         font-size:.62rem;
     }
+
+    .game-detail-viewer-scan-credit{
+        bottom:0;
+        max-width:68%;
+        padding:7px 14px 6px;
+    }
+
+    .game-detail-viewer-scan-source{
+        font-size:clamp(.62rem,2.3vw,.76rem);
+        letter-spacing:.06em;
+    }
 }
 
 @media (max-width:480px){
     .game-detail-viewer-controls{
         flex-direction:column;
+    }
+
+    .game-detail-viewer-scan-credit{
+        bottom:0;
+        max-width:76%;
     }
 }
 
@@ -200,6 +263,10 @@
     .game-detail-viewer-canvas,
     .game-detail-viewer-loading,
     .game-detail-viewer-actions button{
+        transition:none;
+    }
+
+    .game-detail-viewer-scan-credit{
         transition:none;
     }
 }

@@ -131,7 +131,13 @@
         `;
 
         navigation.append(row, toggle, panel);
-        titleHost.prepend(navigation);
+        const overview = titleHost.closest(".game-detail-overview, .game-detail-intro");
+
+        if (overview?.parentElement) {
+            overview.parentElement.insertBefore(navigation, overview);
+        } else {
+            titleHost.prepend(navigation);
+        }
 
         const input = panel.querySelector(".game-archive-navigation__input");
         const results = panel.querySelector(".game-archive-navigation__results");

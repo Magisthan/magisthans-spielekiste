@@ -5,9 +5,24 @@
 (function(){
     "use strict";
 
+    const viewerScriptUrl = document.currentScript?.src;
+    const viewerControlsReady = loadViewerControls(viewerScriptUrl);
     const TEXTURE_BASE = "../assets/textures";
     const BOX_SCALE = 0.014;
     const AUTO_ROTATION_SPEED = 0.0025;
+
+    function loadViewerControls(scriptUrl){
+        if(window.ViewerInputControls) return Promise.resolve(window.ViewerInputControls);
+        if(window.__viewerInputControlsReady) return window.__viewerInputControlsReady;
+        window.__viewerInputControlsReady = new Promise((resolve,reject)=>{
+            const script = document.createElement("script");
+            script.src = new URL("viewer-input-controls.js",scriptUrl).href;
+            script.onload = ()=>resolve(window.ViewerInputControls);
+            script.onerror = reject;
+            document.head.append(script);
+        });
+        return window.__viewerInputControlsReady;
+    }
 
     document.addEventListener("DOMContentLoaded",()=>{
         document.querySelectorAll("[data-game-detail-viewer]")
@@ -30,6 +45,8 @@
             return;
         }
 
+        createScanCredit(stage,gameData);
+
         let engine;
         let scene;
         let camera;
@@ -45,6 +62,17 @@
 
             scene = createScene(engine,canvas);
             camera = scene.activeCamera;
+            const viewerControls = await viewerControlsReady;
+            viewerControls.setup({
+                camera,
+                canvas,
+                container:stage,
+                onInteraction:()=>{ autoRotate = false; }
+            });
+            const guide = stage.querySelector(".game-detail-viewer-controls");
+            if(guide){
+                guide.innerHTML = "<span>Linke Taste: Drehen</span><span>Rechte Taste: Zoomen</span><span>Zwei Finger: Zoomen</span>";
+            }
             pivot = new BABYLON.TransformNode("gameDetailPivot",scene);
             pivot.rotation.y = Math.PI;
 
@@ -71,7 +99,6 @@
 
             const stopAutoRotation = ()=>{ autoRotate = false; };
             canvas.addEventListener("pointerdown",stopAutoRotation,{ passive:true });
-            canvas.addEventListener("wheel",stopAutoRotation,{ passive:true });
 
             fullscreenButton?.addEventListener("click",async()=>{
                 if(document.fullscreenElement === stage){
@@ -118,6 +145,27 @@
         }
     }
 
+    function createScanCredit(stage,gameData){
+        if(!gameData.scanBy || stage.querySelector(".game-detail-viewer-scan-credit")){
+            return;
+        }
+
+        const credit = document.createElement("div");
+        credit.className = "game-detail-viewer-scan-credit";
+        credit.setAttribute("aria-label",`Scanned by ${gameData.scanBy}`);
+
+        const label = document.createElement("span");
+        label.className = "game-detail-viewer-scan-label";
+        label.textContent = "SCANNED BY";
+
+        const source = document.createElement("span");
+        source.className = "game-detail-viewer-scan-source";
+        source.textContent = gameData.scanBy;
+
+        credit.append(label,source);
+        stage.append(credit);
+    }
+
     function createScene(engine,canvas){
         const scene = new BABYLON.Scene(engine);
         scene.clearColor = new BABYLON.Color4(0,0,0,0);
@@ -136,7 +184,6 @@
         camera.upperRadiusLimit = 10;
         camera.lowerBetaLimit = .35;
         camera.upperBetaLimit = Math.PI - .35;
-        camera.wheelPrecision = 55;
         camera.panningSensibility = 0;
         camera.inertia = .78;
         scene.activeCamera = camera;
@@ -146,24 +193,26 @@
             new BABYLON.Vector3(0,1,0),
             scene
         );
-        hemi.intensity = .62;
+        hemi.intensity = .58;
         hemi.groundColor = new BABYLON.Color3(.04,.05,.07);
+
+        const viewerFill = new BABYLON.PointLight(
+            "gameDetailViewerFill",
+            BABYLON.Vector3.Zero(),
+            scene
+        );
+        viewerFill.intensity = 1.55;
+        scene.onBeforeRenderObservable.add(() => {
+            viewerFill.position.copyFrom(camera.globalPosition);
+        });
 
         const key = new BABYLON.DirectionalLight(
             "gameDetailKey",
-            new BABYLON.Vector3(-.3,-1,.35),
+            new BABYLON.Vector3(-.3,-1,.65),
             scene
         );
         key.position = new BABYLON.Vector3(3,5,-2);
-        key.intensity = 2.25;
-
-        const fill = new BABYLON.PointLight(
-            "gameDetailFill",
-            new BABYLON.Vector3(-3,2.5,3),
-            scene
-        );
-        fill.diffuse = new BABYLON.Color3(.66,.82,1);
-        fill.intensity = 1.35;
+        key.intensity = .85;
 
         const rim = new BABYLON.PointLight(
             "gameDetailRim",
@@ -171,10 +220,13 @@
             scene
         );
         rim.diffuse = new BABYLON.Color3(1,.84,.56);
-        rim.intensity = 1.1;
+        rim.intensity = .30;
 
-        scene.imageProcessingConfiguration.contrast = 1.12;
-        scene.imageProcessingConfiguration.exposure = 1.08;
+        scene.imageProcessingConfiguration.toneMappingEnabled = true;
+        scene.imageProcessingConfiguration.toneMappingType =
+            BABYLON.ImageProcessingConfiguration.TONEMAPPING_ACES;
+        scene.imageProcessingConfiguration.contrast = 1.06;
+        scene.imageProcessingConfiguration.exposure = 1.0;
         return scene;
     }
 

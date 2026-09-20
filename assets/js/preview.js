@@ -61,6 +61,14 @@ async function createScene() {
 
     camera.attachControl(canvas, false);
     camera.fov = 0.65;
+    camera.lowerRadiusLimit = 3.0;
+    camera.upperRadiusLimit = 11.0;
+
+    window.ViewerInputControls?.setup({
+        camera,
+        canvas,
+        container:canvas.parentElement
+    });
 
     //----------------------------------
     // Licht
@@ -76,7 +84,17 @@ async function createScene() {
 
     );
 
-    hemiLight.intensity = 1.9;
+    hemiLight.intensity = 0.58;
+
+    const viewerFill = new BABYLON.PointLight(
+        "previewViewerFill",
+        BABYLON.Vector3.Zero(),
+        scene
+    );
+    viewerFill.intensity = 1.55;
+    scene.onBeforeRenderObservable.add(() => {
+        viewerFill.position.copyFrom(camera.globalPosition);
+    });
 
     const dirLight = new BABYLON.DirectionalLight(
 
@@ -89,7 +107,13 @@ async function createScene() {
     );
 
     dirLight.position = new BABYLON.Vector3(5,8,5);
-    dirLight.intensity = 1.4;
+    dirLight.intensity = 0.65;
+
+    scene.imageProcessingConfiguration.toneMappingEnabled = true;
+    scene.imageProcessingConfiguration.toneMappingType =
+        BABYLON.ImageProcessingConfiguration.TONEMAPPING_ACES;
+    scene.imageProcessingConfiguration.contrast = 1.06;
+    scene.imageProcessingConfiguration.exposure = 1.0;
 
     //----------------------------------
     // Pivot
@@ -128,6 +152,7 @@ async function createScene() {
         material.metallic = 0;
         material.roughness = 0.85;
         material.backFaceCulling = false;
+        material.twoSidedLighting = true;
 
         return material;
 
