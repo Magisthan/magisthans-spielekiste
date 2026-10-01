@@ -3,14 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Retro News Flash | Magisthans Spielekiste</title>
+<title data-i18n="collection.title">Meine Sammlung | Magisthans Spielekiste</title>
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/gamebox.css">
+<link rel="stylesheet" href="assets/css/game-archive-navigation.css">
 <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<script defer src="assets/js/i18n/site-bootstrap.js"></script>
 </head>
-<body>
+<body class="collection-page" data-i18n-catalogs="collection">
 
 <header class="hero">
     <img src="assets/images/banner.webp" alt="Magisthans Spielekiste"
@@ -49,9 +51,9 @@
 
     <div class="welcome-text">
 
-        <h2>Meine Retro Sammlung</h2>
+        <h2 data-i18n="collection.hero.title">Meine Retro Sammlung</h2>
 
-        <p>
+        <p data-i18n="collection.hero.paragraph1">
 
             Seit vielen Jahren sammle ich originale Spiele,
             Hardware und besondere Sammlerstücke rund um den
@@ -59,7 +61,7 @@
 
         </p>
 
-        <p>
+        <p data-i18n="collection.hero.paragraph2">
 
             Viele dieser Spiele begleiten mich bereits seit
             meiner Kindheit. Andere habe ich erst viele Jahre
@@ -69,10 +71,10 @@
 
         </p>
 
-        <a href="#sammlung-counter"
+        <a href="sammlungsarchiv.html"
            class="welcome-button">
 
-            Sammlung entdecken
+            <span data-i18n="collection.hero.button">Sammlung entdecken</span>
 
         </a>
 
@@ -83,6 +85,7 @@
         <img
             src="assets/images/collection/collection1.webp"
             alt="Meine Retro Sammlung"
+            data-i18n-alt="collection.hero.imageAlt"
             width="600"
             height="400"
             loading="lazy"
@@ -96,7 +99,7 @@
      Sammlung in Zahlen
 ====================================================== -->
 
-<h2 id="sammlung-counter">
+<h2 id="sammlung-counter" data-i18n="collection.counters.title">
 
     Sammlung in Zahlen
 
@@ -120,7 +123,7 @@
 
         </div>
 
-        <p>C64 Spiele</p>
+        <p data-i18n="collection.counters.c64">C64 Spiele</p>
 
     </div>
 
@@ -140,7 +143,7 @@
 
         </div>
 
-        <p>Amiga Spiele</p>
+        <p data-i18n="collection.counters.amiga">Amiga Spiele</p>
 
     </div>
 
@@ -160,7 +163,7 @@
 
         </div>
 
-        <p>PC Big Box</p>
+        <p data-i18n="collection.counters.pc">PC Big Box</p>
 
     </div>     
 
@@ -170,7 +173,7 @@
      Meine Regale
 ====================================================== -->
 
-<h2>
+<h2 data-i18n="collection.shelves.title">
 
     Einige Regale
 
@@ -182,11 +185,11 @@
 
         <img
             src="assets/images/collection/regal1.webp"
-            alt="Regal no.1">
+            alt="Regal no.1" data-i18n-alt="collection.shelf" data-i18n-params='{"number":1}'>
 
         <div class="shelf-info">
 
-            <h3>Regal no.1</h3>
+            <h3 data-i18n="collection.shelf" data-i18n-params='{"number":1}'>Regal no.1</h3>
 
         </div>
 
@@ -196,11 +199,11 @@
 
         <img
             src="assets/images/collection/regal2.webp"
-            alt="Regal no.2">
+            alt="Regal no.2" data-i18n-alt="collection.shelf" data-i18n-params='{"number":2}'>
 
         <div class="shelf-info">
 
-            <h3>Regal no.2</h3>
+            <h3 data-i18n="collection.shelf" data-i18n-params='{"number":2}'>Regal no.2</h3>
 
         </div>
 
@@ -210,11 +213,11 @@
 
         <img
             src="assets/images/collection/regal3.webp"
-            alt="Regal no.3">
+            alt="Regal no.3" data-i18n-alt="collection.shelf" data-i18n-params='{"number":3}'>
 
         <div class="shelf-info">
 
-            <h3>Regal no.3</h3>
+            <h3 data-i18n="collection.shelf" data-i18n-params='{"number":3}'>Regal no.3</h3>
 
         </div>
 
@@ -224,11 +227,11 @@
 
         <img
             src="assets/images/collection/regal4.webp"
-            alt="Regal no.4">
+            alt="Regal no.4" data-i18n-alt="collection.shelf" data-i18n-params='{"number":4}'>
 
         <div class="shelf-info">
 
-            <h3>Regal no.4</h3>
+            <h3 data-i18n="collection.shelf" data-i18n-params='{"number":4}'>Regal no.4</h3>
 
         </div>
 
@@ -244,7 +247,7 @@
 
     <div class="card search-card">
 
-        <h2>Such &amp; Find: Spiele die ich suche...</h2>
+        <h2 data-i18n="collection.wanted.title">Such &amp; Find: Spiele die ich suche...</h2>
 
         <div class="search-list">
 
@@ -452,69 +455,94 @@
 
     <div class="card">
 
-    <h2>Aus der Sammlung:</h2>
+    <h2 data-i18n="collection.archive.sectionTitle">Aus der Sammlung:</h2>
+
+    <section
+        class="game-archive-navigation game-archive-navigation--collection"
+        aria-label="Spiele in der Sammlung durchsuchen"
+        data-i18n-aria-label="collection.navigation.label">
+
+        <div class="game-archive-navigation__row">
+            <div class="game-archive-navigation__current">
+                <h3 id="game-title"></h3>
+            </div>
+        </div>
+
+        <button
+            class="game-archive-navigation__search-toggle"
+            id="collection-archive-search-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="collection-archive-search-panel">
+            <span class="game-archive-navigation__search-led" aria-hidden="true"></span>
+            <span class="game-archive-navigation__search-text" data-i18n="collection.navigation.search">Archiv durchsuchen</span>
+            <span class="game-archive-navigation__search-chevron" aria-hidden="true">⌄</span>
+        </button>
+
+        <div
+            class="game-archive-navigation__panel"
+            id="collection-archive-search-panel"
+            hidden>
+            <div class="game-archive-navigation__panel-header" aria-hidden="true">
+                <span class="game-archive-navigation__panel-title" data-i18n="collection.navigation.database">Archivdatenbank</span>
+                <span class="game-archive-navigation__online" id="collection-archive-online"></span>
+            </div>
+            <label
+                class="game-archive-navigation__label"
+                for="game-search"
+                data-i18n="collection.navigation.searchLabel">
+                Titel, System, Jahr, Entwickler oder Genre
+            </label>
+            <input
+                class="game-archive-navigation__input"
+                id="game-search"
+                type="search"
+                autocomplete="off"
+                data-i18n-placeholder="collection.navigation.placeholder"
+                placeholder="Zum Beispiel: Pirates, C64 oder Strategie">
+            <div
+                class="game-archive-navigation__status"
+                id="collection-archive-search-status"
+                role="status"
+                aria-live="polite"></div>
+            <ul
+                class="game-archive-navigation__results"
+                id="game-search-results"
+                aria-label="Suchergebnisse"
+                data-i18n-aria-label="collection.navigation.results"></ul>
+        </div>
+    </section>
 
     <section
     id="viewer3d"
     class="favorite-box">
 
-    <div class="game-navigation">       
+    <div class="game-navigation">
 
     <div class="gamebox-stage">
-
-<!-- ==========================================
-     Game Search
-========================================== -->
-
-<div class="archive-search">
-
-    <div class="archive-search-title">
-        SEARCH COLLECTION
-    </div>
-
-    <div class="archive-search-input">
-
-        <span class="prompt">&gt;</span>
-
-         <span class="cursor"></span>
-
-        <input
-            id="game-search"
-            autocomplete="off">
-        
-    </div>
-
-    <div
-        id="game-search-results"
-        class="archive-search-results">
-    </div>
-
-</div>
 
     <canvas id="pirates-viewer"></canvas>
 
     <button
+        id="game-info-toggle"
+        type="button"
+        aria-label="Box-Inhalt"
+        aria-expanded="false"
+        aria-controls="game-info-panel"
+        data-i18n-aria-label="collection.viewer.boxContent">
+        <span class="game-info-toggle__icon" aria-hidden="true">▣</span>
+        <span class="game-info-toggle__label" data-i18n="collection.viewer.boxContent">BOX-INHALT</span>
+        <span class="game-info-toggle__chevron" aria-hidden="true">⌄</span>
+    </button>
+
+    <button
         id="fullscreen-button"
         class="game-fullscreen-button"
-        aria-label="Vollbild">
+        aria-label="Vollbild" data-i18n-aria-label="collection.viewer.fullscreen">
         ⛶
     </button>
 
 </div>
-
-</div>
-
-    <div class="game-title-bar">
-
-    <h3 id="game-title"></h3>
-
-    <button
-        id="game-info-toggle"
-        aria-label="Spielinformationen">
-
-        ⌃
-
-    </button>
 
 </div>
 
@@ -525,22 +553,22 @@
             <div class="game-meta">
 
             <div class="game-info-row">
-                <span class="label">System:</span>
+                <span class="label" data-i18n="collection.viewer.system">System:</span>
                 <span class="value" id="game-system"></span>
             </div>
 
             <div class="game-info-row">
-                <span class="label">Jahr:</span>
+                <span class="label" data-i18n="collection.viewer.year">Jahr:</span>
                 <span class="value" id="game-year"></span>
             </div>
 
             <div class="game-info-row">
-                <span class="label">Publisher:</span>
+                <span class="label" data-i18n="collection.viewer.publisher">Publisher:</span>
                 <span class="value" id="game-publisher"></span>
             </div>
 
             <div class="game-info-row">
-                <span class="label">Entwickler:</span>
+                <span class="label" data-i18n="collection.viewer.developer">Entwickler:</span>
                 <span class="value" id="game-developer"></span>
             </div>
 
@@ -561,7 +589,7 @@
 
             <div class="archive-line"></div>
 
-            <div class="archive-title">
+            <div class="archive-title" data-i18n="collection.archive.database">
 
                 ARCHIVE DATABASE
 
@@ -572,7 +600,7 @@
         </div>
 
         <div id="archive-status"
-             class="archive-status">
+             class="archive-status" data-i18n="collection.archive.searching">
 
             &gt; Searching archive...
 
@@ -608,7 +636,7 @@
             <button
         id="archive-zoom"
         class="archive-zoom"
-        aria-label="Archivbild vergrößern">
+        aria-label="Archivbild vergrößern" data-i18n-aria-label="collection.archive.zoom">
 
         <i class="fa-solid fa-magnifying-glass-plus"></i>
 
@@ -617,14 +645,14 @@
             <img
                 id="archive-image"
                 class="archive-image"
-                alt="Big Box Content">
+                alt="Big Box Content" data-i18n-alt="collection.archive.imageAlt">
 
             <div
                 id="archive-empty"
                 class="archive-empty"
                 role="status"
                 hidden>
-                No content at the moment
+                <span data-i18n="collection.archive.missing">Noch kein Inhaltsbild vorhanden</span>
             </div>
 
             <div class="archive-image-overlay">
@@ -653,7 +681,7 @@
 
    <div style="text-align:center;margin:40px 0 -40px;">
 
-            <a class="welcome-button" href="index.html">
+            <a class="welcome-button" href="index.html" data-i18n="collection.backHome">
                 ← Zurück zur Startseite
             </a>
 
@@ -677,7 +705,7 @@
     <img
         id="archive-lightbox-image"
         class="archive-lightbox-image"
-        alt="Archivbild">
+        alt="Archivbild" data-i18n-alt="collection.archive.lightboxAlt">
 
 </div>
 
@@ -692,6 +720,7 @@
 </div>
 <script src="assets/libs/babylon.js"></script>
 <script src="assets/js/game.js"></script>
+<script src="assets/js/game-localization.js"></script>
 <script src="retro-discovery/js/package-builder.js"></script>
 <script src="retro-discovery/js/package-materials.js"></script>
 <script src="retro-discovery/js/package-animation.js"></script>

@@ -116,6 +116,15 @@ Responsive
     display:none;
 }
 
+#mobile-filter-panel{
+    display:none;
+}
+
+#mobile-discovery-console,
+#mobile-spin-frame{
+    display:none;
+}
+
 /* The virtual canvas already provides the scale.  Keep the original
    centre anchor instead of the carousel's viewport-specific scale. */
 .rd-console-top #discovery-button{
@@ -231,6 +240,316 @@ Responsive
 
     #package-open-hint{
         top:calc(var(--viewer-upper-ui-mobile-top) + 52px);
+    }
+
+}
+
+@media (max-width:768px){
+
+    .rd-console-top,
+    .rd-console-shelf{
+        display:none;
+    }
+
+    #mobile-discovery-console{
+        display:grid;
+        gap:12px;
+        width:calc(100% - 24px);
+        margin:4px auto 18px;
+        padding:14px;
+        border:1px solid rgba(214,163,45,.34);
+        border-radius:14px;
+        background:
+            radial-gradient(circle at 50% 0,rgba(77,255,119,.06),transparent 55%),
+            linear-gradient(145deg,rgba(31,31,28,.98),rgba(8,9,9,.99));
+        box-shadow:
+            0 12px 28px rgba(0,0,0,.46),
+            inset 0 1px rgba(255,255,255,.06);
+    }
+
+    #mobile-lcd-mount{
+        min-width:0;
+    }
+
+    #mobile-lcd-mount #rd-lcd{
+        position:relative;
+        top:auto;
+        left:auto;
+        width:100%;
+        max-width:535px;
+        height:auto;
+        aspect-ratio:535 / 180;
+        margin:0 auto;
+        transform:none;
+    }
+
+    #mobile-discovery-knob-mount{
+        display:grid;
+        place-items:center;
+        min-height:104px;
+    }
+
+    #mobile-discovery-knob-mount #discovery-button{
+        position:relative;
+        top:auto;
+        left:auto;
+        margin:0;
+        transform:none;
+    }
+
+    #mobile-discovery-knob-mount .rd-discovery-knob{
+        width:112px;
+    }
+
+    #mobile-filter-panel{
+        display:grid;
+        gap:18px;
+        width:calc(100% - 24px);
+        margin:14px auto 20px;
+        padding:16px;
+        border:1px solid rgba(214,163,45,.3);
+        border-radius:14px;
+        background:
+            linear-gradient(145deg,rgba(31,31,28,.97),rgba(9,10,10,.99));
+        box-shadow:
+            0 12px 28px rgba(0,0,0,.42),
+            inset 0 1px rgba(255,255,255,.06);
+    }
+
+    .mobile-filter-group{
+        min-width:0;
+    }
+
+    .mobile-filter-group h2{
+        margin:0 0 10px;
+        color:#efbd49;
+        font:700 15px/1.2 "Courier New",monospace;
+        letter-spacing:.12em;
+        text-transform:uppercase;
+    }
+
+    #mobile-filter-panel #system-filter-container{
+        position:static;
+        display:grid;
+        grid-template-columns:repeat(3,minmax(0,1fr));
+        gap:8px;
+        width:100%;
+        height:auto;
+    }
+
+    #mobile-filter-panel .rd-system-btn{
+        position:relative;
+        top:auto;
+        width:100%;
+        height:46px;
+        padding:0 8px;
+        border:1px solid rgba(220,174,71,.28);
+        border-radius:8px;
+        color:#ddc98f;
+        background:linear-gradient(180deg,#292a28,#111211);
+        box-shadow:inset 0 1px rgba(255,255,255,.06);
+        font:700 13px/1 "Courier New",monospace;
+        letter-spacing:.06em;
+    }
+
+    #mobile-filter-panel .rd-system-btn::after{
+        content:attr(data-system);
+    }
+
+    #mobile-filter-panel .rd-system-btn.active{
+        color:#171208;
+        border-color:#efbd49;
+        background:linear-gradient(180deg,#f3c44d,#d49b25);
+        box-shadow:0 0 12px rgba(231,174,50,.24);
+    }
+
+    #mobile-filter-panel .rd-system-switch,
+    #mobile-filter-panel .system-led{
+        display:none;
+    }
+
+    #mobile-filter-panel #genre-filter-container{
+        position:static;
+        display:grid;
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:7px;
+        width:100%;
+    }
+
+    #mobile-filter-panel .rd-genre-btn{
+        width:100%;
+        height:auto;
+        min-height:56px;
+    }
+
+    #mobile-filter-panel .genre-label{
+        left:14px;
+        right:28px;
+        top:50%;
+        font-size:clamp(12px,3.5vw,15px);
+        transform:translateY(-50%);
+    }
+
+    #mobile-filter-panel .genre-led{
+        right:10px;
+        top:50%;
+        transform:translateY(-50%);
+    }
+
+    #mobile-spin-frame{
+        position:relative;
+        display:block;
+        width:calc(100% - 24px);
+        height:clamp(180px,55vw,238px);
+        margin:0 auto 20px;
+        overflow:hidden;
+        border:1px solid rgba(214,163,45,.38);
+        border-radius:14px;
+        background:
+            linear-gradient(90deg,rgba(0,0,0,.82),transparent 18% 82%,rgba(0,0,0,.82)),
+            radial-gradient(ellipse at 50% 78%,rgba(225,158,56,.13),transparent 45%),
+            linear-gradient(180deg,#202221 0,#090b0b 22%,#050606 78%,#171816 100%);
+        box-shadow:
+            0 14px 30px rgba(0,0,0,.5),
+            inset 0 1px rgba(255,255,255,.08),
+            inset 0 -1px rgba(214,163,45,.18);
+    }
+
+    #mobile-spin-frame::before{
+        content:"";
+        position:absolute;
+        top:0;
+        right:10%;
+        left:10%;
+        height:1px;
+        z-index:4;
+        background:linear-gradient(90deg,transparent,rgba(245,210,137,.35),transparent);
+        box-shadow:0 1px 10px rgba(214,163,45,.16);
+        pointer-events:none;
+    }
+
+    #mobile-spin-track-mount,
+    #mobile-spin-track-mount .rd-carousel-track{
+        position:absolute;
+        inset:0;
+    }
+
+    #mobile-spin-frame .rd-reel-lighting{
+        display:none;
+    }
+
+    #mobile-spin-frame .rd-cover-slot{
+        bottom:27px !important;
+        width:clamp(78px,24vw,112px);
+        height:clamp(108px,33.1vw,155px);
+        padding:5px;
+        opacity:0 !important;
+        visibility:hidden;
+        transform:translateX(-50%) scale(1) !important;
+        transition:transform .28s ease,opacity .18s ease;
+    }
+
+    #mobile-spin-frame .rd-cover-slot[data-slot-position="2"],
+    #mobile-spin-frame .rd-cover-slot[data-slot-position="3"],
+    #mobile-spin-frame .rd-cover-slot[data-slot-position="4"]{
+        opacity:1 !important;
+        visibility:visible;
+    }
+
+    #mobile-spin-frame .rd-cover-slot[data-slot-position="2"]{
+        left:18% !important;
+    }
+
+    #mobile-spin-frame .rd-cover-slot[data-slot-position="3"]{
+        left:50% !important;
+    }
+
+    #mobile-spin-frame .rd-cover-slot[data-slot-position="4"]{
+        left:82% !important;
+    }
+
+    #mobile-spin-frame .rd-selection-gate{
+        bottom:17px;
+        width:clamp(90px,28vw,128px);
+        height:clamp(122px,37vw,171px);
+        border-width:2px;
+        border-top-width:3px;
+        border-bottom-width:3px;
+    }
+
+    #mobile-spin-frame .rd-selection-gate span{
+        bottom:-21px;
+        font-size:.58rem;
+    }
+
+    .viewer-game-title{
+        top:auto;
+        bottom:max(clamp(10px,2.5vw,16px),env(safe-area-inset-bottom));
+        width:max-content;
+        max-width:calc(100% - 24px);
+        transform:translateX(-50%);
+    }
+
+    .viewer-scan-credit{
+        white-space:normal;
+        overflow-wrap:anywhere;
+    }
+
+    #viewer-info-btn{
+        width:48px;
+        height:48px;
+        justify-content:center;
+        padding:0;
+        border-radius:50%;
+    }
+
+    #viewer-info-btn .info-text{
+        display:none;
+    }
+
+}
+
+@media (max-width:360px){
+
+    #mobile-discovery-console{
+        gap:8px;
+        padding:12px;
+    }
+
+    #mobile-lcd-mount #rd-lcd{
+        height:154px;
+        aspect-ratio:auto;
+    }
+
+    #mobile-lcd-mount .rd-lcd-screen{
+        top:9px;
+        right:18px;
+        bottom:16px;
+        left:18px;
+    }
+
+    #mobile-lcd-mount .rd-lcd-title,
+    #mobile-lcd-mount .rd-lcd-status,
+    #mobile-lcd-mount .rd-lcd-body,
+    #mobile-lcd-mount .rd-lcd-progress{
+        font-size:11px;
+    }
+
+    #mobile-lcd-mount .rd-lcd-footer,
+    #mobile-lcd-mount .rd-lcd-search-detail{
+        font-size:9px;
+    }
+
+    #mobile-lcd-mount .rd-lcd-found-title{
+        font-size:clamp(12px,4.2vw,15px);
+    }
+
+    #mobile-discovery-knob-mount{
+        min-height:76px;
+    }
+
+    #mobile-discovery-knob-mount .rd-discovery-knob{
+        width:80px;
     }
 
 }

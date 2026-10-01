@@ -7,6 +7,7 @@ const DISCOVERY_LAUNCH_DELAYS = [320, 250, 190, 145, 110, 90];
 const DISCOVERY_CRUISE_CHANGES = 60;
 const DISCOVERY_CRUISE_DELAY = 82;
 const DISCOVERY_BRAKING_DELAYS = [115, 155, 220, 310, 430, 600, 820];
+const DISCOVERY_BUFFER_SIZE = 30;
 
 let isAnimating = false;
 let isSpinning = false;
@@ -36,48 +37,59 @@ function setReelPhase(phase) {
     if (labels[phase]) status.textContent = labels[phase];
 }
 
-function chooseReelIndex(previousIndex, targetIndex) {
-    const candidates = visibleGames
-        .map((game, index) => index)
-        .filter(index => index !== previousIndex && index !== targetIndex);
-
-    const fallback = visibleGames
-        .map((game, index) => index)
-        .filter(index => index !== previousIndex);
-
-    const pool = candidates.length ? candidates : fallback;
-    if (!pool.length) return targetIndex;
-    return pool[Math.floor(Math.random() * pool.length)];
+async function showReelGroup(index, animate = true, continuous = false) {
+    if (continuous) {
+        await renderer.stepTo(index, animate);
+    } else {
+        renderer.showGroup(index, animate);
+    }
 }
 
-function showReelGroup(index, animate = true) {
-    renderer.showGroup(index, animate);
-}
-
-async function runDiscoveryReel(targetIndex) {
+function createDiscoverySequence(targetIndex) {
     let shownIndex = currentGameIndex;
+    const launching = DISCOVERY_LAUNCH_DELAYS.map(() => {
+        shownIndex = wrapVisibleGameIndex(shownIndex + 1);
+        return shownIndex;
+    });
+    const cruise = Array.from({ length:DISCOVERY_CRUISE_CHANGES }, () => {
+        shownIndex = wrapVisibleGameIndex(shownIndex + 1);
+        return shownIndex;
+    });
+    const braking = DISCOVERY_BRAKING_DELAYS.map((_, change) => {
+        const isFinalChange = change === DISCOVERY_BRAKING_DELAYS.length - 1;
+        shownIndex = isFinalChange
+            ? targetIndex
+            : wrapVisibleGameIndex(targetIndex - DISCOVERY_BRAKING_DELAYS.length + change + 1);
+        return shownIndex;
+    });
+
+    return { launching, cruise, braking };
+}
+
+async function runDiscoveryReel(sequence) {
 
     setReelPhase("launching");
-    for (const delay of DISCOVERY_LAUNCH_DELAYS) {
-        shownIndex = chooseReelIndex(shownIndex, targetIndex);
-        showReelGroup(shownIndex);
+    for (let change = 0; change < sequence.launching.length; change += 1) {
+        const centerIndex = sequence.launching[change];
+        renderer.prepareAhead(centerIndex, DISCOVERY_BUFFER_SIZE);
+        await showReelGroup(centerIndex, true, true);
+        const delay = DISCOVERY_LAUNCH_DELAYS[change];
         await waitForDiscoveryStep(delay);
     }
 
     setReelPhase("full-speed");
-    for (let change = 0; change < DISCOVERY_CRUISE_CHANGES; change += 1) {
-        shownIndex = chooseReelIndex(shownIndex, targetIndex);
-        showReelGroup(shownIndex);
+    for (const centerIndex of sequence.cruise) {
+        renderer.prepareAhead(centerIndex, DISCOVERY_BUFFER_SIZE);
+        await showReelGroup(centerIndex, true, true);
         await waitForDiscoveryStep(DISCOVERY_CRUISE_DELAY);
     }
 
     setReelPhase("braking");
-    for (let change = 0; change < DISCOVERY_BRAKING_DELAYS.length; change += 1) {
+    for (let change = 0; change < sequence.braking.length; change += 1) {
         const isFinalChange = change === DISCOVERY_BRAKING_DELAYS.length - 1;
-        shownIndex = isFinalChange
-            ? targetIndex
-            : chooseReelIndex(shownIndex, targetIndex);
-        showReelGroup(shownIndex);
+        const centerIndex = sequence.braking[change];
+        const continuous = change > 0;
+        await showReelGroup(centerIndex, true, continuous);
         if (!isFinalChange) {
             await waitForDiscoveryStep(DISCOVERY_BRAKING_DELAYS[change]);
         }
@@ -130,12 +142,24 @@ async function spinShelf(targetIndex) {
     setLCDMode("searching");
 
     try {
-        await renderer.preloadPromise;
+        const sequence = createDiscoverySequence(targetIndex);
+
+        // Ziel und Bremsweg zuerst absichern. Danach genügt ein Startpuffer;
+        // während des Laufs wird er bei jedem Schritt rollend aufgefüllt.
+        const brakingReady = renderer.prepareGroups([
+            targetIndex,
+            ...sequence.braking
+        ]);
+        const startBufferReady = renderer.prepareAhead(
+            currentGameIndex,
+            DISCOVERY_BUFFER_SIZE
+        );
+        await Promise.all([brakingReady, startBufferReady]);
 
         if (visibleGames.length === 1) {
             renderer.showGroup(targetIndex, false);
         } else {
-            await runDiscoveryReel(targetIndex);
+            await runDiscoveryReel(sequence);
         }
 
         currentGameIndex = targetIndex;

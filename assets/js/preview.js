@@ -1,584 +1,202 @@
-//----------------------------------
-// Canvas
-//----------------------------------
+/* Small 3D package preview on the home page. */
 
 const canvas = document.getElementById("preview-viewer");
-const engine = new BABYLON.Engine(canvas, true);
 
-//----------------------------------
-// Aktuelles Spiel
-//----------------------------------
+if(canvas && window.BABYLON && window.Package){
+    const engine = new BABYLON.Engine(canvas,true);
+    const BOX_SCALE = 0.014;
+    const AUTO_ROTATE_SPEED = 0.003;
+    const CHANGE_INTERVAL = 10000;
 
-let currentGame = 0;
+    let currentGameIndex = 0;
+    let currentPackage = null;
 
-function resizeCanvas() {
-
-    canvas.width = canvas.clientWidth;
-    canvas.height = canvas.clientHeight;
-
-    engine.resize();
-
-}
-
-window.addEventListener("resize", resizeCanvas);
-resizeCanvas();
-
-
-//----------------------------------
-// Szene
-//----------------------------------
-
-async function createScene() {
-
-    const scene = new BABYLON.Scene(engine);
-
-    scene.clearColor = new BABYLON.Color4(
-        0.10,
-        0.13,
-        0.18,
-        1
-    );
-
-    //----------------------------------
-    // Kamera
-    //----------------------------------
-
-    const camera = new BABYLON.ArcRotateCamera(
-
-        "camera",
-
-        -Math.PI / 2.35,
-
-        Math.PI / 2.45,
-
-        8.8,
-
-        BABYLON.Vector3.Zero(),
-
-        scene
-
-    );
-
-    camera.attachControl(canvas, false);
-    camera.fov = 0.65;
-    camera.lowerRadiusLimit = 3.0;
-    camera.upperRadiusLimit = 11.0;
-
-    window.ViewerInputControls?.setup({
-        camera,
-        canvas,
-        container:canvas.parentElement
-    });
-
-    //----------------------------------
-    // Licht
-    //----------------------------------
-
-    const hemiLight = new BABYLON.HemisphericLight(
-
-        "hemi",
-
-        new BABYLON.Vector3(0,1,0),
-
-        scene
-
-    );
-
-    hemiLight.intensity = 0.58;
-
-    const viewerFill = new BABYLON.PointLight(
-        "previewViewerFill",
-        BABYLON.Vector3.Zero(),
-        scene
-    );
-    viewerFill.intensity = 1.55;
-    scene.onBeforeRenderObservable.add(() => {
-        viewerFill.position.copyFrom(camera.globalPosition);
-    });
-
-    const dirLight = new BABYLON.DirectionalLight(
-
-        "dir",
-
-        new BABYLON.Vector3(-1,-2,-1),
-
-        scene
-
-    );
-
-    dirLight.position = new BABYLON.Vector3(5,8,5);
-    dirLight.intensity = 0.65;
-
-    scene.imageProcessingConfiguration.toneMappingEnabled = true;
-    scene.imageProcessingConfiguration.toneMappingType =
-        BABYLON.ImageProcessingConfiguration.TONEMAPPING_ACES;
-    scene.imageProcessingConfiguration.contrast = 1.06;
-    scene.imageProcessingConfiguration.exposure = 1.0;
-
-    //----------------------------------
-    // Pivot
-    //----------------------------------
-
-    const pivot = new BABYLON.TransformNode(
-        "pivot",
-        scene
-    );
-
-    //----------------------------------
-    // Referenzhöhe
-    //----------------------------------
-
-    const BOX_HEIGHT = 3.4;
-
-    //----------------------------------
-    // Material erzeugen
-    //----------------------------------
-
-    function createMaterial(image) {
-
-        const material = new BABYLON.PBRMaterial(
-            "mat",
-            scene
-        );
-
-        material.albedoTexture = new BABYLON.Texture(
-            image.src,
-            scene
-        );
-
-        material.albedoTexture.uScale = -1;
-        material.albedoTexture.uOffset = 1;
-
-        material.metallic = 0;
-        material.roughness = 0.85;
-        material.backFaceCulling = false;
-        material.twoSidedLighting = true;
-
-        return material;
-
+    function resizeCanvas(){
+        canvas.width = canvas.clientWidth;
+        canvas.height = canvas.clientHeight;
+        engine.resize();
     }
 
-    //----------------------------------
-    // Bilder laden
-    //----------------------------------
+    window.addEventListener("resize",resizeCanvas);
+    resizeCanvas();
 
-    function loadImage(folder,file) {
+    async function createScene(){
+        const scene = new BABYLON.Scene(engine);
+        scene.clearColor = new BABYLON.Color4(0.10,0.13,0.18,1);
 
-        return new Promise((resolve,reject)=>{
+        const camera = new BABYLON.ArcRotateCamera(
+            "previewCamera",
+            -Math.PI / 2.35,
+            Math.PI / 2.45,
+            8.8,
+            BABYLON.Vector3.Zero(),
+            scene
+        );
+        camera.attachControl(canvas,false);
+        camera.fov = 0.65;
+        camera.lowerRadiusLimit = 3;
+        camera.upperRadiusLimit = 11;
 
-            const img = new Image();
+        window.ViewerInputControls?.setup({ camera,canvas,container:canvas.parentElement });
 
-            img.onload = ()=>resolve(img);
+        const hemiLight = new BABYLON.HemisphericLight(
+            "previewHemi",
+            new BABYLON.Vector3(0,1,0),
+            scene
+        );
+        hemiLight.intensity = 0.58;
+        hemiLight.groundColor = new BABYLON.Color3(0.04,0.05,0.07);
 
-            img.onerror = reject;
-
-            img.src = `assets/textures/${folder}/${file}.webp`;
-
+        // This light follows the camera so the visible package face remains readable.
+        const viewerFill = new BABYLON.PointLight(
+            "previewViewerFill",
+            BABYLON.Vector3.Zero(),
+            scene
+        );
+        viewerFill.intensity = 1.55;
+        scene.onBeforeRenderObservable.add(()=>{
+            viewerFill.position.copyFrom(camera.globalPosition);
         });
 
-    }
-
-    //----------------------------------
-    // Spiel laden
-    //----------------------------------
-
-    async function loadGame(folder){
-
-        const images = {
-
-            front  : await loadImage(folder,"front"),
-            back   : await loadImage(folder,"back"),
-            left   : await loadImage(folder,"left"),
-            right  : await loadImage(folder,"right"),
-            top    : await loadImage(folder,"top"),
-            bottom : await loadImage(folder,"bottom")
-
-        };
-
-        return{
-
-            images,
-
-            width:
-                BOX_HEIGHT *
-                (images.front.naturalWidth /
-                 images.front.naturalHeight),
-
-            height:
-                BOX_HEIGHT,
-
-            depth:
-                BOX_HEIGHT *
-                (images.left.naturalWidth /
-                 images.left.naturalHeight)
-
-        };
-
-    }
-
-        //----------------------------------
-    // Box erzeugen
-    //----------------------------------
-
-    function buildBox(game, materials){
-
-        const boxWidth  = game.width;
-        const boxHeight = game.height;
-        const boxDepth  = game.depth;
-
-        const halfW = boxWidth / 2;
-        const halfH = boxHeight / 2;
-        const halfD = boxDepth / 2;
-
-        const box = {};
-
-        //----------------------------------
-        // Front
-        //----------------------------------
-
-        box.front = BABYLON.MeshBuilder.CreatePlane(
-            "front",
-            {
-                width: boxWidth,
-                height: boxHeight
-            },
+        const keyLight = new BABYLON.DirectionalLight(
+            "previewKey",
+            new BABYLON.Vector3(-0.3,-1,0.65),
             scene
         );
+        keyLight.position = new BABYLON.Vector3(3,5,-2);
+        keyLight.intensity = 0.85;
 
-        box.front.parent = pivot;
-        box.front.position.z = halfD;
-        box.front.material = materials.front;
-
-        //----------------------------------
-        // Back
-        //----------------------------------
-
-        box.back = BABYLON.MeshBuilder.CreatePlane(
-            "back",
-            {
-                width: boxWidth,
-                height: boxHeight
-            },
+        const rimLight = new BABYLON.PointLight(
+            "previewRim",
+            new BABYLON.Vector3(2.5,4,-4),
             scene
         );
-
-        box.back.parent = pivot;
-        box.back.position.z = -halfD;
-        box.back.rotation.y = Math.PI;
-        box.back.material = materials.back;
-
-        //----------------------------------
-        // Left
-        //----------------------------------
-
-        box.left = BABYLON.MeshBuilder.CreatePlane(
-            "left",
-            {
-                width: boxDepth,
-                height: boxHeight
-            },
-            scene
-        );
-
-        box.left.parent = pivot;
-        box.left.position.x = -halfW;
-        box.left.rotation.y = -Math.PI / 2;
-        box.left.material = materials.left;
-
-        //----------------------------------
-        // Right
-        //----------------------------------
-
-        box.right = BABYLON.MeshBuilder.CreatePlane(
-            "right",
-            {
-                width: boxDepth,
-                height: boxHeight
-            },
-            scene
-        );
-
-        box.right.parent = pivot;
-        box.right.position.x = halfW;
-        box.right.rotation.y = Math.PI / 2;
-        box.right.material = materials.right;
-
-        //----------------------------------
-        // Top
-        //----------------------------------
-
-        box.top = BABYLON.MeshBuilder.CreatePlane(
-            "top",
-            {
-                width: boxWidth,
-                height: boxDepth
-            },
-            scene
-        );
-
-        box.top.parent = pivot;
-        box.top.position.y = halfH;
-        box.top.rotation.x = Math.PI / 2;
-        box.top.material = materials.top;
-
-        //----------------------------------
-        // Bottom
-        //----------------------------------
-
-        box.bottom = BABYLON.MeshBuilder.CreatePlane(
-            "bottom",
-            {
-                width: boxWidth,
-                height: boxDepth
-            },
-            scene
-        );
-
-        box.bottom.parent = pivot;
-        box.bottom.position.y = -halfH;
-        box.bottom.rotation.x = Math.PI / 2;
-        box.bottom.material = materials.bottom;
-
-        return box;
-
-    }
-
-    //----------------------------------
-    // Box entfernen
-    //----------------------------------
-
-    let currentBox = null;
-
-    function disposeBox(){
-
-        if(!currentBox) return;
-
-        Object.values(currentBox).forEach(mesh=>mesh.dispose());
-
-    }
-
-    //----------------------------------
-    // Spiel anzeigen
-    //----------------------------------
-
-    async function showGame(folder){
-
-        const game = await loadGame(folder);
-
-        const materials = {
-
-            front  : createMaterial(game.images.front),
-            back   : createMaterial(game.images.back),
-            left   : createMaterial(game.images.left),
-            right  : createMaterial(game.images.right),
-            top    : createMaterial(game.images.top),
-            bottom : createMaterial(game.images.bottom)
-
-        };
-
-        //----------------------------------
-        // Texturen korrigieren
-        //----------------------------------
-
-        materials.top.albedoTexture.uScale = 1;
-        materials.top.albedoTexture.uOffset = 0;
-        materials.top.albedoTexture.wAng = Math.PI / 2;
-
-        materials.bottom.albedoTexture.wAng = -Math.PI / 2;
-
-        disposeBox();
-
-        currentBox = buildBox(
-            game,
-            materials
-        );
-
-    }
-
-        //----------------------------------
-    // Eigene Steuerung
-    //----------------------------------
-
-    let dragging = false;
-    let hovering = false;
-
-    let lastX = 0;
-    let velocity = 0;
-
-    const AUTO_ROTATE_SPEED = 0.003;
-
-    //----------------------------------
-    // Automatischer Wechsel
-    //----------------------------------
-
-    const CHANGE_INTERVAL = 10000; // 10 Sekunden
-
-    let lastChange = performance.now();
-
-    //----------------------------------
-    // Wechselanimation
-    //----------------------------------
-
-    let changing = false;
-
-    let targetScale = 1.0;
-
-    let currentScale = 1.0;
-
-    let changeStart = 0;
-
-    const CHANGE_DURATION = 450;
-
-    canvas.addEventListener("pointerenter", () => {
-
-        hovering = true;
-
-    });
-
-    canvas.addEventListener("pointerleave", () => {
-
-        hovering = false;
-        dragging = false;
-
-    });
-
-    canvas.addEventListener("pointerdown", (e) => {
-
-        dragging = true;
-        lastX = e.clientX;
-
-    });
-
-    window.addEventListener("pointerup", () => {
-
-        dragging = false;
-
-    });
-
-    window.addEventListener("pointermove", (e) => {
-
-        if(!dragging) return;
-
-        const dx = e.clientX - lastX;
-
-        lastX = e.clientX;
-
-        velocity = dx * 0.008;
-
-        pivot.rotation.y += velocity;
-
-    });
-
-    //----------------------------------
-    // Spiel laden
-    //----------------------------------
-
-    await showGame(
-        GAMES[currentGame].folder
-);
-
-    //----------------------------------
-    // Animation
-    //----------------------------------
-
-    scene.onBeforeRenderObservable.add(() => {
-
-        //----------------------------------
-        // Benutzer dreht nicht
-        //----------------------------------
-
-        if(!dragging){
-
+        rimLight.diffuse = new BABYLON.Color3(1,0.84,0.56);
+        rimLight.intensity = 0.30;
+
+        scene.imageProcessingConfiguration.toneMappingEnabled = true;
+        scene.imageProcessingConfiguration.toneMappingType =
+            BABYLON.ImageProcessingConfiguration.TONEMAPPING_ACES;
+        scene.imageProcessingConfiguration.contrast = 1.06;
+        scene.imageProcessingConfiguration.exposure = 1.05;
+
+        const pivot = new BABYLON.TransformNode("previewPivot",scene);
+
+        function loadImage(folder,name,optional = false){
+            return new Promise((resolve,reject)=>{
+                const image = new Image();
+                image.onload = ()=>resolve(image);
+                image.onerror = ()=>optional
+                    ? resolve(null)
+                    : reject(new Error(`Missing texture: ${folder}/${name}.webp`));
+                image.src = `assets/textures/${folder}/${name}.webp`;
+            });
+        }
+
+        async function loadGame(gameData){
+            const folder = gameData.folder;
+            const [front,back,left,right,top,bottom,insideLeft,insideRight,insideSpin] =
+                await Promise.all([
+                    loadImage(folder,"front"),
+                    loadImage(folder,"back"),
+                    loadImage(folder,"left"),
+                    loadImage(folder,"right"),
+                    loadImage(folder,"top"),
+                    loadImage(folder,"bottom"),
+                    loadImage(folder,"inside_left",true),
+                    loadImage(folder,"inside_right",true),
+                    loadImage(folder,"inside_spin",true)
+                ]);
+
+            const dimensions = gameData.dimensions || {};
+            return {
+                images:{ front,back,left,right,top,bottom,insideLeft,insideRight,insideSpin },
+                width:(dimensions.width || 200) * BOX_SCALE,
+                height:(dimensions.height || 260) * BOX_SCALE,
+                depth:Math.max(dimensions.depth || 20,3) * BOX_SCALE,
+                hasInside:Boolean(gameData.hasInside && insideLeft && insideRight)
+            };
+        }
+
+        async function showGame(gameData){
+            const game = await loadGame(gameData);
+            if(currentPackage) Package.dispose(currentPackage);
+            currentPackage = Package.create(scene,pivot,{ gameData,game });
+        }
+
+        let dragging = false;
+        let hovering = false;
+        let lastX = 0;
+        let velocity = 0;
+        let lastChange = performance.now();
+        let changing = false;
+        let targetScale = 1;
+        let currentScale = 1;
+
+        canvas.addEventListener("pointerenter",()=>{ hovering = true; });
+        canvas.addEventListener("pointerleave",()=>{
+            hovering = false;
+            dragging = false;
+        });
+        canvas.addEventListener("pointerdown",event=>{
+            if(event.button !== 0) return;
+            dragging = true;
+            lastX = event.clientX;
+        });
+        window.addEventListener("pointerup",()=>{ dragging = false; });
+        window.addEventListener("pointermove",event=>{
+            if(!dragging) return;
+            const deltaX = event.clientX - lastX;
+            lastX = event.clientX;
+            velocity = deltaX * 0.008;
             pivot.rotation.y += velocity;
+        });
 
-            velocity *= 0.94;
+        await showGame(GAMES[currentGameIndex]);
 
-        }
+        scene.onBeforeRenderObservable.add(()=>{
+            if(!dragging){
+                pivot.rotation.y += velocity;
+                velocity *= 0.94;
+            }
 
-        //----------------------------------
-        // Spiel wechseln
-        //----------------------------------
+            const now = performance.now();
+            if(!changing && now - lastChange > CHANGE_INTERVAL){
+                changing = true;
+                targetScale = 0.85;
+            }
 
-        const now = performance.now();
+            currentScale += (targetScale - currentScale) * 0.12;
+            pivot.scaling.setAll(currentScale);
 
-        if(
-            !changing &&
-            now - lastChange > CHANGE_INTERVAL
-){
+            if(changing && currentScale < 0.87){
+                currentGameIndex = (currentGameIndex + 1) % GAMES.length;
+                showGame(GAMES[currentGameIndex]).catch(error=>{
+                    console.error("Preview viewer:",error);
+                });
+                targetScale = 1;
+                changing = false;
+                lastChange = now;
+            }
 
-            changing = true;
+            if(!hovering && !dragging){
+                pivot.rotation.y += AUTO_ROTATE_SPEED;
+            }
+        });
 
-            changeStart = now;
-
-            targetScale = 0.85;
-
-}
-
-        //----------------------------------
-// Wechselanimation
-//----------------------------------
-
-currentScale +=
-    (targetScale - currentScale) * 0.12;
-
-pivot.scaling.set(
-    currentScale,
-    currentScale,
-    currentScale
-);
-
-if(
-    changing &&
-    currentScale < 0.87
-){
-
-    currentGame++;
-
-    if(currentGame >= GAMES.length){
-
-        currentGame = 0;
-
+        return scene;
     }
 
-    showGame(
-        GAMES[currentGame].folder
-    );
-
-    targetScale = 1.0;
-
-    changing = false;
-
-    lastChange = now;
-
+    createScene()
+        .then(scene=>{
+            engine.runRenderLoop(()=>scene.render());
+            window.addEventListener("pagehide",()=>{
+                if(currentPackage) Package.dispose(currentPackage);
+                engine.dispose();
+            },{ once:true });
+        })
+        .catch(error=>{
+            console.error("Preview viewer:",error);
+            engine.dispose();
+        });
 }
-
-        //----------------------------------
-        // Langsame Auto-Rotation
-        //----------------------------------
-
-        if(!hovering && !dragging){
-
-            pivot.rotation.y += AUTO_ROTATE_SPEED;
-
-        }
-
-    });
-
-    return scene;
-
-}
-
-
-//----------------------------------
-// Start
-//----------------------------------
-
-createScene().then((scene)=>{
-
-    engine.runRenderLoop(()=>{
-
-        scene.render();
-
-    });
-
-});

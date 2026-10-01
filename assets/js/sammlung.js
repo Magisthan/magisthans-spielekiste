@@ -9,8 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
     initShelfEffects();
     initFavoriteEffects();
     initLightbox();
+    Promise.resolve(window.__siteI18nReady).then(localizeCollectionStatuses);
 
 });
+
+document.addEventListener("siteLanguageChanged", localizeCollectionStatuses);
+
+function localizeCollectionStatuses() {
+    if (!window.SiteI18n) return;
+    document.querySelectorAll(".search-entry .status-text").forEach(status => {
+        const entry = status.closest(".search-entry");
+        const key = entry?.classList.contains("found")
+            ? "collection.wanted.found"
+            : entry?.classList.contains("watch")
+                ? "collection.wanted.watching"
+                : "collection.wanted.urgent";
+        status.textContent = window.SiteI18n.t(key);
+    });
+}
 
 
 /* =====================================================

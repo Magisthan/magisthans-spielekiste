@@ -1,6 +1,8 @@
 const homepageEnhancerScript = document.currentScript?.src;
 const homepageEnhancerReady = loadHomepageContentEnhancer(homepageEnhancerScript);
 
+let homepageFeaturedGame = null;
+
 function loadHomepageContentEnhancer(scriptUrl){
     if(window.ContentImageEnhancer) return Promise.resolve(window.ContentImageEnhancer);
     if(window.__contentImageEnhancerReady) return window.__contentImageEnhancerReady;
@@ -14,49 +16,58 @@ function loadHomepageContentEnhancer(scriptUrl){
     return window.__contentImageEnhancerReady;
 }
 
-///--------------------------------------------------
-// Box of the Day
-//--------------------------------------------------
+function waitForHomepageLanguage(){
+    if(document.readyState !== "loading"){
+        return Promise.resolve(window.__siteI18nReady);
+    }
 
-const featuredGames =
-    GAMES.filter(game => game.featured);
-
-if (featuredGames.length === 0) {
-
-    console.warn("Keine Featured Games vorhanden.");
-
+    return new Promise(resolve=>{
+        document.addEventListener("DOMContentLoaded",()=>{
+            Promise.resolve(window.__siteI18nReady).then(resolve);
+        },{ once:true });
+    });
 }
-else {
 
-    const todayIndex =
-        Math.floor(Date.now() / 86400000);
+function renderFeaturedGame(){
+    if(!homepageFeaturedGame) return;
 
-    const game =
-        featuredGames[todayIndex % featuredGames.length];
+    const game = window.GameLocalization?.localizeGame(homepageFeaturedGame)
+        || homepageFeaturedGame;
 
-    document.getElementById("botd-title").textContent =
-        game.title;
-
+    document.getElementById("botd-title").textContent = game.title;
     document.getElementById("botd-subtitle").textContent =
         `${game.publisher} • ${game.system} • ${game.year}`;
+    document.getElementById("botd-description").textContent = game.description;
 
-    document.getElementById("botd-description").textContent =
-        game.description;
+    const image = document.getElementById("botd-image");
+    image.alt = game.title;
+}
 
-    const image =
-        document.getElementById("botd-image");
+async function initializeHomepage(){
+    await waitForHomepageLanguage();
 
+    const featuredGames = GAMES.filter(game => game.featured);
+    if(!featuredGames.length){
+        console.warn(window.SiteI18n?.t("home.featuredMissing"));
+        return;
+    }
+
+    const todayIndex = Math.floor(Date.now() / 86400000);
+    homepageFeaturedGame = featuredGames[todayIndex % featuredGames.length];
+
+    const image = document.getElementById("botd-image");
     image.addEventListener("load",()=>{
-        homepageEnhancerReady.then(enhancer=>enhancer.apply(image,game.contentDisplay || {}));
+        homepageEnhancerReady.then(enhancer=>{
+            enhancer.apply(image,homepageFeaturedGame.contentDisplay || {});
+        });
     },{ once:true });
-
-    image.src =
-        `assets/textures/${game.folder}/content.webp`;
-
-    image.alt =
-        game.title;
+    image.src = `assets/textures/${homepageFeaturedGame.folder}/content.webp`;
 
     document.getElementById("botd-link").href =
-        `spiele/${game.page}`;
+        `spiele/${homepageFeaturedGame.page}`;
 
+    renderFeaturedGame();
+    document.addEventListener("siteLanguageChanged",renderFeaturedGame);
 }
+
+initializeHomepage();

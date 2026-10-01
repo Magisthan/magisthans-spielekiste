@@ -8,7 +8,9 @@ events.js
 
 function dispatchGameChanged() {
 
-    const game = visibleGames[currentGameIndex];
+    const sourceGame = visibleGames[currentGameIndex];
+    const game = window.GameLocalization?.localizeGame(sourceGame)
+        ?? sourceGame;
 
     document.dispatchEvent(
 

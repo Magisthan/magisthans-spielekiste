@@ -3,18 +3,31 @@
 
     const MAX_VISIBLE_RESULTS = 20;
 
+    function navigationText(key,params = {},fallback = ""){
+        if(!window.SiteI18n?.hasTranslation?.(key)) return fallback;
+        return window.SiteI18n.t(key,params);
+    }
+
+    function localizedGame(game){
+        return window.GameLocalization?.localizeGame?.(game) || game;
+    }
+
     function currentPageName() {
         return decodeURIComponent(window.location.pathname.split("/").pop() || "");
     }
 
     function searchableText(game) {
+        game = localizedGame(game);
+        const language = window.SiteI18n?.getLanguage?.() || "de";
+        const genres = (Array.isArray(game.genre) ? game.genre : [game.genre])
+            .map(genre=>navigationText(`genre.${genre}`,{},genre));
         const values = [
             game.title,
             game.system,
             game.year,
             game.developer,
             game.publisher,
-            ...(Array.isArray(game.genre) ? game.genre : [game.genre])
+            ...genres
         ];
 
         return values
@@ -22,22 +35,24 @@
             .join(" ")
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
-            .toLocaleLowerCase("de");
+            .toLocaleLowerCase(language);
     }
 
     function normalizedQuery(value) {
+        const language = window.SiteI18n?.getLanguage?.() || "de";
         return value
             .trim()
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
-            .toLocaleLowerCase("de");
+            .toLocaleLowerCase(language);
     }
 
     function createStepLink(game, direction, label) {
+        const displayGame = localizedGame(game);
         const link = document.createElement("a");
         link.className = `game-archive-navigation__step game-archive-navigation__step--${direction}`;
         link.href = game.page;
-        link.setAttribute("aria-label", `${label}: ${game.title}, ${game.system}`);
+        link.setAttribute("aria-label", `${label}: ${displayGame.title}, ${displayGame.system}`);
 
         const directionText = document.createElement("span");
         directionText.className = "game-archive-navigation__direction";
@@ -45,7 +60,7 @@
 
         const target = document.createElement("span");
         target.className = "game-archive-navigation__target";
-        target.textContent = `${game.title} · ${game.system}`;
+        target.textContent = `${displayGame.title} · ${displayGame.system}`;
 
         link.append(directionText, target);
         return link;
@@ -78,7 +93,11 @@
         const nextGame = games[(currentIndex + 1) % games.length];
         const navigation = document.createElement("section");
         navigation.className = "game-archive-navigation";
-        navigation.setAttribute("aria-label", "Spiele im Retro Box Archive durchsuchen");
+        navigation.setAttribute("aria-label", navigationText(
+            "gamePage.navigation.label",
+            {},
+            "Spiele im Retro Box Archive durchsuchen"
+        ));
 
         const row = document.createElement("div");
         row.className = "game-archive-navigation__row";
@@ -91,9 +110,9 @@
         current.append(title, meta);
 
         row.append(
-            createStepLink(previousGame, "previous", "Vorheriges Spiel"),
+            createStepLink(previousGame, "previous", navigationText("gamePage.navigation.previous", {}, "Vorheriges Spiel")),
             current,
-            createStepLink(nextGame, "next", "Nächstes Spiel")
+            createStepLink(nextGame, "next", navigationText("gamePage.navigation.next", {}, "Nächstes Spiel"))
         );
 
         const toggle = document.createElement("button");
@@ -103,7 +122,7 @@
         toggle.setAttribute("aria-controls", "game-archive-search-panel");
         toggle.innerHTML = `
             <span class="game-archive-navigation__search-led" aria-hidden="true"></span>
-            <span>Archiv durchsuchen / Search archive</span>
+            <span class="game-archive-navigation__search-text">${navigationText("gamePage.navigation.search", {}, "Archiv durchsuchen")}</span>
             <span class="game-archive-navigation__search-chevron" aria-hidden="true">⌄</span>
         `;
 
@@ -113,21 +132,21 @@
         panel.hidden = true;
         panel.innerHTML = `
             <div class="game-archive-navigation__panel-header" aria-hidden="true">
-                <span class="game-archive-navigation__panel-title">Archive database</span>
-                <span class="game-archive-navigation__online">${games.length} boxes online</span>
+                <span class="game-archive-navigation__panel-title">${navigationText("gamePage.navigation.database", {}, "Archivdatenbank")}</span>
+                <span class="game-archive-navigation__online">${navigationText("gamePage.navigation.online", { count:games.length }, `${games.length} Boxen online`)}</span>
             </div>
             <label class="game-archive-navigation__label" for="game-archive-search">
-                Titel, System, Jahr, Entwickler oder Genre
+                ${navigationText("gamePage.navigation.searchLabel", {}, "Titel, System, Jahr, Entwickler oder Genre")}
             </label>
             <input
                 class="game-archive-navigation__input"
                 id="game-archive-search"
                 type="search"
-                placeholder="Zum Beispiel: Pirates, C64 oder Strategie"
+                placeholder="${navigationText("gamePage.navigation.placeholder", {}, "Zum Beispiel: Pirates, C64 oder Strategie")}"
                 autocomplete="off"
             >
             <div class="game-archive-navigation__status" role="status" aria-live="polite"></div>
-            <ul class="game-archive-navigation__results" aria-label="Suchergebnisse"></ul>
+            <ul class="game-archive-navigation__results" aria-label="${navigationText("gamePage.navigation.results", {}, "Suchergebnisse")}"></ul>
         `;
 
         navigation.append(row, toggle, panel);
@@ -150,6 +169,7 @@
             results.replaceChildren();
 
             visibleMatches.forEach((game, index) => {
+                const displayGame = localizedGame(game);
                 const item = document.createElement("li");
                 const link = document.createElement("a");
                 link.className = "game-archive-navigation__result-link";
@@ -163,11 +183,11 @@
                 const resultIndex = document.createElement("span");
                 resultIndex.className = "game-archive-navigation__result-index";
                 resultIndex.textContent = String(index + 1).padStart(2, "0");
-                resultTitle.append(resultIndex, document.createTextNode(game.title));
+                resultTitle.append(resultIndex, document.createTextNode(displayGame.title));
 
                 const resultMeta = document.createElement("span");
                 resultMeta.className = "game-archive-navigation__result-meta";
-                resultMeta.textContent = [game.system, game.year].filter(Boolean).join(" · ");
+                resultMeta.textContent = [displayGame.system, displayGame.year].filter(Boolean).join(" · ");
 
                 link.append(resultTitle, resultMeta);
                 item.append(link);
@@ -175,11 +195,19 @@
             });
 
             if (!matches.length) {
-                status.textContent = "Kein passendes Spiel gefunden.";
+                status.textContent = navigationText("gamePage.navigation.none", {}, "Kein passendes Spiel gefunden.");
             } else if (matches.length > MAX_VISIBLE_RESULTS) {
-                status.textContent = `${matches.length} Treffer – die ersten ${MAX_VISIBLE_RESULTS} werden angezeigt.`;
+                status.textContent = navigationText(
+                    "gamePage.navigation.limited",
+                    { count:matches.length, limit:MAX_VISIBLE_RESULTS },
+                    `${matches.length} Treffer – die ersten ${MAX_VISIBLE_RESULTS} werden angezeigt.`
+                );
             } else {
-                status.textContent = `${matches.length} ${matches.length === 1 ? "Treffer" : "Treffer"}`;
+                status.textContent = navigationText(
+                    "gamePage.navigation.count",
+                    { count:matches.length },
+                    `${matches.length} Treffer`
+                );
             }
         }
 
@@ -207,6 +235,34 @@
         });
 
         input.addEventListener("input", renderResults);
+
+        document.addEventListener("siteLanguageChanged",()=>{
+            [
+                ["previous", previousGame, "gamePage.navigation.previous", "Vorheriges Spiel"],
+                ["next", nextGame, "gamePage.navigation.next", "Nächstes Spiel"]
+            ].forEach(([direction,game,key,fallback])=>{
+                const link = navigation.querySelector(`.game-archive-navigation__step--${direction}`);
+                const displayGame = localizedGame(game);
+                const label = navigationText(key,{},fallback);
+                link?.setAttribute("aria-label",`${label}: ${displayGame.title}, ${displayGame.system}`);
+                const directionText = link?.querySelector(".game-archive-navigation__direction");
+                const target = link?.querySelector(".game-archive-navigation__target");
+                if(directionText) directionText.textContent = direction === "previous" ? `← ${label}` : `${label} →`;
+                if(target) target.textContent = `${displayGame.title} · ${displayGame.system}`;
+            });
+            navigation.setAttribute("aria-label",navigationText("gamePage.navigation.label",{},"Spiele im Retro Box Archive durchsuchen"));
+            navigation.querySelector(".game-archive-navigation__search-text").textContent =
+                navigationText("gamePage.navigation.search",{},"Archiv durchsuchen");
+            panel.querySelector(".game-archive-navigation__panel-title").textContent =
+                navigationText("gamePage.navigation.database",{},"Archivdatenbank");
+            panel.querySelector(".game-archive-navigation__online").textContent =
+                navigationText("gamePage.navigation.online",{ count:games.length },`${games.length} Boxen online`);
+            panel.querySelector(".game-archive-navigation__label").textContent =
+                navigationText("gamePage.navigation.searchLabel",{},"Titel, System, Jahr, Entwickler oder Genre");
+            input.placeholder = navigationText("gamePage.navigation.placeholder",{},"Zum Beispiel: Pirates, C64 oder Strategie");
+            results.setAttribute("aria-label",navigationText("gamePage.navigation.results",{},"Suchergebnisse"));
+            renderResults();
+        });
         input.addEventListener("keydown", event => {
             const links = [...results.querySelectorAll("a")];
             if (event.key === "ArrowDown" && links.length) {
@@ -254,5 +310,7 @@
         });
     }
 
-    document.addEventListener("DOMContentLoaded", initializeArchiveNavigation);
+    document.addEventListener("DOMContentLoaded", () => {
+        Promise.resolve(window.__siteI18nReady).then(initializeArchiveNavigation);
+    });
 })();

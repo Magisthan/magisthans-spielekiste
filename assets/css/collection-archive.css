@@ -1,0 +1,454 @@
+.collection-archive-page{
+    --archive-gold:#efbd3f;
+    --archive-blue:#67b9df;
+    --archive-surface:#0b1016;
+}
+
+.collection-archive-shell{
+    position:relative;
+    overflow:visible;
+}
+
+.collection-archive-hero{
+    position:relative;
+    padding:clamp(28px,4vw,52px);
+    overflow:hidden;
+    border:1px solid rgba(239,189,63,.26);
+    border-radius:16px;
+    text-align:center;
+    background:
+        radial-gradient(ellipse at 50% 0,rgba(57,126,168,.19),transparent 57%),
+        linear-gradient(135deg,rgba(255,255,255,.035),transparent 48%),
+        #090d12;
+    box-shadow:inset 0 1px rgba(255,255,255,.06),0 18px 38px rgba(0,0,0,.25);
+}
+
+.collection-archive-hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:repeating-linear-gradient(0deg,transparent 0 4px,rgba(112,180,214,.018) 4px 5px);
+}
+
+.collection-archive-eyebrow{
+    display:block;
+    margin-bottom:12px;
+    color:rgba(134,195,221,.72);
+    font:700 .7rem/1.2 "Orbitron",sans-serif;
+    letter-spacing:.24em;
+}
+
+.collection-archive-hero h1{
+    position:relative;
+    z-index:1;
+    max-width:900px;
+    margin:0 auto 16px;
+    color:#f2c44f;
+    font-size:clamp(1.8rem,4vw,3.25rem);
+    line-height:1.12;
+    text-wrap:balance;
+    text-shadow:0 0 24px rgba(239,189,63,.16);
+}
+
+.collection-archive-hero p{
+    position:relative;
+    z-index:1;
+    max-width:760px;
+    margin:0 auto;
+    color:rgba(255,255,255,.76);
+    font-size:clamp(1rem,1.5vw,1.15rem);
+    line-height:1.75;
+}
+
+.collection-archive-total{
+    position:relative;
+    z-index:1;
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    margin-top:22px;
+    padding:9px 15px;
+    border:1px solid rgba(103,185,223,.22);
+    border-radius:999px;
+    color:rgba(255,255,255,.66);
+    background:rgba(2,7,11,.55);
+    font-size:.78rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+}
+
+.collection-archive-total strong{
+    color:#8ed8f5;
+    font-family:"Orbitron",sans-serif;
+    font-size:1rem;
+}
+
+.collection-system-panel{
+    margin-top:26px;
+}
+
+.collection-system-panel h2{
+    margin:0 0 13px;
+    color:rgba(255,255,255,.64);
+    font-size:.76rem;
+    letter-spacing:.16em;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.collection-system-tabs{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:12px;
+}
+
+.collection-system-tab{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    min-height:62px;
+    padding:12px 18px;
+    border:1px solid rgba(255,255,255,.11);
+    border-radius:11px;
+    color:rgba(255,255,255,.72);
+    background:linear-gradient(180deg,rgba(255,255,255,.045),transparent),#11161d;
+    box-shadow:inset 0 1px rgba(255,255,255,.04),0 8px 20px rgba(0,0,0,.2);
+    cursor:pointer;
+    transition:color .2s ease,border-color .2s ease,background .2s ease,transform .15s ease,box-shadow .2s ease;
+}
+
+.collection-system-tab:hover{
+    color:#ffe18a;
+    border-color:rgba(239,189,63,.48);
+    transform:translateY(-2px);
+}
+
+.collection-system-tab.is-active{
+    color:#ffd66b;
+    border-color:rgba(239,189,63,.72);
+    background:linear-gradient(180deg,rgba(239,189,63,.12),transparent),#15140f;
+    box-shadow:inset 0 0 18px rgba(239,189,63,.08),0 0 18px rgba(239,189,63,.1);
+}
+
+.collection-system-tab.is-active::after{
+    content:"";
+    position:absolute;
+    left:18%;
+    right:18%;
+    bottom:-1px;
+    height:2px;
+    background:linear-gradient(90deg,transparent,#efbd3f,transparent);
+    box-shadow:0 0 8px rgba(239,189,63,.55);
+}
+
+.collection-system-tab__name{
+    font:700 clamp(.85rem,1.5vw,1.05rem)/1 "Orbitron",sans-serif;
+    letter-spacing:.11em;
+}
+
+.collection-system-tab__count{
+    min-width:44px;
+    padding:4px 8px;
+    border-radius:999px;
+    color:#8ecde8;
+    background:rgba(66,142,180,.13);
+    font:600 .72rem/1.1 monospace;
+}
+
+.collection-archive-search{
+    margin:26px 0 0;
+    padding:20px;
+}
+
+.collection-archive-search__head,
+.collection-games__heading{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+}
+
+.collection-archive-search__head{
+    margin-bottom:16px;
+    padding-bottom:13px;
+    border-bottom:1px solid rgba(239,189,63,.19);
+}
+
+.collection-archive-search__head > div{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.collection-archive-search__head h2{
+    margin:0;
+    color:#efbd3f;
+    font:700 .86rem/1.2 "Orbitron",sans-serif;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+}
+
+.collection-archive-search__status-light{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#65b8dc;
+    box-shadow:0 0 9px rgba(83,182,222,.85);
+}
+
+.collection-archive-search__count,
+.collection-games__visible-count{
+    color:rgba(166,210,231,.74);
+    font:600 .72rem/1.2 monospace;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+}
+
+.collection-archive-search__feedback{
+    min-height:1.25em;
+    margin:9px 2px 0;
+    color:rgba(255,255,255,.54);
+    font-size:.78rem;
+}
+
+.collection-games{
+    margin-top:26px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:14px;
+    background:#090d12;
+    box-shadow:inset 0 1px rgba(255,255,255,.045),0 14px 34px rgba(0,0,0,.24);
+}
+
+.collection-games__heading{
+    padding:20px 22px;
+    border-bottom:1px solid rgba(239,189,63,.2);
+    background:linear-gradient(180deg,rgba(255,255,255,.045),transparent);
+}
+
+.collection-games__heading > div{
+    display:flex;
+    align-items:baseline;
+    gap:12px;
+}
+
+.collection-games__heading h2{
+    margin:0;
+    color:#fff;
+    font-size:1.1rem;
+}
+
+.collection-games__system{
+    color:#efbd3f;
+    font:700 .72rem/1 "Orbitron",sans-serif;
+    letter-spacing:.14em;
+}
+
+.collection-games__columns,
+.collection-game{
+    display:grid;
+    grid-template-columns:minmax(210px,1.55fr) minmax(120px,.8fr) minmax(155px,1fr) 64px 100px 90px;
+    gap:14px;
+    align-items:center;
+}
+
+.collection-games__columns{
+    padding:11px 20px;
+    color:rgba(255,255,255,.42);
+    background:rgba(0,0,0,.25);
+    font-size:.67rem;
+    font-weight:700;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+}
+
+.collection-games__list{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.collection-game{
+    min-height:68px;
+    box-sizing:border-box;
+    padding:11px 20px;
+    border-top:1px solid rgba(255,255,255,.055);
+    color:rgba(255,255,255,.72);
+    content-visibility:auto;
+    contain-intrinsic-size:auto 68px;
+    transition:background .18s ease,color .18s ease;
+}
+
+.collection-game:hover{
+    color:#fff;
+    background:linear-gradient(90deg,rgba(103,185,223,.08),rgba(239,189,63,.035));
+}
+
+.collection-game__title-cell{
+    min-width:0;
+}
+
+.collection-game__title{
+    display:block;
+    overflow:hidden;
+    color:#f1f3f5;
+    font-weight:700;
+    line-height:1.3;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.collection-game__platform{
+    display:block;
+    margin-top:4px;
+    color:rgba(120,190,221,.7);
+    font-size:.69rem;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+}
+
+.collection-game__value{
+    min-width:0;
+    overflow:hidden;
+    font-size:.82rem;
+    line-height:1.35;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.collection-game__year{
+    color:#e9bd50;
+    font-family:monospace;
+}
+
+.collection-game__link{
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    margin-top:6px;
+    color:#efbd3f;
+    font-size:.64rem;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+.collection-game__link:hover{
+    color:#ffe28b;
+    text-decoration:underline;
+    text-underline-offset:3px;
+}
+
+.collection-games__empty{
+    display:grid;
+    place-items:center;
+    gap:8px;
+    min-height:220px;
+    padding:30px;
+    color:rgba(255,255,255,.56);
+    text-align:center;
+}
+
+.collection-games__empty[hidden]{
+    display:none;
+}
+
+.collection-games__empty strong{
+    color:#efbd3f;
+    font-size:1.05rem;
+}
+
+.collection-archive-back{
+    margin:36px 0 6px;
+    text-align:center;
+}
+
+@media(max-width:1000px){
+    .collection-games__columns,
+    .collection-game{
+        grid-template-columns:minmax(190px,1.45fr) minmax(115px,.8fr) minmax(145px,1fr) 58px 90px;
+    }
+    .collection-games__columns > :last-child,
+    .collection-game > :last-child{
+        display:none;
+    }
+}
+
+@media(max-width:760px){
+    .collection-archive-shell{
+        padding-inline:clamp(14px,4vw,24px);
+    }
+    .collection-system-tabs{
+        gap:8px;
+    }
+    .collection-system-tab{
+        flex-direction:column;
+        gap:7px;
+        min-height:72px;
+        padding:10px 8px;
+    }
+    .collection-archive-search{
+        padding:16px;
+    }
+    .collection-games__columns{
+        display:none;
+    }
+    .collection-game{
+        grid-template-columns:minmax(0,1fr) auto;
+        gap:8px 16px;
+        min-height:104px;
+        padding:15px 17px;
+    }
+    .collection-game__title-cell{
+        grid-column:1 / -1;
+    }
+    .collection-game__title{
+        white-space:normal;
+    }
+    .collection-game__value{
+        white-space:normal;
+    }
+    .collection-game__value::before{
+        content:attr(data-label);
+        display:block;
+        margin-bottom:2px;
+        color:rgba(255,255,255,.4);
+        font-size:.6rem;
+        font-weight:700;
+        letter-spacing:.09em;
+        text-transform:uppercase;
+    }
+    .collection-game__publisher,
+    .collection-game__medium,
+    .collection-game__language{
+        display:none;
+    }
+}
+
+@media(max-width:480px){
+    .collection-archive-hero{
+        padding:25px 18px;
+    }
+    .collection-archive-search__head,
+    .collection-games__heading{
+        align-items:flex-start;
+        flex-direction:column;
+        gap:8px;
+    }
+    .collection-games__heading > div{
+        align-items:flex-start;
+        flex-direction:column;
+        gap:6px;
+    }
+}
+
+@media(prefers-reduced-motion:reduce){
+    .collection-system-tab,
+    .collection-game{
+        transition:none;
+    }
+}

@@ -9,8 +9,7 @@
     const TOP_LIMIT = 20;
     const COMMUNITY_SCALE_MAX = 10;
     const TOP_SCALE_MAX = 5;
-    const PRIOR_MEAN = 4.0;
-    const PRIOR_WEIGHT = 18;
+    const PRIOR_WEIGHT = 10;
     const ROW_HEIGHT = 79;
     const SCROLL_SPEED = 11;
     const UPDATE_PAUSE = 2000;
@@ -39,7 +38,12 @@
         { id:23, folder:"7cities_of_gold_c64", title:"The Seven Cities of Gold", system:"C64", averageRating:4.69, votes:18 }
     ];
 
-    let discoveries = TEST_DISCOVERIES.map(entry => ({ ...entry }));
+    // Die bisherigen Testdaten heißen noch averageRating. Intern wird der
+    // Wert ab jetzt eindeutig als durchschnittliches Boxdesign behandelt.
+    let discoveries = TEST_DISCOVERIES.map(entry => ({
+        ...entry,
+        averageBoxdesign:entry.averageBoxdesign ?? entry.averageRating
+    }));
     let desktopTrack;
     let mobileCurrent;
     let offset = 0;
@@ -52,8 +56,12 @@
 
     function weightedScore(entry) {
 
+        const globalBoxdesignMean = discoveries.length
+            ? discoveries.reduce((sum,item) => sum + item.averageBoxdesign,0) / discoveries.length
+            : TOP_SCALE_MAX / 2;
+
         return (
-            (entry.averageRating * entry.votes + PRIOR_MEAN * PRIOR_WEIGHT) /
+            (entry.averageBoxdesign * entry.votes + globalBoxdesignMean * PRIOR_WEIGHT) /
             (entry.votes + PRIOR_WEIGHT)
         );
 
@@ -225,8 +233,8 @@
             rankedDiscoveries().map((item, index) => [item.id, index + 1])
         );
 
-        entry.averageRating = (
-            entry.averageRating * entry.votes + normalizedRating
+        entry.averageBoxdesign = (
+            entry.averageBoxdesign * entry.votes + normalizedRating
         ) / (entry.votes + 1);
         entry.votes += 1;
 

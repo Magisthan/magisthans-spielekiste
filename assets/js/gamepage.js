@@ -1,5 +1,15 @@
 const gamePageEnhancerScript = document.currentScript?.src;
 const gamePageEnhancerReady = loadContentImageEnhancer(gamePageEnhancerScript);
+loadSiteLanguageShell(gamePageEnhancerScript);
+
+function loadSiteLanguageShell(scriptUrl){
+    if(window.__siteI18nReady) return window.__siteI18nReady;
+    if(document.querySelector('script[src$="assets/js/i18n/site-bootstrap.js"]')) return null;
+    const script = document.createElement("script");
+    script.src = new URL("i18n/site-bootstrap.js",scriptUrl).href;
+    document.head.append(script);
+    return script;
+}
 
 function loadContentImageEnhancer(scriptUrl){
     if(window.ContentImageEnhancer) return Promise.resolve(window.ContentImageEnhancer);
@@ -18,7 +28,27 @@ function loadContentImageEnhancer(scriptUrl){
 // Game Page
 //--------------------------------------------------
 
-document.addEventListener("DOMContentLoaded", initGamePage);
+document.addEventListener("DOMContentLoaded", () => {
+    Promise.resolve(window.__siteI18nReady).then(initGamePage);
+});
+
+let currentGameSource = null;
+
+function gamePageText(key, params = {}, fallback = "") {
+    if (!window.SiteI18n?.hasTranslation?.(key)) return fallback;
+    return window.SiteI18n.t(key, params);
+}
+
+function localizedGameData(game) {
+    return window.GameLocalization?.localizeGame?.(game) || game;
+}
+
+function localizedGenres(genres) {
+    const list = Array.isArray(genres) ? genres : [genres];
+    return list.filter(Boolean).map(genre =>
+        gamePageText(`genre.${genre}`, {}, genre)
+    ).join(", ");
+}
 
 
 //--------------------------------------------------
@@ -38,7 +68,10 @@ function initGamePage() {
 
     }
 
-    fillGameData(game);
+    currentGameSource = game;
+    fillGameData(localizedGameData(game));
+    refreshLocalizedGameData();
+    document.addEventListener("siteLanguageChanged", refreshLocalizedGameData);
 
 }
 
@@ -101,25 +134,25 @@ function fillGameData(game) {
     setText("game-title", game.title);
     setText("game-developer", game.developer);
     setText("game-publisher", game.publisher);
-    setText("game-genre", game.genre);
+    setText("game-genre", localizedGenres(game.genre));
     setText("game-system", game.system);
     setText("game-year", game.year);
 
     setImage(
         "game-cover",
         `../assets/textures/${game.folder}/content.webp`,
-        game.title,
+        gamePageText("gamePage.contentAlt", { title:game.title }, game.title),
         {
             fallbackSrc: "../assets/images/content-placeholder.svg",
-            fallbackAlt: "Noch kein Inhaltsbild vorhanden / No content image available",
+            fallbackAlt: gamePageText("gamePage.contentMissing", {}, "Noch kein Inhaltsbild vorhanden"),
             display: game.contentDisplay || {}
         }
     );
 
-    setHTML("game-history", game.history);
-    setHTML("game-review", game.review);
+    setRichText("game-history", game.history);
+    setRichText("game-review", game.review);
     setTrivia("game-trivia", game.trivia);
-    setHTML("game-worth-playing", game.worthPlaying);
+    setRichText("game-worth-playing", game.worthPlaying);
 
     // ⭐ Sterne setzen
     const stars = document.getElementById("game-rating-stars");
@@ -148,12 +181,13 @@ if (stars) {
 
 setText(
     "game-rating-text",
-    `${game.rating} von 5 Sternen`
+    gamePageText("gamePage.rating", { rating:game.rating }, `${game.rating} von 5 Sternen`)
 );
 
 fillScreenshots(game);
 
 setLink("game-letsplay", game.letsPlay);
+localizeContentImageControls();
 
     }
 
@@ -223,7 +257,11 @@ function setupContentImageViewer(image){
     trigger.type = "button";
     trigger.className = "content-image-trigger";
     trigger.disabled = true;
-    trigger.setAttribute("aria-label","Inhaltsbild vergrößern / Enlarge content image");
+    trigger.setAttribute("aria-label",gamePageText(
+        "gamePage.contentEnlarge",
+        {},
+        "Inhaltsbild vergrößern"
+    ));
 
     stage.insertBefore(trigger,image);
     trigger.append(image);
@@ -251,10 +289,52 @@ function setContentImageInteraction(image,enabled){
     trigger.disabled = !enabled;
     trigger.classList.toggle("is-enabled",enabled);
     if(enabled){
-        trigger.setAttribute("aria-label","Inhaltsbild vergrößern / Enlarge content image");
+        trigger.setAttribute("aria-label",gamePageText(
+            "gamePage.contentEnlarge",
+            {},
+            "Inhaltsbild vergrößern"
+        ));
     }else{
         trigger.removeAttribute("aria-label");
     }
+}
+
+function refreshLocalizedGameData() {
+    if (!currentGameSource) return;
+    const game = localizedGameData(currentGameSource);
+
+    document.title = gamePageText(
+        "gamePage.title",
+        { title:game.title },
+        `${game.title} | Magisthans Spielekiste`
+    );
+
+    setText("game-title", game.title);
+    setText("game-developer", game.developer);
+    setText("game-publisher", game.publisher);
+    setText("game-genre", localizedGenres(game.genre));
+    setText("game-system", game.system);
+    setText("game-year", game.year);
+    setRichText("game-history", game.history);
+    setRichText("game-review", game.review);
+    setTrivia("game-trivia", game.trivia);
+    setRichText("game-worth-playing", game.worthPlaying);
+    setText("game-rating-text", gamePageText(
+        "gamePage.rating",
+        { rating:game.rating },
+        `${game.rating} von 5 Sternen`
+    ));
+
+    const cover = document.getElementById("game-cover");
+    if (cover) {
+        const missing = cover.closest(".game-cover-stage")
+            ?.classList.contains("has-content-placeholder");
+        cover.alt = missing
+            ? gamePageText("gamePage.contentMissing", {}, "Noch kein Inhaltsbild vorhanden")
+            : gamePageText("gamePage.contentAlt", { title:game.title }, game.title);
+    }
+
+    localizeContentImageControls();
 }
 
 function getContentImageDialog(){
@@ -263,11 +343,15 @@ function getContentImageDialog(){
 
     dialog = document.createElement("dialog");
     dialog.className = "content-image-dialog";
-    dialog.setAttribute("aria-label","Vergrößertes Inhaltsbild / Enlarged content image");
+    dialog.setAttribute("aria-label",gamePageText(
+        "gamePage.contentDialog",
+        {},
+        "Vergrößertes Inhaltsbild"
+    ));
     dialog.innerHTML = `
         <div class="content-image-dialog-panel">
             <button class="content-image-dialog-close" type="button"
-                    aria-label="Bild schließen / Close image">×</button>
+                    aria-label="${gamePageText("gamePage.contentClose", {}, "Bild schließen")}">×</button>
             <img class="content-image-dialog-image" alt="">
         </div>`;
     document.body.append(dialog);
@@ -287,16 +371,78 @@ function getContentImageDialog(){
     return dialog;
 }
 
-function setHTML(id, text){
+function localizeContentImageControls() {
+    const trigger = document.querySelector(".content-image-trigger.is-enabled");
+    trigger?.setAttribute("aria-label",gamePageText(
+        "gamePage.contentEnlarge",
+        {},
+        "Inhaltsbild vergrößern"
+    ));
+    const dialog = document.querySelector(".content-image-dialog");
+    dialog?.setAttribute("aria-label",gamePageText(
+        "gamePage.contentDialog",
+        {},
+        "Vergrößertes Inhaltsbild"
+    ));
+    dialog?.querySelector(".content-image-dialog-close")?.setAttribute(
+        "aria-label",
+        gamePageText("gamePage.contentClose", {}, "Bild schließen")
+    );
+}
 
+function setRichText(id, content){
     const element = document.getElementById(id);
+    if(!element) return;
 
-    if(element){
+    const source = Array.isArray(content) ? content : [content];
+    let paragraphs = source
+        .flatMap(value=>String(value ?? "").split(/\r?\n\s*\r?\n/))
+        .map(value=>value.trim())
+        .filter(Boolean);
 
-        element.innerHTML = text;
-
+    // Existing long strings have no editorial paragraph marks yet. Group only
+    // those legacy texts at sentence boundaries; explicit arrays/newlines win.
+    if(!Array.isArray(content) && paragraphs.length === 1 && paragraphs[0].length >= 650){
+        paragraphs = groupLegacyParagraphs(paragraphs[0]);
     }
 
+    element.replaceChildren();
+    element.classList.add("game-prose");
+
+    paragraphs.forEach(text=>{
+        const paragraph = document.createElement("p");
+        paragraph.textContent = text;
+        element.append(paragraph);
+    });
+}
+
+function groupLegacyParagraphs(text){
+    const sentences = text.match(/[^.!?]+(?:[.!?]+(?:["'’”)]*)|$)/g)
+        ?.map(sentence=>sentence.trim())
+        .filter(Boolean) || [text];
+
+    if(sentences.length < 4) return [text];
+
+    const paragraphs = [];
+    let current = "";
+
+    sentences.forEach(sentence=>{
+        current = current ? `${current} ${sentence}` : sentence;
+        if(current.length >= 380){
+            paragraphs.push(current);
+            current = "";
+        }
+    });
+
+    if(current){
+        if(paragraphs.length && current.length < 180){
+            paragraphs[paragraphs.length - 1] += ` ${current}`;
+        }else{
+            paragraphs.push(current);
+        }
+    }
+
+    return paragraphs;
 }
 
 function setTrivia(id, list){

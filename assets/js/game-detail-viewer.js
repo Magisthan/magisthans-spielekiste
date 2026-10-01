@@ -11,6 +11,11 @@
     const BOX_SCALE = 0.014;
     const AUTO_ROTATION_SPEED = 0.0025;
 
+    function viewerText(key, params = {}, fallback = ""){
+        if(!window.SiteI18n?.hasTranslation?.(key)) return fallback;
+        return window.SiteI18n.t(key,params);
+    }
+
     function loadViewerControls(scriptUrl){
         if(window.ViewerInputControls) return Promise.resolve(window.ViewerInputControls);
         if(window.__viewerInputControlsReady) return window.__viewerInputControlsReady;
@@ -25,8 +30,10 @@
     }
 
     document.addEventListener("DOMContentLoaded",()=>{
-        document.querySelectorAll("[data-game-detail-viewer]")
-            .forEach(stage=>initGameDetailViewer(stage));
+        Promise.resolve(window.__siteI18nReady).then(()=>{
+            document.querySelectorAll("[data-game-detail-viewer]")
+                .forEach(stage=>initGameDetailViewer(stage));
+        });
     });
 
     async function initGameDetailViewer(stage){
@@ -41,7 +48,11 @@
             games.find(game=>game.page === canonicalPage);
 
         if(!canvas || !window.BABYLON || !window.Package || !gameData){
-            showError(stage,loading,"Die 3D-Box konnte nicht geladen werden.");
+            showError(stage,loading,viewerText(
+                "gamePage.viewerError",
+                {},
+                "Die 3D-Box konnte nicht geladen werden."
+            ));
             return;
         }
 
@@ -52,6 +63,7 @@
         let camera;
         let pivot;
         let currentPackage;
+        let boxIsOpen = false;
         let autoRotate = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
         try{
@@ -69,10 +81,9 @@
                 container:stage,
                 onInteraction:()=>{ autoRotate = false; }
             });
-            const guide = stage.querySelector(".game-detail-viewer-controls");
-            if(guide){
-                guide.innerHTML = "<span>Linke Taste: Drehen</span><span>Rechte Taste: Zoomen</span><span>Zwei Finger: Zoomen</span>";
-            }
+            const updateLanguage = ()=>localizeViewer(stage,gameData,boxIsOpen);
+            updateLanguage();
+            document.addEventListener("siteLanguageChanged",updateLanguage);
             pivot = new BABYLON.TransformNode("gameDetailPivot",scene);
             pivot.rotation.y = Math.PI;
 
@@ -90,9 +101,9 @@
                     if(currentPackage.isAnimating) return;
 
                     Package.toggle(scene,currentPackage,()=>{
-                        const isOpen = currentPackage.openAmount > .5;
-                        openButton.textContent = isOpen ? "BOX SCHLIESSEN" : "BOX ÖFFNEN";
-                        camera.radius = isOpen ? 8.3 : 7;
+                        boxIsOpen = currentPackage.openAmount > .5;
+                        updateLanguage();
+                        camera.radius = boxIsOpen ? 8.3 : 7;
                     });
                 });
             }
@@ -111,12 +122,7 @@
             document.addEventListener("fullscreenchange",()=>{
                 if(fullscreenButton){
                     fullscreenButton.textContent = document.fullscreenElement === stage ? "×" : "⛶";
-                    fullscreenButton.setAttribute(
-                        "aria-label",
-                        document.fullscreenElement === stage
-                            ? "Vollbild schließen"
-                            : "3D-Ansicht im Vollbild öffnen"
-                    );
+                    updateLanguage();
                 }
                 engine.resize();
             });
@@ -134,6 +140,7 @@
             stage.classList.add("is-ready");
 
             window.addEventListener("pagehide",()=>{
+                document.removeEventListener("siteLanguageChanged",updateLanguage);
                 resizeObserver.disconnect();
                 Package.dispose(currentPackage);
                 engine.dispose();
@@ -141,7 +148,11 @@
         }catch(error){
             console.error("Game detail viewer:",error);
             engine?.dispose();
-            showError(stage,loading,"Die Texturen der 3D-Box konnten nicht geladen werden.");
+            showError(stage,loading,viewerText(
+                "gamePage.viewerTextureError",
+                {},
+                "Die Texturen der 3D-Box konnten nicht geladen werden."
+            ));
         }
     }
 
@@ -152,18 +163,82 @@
 
         const credit = document.createElement("div");
         credit.className = "game-detail-viewer-scan-credit";
-        credit.setAttribute("aria-label",`Scanned by ${gameData.scanBy}`);
+        const scanLabel = viewerText("viewer.scanBy", {}, "Gescannt von");
+        credit.setAttribute("aria-label",`${scanLabel} ${gameData.scanBy}`);
 
         const label = document.createElement("span");
         label.className = "game-detail-viewer-scan-label";
-        label.textContent = "SCANNED BY";
+        label.textContent = scanLabel.toUpperCase();
 
         const source = document.createElement("span");
         source.className = "game-detail-viewer-scan-source";
-        source.textContent = gameData.scanBy;
+        if(gameData.scanUrl){
+            source.append(`${gameData.scanBy} - `);
+            const link = document.createElement("a");
+            link.className = "game-detail-viewer-scan-link";
+            link.href = gameData.scanUrl;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = gameData.scanUrl;
+            source.append(link);
+        }else{
+            source.textContent = gameData.scanBy;
+        }
 
         credit.append(label,source);
         stage.append(credit);
+    }
+
+    function localizeViewer(stage,gameData,isOpen){
+        const localizedGame = window.GameLocalization?.localizeGame?.(gameData) || gameData;
+        const canvas = stage.querySelector(".game-detail-viewer-canvas");
+        const guide = stage.querySelector(".game-detail-viewer-controls");
+        const openButton = stage.querySelector(".game-detail-viewer-open");
+        const fullscreenButton = stage.querySelector(".game-detail-viewer-fullscreen");
+        const credit = stage.querySelector(".game-detail-viewer-scan-credit");
+
+        canvas?.setAttribute("aria-label",viewerText(
+            "gamePage.viewerLabel",
+            { title:localizedGame.title },
+            `Interaktive 3D-Ansicht der Spielebox ${localizedGame.title}`
+        ));
+        if(guide){
+            guide.replaceChildren();
+            [
+                `${viewerText("controls.leftButton", {}, "Linke Taste")}: ${viewerText("controls.rotate", {}, "Drehen")}`,
+                `${viewerText("controls.rightButton", {}, "Rechte Taste")}: ${viewerText("controls.zoom", {}, "Zoomen")}`,
+                viewerText("gamePage.viewerTouchZoom", {}, "Zwei Finger: Zoomen")
+            ].forEach(text=>{
+                const span = document.createElement("span");
+                span.textContent = text;
+                guide.append(span);
+            });
+        }
+        if(openButton){
+            openButton.textContent = viewerText(
+                isOpen ? "viewer.closeBox" : "viewer.openBox",
+                {},
+                isOpen ? "Box schließen" : "Box öffnen"
+            );
+        }
+        if(fullscreenButton){
+            fullscreenButton.setAttribute(
+                "aria-label",
+                viewerText(
+                    document.fullscreenElement === stage
+                        ? "viewer.exitFullscreen"
+                        : "viewer.enterFullscreen",
+                    {},
+                    "3D-Ansicht im Vollbild öffnen"
+                )
+            );
+        }
+        if(credit){
+            const scanLabel = viewerText("viewer.scanBy", {}, "Gescannt von");
+            credit.setAttribute("aria-label",`${scanLabel} ${gameData.scanBy}`);
+            const label = credit.querySelector(".game-detail-viewer-scan-label");
+            if(label) label.textContent = scanLabel.toUpperCase();
+        }
     }
 
     function createScene(engine,canvas){

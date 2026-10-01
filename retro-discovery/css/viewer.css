@@ -215,7 +215,7 @@ viewer.css
     box-shadow:
         0 6px 20px rgba(0,0,0,.35);
 
-    pointer-events:auto;
+    pointer-events:none;
 
     z-index:130;
 
@@ -871,6 +871,24 @@ viewer.css
 
 }
 
+/* Retro Discovery: Zoomsteuerung mittig auf dem oberen Rahmen des
+   unteren Chassis. Die gemeinsame Viewer-Komponente bleibt unverändert. */
+#viewer-stage > .viewer-zoom-controls{
+    top:1.2%;
+    right:auto;
+    left:50%;
+    z-index:150;
+    transform:translateX(-50%);
+}
+
+@media (max-width:1024px){
+    #viewer-stage > .viewer-zoom-controls{
+        top:12px;
+        right:auto;
+        left:50%;
+    }
+}
+
 .info-editorial-actions{
     display:grid;
     gap:10px;
@@ -909,7 +927,7 @@ viewer.css
 .editorial-dialog.is-open{
     opacity:1;
     visibility:visible;
-    pointer-events:auto;
+    pointer-events:none;
     transition:opacity .24s ease,visibility 0s;
 }
 
@@ -1387,6 +1405,28 @@ body.editorial-dialog-open{
 
 .viewer-scan-credit:empty{
     display:none;
+}
+
+.viewer-scan-credit a{
+    position:relative;
+    z-index:3;
+    color:inherit;
+    pointer-events:auto;
+    text-decoration-color:rgba(255,255,255,.42);
+    text-decoration-thickness:1px;
+    text-underline-offset:3px;
+    transition:color .2s ease,text-decoration-color .2s ease,text-shadow .2s ease;
+}
+
+.viewer-scan-credit a:hover{
+    color:#ffe08a;
+    text-decoration-color:currentColor;
+    text-shadow:0 0 10px rgba(239,194,76,.34);
+}
+
+.viewer-scan-credit a:focus-visible{
+    outline:2px solid #ffe293;
+    outline-offset:3px;
 }
 
 .viewer-game-title.has-scan-credit .viewer-scan-credit{

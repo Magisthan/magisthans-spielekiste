@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="collectionArchive.pageTitle">Spielearchiv | Magisthans Spielekiste</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/game-archive-navigation.css">
+    <link rel="stylesheet" href="assets/css/collection-archive.css">
+    <script defer src="assets/js/i18n/site-bootstrap.js"></script>
+</head>
+<body class="collection-archive-page" data-i18n-catalogs="collection-archive">
+
+<header class="hero">
+    <img
+        src="assets/images/banner.webp"
+        alt="Magisthans Spielekiste"
+        width="1920"
+        height="550"
+        decoding="async"
+        fetchpriority="high">
+</header>
+
+<nav>
+    <a href="index.html">Startseite</a>
+    <a href="retro-news-flash.html">Retro News Flash</a>
+    <a href="pixelkumpel.html" class="pixelkumpel-link">
+        <img
+            src="assets/images/pixelkumpel-icon.webp"
+            alt="Die Pixelkumpel"
+            width="48"
+            height="36"
+            decoding="async"
+            loading="lazy">
+        Die Pixelkumpel
+    </a>
+    <a href="sammlung.html">Meine Sammlung</a>
+    <a href="ueber-mich.html">Über mich</a>
+</nav>
+
+<div class="container">
+    <main class="collection-archive-shell card legal-content">
+        <header class="collection-archive-hero">
+            <span class="collection-archive-eyebrow" data-i18n="collectionArchive.eyebrow">MEIN SPIELEARCHIV</span>
+            <h1 data-i18n="collectionArchive.title">C64-, Amiga- und PC-Spiele meiner Sammlung</h1>
+            <p data-i18n="collectionArchive.intro">
+                Durchsuche meine vollständigen Spielelisten und entdecke die verschiedenen Ausgaben meiner Sammlung.
+            </p>
+            <div class="collection-archive-total" aria-live="polite">
+                <span data-i18n="collectionArchive.totalLabel">Spiele im Archiv</span>
+                <strong id="collection-archive-total">0</strong>
+            </div>
+        </header>
+
+        <section class="collection-system-panel" aria-labelledby="collection-system-title">
+            <h2 id="collection-system-title" data-i18n="collectionArchive.chooseSystem">System auswählen</h2>
+            <div class="collection-system-tabs" role="tablist" aria-label="System auswählen" data-i18n-aria-label="collectionArchive.chooseSystem">
+                <button class="collection-system-tab is-active" type="button" role="tab" aria-selected="true" data-collection="c64">
+                    <span class="collection-system-tab__name">C64</span>
+                    <span class="collection-system-tab__count" data-count-for="c64">0</span>
+                </button>
+                <button class="collection-system-tab" type="button" role="tab" aria-selected="false" data-collection="amiga">
+                    <span class="collection-system-tab__name">AMIGA</span>
+                    <span class="collection-system-tab__count" data-count-for="amiga">0</span>
+                </button>
+                <button class="collection-system-tab" type="button" role="tab" aria-selected="false" data-collection="pc">
+                    <span class="collection-system-tab__name">PC</span>
+                    <span class="collection-system-tab__count" data-count-for="pc">0</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="collection-archive-search game-archive-navigation" aria-labelledby="collection-archive-search-title">
+            <div class="collection-archive-search__head">
+                <div>
+                    <span class="collection-archive-search__status-light" aria-hidden="true"></span>
+                    <h2 id="collection-archive-search-title" data-i18n="collectionArchive.searchTitle">Archiv durchsuchen</h2>
+                </div>
+                <span id="collection-archive-current-count" class="collection-archive-search__count"></span>
+            </div>
+            <label class="game-archive-navigation__label" for="collection-archive-query" data-i18n="collectionArchive.searchLabel">
+                Titel, System, Genre, Publisher, Jahr, Medium oder Sprache
+            </label>
+            <input
+                class="game-archive-navigation__input"
+                id="collection-archive-query"
+                type="search"
+                autocomplete="off"
+                placeholder="Zum Beispiel: Pirates, Strategie oder 1992"
+                data-i18n-placeholder="collectionArchive.searchPlaceholder">
+            <div class="collection-archive-search__feedback" id="collection-archive-feedback" role="status" aria-live="polite"></div>
+        </section>
+
+        <section class="collection-games" aria-labelledby="collection-games-title">
+            <div class="collection-games__heading">
+                <div>
+                    <span class="collection-games__system" id="collection-games-system">C64</span>
+                    <h2 id="collection-games-title" data-i18n="collectionArchive.listTitle">Spieleliste</h2>
+                </div>
+                <span class="collection-games__visible-count" id="collection-games-visible-count"></span>
+            </div>
+
+            <div class="collection-games__columns" aria-hidden="true">
+                <span data-i18n="collectionArchive.column.title">Titel</span>
+                <span data-i18n="collectionArchive.column.genre">Genre</span>
+                <span data-i18n="collectionArchive.column.publisher">Publisher</span>
+                <span data-i18n="collectionArchive.column.year">Jahr</span>
+                <span data-i18n="collectionArchive.column.medium">Medium</span>
+                <span data-i18n="collectionArchive.column.language">Sprache</span>
+            </div>
+            <ol class="collection-games__list" id="collection-games-list"></ol>
+            <div class="collection-games__empty" id="collection-games-empty" hidden>
+                <strong data-i18n="collectionArchive.emptyTitle">Keine passenden Spiele gefunden.</strong>
+                <span data-i18n="collectionArchive.emptyText">Versuche einen anderen Suchbegriff oder wähle ein anderes System.</span>
+            </div>
+        </section>
+
+        <div class="collection-archive-back">
+            <a class="welcome-button" href="sammlung.html" data-i18n="collectionArchive.back">← Zurück zu „Meine Sammlung“</a>
+        </div>
+    </main>
+</div>
+
+<footer>
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a>
+</footer>
+
+<script src="data/collection-catalog.js"></script>
+<script src="assets/js/game.js"></script>
+<script src="assets/js/game-localization.js"></script>
+<script src="assets/js/collection-archive.js"></script>
+</body>
+</html>

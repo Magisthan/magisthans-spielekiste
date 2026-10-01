@@ -13,6 +13,25 @@ let infoPanelOpen = false;
 let currentInfoGameData = null;
 let editorialDialogReturnFocus = null;
 let editorialDialogInitialized = false;
+let currentEditorialHeadingKey = null;
+
+function viewerText(key){
+    return window.RDI18n?.t(`info.${key}`) ?? key;
+}
+
+function localizeInfoGenres(genres){
+
+    const values = (Array.isArray(genres) ? genres : [genres])
+        .map(genre => String(genre ?? "").trim())
+        .filter(Boolean);
+
+    return values.map(genre => {
+        const key = `genre.${genre}`;
+        const translated = window.RDI18n?.t(key);
+        return translated && translated !== key ? translated : genre;
+    }).join(", ");
+
+}
 
 //--------------------------------------------------
 // Viewer
@@ -24,7 +43,7 @@ const SCALE = 0.014;
 // Viewer Position
 //--------------------------------------------------
 
-const BOX_Y_OFFSET = 0.38;
+const BOX_Y_OFFSET = 0.08;
 
 //--------------------------------------------------
 // Hero Pose
@@ -191,7 +210,7 @@ function toggleInfoPanel(){
 // Editorial reading dialog
 //--------------------------------------------------
 
-function configureEditorialButton(button,content,heading){
+function configureEditorialButton(button,content,headingKey){
 
     if(!button) return;
 
@@ -199,12 +218,12 @@ function configureEditorialButton(button,content,heading){
 
     button.style.display = hasContent ? "" : "none";
     button.onclick = hasContent
-        ? ()=>openEditorialDialog(heading,content,button)
+        ? ()=>openEditorialDialog(headingKey,content,button)
         : null;
 
 }
 
-function openEditorialDialog(heading,content,trigger){
+function openEditorialDialog(headingKey,content,trigger){
 
     const dialog = document.getElementById("editorial-dialog");
     const title = document.getElementById("editorial-dialog-heading");
@@ -218,7 +237,8 @@ function openEditorialDialog(heading,content,trigger){
         setContributionDialogOpen(false);
     }
 
-    title.textContent = heading;
+    currentEditorialHeadingKey = headingKey;
+    title.textContent = viewerText(headingKey);
     game.textContent = currentInfoGameData?.title || "";
     copy.textContent = content;
     editorialDialogReturnFocus = trigger || document.activeElement;
@@ -244,6 +264,7 @@ function closeEditorialDialog({ restoreFocus=true }={}){
 
     const returnFocus = editorialDialogReturnFocus;
     editorialDialogReturnFocus = null;
+    currentEditorialHeadingKey = null;
 
     if(restoreFocus && returnFocus?.isConnected){
         requestAnimationFrame(()=>returnFocus.focus());
@@ -320,7 +341,7 @@ function updateInfoPanel(gameData){
         "info-meta"
     ).textContent =
 
-        `${gameData.system} • ${gameData.genre} • ${gameData.year}`;
+        `${gameData.system} • ${localizeInfoGenres(gameData.genre)} • ${gameData.year}`;
 
     document.getElementById(
         "info-developer"
@@ -341,7 +362,7 @@ document.getElementById(
 
     artists.length
         ? artists.join(", ")
-        : "keine Angabe";
+        : viewerText("noData");
 
     const reviewButton = document.getElementById("info-review");
     const worthPlayingButton = document.getElementById("info-worth-playing");
@@ -349,13 +370,13 @@ document.getElementById(
     configureEditorialButton(
         reviewButton,
         gameData.review,
-        "MAGISTHANS REVIEW"
+        "reviewHeading"
     );
 
     configureEditorialButton(
         worthPlayingButton,
         gameData.worthPlaying,
-        "HEUTE NOCH SPIELENSWERT?"
+        "worthPlayingHeading"
     );
 
     //--------------------------------------------------
@@ -483,7 +504,7 @@ copyButton.onclick = async () => {
 
     copyButton.innerHTML =
 
-        "✓ Link kopiert!";
+        viewerText("copied");
 
     setTimeout(() => {
 
@@ -491,13 +512,35 @@ copyButton.onclick = async () => {
 
         copyButton.innerHTML =
 
-            "🔗 Spiel teilen / share game";
+            viewerText("share");
 
     },2000);
 
 };
 
 }
+
+document.addEventListener("rdlanguagechange",()=>{
+    if(currentInfoGameData){
+        const localizedGame = window.GameLocalization?.localizeGame(
+            currentInfoGameData.__sourceGame || currentInfoGameData
+        ) ?? currentInfoGameData;
+        updateInfoPanel(localizedGame);
+
+        const copy = document.getElementById("editorial-dialog-copy");
+        if(copy && currentEditorialHeadingKey){
+            copy.textContent = currentEditorialHeadingKey === "reviewHeading"
+                ? localizedGame.review
+                : localizedGame.worthPlaying;
+        }
+    }
+
+    const dialog = document.getElementById("editorial-dialog");
+    const heading = document.getElementById("editorial-dialog-heading");
+    if(dialog?.classList.contains("is-open") && heading && currentEditorialHeadingKey){
+        heading.textContent = viewerText(currentEditorialHeadingKey);
+    }
+});
 
 
 
@@ -1764,9 +1807,19 @@ async function showViewerGameTitle(gameData){
     title.classList.remove("shine-ready","has-scan-credit");
     title.classList.add("has-title","is-typing");
     visualText.textContent = "";
-    scanCredit.textContent = gameData.scanBy
-        ? `SCANNED BY · ${gameData.scanBy}`
-        : "";
+    scanCredit.replaceChildren();
+    if(gameData.scanBy){
+        scanCredit.append(`SCANNED BY \u00B7 ${gameData.scanBy}`);
+        if(gameData.scanUrl){
+            scanCredit.append(" - ");
+            const scanLink = document.createElement("a");
+            scanLink.href = gameData.scanUrl;
+            scanLink.target = "_blank";
+            scanLink.rel = "noopener noreferrer";
+            scanLink.textContent = gameData.scanUrl;
+            scanCredit.append(scanLink);
+        }
+    }
     status.textContent = "";
 
     const characters = splitViewerTitle(fullTitle);

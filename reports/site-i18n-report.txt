@@ -1,0 +1,21 @@
+SITE I18N AND RESPONSIVE AUDIT
+Generated: 2026-09-25T16:39:26.143Z
+
+Catalog files: 16
+Localized HTML pages: 218
+Translation keys: 576
+Errors: 0
+Warnings: 1
+
+NOTES
+- 16 site catalogs evaluated
+- 218 localized main-site HTML pages checked (211 game pages)
+- 1 unregistered HTML game pages found
+- 576 registered translation keys found
+- Responsive check is structural; final pixel-level inspection still requires an available browser
+
+ERRORS
+- none
+
+WARNINGS
+- spiele/mega-lo-mania.html: HTML page is not registered in game.js

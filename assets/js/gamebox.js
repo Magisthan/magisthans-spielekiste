@@ -26,6 +26,27 @@ let scene = null;
 let currentBox = null;
 let pivot = null;
 let currentGame = 0;
+let archiveMessageKey = "collection.archive.searching";
+
+function collectionText(key, fallback) {
+    return window.SiteI18n?.t?.(key) || fallback;
+}
+
+function localizedGame(game) {
+    return window.GameLocalization?.localizeGame?.(game) || game;
+}
+
+function renderCurrentGameText() {
+    const gameData = localizedGame(GAMES[currentGame]);
+    if (!gameData) return;
+    document.getElementById("game-title").textContent = gameData.title;
+    const navTitle = document.getElementById("game-nav-title");
+    if (navTitle) navTitle.textContent = gameData.title;
+    document.getElementById("game-system").textContent = gameData.system;
+    document.getElementById("game-year").textContent = gameData.year;
+    document.getElementById("game-publisher").textContent = gameData.publisher;
+    document.getElementById("game-developer").textContent = gameData.developer;
+}
 
 let autoChangeTimer = null;
 let inactivityTimer = null;
@@ -130,18 +151,7 @@ async function showGame(index) {
 
     currentFolder = gameData.folder;
 
-    document.getElementById("game-title").textContent = gameData.title;
-
-    const navTitle = document.getElementById("game-nav-title");
-
-    if (navTitle) {
-        navTitle.textContent = gameData.title;
-    }
-
-    document.getElementById("game-system").textContent = gameData.system;
-    document.getElementById("game-year").textContent = gameData.year;
-    document.getElementById("game-publisher").textContent = gameData.publisher;
-    document.getElementById("game-developer").textContent = gameData.developer;
+    renderCurrentGameText();
 
     const game = await loadGame(gameData);
 
@@ -243,106 +253,169 @@ function animateIn() {
 //--------------------------------------------------
 
 function initSearch() {
+    const navigation = document.querySelector(".game-archive-navigation--collection");
+    const toggle = document.getElementById("collection-archive-search-toggle");
+    const panel = document.getElementById("collection-archive-search-panel");
+    const searchInput = document.getElementById("game-search");
+    const searchResults = document.getElementById("game-search-results");
+    const status = document.getElementById("collection-archive-search-status");
+    const online = document.getElementById("collection-archive-online");
+    const maxVisibleResults = 20;
 
-const searchInput =
-    document.getElementById("game-search");
-
-const searchResults =
-    document.getElementById("game-search-results");
-
-function clearResults(){
-
-    searchResults.innerHTML = "";
-
-    searchResults.classList.remove("show");
-
-}
-
-function buildResults(matches){
-
-    searchResults.innerHTML = "";
-
-    if(matches.length===0){
-
-        searchResults.classList.remove("show");
-
+    if(!navigation || !toggle || !panel || !searchInput || !searchResults || !status){
         return;
-
     }
 
-    matches.forEach(game=>{
+    function normalizedText(value){
+        const language = window.SiteI18n?.getLanguage?.() || "de";
+        return String(value || "")
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLocaleLowerCase(language);
+    }
 
-        const item =
-            document.createElement("div");
+    function searchableText(game){
+        const displayGame = localizedGame(game);
+        const genres = Array.isArray(displayGame.genre)
+            ? displayGame.genre
+            : [displayGame.genre];
+        return normalizedText([
+            displayGame.title,
+            displayGame.system,
+            displayGame.year,
+            displayGame.developer,
+            displayGame.publisher,
+            ...genres
+        ].filter(Boolean).join(" "));
+    }
 
-        item.className = "search-item";
+    async function selectGame(game){
+        const index = GAMES.indexOf(game);
+        if(index < 0) return;
+        userInteraction();
+        currentGame = index;
+        animateOut();
+        await showGame(currentGame);
+        animateIn();
+        searchInput.value = "";
+        closeSearch({ restoreFocus:false });
+    }
 
-        item.innerHTML = `
+    function renderResults(){
+        const query = normalizedText(searchInput.value.trim());
+        const matches = GAMES.filter(game=>!query || searchableText(game).includes(query));
+        const visibleMatches = matches.slice(0,maxVisibleResults);
+        searchResults.replaceChildren();
 
-            <div class="search-item-info">
-                <span class="search-title">${game.title}</span>
-                <span class="search-system">${game.system}</span>
-            </div>
-        `;
+        visibleMatches.forEach((game,index)=>{
+            const displayGame = localizedGame(game);
+            const item = document.createElement("li");
+            const button = document.createElement("button");
+            button.className = "game-archive-navigation__result-link";
+            button.type = "button";
 
-        item.addEventListener("click", async ()=>{
+            const resultTitle = document.createElement("span");
+            resultTitle.className = "game-archive-navigation__result-title";
+            const resultIndex = document.createElement("span");
+            resultIndex.className = "game-archive-navigation__result-index";
+            resultIndex.textContent = String(index + 1).padStart(2,"0");
+            resultTitle.append(resultIndex,document.createTextNode(displayGame.title));
 
-    userInteraction();
+            const resultMeta = document.createElement("span");
+            resultMeta.className = "game-archive-navigation__result-meta";
+            resultMeta.textContent = [displayGame.system,displayGame.year].filter(Boolean).join(" · ");
 
-    currentGame =
-        GAMES.indexOf(game);
+            button.append(resultTitle,resultMeta);
+            button.addEventListener("click",()=>selectGame(game));
+            item.append(button);
+            searchResults.append(item);
+        });
 
-    animateOut();
+        if(!matches.length){
+            status.textContent = collectionText("collection.navigation.none","Kein passendes Spiel gefunden.");
+        }else if(matches.length > maxVisibleResults){
+            status.textContent = collectionText(
+                "collection.navigation.limited",
+                `${matches.length} Treffer – die ersten ${maxVisibleResults} werden angezeigt.`
+            ).replace("{count}",matches.length).replace("{limit}",maxVisibleResults);
+        }else{
+            status.textContent = collectionText(
+                "collection.navigation.count",
+                `${matches.length} Treffer`
+            ).replace("{count}",matches.length);
+        }
+    }
 
-    await showGame(currentGame);
+    function updateDynamicLabels(){
+        if(online){
+            online.textContent = collectionText(
+                "collection.navigation.online",
+                `${GAMES.length} Boxen online`
+            ).replace("{count}",GAMES.length);
+        }
+        if(!panel.hidden) renderResults();
+    }
 
-    animateIn();
+    function openSearch(){
+        panel.hidden = false;
+        toggle.setAttribute("aria-expanded","true");
+        renderResults();
+        window.requestAnimationFrame(()=>searchInput.focus());
+    }
 
-    searchInput.value = "";
+    function closeSearch({ restoreFocus = true } = {}){
+        panel.hidden = true;
+        toggle.setAttribute("aria-expanded","false");
+        searchResults.replaceChildren();
+        status.textContent = "";
+        if(restoreFocus) toggle.focus();
+    }
 
-    clearResults();
-
-    searchInput.focus();
-
-});
-
-        searchResults.appendChild(item);
-
+    toggle.addEventListener("click",()=>{
+        if(panel.hidden) openSearch();
+        else closeSearch();
     });
-
-    searchResults.classList.add("show");
-
-}
-
-searchInput.addEventListener("input",()=>{
-
-    const value =
-        searchInput.value
-        .trim()
-        .toLowerCase();
-
-    if(value===""){
-
-    clearResults();
-
-    return;
-
-}
-
-    const matches =
-
-        GAMES.filter(game=>
-
-            game.title
-                .toLowerCase()
-                .includes(value)
-
-        );
-
-    buildResults(matches);
-
-});
-
+    searchInput.addEventListener("input",renderResults);
+    searchInput.addEventListener("keydown",event=>{
+        const buttons = [...searchResults.querySelectorAll("button")];
+        if(event.key === "ArrowDown" && buttons.length){
+            event.preventDefault();
+            buttons[0].focus();
+        }else if(event.key === "Enter" && buttons.length){
+            event.preventDefault();
+            buttons[0].click();
+        }
+    });
+    searchResults.addEventListener("keydown",event=>{
+        const buttons = [...searchResults.querySelectorAll("button")];
+        const index = buttons.indexOf(document.activeElement);
+        if(event.key === "ArrowDown" && index >= 0){
+            event.preventDefault();
+            buttons[(index + 1) % buttons.length].focus();
+        }else if(event.key === "ArrowUp" && index >= 0){
+            event.preventDefault();
+            if(index === 0) searchInput.focus();
+            else buttons[index - 1].focus();
+        }
+    });
+    document.addEventListener("pointerdown",event=>{
+        if(!panel.hidden && !navigation.contains(event.target)){
+            closeSearch({ restoreFocus:false });
+        }
+    });
+    document.addEventListener("keydown",event=>{
+        const target = event.target;
+        const isTyping = target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target?.isContentEditable;
+        if(event.key === "Escape" && !panel.hidden){
+            event.preventDefault();
+            closeSearch();
+        }else if(event.key === "/" && !isTyping && panel.hidden){
+            event.preventDefault();
+            openSearch();
+        }
+    });
+    document.addEventListener("siteLanguageChanged",updateDynamicLabels);
+    updateDynamicLabels();
 }
 
 //--------------------------------------------------
@@ -620,7 +693,8 @@ document.addEventListener(
 // Start
 //--------------------------------------------------
 
-createScene().then(() => {
+function startCollectionViewer() {
+Promise.resolve(window.__siteI18nReady).then(createScene).then(() => {
 
     engine.runRenderLoop(() => {
 
@@ -631,6 +705,13 @@ createScene().then(() => {
     });
 
 });
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", startCollectionViewer, { once:true });
+} else {
+    startCollectionViewer();
+}
 
 //--------------------------------------------------
 // Archive
@@ -691,8 +772,8 @@ function resetArchive(){
 
     status.classList.add("show");
 
-    status.textContent =
-        "> Searching archive...";
+    archiveMessageKey = "collection.archive.searching";
+    status.textContent = collectionText(archiveMessageKey, "> Archiv wird durchsucht …");
 
     bar.classList.add("show");
 
@@ -701,8 +782,10 @@ function resetArchive(){
 
     result.classList.add("show");
 
-    result.textContent =
-        "✓ Archive scan complete.";
+    result.textContent = collectionText(
+        "collection.archive.complete",
+        "✓ Archivscan abgeschlossen."
+    );
 
     archiveLoadState = "idle";
 
@@ -882,11 +965,15 @@ function startArchive(folder){
         content.classList.remove("content-available");
         content.classList.add("content-missing");
 
-        result.textContent =
-            "No content at the moment";
+        result.textContent = collectionText(
+            "collection.archive.missing",
+            "Noch kein Inhaltsbild vorhanden"
+        );
 
-        image.alt =
-            "Noch kein Inhaltsbild vorhanden / No content image available";
+        image.alt = collectionText(
+            "collection.archive.missing",
+            "Noch kein Inhaltsbild vorhanden"
+        );
 
         image.src = "assets/images/content-placeholder.svg";
 
@@ -902,8 +989,8 @@ function startArchive(folder){
 
         setTimeout(()=>{
 
-            status.textContent =
-                "> Searching archive...";
+            archiveMessageKey = "collection.archive.searching";
+            status.textContent = collectionText(archiveMessageKey, "> Archiv wird durchsucht …");
 
             bar.textContent =
                 "[██░░░░░░░░░░]";
@@ -916,8 +1003,8 @@ function startArchive(folder){
 
         setTimeout(()=>{
 
-            status.textContent =
-                "> Accessing collection database...";
+            archiveMessageKey = "collection.archive.accessing";
+            status.textContent = collectionText(archiveMessageKey, "> Sammlungsdatenbank wird aufgerufen …");
 
             bar.textContent =
                 "[████░░░░░░░░]";
@@ -930,8 +1017,8 @@ function startArchive(folder){
 
         setTimeout(()=>{
 
-            status.textContent =
-                "> Authenticating media...";
+            archiveMessageKey = "collection.archive.authenticating";
+            status.textContent = collectionText(archiveMessageKey, "> Medium wird geprüft …");
 
             bar.textContent =
                 "[███████░░░░░]";
@@ -967,8 +1054,8 @@ function startArchive(folder){
         setTimeout(()=>{
 
             result.textContent = archiveLoadState === "missing"
-                ? "No content at the moment"
-                : "✓ Archive scan complete.";
+                ? collectionText("collection.archive.missing", "Noch kein Inhaltsbild vorhanden")
+                : collectionText("collection.archive.complete", "✓ Archivscan abgeschlossen.");
 
         },1950)
 
@@ -1009,10 +1096,15 @@ function startArchive(folder){
 }
 
 const toggle = document.getElementById("game-info-toggle");
+const toggleChevron = toggle?.querySelector(".game-info-toggle__chevron");
 const panel = document.getElementById("game-info-panel");
-const titleBar = document.querySelector(".game-title-bar");
-const gameboxStage =
-    document.querySelector(".gamebox-stage");
+
+function setViewerZoomControlsHidden(hidden){
+    const zoomControls = document.querySelector(".gamebox-stage .viewer-zoom-controls");
+    if(!zoomControls) return;
+    zoomControls.hidden = hidden;
+    zoomControls.setAttribute("aria-hidden",String(hidden));
+}
 
 function toggleInfoPanel() {
 
@@ -1024,7 +1116,9 @@ function toggleInfoPanel() {
 
         panel.style.height = panel.scrollHeight + "px";
 
-        toggle.textContent = "⌄";
+        toggle.setAttribute("aria-expanded","true");
+        if(toggleChevron) toggleChevron.textContent = "⌃";
+        setViewerZoomControlsHidden(true);
 
         document
             .querySelector(".gamebox-stage")
@@ -1048,7 +1142,9 @@ function toggleInfoPanel() {
 
         });
 
-        toggle.textContent = "⌃";
+        toggle.setAttribute("aria-expanded","false");
+        if(toggleChevron) toggleChevron.textContent = "⌄";
+        setViewerZoomControlsHidden(false);
 
         document
             .querySelector(".gamebox-stage")
@@ -1080,7 +1176,23 @@ toggle.addEventListener("click", (event) => {
 
 });
 
-titleBar.addEventListener("click", toggleInfoPanel);
+document.addEventListener("siteLanguageChanged", () => {
+    renderCurrentGameText();
+
+    const status = document.getElementById("archive-status");
+    const result = document.getElementById("archive-result");
+    const image = document.getElementById("archive-image");
+
+    if (status) status.textContent = collectionText(archiveMessageKey, status.textContent);
+    if (result?.classList.contains("show")) {
+        result.textContent = archiveLoadState === "missing"
+            ? collectionText("collection.archive.missing", "Noch kein Inhaltsbild vorhanden")
+            : collectionText("collection.archive.complete", "✓ Archivscan abgeschlossen.");
+    }
+    if (image && archiveLoadState === "missing") {
+        image.alt = collectionText("collection.archive.missing", "Noch kein Inhaltsbild vorhanden");
+    }
+});
 
 //--------------------------------------------------
 // Archive Lightbox

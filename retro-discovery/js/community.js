@@ -11,18 +11,16 @@ const COMMUNITY = {
 
     pirates:{
 
-        gameplay:9.2,
+        gameRating:9.2,
         boxdesign:8.8,
-        cultstatus:9.7,
         votes:421
 
     },
 
     monkey_island:{
 
-        gameplay:9.8,
+        gameRating:9.8,
         boxdesign:9.5,
-        cultstatus:10.0,
         votes:863
 
     }
@@ -34,6 +32,10 @@ let currentCommunityFolder = null;
 let currentContributionGameTitle = "";
 let contributionDialogReturnFocus = null;
 let currentContributionLanguage = "de";
+
+function communityText(key,params={}){
+    return window.RDI18n?.t(`community.${key}`,params) ?? key;
+}
 
 const SCAN_CONTRIBUTION_TRANSLATIONS = {
     de:{
@@ -68,16 +70,15 @@ const SCAN_CONTRIBUTION_TRANSLATIONS = {
 
 const INLINE_RATING_DEFAULT = 5.0;
 const INLINE_RATING_FIELDS = {
-    gameplay:{ valueId:"rating-game-value", fillId:"rating-game-fill" },
     boxdesign:{ valueId:"rating-box-value", fillId:"rating-box-fill" },
-    cultstatus:{ valueId:"rating-cult-value", fillId:"rating-cult-fill" }
+    gameRating:{ valueId:"rating-game-value", fillId:"rating-game-fill" }
 };
 
 const inlineRating = {
     active:false,
-    gameplay:INLINE_RATING_DEFAULT,
     boxdesign:INLINE_RATING_DEFAULT,
-    cultstatus:INLINE_RATING_DEFAULT
+    gameRating:INLINE_RATING_DEFAULT,
+    collectionStatus:null
 };
 
 //--------------------------------------------------
@@ -86,9 +87,10 @@ const inlineRating = {
 
 const EMPTY_COMMUNITY = {
 
-    gameplay:0,
     boxdesign:0,
-    cultstatus:0,
+    gameRating:0,
+    owned:null,
+    ownershipVotes:0,
     votes:0
 
 };
@@ -110,38 +112,76 @@ function getCommunityRating(folder){
 function updateCommunityPanel(data){
 
     const hasRatings = data.votes > 0;
+    const gameRating = Number.isFinite(data.gameRating)
+        ? data.gameRating
+        : Number(data.gameplay) || 0;
+    const overall = (data.boxdesign + gameRating) / 2;
 
     //------------------------------------------
     // Zahlen
     //------------------------------------------
 
     document.getElementById("rating-game-value").textContent =
-        hasRatings ? data.gameplay.toFixed(1) : "-";
+        hasRatings ? gameRating.toFixed(1) : "-";
 
     document.getElementById("rating-box-value").textContent =
         hasRatings ? data.boxdesign.toFixed(1) : "-";
 
-    document.getElementById("rating-cult-value").textContent =
-        hasRatings ? data.cultstatus.toFixed(1) : "-";
+    document.getElementById("community-overall-value").textContent =
+        hasRatings ? overall.toFixed(1) : "-";
+
+    const ownedSummary = document.getElementById("community-owned-summary");
+    const hasOwnedData = Number.isFinite(data.owned) && data.ownershipVotes > 0;
+    if(ownedSummary){
+        ownedSummary.textContent = hasOwnedData
+            ? communityText("ownedSummary",{
+                percent:Math.round(data.owned / data.ownershipVotes * 100)
+            })
+            : "—";
+    }
 
     document.getElementById("community-votes").textContent =
         hasRatings
-            ? `${data.votes} Bewertungen / Votes`
-            : "- Bewertungen / Votes";
+            ? communityText("votes",{ count:data.votes })
+            : communityText("noVotes");
 
     //------------------------------------------
     // Balken
     //------------------------------------------
 
     document.getElementById("rating-game-fill").style.width =
-        `${data.gameplay*10}%`;
+        `${gameRating*10}%`;
 
     document.getElementById("rating-box-fill").style.width =
         `${data.boxdesign*10}%`;
 
-    document.getElementById("rating-cult-fill").style.width =
-        `${data.cultstatus*10}%`;
+}
 
+function refreshCommunityLanguage(){
+    const rateButton = document.getElementById("community-rate-button");
+    const cancelButton = document.getElementById("community-rating-cancel");
+    const votes = document.getElementById("community-votes");
+    const question = document.getElementById("community-collection-question");
+    const error = document.getElementById("community-collection-error");
+
+    if(rateButton){
+        rateButton.textContent = inlineRating.active
+            ? communityText("submit")
+            : communityText("rateNow");
+    }
+    if(cancelButton) cancelButton.textContent = communityText("cancel");
+
+    if(inlineRating.active){
+        if(votes) votes.textContent = communityText("yourRating");
+    }else if(currentCommunityFolder){
+        updateCommunityPanel(getCommunityRating(currentCommunityFolder));
+    }else if(votes){
+        votes.textContent = communityText("noVotes");
+    }
+
+    if(question?.classList.contains("has-error") && error){
+        error.textContent = communityText("chooseStatus");
+    }
 }
 
 //--------------------------------------------------
@@ -206,9 +246,10 @@ console.log("currentCommunityFolder", currentCommunityFolder);
 
     COMMUNITY[currentCommunityFolder]={
 
-        gameplay:0,
         boxdesign:0,
-        cultstatus:0,
+        gameRating:0,
+        owned:0,
+        ownershipVotes:0,
         votes:0
 
     };
@@ -221,13 +262,17 @@ const data = COMMUNITY[currentCommunityFolder];
     // Neue Durchschnittswerte
     //------------------------------------------
 
-    data.gameplay =
+    const existingGameRating = Number.isFinite(data.gameRating)
+        ? data.gameRating
+        : Number(data.gameplay) || 0;
+
+    data.gameRating =
 
         (
 
-            data.gameplay * data.votes +
+            existingGameRating * data.votes +
 
-            rating.gameplay
+            rating.gameRating
 
         )
 
@@ -245,17 +290,10 @@ const data = COMMUNITY[currentCommunityFolder];
 
         /(data.votes+1);
 
-    data.cultstatus =
-
-        (
-
-            data.cultstatus * data.votes +
-
-            rating.cultstatus
-
-        )
-
-        /(data.votes+1);
+    if(!Number.isFinite(data.owned)) data.owned = 0;
+    if(!Number.isFinite(data.ownershipVotes)) data.ownershipVotes = 0;
+    if(rating.collectionStatus === "owned") data.owned++;
+    data.ownershipVotes++;
 
     data.votes++;
 
@@ -270,11 +308,7 @@ const data = COMMUNITY[currentCommunityFolder];
 
     window.TopDiscoveries?.recordRatingByFolder(
         currentCommunityFolder,
-        (
-            rating.gameplay +
-            rating.boxdesign +
-            rating.cultstatus
-        ) / 3
+        rating.boxdesign
     );
 
 }
@@ -307,6 +341,16 @@ document.addEventListener("DOMContentLoaded",()=>{
         .getElementById("community-rating-cancel")
         ?.addEventListener("click",cancelInlineRating);
 
+    document.querySelectorAll('input[name="collection-status"]').forEach(input=>{
+        input.addEventListener("change",()=>{
+            inlineRating.collectionStatus = input.value;
+            document.getElementById("community-collection-question")
+                ?.classList.remove("has-error");
+            const error = document.getElementById("community-collection-error");
+            if(error) error.textContent = "";
+        });
+    });
+
     document
         .getElementById("scan-contribution-toggle")
         ?.addEventListener("click",()=>{
@@ -332,8 +376,11 @@ document.addEventListener("DOMContentLoaded",()=>{
     });
 
     setContributionLanguage(currentContributionLanguage);
+    refreshCommunityLanguage();
 
 });
+
+document.addEventListener("rdlanguagechange",refreshCommunityLanguage);
 
 document.addEventListener("gameChanged",event=>{
     currentContributionGameTitle = event.detail?.title || "";
@@ -385,6 +432,13 @@ function updateRatingMetric(type,value){
     document.getElementById(field.fillId).style.width =
         `${normalized*10}%`;
 
+    const overall = document.getElementById("community-overall-value");
+    if(overall && inlineRating.active){
+        overall.textContent = (
+            (inlineRating.boxdesign + inlineRating.gameRating) / 2
+        ).toFixed(1);
+    }
+
 }
 
 function setInlineRatingMode(active,{ refresh=true }={}){
@@ -404,18 +458,31 @@ function setInlineRatingMode(active,{ refresh=true }={}){
 
     if(rateButton){
         rateButton.textContent = active
-            ? "Bewerten / Rate"
-            : "Jetzt bewerten / Vote now";
+            ? communityText("submit")
+            : communityText("rateNow");
     }
 
-    if(cancelButton) cancelButton.hidden = !active;
+    if(cancelButton){
+        cancelButton.textContent = communityText("cancel");
+        cancelButton.hidden = !active;
+    }
 
     document.querySelectorAll(".rating-slider").forEach(slider=>{
         slider.disabled = !active;
     });
 
+    document.querySelectorAll('input[name="collection-status"]').forEach(input=>{
+        input.disabled = !active;
+    });
+
     if(active){
-        if(votes) votes.textContent = "DEINE WERTUNG";
+        if(votes) votes.textContent = communityText("yourRating");
+        const overall = document.getElementById("community-overall-value");
+        if(overall){
+            overall.textContent = (
+                (inlineRating.boxdesign + inlineRating.gameRating) / 2
+            ).toFixed(1);
+        }
         return;
     }
 
@@ -460,7 +527,7 @@ function updateContributionEmailLink(){
     const emailLink = document.getElementById("scan-contribution-email");
     if(!emailLink) return;
 
-    const gameName = currentContributionGameTitle || "Retro Discovery";
+    const gameName = currentContributionGameTitle || "Gamebox Discovery";
     const isEnglish = currentContributionLanguage === "en";
     const subject = isEnglish
         ? `Box scan contribution – ${gameName}`
@@ -544,6 +611,15 @@ function beginInlineRating(){
         updateRatingMetric(type,INLINE_RATING_DEFAULT);
     });
 
+    inlineRating.collectionStatus = null;
+    document.querySelectorAll('input[name="collection-status"]').forEach(input=>{
+        input.checked = false;
+    });
+    document.getElementById("community-collection-question")
+        ?.classList.remove("has-error");
+    const collectionError = document.getElementById("community-collection-error");
+    if(collectionError) collectionError.textContent = "";
+
     setInlineRatingMode(true);
 
 }
@@ -556,15 +632,24 @@ function submitInlineRating(){
 
     if(!inlineRating.active || !currentCommunityFolder) return;
 
+    if(!inlineRating.collectionStatus){
+        const question = document.getElementById("community-collection-question");
+        const error = document.getElementById("community-collection-error");
+        question?.classList.add("has-error");
+        if(error) error.textContent = communityText("chooseStatus");
+        question?.querySelector("input")?.focus();
+        return;
+    }
+
     const submittedRating = {
-        gameplay:inlineRating.gameplay,
+        gameRating:inlineRating.gameRating,
         boxdesign:inlineRating.boxdesign,
-        cultstatus:inlineRating.cultstatus
+        collectionStatus:inlineRating.collectionStatus
     };
 
     setInlineRatingMode(false,{ refresh:false });
     addCommunityRating(submittedRating);
-    showRatingToast("Danke / Thanks");
+    showRatingToast(communityText("thanks"));
 
 }
 

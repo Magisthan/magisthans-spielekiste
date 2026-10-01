@@ -1,0 +1,1280 @@
+{
+    "generatedAt":  "2026-09-25T12:56:02.8801761+02:00",
+    "totalEntries":  2656,
+    "sources":  [
+                    {
+                        "collection":  "c64",
+                        "source":  "M:\\Forum Datenbanken\\Spieledatenbank_C64.ods",
+                        "entries":  1112,
+                        "emptyTitleRowsSkipped":  96,
+                        "invalidYears":  [
+                                             {
+                                                 "title":  "Fight Night",
+                                                 "id":  167,
+                                                 "value":  ""
+                                             },
+                                             {
+                                                 "title":  "International Karate +",
+                                                 "id":  254,
+                                                 "value":  ""
+                                             }
+                                         ],
+                        "unknownSystems":  [
+                                               {
+                                                   "title":  "Battle for Normandy",
+                                                   "id":  939,
+                                                   "value":  "TRS-80"
+                                               },
+                                               {
+                                                   "title":  "Gauntlet 3 – The Final Quest",
+                                                   "id":  941,
+                                                   "value":  "Amstrad"
+                                               }
+                                           ],
+                        "duplicateTitlesPreserved":  [
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "50 Mission Crush"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Ace of Aces (Sealed)"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Armageddon Man"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Artura"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Beach Head"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Bismarck (sealed)"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Black Lamp"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Blood\u0027n Guts"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Championship Wrestling"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Clubhouse Sports"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Colossus Chess 4"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Commando"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Conquestador"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Curse of the Azure Bonds"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Curse of the Azure Bonds (Goldbox)"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Die Prüfung"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Dragons Lair"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Druid"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Echelon"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Elite"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Fight Night"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Fugger"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Gauntlet"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Gemstone Warrior"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Ghostbusters 2"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Ghosts n Goblins"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Grand Monster Slam"
+                                                         },
+                                                         {
+                                                             "count":  5,
+                                                             "title":  "Hanse"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Hard n Heavy"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Heart of Africa"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Heroes of the Lance"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "High Seas"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Hotel"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "HyperRace"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "In 80 days around the World"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Infiltrator"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "International Karate"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "International Karate +"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Kaiser"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Killed Until Dead"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Knight Games"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Knights of the Desert"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Krackout"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Kung Fu Master"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Little Computer People"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "M.U.L.E."
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Magic of Endoria"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Microprose Soccer"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Might and Magic"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Mini Putt"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Moebius - The Orb of Celestial Harmony"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Mr. Heli"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Murder on the Atlantic"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Nemesis"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Ninja"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Ninja Hamster"
+                                                         },
+                                                         {
+                                                             "count":  4,
+                                                             "title":  "Ninja Remix"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Oil Imperium"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Panzer Strike"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Phantasie 3 - The Wrath of Nikademus"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Pinball Construction Set"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Pirates!"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Questron"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Questron 2"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Rambo 3"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Rastan"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Reederei"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Rings of Zilfin"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Road Runner (US)"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Secret of the Silver Blades (Goldbox)"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Shanghai"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Skyfox"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Solo Flight"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Speedball 2 - Brutal Deluxe"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Steigenberger Hotelmanager"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Street Gang"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Street Sports American Football"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Street Sports Baseball"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Street Sports Soccer"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Summer Games"
+                                                         },
+                                                         {
+                                                             "count":  4,
+                                                             "title":  "Summer Games 2"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Superstar Ice Hockey"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Superstar Ping Pong"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Test Drive"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Test Drive 2 - The Duel"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Castles of Doctor Creep"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Cosmic Balance"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Games - Summer Edition"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Keys to Maramon"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "The Last Ninja"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Legend of Blacksilver"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Sentinel"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "The seven Cities of Gold"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Transformers - Battle to Save the Earth (sealed)"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Tie Break"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Turrican 2 - The Final Fight"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Tusker"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Ultima 2 - The Revenge of the Enchantress"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Ultima 4 - Quest of the Avatar"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Ultima 5 - Warriors of Destiny"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Vendetta"
+                                                         },
+                                                         {
+                                                             "count":  5,
+                                                             "title":  "Vermeer"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Volleyball Simulator"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Wargame Construction Set"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Wasteland"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Winter Games"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Wizards Crown"
+                                                         },
+                                                         {
+                                                             "count":  4,
+                                                             "title":  "World Games"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "World Geography"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "World Greatest Football Game (sealed)"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "World Karate Championship"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Yie Ar Kung Fu"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Yie Ar Kung Fu 2"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Yuppis Revenge"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Zaxxon"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Asgard"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Sword of Fargoal"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Leaderboard"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Leaderboard Par 4"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Slinky"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Rockstar ate my Hamster"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Sam´s Journey"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Scarabaeus"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Battle for Normandy"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "The Balltle of Shiloh"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Startrash"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Curse of Ra"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Strike Fleet"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Battle of the Bulge – Tigers in the Snow"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Fighter Command: The Battle of Britain"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Bundesliga Manager 2.0"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Computer Baseball"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Leader Board Executive Edition"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Die Dunkle Dimension"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Starglider"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Combat Leader"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Erben des Throns"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Phantasie – Eine Abenteuerliche Odyssee"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Adventure Construction Set"
+                                                         }
+                                                     ]
+                    },
+                    {
+                        "collection":  "amiga",
+                        "source":  "M:\\Forum Datenbanken\\Spieledatenbank_Amiga.ods",
+                        "entries":  891,
+                        "emptyTitleRowsSkipped":  56,
+                        "invalidYears":  [
+
+                                         ],
+                        "unknownSystems":  [
+
+                                           ],
+                        "duplicateTitlesPreserved":  [
+                                                         {
+                                                             "count":  4,
+                                                             "title":  "Anstoss"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Aufschwung Ost"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Batman - The Movie"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Biing!"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Black Gold"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Blood Money"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Börsenfieber"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Bundesliaga Manager"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Bundesliga Manager Professional"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Bundesliga Manager Professional 2.0"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Bundesliga Manager Supporter"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Cannon Fodder"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Cannon Fodder 2"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Cash"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Circus Attractions"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Curse of the Azure Bonds"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Defender of the Crown"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Der Patrizier"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Die Ralf Glau Edition"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Die Siedler"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Dragonflight"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Dragons Lair"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Dragons Lair - Escape from Singes Castle"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Dragons of Flame"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Dune 2 - Battle for Arrakis"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Dungeon Master"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Dynablaster"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Eishockey Manager"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Eye of the Beholder 2"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Federation of free Traders"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Fields of Glory"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Fugger"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Gauntlet 3"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Heimdall"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Hillsfar"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Hollywood Poker"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Indiana Jones and the last Crusade"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "It came from the Desert"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "It came from the Desert (US)"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Jeanne d Arc"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Kaiser"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Khalaan"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Kings Quest 2 - Romancing the Throne"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Kings Quest 3 - To Heir is Human"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Lords of the Rising Sun"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "M.U.D.S - Mean Ugly Dirty Sport"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "MAG !!!"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Maniac Mansion"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Maupiti Island"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Microprose Golf"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Might and Magic 3 - Die Inseln von Terra"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Napoleon"
+                                                         },
+                                                         {
+                                                             "count":  4,
+                                                             "title":  "Oldtimer"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "On the Road"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Parasol Stars"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "PGA European Tour"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Pirates!"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Pizza Connection"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Populous"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Ports of Call (White Edition)"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Powermonger"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Regent"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Rings of Medusa Gold"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Rocket Ranger"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "R-TYPE"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Sensible Soccer European Champions"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Shadow Sorcerer"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Sid Meiers Railroad Tycoon"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Sim City"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Simon the Sorcerer"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Simon the Sorcerer 2"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Sinbad and the Throne of the Falcon"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Speedball"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Speedball 2 - Brutal Deluxe"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Star Trek - 25th Anniversary"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Street Sports Basketball"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Super Cars 2"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Syndicate"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Chaos Engine"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Chaos Engine 2"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Humans"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The King of Chicago"
+                                                         },
+                                                         {
+                                                             "count":  4,
+                                                             "title":  "The Kristal"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Last Ninja 3"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Patrician"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Theme Park"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Turrican 3 - Payment Day"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "TV Sports Basketball"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "TV Sports Football"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "UFO Enemy Unknown"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Unreal"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Wall Street Wizard"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Wild West World"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Wing Commander"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Wings"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Wings (US)"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Wings of Death"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Wizardry 6 - Bane of the Cosmic Forge"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Z-Out"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Mortal Kombat"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Dark Side (sealed)"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Kick Off 2 – The Final Whistle"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Hägar"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Mean 18"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Crown"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Federation"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Das Haus"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Logical"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Soccer Manager Plus"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Ralf Glau Edition"
+                                                         }
+                                                     ]
+                    },
+                    {
+                        "collection":  "pc",
+                        "source":  "M:\\Forum Datenbanken\\Spieledatenbank_PC2.ods",
+                        "entries":  653,
+                        "emptyTitleRowsSkipped":  27,
+                        "invalidYears":  [
+                                             {
+                                                 "title":  "Black \u0026 White 2",
+                                                 "id":  38,
+                                                 "value":  ""
+                                             },
+                                             {
+                                                 "title":  "The Elder Scrolls 4 - Shivering Isles",
+                                                 "id":  301,
+                                                 "value":  ""
+                                             },
+                                             {
+                                                 "title":  "Warcraft 3 - Frozen Throne",
+                                                 "id":  356,
+                                                 "value":  ""
+                                             }
+                                         ],
+                        "unknownSystems":  [
+
+                                           ],
+                        "duplicateTitlesPreserved":  [
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Anno 1701"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Anstoss 2"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Baldurs Gate"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Baldurs Gate - Legenden der Schwertküste"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Black \u0026 White"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Black \u0026 White 2"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Bundesliga Manager 98"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Command \u0026 Conquer Teil 1 - Der Ausnahmezustand"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Conqueror AD 1086"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Dark Sun - Wake of the Ravager"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Diablo"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Diablo 2"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Diablo 2 Lord of Destruction"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Die Fugger 2"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Elisabeth I."
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Heroes of Might and Magic"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Heroes of Might and Magic 2"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Heroes of Might and Magic 4"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Heroes of Might and Magic 5"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Kaiser Deluxe"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Kings Bounty"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Lands of Lore - Götterdämmerung"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Might and Magic 6 - The Mandate of Heaven"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Might and Magic 7 - for Blood and Honor"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "NHL 96"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Panzer General"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Patrizier 4"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Pirates! Gold"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Rise of Venice"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Robin Hood - Defender of the Crown"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Sim City 2000"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Skyrim"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Spellforce - The Order of Dawn"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Stronghold"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Summoning"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Witcher"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "The Witcher 2 - Assassins of Kings"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Ultima 7: Part 2 - Serpent Isle"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Ultima 9 - Ascension"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Ultima Underworld 1 - Stygian Abyss"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Ultima Underworld 2"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Vermeer - Die Kunst zu erben"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Warcraft 3 - Reign of Chaos"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Populous – The Beginning"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Bundesliga Manager 97"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Anno 1602 – Im Namen des Königs"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Das Hexagon Kartell"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Grand Prix 500ccm"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Star General"
+                                                         },
+                                                         {
+                                                             "count":  2,
+                                                             "title":  "Burning Steel 2 – Guadal Canal"
+                                                         },
+                                                         {
+                                                             "count":  3,
+                                                             "title":  "Burning Steel – Entscheidung im Atlantik"
+                                                         }
+                                                     ]
+                    }
+                ]
+}

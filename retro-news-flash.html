@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Retro News Flash | Magisthans Spielekiste</title>
 <link rel="stylesheet" href="assets/css/style.css">
+<script defer src="assets/js/i18n/site-bootstrap.js"></script>
+<script defer src="assets/js/i18n/editorial-bindings.js"></script>
 </head>
-<body>
+<body class="retro-news-page" data-i18n-catalogs="editorial">
 
 <header class="hero">
     <img src="assets/images/banner.webp" alt="Magisthans Spielekiste"
@@ -93,7 +95,7 @@
         </div>
 
     </div>
-    <div class="card" style="padding:40px;">
+    <div class="card rnf-reading-card">
 
         <section class="section">
             <h2>1. Was ist der Retro News Flash?</h2>
@@ -646,7 +648,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function formatNumber(value){
 
-    return value.toLocaleString("de-DE");
+    const locale = window.SiteI18n?.getLanguage() === "en" ? "en-GB" : "de-DE";
+
+    return value.toLocaleString(locale);
 
 }
 

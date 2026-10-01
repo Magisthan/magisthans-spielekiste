@@ -28,6 +28,14 @@
     min-height: 104px;
 }
 
+.game-archive-navigation--collection .game-archive-navigation__row {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.game-archive-navigation--collection .game-archive-navigation__current {
+    min-height: 92px;
+}
+
 .game-archive-navigation__current {
     position: relative;
     display: flex;
@@ -306,6 +314,15 @@
     color: rgba(255, 255, 255, 0.86);
     text-decoration: none;
     border-left: 2px solid transparent;
+}
+
+button.game-archive-navigation__result-link {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
 }
 
 .game-archive-navigation__result-link:hover,

@@ -1,0 +1,18 @@
+COLLECTION CATALOG VALIDATION
+Generated: 2026-09-25T11:05:37.073Z
+
+Entries: 2656
+C64: 1112
+Amiga: 891
+PC: 653
+Entries linked to game pages: 106
+Errors: 0
+Warnings: 7
+
+WARNING: c64-0167: Jahr fehlt oder wurde beim Import verworfen.
+WARNING: c64-0254: Jahr fehlt oder wurde beim Import verworfen.
+WARNING: c64-0939: unbekanntes System TRS-80.
+WARNING: c64-0941: unbekanntes System Amstrad.
+WARNING: pc-0038: Jahr fehlt oder wurde beim Import verworfen.
+WARNING: pc-0301: Jahr fehlt oder wurde beim Import verworfen.
+WARNING: pc-0356: Jahr fehlt oder wurde beim Import verworfen.

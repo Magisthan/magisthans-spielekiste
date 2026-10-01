@@ -6,11 +6,19 @@
 
     position:absolute;
 
-    left:130px;
+    left:80px;
 
-    top:85px;
+    top:70px;
 
-    width:290px;
+    width:400px;
+
+    max-height:calc(100% - 115px);
+
+    overflow-y:auto;
+
+    scrollbar-width:thin;
+
+    scrollbar-color:rgba(240,191,68,.38) transparent;
 
     opacity:0;
 
@@ -59,7 +67,7 @@
 
 .community-card{
 
-    padding:22px;
+    padding:18px;
 
     border-radius:18px;
 
@@ -91,9 +99,9 @@
 
 .community-card h3{
 
-    margin:0 0 18px;
+    margin:0 0 12px;
 
-    font-size:1.45rem;
+    font-size:1.4rem;
 
     font-weight:800;
 
@@ -109,7 +117,7 @@
 
 .rating-item{
 
-    margin-bottom:18px;
+    margin-bottom:14px;
 
 }
 
@@ -121,9 +129,9 @@
 
     align-items:center;
 
-    margin-bottom:8px;
+    margin-bottom:6px;
 
-    font-size:15px;
+    font-size:17px;
 
 }
 
@@ -177,6 +185,14 @@
 
     transition:width .18s ease;
 
+}
+
+.rating-description{
+    margin:-3px 0 7px;
+    color:rgba(255,255,255,.55);
+    font-size:1rem;
+    font-style:italic;
+    line-height:1.35;
 }
 
 .rating-slider{
@@ -270,13 +286,143 @@
     letter-spacing:.12em;
 }
 
+.community-overall{
+    display:flex;
+    justify-content:space-between;
+    gap:14px;
+    align-items:center;
+    margin-top:16px;
+    padding:10px 0 9px;
+    border-top:1px solid rgba(240,191,68,.22);
+    border-bottom:1px solid rgba(255,255,255,.07);
+    color:rgba(255,255,255,.76);
+    font-size:.9rem;
+    font-weight:700;
+    letter-spacing:.035em;
+    text-transform:uppercase;
+}
+
+.community-overall strong{
+    color:#f2bd3d;
+    font-size:1.14rem;
+}
+
+.community-owned-summary{
+    margin:11px 0 3px;
+    color:rgba(255,255,255,.68);
+    font-size:.9rem;
+    line-height:1.45;
+    text-align:center;
+}
+
+.community-collection-question{
+    display:none;
+    min-width:0;
+    margin:12px 0 0;
+    padding:0;
+    border:0;
+}
+
+.community-card.is-rating .community-owned-summary{
+    display:none;
+}
+
+.community-card.is-rating .community-collection-question{
+    display:block;
+}
+
+.community-collection-question legend{
+    width:100%;
+    margin-bottom:8px;
+    padding:0;
+    color:#efc04a;
+    font-size:.92rem;
+    font-weight:800;
+    letter-spacing:.055em;
+    line-height:1.35;
+    text-transform:uppercase;
+}
+
+.community-collection-options{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:6px;
+}
+
+.community-collection-options label{
+    display:block;
+    cursor:pointer;
+}
+
+.community-collection-options input{
+    position:absolute;
+    width:1px;
+    height:1px;
+    opacity:0;
+    pointer-events:none;
+}
+
+.community-collection-options span{
+    display:flex;
+    min-height:48px;
+    align-items:center;
+    justify-content:center;
+    padding:6px 7px;
+    border:1px solid rgba(240,191,68,.38);
+    border-radius:9px;
+    color:#f1d58a;
+    background:linear-gradient(180deg,rgba(92,70,23,.34),rgba(24,21,15,.72));
+    box-shadow:inset 0 1px rgba(255,255,255,.055),0 4px 12px rgba(0,0,0,.2);
+    font-size:.88rem;
+    font-weight:800;
+    line-height:1.25;
+    text-align:center;
+    transition:border-color .18s ease,background .18s ease,color .18s ease,box-shadow .18s ease;
+}
+
+.community-collection-options label:hover span{
+    border-color:rgba(246,200,77,.82);
+    color:#fff;
+    background:linear-gradient(180deg,rgba(126,93,25,.5),rgba(37,30,17,.84));
+    box-shadow:0 0 14px rgba(229,176,49,.15);
+}
+
+.community-collection-options input:checked + span{
+    border-color:#e6b238;
+    color:#17130a;
+    background:linear-gradient(180deg,#f4c74f,#dba82b);
+    box-shadow:0 0 15px rgba(229,176,49,.22);
+}
+
+.community-collection-options input:focus-visible + span{
+    outline:2px solid #fff0b0;
+    outline-offset:2px;
+}
+
+.community-collection-question.has-error legend{
+    color:#ffd477;
+    text-shadow:0 0 12px rgba(255,190,70,.45);
+}
+
+.community-collection-error{
+    min-height:1.2em;
+    margin:7px 0 0;
+    color:#ffd477;
+    font-size:.68rem;
+    text-align:center;
+}
+
+.community-card.is-rating .scan-contribution{
+    display:none;
+}
+
 /* ==========================================
    Stimmen
 ========================================== */
 
 .community-count{
 
-    margin:24px 0;
+    margin:13px 0;
 
     text-align:center;
 
@@ -293,7 +439,7 @@
 .community-rating-actions{
     display:grid;
     gap:10px;
-    margin-top:22px;
+    margin-top:12px;
 }
 
 .community-button{
@@ -302,7 +448,7 @@
 
     width:100%;
 
-    height:48px;
+    height:44px;
 
     border:none;
 
@@ -375,7 +521,7 @@
 }
 
 .community-card .rating-header{
-    margin-bottom:8px;
+    margin-bottom:6px;
 }
 
 /* ==========================================
@@ -807,7 +953,7 @@ body.scan-dialog-open{
 
     margin-bottom:10px;
 
-    font-size:15px;
+    font-size:14px;
 
 }
 
@@ -1047,13 +1193,20 @@ body.scan-dialog-open{
 
 /* The laptop overlay keeps its desktop composition while the stage scales. */
 #viewer-stage > #community-panel{
-    left:var(--community-left,130px);
+    left:var(--community-left,80px);
     top:calc(
-        var(--community-top,85px) +
+        var(--community-top,70px) +
         var(--viewer-upper-ui-shift)
     );
     transform-origin:top left;
-    scale:var(--community-scale,1);
+    scale:1;
+}
+
+@media (max-width:1200px){
+    #viewer-mobile-panels #community-panel{
+        max-height:none;
+        overflow:visible;
+    }
 }
 
 @media (max-width:900px){
@@ -1071,4 +1224,19 @@ body.scan-dialog-open{
         text-align:center;
     }
 
+    .community-collection-options span{
+        min-height:44px;
+    }
+
+}
+
+@media (max-width:520px){
+    .community-collection-options{
+        grid-template-columns:1fr;
+    }
+
+    .community-collection-options span{
+        min-height:44px;
+        font-size:.88rem;
+    }
 }

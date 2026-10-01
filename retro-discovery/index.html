@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Retro Discovery</title>
+    <title data-i18n="header.pageTitle">Gamebox Discovery</title>
 
     <!-- CSS -->
 
@@ -38,16 +38,16 @@
 
             <img
                 src="assets/icons/logo.webp"
-                alt="Retro Discovery Logo">
+                alt="Gamebox Discovery Logo">
 
         </div>
 
         <div class="rd-title">
 
-            <h1>RETRO DISCOVERY</h1>
+            <h1 data-i18n="header.title">GAMEBOX DISCOVERY</h1>
 
-            <p class="rd-title-tagline">
-                Klassische Spiele. Echte Boxen. Neue Entdeckungen.
+            <p class="rd-title-tagline" data-i18n="header.tagline">
+                Entdecke Spieleklassiker und ihre Boxen in 3D
             </p>
 
             <div class="rd-publisher-label" aria-label="Eine Magisthans Spielekiste Produktion">
@@ -60,7 +60,35 @@
 
     </div>    
 
+    <div class="rd-language-selector" role="group" aria-label="Sprache wählen">
+        <button type="button" data-rd-language="de" data-i18n-aria-label="language.german" aria-label="Deutsch" aria-pressed="true">
+            <svg class="rd-language-flag" viewBox="0 0 30 18" aria-hidden="true" focusable="false">
+                <rect width="30" height="6" y="0" fill="#151515"></rect>
+                <rect width="30" height="6" y="6" fill="#d71920"></rect>
+                <rect width="30" height="6" y="12" fill="#f7ce38"></rect>
+            </svg>
+            <span>DE</span>
+        </button>
+        <span class="rd-language-divider" aria-hidden="true"></span>
+        <button type="button" data-rd-language="en" data-i18n-aria-label="language.english" aria-label="Englisch" aria-pressed="false">
+            <svg class="rd-language-flag" viewBox="0 0 60 36" aria-hidden="true" focusable="false">
+                <rect width="60" height="36" fill="#21468b"></rect>
+                <path d="M0 0 60 36M60 0 0 36" stroke="#fff" stroke-width="8"></path>
+                <path d="M0 0 60 36M60 0 0 36" stroke="#cf142b" stroke-width="4"></path>
+                <path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="12"></path>
+                <path d="M30 0v36M0 18h60" stroke="#cf142b" stroke-width="7"></path>
+            </svg>
+            <span>EN</span>
+        </button>
+    </div>
+
 </header>
+
+<!-- Mobile nutzt LCD und Drehknopf ohne das große obere Chassis. -->
+<section id="mobile-discovery-console" aria-label="Discovery Terminal">
+    <div id="mobile-lcd-mount"></div>
+    <div id="mobile-discovery-knob-mount"></div>
+</section>
 
 <!-- ==========================================
      DISCOVERY CONSOLE
@@ -332,6 +360,29 @@
 
 </section> <!-- rd-console-top -->
 
+<!-- Mobile Bedienoberfläche für die unveränderten System- und Genrefilter. -->
+<section
+    id="mobile-filter-panel"
+    aria-label="Discovery-Filter"
+    data-i18n-aria-label="filters.mobilePanel">
+
+    <div class="mobile-filter-group">
+        <h2 data-i18n="filters.systems">SYSTEME</h2>
+        <div id="mobile-system-filter-mount"></div>
+    </div>
+
+    <div class="mobile-filter-group">
+        <h2 data-i18n="filters.genres">GENRES</h2>
+        <div id="mobile-genre-filter-mount"></div>
+    </div>
+
+</section>
+
+<!-- Mobiler Laufkanal; verwendet denselben SlotRenderer wie die Desktop-Konsole. -->
+<section id="mobile-spin-frame" aria-label="Discovery Spin">
+    <div id="mobile-spin-track-mount"></div>
+</section>
+
 <!-- Auf kleinen Bildschirmen bewusst außerhalb der skalierten Chassis-Fläche. -->
 <section
     id="top-discoveries-mobile"
@@ -427,48 +478,18 @@
 
             <div class="community-card">
 
-                <h3>COMMUNITY-WERTUNG</h3>
+                <h3 data-i18n="community.title">COMMUNITY-WERTUNG</h3>
 
                 <div class="rating-item">
 
                     <div class="rating-header">
 
-                        <span>Spielspaß / Fun</span>
-                        <span id="rating-game-value">-</span>
-
-                    </div>
-
-                    <div class="rating-bar">
-
-                        <div
-                            id="rating-game-fill"
-                            class="rating-fill">
-                        </div>
-
-                        <input
-                            id="rating-game-slider"
-                            class="rating-slider"
-                            type="range"
-                            min="0"
-                            max="10"
-                            step="0.1"
-                            value="5"
-                            data-rating="gameplay"
-                            aria-label="Spielspaß"
-                            disabled>
-
-                    </div>
-
-                </div>
-
-                <div class="rating-item">
-
-                    <div class="rating-header">
-
-                        <span>Boxdesign / Package Design</span>
+                        <span data-i18n="community.boxdesign">📦 Boxdesign</span>
                         <span id="rating-box-value">-</span>
 
                     </div>
+
+                    <p class="rating-description" data-i18n="community.boxdesignDescription">Wie gut gefällt dir die Gestaltung dieser Box?</p>
 
                     <div class="rating-bar">
 
@@ -486,7 +507,8 @@
                             step="0.1"
                             value="5"
                             data-rating="boxdesign"
-                            aria-label="Boxdesign"
+                            aria-label="Boxdesign: Wie gut gefällt dir die Gestaltung dieser Box?"
+                            data-i18n-aria-label="community.boxdesignAria"
                             disabled>
 
                     </div>
@@ -497,39 +519,59 @@
 
                     <div class="rating-header">
 
-                        <span>Erinnerungswert / Memorability</span>
-                        <span id="rating-cult-value">-</span>
+                        <span data-i18n="community.gameRating">🎮 Spielbewertung</span>
+                        <span id="rating-game-value">-</span>
 
                     </div>
+
+                    <p class="rating-description" data-i18n="community.gameRatingDescription">Wie gut hat dir das Spiel gefallen?</p>
 
                     <div class="rating-bar">
 
                         <div
-                            id="rating-cult-fill"
+                            id="rating-game-fill"
                             class="rating-fill">
                         </div>
 
                         <input
-                            id="rating-cult-slider"
+                            id="rating-game-slider"
                             class="rating-slider"
                             type="range"
                             min="0"
                             max="10"
                             step="0.1"
                             value="5"
-                            data-rating="cultstatus"
-                            aria-label="Erinnerungswert"
+                            data-rating="gameRating"
+                            aria-label="Spielbewertung: Wie gut hat dir das Spiel gefallen?"
+                            data-i18n-aria-label="community.gameRatingAria"
                             disabled>
 
                     </div>
 
                 </div>
 
+                <div class="community-overall">
+                    <span data-i18n="community.overall">Bewertung insgesamt</span>
+                    <strong id="community-overall-value">-</strong>
+                </div>
+
+                <div id="community-owned-summary" class="community-owned-summary">—</div>
+
+                <fieldset id="community-collection-question" class="community-collection-question">
+                    <legend data-i18n="community.collectionQuestion">Ist diese Box in deiner Sammlung?</legend>
+                    <div class="community-collection-options">
+                        <label><input type="radio" name="collection-status" value="owned" disabled><span data-i18n="community.owned">Bereits vorhanden</span></label>
+                        <label><input type="radio" name="collection-status" value="wanted" disabled><span data-i18n="community.wanted">Würde ich gerne haben</span></label>
+                        <label><input type="radio" name="collection-status" value="no" disabled><span data-i18n="community.no">Nein</span></label>
+                    </div>
+                    <p id="community-collection-error" class="community-collection-error" role="alert"></p>
+                </fieldset>
+
                 <div
                     id="community-votes"
                     class="community-count">
 
-                    - Bewertungen / Votes
+                    <span data-i18n="community.noVotes">- Bewertungen</span>
 
                 </div>
 
@@ -540,7 +582,7 @@
                     class="community-button"
                     type="button">
 
-                    Jetzt bewerten / Vote now
+                    Jetzt bewerten
 
                 </button>
 
@@ -550,7 +592,7 @@
                     type="button"
                     hidden>
 
-                    Abbrechen
+                    <span data-i18n="community.cancel">Abbrechen</span>
 
                 </button>
 
@@ -570,8 +612,8 @@
 
                         <span class="scan-contribution-icon" aria-hidden="true">▣</span>
                         <span class="scan-contribution-button-label">
-                            <span>MITMACHEN! SCANS EINSENDEN</span>
-                            <span>JOIN AND CONTRIBUTE SCANS.</span>
+                            <span data-i18n="community.contributeLine1">MITMACHEN!</span>
+                            <span data-i18n="community.contributeLine2">SCANS EINSENDEN</span>
                         </span>
 
                     </button>
@@ -669,12 +711,13 @@
                         id="editorial-dialog-close"
                         class="editorial-dialog-close"
                         type="button"
-                        aria-label="Lesefenster schließen">
+                        aria-label="Lesefenster schließen"
+                        data-i18n-aria-label="info.readerClose">
                         ×
                     </button>
 
                     <div id="editorial-dialog-kicker" class="editorial-dialog-kicker">
-                        RETRO DISCOVERY ARCHIVE
+                        GAMEBOX DISCOVERY ARCHIVE
                     </div>
 
                     <h2 id="editorial-dialog-heading">MAGISTHANS REVIEW</h2>
@@ -684,8 +727,9 @@
                     <button
                         id="editorial-dialog-cancel"
                         class="editorial-dialog-cancel"
-                        type="button">
-                        SCHLIESSEN / CLOSE
+                        type="button"
+                        data-i18n="info.closeButton">
+                        SCHLIESSEN
                     </button>
 
                 </article>
@@ -721,8 +765,7 @@
 
                 <span
                     id="viewer-scan-credit"
-                    class="viewer-scan-credit"
-                    aria-hidden="true">
+                    class="viewer-scan-credit">
                 </span>
 
                 <span
@@ -756,7 +799,8 @@
 
     <button
         id="viewer-info-close"
-        aria-label="Schließen">
+        aria-label="Info schließen"
+        data-i18n-aria-label="info.close">
 
         ✕
 
@@ -775,7 +819,7 @@
         <div class="info-divider"></div>
 
         <div class="info-row">
-            <span class="info-label">Entwickler / Developer</span>
+            <span class="info-label" data-i18n="info.developer">Entwickler</span>
             <span
     id="info-developer"
     class="info-value">
@@ -786,7 +830,7 @@
         </div>
 
         <div class="info-row">
-            <span class="info-label">Verleger / Publisher</span>
+            <span class="info-label" data-i18n="info.publisher">Verleger</span>
             <span
     id="info-publisher"
     class="info-value">
@@ -797,18 +841,18 @@
         </div>
 
         <div class="info-row">
-            <span class="info-label">Box Art</span>
+            <span class="info-label" data-i18n="info.boxArt">Box-Art</span>
             <span
     id="info-boxartist"
     class="info-value">
 
-    keine Angaben
+    <span data-i18n="info.noData">keine Angaben</span>
 
 </span>
         </div>
 
-        <div class="info-section-title">
-            Mehr zum Spiel / More about the game
+        <div class="info-section-title" data-i18n="info.more">
+            Mehr zum Spiel
         </div>
 
         <div class="info-editorial-actions">
@@ -818,7 +862,7 @@
                 class="info-link info-editorial-button"
                 type="button"
                 aria-haspopup="dialog">
-                <span>★ Magisthans Review / Review</span>
+                <span data-i18n="info.review">★ Magisthans Review</span>
                 <span class="link-arrow" aria-hidden="true">›</span>
             </button>
 
@@ -827,7 +871,7 @@
                 class="info-link info-editorial-button"
                 type="button"
                 aria-haspopup="dialog">
-                <span>◆ Heute noch spielenswert? / Worth Playing</span>
+                <span data-i18n="info.worthPlaying">◆ Heute noch spielenswert?</span>
                 <span class="link-arrow" aria-hidden="true">›</span>
             </button>
 
@@ -854,6 +898,8 @@
         ↗
 
     </span>
+
+</button>
 
 <button
     id="info-wikipedia"
@@ -912,15 +958,15 @@
 
 <button
     id="copy-game-link"
-    class="share-link-btn">
+    class="share-link-btn"
+    data-i18n="info.share">
 
-    🔗 Spiel teilen / share game
+    🔗 Spiel teilen
 
 </button>
 
     </div>
-
-</aside>
+    </div>
 
 </aside>
 
@@ -930,7 +976,8 @@
 
     <button
         id="viewer-info-btn"
-        aria-label="Spielinformationen / Game information">
+        aria-label="Spielinformationen öffnen"
+        data-i18n-aria-label="info.open">
 
         <span class="info-icon">
 
@@ -961,8 +1008,6 @@
                 src="assets/ui/console_chassis_bottom.webp"
                 alt="">
 
-        </section> <!-- viewer-stage -->
-
         <div id="viewer-ui">
 
     <div id="viewer-guide">
@@ -973,9 +1018,9 @@
 
             <div>
 
-                <div class="guide-title">Linke Taste</div>
+                <div class="guide-title" data-i18n="controls.leftButton">Linke Taste</div>
 
-                <div class="guide-text">Drehen</div>
+                <div class="guide-text" data-i18n="controls.rotate">Drehen</div>
 
             </div>
 
@@ -989,9 +1034,9 @@
 
             <div>
 
-                <div class="guide-title">Rechte Taste</div>
+                <div class="guide-title" data-i18n="controls.rightButton">Rechte Taste</div>
 
-                <div class="guide-text">Ziehen zum Zoomen</div>
+                <div class="guide-text" data-i18n="controls.zoom">Ziehen zum Zoomen</div>
 
             </div>
 
@@ -1000,6 +1045,8 @@
     </div>
     
 </div>
+
+        </section> <!-- viewer-stage -->
 
 </div> <!-- rd-main-layout -->
 
@@ -1022,6 +1069,11 @@
 <script src="https://cdn.babylonjs.com/babylon.js"></script>
 
 <script src="../assets/js/game.js"></script>
+<script src="../assets/js/i18n/i18n-core.js"></script>
+<script src="../assets/js/i18n/ui.de.js"></script>
+<script src="../assets/js/i18n/ui.en.js"></script>
+<script src="../assets/js/game-localization.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/package-builder.js"></script>
 <script src="js/package-materials.js"></script>
 <script src="js/package-animation.js"></script>

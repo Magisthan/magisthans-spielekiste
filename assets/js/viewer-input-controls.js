@@ -93,18 +93,28 @@
         canvas.addEventListener("contextmenu",stopContextMenu);
 
         let controls = null;
+        const localizeControls = ()=>{
+            if(!controls || !window.SiteI18n) return;
+            controls.setAttribute("aria-label",window.SiteI18n.t("viewer.zoomControls"));
+            controls.querySelector('[data-viewer-zoom="out"]')
+                ?.setAttribute("aria-label",window.SiteI18n.t("viewer.zoomOut"));
+            controls.querySelector('[data-viewer-zoom="in"]')
+                ?.setAttribute("aria-label",window.SiteI18n.t("viewer.zoomIn"));
+        };
         if(container){
             controls = container.querySelector(":scope > .viewer-zoom-controls");
             if(!controls){
                 controls = document.createElement("div");
                 controls.className = "viewer-zoom-controls";
-                controls.setAttribute("aria-label","3D-Ansicht zoomen / Zoom 3D view");
+                controls.setAttribute("aria-label","3D-Ansicht zoomen");
                 controls.innerHTML = `
-                    <button class="viewer-zoom-control" type="button" data-viewer-zoom="out" aria-label="Herauszoomen / Zoom out">−</button>
-                    <button class="viewer-zoom-control" type="button" data-viewer-zoom="in" aria-label="Hineinzoomen / Zoom in">+</button>
+                    <button class="viewer-zoom-control" type="button" data-viewer-zoom="out" aria-label="Verkleinern">−</button>
+                    <button class="viewer-zoom-control" type="button" data-viewer-zoom="in" aria-label="Vergrößern">+</button>
                 `;
                 container.append(controls);
             }
+            localizeControls();
+            document.addEventListener("siteLanguageChanged",localizeControls);
             controls.addEventListener("click",event=>{
                 const direction = event.target.closest("[data-viewer-zoom]")?.dataset.viewerZoom;
                 if(direction === "in") setRadius(camera.radius - zoomStep);
@@ -115,6 +125,7 @@
         return {
             setRadius,
             destroy(){
+                document.removeEventListener("siteLanguageChanged",localizeControls);
                 canvas.removeEventListener("pointerdown",startZoom,{ capture:true });
                 canvas.removeEventListener("pointermove",moveZoom);
                 canvas.removeEventListener("pointerup",stopZoom);

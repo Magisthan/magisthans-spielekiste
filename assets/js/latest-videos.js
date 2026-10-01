@@ -1,118 +1,84 @@
-fetch("data/latest-videos.json")
+(() => {
+    let loadedVideos = [];
 
-.then(response => response.json())
-
-.then(videos => {
-
-    /* ==========================
-       Neuestes Video
-       ========================== */
-
-    const featured =
-        document.getElementById("featured-video");
-
-    if (featured && videos.length > 0) {
-
-        const firstVideo = videos[0];
-
-        featured.innerHTML = `
-
-        <div class="featured-video-card">
-
-            <button
-                class="lite-video-button"
-                type="button"
-                data-video-id="${firstVideo.videoId}"
-                aria-label="Video abspielen: ${firstVideo.title}">
-
-                <img
-                    src="${firstVideo.thumbnail}"
-                    alt="${firstVideo.title}"
-                    loading="lazy"
-                    decoding="async">
-
-                <span class="lite-video-play" aria-hidden="true"></span>
-
-            </button>
-
-        </div>
-
-        `;
-
-        featured
-            .querySelector(".lite-video-button")
-            .addEventListener("click", event => {
-
-                const button = event.currentTarget;
-                const videoId = button.dataset.videoId;
-
-                button.outerHTML = `
-
-                <iframe
-                    src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1"
-                    title="${firstVideo.title}"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-
-                `;
-
-            });
+    function text(key,params={}){
+        return window.SiteI18n?.t(key,params) ?? key;
     }
 
-    /* ==========================
-       Letzte Videos
-       ========================== */
+    function renderVideos(){
+        if(!loadedVideos.length) return;
 
-    const container =
-        document.getElementById("latest-videos");
+        const featured = document.getElementById("featured-video");
+        const firstVideo = loadedVideos[0];
 
-    if (!container) return;
+        if(featured){
+            featured.innerHTML = `
+                <div class="featured-video-card">
+                    <button
+                        class="lite-video-button"
+                        type="button"
+                        data-video-id="${firstVideo.videoId}"
+                        aria-label="${text("home.videoPlay",{ title:firstVideo.title })}">
+                        <img
+                            src="${firstVideo.thumbnail}"
+                            alt="${firstVideo.title}"
+                            loading="lazy"
+                            decoding="async">
+                        <span class="lite-video-play" aria-hidden="true"></span>
+                    </button>
+                </div>`;
 
-    videos.forEach(video => {
+            featured.querySelector(".lite-video-button")?.addEventListener("click",event=>{
+                const button = event.currentTarget;
+                button.outerHTML = `
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/${button.dataset.videoId}?autoplay=1"
+                        title="${firstVideo.title}"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>`;
+            });
+        }
 
-        container.innerHTML += `
+        const container = document.getElementById("latest-videos");
+        if(!container) return;
 
-        <a href="${video.url}"
-           target="_blank"
-           class="video-row">
+        container.innerHTML = loadedVideos.map(video=>`
+            <a href="${video.url}"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="video-row">
+                <div class="video-thumb">
+                    <img src="${video.thumbnail}"
+                         alt="${video.title}"
+                         loading="lazy"
+                         decoding="async">
+                </div>
+                <div class="video-info">
+                    <h3>${video.title}</h3>
+                    <p>${text("home.videoDescription")}</p>
+                </div>
+                <div class="video-arrow" aria-hidden="true">→</div>
+            </a>`).join("");
+    }
 
-            <div class="video-thumb">
+    async function initializeVideos(){
+        if(document.readyState === "loading"){
+            await new Promise(resolve=>document.addEventListener("DOMContentLoaded",resolve,{ once:true }));
+        }
+        await Promise.resolve(window.__siteI18nReady);
 
-                <img src="${video.thumbnail}"
-                     alt="${video.title}"
-                     loading="lazy"
-                     decoding="async">
+        try{
+            const response = await fetch("data/latest-videos.json");
+            if(!response.ok) throw new Error(`HTTP ${response.status}`);
+            loadedVideos = await response.json();
+            renderVideos();
+            document.addEventListener("siteLanguageChanged",renderVideos);
+        }catch(error){
+            console.error(text("common.error"),error);
+        }
+    }
 
-            </div>
-
-            <div class="video-info">
-
-                <h3>${video.title}</h3>
-
-                <p>
-                    Neues Video auf Magisthans Spielekiste
-                </p>
-
-            </div>
-
-            <div class="video-arrow">
-                →
-            </div>
-
-        </a>
-
-        `;
-    });
-
-})
-
-.catch(error => {
-
-    console.error(
-        "Fehler beim Laden der Videos:",
-        error
-    );
-
-});
+    initializeVideos();
+})();

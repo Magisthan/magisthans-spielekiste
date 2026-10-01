@@ -39,9 +39,10 @@
 }
 </style>
 
+<script defer src="../assets/js/i18n/site-bootstrap.js"></script>
 </head>
 
-<body>
+<body data-i18n-catalogs="game-page">
 
 <header class="hero">
 <img src="../assets/images/banner.webp" alt="Magisthans Spielekiste"
@@ -78,14 +79,14 @@
 
                 <h1 id="game-title"></h1>
 
-                <p><strong>Entwickler:</strong> <span id="game-developer"></span></p>
-                <p><strong>Publisher:</strong> <span id="game-publisher"></span></p>
-                <p><strong>Genre:</strong> <span id="game-genre"></span></p>
-                <p><strong>System:</strong> <span id="game-system"></span></p>
-                <p><strong>Erscheinungsjahr:</strong> <span id="game-year"></span></p>
+                <p><strong data-i18n="gamePage.developer">Entwickler:</strong> <span id="game-developer"></span></p>
+                <p><strong data-i18n="gamePage.publisher">Publisher:</strong> <span id="game-publisher"></span></p>
+                <p><strong data-i18n="gamePage.genre">Genre:</strong> <span id="game-genre"></span></p>
+                <p><strong data-i18n="gamePage.system">System:</strong> <span id="game-system"></span></p>
+                <p><strong data-i18n="gamePage.year">Erscheinungsjahr:</strong> <span id="game-year"></span></p>
 
 <div class="section">
-<h2>📖 Geschichte des Spiels</h2>
+<h2 data-i18n="gamePage.history">📖 Geschichte des Spiels</h2>
 <div id="game-history"></div>
 </div>
 
@@ -93,9 +94,7 @@
    class="welcome-button game-button"
    href="#"
    target="_blank"
-   rel="noopener noreferrer">
-    ▶ Let's Play ansehen
-</a>
+   rel="noopener noreferrer" data-i18n="gamePage.letsPlay">▶ Let's Play ansehen</a>
 
 </div>
 
@@ -114,13 +113,13 @@
                  decoding="async"
                  loading="lazy">
 
-            <div class="review-name">Magisthan meint</div>
+            <div class="review-name" data-i18n="gamePage.reviewBy">Magisthan meint</div>
 
         </div>
 
         <div class="review-content">
 
-            <h2>Meine persönliche Wertung</h2>
+            <h2 data-i18n="gamePage.review">Meine persönliche Wertung</h2>
 
             <div id="game-rating-stars" class="review-stars"></div>
             <div id="game-rating-text" class="review-rating"></div>
@@ -133,13 +132,13 @@
 </div>
 
 <div class="section">
-<h2>💡 Trivia und interessante Fakten</h2>
+<h2 data-i18n="gamePage.trivia">💡 Trivia und interessante Fakten</h2>
 <ul id="game-trivia"></ul>
 </div>
 
 <div class="section">
 
-<h2>📦 Die Box in 3D</h2>
+<h2 data-i18n="gamePage.box3d">📦 Die Box in 3D</h2>
 
 <div class="game-detail-viewer" data-game-detail-viewer>
 
@@ -148,27 +147,27 @@
         aria-label="Interaktive 3D-Ansicht der Spielebox">
     </canvas>
 
-    <div class="game-detail-viewer-loading" role="status">
+    <div class="game-detail-viewer-loading" role="status" data-i18n="viewer.loading">
         Box wird geladen …
     </div>
 
     <div class="game-detail-viewer-controls" aria-hidden="true">
-        <span>Linke Taste: Drehen</span>
-        <span>Mausrad: Zoomen</span>
+        <span data-i18n="viewer.rotate">Linke Taste: Drehen</span>
+        <span data-i18n="viewer.zoom">Rechte Taste: Ziehen zum Zoomen</span>
     </div>
 
     <div class="game-detail-viewer-actions">
         <button
             class="game-detail-viewer-open"
             type="button"
-            hidden>
+            hidden data-i18n="viewer.openBox">
             BOX ÖFFNEN
         </button>
 
         <button
             class="game-detail-viewer-fullscreen"
             type="button"
-            aria-label="3D-Ansicht im Vollbild öffnen">
+            aria-label="3D-Ansicht im Vollbild öffnen" data-i18n-aria-label="viewer.enterFullscreen">
             ⛶
         </button>
     </div>
@@ -176,7 +175,7 @@
 </div>
 
 <div class="section">
-<h2>🏆 Warum das Spiel heute noch spielenswert ist</h2>
+<h2 data-i18n="gamePage.worthPlaying">🏆 Warum das Spiel heute noch spielenswert ist</h2>
 <div id="game-worth-playing"></div>
 </div>
 
@@ -184,7 +183,7 @@
 </div>
 
 <div style="text-align:center;margin:40px 0 -40px;">
-    <a class="welcome-button" href="../index.html">← Zurück zur Startseite</a>
+    <a class="welcome-button" href="../index.html" data-i18n="gamePage.backHome">← Zurück zur Startseite</a>
 </div>
 
 </div>
@@ -195,7 +194,7 @@
 </footer>
 
 <script src="../assets/libs/babylon.js"></script>
-<script src="../assets/js/game.js"></script>
+<script src="../assets/js/game.js"></script><script src="../assets/js/game-localization.js"></script>
 <script src="../retro-discovery/js/package-builder.js"></script>
 <script src="../retro-discovery/js/package-materials.js"></script>
 <script src="../retro-discovery/js/package-animation.js"></script>

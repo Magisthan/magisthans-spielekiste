@@ -446,8 +446,14 @@ function filterGames() {
 
     return allGames.filter(game => {
 
-        // System absichern
-        const system = String(game.system ?? "").trim();
+        // Ein Spiel kann auf einem oder mehreren Systemen geführt werden.
+        // `system` bleibt dabei die lesbare Anzeige, `systems` enthält bei
+        // Mehrsystem-Einträgen die einzeln filterbaren Plattformen.
+        const gameSystems = (Array.isArray(game.systems)
+            ? game.systems
+            : [game.system])
+            .map(system => String(system ?? "").trim())
+            .filter(Boolean);
 
         // Genre immer als Array behandeln
         const genres = Array.isArray(game.genre)
@@ -472,7 +478,7 @@ else {
         const systems =
             SYSTEM_GROUPS[filter] ?? [filter];
 
-        return systems.includes(system);
+        return gameSystems.some(system => systems.includes(system));
 
     });
 
@@ -765,6 +771,9 @@ function createGenreButtons() {
 
     DISCOVERY_CONFIG.genreOrder.forEach(genre => {
 
+    const genreTranslationKey = `genre.${genre}`;
+    const genreLabel = window.RDI18n?.t(genreTranslationKey) ?? genre;
+
     const button =
     document.createElement("button");
 
@@ -783,9 +792,9 @@ button.innerHTML = `
 
     <div class="genre-overlay">
 
-        <span class="genre-label">
+        <span class="genre-label" data-i18n="${genreTranslationKey}">
 
-            ${genre}
+            ${genreLabel}
 
         </span>
 
@@ -836,6 +845,11 @@ function createSystemButtons() {
 
     button.dataset.system =
         system;
+
+    button.setAttribute(
+        "aria-label",
+        system
+    );
 
     button.innerHTML = `
 
