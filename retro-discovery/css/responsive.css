@@ -91,29 +91,20 @@ Responsive
 #viewer-stage{
     height:auto;
     min-height:0;
-    aspect-ratio:2100 / 1000;
+    aspect-ratio:2100 / 1140;
 }
 
 /* Values correspond to the open display area in console_chassis_bottom.webp. */
 #viewer-container{
     top:5.1%;
     right:1.7%;
-    bottom:18.2%;
+    bottom:20.2%;
     left:1.6%;
 }
 
 #fullscreen-btn{
     top:calc(6.794% + var(--viewer-upper-ui-shift));
     left:29.412%;
-}
-
-#viewer-actions{
-    right:6.765%;
-    bottom:18.529%;
-}
-
-#viewer-mobile-panels{
-    display:none;
 }
 
 #mobile-filter-panel{
@@ -137,78 +128,6 @@ Responsive
     left:1060px;
 }
 
-@media (max-width:900px){
-
-    .rd-main-layout,
-    #viewer-stage{
-        min-height:min(720px,135vw);
-    }
-
-    #viewer-info-panel{
-        left:16px;
-        right:16px;
-        top:16px;
-        bottom:72px;
-    }
-
-    #viewer-info-panel.open{
-        width:auto;
-    }
-
-    #viewer-actions{
-        right:16px;
-        bottom:82px;
-    }
-
-}
-
-@media (max-width:1200px){
-
-    #viewer-mobile-panels{
-        display:flex;
-        flex-direction:column;
-        gap:20px;
-        width:100%;
-        margin-top:20px;
-    }
-
-    #viewer-mobile-panels #community-panel{
-        position:relative;
-        top:auto;
-        right:auto;
-        bottom:auto;
-        left:auto;
-        width:100%;
-        transform:none;
-    }
-
-    #viewer-mobile-panels #viewer-info-panel{
-        position:relative;
-        top:auto;
-        right:auto;
-        bottom:auto;
-        left:auto;
-        display:none;
-        width:100%;
-        height:auto;
-        max-height:none;
-        overflow:visible;
-        opacity:1;
-    }
-
-    #viewer-mobile-panels #viewer-info-panel.open{
-        display:block;
-        width:100%;
-    }
-
-    #viewer-mobile-panels .viewer-info-content{
-        height:auto;
-        max-height:none;
-        overflow:visible;
-    }
-
-}
-
 /* On tablet and mobile, use the viewer itself as the presentation surface.
    The lower chassis is intentionally a desktop-only frame. */
 @media (max-width:1024px){
@@ -219,7 +138,7 @@ Responsive
 
     #viewer-stage{
         aspect-ratio:auto;
-        min-height:clamp(420px,90vw,720px);
+        min-height:clamp(560px,82vw,800px);
     }
 
     #viewer-container{
@@ -493,18 +412,6 @@ Responsive
     .viewer-scan-credit{
         white-space:normal;
         overflow-wrap:anywhere;
-    }
-
-    #viewer-info-btn{
-        width:48px;
-        height:48px;
-        justify-content:center;
-        padding:0;
-        border-radius:50%;
-    }
-
-    #viewer-info-btn .info-text{
-        display:none;
     }
 
 }

@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="css/viewer.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/community.css">
+    <link rel="stylesheet" href="css/scan-dialog.css">
     <link rel="stylesheet" href="css/top-discoveries.css">
+    <link rel="stylesheet" href="css/viewer-redesign.css">
 
 </head>
 
@@ -451,12 +452,6 @@
     <div class="rd-main-layout">
 
         <!-- ======================================
-             COMMUNITY PANEL
-        ======================================= -->
-
-        
-
-        <!-- ======================================
              VIEWER
         ======================================= -->
 
@@ -473,156 +468,6 @@
             </div>
 
             <div class="ui-vignette"></div>
-
-            <aside id="community-panel">
-
-            <div class="community-card">
-
-                <h3 data-i18n="community.title">COMMUNITY-WERTUNG</h3>
-
-                <div class="rating-item">
-
-                    <div class="rating-header">
-
-                        <span data-i18n="community.boxdesign">📦 Boxdesign</span>
-                        <span id="rating-box-value">-</span>
-
-                    </div>
-
-                    <p class="rating-description" data-i18n="community.boxdesignDescription">Wie gut gefällt dir die Gestaltung dieser Box?</p>
-
-                    <div class="rating-bar">
-
-                        <div
-                            id="rating-box-fill"
-                            class="rating-fill">
-                        </div>
-
-                        <input
-                            id="rating-box-slider"
-                            class="rating-slider"
-                            type="range"
-                            min="0"
-                            max="10"
-                            step="0.1"
-                            value="5"
-                            data-rating="boxdesign"
-                            aria-label="Boxdesign: Wie gut gefällt dir die Gestaltung dieser Box?"
-                            data-i18n-aria-label="community.boxdesignAria"
-                            disabled>
-
-                    </div>
-
-                </div>
-
-                <div class="rating-item">
-
-                    <div class="rating-header">
-
-                        <span data-i18n="community.gameRating">🎮 Spielbewertung</span>
-                        <span id="rating-game-value">-</span>
-
-                    </div>
-
-                    <p class="rating-description" data-i18n="community.gameRatingDescription">Wie gut hat dir das Spiel gefallen?</p>
-
-                    <div class="rating-bar">
-
-                        <div
-                            id="rating-game-fill"
-                            class="rating-fill">
-                        </div>
-
-                        <input
-                            id="rating-game-slider"
-                            class="rating-slider"
-                            type="range"
-                            min="0"
-                            max="10"
-                            step="0.1"
-                            value="5"
-                            data-rating="gameRating"
-                            aria-label="Spielbewertung: Wie gut hat dir das Spiel gefallen?"
-                            data-i18n-aria-label="community.gameRatingAria"
-                            disabled>
-
-                    </div>
-
-                </div>
-
-                <div class="community-overall">
-                    <span data-i18n="community.overall">Bewertung insgesamt</span>
-                    <strong id="community-overall-value">-</strong>
-                </div>
-
-                <div id="community-owned-summary" class="community-owned-summary">—</div>
-
-                <fieldset id="community-collection-question" class="community-collection-question">
-                    <legend data-i18n="community.collectionQuestion">Ist diese Box in deiner Sammlung?</legend>
-                    <div class="community-collection-options">
-                        <label><input type="radio" name="collection-status" value="owned" disabled><span data-i18n="community.owned">Bereits vorhanden</span></label>
-                        <label><input type="radio" name="collection-status" value="wanted" disabled><span data-i18n="community.wanted">Würde ich gerne haben</span></label>
-                        <label><input type="radio" name="collection-status" value="no" disabled><span data-i18n="community.no">Nein</span></label>
-                    </div>
-                    <p id="community-collection-error" class="community-collection-error" role="alert"></p>
-                </fieldset>
-
-                <div
-                    id="community-votes"
-                    class="community-count">
-
-                    <span data-i18n="community.noVotes">- Bewertungen</span>
-
-                </div>
-
-                <div class="community-rating-actions">
-
-                <button
-                    id="community-rate-button"
-                    class="community-button"
-                    type="button">
-
-                    Jetzt bewerten
-
-                </button>
-
-                <button
-                    id="community-rating-cancel"
-                    class="community-cancel-button"
-                    type="button"
-                    hidden>
-
-                    <span data-i18n="community.cancel">Abbrechen</span>
-
-                </button>
-
-                </div>
-
-                <section
-                    id="scan-contribution"
-                    class="scan-contribution">
-
-                    <button
-                        id="scan-contribution-toggle"
-                        class="scan-contribution-toggle"
-                        type="button"
-                        aria-expanded="false"
-                        aria-haspopup="dialog"
-                        aria-controls="scan-contribution-dialog">
-
-                        <span class="scan-contribution-icon" aria-hidden="true">▣</span>
-                        <span class="scan-contribution-button-label">
-                            <span data-i18n="community.contributeLine1">MITMACHEN!</span>
-                            <span data-i18n="community.contributeLine2">SCANS EINSENDEN</span>
-                        </span>
-
-                    </button>
-
-                </section>
-
-            </div>
-
-        </aside>
 
             <div
                 id="scan-contribution-dialog"
@@ -642,51 +487,42 @@
                         id="scan-dialog-close"
                         class="scan-dialog-close"
                         type="button"
-                        aria-label="Dialog schließen">
+                        aria-label="Dialog schließen"
+                        data-i18n-aria-label="scan.closeLabel">
                         ×
                     </button>
 
-                    <div class="scan-dialog-language" role="group" aria-label="Sprache / Language">
-                        <button type="button" data-scan-language="de" aria-pressed="true">
-                            <span aria-hidden="true">🇩🇪</span> Deutsch
-                        </button>
-                        <button type="button" data-scan-language="en" aria-pressed="false">
-                            <span aria-hidden="true">🇬🇧</span> English
-                        </button>
-                    </div>
+                    <div id="scan-dialog-kicker" class="scan-dialog-kicker" data-i18n="scan.kicker">ARCHIV UNTERSTÜTZEN</div>
+                    <h3 id="scan-dialog-title" data-i18n="scan.title">BOX-SCANS BEITRAGEN</h3>
 
-                    <div id="scan-dialog-kicker" class="scan-dialog-kicker">ARCHIV UNTERSTÜTZEN</div>
-                    <h3 id="scan-dialog-title">BOX-SCANS BEITRAGEN</h3>
-
-                    <p id="scan-dialog-description" class="scan-dialog-lead">
-                        Du hast eine seltene Spielebox?<br>
-                        Hilf mit, sie digital zu bewahren.
-                    </p>
+                    <p id="scan-dialog-description" class="scan-dialog-lead" data-i18n="scan.description">Du hast eine seltene Spielebox? Hilf mit, sie digital zu bewahren.</p>
 
                     <ul class="scan-dialog-checklist">
-                        <li id="scan-guideline-sides">Vorderseite, Rückseite und Seitenflächen (insgesamt 6 Bilder)</li>
-                        <li id="scan-guideline-content">Inhalt und Beilagen gerne separat auf einem Bild</li>
-                        <li id="scan-guideline-angle">Gerade fotografiert oder gescannt</li>
-                        <li id="scan-guideline-resolution">Auflösung mindestens 300 dpi</li>
-                        <li id="scan-guideline-compression">Möglichst ohne vorherige Komprimierung</li>
+                        <li id="scan-guideline-sides" data-i18n="scan.sides">Vorderseite, Rückseite und Seitenflächen (insgesamt 6 Bilder)</li>
+                        <li id="scan-guideline-content" data-i18n="scan.content">Inhalt und Beilagen gerne separat auf einem Bild</li>
+                        <li id="scan-guideline-angle" data-i18n="scan.angle">Gerade fotografiert oder gescannt</li>
+                        <li id="scan-guideline-resolution" data-i18n="scan.resolution">Auflösung mindestens 300 dpi</li>
+                        <li id="scan-guideline-compression" data-i18n="scan.compression">Möglichst ohne vorherige Komprimierung</li>
                     </ul>
 
                     <a
                         id="scan-contribution-email"
                         class="scan-contribution-email"
-                        href="mailto:magisthansspielekiste@disroot.org">
+                        href="mailto:magisthansspielekiste@disroot.org"
+                        data-i18n="scan.email">
                         SCANS PER E-MAIL SENDEN
                     </a>
 
-                    <p id="scan-dialog-note" class="scan-dialog-note">
+                    <p id="scan-dialog-note" class="scan-dialog-note" data-i18n="scan.note">
                         Für größere Dateien kannst du mir zunächst schreiben.
                     </p>
 
                     <button
                         id="scan-dialog-cancel"
                         class="scan-dialog-cancel"
-                        type="button">
-                        SCHLIESSEN / CLOSE
+                        type="button"
+                        data-i18n="scan.close">
+                        SCHLIESSEN
                     </button>
 
                 </div>
@@ -744,6 +580,202 @@
 
             </div> <!-- viewer-container -->
 
+            <!--
+                Viewer-Redesign: parallele UI-Hülle.
+                Sie bleibt bis zur schrittweisen Migration deaktiviert und
+                verändert weder den Babylon-Viewer noch die bestehende UI.
+            -->
+            <div
+                id="viewer-redesign-shell"
+                class="viewer-redesign-shell"
+                data-presentation-mode="box"
+                data-active-overlay="none"
+                aria-hidden="true"
+                inert
+                hidden>
+
+                <div
+                    id="viewer-redesign-scrim"
+                    class="viewer-redesign-scrim"
+                    aria-hidden="true">
+                </div>
+
+                <section
+                    id="viewer-contents-exhibit"
+                    class="viewer-contents-exhibit"
+                    aria-hidden="true"
+                    hidden>
+                    <div class="viewer-contents-exhibit-inner">
+                        <figure class="viewer-contents-figure">
+                            <div class="viewer-contents-image-frame">
+                                <p class="viewer-contents-kicker" data-i18n="viewer.contentsHeading">WAS IST IN DER BOX?</p>
+                                <img id="viewer-contents-image" alt="" decoding="async">
+                                <div id="viewer-contents-loading" class="viewer-contents-loading" role="status" aria-live="polite"></div>
+                                <button
+                                    id="viewer-contents-zoom"
+                                    class="viewer-contents-zoom"
+                                    type="button"
+                                    data-i18n-aria-label="viewer.contentsEnlarge"
+                                    aria-label="Inhaltsbild vergrößern"
+                                    hidden>
+                                    <span aria-hidden="true">⌕</span>
+                                </button>
+                                <figcaption>
+                                    <strong id="viewer-contents-game-title"></strong>
+                                    <span id="viewer-contents-caption" data-i18n="viewer.contentsCaption">Originaler Boxinhalt</span>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </section>
+
+                <dialog
+                    id="viewer-contents-dialog"
+                    class="viewer-contents-dialog"
+                    data-i18n-aria-label="viewer.contentsDialog"
+                    aria-label="Vergrößertes Inhaltsbild">
+                    <div class="viewer-contents-dialog-panel">
+                        <button
+                            id="viewer-contents-dialog-close"
+                            class="viewer-contents-dialog-close"
+                            type="button"
+                            data-i18n-aria-label="viewer.contentsClose"
+                            aria-label="Bild schließen">×</button>
+                        <img id="viewer-contents-dialog-image" class="viewer-contents-dialog-image" alt="">
+                    </div>
+                </dialog>
+
+                <div
+                    id="viewer-redesign-interactions"
+                    class="viewer-redesign-interactions">
+
+                    <section
+                        class="viewer-reaction-panel"
+                        aria-labelledby="viewer-reaction-question">
+
+                        <h2
+                            id="viewer-reaction-question"
+                            class="viewer-reaction-question"
+                            data-i18n="viewer.reactionQuestion">
+                            Gefällt dir diese Box?
+                        </h2>
+
+                        <div class="viewer-reaction-options">
+                            <button
+                                id="viewer-reaction-like"
+                                class="viewer-reaction-button"
+                                type="button"
+                                data-reaction="like"
+                                aria-pressed="false"
+                                data-i18n-aria-label="viewer.like">
+                                <span aria-hidden="true">👍</span>
+                                <strong id="viewer-reaction-like-count">0</strong>
+                            </button>
+
+                            <button
+                                id="viewer-reaction-dislike"
+                                class="viewer-reaction-button"
+                                type="button"
+                                data-reaction="dislike"
+                                aria-pressed="false"
+                                data-i18n-aria-label="viewer.dislike">
+                                <span aria-hidden="true">👎</span>
+                                <strong id="viewer-reaction-dislike-count">0</strong>
+                            </button>
+                        </div>
+
+                        <p
+                            id="viewer-reaction-status"
+                            class="viewer-visually-hidden"
+                            role="status"
+                            aria-live="polite">
+                        </p>
+
+                    </section>
+
+                    <nav
+                        class="viewer-compact-actions"
+                        data-i18n-aria-label="viewer.actionsLabel"
+                        aria-label="Viewer-Aktionen">
+
+                        <button
+                            id="viewer-contents-button"
+                            class="viewer-compact-action"
+                            type="button"
+                            disabled
+                            aria-disabled="true"
+                            data-i18n="viewer.contents">
+                            Box-Inhalt
+                        </button>
+
+                        <button
+                            id="viewer-compact-info-button"
+                            class="viewer-compact-action"
+                            type="button"
+                            data-i18n="viewer.info">
+                            Info
+                        </button>
+
+                        <button
+                            id="viewer-contribute-button"
+                            class="viewer-compact-action"
+                            type="button"
+                            aria-haspopup="dialog"
+                            aria-controls="scan-contribution-dialog"
+                            aria-expanded="false"
+                            data-i18n="viewer.contribute">
+                            Mitmachen
+                        </button>
+
+                    </nav>
+
+                </div>
+
+                <aside
+                    id="viewer-redesign-overlay"
+                    class="viewer-redesign-overlay"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="viewer-overlay-title"
+                    aria-hidden="true"
+                    hidden>
+
+                    <div class="viewer-redesign-overlay-content">
+                        <button id="viewer-overlay-close" class="viewer-overlay-close" type="button" data-i18n-aria-label="info.close" aria-label="Info schließen"><span aria-hidden="true">×</span></button>
+
+                        <header class="viewer-overlay-header">
+                            <p class="viewer-overlay-kicker">GAMEBOX DISCOVERY ARCHIVE</p>
+                            <h2 id="viewer-overlay-title">–</h2>
+                            <p id="viewer-overlay-meta" class="viewer-overlay-meta">–</p>
+                        </header>
+
+                        <dl class="viewer-overlay-facts">
+                            <div><dt data-i18n="info.developer">Entwickler</dt><dd id="viewer-overlay-developer">–</dd></div>
+                            <div><dt data-i18n="info.publisher">Verleger</dt><dd id="viewer-overlay-publisher">–</dd></div>
+                            <div><dt data-i18n="info.boxArt">Box-Art</dt><dd id="viewer-overlay-boxartist">–</dd></div>
+                        </dl>
+
+                        <div class="viewer-overlay-editorial-actions">
+                            <button id="viewer-overlay-review" type="button"><span data-i18n="info.review">★ Magisthans Review</span><span aria-hidden="true">›</span></button>
+                            <button id="viewer-overlay-worth-playing" type="button"><span data-i18n="info.worthPlaying">◆ Heute noch spielenswert?</span><span aria-hidden="true">›</span></button>
+                        </div>
+
+                        <section id="viewer-overlay-links" class="viewer-overlay-links" aria-labelledby="viewer-overlay-links-title">
+                            <h3 id="viewer-overlay-links-title" data-i18n="info.links">Weiterführende Links</h3>
+                            <div>
+                                <a id="viewer-overlay-mobygames" target="_blank" rel="noopener noreferrer" hidden>🌐 MobyGames <span aria-hidden="true">↗</span></a>
+                                <a id="viewer-overlay-wikipedia" target="_blank" rel="noopener noreferrer" hidden>📖 Wikipedia <span aria-hidden="true">↗</span></a>
+                                <a id="viewer-overlay-gog" target="_blank" rel="noopener noreferrer" hidden>🎮 GOG <span aria-hidden="true">↗</span></a>
+                                <a id="viewer-overlay-letsplay" target="_blank" rel="noopener noreferrer" hidden>▶ Let's Play <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </section>
+
+                        <button id="viewer-overlay-share" class="viewer-overlay-share" type="button" data-i18n="info.share">Spiel teilen</button>
+                    </div>
+                </aside>
+
+            </div>
+
             <div
                 id="viewer-game-title"
                 class="viewer-game-title">
@@ -783,221 +815,12 @@
                 </svg>
             </button>
 
-    <aside id="viewer-info-panel">
-
-    <div class="viewer-info-content">
-
-        <div class="viewer-info-header">
-
-    <h2
-    id="info-title"
-    class="info-title">
-
-    -
-
-</h2>
-
-    <button
-        id="viewer-info-close"
-        aria-label="Info schließen"
-        data-i18n-aria-label="info.close">
-
-        ✕
-
-    </button>
-
-</div>
-
-        <div
-    id="info-meta"
-    class="info-meta">
-
-    -
-
-</div>
-
-        <div class="info-divider"></div>
-
-        <div class="info-row">
-            <span class="info-label" data-i18n="info.developer">Entwickler</span>
-            <span
-    id="info-developer"
-    class="info-value">
-
-    -
-
-</span>
-        </div>
-
-        <div class="info-row">
-            <span class="info-label" data-i18n="info.publisher">Verleger</span>
-            <span
-    id="info-publisher"
-    class="info-value">
-
-    -
-
-</span>
-        </div>
-
-        <div class="info-row">
-            <span class="info-label" data-i18n="info.boxArt">Box-Art</span>
-            <span
-    id="info-boxartist"
-    class="info-value">
-
-    <span data-i18n="info.noData">keine Angaben</span>
-
-</span>
-        </div>
-
-        <div class="info-section-title" data-i18n="info.more">
-            Mehr zum Spiel
-        </div>
-
-        <div class="info-editorial-actions">
-
-            <button
-                id="info-review"
-                class="info-link info-editorial-button"
-                type="button"
-                aria-haspopup="dialog">
-                <span data-i18n="info.review">★ Magisthans Review</span>
-                <span class="link-arrow" aria-hidden="true">›</span>
-            </button>
-
-            <button
-                id="info-worth-playing"
-                class="info-link info-editorial-button"
-                type="button"
-                aria-haspopup="dialog">
-                <span data-i18n="info.worthPlaying">◆ Heute noch spielenswert?</span>
-                <span class="link-arrow" aria-hidden="true">›</span>
-            </button>
-
-        </div>
-
-        <div class="info-divider"></div>
-
-        <div class="info-links">
-
-        <div class="info-divider"></div>
-
-            <button
-    id="info-mobygames"
-    class="info-link">
-
-    <span>
-
-        🌐 MobyGames
-
-    </span>
-
-    <span class="link-arrow">
-
-        ↗
-
-    </span>
-
-</button>
-
-<button
-    id="info-wikipedia"
-    class="info-link">
-
-    <span>
-
-        📖 Wikipedia
-
-    </span>
-
-    <span class="link-arrow">
-
-        ↗
-
-    </span>
-
-</button>
-
-<button
-    id="info-gog"
-    class="info-link">
-
-    <span>
-
-        🎮 GOG (Good Old Games)
-
-    </span>
-
-    <span class="link-arrow">
-
-        ↗
-
-    </span>
-
-    
-
-</button>
-
-            <button
-    id="info-letsplay"
-    class="info-link">
-
-    ▶ Let's Play
-
-</button>
-
-<div class="info-divider"></div>
-
-<div class="info-section-title">
-
-    Discovery
-
-</div>
-
-
-<button
-    id="copy-game-link"
-    class="share-link-btn"
-    data-i18n="info.share">
-
-    🔗 Spiel teilen
-
-</button>
-
-    </div>
-    </div>
-
-</aside>
-
             <!-- Rahmen ganz zum Schluss -->
-
-<div id="viewer-actions">
-
-    <button
-        id="viewer-info-btn"
-        aria-label="Spielinformationen öffnen"
-        data-i18n-aria-label="info.open">
-
-        <span class="info-icon">
-
-            ⓘ
-
-        </span>
-
-        <span class="info-text">
-
-            INFO
-
-        </span>
-
-    </button>
-
-</div>
 
 <button
     id="fullscreen-btn"
-    aria-label="Fullscreen">
+    aria-label="3D-Ansicht im Vollbild öffnen"
+    data-i18n-aria-label="viewer.enterFullscreen">
 
     ⛶
 
@@ -1050,8 +873,6 @@
 
 </div> <!-- rd-main-layout -->
 
-<div id="viewer-mobile-panels"></div>
-
 </section> <!-- rd-console-viewer -->
 
 <!-- ==========================================
@@ -1081,8 +902,11 @@
 <script src="js/hinged-box-builder.js"></script>
 <script src="js/package.js"></script>
 <script src="../assets/js/viewer-input-controls.js"></script>
+<script src="../assets/js/content-image-enhancer.js"></script>
 
 <script src="js/viewer.js"></script>
+<script src="js/viewer-ui-controller.js"></script>
+<script src="js/viewer-content.js"></script>
 <script src="js/filters.js"></script>
 <script src="js/app.js"></script>
 <script src="js/console-scale.js"></script>

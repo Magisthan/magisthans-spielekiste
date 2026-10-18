@@ -9,7 +9,6 @@ let scene = null;
 let guideTimeout;
 let guideCanShow = true;
 let isFullscreen = false;
-let infoPanelOpen = false;
 let currentInfoGameData = null;
 let editorialDialogReturnFocus = null;
 let editorialDialogInitialized = false;
@@ -17,20 +16,6 @@ let currentEditorialHeadingKey = null;
 
 function viewerText(key){
     return window.RDI18n?.t(`info.${key}`) ?? key;
-}
-
-function localizeInfoGenres(genres){
-
-    const values = (Array.isArray(genres) ? genres : [genres])
-        .map(genre => String(genre ?? "").trim())
-        .filter(Boolean);
-
-    return values.map(genre => {
-        const key = `genre.${genre}`;
-        const translated = window.RDI18n?.t(key);
-        return translated && translated !== key ? translated : genre;
-    }).join(", ");
-
 }
 
 //--------------------------------------------------
@@ -86,142 +71,30 @@ const SHOWCASE_DELAY = 5000;
 //--------------------------------------------------
 
 function hideViewerActions(){
-
-    infoPanelOpen = false;
     closeEditorialDialog({ restoreFocus:false });
+    window.ScanContributionDialog?.close();
 
-    const actions =
-        document.getElementById("viewer-actions");
-
-    if(actions){
-
-        actions.classList.remove("visible");
-
+    if(window.ViewerUI?.getState().enabled){
+        window.ViewerUI.reset("spin-started");
+        window.ViewerUI.setCurrentGame(null);
     }
-
-    const panel =
-        document.getElementById("viewer-info-panel");
-
-    if(panel){
-
-        panel.classList.remove("open");
-
-    }
-
 }
 
 function showViewerActions(){
-
-    const fullscreen =
-        document.getElementById("fullscreen-btn");
-
-    if(fullscreen){
-
-        fullscreen.classList.add("visible");
-
-    }
-
-    if(infoPanelOpen) return;
-
-    const actions =
-        document.getElementById("viewer-actions");
-
-    if(actions){
-
-        actions.classList.add("visible");
-
-    }
-
+    showFullscreenButton();
 }
 
 function showFullscreenButton(){
-
-    const button =
-        document.getElementById("fullscreen-btn");
-
-    if(button){
-
-        button.classList.add("visible");
-
-    }
-
+    document.getElementById("fullscreen-btn")?.classList.add("visible");
 }
 
 function hideFullscreenButton(){
-
-    const button =
-        document.getElementById("fullscreen-btn");
-
-    if(button){
-
-        button.classList.remove("visible");
-
-    }
-
-}
-
-//--------------------------------------------------
-// Info Panel rechts
-//--------------------------------------------------
-
-function openInfoPanel(){
-
-    infoPanelOpen = true;
-
-    document
-        .getElementById("viewer-actions")
-        .classList.remove("visible");
-
-    document
-        .getElementById("viewer-info-panel")
-        .classList.add("open");
-
-}
-
-function closeInfoPanel(){
-
-    infoPanelOpen = false;
-
-    document
-        .getElementById("viewer-info-panel")
-        .classList.remove("open");
-
-    document
-        .getElementById("viewer-actions")
-        .classList.add("visible");
-
-}
-
-function toggleInfoPanel(){
-
-    if(infoPanelOpen){
-
-        closeInfoPanel();
-
-    }else{
-
-        openInfoPanel();
-
-    }
-
+    document.getElementById("fullscreen-btn")?.classList.remove("visible");
 }
 
 //--------------------------------------------------
 // Editorial reading dialog
 //--------------------------------------------------
-
-function configureEditorialButton(button,content,headingKey){
-
-    if(!button) return;
-
-    const hasContent = typeof content === "string" && content.trim() !== "";
-
-    button.style.display = hasContent ? "" : "none";
-    button.onclick = hasContent
-        ? ()=>openEditorialDialog(headingKey,content,button)
-        : null;
-
-}
 
 function openEditorialDialog(headingKey,content,trigger){
 
@@ -332,206 +205,30 @@ function updateInfoPanel(gameData){
 
     currentInfoGameData = gameData;
 
-    document.getElementById(
-        "info-title"
-    ).textContent =
-        gameData.title || "-";
-
-    document.getElementById(
-        "info-meta"
-    ).textContent =
-
-        `${gameData.system} • ${localizeInfoGenres(gameData.genre)} • ${gameData.year}`;
-
-    document.getElementById(
-        "info-developer"
-    ).textContent =
-        gameData.developer || "-";
-
-    document.getElementById(
-        "info-publisher"
-    ).textContent =
-        gameData.publisher || "-";
-
-    const artists = (gameData.boxArtists || [])
-    .filter(name => name && name.trim() !== "");
-
-document.getElementById(
-    "info-boxartist"
-).textContent =
-
-    artists.length
-        ? artists.join(", ")
-        : viewerText("noData");
-
-    const reviewButton = document.getElementById("info-review");
-    const worthPlayingButton = document.getElementById("info-worth-playing");
-
-    configureEditorialButton(
-        reviewButton,
-        gameData.review,
-        "reviewHeading"
-    );
-
-    configureEditorialButton(
-        worthPlayingButton,
-        gameData.worthPlaying,
-        "worthPlayingHeading"
-    );
-
-    //--------------------------------------------------
-// Links
-//--------------------------------------------------
-
-const mobyButton =
-    document.getElementById("info-mobygames");
-
-if(gameData.links?.mobygames){
-
-    mobyButton.style.display = "";
-
-    mobyButton.onclick = () => {
-
-        window.open(
-
-            gameData.links.mobygames,
-
-            "_blank"
-
-        );
-
-    };
-
-}else{
-
-    mobyButton.style.display = "none";
-
-}
-
-const wikiButton =
-    document.getElementById("info-wikipedia");
-
-if(gameData.links?.wikipedia){
-
-    wikiButton.style.display = "";
-
-    wikiButton.onclick = () => {
-
-        window.open(
-
-            gameData.links.wikipedia,
-
-            "_blank"
-
-        );
-
-    };
-
-}else{
-
-    wikiButton.style.display = "none";
-
-}
-
-const gogButton =
-    document.getElementById("info-gog");
-
-if(gameData.links?.gog){
-
-    gogButton.style.display = "";
-
-    gogButton.onclick = () => {
-
-        window.open(
-
-            gameData.links.gog,
-
-            "_blank"
-
-        );
-
-    };
-
-}else{
-
-    gogButton.style.display = "none";
-
-}
-
-const letsPlayButton =
-    document.getElementById("info-letsplay");
-
-if(gameData.letsPlay){
-
-    letsPlayButton.style.display = "";
-
-    letsPlayButton.onclick = () => {
-
-        window.open(
-
-            gameData.letsPlay,
-
-            "_blank"
-
-        );
-
-    };
-
-}else{
-
-    letsPlayButton.style.display = "none";
-
-}
-
-//--------------------------------------------------
-// Link kopieren
-//--------------------------------------------------
-
-const copyButton =
-    document.getElementById(
-        "copy-game-link"
-    );
-
-copyButton.onclick = async () => {
-
-    const url =
-
-        `${window.location.origin}${window.location.pathname}?game=${gameData.folder}`;
-
-    await navigator.clipboard.writeText(url);
-
-    copyButton.classList.add("copied");
-
-    copyButton.innerHTML =
-
-        viewerText("copied");
-
-    setTimeout(() => {
-
-        copyButton.classList.remove("copied");
-
-        copyButton.innerHTML =
-
-            viewerText("share");
-
-    },2000);
-
-};
+    window.ViewerUI?.setCurrentGame(gameData);
 
 }
 
 document.addEventListener("rdlanguagechange",()=>{
+    updateFullscreenButtonState();
+
     if(currentInfoGameData){
         const localizedGame = window.GameLocalization?.localizeGame(
             currentInfoGameData.__sourceGame || currentInfoGameData
         ) ?? currentInfoGameData;
-        updateInfoPanel(localizedGame);
+        currentInfoGameData = localizedGame;
+        window.ViewerUI?.setCurrentGame(localizedGame);
 
         const copy = document.getElementById("editorial-dialog-copy");
         if(copy && currentEditorialHeadingKey){
-            copy.textContent = currentEditorialHeadingKey === "reviewHeading"
-                ? localizedGame.review
-                : localizedGame.worthPlaying;
+            const editorialContent = {
+                reviewHeading:localizedGame.review,
+                worthPlayingHeading:localizedGame.worthPlaying,
+                triviaHeading:localizedGame.trivia
+            }[currentEditorialHeadingKey];
+            copy.textContent = Array.isArray(editorialContent)
+                ? editorialContent.join("\n\n")
+                : editorialContent || "";
         }
     }
 
@@ -557,33 +254,11 @@ function initViewer() {
     const fullscreenBtn =
     document.getElementById("fullscreen-btn");
 
-    const infoBtn =
-    document.getElementById("viewer-info-btn");
-
-    const closeBtn =
-    document.getElementById("viewer-info-close");
-
     fullscreenBtn.addEventListener(
 
     "click",
 
     toggleFullscreen
-
-);
-
-infoBtn.addEventListener(
-
-    "click",
-
-    toggleInfoPanel
-
-);
-
-closeBtn.addEventListener(
-
-    "click",
-
-    closeInfoPanel
 
 );
 
@@ -706,6 +381,39 @@ async function toggleFullscreen(){
         console.error(error);
 
     }
+
+}
+
+function updateFullscreenButtonState(){
+
+    const stage =
+        document.getElementById("viewer-stage");
+
+    const button =
+        document.getElementById("fullscreen-btn");
+
+    if(!stage || !button) return;
+
+    const stageIsFullscreen =
+        document.fullscreenElement === stage;
+
+    const labelKey = stageIsFullscreen
+        ? "viewer.exitFullscreen"
+        : "viewer.enterFullscreen";
+
+    button.textContent =
+        stageIsFullscreen ? "↙" : "⛶";
+
+    button.setAttribute(
+        "aria-label",
+        window.RDI18n?.t?.(labelKey) || (
+            stageIsFullscreen
+                ? "Vollbildansicht schließen"
+                : "3D-Ansicht im Vollbild öffnen"
+        )
+    );
+
+    button.dataset.i18nAriaLabel = labelKey;
 
 }
 
@@ -1371,8 +1079,6 @@ async function showGame(gameData){
 
     if(!gameData) return;
 
-    hideCommunity();
-
     const game =
     await loadGame(
         gameData
@@ -1447,13 +1153,6 @@ showcaseIdleTimer = setTimeout(
     2200
 
 );
-
-    setTimeout(() => {
-
-    showCommunity(gameData.folder);
-
-}, 1800);
-
 
 //--------------------------------------------------
 // Fade-In vorbereiten
@@ -1584,9 +1283,7 @@ camera.upperRadiusLimit = 9.0;
 window.ViewerInputControls?.setup({
     camera,
     canvas,
-    container:document.getElementById("viewer-stage"),
-    onInteraction:stopShowcaseRotation,
-    zoomStep:0.45
+    onInteraction:stopShowcaseRotation
 });
 
 console.log("6");
@@ -1918,8 +1615,11 @@ document.addEventListener(
 
     ()=>{
 
+        const fullscreenStage =
+            document.getElementById("viewer-stage");
+
         isFullscreen =
-            !!document.fullscreenElement;
+            document.fullscreenElement === fullscreenStage;
 
         const button =
             document.getElementById(
@@ -1929,22 +1629,14 @@ document.addEventListener(
         button.textContent =
             isFullscreen ? "🡼" : "⛶";
 
+        updateFullscreenButtonState();
+
         //--------------------------------------------------
 // Fullscreen UI
 //--------------------------------------------------
 
-const community =
-    document.getElementById("community-panel");
-
 const bottomChassis =
     document.querySelector(".rd-console-bottom");
-
-if (community) {
-
-    community.style.display =
-        isFullscreen ? "none" : "";
-
-}
 
 if (bottomChassis) {
 

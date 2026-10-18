@@ -190,15 +190,17 @@ viewer.css
 
     position:absolute;
 
-    left:50%;
+    left:clamp(14px,2.2%,34px);
 
     bottom:20%;
 
-    transform:translateX(-50%);
+    transform:none;
 
     display:flex;
 
-    align-items:center;
+    flex-direction:column;
+
+    align-items:stretch;
 
     gap:18px;
 
@@ -225,7 +227,7 @@ viewer.css
 
     opacity:1;
 
-    transform:translate(-50%,0);
+    transform:translateY(0);
 
 }
 
@@ -233,7 +235,7 @@ viewer.css
 
     opacity:0;
 
-    transform:translate(-50%,10px);
+    transform:translateY(10px);
 
 }
 
@@ -277,9 +279,9 @@ viewer.css
 
 .guide-divider{
 
-    width:1px;
+    width:100%;
 
-    height:42px;
+    height:1px;
 
     background:rgba(255,255,255,.10);
 
@@ -533,344 +535,6 @@ viewer.css
 
 }
 
-/* ==========================================
-   Sprint 38.1
-   Viewer Info Panel
-========================================== */
-
-#viewer-info-panel{
-
-    position:absolute;
-
-    top:45px;
-
-    right:30px;
-
-    bottom:145px;
-
-    width:0;
-
-    transition:
-
-    width .35s ease,
-
-    opacity .25s ease;
-
-    overflow:hidden;
-
-    z-index:150;
-
-    border:none;
-
-    background:rgba(18,22,28,.78);
-
-    backdrop-filter:blur(10px);
-
-    box-shadow:
-
-        0 8px 30px rgba(0,0,0,.45);
-
-}
-
-
-#viewer-info-panel.open{
-
-    width:clamp(360px,28vw,460px);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    opacity:1;
-
-}
-
-:fullscreen #viewer-info-panel.open{
-
-    width:560px;
-
-}
-
-:-webkit-full-screen #viewer-info-panel.open{
-
-    width:560px;
-
-}
-
-
-/* ==========================================
-   Sprint 38.3
-   Info Button
-========================================== */
-
-#viewer-info-btn{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:10px;
-
-    padding:12px 18px;
-
-    border:none;
-
-    border-radius:24px;
-
-    background:rgba(16,16,18,.70);
-
-    backdrop-filter:blur(18px);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    color:#fff;
-
-    cursor:pointer;
-
-    transition:
-        transform .25s ease,
-        border-color .25s ease,
-        box-shadow .25s ease;
-
-}
-
-#viewer-info-btn:hover{
-
-    border-color:#d6a32d;
-
-    transform:translateY(-2px);
-
-    box-shadow:
-        0 0 16px rgba(214,163,45,.35);
-
-}
-
-
-#viewer-info-btn:active{
-
-    transform:scale(.96);
-
-}
-
-.info-icon{
-
-    font-size:22px;
-
-    line-height:1;
-
-}
-
-.info-text{
-
-    font-size:.82rem;
-
-    font-weight:600;
-
-    letter-spacing:.02em;
-
-    white-space:nowrap;
-
-}
-
-/* ==========================================
-   Viewer Actions
-========================================== */
-
-/* ==========================================
-   Discovery Actions
-========================================== */
-
-#viewer-actions{
-
-    position:absolute;
-
-    right:115px;
-
-    bottom:150px;
-
-    z-index:220;
-
-    opacity:0;
-
-    pointer-events:none;
-
-    transform:translateY(12px);
-
-    transition:
-        opacity .30s ease,
-        transform .30s ease;
-
-}
-
-#viewer-actions.visible{
-
-    opacity:1;
-
-    pointer-events:auto;
-
-    transform:translateY(0);
-
-}
-
-#viewer-actions.visible{
-
-    opacity:1;
-
-    pointer-events:auto;
-
-    transform:translateY(0);
-
-}
-
-/* ==========================================
-   Sprint 38.5
-   Info Panel Layout
-========================================== */
-
-.viewer-info-content{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:18px;
-
-    width:100%;
-
-    height:100%;
-
-    padding:28px;
-
-    overflow-y:auto;
-
-}
-
-.info-title{
-
-    font-size:1.7rem;
-
-    font-weight:700;
-
-    letter-spacing:.04em;
-
-}
-
-.info-meta{
-
-    color:#c6c6c6;
-
-    font-size:.95rem;
-
-}
-
-.info-divider{
-
-    height:1px;
-
-    background:rgb(248, 248, 248);
-
-}
-
-.info-row{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:4px;
-
-}
-
-.info-label{
-
-    font-size:.75rem;
-
-    text-transform:uppercase;
-
-    letter-spacing:.08em;
-
-    color:#8f8f8f;
-
-}
-
-.info-value{
-
-    font-size:1rem;
-
-}
-
-.info-links{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:10px;
-
-}
-
-.info-link{
-
-    width:100%;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:10px 14px;
-
-    border:none;
-
-    border-radius:10px;
-
-    background:rgba(255,255,255,.05);
-
-    color:#fff;
-
-    cursor:pointer;
-
-    transition:
-
-        background .25s ease,
-
-        transform .25s ease,
-
-        border-color .25s ease;
-
-    border:1px solid rgba(255,255,255,.05);
-
-}
-
-.info-link:hover{
-
-    background:rgba(214,163,45,.12);
-
-    border-color:rgba(214,163,45,.35);
-
-    transform:translateX(4px);
-
-}
-
-.link-arrow{
-
-    opacity:.45;
-
-    transition:
-
-        opacity .25s ease,
-
-        transform .25s ease;
-
-}
-
-.info-link:hover .link-arrow{
-
-    opacity:1;
-
-    transform:translateX(2px);
-
-}
-
 /* Retro Discovery: Zoomsteuerung mittig auf dem oberen Rahmen des
    unteren Chassis. Die gemeinsame Viewer-Komponente bleibt unverändert. */
 #viewer-stage > .viewer-zoom-controls{
@@ -927,7 +591,7 @@ viewer.css
 .editorial-dialog.is-open{
     opacity:1;
     visibility:visible;
-    pointer-events:none;
+    pointer-events:auto;
     transition:opacity .24s ease,visibility 0s;
 }
 
@@ -1086,124 +750,6 @@ body.editorial-dialog-open{
     border-color:rgba(214,163,45,.35);
 
     transform:translateY(-2px);
-
-}
-
-.share-link-btn{
-
-    padding:14px;
-
-    border:none;
-
-    border-radius:12px;
-
-    background:#d6a32d;
-
-    color:#111;
-
-    font-weight:700;
-
-    cursor:pointer;
-
-}
-
-.share-link-btn.copied{
-
-    background:rgba(70,170,95,.22);
-
-    border-color:rgba(70,170,95,.55);
-
-    color:#b8ffbf;
-
-    box-shadow:
-
-        0 0 14px rgba(70,170,95,.30);
-
-}
-
-.info-section-title{
-
-    margin-top:16px;
-
-    margin-bottom:12px;
-
-    font-size:.72rem;
-
-    font-weight:700;
-
-    letter-spacing:.12em;
-
-    text-transform:uppercase;
-
-    color:#9ea6b5;
-
-}
-
-/* ==========================================
-   Info Header
-========================================== */
-
-.viewer-info-header{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    gap:20px;
-
-}
-
-#viewer-info-close{
-
-    width:34px;
-
-    height:34px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:rgba(255,255,255,.06);
-
-    color:#fff;
-
-    cursor:pointer;
-
-    transition:
-
-        background .25s ease,
-
-        transform .25s ease;
-
-}
-
-#viewer-info-close:hover{
-
-    background:rgba(214,163,45,.20);
-
-    transform:scale(1.08);
-
-}
-
-@media (max-width:1500px){
-
-    #viewer-info-panel.open{
-
-        width:400px;
-
-    }
-
-}
-
-@media (max-width:1200px){
-
-    #viewer-info-panel.open{
-
-        width:340px;
-
-    }
 
 }
 

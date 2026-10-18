@@ -10,6 +10,8 @@
     const TEXTURE_BASE = "../assets/textures";
     const BOX_SCALE = 0.014;
     const AUTO_ROTATION_SPEED = 0.0025;
+    const MOBILE_VIEWER_QUERY = "(max-width:768px)";
+    const MOBILE_GUIDE_DURATION = 2000;
 
     function viewerText(key, params = {}, fallback = ""){
         if(!window.SiteI18n?.hasTranslation?.(key)) return fallback;
@@ -65,6 +67,7 @@
         let currentPackage;
         let boxIsOpen = false;
         let autoRotate = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        let disposeGuideBehavior = ()=>{};
 
         try{
             engine = new BABYLON.Engine(canvas,true,{
@@ -138,9 +141,11 @@
             });
 
             stage.classList.add("is-ready");
+            disposeGuideBehavior = initializeGuideBehavior(stage,updateLanguage);
 
             window.addEventListener("pagehide",()=>{
                 document.removeEventListener("siteLanguageChanged",updateLanguage);
+                disposeGuideBehavior();
                 resizeObserver.disconnect();
                 Package.dispose(currentPackage);
                 engine.dispose();
@@ -204,13 +209,28 @@
         ));
         if(guide){
             guide.replaceChildren();
-            [
-                `${viewerText("controls.leftButton", {}, "Linke Taste")}: ${viewerText("controls.rotate", {}, "Drehen")}`,
-                `${viewerText("controls.rightButton", {}, "Rechte Taste")}: ${viewerText("controls.zoom", {}, "Zoomen")}`,
-                viewerText("gamePage.viewerTouchZoom", {}, "Zwei Finger: Zoomen")
-            ].forEach(text=>{
+            const isMobile = window.matchMedia(MOBILE_VIEWER_QUERY).matches;
+            const guideItems = [
+                {
+                    type:"rotate",
+                    text:`${viewerText("controls.leftButton", {}, "Linke Taste")}: ${viewerText("controls.rotate", {}, "Drehen")}`
+                },
+                {
+                    type:"mouse-zoom",
+                    text:`${viewerText("controls.rightButton", {}, "Rechte Taste")}: ${viewerText("controls.zoom", {}, "Zoomen")}`
+                },
+                {
+                    type:"touch-zoom",
+                    text:viewerText("gamePage.viewerTouchZoom", {}, "Zwei Finger: Zoomen")
+                }
+            ];
+
+            guideItems
+                .filter(item=>!isMobile || item.type !== "mouse-zoom")
+                .forEach(item=>{
                 const span = document.createElement("span");
-                span.textContent = text;
+                span.dataset.viewerControl = item.type;
+                span.textContent = item.text;
                 guide.append(span);
             });
         }
@@ -239,6 +259,38 @@
             const label = credit.querySelector(".game-detail-viewer-scan-label");
             if(label) label.textContent = scanLabel.toUpperCase();
         }
+    }
+
+    function initializeGuideBehavior(stage,onBreakpointChange){
+        const guide = stage.querySelector(".game-detail-viewer-controls");
+        if(!guide) return ()=>{};
+
+        const mediaQuery = window.matchMedia(MOBILE_VIEWER_QUERY);
+        let dismissTimer = 0;
+
+        const updateVisibility = ()=>{
+            window.clearTimeout(dismissTimer);
+            guide.classList.remove("is-dismissed");
+
+            if(mediaQuery.matches){
+                dismissTimer = window.setTimeout(()=>{
+                    guide.classList.add("is-dismissed");
+                },MOBILE_GUIDE_DURATION);
+            }
+        };
+
+        const handleMediaChange = ()=>{
+            onBreakpointChange?.();
+            updateVisibility();
+        };
+
+        mediaQuery.addEventListener("change",handleMediaChange);
+        updateVisibility();
+
+        return ()=>{
+            window.clearTimeout(dismissTimer);
+            mediaQuery.removeEventListener("change",handleMediaChange);
+        };
     }
 
     function createScene(engine,canvas){

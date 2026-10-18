@@ -1,11 +1,11 @@
 GAME LOCALIZATION REPORT
-Generated: 2026-09-25T11:30:26.048Z
+Generated: 2026-10-06T06:41:49.126Z
 
-Games checked: 211
-German translations complete: 211/211
-English translations complete: 211/211
-English placeholders prepared: 211/211
-Long legacy text blocks using automatic paragraph grouping: 395
+Games checked: 262
+German translations complete: 262/262
+English translations complete: 262/262
+English placeholders prepared: 262/262
+Long legacy text blocks using automatic paragraph grouping: 483
 Errors: 0
 Warnings: 7
 
@@ -221,6 +221,57 @@ COMPLETE ENGLISH ENTRIES
 - rescue_on_fractalus
 - rvf_honda
 - conquests_of_the_longbow
+- sacred_2_fallen_angel_collectors_edition
+- sieg_in_afrika
+- silent_hunter
+- silent_hunter_patrol_disk
+- silent_service_2
+- sim_classics_maxis_collections_1
+- simon_the_sorcerer_2
+- simon_the_sorcerer_amiga
+- sir_fred_the_legend
+- space_ace
+- space_quest_4
+- spellforce_the_breath_of_winter
+- star_general
+- steel_empire
+- das_schwarze_auge_sternenschweif
+- street_sports_collection
+- super_cycle
+- syndicate
+- tanglewood
+- tank_attack
+- temple_of_apshai
+- testament
+- the_bards_tale_construction_set
+- the_legend_of_kyrandia
+- the_lost_treasures_of_infocom
+- the_manager
+- the_summoning
+- their_finest_hour
+- their_finest_missions_volume_one
+- theme_hospital_collectors_edition
+- thunderscape
+- time_and_magik
+- tony_la_russa_baseball_2_1993_players_expansion_disk
+- tony_la_russa_baseball_2_al_nl_stadiums_expansion_disk
+- tony_la_russa_baseball_2_fantasy_draft_expansion_disk
+- total_annihilation_kingdoms
+- track_and_field
+- veil_of_darkness
+- victory_road
+- voyager
+- warcraft_2_beyond_the_dark_portal
+- warlords_2_scenario_builder
+- wayne_gretzky_hockey_3
+- where_in_europe_is_carmen_sandiego
+- where_in_the_world_is_carmen_sandiego
+- where_in_time_is_carmen_sandiego
+- wild_cup_soccer
+- wing_commander_secret_missions_2_crusade
+- wiz_n_liz
+- wonderland
+- xcom_apocalypse
 
 ERRORS
 - none

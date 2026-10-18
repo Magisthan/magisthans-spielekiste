@@ -17543,6 +17543,3731 @@ const GAMES = [
 ]
     },
 
+    {
+        translations: {
+            "de": {
+                "description": "Sacred 2: Fallen Angel ist ein umfangreiches Action-Rollenspiel von Ascaron und der Nachfolger des erfolgreichen Sacred. Rund 2000 Jahre vor den Ereignissen des ersten Spiels erkundet der Spieler die riesige Fantasywelt Ancaria, kämpft gegen unzählige Kreaturen, sammelt Ausrüstung und entwickelt einen von sechs unterschiedlichen Charakteren. Zwei Kampagnen für Licht und Schatten, eine offene Spielwelt und umfangreiche Mehrspielerfunktionen bilden den Kern des Abenteuers. Die Collector's Edition ergänzt das Spiel um zahlreiche physische und digitale Extras.",
+                "history": "Sacred 2: Fallen Angel erschien 2008 für Windows und setzte die Geschichte der Sacred-Reihe als Vorgeschichte fort. Entwickelt wurde das Spiel bei Studio II Software beziehungsweise Ascaron. Produzenten waren Daniel Dumont und Christian Grünwald, Hans-Arno Wegner fungierte als Lead Game Designer, Marc Oberhäuser als Lead Quest Designer und Hoa Tu Ngoc als Lead Artist. Die Handlung spielt ungefähr 2000 Jahre vor dem ersten Sacred. Im Mittelpunkt steht die sogenannte T-Energie, eine mächtige Kraft, die einst von den Seraphim nach Ancaria gebracht wurde. Der Kampf um ihre Kontrolle hat das Land ins Chaos gestürzt. Der Spieler entscheidet sich für einen von sechs Charakteren: Seraphim, Schattenkrieger, Hochelfe, Dryade, Tempelwächter oder Inquisitor. Nicht jede Figur kann dabei beide Seiten der Geschichte spielen. Während die Lichtkampagne auf die Rettung Ancarias ausgerichtet ist, verfolgt die Schattenkampagne wesentlich düsterere Ziele. Sacred 2 setzt wie sein Vorgänger auf eine weitgehend frei erkundbare Welt. Zahlreiche Haupt- und Nebenquests, Dungeons, Städte und versteckte Gebiete sorgen für einen enormen Umfang. Charaktere entwickeln sich über Attribute, Fertigkeiten und sogenannte Kampfkünste, die sich wiederum zu individuellen Kombinationen zusammenstellen lassen. Einen wichtigen Stellenwert besitzt außerdem das Sammeln immer besserer Waffen und Rüstungen. Neben dem Einzelspiel unterstützte Sacred 2 LAN- und Online-Partien mit kooperativem Spiel. Technisch wechselte die Reihe vollständig in eine dreidimensionale Welt. Zum Erscheinungszeitpunkt litt die PC-Version allerdings unter zahlreichen Fehlern und Stabilitätsproblemen, die Ascaron mit mehreren Patches bekämpfte. Die Collector's Edition erschien in Deutschland zeitgleich am 2. Oktober 2008. Sie enthielt neben dem Spiel ein Artbook, eine Soundtrack-CD, eine doppelseitige Posterkarte von Ancaria, Tattoos, das exklusive Online-Pet Carrier Imp, das Hörbuch Sacred 2: Fallen Angel – Der Schattenkrieger – Folge 1: Die Auferstehung sowie die Elite-GFX-Erweiterung mit höher aufgelösten Texturen. Damit gehörte die Ausgabe zu den umfangreicheren PC-Sammlereditionen ihrer Zeit.",
+                "review": "Sacred 2 ist eines dieser Spiele, bei denen man sich vornimmt, nur noch schnell eine Quest zu erledigen – und zwei Stunden später steht man irgendwo am anderen Ende Ancarias und kann sich nicht mehr erinnern, warum man überhaupt dorthin gelaufen ist. Genau darin liegt eine der größten Stärken des Spiels. Die Welt ist riesig und überall warten Nebenquests, Gegner, Höhlen und natürlich jede Menge Beute. Das grundlegende Prinzip funktioniert ausgezeichnet: Monster erledigen, Erfahrung sammeln, bessere Ausrüstung finden und anschließend Monster erledigen, die vorher noch überzeugend erklärt haben, warum die eigene Ausrüstung gar nicht so gut war. Die sechs Charakterklassen spielen sich angenehm unterschiedlich. Besonders interessant sind die Kampfkünste, die sich entwickeln und miteinander kombinieren lassen. Dadurch entstehen viele Möglichkeiten, einen Charakter individuell aufzubauen. Gleichzeitig ist Sacred 2 aber auch ein Spiel, das manchmal deutlich größer sein möchte, als ihm guttut. Viele Nebenquests folgen einfachen Mustern und die riesige Welt bedeutet zwangsläufig lange Laufwege. Dazu kamen zum Verkaufsstart zahlreiche Bugs. Abstürze, Questprobleme und andere technische Fehler sorgten dafür, dass Ancaria gelegentlich gefährlicher war als ursprünglich von den Entwicklern vorgesehen. Mehrere Patches verbesserten die Situation später erheblich. Dafür besitzt das Spiel einen eigenwilligen Humor, eine enorme Menge an Details und einen geradezu absurden Umfang. Auch Blind Guardians Auftritt samt eigener Quest und Konzert ist ein schönes Beispiel dafür, dass Sacred 2 sich selbst nicht immer vollkommen ernst nimmt. Aus heutiger Sicht ist das Kampfsystem natürlich weniger elegant als bei moderneren Action-Rollenspielen. Trotzdem funktioniert die berühmte Beutespirale weiterhin ausgezeichnet. Noch ein Gegner, noch eine Truhe, vielleicht liegt dort endlich das bessere Schwert – und plötzlich ist wieder eine Stunde vergangen. Die Collector's Edition passt hervorragend zu diesem überdimensionierten Spiel. Artbook, Karte, Soundtrack, Hörbuch und die Elite-Grafiken machen sie zu einer Ausgabe, bei der der Begriff Collector's Edition tatsächlich mehr bedeutet als eine andere Verpackung.",
+                "trivia": [
+                    "Sacred 2 spielt ungefähr 2000 Jahre vor dem ersten Sacred und erzählt damit eine Vorgeschichte zur späteren Welt Ancarias.",
+                    "Die deutsche PC-Collector's-Edition enthielt unter anderem Artbook, Soundtrack, Ancaria-Posterkarte, Tattoos, das exklusive Online-Pet Carrier Imp, ein Sacred-2-Hörbuch und eine DVD mit Elite-GFX-Texturen.",
+                    "Die deutsche Metal-Band Blind Guardian ist im Spiel vertreten. Eine besondere Quest führt zu einem virtuellen Konzert der Band, die für Sacred 2 außerdem den Song Sacred Worlds aufnahm."
+                ],
+                "worthPlaying": "Sacred 2 ist heute noch besonders für Spieler interessant, die große Action-Rollenspiele mit umfangreicher Charakterentwicklung und einer nahezu erschlagenden Menge an Beute mögen. Ancaria bietet enorm viel zu entdecken und die sechs Charakterklassen sorgen für hohen Wiederspielwert. Die ursprüngliche Verkaufsversion war technisch problematisch und einige Spielmechaniken wirken inzwischen etwas sperrig, doch unter diesen Alterserscheinungen steckt weiterhin ein ausgesprochen umfangreiches und eigenständiges Action-Rollenspiel. Die Collector's Edition ist darüber hinaus durch ihre zahlreichen physischen Extras besonders sammelwürdig.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Sacred 2: Fallen Angel is a large-scale action RPG from Ascaron and the sequel to the successful Sacred. Set roughly 2,000 years before the original game, it allows players to explore the enormous fantasy world of Ancaria, fight countless creatures, collect equipment and develop one of six distinctive characters. Light and Shadow campaigns, a large open world and extensive multiplayer options form the core of the adventure. The Collector's Edition adds a substantial selection of physical and digital extras.",
+                "history": "Sacred 2: Fallen Angel was released for Windows in 2008 and serves as a prequel to the original Sacred. Development was handled by Studio II Software within Ascaron's development organisation. Daniel Dumont and Christian Grünwald served as producers, Hans-Arno Wegner was Lead Game Designer, Marc Oberhäuser Lead Quest Designer and Hoa Tu Ngoc Lead Artist. The story takes place roughly two millennia before Sacred and revolves around T-Energy, a powerful force whose control has plunged Ancaria into conflict. Players choose from six character classes: Seraphim, Shadow Warrior, High Elf, Dryad, Temple Guardian and Inquisitor. Light and Shadow campaigns provide different perspectives on the struggle. Like its predecessor, Sacred 2 emphasizes exploration of a very large world filled with quests, dungeons, settlements and hidden locations. Characters are developed through attributes, skills and Combat Arts, while collecting increasingly powerful weapons and armour provides the familiar action-RPG progression loop. The game also supported LAN and online cooperative multiplayer. Sacred 2 moved the series into a fully three-dimensional world, but its original PC release suffered from numerous bugs and stability problems that Ascaron addressed through subsequent patches. The German Collector's Edition was released on October 2, 2008. Alongside the game it included an artbook, soundtrack CD, double-sided Ancaria poster map, tattoos, the exclusive Carrier Imp online pet, a German Sacred 2 audio drama and the Elite Graphics package containing higher-resolution textures. This made it a particularly substantial PC collector's edition for its period.",
+                "review": "Sacred 2 is the kind of game in which completing one quick quest can unexpectedly turn into several hours of wandering across Ancaria. That enormous world is one of its greatest strengths. Side quests, enemies, caves and equipment are almost everywhere, and the basic action-RPG loop remains extremely effective: defeat monsters, gain experience, find better equipment and then search for even stronger opponents. The six character classes provide considerable variety, while Combat Arts and character skills offer many possibilities for creating individual builds. Sacred 2 can, however, feel larger than it needs to be. Many side quests follow simple patterns and the huge world inevitably produces long journeys. The original release was also notoriously rough technically, with crashes, quest problems and numerous other bugs. Later patches improved the situation considerably. What remains is a game with a distinctive sense of humour, an enormous amount of content and a strong personality. Blind Guardian's in-game appearance and concert are good examples of Sacred 2's willingness to have fun with its fantasy setting. Modern action RPGs may offer smoother combat and more convenient interfaces, but Sacred 2's loot-driven progression can still be highly addictive. The Collector's Edition complements the game's oversized nature particularly well, offering an artbook, map, soundtrack, audio drama and high-resolution graphics package rather than merely providing alternative packaging.",
+                "trivia": [
+                    "Sacred 2 takes place roughly 2,000 years before the original Sacred, making it a prequel to the first game's version of Ancaria.",
+                    "The German PC Collector's Edition included an artbook, soundtrack, Ancaria poster map, tattoos, the exclusive Carrier Imp online pet, a Sacred 2 audio drama and an Elite Graphics texture disc.",
+                    "German metal band Blind Guardian appears inside the game in a dedicated quest and virtual concert, and recorded the song Sacred Worlds for Sacred 2."
+                ],
+                "worthPlaying": "Sacred 2 remains worthwhile for players who enjoy enormous action RPGs, extensive character development and large quantities of collectible equipment. Ancaria offers a remarkable amount to explore and the six classes provide substantial replay value. The original release had significant technical problems and some mechanics now feel dated, but beneath those issues remains an unusually ambitious and distinctive action RPG. The extensive physical extras also make the Collector's Edition particularly interesting as a collectible release."
+            }
+        },
+        id: 212,
+        folder: "sacred_2_fallen_angel_collectors_edition",
+        scanBy: "Magisthan",
+        page: "sacred_2_fallen_angel_collectors_edition.html",
+        featured: false,
+        title: "Sacred 2: Fallen Angel - Collector's Edition",
+        system: "PC",
+        year: 2008,
+        publisher: "ASCARON Entertainment GmbH / Koch Media GmbH",
+        developer: "Studio II Software GmbH",
+        genre: ["Action-Rollenspiel", "Hack and Slash", "Fantasy"],
+        description: "Sacred 2: Fallen Angel ist ein umfangreiches Action-Rollenspiel von Ascaron und der Nachfolger des erfolgreichen Sacred. Rund 2000 Jahre vor den Ereignissen des ersten Spiels erkundet der Spieler die riesige Fantasywelt Ancaria, kämpft gegen unzählige Kreaturen, sammelt Ausrüstung und entwickelt einen von sechs unterschiedlichen Charakteren. Zwei Kampagnen für Licht und Schatten, eine offene Spielwelt und umfangreiche Mehrspielerfunktionen bilden den Kern des Abenteuers. Die Collector's Edition ergänzt das Spiel um zahlreiche physische und digitale Extras.",
+        history: `Sacred 2: Fallen Angel erschien 2008 für Windows und setzte die Geschichte der Sacred-Reihe als Vorgeschichte fort. Entwickelt wurde das Spiel bei Studio II Software beziehungsweise Ascaron. Produzenten waren Daniel Dumont und Christian Grünwald, Hans-Arno Wegner fungierte als Lead Game Designer, Marc Oberhäuser als Lead Quest Designer und Hoa Tu Ngoc als Lead Artist. Die Handlung spielt ungefähr 2000 Jahre vor dem ersten Sacred. Im Mittelpunkt steht die sogenannte T-Energie, eine mächtige Kraft, die einst von den Seraphim nach Ancaria gebracht wurde. Der Kampf um ihre Kontrolle hat das Land ins Chaos gestürzt. Der Spieler entscheidet sich für einen von sechs Charakteren: Seraphim, Schattenkrieger, Hochelfe, Dryade, Tempelwächter oder Inquisitor. Nicht jede Figur kann dabei beide Seiten der Geschichte spielen. Während die Lichtkampagne auf die Rettung Ancarias ausgerichtet ist, verfolgt die Schattenkampagne wesentlich düsterere Ziele. Sacred 2 setzt wie sein Vorgänger auf eine weitgehend frei erkundbare Welt. Zahlreiche Haupt- und Nebenquests, Dungeons, Städte und versteckte Gebiete sorgen für einen enormen Umfang. Charaktere entwickeln sich über Attribute, Fertigkeiten und sogenannte Kampfkünste, die sich wiederum zu individuellen Kombinationen zusammenstellen lassen. Einen wichtigen Stellenwert besitzt außerdem das Sammeln immer besserer Waffen und Rüstungen. Neben dem Einzelspiel unterstützte Sacred 2 LAN- und Online-Partien mit kooperativem Spiel. Technisch wechselte die Reihe vollständig in eine dreidimensionale Welt. Zum Erscheinungszeitpunkt litt die PC-Version allerdings unter zahlreichen Fehlern und Stabilitätsproblemen, die Ascaron mit mehreren Patches bekämpfte. Die Collector's Edition erschien in Deutschland zeitgleich am 2. Oktober 2008. Sie enthielt neben dem Spiel ein Artbook, eine Soundtrack-CD, eine doppelseitige Posterkarte von Ancaria, Tattoos, das exklusive Online-Pet Carrier Imp, das Hörbuch Sacred 2: Fallen Angel – Der Schattenkrieger – Folge 1: Die Auferstehung sowie die Elite-GFX-Erweiterung mit höher aufgelösten Texturen. Damit gehörte die Ausgabe zu den umfangreicheren PC-Sammlereditionen ihrer Zeit.`,
+        review: `Sacred 2 ist eines dieser Spiele, bei denen man sich vornimmt, nur noch schnell eine Quest zu erledigen – und zwei Stunden später steht man irgendwo am anderen Ende Ancarias und kann sich nicht mehr erinnern, warum man überhaupt dorthin gelaufen ist. Genau darin liegt eine der größten Stärken des Spiels. Die Welt ist riesig und überall warten Nebenquests, Gegner, Höhlen und natürlich jede Menge Beute. Das grundlegende Prinzip funktioniert ausgezeichnet: Monster erledigen, Erfahrung sammeln, bessere Ausrüstung finden und anschließend Monster erledigen, die vorher noch überzeugend erklärt haben, warum die eigene Ausrüstung gar nicht so gut war. Die sechs Charakterklassen spielen sich angenehm unterschiedlich. Besonders interessant sind die Kampfkünste, die sich entwickeln und miteinander kombinieren lassen. Dadurch entstehen viele Möglichkeiten, einen Charakter individuell aufzubauen. Gleichzeitig ist Sacred 2 aber auch ein Spiel, das manchmal deutlich größer sein möchte, als ihm guttut. Viele Nebenquests folgen einfachen Mustern und die riesige Welt bedeutet zwangsläufig lange Laufwege. Dazu kamen zum Verkaufsstart zahlreiche Bugs. Abstürze, Questprobleme und andere technische Fehler sorgten dafür, dass Ancaria gelegentlich gefährlicher war als ursprünglich von den Entwicklern vorgesehen. Mehrere Patches verbesserten die Situation später erheblich. Dafür besitzt das Spiel einen eigenwilligen Humor, eine enorme Menge an Details und einen geradezu absurden Umfang. Auch Blind Guardians Auftritt samt eigener Quest und Konzert ist ein schönes Beispiel dafür, dass Sacred 2 sich selbst nicht immer vollkommen ernst nimmt. Aus heutiger Sicht ist das Kampfsystem natürlich weniger elegant als bei moderneren Action-Rollenspielen. Trotzdem funktioniert die berühmte Beutespirale weiterhin ausgezeichnet. Noch ein Gegner, noch eine Truhe, vielleicht liegt dort endlich das bessere Schwert – und plötzlich ist wieder eine Stunde vergangen. Die Collector's Edition passt hervorragend zu diesem überdimensionierten Spiel. Artbook, Karte, Soundtrack, Hörbuch und die Elite-Grafiken machen sie zu einer Ausgabe, bei der der Begriff Collector's Edition tatsächlich mehr bedeutet als eine andere Verpackung.`,
+        trivia: [
+                  "Sacred 2 spielt ungefähr 2000 Jahre vor dem ersten Sacred und erzählt damit eine Vorgeschichte zur späteren Welt Ancarias.",
+                  "Die deutsche PC-Collector's-Edition enthielt unter anderem Artbook, Soundtrack, Ancaria-Posterkarte, Tattoos, das exklusive Online-Pet Carrier Imp, ein Sacred-2-Hörbuch und eine DVD mit Elite-GFX-Texturen.",
+                  "Die deutsche Metal-Band Blind Guardian ist im Spiel vertreten. Eine besondere Quest führt zu einem virtuellen Konzert der Band, die für Sacred 2 außerdem den Song Sacred Worlds aufnahm."
+        ],
+        worthPlaying: `Sacred 2 ist heute noch besonders für Spieler interessant, die große Action-Rollenspiele mit umfangreicher Charakterentwicklung und einer nahezu erschlagenden Menge an Beute mögen. Ancaria bietet enorm viel zu entdecken und die sechs Charakterklassen sorgen für hohen Wiederspielwert. Die ursprüngliche Verkaufsversion war technisch problematisch und einige Spielmechaniken wirken inzwischen etwas sperrig, doch unter diesen Alterserscheinungen steckt weiterhin ein ausgesprochen umfangreiches und eigenständiges Action-Rollenspiel. Die Collector's Edition ist darüber hinaus durch ihre zahlreichen physischen Extras besonders sammelwürdig.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/36552/sacred-2-fallen-angel-collectors-edition/",
+        wikipedia: "https://en.wikipedia.org/wiki/Sacred_2:_Fallen_Angel",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 180,
+        height: 235,
+        depth: 54
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Sieg in Afrika ist ein strategisches Computer-Wargame über den Feldzug in Nordafrika während des Zweiten Weltkriegs. Der Spieler übernimmt die Führung der Achsenmächte oder der Alliierten und führt die Kampagne von Juni 1940 bis 1943. Statt einer grafischen Bildschirmkarte arbeitet das Spiel mit physischen Karten und Spielsteinen, während der C64 Befehle verarbeitet, Kampfresultate berechnet, Informationen verwaltet und im Solospiel zusätzlich die gegnerische Seite übernimmt.",
+                "history": "Sieg in Afrika wurde von John Kula entworfen und 1984 vom kanadischen Wargame-Spezialisten Simulations Canada für Commodore 64 und Apple II veröffentlicht. Das Spiel behandelt den gesamten nordafrikanischen Feldzug des Zweiten Weltkriegs von 1940 bis 1943 und verfolgt einen ungewöhnlichen Ansatz, der klassische Brettspielmechanismen mit den Möglichkeiten eines Heimcomputers verbindet. Der Spieler übernimmt auf operativ-strategischer Ebene die Kontrolle über die wichtigsten Verbände der Achsenmächte oder der Alliierten. Die Kampagne beginnt im Juni 1940 und schreitet in monatlichen Spielzügen voran. Dabei müssen nicht nur Bewegungen und Angriffe geplant werden. Versorgung mit Treibstoff, Munition und Lebensmitteln spielt ebenfalls eine wichtige Rolle und zwingt den Spieler dazu, seine begrenzten Ressourcen sinnvoll einzusetzen. Einheiten können unterschiedliche Befehle erhalten, beispielsweise angreifen, aus einem Gefecht ausbrechen, eine Stellung halten, sich bewegen oder bestimmte Gebiete durchsuchen. Eine Besonderheit von Sieg in Afrika ist die Präsentation. Das eigentliche Computerprogramm besitzt keine grafische strategische Karte. Stattdessen wurde das Spiel mit physischen Karten und Spielsteinen ausgeliefert. Die Spieler führen dort die Positionen ihrer Verbände, während der Computer als eine Art Stabsoffizier fungiert. Er verarbeitet die eingegebenen Befehle, berechnet Gefechte und liefert anschließend Berichte über Kampfresultate und bekannte gegnerische Positionen. Dieses System ermöglicht gleichzeitig einen für damalige Computerspiele bemerkenswerten Fog of War. Bei einer Partie zwischen zwei menschlichen Spielern verwendet jede Seite eine eigene Karte und kennt dadurch nicht automatisch die Positionen des Gegners. Im Solospiel übernimmt der Computer die gegnerische Seite und liefert dem Spieler die Informationen, die dessen Truppen tatsächlich erhalten würden. John Kula war nicht nur Designer des Spiels, sondern ist auch als Künstler der Simulations-Canada-Veröffentlichungen dokumentiert. Sieg in Afrika gehört damit zu einer frühen Generation von Computer-Wargames, bei denen der Rechner nicht das komplette Brettspiel ersetzte, sondern vor allem als Schiedsrichter, Gegner und Berechnungswerkzeug eingesetzt wurde.",
+                "review": "Wer Sieg in Afrika heute startet und eine animierte Karte mit Panzern erwartet, dürfte zunächst glauben, dass etwas nicht richtig geladen wurde. Tatsächlich ist genau das der Punkt: Die wichtigste Grafik des Spiels liegt nicht auf dem Bildschirm, sondern auf dem Tisch. Karte und Spielsteine gehören hier praktisch zur Benutzeroberfläche, während der C64 im Hintergrund den geduldigen Stabsoffizier spielt, der Befehle entgegennimmt und anschließend mitteilt, welche großartige strategische Idee gerade in der Wüste verschwunden ist. Das wirkt aus heutiger Sicht ausgesprochen ungewöhnlich, besitzt aber einen gewissen Reiz. Besonders interessant ist der dadurch mögliche Fog of War. Bei zwei Spielern kennt niemand automatisch sämtliche gegnerischen Positionen. Informationen müssen erst durch Aufklärung und Berichte gewonnen werden. Auch die Versorgung sorgt dafür, dass man nicht einfach sämtliche Einheiten nach vorne schicken kann. Treibstoff, Munition und Lebensmittel sind genauso wichtig wie die reine Kampfstärke. Dadurch entsteht tatsächlich das Gefühl, einen Feldzug zu planen und nicht nur einzelne Gefechte auszutragen. Gleichzeitig muss man wissen, worauf man sich einlässt. Sieg in Afrika ist trocken, textlastig und verlangt erheblich mehr Eigenarbeit als moderne Strategiespiele. Ein großer Teil der Partie findet gedanklich und auf der beiliegenden Karte statt. Wer schnelle Unterhaltung oder grafische Schlachten sucht, wird damit kaum glücklich werden. Für klassische Wargamer ist gerade diese Konstruktion aber faszinierend. Der Computer übernimmt genau jene Aufgaben, die bei einem Brettspiel besonders aufwendig wären: geheime Informationen verwalten, Ergebnisse berechnen und einen Gegner simulieren. Als reines C64-Spiel wirkt Sieg in Afrika deshalb beinahe fremdartig. Als Verbindung aus Brettspiel und Computersimulation ist es dagegen ein interessantes Dokument aus einer Zeit, in der Entwickler noch herausfinden mussten, welche Rolle ein Heimcomputer bei komplexen Strategiespielen überhaupt übernehmen sollte.",
+                "trivia": [
+                    "Sieg in Afrika wurde von John Kula entworfen und simuliert die Nordafrika-Kampagne des Zweiten Weltkriegs von 1940 bis 1943 in monatlichen Spielzügen.",
+                    "Das Spiel verwendet physische Karten und Spielsteine. Der Computer verarbeitet Befehle, berechnet Ergebnisse und verwaltet Informationen, statt die komplette strategische Karte auf dem Bildschirm darzustellen.",
+                    "John Kula war nach eigener biografischer Dokumentation von 1982 bis 1992 für die Cover-Art sämtlicher Brett- und Computerspiele von Simulations Canada verantwortlich."
+                ],
+                "worthPlaying": "Sieg in Afrika ist heute weniger wegen audiovisueller Qualitäten als wegen seines ungewöhnlichen Spielkonzepts interessant. Die Verbindung aus physischer Karte, Spielsteinen und C64-Programm zeigt eine frühe Vorstellung davon, wie Computer klassische Wargames unterstützen konnten. Ressourcenmanagement, verdeckte Informationen und die strategische Planung einer mehrjährigen Kampagne bieten weiterhin beträchtliche Tiefe. Für Sammler und Liebhaber klassischer Computer-Wargames ist Sieg in Afrika deshalb ein besonders interessantes Stück Genre-Geschichte.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Sieg in Afrika is a strategic computer wargame covering the North African campaign of the Second World War. Players command either Axis or Allied forces through a campaign running from June 1940 to 1943. Instead of displaying the entire campaign on a graphical computer map, the game uses physical maps and counters while the Commodore 64 processes orders, resolves combat, manages intelligence and controls the opposing side in solitaire play.",
+                "history": "Sieg in Afrika was designed by John Kula and published by Canadian wargame specialist Simulations Canada for the Commodore 64 and Apple II in 1984. It covers the North African campaign from 1940 to 1943 and combines traditional board-wargame components with computer-assisted resolution. Players command the major Axis or Allied formations at an operational and strategic level. The campaign begins in June 1940 and advances in monthly turns. Movement and combat are only part of the challenge, as fuel, ammunition and food supplies must also be managed. Units can receive a range of operational orders covering movement, attacks, defensive actions and reconnaissance. One of the game's most distinctive features is its presentation. The computer program does not provide a conventional graphical campaign map. Instead, physical maps and counters are used to record unit positions while the computer acts as an umpire and staff officer, processing orders, resolving combat and reporting results. This approach also allows the game to implement fog of war. In a two-player game, each commander uses a separate map and does not automatically know the opposing force's positions. In solitaire play, the computer controls the enemy and reports only the information available to the player's forces. John Kula was not only the game's designer but is also documented as the cover artist for Simulations Canada's games during this period. Sieg in Afrika therefore represents an early form of computer wargaming in which the computer supplemented rather than completely replaced the traditional board-game environment.",
+                "review": "Players approaching Sieg in Afrika today expecting an animated campaign map may initially wonder whether something has failed to load. In reality, the most important graphics are sitting on the table. The physical map and counters effectively form part of the interface, while the Commodore 64 acts as a patient staff officer that accepts commands and calculates their consequences. By modern standards this arrangement feels extremely unusual, but it also gives the game much of its historical interest. The system allows genuine fog of war, particularly with two human players, because neither side automatically knows every enemy position. Supply also matters: fuel, ammunition and food can be just as important as combat strength. This creates the impression of directing a campaign rather than merely fighting isolated battles. The obvious disadvantage is accessibility. Sieg in Afrika is dry, heavily dependent on text and requires considerably more work from the player than a modern strategy game. Much of the experience takes place on the physical map and in the player's own planning. For traditional wargamers, however, that hybrid design is precisely what makes it fascinating. The computer performs the tasks that would otherwise require an umpire or complicated bookkeeping, including hidden information, combat resolution and computer opposition. As a conventional Commodore 64 game it can seem almost alien today; as a combination of board wargame and computer simulation it remains a fascinating example of designers exploring what home computers could contribute to serious strategy games.",
+                "trivia": [
+                    "Sieg in Afrika was designed by John Kula and covers the North African campaign from 1940 to 1943 in monthly turns.",
+                    "The package uses physical maps and counters while the computer processes orders, resolves results and manages hidden information rather than displaying the complete strategic situation graphically.",
+                    "John Kula is documented as having created the cover artwork for every board and computer game published by Simulations Canada between 1982 and 1992."
+                ],
+                "worthPlaying": "Sieg in Afrika is now most interesting for its unusual design rather than its audiovisual presentation. Its combination of physical map, counters and computer program demonstrates an early approach to computer-assisted wargaming. Resource management, hidden information and planning an extended campaign still provide considerable strategic depth. For collectors and enthusiasts of classic computer wargames, it is a particularly interesting piece of genre history."
+            }
+        },
+        id: 213,
+        folder: "sieg_in_afrika",
+        scanBy: "Magisthan",
+        page: "sieg_in_afrika.html",
+        featured: false,
+        title: "Sieg in Afrika",
+        system: "C64",
+        year: 1984,
+        publisher: "Simulations Canada",
+        developer: "John Kula",
+        genre: ["Strategie", "Wargame", "Rundenstrategie", "Zweiter Weltkrieg"],
+        description: "Sieg in Afrika ist ein strategisches Computer-Wargame über den Feldzug in Nordafrika während des Zweiten Weltkriegs. Der Spieler übernimmt die Führung der Achsenmächte oder der Alliierten und führt die Kampagne von Juni 1940 bis 1943. Statt einer grafischen Bildschirmkarte arbeitet das Spiel mit physischen Karten und Spielsteinen, während der C64 Befehle verarbeitet, Kampfresultate berechnet, Informationen verwaltet und im Solospiel zusätzlich die gegnerische Seite übernimmt.",
+        history: `Sieg in Afrika wurde von John Kula entworfen und 1984 vom kanadischen Wargame-Spezialisten Simulations Canada für Commodore 64 und Apple II veröffentlicht. Das Spiel behandelt den gesamten nordafrikanischen Feldzug des Zweiten Weltkriegs von 1940 bis 1943 und verfolgt einen ungewöhnlichen Ansatz, der klassische Brettspielmechanismen mit den Möglichkeiten eines Heimcomputers verbindet. Der Spieler übernimmt auf operativ-strategischer Ebene die Kontrolle über die wichtigsten Verbände der Achsenmächte oder der Alliierten. Die Kampagne beginnt im Juni 1940 und schreitet in monatlichen Spielzügen voran. Dabei müssen nicht nur Bewegungen und Angriffe geplant werden. Versorgung mit Treibstoff, Munition und Lebensmitteln spielt ebenfalls eine wichtige Rolle und zwingt den Spieler dazu, seine begrenzten Ressourcen sinnvoll einzusetzen. Einheiten können unterschiedliche Befehle erhalten, beispielsweise angreifen, aus einem Gefecht ausbrechen, eine Stellung halten, sich bewegen oder bestimmte Gebiete durchsuchen. Eine Besonderheit von Sieg in Afrika ist die Präsentation. Das eigentliche Computerprogramm besitzt keine grafische strategische Karte. Stattdessen wurde das Spiel mit physischen Karten und Spielsteinen ausgeliefert. Die Spieler führen dort die Positionen ihrer Verbände, während der Computer als eine Art Stabsoffizier fungiert. Er verarbeitet die eingegebenen Befehle, berechnet Gefechte und liefert anschließend Berichte über Kampfresultate und bekannte gegnerische Positionen. Dieses System ermöglicht gleichzeitig einen für damalige Computerspiele bemerkenswerten Fog of War. Bei einer Partie zwischen zwei menschlichen Spielern verwendet jede Seite eine eigene Karte und kennt dadurch nicht automatisch die Positionen des Gegners. Im Solospiel übernimmt der Computer die gegnerische Seite und liefert dem Spieler die Informationen, die dessen Truppen tatsächlich erhalten würden. John Kula war nicht nur Designer des Spiels, sondern ist auch als Künstler der Simulations-Canada-Veröffentlichungen dokumentiert. Sieg in Afrika gehört damit zu einer frühen Generation von Computer-Wargames, bei denen der Rechner nicht das komplette Brettspiel ersetzte, sondern vor allem als Schiedsrichter, Gegner und Berechnungswerkzeug eingesetzt wurde.`,
+        review: `Wer Sieg in Afrika heute startet und eine animierte Karte mit Panzern erwartet, dürfte zunächst glauben, dass etwas nicht richtig geladen wurde. Tatsächlich ist genau das der Punkt: Die wichtigste Grafik des Spiels liegt nicht auf dem Bildschirm, sondern auf dem Tisch. Karte und Spielsteine gehören hier praktisch zur Benutzeroberfläche, während der C64 im Hintergrund den geduldigen Stabsoffizier spielt, der Befehle entgegennimmt und anschließend mitteilt, welche großartige strategische Idee gerade in der Wüste verschwunden ist. Das wirkt aus heutiger Sicht ausgesprochen ungewöhnlich, besitzt aber einen gewissen Reiz. Besonders interessant ist der dadurch mögliche Fog of War. Bei zwei Spielern kennt niemand automatisch sämtliche gegnerischen Positionen. Informationen müssen erst durch Aufklärung und Berichte gewonnen werden. Auch die Versorgung sorgt dafür, dass man nicht einfach sämtliche Einheiten nach vorne schicken kann. Treibstoff, Munition und Lebensmittel sind genauso wichtig wie die reine Kampfstärke. Dadurch entsteht tatsächlich das Gefühl, einen Feldzug zu planen und nicht nur einzelne Gefechte auszutragen. Gleichzeitig muss man wissen, worauf man sich einlässt. Sieg in Afrika ist trocken, textlastig und verlangt erheblich mehr Eigenarbeit als moderne Strategiespiele. Ein großer Teil der Partie findet gedanklich und auf der beiliegenden Karte statt. Wer schnelle Unterhaltung oder grafische Schlachten sucht, wird damit kaum glücklich werden. Für klassische Wargamer ist gerade diese Konstruktion aber faszinierend. Der Computer übernimmt genau jene Aufgaben, die bei einem Brettspiel besonders aufwendig wären: geheime Informationen verwalten, Ergebnisse berechnen und einen Gegner simulieren. Als reines C64-Spiel wirkt Sieg in Afrika deshalb beinahe fremdartig. Als Verbindung aus Brettspiel und Computersimulation ist es dagegen ein interessantes Dokument aus einer Zeit, in der Entwickler noch herausfinden mussten, welche Rolle ein Heimcomputer bei komplexen Strategiespielen überhaupt übernehmen sollte.`,
+        trivia: [
+                  "Sieg in Afrika wurde von John Kula entworfen und simuliert die Nordafrika-Kampagne des Zweiten Weltkriegs von 1940 bis 1943 in monatlichen Spielzügen.",
+                  "Das Spiel verwendet physische Karten und Spielsteine. Der Computer verarbeitet Befehle, berechnet Ergebnisse und verwaltet Informationen, statt die komplette strategische Karte auf dem Bildschirm darzustellen.",
+                  "John Kula war nach eigener biografischer Dokumentation von 1982 bis 1992 für die Cover-Art sämtlicher Brett- und Computerspiele von Simulations Canada verantwortlich."
+        ],
+        worthPlaying: `Sieg in Afrika ist heute weniger wegen audiovisueller Qualitäten als wegen seines ungewöhnlichen Spielkonzepts interessant. Die Verbindung aus physischer Karte, Spielsteinen und C64-Programm zeigt eine frühe Vorstellung davon, wie Computer klassische Wargames unterstützen konnten. Ressourcenmanagement, verdeckte Informationen und die strategische Planung einer mehrjährigen Kampagne bieten weiterhin beträchtliche Tiefe. Für Sammler und Liebhaber klassischer Computer-Wargames ist Sieg in Afrika deshalb ein besonders interessantes Stück Genre-Geschichte.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/134531/sieg-in-afrika/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        "John Kula"
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 220,
+        height: 288,
+        depth: 22
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Silent Hunter ist eine realistisch angelegte U-Boot-Simulation über den amerikanischen Unterseebootkrieg im Pazifik während des Zweiten Weltkriegs. Als Kommandant eines U-Bootes der US Navy führt der Spieler Patrouillen gegen die japanische Schifffahrt durch, plant Torpedoangriffe, weicht Zerstörern und Wasserbomben aus und versucht, möglichst viel feindlichen Schiffsraum zu versenken. Historische Szenarien, einzelne Gefechte und eine umfangreiche Karriere bilden den Kern der Simulation.",
+                "history": "Silent Hunter erschien 1996 für MS-DOS und wurde von Aeon Electronic Entertainment gemeinsam mit Strategic Simulations entwickelt. SSI übernahm zugleich die Veröffentlichung. Lead Programmer war William T. Becker, der zusammen mit Kim Biscoe auch für das grundlegende Spieldesign verantwortlich zeichnete. Biscoe übernahm darüber hinaus die grafische Gestaltung. Carl C. Norman fungierte als Producer, Rick Martinez als Associate Producer und William P. Gruner als technischer Berater. Inhaltlich konzentriert sich Silent Hunter auf den amerikanischen U-Boot-Krieg gegen Japan im Pazifik während des Zweiten Weltkriegs. Der Spieler übernimmt das Kommando über verschiedene historische U-Boot-Typen der US Navy und kann einzelne historische Missionen, hypothetische Gefechte oder eine komplette Karriere absolvieren. Dabei stehen neun große Patrouillengebiete zur Verfügung, die von den Salomonen bis zum Japanischen Meer reichen. Häfen und Küstenregionen können ebenfalls Ziel von Aufklärungs- oder Angriffsmissionen werden. Im Zentrum des Spiels steht die möglichst glaubwürdige Bedienung eines U-Bootes. Vom Kontrollraum aus wechselt der Spieler zwischen verschiedenen Stationen, beobachtet die Umgebung durch das Periskop, legt Kurs und Geschwindigkeit fest, verfolgt Ziele mit Sonar und berechnet Torpedoangriffe. Gleichzeitig muss ständig die Gefahr durch japanische Zerstörer berücksichtigt werden. Wird das eigene Boot entdeckt, beginnt häufig ein Katz-und-Maus-Spiel aus Abtauchen, Kurswechseln und dem Versuch, Wasserbombenangriffen zu entkommen. Besonders ambitioniert war die Karriere. Einsätze werden nicht einfach als starre Folge von Missionen präsentiert. Stattdessen absolviert der Spieler Patrouillen, sammelt Versenkungserfolge und kann Auszeichnungen erhalten. Die eigenen Resultate lassen sich sogar mit den historischen Erfolgen amerikanischer U-Boot-Kommandanten vergleichen. Silent Hunter wurde zu einem wichtigen Vertreter der U-Boot-Simulationen der 1990er Jahre und begründete eine Serie, die später unter Ubisoft fortgesetzt wurde. Bereits 1996 und 1997 erschienen zusätzliche Patrol Disks mit neuen Einsatzgebieten und Szenarien, bevor 1997 die Commander's Edition das Hauptspiel und Erweiterungsinhalte zusammenfasste.",
+                "review": "Silent Hunter ist eine Simulation aus einer Zeit, in der das Wort Simulation noch durchaus als Warnhinweis verstanden werden konnte. Wer einfach nur auf Start drücken und anschließend japanische Schiffe mit Torpedos dekorieren möchte, wird zunächst feststellen, dass ein U-Boot offenbar mehr Bedienelemente besitzt als unbedingt notwendig. Genau darin liegt aber die große Stärke des Spiels. Nach einer gewissen Eingewöhnung entwickelt sich ein erstaunlich intensives Gefühl dafür, tatsächlich ein U-Boot zu kommandieren. Man sucht nach Zielen, beobachtet Rauchfahnen am Horizont, schleicht sich in eine günstige Position und versucht anschließend, einen möglichst sauberen Torpedoangriff vorzubereiten. Besonders spannend wird es natürlich dann, wenn der Gegner zurückschlägt. Sobald Zerstörer auftauchen und die ersten Wasserbomben detonieren, verwandelt sich die gemütliche Jagd ziemlich schnell in die Frage, wie tief man eigentlich tauchen kann, bevor aus einer Simulation ein virtueller Sarg wird. Für 1996 war die Atmosphäre hervorragend. Tageszeiten, Wetter, Sichtbedingungen, detaillierte Schiffe und vor allem die Geräuschkulisse tragen enorm dazu bei. Sonarkontakte, Schraubengeräusche und Explosionen liefern nicht nur Atmosphäre, sondern wichtige Informationen. Gleichzeitig ist Silent Hunter kein perfektes Simulationsmonster. Die gegnerische KI kann sich gelegentlich merkwürdig verhalten und manche Abläufe wirken aus heutiger Sicht umständlich. Dafür besitzt die Karriere einen enormen Reiz. Eine erfolgreiche Patrouille fühlt sich nicht wie eine beliebige abgeschlossene Mission an, sondern wie ein kleiner Teil eines längeren Kommandos. Genau dadurch entsteht dieser gefährliche Effekt: Man möchte eigentlich aufhören, aber eine Patrouille geht noch. Vielleicht liegt irgendwo zwischen den Philippinen und Japan schließlich noch ein Frachter herum, der dringend einen Termin mit einem Torpedo benötigt. Wer historische Marinesimulationen mag, bekommt mit Silent Hunter deshalb auch heute noch einen faszinierenden Vertreter des Genres.",
+                "trivia": [
+                    "Silent Hunter wurde hauptsächlich von Aeon Electronic Entertainment entwickelt. William T. Becker war Lead Programmer und entwickelte das Spieldesign gemeinsam mit Kim Biscoe, die außerdem als Artist geführt wird.",
+                    "Die Kampagne konzentriert sich auf amerikanische U-Boote im Pazifikkrieg und bietet neun Patrouillengebiete von den Salomonen bis zum Japanischen Meer.",
+                    "Für Silent Hunter erschienen zwei Patrol Disks mit zusätzlichen Einsatzgebieten und Szenarien. 1997 wurden Spiel und Erweiterungsinhalte außerdem als Silent Hunter: Commander's Edition veröffentlicht."
+                ],
+                "worthPlaying": "Silent Hunter ist heute noch spielenswert, weil es trotz seines Alters eine ausgesprochen dichte U-Boot-Atmosphäre erzeugt. Besonders die Mischung aus Navigation, Zielsuche, Torpedoangriffen und dem nervenaufreibenden Ausweichen vor gegnerischen Zerstörern funktioniert weiterhin hervorragend. Bedienung und Grafik sind deutlich gealtert, doch die Karriere und die taktische Tiefe besitzen nach wie vor ihren Reiz. Für Freunde historischer U-Boot-Simulationen ist das Spiel außerdem der interessante Ausgangspunkt einer später sehr erfolgreichen Serie.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Silent Hunter is a detailed submarine simulation covering the American undersea campaign in the Pacific during World War II. As commander of a United States Navy submarine, the player conducts patrols against Japanese shipping, plans torpedo attacks, evades destroyers and depth charges, and attempts to sink as much enemy tonnage as possible. Historical scenarios, individual encounters and an extensive career mode form the core of the simulation.",
+                "history": "Silent Hunter was released for MS-DOS in 1996 and developed by Aeon Electronic Entertainment together with Strategic Simulations, which also published the game. William T. Becker served as lead programmer and co-designed the game with artist Kim Biscoe. Carl C. Norman was producer, Rick Martinez associate producer and William P. Gruner technical adviser. The game focuses on the United States submarine campaign against Japan in the Pacific during World War II. Players command several historical classes of American submarines and can undertake historical scenarios, hypothetical encounters or a complete career. Nine major patrol areas range from the Solomon Islands to the Sea of Japan, with coastal cities, harbours and naval bases also appearing as potential objectives. From the submarine's control room, players move between different stations, use the periscope and sonar, control course and speed and prepare torpedo attacks. Enemy destroyers create a constant threat, often forcing the submarine to dive and evade depth-charge attacks. The career mode gives individual patrols a larger context, recording tonnage sunk and awarding medals or commendations for successful missions. Players can even compare their results with historical American submarine commanders. Silent Hunter became an important submarine simulation of the 1990s and established a series that would later continue under Ubisoft. Two Patrol Disk expansions added further areas and scenarios before the Commander's Edition combined the game with additional content in 1997.",
+                "review": "Silent Hunter comes from an era when the word simulation could almost serve as a warning label. Players hoping to immediately launch torpedoes at Japanese shipping will first discover that commanding a submarine involves considerably more equipment and procedure than simply pressing fire. That complexity is also the game's greatest strength. Once the controls become familiar, Silent Hunter creates a remarkably convincing feeling of submarine command. Players search for targets, watch smoke on the horizon, manoeuvre into position and prepare torpedo attacks while attempting to remain undetected. The tension increases dramatically when destroyers arrive and depth charges begin exploding around the submarine. Atmosphere was exceptional for 1996. Changing weather and visibility, detailed ships and particularly the sound design make the environment convincing. Sonar contacts, propeller noises and explosions provide useful information as well as atmosphere. The simulation is not flawless: enemy AI can occasionally behave strangely and some procedures now feel cumbersome. The career mode, however, remains compelling because successful patrols feel like parts of a continuing command rather than isolated missions. Silent Hunter therefore still offers a fascinating experience for players interested in historical naval simulations, even though its interface and presentation clearly reflect its age.",
+                "trivia": [
+                    "Silent Hunter was primarily developed by Aeon Electronic Entertainment. William T. Becker served as lead programmer and co-designed the game with Kim Biscoe, who was also the game's artist.",
+                    "The campaign focuses on American submarines in the Pacific War and includes nine patrol zones stretching from the Solomon Islands to the Sea of Japan.",
+                    "Two Patrol Disk expansions added new patrol areas and scenarios. The game and expansion content were later collected in Silent Hunter: Commander's Edition in 1997."
+                ],
+                "worthPlaying": "Silent Hunter remains worthwhile because its combination of navigation, target hunting, torpedo attacks and tense encounters with enemy destroyers still creates an effective submarine atmosphere. Its graphics and interface have clearly aged, but the career system and tactical depth remain compelling. It is also historically interesting as the starting point of a submarine-simulation series that would continue for many years."
+            }
+        },
+        id: 214,
+        folder: "silent_hunter",
+        scanBy: "Magisthan",
+        page: "silent_hunter.html",
+        featured: false,
+        title: "Silent Hunter",
+        system: "PC",
+        year: 1996,
+        publisher: "Strategic Simulations, Inc.",
+        developer: "Aeon Electronic Entertainment, Inc. / Strategic Simulations, Inc.",
+        genre: ["Simulation", "U-Boot-Simulation", "Seekrieg", "Zweiter Weltkrieg"],
+        description: "Silent Hunter ist eine realistisch angelegte U-Boot-Simulation über den amerikanischen Unterseebootkrieg im Pazifik während des Zweiten Weltkriegs. Als Kommandant eines U-Bootes der US Navy führt der Spieler Patrouillen gegen die japanische Schifffahrt durch, plant Torpedoangriffe, weicht Zerstörern und Wasserbomben aus und versucht, möglichst viel feindlichen Schiffsraum zu versenken. Historische Szenarien, einzelne Gefechte und eine umfangreiche Karriere bilden den Kern der Simulation.",
+        history: `Silent Hunter erschien 1996 für MS-DOS und wurde von Aeon Electronic Entertainment gemeinsam mit Strategic Simulations entwickelt. SSI übernahm zugleich die Veröffentlichung. Lead Programmer war William T. Becker, der zusammen mit Kim Biscoe auch für das grundlegende Spieldesign verantwortlich zeichnete. Biscoe übernahm darüber hinaus die grafische Gestaltung. Carl C. Norman fungierte als Producer, Rick Martinez als Associate Producer und William P. Gruner als technischer Berater. Inhaltlich konzentriert sich Silent Hunter auf den amerikanischen U-Boot-Krieg gegen Japan im Pazifik während des Zweiten Weltkriegs. Der Spieler übernimmt das Kommando über verschiedene historische U-Boot-Typen der US Navy und kann einzelne historische Missionen, hypothetische Gefechte oder eine komplette Karriere absolvieren. Dabei stehen neun große Patrouillengebiete zur Verfügung, die von den Salomonen bis zum Japanischen Meer reichen. Häfen und Küstenregionen können ebenfalls Ziel von Aufklärungs- oder Angriffsmissionen werden. Im Zentrum des Spiels steht die möglichst glaubwürdige Bedienung eines U-Bootes. Vom Kontrollraum aus wechselt der Spieler zwischen verschiedenen Stationen, beobachtet die Umgebung durch das Periskop, legt Kurs und Geschwindigkeit fest, verfolgt Ziele mit Sonar und berechnet Torpedoangriffe. Gleichzeitig muss ständig die Gefahr durch japanische Zerstörer berücksichtigt werden. Wird das eigene Boot entdeckt, beginnt häufig ein Katz-und-Maus-Spiel aus Abtauchen, Kurswechseln und dem Versuch, Wasserbombenangriffen zu entkommen. Besonders ambitioniert war die Karriere. Einsätze werden nicht einfach als starre Folge von Missionen präsentiert. Stattdessen absolviert der Spieler Patrouillen, sammelt Versenkungserfolge und kann Auszeichnungen erhalten. Die eigenen Resultate lassen sich sogar mit den historischen Erfolgen amerikanischer U-Boot-Kommandanten vergleichen. Silent Hunter wurde zu einem wichtigen Vertreter der U-Boot-Simulationen der 1990er Jahre und begründete eine Serie, die später unter Ubisoft fortgesetzt wurde. Bereits 1996 und 1997 erschienen zusätzliche Patrol Disks mit neuen Einsatzgebieten und Szenarien, bevor 1997 die Commander's Edition das Hauptspiel und Erweiterungsinhalte zusammenfasste.`,
+        review: `Silent Hunter ist eine Simulation aus einer Zeit, in der das Wort Simulation noch durchaus als Warnhinweis verstanden werden konnte. Wer einfach nur auf Start drücken und anschließend japanische Schiffe mit Torpedos dekorieren möchte, wird zunächst feststellen, dass ein U-Boot offenbar mehr Bedienelemente besitzt als unbedingt notwendig. Genau darin liegt aber die große Stärke des Spiels. Nach einer gewissen Eingewöhnung entwickelt sich ein erstaunlich intensives Gefühl dafür, tatsächlich ein U-Boot zu kommandieren. Man sucht nach Zielen, beobachtet Rauchfahnen am Horizont, schleicht sich in eine günstige Position und versucht anschließend, einen möglichst sauberen Torpedoangriff vorzubereiten. Besonders spannend wird es natürlich dann, wenn der Gegner zurückschlägt. Sobald Zerstörer auftauchen und die ersten Wasserbomben detonieren, verwandelt sich die gemütliche Jagd ziemlich schnell in die Frage, wie tief man eigentlich tauchen kann, bevor aus einer Simulation ein virtueller Sarg wird. Für 1996 war die Atmosphäre hervorragend. Tageszeiten, Wetter, Sichtbedingungen, detaillierte Schiffe und vor allem die Geräuschkulisse tragen enorm dazu bei. Sonarkontakte, Schraubengeräusche und Explosionen liefern nicht nur Atmosphäre, sondern wichtige Informationen. Gleichzeitig ist Silent Hunter kein perfektes Simulationsmonster. Die gegnerische KI kann sich gelegentlich merkwürdig verhalten und manche Abläufe wirken aus heutiger Sicht umständlich. Dafür besitzt die Karriere einen enormen Reiz. Eine erfolgreiche Patrouille fühlt sich nicht wie eine beliebige abgeschlossene Mission an, sondern wie ein kleiner Teil eines längeren Kommandos. Genau dadurch entsteht dieser gefährliche Effekt: Man möchte eigentlich aufhören, aber eine Patrouille geht noch. Vielleicht liegt irgendwo zwischen den Philippinen und Japan schließlich noch ein Frachter herum, der dringend einen Termin mit einem Torpedo benötigt. Wer historische Marinesimulationen mag, bekommt mit Silent Hunter deshalb auch heute noch einen faszinierenden Vertreter des Genres.`,
+        trivia: [
+                  "Silent Hunter wurde hauptsächlich von Aeon Electronic Entertainment entwickelt. William T. Becker war Lead Programmer und entwickelte das Spieldesign gemeinsam mit Kim Biscoe, die außerdem als Artist geführt wird.",
+                  "Die Kampagne konzentriert sich auf amerikanische U-Boote im Pazifikkrieg und bietet neun Patrouillengebiete von den Salomonen bis zum Japanischen Meer.",
+                  "Für Silent Hunter erschienen zwei Patrol Disks mit zusätzlichen Einsatzgebieten und Szenarien. 1997 wurden Spiel und Erweiterungsinhalte außerdem als Silent Hunter: Commander's Edition veröffentlicht."
+        ],
+        worthPlaying: `Silent Hunter ist heute noch spielenswert, weil es trotz seines Alters eine ausgesprochen dichte U-Boot-Atmosphäre erzeugt. Besonders die Mischung aus Navigation, Zielsuche, Torpedoangriffen und dem nervenaufreibenden Ausweichen vor gegnerischen Zerstörern funktioniert weiterhin hervorragend. Bedienung und Grafik sind deutlich gealtert, doch die Karriere und die taktische Tiefe besitzen nach wie vor ihren Reiz. Für Freunde historischer U-Boot-Simulationen ist das Spiel außerdem der interessante Ausgangspunkt einer später sehr erfolgreichen Serie.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/5356/silent-hunter/",
+        wikipedia: "https://en.wikipedia.org/wiki/Silent_Hunter_(video_game)",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 182,
+        height: 232,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Silent Hunter: Patrol Disk ist die erste Erweiterung für SSIs U-Boot-Simulation Silent Hunter. Sie ergänzt die Karriere um die neuen Patrouillengebiete Malaysia und Sulu-See und fügt 15 neue Szenarien sowie zusätzliche Einsatzarten hinzu. Fotoaufklärung, Rettungsmissionen für abgeschossene Piloten und weitere Verbesserungen erweitern den ohnehin umfangreichen Pazifikkrieg des Hauptspiels.",
+                "history": "Silent Hunter: Patrol Disk erschien 1996 für DOS und war die erste offizielle Erweiterung zu Silent Hunter. Veröffentlicht wurde sie von Strategic Simulations, Inc. Die Entwicklung lag erneut bei dem Team hinter dem Hauptspiel. William T. Becker wird als Programmer und Developer geführt, Kim Biscoe als Artist und Designer. Carl C. Norman war Producer, Jeff Pana Associate Producer und James Young war für das Design historischer Szenarien verantwortlich. Die Patrol Disk erweitert nicht nur den Umfang des Spiels, sondern aktualisiert Silent Hunter gleichzeitig auf Version 1.1. Im Mittelpunkt stehen zwei zusätzliche Patrouillengebiete für die Karriere: Malaysia mit dem Gebiet um Singapur und die Straße von Malakka sowie die Sulu-See zwischen den Philippinen und Borneo. Hinzu kommen 15 neue historische Szenarien. Besonders interessant sind die neuen Einsatzarten. Bei Photo-Recon-Missionen muss sich das U-Boot unbemerkt in einen gegnerischen Hafen schleichen und militärische Einrichtungen fotografieren. Bei sogenannten Lifeguard-Missionen werden abgeschossene Piloten aus dem Meer gerettet. Darüber hinaus erweitert die Patrol Disk das Hauptspiel um zusätzliche Funktionen und Detailverbesserungen. Dazu gehören rote Nachtbeleuchtung, Gefechte zwischen U-Booten, ein Radio Logbook, verbesserte Angriffe gegnerischer Flugzeuge, Flugabwehrfunktionen des eigenen U-Bootes, Täuschungsmaßnahmen durch zurückgelassene Trümmer, Geräusche des Bootsrumpfes bei großen Tauchtiefen und ein verbessertes Schiffsidentifikationsbuch. Weitere Spezialmissionen beschäftigen sich mit dem Absetzen und Versorgen von Kommandotruppen. Damit ist die Patrol Disk mehr als eine reine Sammlung zusätzlicher Missionen. Sie erweitert auch die Möglichkeiten der eigentlichen Simulation und bildet den ersten Schritt einer Reihe von Erweiterungen. Eine zweite Patrol Disk ergänzte später weitere Patrouillengebiete und einen Szenario-Editor. Eine dritte Erweiterung wurde nur auf eingeschränktem Vertriebsweg angeboten. 1997 fasste SSI das Hauptspiel und die zusätzlichen Patrol-Disks schließlich in der Silent Hunter: Commander's Edition zusammen.",
+                "review": "Die erste Patrol Disk ist genau die Art von Erweiterung, die man sich für eine Simulation wünscht. Sie verkauft nicht einfach 15 neue Missionen und verabschiedet sich anschließend wieder, sondern erweitert gleichzeitig die Möglichkeiten des Hauptspiels. Besonders die neuen Einsatztypen sorgen für Abwechslung. Bei einer Fotoaufklärung muss man plötzlich nicht möglichst viel feindlichen Schiffsraum versenken, sondern möglichst unauffällig in einen Hafen gelangen, seine Bilder machen und anschließend wieder verschwinden. Das ist für einen U-Boot-Kommandanten fast schon eine unangenehme Erkenntnis: Manchmal besteht die beste Mission tatsächlich darin, keinen einzigen Torpedo abzufeuern. Auch die Rettung abgeschossener Piloten passt hervorragend zum Szenario und verändert die übliche Aufgabenstellung. Dazu kommen zwei neue Patrouillengebiete und 15 Szenarien. Besonders wertvoll sind aber die kleineren Verbesserungen. Rote Nachtbeleuchtung, zusätzliche Flugzeugangriffe, U-Boot-gegen-U-Boot-Gefechte und Geräusche des Rumpfes bei großer Tiefe mögen einzeln unspektakulär wirken, tragen aber erheblich zur Atmosphäre bei. Gerade das Knarren eines tief getauchten Bootes ist eine jener Kleinigkeiten, die dem Spieler sehr überzeugend mitteilen, dass vielleicht noch tiefer zu tauchen nicht unbedingt der brillanteste Plan des Tages ist. Natürlich bleibt es eine klassische Erweiterung: Ohne Silent Hunter funktioniert nichts, und grafisch entsteht daraus kein völlig neues Spiel. Wer mit dem langsamen, methodischen Ablauf des Hauptspiels nichts anfangen konnte, wird auch durch die Patrol Disk nicht plötzlich zum begeisterten U-Boot-Kommandanten. Für Fans des Originals ist sie dagegen eine ausgesprochen sinnvolle Ergänzung, weil sie sowohl mehr Inhalt als auch echte Verbesserungen der Simulation bietet.",
+                "trivia": [
+                    "Die erste Patrol Disk erweitert die Karriere um zwei neue Gebiete: Malaysia mit Singapur und der Straße von Malakka sowie die Sulu-See zwischen den Philippinen und Borneo.",
+                    "Neben 15 neuen Szenarien führt die Erweiterung unter anderem Fotoaufklärungs- und Lifeguard-Missionen ein, bei denen abgeschossene Piloten gerettet werden müssen.",
+                    "Die Patrol Disk aktualisiert Silent Hunter auf Version 1.1 und ergänzt unter anderem rote Nachtbeleuchtung, U-Boot-gegen-U-Boot-Gefechte, verbesserte Flugzeugangriffe und Rumpfgeräusche bei großen Tauchtiefen."
+                ],
+                "worthPlaying": "Für Spieler des ursprünglichen Silent Hunter ist die Patrol Disk auch heute eine interessante Erweiterung, weil sie nicht nur zusätzliche Szenarien liefert, sondern die Simulation selbst verbessert. Neue Einsatzarten, zwei zusätzliche Patrouillengebiete und zahlreiche kleinere Detailverbesserungen machen die Pazifikkampagne abwechslungsreicher. Wer Silent Hunter möglichst vollständig erleben möchte, sollte die erste Patrol Disk deshalb als festen Bestandteil des ursprünglichen Spiels betrachten.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Silent Hunter: Patrol Disk is the first expansion for SSI's World War II submarine simulation Silent Hunter. It adds Malaysia and the Sulu Sea as new career patrol zones, fifteen additional scenarios and several new mission types. Photo reconnaissance, lifeguard missions for downed pilots and numerous simulation improvements significantly expand the Pacific campaign of the original game.",
+                "history": "Silent Hunter: Patrol Disk was released for DOS in 1996 as the first official expansion for Silent Hunter and was published by Strategic Simulations, Inc. William T. Becker is credited as programmer and developer, Kim Biscoe as artist and designer, Carl C. Norman as producer, Jeff Pana as associate producer and James Young with historical scenario design. The expansion adds two new career patrol zones: Malaysia, including Singapore and the Strait of Malacca, and the Sulu Sea between the Philippines and Borneo. Fifteen new scenarios are included, together with new mission types. Photo reconnaissance requires players to enter hostile harbours and photograph installations, while Lifeguard missions involve rescuing downed airmen. The Patrol Disk also upgrades Silent Hunter to version 1.1 and introduces a variety of additional features, including red night lighting, submarine-versus-submarine combat, a radio logbook, improved enemy aircraft attacks, submarine anti-aircraft routines, deception options, hull-creaking effects at great depth and an improved ship identification book. Special operations also include deploying and supplying commandos. The expansion therefore provides more than additional scenarios, making meaningful improvements to the original simulation. Further Patrol Disks later added more patrol areas and features before SSI collected the expanded game in Silent Hunter: Commander's Edition.",
+                "review": "The first Patrol Disk is the kind of expansion that works particularly well for a detailed simulation. Rather than simply providing another collection of missions, it also expands the underlying game. The new mission types are especially welcome. Photo reconnaissance changes the usual objective completely, requiring a submarine commander to enter a hostile harbour, gather intelligence and leave without necessarily firing a torpedo. Lifeguard missions, in which downed pilots must be rescued, provide another change of pace. Two additional patrol zones and fifteen scenarios considerably increase the available content. Smaller improvements are equally valuable. Red night lighting, additional aircraft behaviour, submarine-versus-submarine encounters and hull sounds at extreme depths all contribute to the atmosphere. None of this transforms Silent Hunter into a different game, and players who disliked the slow and methodical nature of the original simulation will not suddenly be converted. For enthusiasts, however, the Patrol Disk is an excellent expansion because it combines substantial new content with genuine improvements to the simulation itself.",
+                "trivia": [
+                    "The first Patrol Disk adds two career areas: Malaysia, including Singapore and the Strait of Malacca, and the Sulu Sea between the Philippines and Borneo.",
+                    "Its fifteen new scenarios include Photo Recon missions and Lifeguard operations in which players rescue downed airmen.",
+                    "The expansion upgrades Silent Hunter to version 1.1 and adds features including red night lighting, submarine-versus-submarine combat, improved aircraft attacks and hull-creaking sounds at great depth."
+                ],
+                "worthPlaying": "For players of the original Silent Hunter, the Patrol Disk remains a worthwhile expansion because it improves the simulation as well as adding content. New mission types, two additional patrol zones and numerous detail enhancements provide greater variety. Anyone interested in experiencing the original Silent Hunter in a more complete form should consider the first Patrol Disk an important part of the package."
+            }
+        },
+        id: 215,
+        folder: "silent_hunter_patrol_disk",
+        scanBy: "Magisthan",
+        page: "silent_hunter_patrol_disk.html",
+        featured: false,
+        title: "Silent Hunter: Patrol Disk",
+        system: "PC",
+        year: 1996,
+        publisher: "Strategic Simulations, Inc.",
+        developer: "William T. Becker / Strategic Simulations, Inc.",
+        genre: ["Simulation", "U-Boot-Simulation", "Erweiterung", "Zweiter Weltkrieg"],
+        description: "Silent Hunter: Patrol Disk ist die erste Erweiterung für SSIs U-Boot-Simulation Silent Hunter. Sie ergänzt die Karriere um die neuen Patrouillengebiete Malaysia und Sulu-See und fügt 15 neue Szenarien sowie zusätzliche Einsatzarten hinzu. Fotoaufklärung, Rettungsmissionen für abgeschossene Piloten und weitere Verbesserungen erweitern den ohnehin umfangreichen Pazifikkrieg des Hauptspiels.",
+        history: `Silent Hunter: Patrol Disk erschien 1996 für DOS und war die erste offizielle Erweiterung zu Silent Hunter. Veröffentlicht wurde sie von Strategic Simulations, Inc. Die Entwicklung lag erneut bei dem Team hinter dem Hauptspiel. William T. Becker wird als Programmer und Developer geführt, Kim Biscoe als Artist und Designer. Carl C. Norman war Producer, Jeff Pana Associate Producer und James Young war für das Design historischer Szenarien verantwortlich. Die Patrol Disk erweitert nicht nur den Umfang des Spiels, sondern aktualisiert Silent Hunter gleichzeitig auf Version 1.1. Im Mittelpunkt stehen zwei zusätzliche Patrouillengebiete für die Karriere: Malaysia mit dem Gebiet um Singapur und die Straße von Malakka sowie die Sulu-See zwischen den Philippinen und Borneo. Hinzu kommen 15 neue historische Szenarien. Besonders interessant sind die neuen Einsatzarten. Bei Photo-Recon-Missionen muss sich das U-Boot unbemerkt in einen gegnerischen Hafen schleichen und militärische Einrichtungen fotografieren. Bei sogenannten Lifeguard-Missionen werden abgeschossene Piloten aus dem Meer gerettet. Darüber hinaus erweitert die Patrol Disk das Hauptspiel um zusätzliche Funktionen und Detailverbesserungen. Dazu gehören rote Nachtbeleuchtung, Gefechte zwischen U-Booten, ein Radio Logbook, verbesserte Angriffe gegnerischer Flugzeuge, Flugabwehrfunktionen des eigenen U-Bootes, Täuschungsmaßnahmen durch zurückgelassene Trümmer, Geräusche des Bootsrumpfes bei großen Tauchtiefen und ein verbessertes Schiffsidentifikationsbuch. Weitere Spezialmissionen beschäftigen sich mit dem Absetzen und Versorgen von Kommandotruppen. Damit ist die Patrol Disk mehr als eine reine Sammlung zusätzlicher Missionen. Sie erweitert auch die Möglichkeiten der eigentlichen Simulation und bildet den ersten Schritt einer Reihe von Erweiterungen. Eine zweite Patrol Disk ergänzte später weitere Patrouillengebiete und einen Szenario-Editor. Eine dritte Erweiterung wurde nur auf eingeschränktem Vertriebsweg angeboten. 1997 fasste SSI das Hauptspiel und die zusätzlichen Patrol-Disks schließlich in der Silent Hunter: Commander's Edition zusammen.`,
+        review: `Die erste Patrol Disk ist genau die Art von Erweiterung, die man sich für eine Simulation wünscht. Sie verkauft nicht einfach 15 neue Missionen und verabschiedet sich anschließend wieder, sondern erweitert gleichzeitig die Möglichkeiten des Hauptspiels. Besonders die neuen Einsatztypen sorgen für Abwechslung. Bei einer Fotoaufklärung muss man plötzlich nicht möglichst viel feindlichen Schiffsraum versenken, sondern möglichst unauffällig in einen Hafen gelangen, seine Bilder machen und anschließend wieder verschwinden. Das ist für einen U-Boot-Kommandanten fast schon eine unangenehme Erkenntnis: Manchmal besteht die beste Mission tatsächlich darin, keinen einzigen Torpedo abzufeuern. Auch die Rettung abgeschossener Piloten passt hervorragend zum Szenario und verändert die übliche Aufgabenstellung. Dazu kommen zwei neue Patrouillengebiete und 15 Szenarien. Besonders wertvoll sind aber die kleineren Verbesserungen. Rote Nachtbeleuchtung, zusätzliche Flugzeugangriffe, U-Boot-gegen-U-Boot-Gefechte und Geräusche des Rumpfes bei großer Tiefe mögen einzeln unspektakulär wirken, tragen aber erheblich zur Atmosphäre bei. Gerade das Knarren eines tief getauchten Bootes ist eine jener Kleinigkeiten, die dem Spieler sehr überzeugend mitteilen, dass vielleicht noch tiefer zu tauchen nicht unbedingt der brillanteste Plan des Tages ist. Natürlich bleibt es eine klassische Erweiterung: Ohne Silent Hunter funktioniert nichts, und grafisch entsteht daraus kein völlig neues Spiel. Wer mit dem langsamen, methodischen Ablauf des Hauptspiels nichts anfangen konnte, wird auch durch die Patrol Disk nicht plötzlich zum begeisterten U-Boot-Kommandanten. Für Fans des Originals ist sie dagegen eine ausgesprochen sinnvolle Ergänzung, weil sie sowohl mehr Inhalt als auch echte Verbesserungen der Simulation bietet.`,
+        trivia: [
+                  "Die erste Patrol Disk erweitert die Karriere um zwei neue Gebiete: Malaysia mit Singapur und der Straße von Malakka sowie die Sulu-See zwischen den Philippinen und Borneo.",
+                  "Neben 15 neuen Szenarien führt die Erweiterung unter anderem Fotoaufklärungs- und Lifeguard-Missionen ein, bei denen abgeschossene Piloten gerettet werden müssen.",
+                  "Die Patrol Disk aktualisiert Silent Hunter auf Version 1.1 und ergänzt unter anderem rote Nachtbeleuchtung, U-Boot-gegen-U-Boot-Gefechte, verbesserte Flugzeugangriffe und Rumpfgeräusche bei großen Tauchtiefen."
+        ],
+        worthPlaying: `Für Spieler des ursprünglichen Silent Hunter ist die Patrol Disk auch heute eine interessante Erweiterung, weil sie nicht nur zusätzliche Szenarien liefert, sondern die Simulation selbst verbessert. Neue Einsatzarten, zwei zusätzliche Patrouillengebiete und zahlreiche kleinere Detailverbesserungen machen die Pazifikkampagne abwechslungsreicher. Wer Silent Hunter möglichst vollständig erleben möchte, sollte die erste Patrol Disk deshalb als festen Bestandteil des ursprünglichen Spiels betrachten.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/33130/silent-hunter-patrol-disk/",
+        wikipedia: "https://de.wikipedia.org/wiki/Silent_Hunter",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 182,
+        height: 232,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Silent Service II ist eine U-Boot-Simulation von MicroProse, die den amerikanischen Unterseebootkrieg gegen Japan im Pazifik während des Zweiten Weltkriegs nachbildet. Der Spieler übernimmt das Kommando über verschiedene U-Boot-Typen der US Navy, plant Patrouillen, sucht gegnerische Schiffe, berechnet Torpedoangriffe und versucht anschließend, den japanischen Zerstörern zu entkommen. Neben einzelnen historischen Szenarien bietet das Spiel eine umfangreiche Karriere durch den gesamten Pazifikkrieg.",
+                "history": "Silent Service II wurde von MicroProses MPS Labs als Nachfolger des erfolgreichen Silent Service entwickelt und erschien zunächst 1990 für DOS. Die Amiga-Version folgte 1991. Das ursprüngliche Spieldesign stammt von Arnold Hendrick und Roy B. Gibson. Für die Amiga-Umsetzung war David Shea als Programmierer verantwortlich, unterstützt von Andrew Parton und Laurie Sinnett. Steven Cain übernahm die Grafik der Amiga-Version, während Ten Pin Alley für Musik und Soundeffekte verantwortlich war. Inhaltlich bleibt Silent Service II dem Schauplatz seines Vorgängers treu und konzentriert sich auf den amerikanischen U-Boot-Krieg gegen Japan im Pazifik. Der Spieler kann aus neun unterschiedlichen amerikanischen U-Boot-Klassen wählen, deren technische Eigenschaften sich auf die Einsätze auswirken. Neben Trainingsmissionen stehen historische Gefechte und zufällig erzeugte Kriegspatrouillen zur Verfügung. Das Herzstück ist jedoch die umfangreiche Kriegskarriere. Der Spieler beginnt zu einem wählbaren Zeitpunkt des Pazifikkrieges und absolviert anschließend Patrouillen, kehrt zur Versorgung in Häfen zurück und versucht, möglichst viel gegnerischen Schiffsraum zu versenken. Beförderungen, Orden und gespeicherte Erfolgslisten sorgen dafür, dass die einzelnen Einsätze Teil einer längeren Laufbahn werden. Im Gefecht wechselt der Kommandant zwischen strategischer Karte, Brücke, Periskop, Deckgeschütz, Maschinenraum und Schadenskontrolle. Gegnerische Schiffe reichen von kleinen Patrouillenbooten über Frachter und Tanker bis zu Kreuzern, Flugzeugträgern und Schlachtschiffen. Gegenmaßnahmen durch Zerstörer zwingen den Spieler dazu, abzutauchen, Geschwindigkeit und Kurs zu verändern und möglichst geräuschlos zu entkommen. Gegenüber dem ersten Silent Service wurden Grafik, Sound, Benutzeroberfläche und Gefechtsmodell deutlich erweitert. Die Amiga-Version erschien auf zwei Disketten und konnte auf Festplatte installiert werden. Damit entwickelte MicroProse die vergleichsweise kompakte U-Boot-Simulation des ersten Teils zu einer wesentlich umfangreicheren Darstellung des amerikanischen U-Boot-Krieges weiter.",
+                "review": "Silent Service II ist eines dieser Spiele, bei denen ein grauer Punkt auf einer Karte plötzlich spannender sein kann als ein kompletter Bildschirm voller Explosionen. Denn irgendwo dort draußen fährt vielleicht ein japanischer Konvoi herum, und sobald man ihn gefunden hat, beginnt die eigentliche Arbeit. Kurs berechnen, heranschleichen, Periskop ausfahren, Ziel identifizieren und hoffen, dass die Torpedos diesmal nicht beschlossen haben, ihre eigene Interpretation des Auftrags umzusetzen. Gegenüber dem ersten Silent Service ist praktisch alles umfangreicher geworden. Es gibt mehr U-Boote, mehr Schiffstypen, eine richtige Karriere und wesentlich detailliertere Stationen. Besonders gelungen ist die Mischung aus Simulation und Spielbarkeit. Man muss sich mit Geschwindigkeit, Kurs, Torpedos und Tauchtiefe beschäftigen, benötigt aber trotzdem kein Offizierspatent der US Navy, um nach einigen Versuchen erfolgreich zu sein. Die spannendsten Momente entstehen ohnehin erst nach dem Angriff. Sobald ein Zerstörer die eigene Position gefunden hat, wird aus dem stolzen U-Boot-Kommandanten erstaunlich schnell jemand, dessen strategischer Gesamtplan hauptsächlich aus den Worten tiefer, leiser und weg hier besteht. Die Amiga-Version kann dabei technisch überzeugen. Grafik und Sound sind gegenüber dem Vorgänger erheblich verbessert, und besonders Sonargeräusche, Alarmmeldungen und das Kommando Dive, dive tragen viel zur Atmosphäre bei. Natürlich gibt es auch Schwächen. Zwischen den Gefechten können längere ruhige Phasen entstehen und wer grundsätzlich nichts mit Simulationen anfangen kann, wird vermutlich auch hier nicht bekehrt. Außerdem ist die Präsentation aus heutiger Sicht funktionaler als spektakulär. Dafür funktioniert das eigentliche Katz-und-Maus-Spiel zwischen U-Boot und Zerstörern noch immer hervorragend. Silent Service II ist deshalb weniger ein Spiel über spektakuläre Explosionen als über Geduld, Positionierung und diesen einen Moment, in dem man durch das Periskop sieht, dass der Torpedo tatsächlich genau dorthin läuft, wo man ihn haben wollte.",
+                "trivia": [
+                    "Silent Service II erschien 1990 zunächst für DOS. Die Amiga-Version folgte 1991 und wurde von David Shea programmiert; Andrew Parton und Laurie Sinnett leisteten zusätzliche Programmierunterstützung.",
+                    "Die Amiga-Version wurde auf zwei Disketten ausgeliefert und unterstützt eine Installation auf Festplatte. Steven Cain war für die Grafik verantwortlich, Ten Pin Alley für Musik und Soundeffekte.",
+                    "Die Karriere ermöglicht es, den amerikanischen U-Boot-Krieg im Pazifik über einen längeren Zeitraum mitzuerleben. Beförderungen, Orden und gespeicherte Erfolgslisten dokumentieren die Laufbahn des eigenen Kommandanten."
+                ],
+                "worthPlaying": "Silent Service II gehört weiterhin zu den interessantesten U-Boot-Simulationen auf dem Amiga. Die Kombination aus strategischer Patrouillenplanung, Zielsuche, Torpedoangriffen und nervenaufreibenden Fluchtmanövern besitzt auch heute noch ihren Reiz. Besonders die umfangreiche Karriere sorgt dafür, dass die Einsätze nicht wie voneinander unabhängige Missionen wirken. Präsentation und Bedienung sind gealtert, doch wer klassische Marinesimulationen mag, findet hier einen bemerkenswert umfangreichen und atmosphärischen Vertreter des Genres.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Silent Service II is a MicroProse submarine simulation covering the American undersea campaign against Japan during World War II. Players command several classes of United States Navy submarines, conduct patrols, locate enemy shipping, prepare torpedo attacks and attempt to evade Japanese destroyers. Historical scenarios, random patrols and an extensive wartime career provide considerably more depth than the original Silent Service.",
+                "history": "Silent Service II was developed by MicroProse's MPS Labs as the successor to Silent Service and originally appeared for DOS in 1990. The Amiga version followed in 1991. The original design was created by Arnold Hendrick and Roy B. Gibson. David Shea programmed the Amiga conversion with additional programming support from Andrew Parton and Laurie Sinnett. Steven Cain created the Amiga graphics, while Ten Pin Alley handled music and sound effects. Like its predecessor, the game focuses on American submarine operations against Japan in the Pacific. Players can command nine different American submarine classes and undertake training missions, historical scenarios, random war patrols or an extended career. During combat, the commander moves between the strategic map, bridge, periscope, deck gun, engine room and damage-control stations. Enemy vessels range from patrol boats and merchant ships to cruisers, aircraft carriers and battleships, while Japanese destroyers pose a constant threat after an attack. Compared with the original Silent Service, the sequel substantially expanded the graphics, sound, interface and combat model. The Amiga edition was distributed on two disks and supported hard-drive installation. Its combination of detailed submarine operations and a long-term career made it one of the more substantial naval simulations available for the Amiga.",
+                "review": "Silent Service II demonstrates how a small contact on a map can become more exciting than an entire screen of explosions. Finding an enemy convoy is only the beginning: the player must approach carefully, identify targets, calculate an attack and hope the torpedoes perform as expected. Almost every aspect of the original Silent Service has been expanded, with more submarine classes, more enemy ships, improved stations and a proper career system. The balance between simulation and accessibility is particularly effective. Course, speed, depth and torpedo tactics matter, but the game does not require professional naval training before a new player can succeed. The most memorable moments often occur after an attack, when Japanese destroyers begin searching for the submarine and the commander's priorities rapidly become diving deeper, remaining quiet and escaping. The Amiga version also benefits from significantly improved graphics and sound, with sonar effects, alarms and spoken commands contributing strongly to the atmosphere. Quiet periods between encounters can sometimes be lengthy, and players who dislike simulations are unlikely to be converted. Nevertheless, the fundamental cat-and-mouse encounters remain highly effective. Silent Service II is less about constant spectacle than patience, positioning and the satisfaction of watching a carefully aimed torpedo reach its target.",
+                "trivia": [
+                    "Silent Service II first appeared for DOS in 1990. David Shea programmed the 1991 Amiga conversion, with additional programming support from Andrew Parton and Laurie Sinnett.",
+                    "The Amiga version was distributed on two disks and supports hard-drive installation. Steven Cain created the graphics and Ten Pin Alley provided music and sound effects.",
+                    "The career mode follows American submarine operations across the Pacific War and records promotions, decorations and the commander's performance over multiple patrols."
+                ],
+                "worthPlaying": "Silent Service II remains one of the more interesting submarine simulations available for the Amiga. Strategic patrol planning, target hunting, torpedo attacks and tense escapes from enemy destroyers still work remarkably well. Its interface and presentation have inevitably aged, but the extensive career gives individual missions a meaningful larger context. For enthusiasts of classic naval simulations, it remains an atmospheric and substantial game."
+            }
+        },
+        id: 216,
+        folder: "silent_service_2",
+        scanBy: "Magisthan",
+        page: "silent_service_2.html",
+        featured: false,
+        title: "Silent Service II",
+        system: "Amiga",
+        year: 1991,
+        publisher: "MicroProse Software",
+        developer: "MPS Labs",
+        genre: ["Simulation", "U-Boot-Simulation", "Seekrieg", "Zweiter Weltkrieg"],
+        description: "Silent Service II ist eine U-Boot-Simulation von MicroProse, die den amerikanischen Unterseebootkrieg gegen Japan im Pazifik während des Zweiten Weltkriegs nachbildet. Der Spieler übernimmt das Kommando über verschiedene U-Boot-Typen der US Navy, plant Patrouillen, sucht gegnerische Schiffe, berechnet Torpedoangriffe und versucht anschließend, den japanischen Zerstörern zu entkommen. Neben einzelnen historischen Szenarien bietet das Spiel eine umfangreiche Karriere durch den gesamten Pazifikkrieg.",
+        history: `Silent Service II wurde von MicroProses MPS Labs als Nachfolger des erfolgreichen Silent Service entwickelt und erschien zunächst 1990 für DOS. Die Amiga-Version folgte 1991. Das ursprüngliche Spieldesign stammt von Arnold Hendrick und Roy B. Gibson. Für die Amiga-Umsetzung war David Shea als Programmierer verantwortlich, unterstützt von Andrew Parton und Laurie Sinnett. Steven Cain übernahm die Grafik der Amiga-Version, während Ten Pin Alley für Musik und Soundeffekte verantwortlich war. Inhaltlich bleibt Silent Service II dem Schauplatz seines Vorgängers treu und konzentriert sich auf den amerikanischen U-Boot-Krieg gegen Japan im Pazifik. Der Spieler kann aus neun unterschiedlichen amerikanischen U-Boot-Klassen wählen, deren technische Eigenschaften sich auf die Einsätze auswirken. Neben Trainingsmissionen stehen historische Gefechte und zufällig erzeugte Kriegspatrouillen zur Verfügung. Das Herzstück ist jedoch die umfangreiche Kriegskarriere. Der Spieler beginnt zu einem wählbaren Zeitpunkt des Pazifikkrieges und absolviert anschließend Patrouillen, kehrt zur Versorgung in Häfen zurück und versucht, möglichst viel gegnerischen Schiffsraum zu versenken. Beförderungen, Orden und gespeicherte Erfolgslisten sorgen dafür, dass die einzelnen Einsätze Teil einer längeren Laufbahn werden. Im Gefecht wechselt der Kommandant zwischen strategischer Karte, Brücke, Periskop, Deckgeschütz, Maschinenraum und Schadenskontrolle. Gegnerische Schiffe reichen von kleinen Patrouillenbooten über Frachter und Tanker bis zu Kreuzern, Flugzeugträgern und Schlachtschiffen. Gegenmaßnahmen durch Zerstörer zwingen den Spieler dazu, abzutauchen, Geschwindigkeit und Kurs zu verändern und möglichst geräuschlos zu entkommen. Gegenüber dem ersten Silent Service wurden Grafik, Sound, Benutzeroberfläche und Gefechtsmodell deutlich erweitert. Die Amiga-Version erschien auf zwei Disketten und konnte auf Festplatte installiert werden. Damit entwickelte MicroProse die vergleichsweise kompakte U-Boot-Simulation des ersten Teils zu einer wesentlich umfangreicheren Darstellung des amerikanischen U-Boot-Krieges weiter.`,
+        review: `Silent Service II ist eines dieser Spiele, bei denen ein grauer Punkt auf einer Karte plötzlich spannender sein kann als ein kompletter Bildschirm voller Explosionen. Denn irgendwo dort draußen fährt vielleicht ein japanischer Konvoi herum, und sobald man ihn gefunden hat, beginnt die eigentliche Arbeit. Kurs berechnen, heranschleichen, Periskop ausfahren, Ziel identifizieren und hoffen, dass die Torpedos diesmal nicht beschlossen haben, ihre eigene Interpretation des Auftrags umzusetzen. Gegenüber dem ersten Silent Service ist praktisch alles umfangreicher geworden. Es gibt mehr U-Boote, mehr Schiffstypen, eine richtige Karriere und wesentlich detailliertere Stationen. Besonders gelungen ist die Mischung aus Simulation und Spielbarkeit. Man muss sich mit Geschwindigkeit, Kurs, Torpedos und Tauchtiefe beschäftigen, benötigt aber trotzdem kein Offizierspatent der US Navy, um nach einigen Versuchen erfolgreich zu sein. Die spannendsten Momente entstehen ohnehin erst nach dem Angriff. Sobald ein Zerstörer die eigene Position gefunden hat, wird aus dem stolzen U-Boot-Kommandanten erstaunlich schnell jemand, dessen strategischer Gesamtplan hauptsächlich aus den Worten tiefer, leiser und weg hier besteht. Die Amiga-Version kann dabei technisch überzeugen. Grafik und Sound sind gegenüber dem Vorgänger erheblich verbessert, und besonders Sonargeräusche, Alarmmeldungen und das Kommando Dive, dive tragen viel zur Atmosphäre bei. Natürlich gibt es auch Schwächen. Zwischen den Gefechten können längere ruhige Phasen entstehen und wer grundsätzlich nichts mit Simulationen anfangen kann, wird vermutlich auch hier nicht bekehrt. Außerdem ist die Präsentation aus heutiger Sicht funktionaler als spektakulär. Dafür funktioniert das eigentliche Katz-und-Maus-Spiel zwischen U-Boot und Zerstörern noch immer hervorragend. Silent Service II ist deshalb weniger ein Spiel über spektakuläre Explosionen als über Geduld, Positionierung und diesen einen Moment, in dem man durch das Periskop sieht, dass der Torpedo tatsächlich genau dorthin läuft, wo man ihn haben wollte.`,
+        trivia: [
+                  "Silent Service II erschien 1990 zunächst für DOS. Die Amiga-Version folgte 1991 und wurde von David Shea programmiert; Andrew Parton und Laurie Sinnett leisteten zusätzliche Programmierunterstützung.",
+                  "Die Amiga-Version wurde auf zwei Disketten ausgeliefert und unterstützt eine Installation auf Festplatte. Steven Cain war für die Grafik verantwortlich, Ten Pin Alley für Musik und Soundeffekte.",
+                  "Die Karriere ermöglicht es, den amerikanischen U-Boot-Krieg im Pazifik über einen längeren Zeitraum mitzuerleben. Beförderungen, Orden und gespeicherte Erfolgslisten dokumentieren die Laufbahn des eigenen Kommandanten."
+        ],
+        worthPlaying: `Silent Service II gehört weiterhin zu den interessantesten U-Boot-Simulationen auf dem Amiga. Die Kombination aus strategischer Patrouillenplanung, Zielsuche, Torpedoangriffen und nervenaufreibenden Fluchtmanövern besitzt auch heute noch ihren Reiz. Besonders die umfangreiche Karriere sorgt dafür, dass die Einsätze nicht wie voneinander unabhängige Missionen wirken. Präsentation und Bedienung sind gealtert, doch wer klassische Marinesimulationen mag, findet hier einen bemerkenswert umfangreichen und atmosphärischen Vertreter des Genres.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/261/silent-service-ii/",
+        wikipedia: "https://en.wikipedia.org/wiki/Silent_Service_II",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 202,
+        height: 238,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Sim Classics: Maxis Collections I ist eine 1994 veröffentlichte Sammlung von drei außergewöhnlichen Maxis-Simulationen für den Amiga. Enthalten sind der Städtebau-Klassiker SimCity Classic, die Ameisensimulation SimAnt und das komplexe Ökosystem-Experiment SimLife. Die Compilation zeigt damit drei unterschiedliche Varianten der von Maxis gerne als Software Toys bezeichneten offenen Simulationen, bei denen Experimentieren und Beobachten wichtiger sind als ein klassisches Spielziel.",
+                "history": "Sim Classics: Maxis Collections I erschien 1994 für den Amiga und fasste drei bereits zuvor veröffentlichte Maxis-Titel in einer gemeinsamen Sammlung zusammen: SimCity Classic, SimAnt und SimLife. Maxis hatte sich seit dem großen Erfolg von SimCity auf ungewöhnliche Simulationen spezialisiert, die weniger nach traditionellen Spielregeln funktionierten als vielmehr komplexe Systeme modellierten. SimCity bildet den bekanntesten Bestandteil der Sammlung. Will Wrights Städtebausimulation lässt den Spieler eine Stadt planen, Wohn-, Gewerbe- und Industriegebiete ausweisen, Straßen und Infrastruktur errichten und anschließend beobachten, wie sich das virtuelle Gemeinwesen entwickelt. Die offene Struktur ohne klassisches Ende machte SimCity zu einem der einflussreichsten Computerspiele seiner Zeit. SimAnt überträgt dieses Konzept in eine völlig andere Größenordnung. Der Spieler kontrolliert eine Ameisenkolonie, sucht Nahrung, erweitert das Nest, kämpft gegen eine konkurrierende Kolonie und versucht schließlich, Haus und Garten zu erobern. Neben dem eigentlichen Spiel bietet SimAnt einen experimentellen Modus, in dem sich das Verhalten der Ameisen beobachten und beeinflussen lässt. SimLife geht noch einen Schritt weiter und beschäftigt sich mit kompletten Ökosystemen. Pflanzen und Tiere können genetisch verändert oder neu erschaffen werden, während Faktoren wie Nahrungsketten, Klima, Mutation, Fortpflanzung und natürliche Selektion die Entwicklung der virtuellen Welt beeinflussen. Gerade SimLife versteht sich deshalb weniger als klassisches Computerspiel und stärker als experimenteller biologischer Sandkasten. Die drei Programme waren ursprünglich zu unterschiedlichen Zeitpunkten erschienen und wurden für Sim Classics: Maxis Collections I gemeinsam neu veröffentlicht. Die Amiga-Ausgabe kam 1994 in Europa auf den Markt und wurde direkt unter dem Namen Maxis vertrieben; in Deutschland ist Bomico als Distributor dokumentiert. Das britische Magazin Amiga Power testete die Sammlung in Ausgabe 42 und bezeichnete die enthaltenen Programme ausdrücklich als ungewöhnliche Simulationen komplexer biologischer und gesellschaftlicher Systeme. Gleichzeitig kritisierte das Magazin den Preis der Sammlung und sah vor allem SimCity weiterhin als den eigentlichen Klassiker des Pakets.",
+                "review": "Sim Classics ist eine interessante Sammlung, weil die drei enthaltenen Programme sehr schön zeigen, warum Maxis Anfang der 1990er Jahre praktisch eine eigene Kategorie von Computerspielen geschaffen hatte. SimCity dürfte dabei für die meisten Spieler der Hauptgrund für den Kauf gewesen sein. Das Prinzip funktioniert auch Jahre nach der ursprünglichen Veröffentlichung hervorragend: Man beginnt mit ein paar Straßen und Wohngebieten und stellt irgendwann erstaunt fest, dass mehrere Stunden vergangen sind und man inzwischen Bürgermeister einer Metropole ist, deren Verkehrsprobleme man selbstverständlich ausschließlich selbst verursacht hat. SimAnt ist wesentlich experimenteller. Eine Ameisenkolonie aufzubauen, Nahrung zu suchen und gegen rote Ameisen zu kämpfen ist zunächst erstaunlich faszinierend. Gleichzeitig fehlt langfristig etwas von der Sogwirkung eines SimCity. Noch spezieller ist SimLife. Hier darf man an Genetik, Lebensräumen und Nahrungsketten herumschrauben und anschließend beobachten, ob das selbst entworfene Ökosystem funktioniert oder sich innerhalb kürzester Zeit biologisch selbst entsorgt. Das ist faszinierend, aber definitiv nichts für Spieler, die nach fünf Minuten wissen möchten, ob sie gewonnen haben. Genau das macht die Sammlung gleichzeitig interessant und schwierig zu bewerten. Man bekommt drei ausgesprochen ungewöhnliche Simulationen, aber nicht drei gleichwertige Klassiker. Bereits Amiga Power sah das 1994 ähnlich: SimCity wurde als Klassiker hervorgehoben, während SimAnt und SimLife eher als interessante Experimente betrachtet wurden. Hinzu kam der damals recht hohe Verkaufspreis von 35 Pfund. Aus heutiger Sicht ist dieser Kritikpunkt natürlich weniger wichtig. Als Sammlung zeigt Sim Classics sehr schön eine Phase, in der Maxis beinahe jedes komplexe System der Welt in ein Computerspiel verwandeln wollte. Stadtplanung, Ameisen und Evolution in einer einzigen Box – viel typischer für Maxis Anfang der Neunziger kann eine Spielesammlung eigentlich kaum sein.",
+                "trivia": [
+                    "Sim Classics: Maxis Collections I enthält auf dem Amiga drei vollständige Maxis-Simulationen: SimCity Classic, SimAnt und SimLife.",
+                    "Amiga Power testete die Sammlung 1994 in Ausgabe 42 und beschrieb die Maxis-Titel als sogenannte Software Toys, also offene Simulationen komplexer Systeme statt klassischer Spiele mit eindeutigem Endziel.",
+                    "Die deutsche Ausgabe erschien 1994 unter Maxis; Bomico Entertainment Software ist für Deutschland als Distributor der Compilation dokumentiert."
+                ],
+                "worthPlaying": "Sim Classics: Maxis Collections I ist heute vor allem deshalb interessant, weil die Sammlung drei sehr unterschiedliche Beispiele für die experimentelle Maxis-Phase der frühen 1990er Jahre vereint. SimCity ist nach wie vor ein hervorragend funktionierender Städtebau-Klassiker, während SimAnt und besonders SimLife ungewöhnliche Einblicke in die damalige Idee des Software Toy bieten. Wer sich für die Geschichte von Simulationsspielen oder Maxis interessiert, bekommt mit dieser Box deshalb eine ausgesprochen charakteristische Sammlung.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Sim Classics: Maxis Collections I is a 1994 Amiga compilation containing three distinctive Maxis simulations: SimCity Classic, SimAnt and SimLife. Together they demonstrate three different examples of Maxis' open-ended 'software toy' philosophy, focusing on experimentation, observation and complex simulated systems rather than conventional goals.",
+                "history": "Sim Classics: Maxis Collections I was released for the Amiga in Europe in 1994 and combines three previously released Maxis titles: SimCity Classic, SimAnt and SimLife. By the early 1990s Maxis had become closely associated with open-ended simulations that modelled systems rather than following traditional game structures. SimCity, designed by Will Wright, allows players to build and manage a city by zoning land, constructing infrastructure and responding to the consequences of urban growth. SimAnt applies a similar experimental philosophy to an ant colony, allowing players to forage for food, expand a nest, fight rival ants and explore ant behaviour. SimLife is the most experimental title in the collection, providing tools for designing plants and animals and observing the effects of genetics, food webs, climate, mutation and natural selection on an ecosystem. The three programs were originally released separately before Maxis packaged them together in this collection. Amiga Power reviewed the compilation in 1994 and emphasized the unusual nature of Maxis' 'software toys', while also arguing that SimCity remained the strongest individual title in the package.",
+                "review": "Sim Classics is an interesting collection because its three programs demonstrate why Maxis effectively created its own category of computer entertainment in the early 1990s. SimCity remains the obvious highlight. Starting with a few roads and zones can easily turn into hours of managing a sprawling city and attempting to repair traffic problems created entirely by the player. SimAnt is more experimental, turning the life of an ant colony into an unusual strategy simulation. Building nests, gathering food and fighting rival ants is initially fascinating, although it lacks some of SimCity's long-term appeal. SimLife goes further still, allowing players to manipulate genetics, species and ecosystems and then observe the results. It is fascinating but deliberately unconventional, particularly for anyone expecting a clear victory condition. This unevenness is also the collection's main weakness. All three titles are unusual and ambitious, but they are not equally compelling as games. Amiga Power reached a similar conclusion in 1994, regarding SimCity as the true classic while treating SimAnt and SimLife more as interesting experiments. As a historical collection, however, it captures Maxis at a time when almost any complex system seemed capable of becoming a simulation.",
+                "trivia": [
+                    "The Amiga version of Sim Classics: Maxis Collections I contains three complete Maxis simulations: SimCity Classic, SimAnt and SimLife.",
+                    "Amiga Power reviewed the collection in issue 42 in 1994 and discussed the Maxis titles as 'software toys' built around complex simulated systems rather than conventional game objectives.",
+                    "The collection was released for the Amiga in Europe in 1994, with Maxis listed as publisher."
+                ],
+                "worthPlaying": "Sim Classics: Maxis Collections I remains interesting because it combines three very different examples of Maxis' experimental early-1990s design philosophy. SimCity remains an effective city-building classic, while SimAnt and especially SimLife demonstrate the company's broader concept of the software toy. For enthusiasts of Maxis and the history of simulation games, it is a particularly representative compilation."
+            }
+        },
+        id: 217,
+        folder: "sim_classics_maxis_collections_1",
+        scanBy: "Magisthan",
+        page: "sim_classics_maxis_collections_1.html",
+        featured: false,
+        title: "Sim Classics: Maxis Collections I",
+        system: "Amiga",
+        year: 1994,
+        publisher: "Maxis",
+        developer: "Maxis",
+        genre: ["Simulation", "Strategie", "Compilation"],
+        description: "Sim Classics: Maxis Collections I ist eine 1994 veröffentlichte Sammlung von drei außergewöhnlichen Maxis-Simulationen für den Amiga. Enthalten sind der Städtebau-Klassiker SimCity Classic, die Ameisensimulation SimAnt und das komplexe Ökosystem-Experiment SimLife. Die Compilation zeigt damit drei unterschiedliche Varianten der von Maxis gerne als Software Toys bezeichneten offenen Simulationen, bei denen Experimentieren und Beobachten wichtiger sind als ein klassisches Spielziel.",
+        history: `Sim Classics: Maxis Collections I erschien 1994 für den Amiga und fasste drei bereits zuvor veröffentlichte Maxis-Titel in einer gemeinsamen Sammlung zusammen: SimCity Classic, SimAnt und SimLife. Maxis hatte sich seit dem großen Erfolg von SimCity auf ungewöhnliche Simulationen spezialisiert, die weniger nach traditionellen Spielregeln funktionierten als vielmehr komplexe Systeme modellierten. SimCity bildet den bekanntesten Bestandteil der Sammlung. Will Wrights Städtebausimulation lässt den Spieler eine Stadt planen, Wohn-, Gewerbe- und Industriegebiete ausweisen, Straßen und Infrastruktur errichten und anschließend beobachten, wie sich das virtuelle Gemeinwesen entwickelt. Die offene Struktur ohne klassisches Ende machte SimCity zu einem der einflussreichsten Computerspiele seiner Zeit. SimAnt überträgt dieses Konzept in eine völlig andere Größenordnung. Der Spieler kontrolliert eine Ameisenkolonie, sucht Nahrung, erweitert das Nest, kämpft gegen eine konkurrierende Kolonie und versucht schließlich, Haus und Garten zu erobern. Neben dem eigentlichen Spiel bietet SimAnt einen experimentellen Modus, in dem sich das Verhalten der Ameisen beobachten und beeinflussen lässt. SimLife geht noch einen Schritt weiter und beschäftigt sich mit kompletten Ökosystemen. Pflanzen und Tiere können genetisch verändert oder neu erschaffen werden, während Faktoren wie Nahrungsketten, Klima, Mutation, Fortpflanzung und natürliche Selektion die Entwicklung der virtuellen Welt beeinflussen. Gerade SimLife versteht sich deshalb weniger als klassisches Computerspiel und stärker als experimenteller biologischer Sandkasten. Die drei Programme waren ursprünglich zu unterschiedlichen Zeitpunkten erschienen und wurden für Sim Classics: Maxis Collections I gemeinsam neu veröffentlicht. Die Amiga-Ausgabe kam 1994 in Europa auf den Markt und wurde direkt unter dem Namen Maxis vertrieben; in Deutschland ist Bomico als Distributor dokumentiert. Das britische Magazin Amiga Power testete die Sammlung in Ausgabe 42 und bezeichnete die enthaltenen Programme ausdrücklich als ungewöhnliche Simulationen komplexer biologischer und gesellschaftlicher Systeme. Gleichzeitig kritisierte das Magazin den Preis der Sammlung und sah vor allem SimCity weiterhin als den eigentlichen Klassiker des Pakets.`,
+        review: `Sim Classics ist eine interessante Sammlung, weil die drei enthaltenen Programme sehr schön zeigen, warum Maxis Anfang der 1990er Jahre praktisch eine eigene Kategorie von Computerspielen geschaffen hatte. SimCity dürfte dabei für die meisten Spieler der Hauptgrund für den Kauf gewesen sein. Das Prinzip funktioniert auch Jahre nach der ursprünglichen Veröffentlichung hervorragend: Man beginnt mit ein paar Straßen und Wohngebieten und stellt irgendwann erstaunt fest, dass mehrere Stunden vergangen sind und man inzwischen Bürgermeister einer Metropole ist, deren Verkehrsprobleme man selbstverständlich ausschließlich selbst verursacht hat. SimAnt ist wesentlich experimenteller. Eine Ameisenkolonie aufzubauen, Nahrung zu suchen und gegen rote Ameisen zu kämpfen ist zunächst erstaunlich faszinierend. Gleichzeitig fehlt langfristig etwas von der Sogwirkung eines SimCity. Noch spezieller ist SimLife. Hier darf man an Genetik, Lebensräumen und Nahrungsketten herumschrauben und anschließend beobachten, ob das selbst entworfene Ökosystem funktioniert oder sich innerhalb kürzester Zeit biologisch selbst entsorgt. Das ist faszinierend, aber definitiv nichts für Spieler, die nach fünf Minuten wissen möchten, ob sie gewonnen haben. Genau das macht die Sammlung gleichzeitig interessant und schwierig zu bewerten. Man bekommt drei ausgesprochen ungewöhnliche Simulationen, aber nicht drei gleichwertige Klassiker. Bereits Amiga Power sah das 1994 ähnlich: SimCity wurde als Klassiker hervorgehoben, während SimAnt und SimLife eher als interessante Experimente betrachtet wurden. Hinzu kam der damals recht hohe Verkaufspreis von 35 Pfund. Aus heutiger Sicht ist dieser Kritikpunkt natürlich weniger wichtig. Als Sammlung zeigt Sim Classics sehr schön eine Phase, in der Maxis beinahe jedes komplexe System der Welt in ein Computerspiel verwandeln wollte. Stadtplanung, Ameisen und Evolution in einer einzigen Box – viel typischer für Maxis Anfang der Neunziger kann eine Spielesammlung eigentlich kaum sein.`,
+        trivia: [
+                  "Sim Classics: Maxis Collections I enthält auf dem Amiga drei vollständige Maxis-Simulationen: SimCity Classic, SimAnt und SimLife.",
+                  "Amiga Power testete die Sammlung 1994 in Ausgabe 42 und beschrieb die Maxis-Titel als sogenannte Software Toys, also offene Simulationen komplexer Systeme statt klassischer Spiele mit eindeutigem Endziel.",
+                  "Die deutsche Ausgabe erschien 1994 unter Maxis; Bomico Entertainment Software ist für Deutschland als Distributor der Compilation dokumentiert."
+        ],
+        worthPlaying: `Sim Classics: Maxis Collections I ist heute vor allem deshalb interessant, weil die Sammlung drei sehr unterschiedliche Beispiele für die experimentelle Maxis-Phase der frühen 1990er Jahre vereint. SimCity ist nach wie vor ein hervorragend funktionierender Städtebau-Klassiker, während SimAnt und besonders SimLife ungewöhnliche Einblicke in die damalige Idee des Software Toy bieten. Wer sich für die Geschichte von Simulationsspielen oder Maxis interessiert, bekommt mit dieser Box deshalb eine ausgesprochen charakteristische Sammlung.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 207,
+        height: 250,
+        depth: 66
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Simon the Sorcerer II: The Lion, the Wizard and the Wardrobe ist die Fortsetzung des humorvollen Point-and-Click-Adventures Simon the Sorcerer. Der widerwillige Jungzauberer Simon wird erneut in die Fantasywelt zurückbefördert und muss verhindern, dass sein alter Gegner Sordid endgültig zurückkehrt. Die spät erschienene Amiga-CD-Version von Epic Interactive bringt das ursprünglich 1995 veröffentlichte Adventure auf AGA- und Grafikkarten-Amigas und kombiniert englische Sprachausgabe mit deutschen und italienischen Untertiteln.",
+                "history": "Simon the Sorcerer II: The Lion, the Wizard and the Wardrobe wurde ursprünglich von Adventure Soft entwickelt und erschien 1995 für DOS und Windows. Simon Woodroffe schrieb und entwarf das Adventure, Mike Woodroffe fungierte als Producer. Obwohl bereits der erste Simon the Sorcerer erfolgreich für den Amiga umgesetzt worden war, erschien der zweite Teil zunächst nicht für Commodores Rechner. Erst Ende 1999 kündigte Epic Interactive an, die Rechte für eine Amiga-Umsetzung erworben zu haben. Die Realisierung war für den damals bereits stark geschrumpften Amiga-Markt wirtschaftlich riskant. Epic startete deshalb eine Vorbestellungsaktion und erklärte, mindestens 500 Bestellungen zu benötigen, um die Portierung finanzieren zu können. Die Entwicklung verlief zudem nicht problemlos. Eine frühere Umsetzung wurde verworfen und Paul Burkey sowie Peter Mulholland übernahmen schließlich die Amiga- und Macintosh-Konvertierungen für Epic Interactive. Die kommerzielle Amiga-Ausgabe wird von MobyGames auf Januar 2001 datiert, während verschiedene Amiga-Datenbanken die Veröffentlichung bereits 2000 führen. Das Spiel erschien ausschließlich auf CD-ROM. Die Amiga-Version benötigt mindestens einen AGA-Amiga mit 68030-Prozessor, 16 MB RAM und CD-ROM-Laufwerk; auch Grafikkarten werden unterstützt. Eine Festplatteninstallation benötigt ungefähr 175 bis 180 MB. Inhaltlich entspricht die Umsetzung weitgehend dem Adventure-Soft-Original. Nachdem Sordid von einem jungen Zauberer namens Runt wiederbelebt wurde, plant er erneut seine Rache an Simon. Durch einen magischen Kleiderschrank landet Simon wieder in der Fantasywelt und versucht zunächst vor allem, einen Weg zurück nach Hause zu finden. Wie beim Vorgänger wird das Geschehen über eine klassische Point-and-Click-Oberfläche gesteuert. Gespräche, Gegenstände und teilweise ausgesprochen absurde Rätsel bilden den Kern des Spiels. Simon kommentiert seine Umgebung mit reichlich Sarkasmus und das Adventure enthält zahlreiche Anspielungen auf Fantasy-Literatur und andere Adventures. Technisch besitzt die Amiga-CD-Version eine Besonderheit: Die englische Sprachausgabe des CD-Originals ist enthalten, eine deutsche Synchronisation konnte aus rechtlichen Gründen jedoch nicht verwendet werden. Stattdessen stehen deutsche und italienische Untertitel zur Verfügung. Die Musik des Originals schaffte es ebenfalls nicht in die Amiga-Fassung. Trotz dieser Einschränkungen war die Veröffentlichung bemerkenswert, weil damit ein großes kommerzielles Point-and-Click-Adventure mehrere Jahre nach dem Ende des klassischen Amiga-Massenmarktes doch noch offiziell für die Plattform erschien.",
+                "review": "Simon the Sorcerer II ist ein schönes Beispiel dafür, dass ein Adventure nicht unbedingt besonders ernst sein muss, um hervorragend zu funktionieren. Simon ist nämlich kein strahlender Fantasyheld, der voller Begeisterung die Welt retten möchte. Eigentlich würde er viel lieber wieder nach Hause. Leider haben Zauberer, Dämonen und allerlei ausgesprochen merkwürdige Bewohner der Fantasywelt andere Pläne. Genau daraus entsteht ein großer Teil des Humors. Simon kommentiert praktisch alles mit einer Mischung aus Sarkasmus, Überheblichkeit und jugendlicher Genervtheit. Das funktioniert erstaunlich gut und hebt ihn deutlich von vielen anderen Adventurehelden ab. Spielerisch bleibt der zweite Teil klassisch. Gegenstände sammeln, Gespräche führen, Hinweise entdecken und anschließend versuchen herauszufinden, warum ausgerechnet dieser vollkommen unsinnige Gegenstand die Lösung eines Rätsels darstellen soll. Einige Aufgaben sind logisch, andere folgen jener besonderen Adventure-Logik, bei der man irgendwann beginnt, jeden Gegenstand mit jedem anderen Gegenstand zu kombinieren und dabei hofft, dass der Programmierer denselben seltsamen Gedankengang hatte. Besonders gelungen sind Grafik und Figuren. Auch Jahre nach der ursprünglichen PC-Veröffentlichung besitzen die handgezeichneten Schauplätze viel Charme. Die englische Sprachausgabe passt hervorragend zu den Charakteren und macht einen großen Teil des Humors aus. Schade ist deshalb, dass Epic für die Amiga-Version nicht auf die deutsche Synchronisation zugreifen konnte. Deutsche Untertitel helfen zwar, aber wer Englisch versteht, bekommt mit den Originalstimmen eindeutig mehr von den Pointen mit. Noch bedauerlicher ist die fehlende Musik. Gerade bei einem Adventure fällt auf, wenn zwischen den Gesprächen akustisch plötzlich nicht mehr besonders viel passiert. Trotzdem bleibt das eigentliche Spiel ausgezeichnet. Die Amiga-Portierung läuft bereits auf vergleichsweise moderater Hardware und unterstützt zusätzlich leistungsfähigere Rechner und Grafikkarten. Natürlich sieht man dem Spiel im Jahr 2001 an, dass seine Grafik ursprünglich aus der Mitte der 1990er Jahre stammt. Das ist aber kaum entscheidend, denn Simon II lebt von seinen Figuren, Dialogen und Rätseln. Für Amiga-Besitzer war die verspätete Veröffentlichung deshalb fast schon ein kleines Geschenk aus einer Zeit, in der man eigentlich nicht mehr damit rechnen konnte, ein solches kommerzielles Adventure noch offiziell für den Rechner zu bekommen.",
+                "trivia": [
+                    "Epic Interactive kündigte die Amiga-Portierung Ende 1999 mit einer Vorbestellungsaktion an. Mindestens 500 Vorbestellungen sollten zusammenkommen, damit sich Lizenzierung, Portierung und Produktion wirtschaftlich realisieren ließen.",
+                    "Paul Burkey und Peter Mulholland werden für die Amiga- und Macintosh-Konvertierungen genannt. Eine zuvor begonnene Amiga-Umsetzung war verworfen worden und die Portierung musste neu begonnen werden.",
+                    "Die Amiga-CD-Version enthält englische Sprachausgabe und unter anderem deutsche Untertitel, jedoch keine deutsche Synchronisation und keine Musik. Sie läuft auf AGA- und Grafikkarten-Amigas und benötigt mindestens einen 68030 sowie 16 MB RAM."
+                ],
+                "worthPlaying": "Simon the Sorcerer II ist auch heute noch wegen seiner humorvollen Dialoge, der handgezeichneten Fantasywelt und seiner klassischen Point-and-Click-Rätsel spielenswert. Die Amiga-Version besitzt durch ihre extrem späte offizielle Veröffentlichung zusätzlichen historischen Reiz. Fehlende Musik und ausschließlich englische Sprachausgabe sind klare Einschränkungen, doch deutsche Untertitel erleichtern den Zugang. Für Adventure-Fans und Sammler später kommerzieller Amiga-Spiele ist diese CD-Ausgabe deshalb besonders interessant.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Simon the Sorcerer II: The Lion, the Wizard and the Wardrobe is the sequel to Adventure Soft's humorous point-and-click adventure. The reluctant young wizard Simon is transported back to the fantasy world and once again becomes involved with his old enemy Sordid. Epic Interactive's unusually late Amiga CD release brings the 1995 adventure to AGA and graphics-card equipped Amigas with English speech and multilingual subtitles.",
+                "history": "Simon the Sorcerer II was originally developed by Adventure Soft and released for DOS and Windows in 1995. Simon Woodroffe wrote and designed the adventure, with Mike Woodroffe serving as producer. Unlike the first game, its sequel did not initially appear on the Amiga. Epic Interactive eventually acquired the rights to produce an Amiga conversion and announced a pre-order campaign in late 1999, stating that 500 orders were needed to make the project economically viable. Development proved difficult and an earlier attempt was abandoned before Paul Burkey and Peter Mulholland took over the Amiga and Macintosh conversions for Epic Interactive. MobyGames dates the commercial Amiga release to January 2001, although several Amiga databases list it as a 2000 release. The Amiga edition was released exclusively on CD-ROM and requires at least an AGA system with a 68030 processor, 16 MB RAM and CD-ROM drive, while graphics cards are also supported. The adventure itself closely follows the original release. Sordid has been resurrected and Simon is transported back into the fantasy world, where he becomes involved in another journey filled with strange characters, sarcastic dialogue and elaborate inventory puzzles. The Amiga version retains the English CD-ROM speech together with multilingual subtitles, including German, but does not include the original music. Despite these compromises, its release was remarkable: a major commercial point-and-click adventure officially arrived for the Amiga several years after the platform's mainstream commercial era had effectively ended.",
+                "review": "Simon the Sorcerer II succeeds largely because Simon is such an unconventional fantasy hero. He is sarcastic, impatient and considerably more interested in getting home than behaving like a noble saviour. The resulting dialogue gives the adventure a distinctive personality. Gameplay remains traditional point-and-click fare, combining conversations, inventory objects and puzzles that range from sensible to wonderfully eccentric. The hand-drawn locations retain considerable charm despite the age of the original graphics, while the English voice acting contributes greatly to the comedy. The Amiga edition unfortunately lacks the original music and could not use the German voice track, although German subtitles make the story accessible. Technically, the conversion is impressive simply because it exists at all. It runs on relatively modest accelerated Amiga hardware while also supporting graphics cards. By the time it reached the Amiga its presentation was clearly several years old, but that matters less in an adventure driven by characters, dialogue and puzzles. For Amiga owners, the belated conversion became an unusual reminder that substantial commercial adventures could still appear on the platform long after its mainstream years.",
+                "trivia": [
+                    "Epic Interactive announced the Amiga conversion with a pre-order campaign in late 1999 and stated that at least 500 orders were needed to justify licensing, porting and production.",
+                    "Paul Burkey and Peter Mulholland are credited with the Amiga and Macintosh conversions after an earlier attempt at the Amiga port had been abandoned.",
+                    "The Amiga CD edition features English speech with multilingual subtitles, including German, but lacks the original music. It supports both AGA and graphics-card systems."
+                ],
+                "worthPlaying": "Simon the Sorcerer II remains entertaining thanks to its sarcastic dialogue, colourful hand-drawn fantasy world and traditional point-and-click puzzles. The Amiga version is particularly interesting because of its exceptionally late official release. Missing music and the lack of German speech are disadvantages, but the English voice acting and German subtitles preserve most of the experience. It is therefore especially appealing to adventure enthusiasts and collectors of late commercial Amiga releases."
+            }
+        },
+        id: 218,
+        folder: "simon_the_sorcerer_2",
+        scanBy: "Magisthan",
+        page: "simon_the_sorcerer_2.html",
+        featured: false,
+        title: "Simon the Sorcerer II: The Lion, the Wizard and the Wardrobe",
+        system: "Amiga",
+        year: 2001,
+        publisher: "e.p.i.c. interactive entertainment gmbh",
+        developer: "Adventure Soft Publishing Ltd. / e.p.i.c. interactive entertainment",
+        genre: ["Adventure", "Point-and-Click", "Fantasy", "Comedy"],
+        description: "Simon the Sorcerer II: The Lion, the Wizard and the Wardrobe ist die Fortsetzung des humorvollen Point-and-Click-Adventures Simon the Sorcerer. Der widerwillige Jungzauberer Simon wird erneut in die Fantasywelt zurückbefördert und muss verhindern, dass sein alter Gegner Sordid endgültig zurückkehrt. Die spät erschienene Amiga-CD-Version von Epic Interactive bringt das ursprünglich 1995 veröffentlichte Adventure auf AGA- und Grafikkarten-Amigas und kombiniert englische Sprachausgabe mit deutschen und italienischen Untertiteln.",
+        history: `Simon the Sorcerer II: The Lion, the Wizard and the Wardrobe wurde ursprünglich von Adventure Soft entwickelt und erschien 1995 für DOS und Windows. Simon Woodroffe schrieb und entwarf das Adventure, Mike Woodroffe fungierte als Producer. Obwohl bereits der erste Simon the Sorcerer erfolgreich für den Amiga umgesetzt worden war, erschien der zweite Teil zunächst nicht für Commodores Rechner. Erst Ende 1999 kündigte Epic Interactive an, die Rechte für eine Amiga-Umsetzung erworben zu haben. Die Realisierung war für den damals bereits stark geschrumpften Amiga-Markt wirtschaftlich riskant. Epic startete deshalb eine Vorbestellungsaktion und erklärte, mindestens 500 Bestellungen zu benötigen, um die Portierung finanzieren zu können. Die Entwicklung verlief zudem nicht problemlos. Eine frühere Umsetzung wurde verworfen und Paul Burkey sowie Peter Mulholland übernahmen schließlich die Amiga- und Macintosh-Konvertierungen für Epic Interactive. Die kommerzielle Amiga-Ausgabe wird von MobyGames auf Januar 2001 datiert, während verschiedene Amiga-Datenbanken die Veröffentlichung bereits 2000 führen. Das Spiel erschien ausschließlich auf CD-ROM. Die Amiga-Version benötigt mindestens einen AGA-Amiga mit 68030-Prozessor, 16 MB RAM und CD-ROM-Laufwerk; auch Grafikkarten werden unterstützt. Eine Festplatteninstallation benötigt ungefähr 175 bis 180 MB. Inhaltlich entspricht die Umsetzung weitgehend dem Adventure-Soft-Original. Nachdem Sordid von einem jungen Zauberer namens Runt wiederbelebt wurde, plant er erneut seine Rache an Simon. Durch einen magischen Kleiderschrank landet Simon wieder in der Fantasywelt und versucht zunächst vor allem, einen Weg zurück nach Hause zu finden. Wie beim Vorgänger wird das Geschehen über eine klassische Point-and-Click-Oberfläche gesteuert. Gespräche, Gegenstände und teilweise ausgesprochen absurde Rätsel bilden den Kern des Spiels. Simon kommentiert seine Umgebung mit reichlich Sarkasmus und das Adventure enthält zahlreiche Anspielungen auf Fantasy-Literatur und andere Adventures. Technisch besitzt die Amiga-CD-Version eine Besonderheit: Die englische Sprachausgabe des CD-Originals ist enthalten, eine deutsche Synchronisation konnte aus rechtlichen Gründen jedoch nicht verwendet werden. Stattdessen stehen deutsche und italienische Untertitel zur Verfügung. Die Musik des Originals schaffte es ebenfalls nicht in die Amiga-Fassung. Trotz dieser Einschränkungen war die Veröffentlichung bemerkenswert, weil damit ein großes kommerzielles Point-and-Click-Adventure mehrere Jahre nach dem Ende des klassischen Amiga-Massenmarktes doch noch offiziell für die Plattform erschien.`,
+        review: `Simon the Sorcerer II ist ein schönes Beispiel dafür, dass ein Adventure nicht unbedingt besonders ernst sein muss, um hervorragend zu funktionieren. Simon ist nämlich kein strahlender Fantasyheld, der voller Begeisterung die Welt retten möchte. Eigentlich würde er viel lieber wieder nach Hause. Leider haben Zauberer, Dämonen und allerlei ausgesprochen merkwürdige Bewohner der Fantasywelt andere Pläne. Genau daraus entsteht ein großer Teil des Humors. Simon kommentiert praktisch alles mit einer Mischung aus Sarkasmus, Überheblichkeit und jugendlicher Genervtheit. Das funktioniert erstaunlich gut und hebt ihn deutlich von vielen anderen Adventurehelden ab. Spielerisch bleibt der zweite Teil klassisch. Gegenstände sammeln, Gespräche führen, Hinweise entdecken und anschließend versuchen herauszufinden, warum ausgerechnet dieser vollkommen unsinnige Gegenstand die Lösung eines Rätsels darstellen soll. Einige Aufgaben sind logisch, andere folgen jener besonderen Adventure-Logik, bei der man irgendwann beginnt, jeden Gegenstand mit jedem anderen Gegenstand zu kombinieren und dabei hofft, dass der Programmierer denselben seltsamen Gedankengang hatte. Besonders gelungen sind Grafik und Figuren. Auch Jahre nach der ursprünglichen PC-Veröffentlichung besitzen die handgezeichneten Schauplätze viel Charme. Die englische Sprachausgabe passt hervorragend zu den Charakteren und macht einen großen Teil des Humors aus. Schade ist deshalb, dass Epic für die Amiga-Version nicht auf die deutsche Synchronisation zugreifen konnte. Deutsche Untertitel helfen zwar, aber wer Englisch versteht, bekommt mit den Originalstimmen eindeutig mehr von den Pointen mit. Noch bedauerlicher ist die fehlende Musik. Gerade bei einem Adventure fällt auf, wenn zwischen den Gesprächen akustisch plötzlich nicht mehr besonders viel passiert. Trotzdem bleibt das eigentliche Spiel ausgezeichnet. Die Amiga-Portierung läuft bereits auf vergleichsweise moderater Hardware und unterstützt zusätzlich leistungsfähigere Rechner und Grafikkarten. Natürlich sieht man dem Spiel im Jahr 2001 an, dass seine Grafik ursprünglich aus der Mitte der 1990er Jahre stammt. Das ist aber kaum entscheidend, denn Simon II lebt von seinen Figuren, Dialogen und Rätseln. Für Amiga-Besitzer war die verspätete Veröffentlichung deshalb fast schon ein kleines Geschenk aus einer Zeit, in der man eigentlich nicht mehr damit rechnen konnte, ein solches kommerzielles Adventure noch offiziell für den Rechner zu bekommen.`,
+        trivia: [
+                  "Epic Interactive kündigte die Amiga-Portierung Ende 1999 mit einer Vorbestellungsaktion an. Mindestens 500 Vorbestellungen sollten zusammenkommen, damit sich Lizenzierung, Portierung und Produktion wirtschaftlich realisieren ließen.",
+                  "Paul Burkey und Peter Mulholland werden für die Amiga- und Macintosh-Konvertierungen genannt. Eine zuvor begonnene Amiga-Umsetzung war verworfen worden und die Portierung musste neu begonnen werden.",
+                  "Die Amiga-CD-Version enthält englische Sprachausgabe und unter anderem deutsche Untertitel, jedoch keine deutsche Synchronisation und keine Musik. Sie läuft auf AGA- und Grafikkarten-Amigas und benötigt mindestens einen 68030 sowie 16 MB RAM."
+        ],
+        worthPlaying: `Simon the Sorcerer II ist auch heute noch wegen seiner humorvollen Dialoge, der handgezeichneten Fantasywelt und seiner klassischen Point-and-Click-Rätsel spielenswert. Die Amiga-Version besitzt durch ihre extrem späte offizielle Veröffentlichung zusätzlichen historischen Reiz. Fehlende Musik und ausschließlich englische Sprachausgabe sind klare Einschränkungen, doch deutsche Untertitel erleichtern den Zugang. Für Adventure-Fans und Sammler später kommerzieller Amiga-Spiele ist diese CD-Ausgabe deshalb besonders interessant.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1851/simon-the-sorcerer-ii-the-lion-the-wizard-and-the-wardrobe/",
+        wikipedia: "https://en.wikipedia.org/wiki/Simon_the_Sorcerer_II:_The_Lion,_the_Wizard_and_the_Wardrobe",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 135,
+        height: 190,
+        depth: 15
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Simon the Sorcerer ist ein humorvolles Point-and-Click-Adventure von Adventure Soft, das klassische Fantasywelten mit britischem Humor und zahlreichen Parodien verbindet. Der Teenager Simon wird durch ein magisches Portal in eine fremde Welt versetzt und soll dort den Zauberer Calypso aus den Händen des bösen Sordid befreien. Mit seiner roten Zauberrobe, reichlich Sarkasmus und einer ausgesprochen geringen Begeisterung für seine neue Heldenrolle macht sich Simon auf den Weg durch eine farbenfrohe Welt voller Zauberer, Zwerge, Trolle und anderer seltsamer Gestalten.",
+                "history": "Simon the Sorcerer wurde vom britischen Entwickler Adventure Soft geschaffen und erschien zunächst 1993 für DOS. Die Amiga-Version folgte 1994. Simon Woodroffe entwickelte die Geschichte und das Spieldesign, Alan Bridgman und Mike Woodroffe waren für die Programmierung verantwortlich. Paul Drummond fungierte als Lead Artist und gestaltete außerdem die Cover-Illustration. Weitere Grafiken stammen unter anderem von Maria Drummond, Jef Wall und Karen Pinchin, während Kevin Preston die Animationen der Hauptfigur erstellte. Musik und Sound wurden von Media Sorcery produziert. Inhaltlich beginnt das Abenteuer ausgesprochen unspektakulär: Der Teenager Simon findet einen Hund und entdeckt bei ihm ein geheimnisvolles Buch. Als das Buch geöffnet wird, erscheint ein Portal, durch das Simon und der Hund in eine Fantasywelt gelangen. Dort erfährt Simon, dass der Zauberer Calypso vom bösen Sordid gefangen gehalten wird. Obwohl Simon zunächst weder besonders heldenhaft noch begeistert von seiner neuen Aufgabe ist, zieht er schließlich los, um Calypso zu retten. Spielerisch orientiert sich Simon the Sorcerer deutlich an den großen Point-and-Click-Adventures seiner Zeit. Am unteren Bildschirmrand befinden sich Verben wie Öffnen, Nehmen, Benutzen oder Reden, die mit Objekten und Figuren kombiniert werden. Die Spielwelt ist umfangreich und erlaubt es Simon, zahlreiche Schauplätze in relativ freier Reihenfolge zu erkunden. Eine magische Karte erleichtert später das Reisen zwischen bereits besuchten Gebieten. Besonders bekannt wurde das Spiel für seinen britischen Humor. Fantasy-Klischees werden ständig parodiert und zahlreiche Figuren erinnern bewusst an bekannte Motive aus Literatur, Film und anderen Adventures. Simon selbst ist dabei alles andere als ein klassischer Held. Seine sarkastischen Kommentare und seine häufig wenig respektvolle Haltung gegenüber den Bewohnern der Fantasywelt wurden zu einem Markenzeichen der Serie. Die Amiga-Fassung erschien sowohl für klassische OCS/ECS-Rechner als auch in einer erweiterten AGA-Version. Die AGA-Ausgabe bietet eine farbenreichere Darstellung mit 256 Farben. Später erschien außerdem eine CD32-Version mit vollständiger englischer Sprachausgabe, in der Chris Barrie, bekannt aus Red Dwarf, Simon seine Stimme leiht. Der Erfolg des Spiels führte zu einer langlebigen Adventure-Serie, deren zweiter Teil Simon the Sorcerer II 1995 zunächst für PC erschien und viele Jahre später auch offiziell auf den Amiga portiert wurde.",
+                "review": "Simon the Sorcerer gehört zu jener Sorte Adventures, bei denen man schon nach wenigen Minuten merkt, dass der Hauptdarsteller wahrscheinlich nicht wegen seiner vorbildlichen Umgangsformen ausgewählt wurde. Simon wird in eine Fantasywelt geworfen, bekommt praktisch sofort eine rote Zauberrobe verpasst und soll anschließend einen mächtigen bösen Zauberer besiegen. Seine Begeisterung darüber hält sich ungefähr so sehr in Grenzen wie die eines Teenagers, dem gerade mitgeteilt wurde, dass er am Wochenende freiwillig den Keller aufräumen darf. Genau diese Haltung macht einen großen Teil des Charmes aus. Simon kommentiert seine Umgebung ständig mit Sarkasmus und nimmt weder Zauberer noch Zwerge noch irgendwelche angeblich gefährlichen Fantasywesen besonders ernst. Spielerisch merkt man deutlich, dass Adventure Soft sich an LucasArts orientiert hat. Die Verbsteuerung erinnert stark an Monkey Island und auch der Humor bewegt sich häufig in eine ähnliche Richtung. Trotzdem besitzt Simon genug eigene Persönlichkeit, um nicht einfach wie eine Kopie zu wirken. Besonders stark ist die Grafik. Die handgezeichneten Hintergründe gehören zu den schönsten, die man auf dem Amiga in einem klassischen Adventure findet. Wälder, Dörfer, Höhlen und andere Schauplätze wirken farbenfroh und voller kleiner Details. Die AGA-Version legt mit ihrer größeren Farbpalette noch einmal sichtbar nach. Weniger elegant sind einige Rätsel. Manche Lösungen sind logisch und befriedigend, andere gehören eindeutig zur berühmten Kategorie Adventure-Logik. Wenn man irgendwann beginnt, jeden Gegenstand mit jedem anderen Gegenstand zu kombinieren, ist das deshalb nicht unbedingt ein Zeichen persönlicher Verzweiflung, sondern möglicherweise genau die vorgesehene Spielmechanik. Hinzu kommen gelegentliche Pixel-Suchaktionen und längere Laufwege. Trotzdem funktioniert Simon the Sorcerer hervorragend. Die Mischung aus wunderschöner Grafik, britischem Humor, umfangreicher Spielwelt und klassischen Point-and-Click-Rätseln sorgt dafür, dass man immer wissen möchte, welche merkwürdige Figur hinter dem nächsten Bildschirm wartet. Besonders auf dem Amiga gehört Simon deshalb zu den Adventures, die zeigen, dass LucasArts und Sierra nicht die einzigen Studios waren, die Anfang der 1990er Jahre hervorragende Grafikadventures produzieren konnten.",
+                "trivia": [
+                    "Simon the Sorcerer wurde von Simon Woodroffe entworfen. Alan Bridgman und Mike Woodroffe programmierten das Spiel, während Paul Drummond als Lead Artist und ausdrücklich auch als Cover Illustrator geführt wird.",
+                    "Neben der normalen Amiga-Version erschien eine AGA-Fassung mit 256-Farben-Grafik. Die spätere CD32-Version ergänzte vollständige englische Sprachausgabe mit Chris Barrie als Stimme von Simon.",
+                    "Der Humor parodiert zahlreiche bekannte Fantasy-Motive und Adventure-Konventionen. Simons sarkastische Persönlichkeit wurde anschließend zu einem der wichtigsten Markenzeichen der gesamten Serie."
+                ],
+                "worthPlaying": "Simon the Sorcerer ist auch heute noch eines der charakteristischsten Point-and-Click-Adventures auf dem Amiga. Die handgezeichnete Grafik, der britische Humor und Simons herrlich respektlose Persönlichkeit haben wenig von ihrem Charme verloren. Einige Rätsel und längere Laufwege zeigen deutlich das Alter des Spiels, doch wer klassische Adventures wie Monkey Island, Discworld oder Beneath a Steel Sky mag, sollte Simons erstes Abenteuer weiterhin ausprobieren. Für eine Amiga-Sammlung gehört es zu den wichtigen Vertretern des Genres.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Simon the Sorcerer is a humorous point-and-click adventure from Adventure Soft that combines a traditional fantasy world with British comedy and numerous parodies. Teenager Simon is transported through a magical portal and reluctantly becomes involved in a quest to rescue the wizard Calypso from the evil Sordid. Wearing his distinctive red wizard robe and armed with considerable sarcasm, Simon explores a colourful world populated by wizards, dwarves, trolls and many other eccentric characters.",
+                "history": "Simon the Sorcerer was created by British developer Adventure Soft and originally appeared for DOS in 1993, followed by an Amiga release in 1994. Simon Woodroffe created and designed the game, while Alan Bridgman and Mike Woodroffe handled programming. Paul Drummond served as lead artist and is also specifically credited as the cover illustrator. Additional artwork was produced by Maria Drummond, Jef Wall and Karen Pinchin, with Kevin Preston responsible for Simon's animations and Media Sorcery providing music and sound. The story begins when teenager Simon discovers a mysterious book that opens a portal to a fantasy world. There he learns that the wizard Calypso has been captured by the evil Sordid. Despite having little enthusiasm for becoming a hero, Simon eventually sets out to rescue him. Gameplay follows the classic point-and-click structure of the period, using a list of verbs to interact with characters, objects and locations. The large game world can be explored relatively freely, with a magical map later providing faster travel between previously visited locations. Simon the Sorcerer became particularly well known for its British humour and extensive parody of fantasy conventions. Simon himself is deliberately unlike a traditional heroic protagonist, frequently responding to the strange world around him with sarcasm and disrespect. The Amiga received both standard and enhanced AGA versions, with the latter offering a richer 256-colour presentation. A later CD32 edition added full English speech featuring Chris Barrie as Simon. The game's success established a long-running adventure series.",
+                "review": "Simon the Sorcerer quickly establishes that its protagonist was not chosen for his impeccable manners. Simon is transported into a fantasy world, given a red wizard robe and expected to confront an evil sorcerer, a responsibility he accepts with very little enthusiasm. His sarcastic attitude is a major part of the game's appeal. The interface clearly reflects the influence of LucasArts adventures, particularly Monkey Island, but Simon develops enough personality to avoid feeling like a simple imitation. The hand-drawn artwork is one of the game's greatest strengths, with colourful forests, villages, caves and fantasy locations filled with detail. The AGA version looks particularly attractive thanks to its expanded colour palette. Some puzzles have aged less gracefully. While many solutions are satisfying, others rely on the peculiar logic traditionally associated with early graphic adventures, and occasional pixel hunting or lengthy walks can become frustrating. Nevertheless, the combination of attractive artwork, British humour, a large world and memorable characters remains highly effective. Simon the Sorcerer demonstrates that Adventure Soft could compete with the better-known adventure studios of the early 1990s while still developing a distinctive identity of its own.",
+                "trivia": [
+                    "Simon Woodroffe designed Simon the Sorcerer, with Alan Bridgman and Mike Woodroffe handling programming. Paul Drummond served as lead artist and is specifically credited as the game's cover illustrator.",
+                    "An enhanced AGA Amiga edition offered 256-colour graphics, while the later CD32 release added full English speech featuring Chris Barrie as Simon.",
+                    "The game frequently parodies familiar fantasy conventions, while Simon's sarcastic personality became one of the defining characteristics of the entire series."
+                ],
+                "worthPlaying": "Simon the Sorcerer remains one of the Amiga's most distinctive point-and-click adventures. Its hand-drawn artwork, British humour and sarcastic protagonist retain considerable charm. Some puzzles and lengthy navigation reveal the game's age, but enthusiasts of classic adventures such as Monkey Island, Discworld and Beneath a Steel Sky will still find plenty to enjoy. It is an important adventure title for any representative Amiga collection."
+            }
+        },
+        id: 219,
+        folder: "simon_the_sorcerer_amiga",
+        scanBy: "Magisthan",
+        page: "simon_the_sorcerer_amiga.html",
+        featured: false,
+        title: "Simon the Sorcerer",
+        system: "Amiga",
+        year: 1994,
+        publisher: "Adventure Soft Publishing Ltd.",
+        developer: "Adventuresoft Ltd.",
+        genre: ["Adventure", "Point-and-Click", "Fantasy", "Comedy"],
+        description: "Simon the Sorcerer ist ein humorvolles Point-and-Click-Adventure von Adventure Soft, das klassische Fantasywelten mit britischem Humor und zahlreichen Parodien verbindet. Der Teenager Simon wird durch ein magisches Portal in eine fremde Welt versetzt und soll dort den Zauberer Calypso aus den Händen des bösen Sordid befreien. Mit seiner roten Zauberrobe, reichlich Sarkasmus und einer ausgesprochen geringen Begeisterung für seine neue Heldenrolle macht sich Simon auf den Weg durch eine farbenfrohe Welt voller Zauberer, Zwerge, Trolle und anderer seltsamer Gestalten.",
+        history: `Simon the Sorcerer wurde vom britischen Entwickler Adventure Soft geschaffen und erschien zunächst 1993 für DOS. Die Amiga-Version folgte 1994. Simon Woodroffe entwickelte die Geschichte und das Spieldesign, Alan Bridgman und Mike Woodroffe waren für die Programmierung verantwortlich. Paul Drummond fungierte als Lead Artist und gestaltete außerdem die Cover-Illustration. Weitere Grafiken stammen unter anderem von Maria Drummond, Jef Wall und Karen Pinchin, während Kevin Preston die Animationen der Hauptfigur erstellte. Musik und Sound wurden von Media Sorcery produziert. Inhaltlich beginnt das Abenteuer ausgesprochen unspektakulär: Der Teenager Simon findet einen Hund und entdeckt bei ihm ein geheimnisvolles Buch. Als das Buch geöffnet wird, erscheint ein Portal, durch das Simon und der Hund in eine Fantasywelt gelangen. Dort erfährt Simon, dass der Zauberer Calypso vom bösen Sordid gefangen gehalten wird. Obwohl Simon zunächst weder besonders heldenhaft noch begeistert von seiner neuen Aufgabe ist, zieht er schließlich los, um Calypso zu retten. Spielerisch orientiert sich Simon the Sorcerer deutlich an den großen Point-and-Click-Adventures seiner Zeit. Am unteren Bildschirmrand befinden sich Verben wie Öffnen, Nehmen, Benutzen oder Reden, die mit Objekten und Figuren kombiniert werden. Die Spielwelt ist umfangreich und erlaubt es Simon, zahlreiche Schauplätze in relativ freier Reihenfolge zu erkunden. Eine magische Karte erleichtert später das Reisen zwischen bereits besuchten Gebieten. Besonders bekannt wurde das Spiel für seinen britischen Humor. Fantasy-Klischees werden ständig parodiert und zahlreiche Figuren erinnern bewusst an bekannte Motive aus Literatur, Film und anderen Adventures. Simon selbst ist dabei alles andere als ein klassischer Held. Seine sarkastischen Kommentare und seine häufig wenig respektvolle Haltung gegenüber den Bewohnern der Fantasywelt wurden zu einem Markenzeichen der Serie. Die Amiga-Fassung erschien sowohl für klassische OCS/ECS-Rechner als auch in einer erweiterten AGA-Version. Die AGA-Ausgabe bietet eine farbenreichere Darstellung mit 256 Farben. Später erschien außerdem eine CD32-Version mit vollständiger englischer Sprachausgabe, in der Chris Barrie, bekannt aus Red Dwarf, Simon seine Stimme leiht. Der Erfolg des Spiels führte zu einer langlebigen Adventure-Serie, deren zweiter Teil Simon the Sorcerer II 1995 zunächst für PC erschien und viele Jahre später auch offiziell auf den Amiga portiert wurde.`,
+        review: `Simon the Sorcerer gehört zu jener Sorte Adventures, bei denen man schon nach wenigen Minuten merkt, dass der Hauptdarsteller wahrscheinlich nicht wegen seiner vorbildlichen Umgangsformen ausgewählt wurde. Simon wird in eine Fantasywelt geworfen, bekommt praktisch sofort eine rote Zauberrobe verpasst und soll anschließend einen mächtigen bösen Zauberer besiegen. Seine Begeisterung darüber hält sich ungefähr so sehr in Grenzen wie die eines Teenagers, dem gerade mitgeteilt wurde, dass er am Wochenende freiwillig den Keller aufräumen darf. Genau diese Haltung macht einen großen Teil des Charmes aus. Simon kommentiert seine Umgebung ständig mit Sarkasmus und nimmt weder Zauberer noch Zwerge noch irgendwelche angeblich gefährlichen Fantasywesen besonders ernst. Spielerisch merkt man deutlich, dass Adventure Soft sich an LucasArts orientiert hat. Die Verbsteuerung erinnert stark an Monkey Island und auch der Humor bewegt sich häufig in eine ähnliche Richtung. Trotzdem besitzt Simon genug eigene Persönlichkeit, um nicht einfach wie eine Kopie zu wirken. Besonders stark ist die Grafik. Die handgezeichneten Hintergründe gehören zu den schönsten, die man auf dem Amiga in einem klassischen Adventure findet. Wälder, Dörfer, Höhlen und andere Schauplätze wirken farbenfroh und voller kleiner Details. Die AGA-Version legt mit ihrer größeren Farbpalette noch einmal sichtbar nach. Weniger elegant sind einige Rätsel. Manche Lösungen sind logisch und befriedigend, andere gehören eindeutig zur berühmten Kategorie Adventure-Logik. Wenn man irgendwann beginnt, jeden Gegenstand mit jedem anderen Gegenstand zu kombinieren, ist das deshalb nicht unbedingt ein Zeichen persönlicher Verzweiflung, sondern möglicherweise genau die vorgesehene Spielmechanik. Hinzu kommen gelegentliche Pixel-Suchaktionen und längere Laufwege. Trotzdem funktioniert Simon the Sorcerer hervorragend. Die Mischung aus wunderschöner Grafik, britischem Humor, umfangreicher Spielwelt und klassischen Point-and-Click-Rätseln sorgt dafür, dass man immer wissen möchte, welche merkwürdige Figur hinter dem nächsten Bildschirm wartet. Besonders auf dem Amiga gehört Simon deshalb zu den Adventures, die zeigen, dass LucasArts und Sierra nicht die einzigen Studios waren, die Anfang der 1990er Jahre hervorragende Grafikadventures produzieren konnten.`,
+        trivia: [
+                  "Simon the Sorcerer wurde von Simon Woodroffe entworfen. Alan Bridgman und Mike Woodroffe programmierten das Spiel, während Paul Drummond als Lead Artist und ausdrücklich auch als Cover Illustrator geführt wird.",
+                  "Neben der normalen Amiga-Version erschien eine AGA-Fassung mit 256-Farben-Grafik. Die spätere CD32-Version ergänzte vollständige englische Sprachausgabe mit Chris Barrie als Stimme von Simon.",
+                  "Der Humor parodiert zahlreiche bekannte Fantasy-Motive und Adventure-Konventionen. Simons sarkastische Persönlichkeit wurde anschließend zu einem der wichtigsten Markenzeichen der gesamten Serie."
+        ],
+        worthPlaying: `Simon the Sorcerer ist auch heute noch eines der charakteristischsten Point-and-Click-Adventures auf dem Amiga. Die handgezeichnete Grafik, der britische Humor und Simons herrlich respektlose Persönlichkeit haben wenig von ihrem Charme verloren. Einige Rätsel und längere Laufwege zeigen deutlich das Alter des Spiels, doch wer klassische Adventures wie Monkey Island, Discworld oder Beneath a Steel Sky mag, sollte Simons erstes Abenteuer weiterhin ausprobieren. Für eine Amiga-Sammlung gehört es zu den wichtigen Vertretern des Genres.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/495/simon-the-sorcerer/",
+        wikipedia: "https://de.wikipedia.org/wiki/Simon_the_Sorcerer",
+        gog: "https://www.gog.com/en/game/simon_the_sorcerer"
+        },
+        boxArtists: [
+        "Paul Drummond"
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 182,
+        height: 230,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Sir Fred: The Legend ist ein seitlich scrollendes Actionspiel von Incal Product und Ubi Soft. Der Ritter Fred wurde vom bösen Zwergenzauberer Ultimor mit einem Fluch belegt und auf Zwergengröße geschrumpft. Um seine ursprüngliche Gestalt und die Zuneigung seiner Angebeteten zurückzugewinnen, muss er sich durch Wälder, Höhlen, Friedhöfe und eine Burg kämpfen. Mit Schwert und Wurfmessern tritt Fred gegen Zwerge, Monster und andere Fantasygegner an, sucht Schlüssel und Tränke und versucht schließlich, Ultimor zu besiegen.",
+                "history": "Sir Fred: The Legend wurde vom französischen Entwickler Incal Product entwickelt und von Ubi Soft veröffentlicht. Das Spiel erschien zunächst für den Atari ST und wurde anschließend für den Amiga umgesetzt. MobyGames datiert die Amiga-Fassung auf 1990, während einige Amiga-Datenbanken 1989 nennen. Die ersten dokumentierten Amiga-Magazintests stammen aus dem Frühjahr 1990. Philippe Villain und Tuan Do Cao werden als Programmierer geführt, Jean-Marc Torroella und Jérôme Guerry zeichneten für das Design verantwortlich. Das Szenario stammt von Eric Girod und Charles Callet komponierte die Musik. Jean-Pierre Ferté gestaltete die Box-Art. Die Handlung beginnt mit einem für einen Fantasyhelden ausgesprochen unangenehmen Problem. Sir Fred ist ein stattlicher Ritter und in eine wunderschöne junge Frau verliebt. Der zwergenhafte Zauberer Ultimor ist davon wenig begeistert und verwandelt Fred kurzerhand in einen kleinen, wenig eindrucksvollen Zwerg. Seine Angebetete reagiert auf die körperliche Veränderung nicht gerade mit bedingungsloser Treue und verlässt ihn. Fred beschließt deshalb, Ultimor aufzuspüren, den Fluch zu brechen und seine ursprüngliche Gestalt zurückzugewinnen. Spielerisch verbindet Sir Fred Elemente eines seitlich scrollenden Actionspiels mit einem Beat'em-up und einfachen Erkundungsaufgaben. Fred kann laufen, springen, rollen, sein Schwert benutzen und Dolche werfen. Eine Besonderheit ist die Bewegung auf mehreren Tiefenebenen. Gegner müssen sich auf derselben Ebene wie Fred befinden, damit sie mit dem Schwert getroffen werden können. Fliegende oder schwer erreichbare Gegner lassen sich dagegen mit den begrenzt verfügbaren Wurfmessern bekämpfen. Die Spielwelt besteht aus mehreren thematisch unterschiedlichen Gebieten wie Wald, Zwergenhöhlen und Burg. Innerhalb dieser Abschnitte müssen Schlüssel gefunden werden, um den Weg zum nächsten Bereich zu öffnen. Äpfel stellen verlorene Energie wieder her, während verschiedene Zaubertränke zusätzliche Vorteile bieten können. Gelegentlich auftauchende magische Sterne beseitigen alle sichtbaren Gegner. Stirbt Fred, muss nicht zwangsläufig das gesamte Abenteuer von vorne begonnen werden; stattdessen startet der Spieler am Anfang des aktuellen Teilbereichs. Besonders auffällig waren zur Veröffentlichung die großen Figuren und ihre humorvollen Animationen. Fred stolpert, rollt über den Boden und reagiert sichtbar auf Zusammenstöße. Zusammen mit der farbenfrohen Fantasygrafik verlieh dies dem Spiel einen deutlich cartoonartigen Charakter. Die zeitgenössischen Kritiken lobten deshalb häufig Grafik und Präsentation, während Steuerung und spielerische Tiefe deutlich unterschiedlicher beurteilt wurden.",
+                "review": "Sir Fred: The Legend beginnt mit einer wichtigen Lektion fürs Leben: Wenn ein eifersüchtiger Zwergenzauberer in der Nähe ist, sollte man mit dem eigenen guten Aussehen vielleicht nicht ganz so offensiv umgehen. Ultimor schrumpft unseren Helden kurzerhand auf handliches Format und schon ist nicht nur Freds Körpergröße verschwunden, sondern erstaunlicherweise auch das Interesse seiner Angebeteten. Also bleibt nur der klassische Weg: Schwert einpacken, ein paar Messer mitnehmen und den verantwortlichen Zauberer suchen. Optisch macht Sir Fred dabei einen wirklich guten Eindruck. Die Figuren sind groß, detailliert und für die damalige Zeit erstaunlich lebendig animiert. Besonders Fred selbst hat zahlreiche kleine Bewegungen und Reaktionen, die dem Spiel einen sympathischen Cartooncharakter geben. Auch Wälder, Höhlen und andere Schauplätze sind hübsch gestaltet. Spielerisch sieht es etwas gemischter aus. Interessant ist zunächst die Bewegung auf mehreren Ebenen. Man kann nach vorne und hinten ausweichen und muss sich für Nahkampfangriffe auf derselben Ebene wie der Gegner befinden. Das klingt nach zusätzlicher taktischer Tiefe, führt in der Praxis aber gelegentlich dazu, dass Fred und sein Gegner wild aneinander vorbeischlagen, obwohl beide offensichtlich derselben Meinung sind, dass der andere dringend ein Schwert ins Gesicht bekommen sollte. Die Steuerung benötigt deshalb Eingewöhnung. Neben dem Schwert besitzt Fred Wurfmesser, die vor allem gegen fliegende Gegner nützlich sind. Schlüssel, Tränke und andere Gegenstände sorgen zusätzlich dafür, dass man nicht einfach nur von links nach rechts marschiert. Trotzdem bleibt der eigentliche Spielablauf relativ simpel und wiederholt sich recht schnell. Genau das spiegeln auch die damaligen Tests wider. Grafik und Animation wurden häufig gelobt, beim Gameplay gingen die Meinungen stärker auseinander. Sir Fred ist deshalb kein vergessener Amiga-Klassiker, den jeder unbedingt gespielt haben muss. Es ist aber ein charmantes, technisch hübsches Actionspiel mit eigenständiger Atmosphäre und genügend ungewöhnlichen Ideen, um zumindest einen genaueren Blick zu verdienen. Und schließlich bekommt man nicht jeden Tag die Gelegenheit, einen Ritter zu spielen, dessen größtes Problem zunächst darin besteht, plötzlich ungefähr auf Augenhöhe mit seinen eigenen Kniescheiben zu sein.",
+                "trivia": [
+                    "Sir Fred: The Legend ist nicht identisch mit dem spanischen Spiel Sir Fred von Made in Spain aus dem Jahr 1986. Die Ubi-Soft-Produktion wurde von Incal Product entwickelt und wird in manchen Datenbanken lediglich als Fred geführt.",
+                    "Philippe Villain und Tuan Do Cao werden als Programmierer genannt, Jean-Marc Torroella und Jérôme Guerry als Designer. Das Szenario stammt von Eric Girod und Charles Callet komponierte die Musik.",
+                    "Jean-Pierre Ferté wird für die Amiga-Veröffentlichung ausdrücklich mit der Box-Art in Verbindung gebracht. Die großen Figuren und cartoonartigen Animationen gehörten zu den von zeitgenössischen Tests besonders hervorgehobenen Eigenschaften des Spiels."
+                ],
+                "worthPlaying": "Sir Fred: The Legend ist heute vor allem wegen seiner hübschen Amiga-Grafik, der großen animierten Figuren und seiner ungewöhnlichen Mischung aus Beat'em-up und seitlich scrollendem Actionspiel interessant. Steuerung und Kampfsystem wirken teilweise schwerfällig und die spielerische Abwechslung ist begrenzt, doch die humorvolle Präsentation verleiht dem Spiel einen eigenen Charakter. Für Sammler und Freunde weniger bekannter Ubi-Soft-Titel aus der frühen Amiga-Zeit ist Sir Fred deshalb durchaus einen Blick wert.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Sir Fred: The Legend is a side-scrolling action game developed by Incal Product and published by Ubi Soft. Knight Sir Fred has been cursed by the evil dwarf sorcerer Ultimor and reduced to dwarf size. To restore his original form and win back his beloved, Fred must fight through forests, caves, cemeteries and a castle, using his sword and throwing knives against dwarves, monsters and other fantasy enemies.",
+                "history": "Sir Fred: The Legend was developed by French studio Incal Product and published by Ubi Soft. The game appeared on the Atari ST before being released for the Amiga. MobyGames dates the Amiga version to 1990, while several Amiga databases list 1989; documented Amiga magazine reviews begin in early 1990. Philippe Villain and Tuan Do Cao are credited with programming, Jean-Marc Torroella and Jérôme Guerry with design, Eric Girod with the scenario and Charles Callet with sound. Jean-Pierre Ferté is credited for the box artwork. The story follows Sir Fred, a handsome knight cursed by the jealous dwarf sorcerer Ultimor and reduced to dwarf size. Fred sets out to defeat Ultimor, break the spell and restore his former appearance. Gameplay combines side-scrolling action with beat-'em-up elements and simple exploration. Fred can walk, jump, roll, fight with a sword and throw a limited supply of daggers. An unusual feature allows movement between several depth planes, requiring Fred to line up with enemies before attacking them in close combat. The adventure passes through several themed areas including forests, dwarf caves and a castle. Keys are required to progress, apples restore energy and magical potions provide additional effects. The game was particularly noted for its large characters and humorous cartoon-like animation, although contemporary reviews were more divided about its controls and long-term gameplay.",
+                "review": "Sir Fred: The Legend makes an immediate impression with its large, colourful characters and unusually expressive animation. Fred rolls, stumbles and reacts to impacts in a way that gives the game a strong cartoon personality. The environments are attractive as well, making presentation one of the game's strongest features. Gameplay is more uneven. Moving between several depth planes sounds tactically interesting, but lining Fred up with enemies can make combat feel awkward. Throwing knives provide a useful ranged option, while keys, potions and other objects add some exploration beyond straightforward fighting. Even so, the basic action becomes repetitive relatively quickly. Contemporary reviews reflected this divide, frequently praising the graphics and animation while being less enthusiastic about the controls and depth. Sir Fred is therefore not an essential Amiga action classic, but its distinctive presentation, unusual movement system and light-hearted fantasy atmosphere make it an interesting example of early Ubi Soft output on the platform.",
+                "trivia": [
+                    "Sir Fred: The Legend is a different game from the 1986 Spanish title Sir Fred by Made in Spain. Ubi Soft's game was developed by Incal Product and is also catalogued simply as Fred.",
+                    "Philippe Villain and Tuan Do Cao are credited as programmers, with Jean-Marc Torroella and Jérôme Guerry responsible for design, Eric Girod for the scenario and Charles Callet for sound.",
+                    "Jean-Pierre Ferté is credited with the box artwork. The game's large characters and cartoon-like animations were among the elements most frequently praised by contemporary reviewers."
+                ],
+                "worthPlaying": "Sir Fred: The Legend remains interesting for its attractive Amiga graphics, large animated characters and unusual combination of beat-'em-up and side-scrolling action. The controls and combat can feel cumbersome and the gameplay lacks variety, but its humorous presentation gives it a distinctive identity. It is particularly worth exploring for collectors and enthusiasts interested in lesser-known early Ubi Soft releases."
+            }
+        },
+        id: 220,
+        folder: "sir_fred_the_legend",
+        scanBy: "Magisthan",
+        page: "sir_fred_the_legend.html",
+        featured: false,
+        title: "Sir Fred: The Legend",
+        system: "Amiga",
+        year: 1990,
+        publisher: "Ubi Soft Entertainment Software",
+        developer: "Incal Product",
+        genre: ["Action", "Beat'em Up", "Fantasy"],
+        description: "Sir Fred: The Legend ist ein seitlich scrollendes Actionspiel von Incal Product und Ubi Soft. Der Ritter Fred wurde vom bösen Zwergenzauberer Ultimor mit einem Fluch belegt und auf Zwergengröße geschrumpft. Um seine ursprüngliche Gestalt und die Zuneigung seiner Angebeteten zurückzugewinnen, muss er sich durch Wälder, Höhlen, Friedhöfe und eine Burg kämpfen. Mit Schwert und Wurfmessern tritt Fred gegen Zwerge, Monster und andere Fantasygegner an, sucht Schlüssel und Tränke und versucht schließlich, Ultimor zu besiegen.",
+        history: `Sir Fred: The Legend wurde vom französischen Entwickler Incal Product entwickelt und von Ubi Soft veröffentlicht. Das Spiel erschien zunächst für den Atari ST und wurde anschließend für den Amiga umgesetzt. MobyGames datiert die Amiga-Fassung auf 1990, während einige Amiga-Datenbanken 1989 nennen. Die ersten dokumentierten Amiga-Magazintests stammen aus dem Frühjahr 1990. Philippe Villain und Tuan Do Cao werden als Programmierer geführt, Jean-Marc Torroella und Jérôme Guerry zeichneten für das Design verantwortlich. Das Szenario stammt von Eric Girod und Charles Callet komponierte die Musik. Jean-Pierre Ferté gestaltete die Box-Art. Die Handlung beginnt mit einem für einen Fantasyhelden ausgesprochen unangenehmen Problem. Sir Fred ist ein stattlicher Ritter und in eine wunderschöne junge Frau verliebt. Der zwergenhafte Zauberer Ultimor ist davon wenig begeistert und verwandelt Fred kurzerhand in einen kleinen, wenig eindrucksvollen Zwerg. Seine Angebetete reagiert auf die körperliche Veränderung nicht gerade mit bedingungsloser Treue und verlässt ihn. Fred beschließt deshalb, Ultimor aufzuspüren, den Fluch zu brechen und seine ursprüngliche Gestalt zurückzugewinnen. Spielerisch verbindet Sir Fred Elemente eines seitlich scrollenden Actionspiels mit einem Beat'em-up und einfachen Erkundungsaufgaben. Fred kann laufen, springen, rollen, sein Schwert benutzen und Dolche werfen. Eine Besonderheit ist die Bewegung auf mehreren Tiefenebenen. Gegner müssen sich auf derselben Ebene wie Fred befinden, damit sie mit dem Schwert getroffen werden können. Fliegende oder schwer erreichbare Gegner lassen sich dagegen mit den begrenzt verfügbaren Wurfmessern bekämpfen. Die Spielwelt besteht aus mehreren thematisch unterschiedlichen Gebieten wie Wald, Zwergenhöhlen und Burg. Innerhalb dieser Abschnitte müssen Schlüssel gefunden werden, um den Weg zum nächsten Bereich zu öffnen. Äpfel stellen verlorene Energie wieder her, während verschiedene Zaubertränke zusätzliche Vorteile bieten können. Gelegentlich auftauchende magische Sterne beseitigen alle sichtbaren Gegner. Stirbt Fred, muss nicht zwangsläufig das gesamte Abenteuer von vorne begonnen werden; stattdessen startet der Spieler am Anfang des aktuellen Teilbereichs. Besonders auffällig waren zur Veröffentlichung die großen Figuren und ihre humorvollen Animationen. Fred stolpert, rollt über den Boden und reagiert sichtbar auf Zusammenstöße. Zusammen mit der farbenfrohen Fantasygrafik verlieh dies dem Spiel einen deutlich cartoonartigen Charakter. Die zeitgenössischen Kritiken lobten deshalb häufig Grafik und Präsentation, während Steuerung und spielerische Tiefe deutlich unterschiedlicher beurteilt wurden.`,
+        review: `Sir Fred: The Legend beginnt mit einer wichtigen Lektion fürs Leben: Wenn ein eifersüchtiger Zwergenzauberer in der Nähe ist, sollte man mit dem eigenen guten Aussehen vielleicht nicht ganz so offensiv umgehen. Ultimor schrumpft unseren Helden kurzerhand auf handliches Format und schon ist nicht nur Freds Körpergröße verschwunden, sondern erstaunlicherweise auch das Interesse seiner Angebeteten. Also bleibt nur der klassische Weg: Schwert einpacken, ein paar Messer mitnehmen und den verantwortlichen Zauberer suchen. Optisch macht Sir Fred dabei einen wirklich guten Eindruck. Die Figuren sind groß, detailliert und für die damalige Zeit erstaunlich lebendig animiert. Besonders Fred selbst hat zahlreiche kleine Bewegungen und Reaktionen, die dem Spiel einen sympathischen Cartooncharakter geben. Auch Wälder, Höhlen und andere Schauplätze sind hübsch gestaltet. Spielerisch sieht es etwas gemischter aus. Interessant ist zunächst die Bewegung auf mehreren Ebenen. Man kann nach vorne und hinten ausweichen und muss sich für Nahkampfangriffe auf derselben Ebene wie der Gegner befinden. Das klingt nach zusätzlicher taktischer Tiefe, führt in der Praxis aber gelegentlich dazu, dass Fred und sein Gegner wild aneinander vorbeischlagen, obwohl beide offensichtlich derselben Meinung sind, dass der andere dringend ein Schwert ins Gesicht bekommen sollte. Die Steuerung benötigt deshalb Eingewöhnung. Neben dem Schwert besitzt Fred Wurfmesser, die vor allem gegen fliegende Gegner nützlich sind. Schlüssel, Tränke und andere Gegenstände sorgen zusätzlich dafür, dass man nicht einfach nur von links nach rechts marschiert. Trotzdem bleibt der eigentliche Spielablauf relativ simpel und wiederholt sich recht schnell. Genau das spiegeln auch die damaligen Tests wider. Grafik und Animation wurden häufig gelobt, beim Gameplay gingen die Meinungen stärker auseinander. Sir Fred ist deshalb kein vergessener Amiga-Klassiker, den jeder unbedingt gespielt haben muss. Es ist aber ein charmantes, technisch hübsches Actionspiel mit eigenständiger Atmosphäre und genügend ungewöhnlichen Ideen, um zumindest einen genaueren Blick zu verdienen. Und schließlich bekommt man nicht jeden Tag die Gelegenheit, einen Ritter zu spielen, dessen größtes Problem zunächst darin besteht, plötzlich ungefähr auf Augenhöhe mit seinen eigenen Kniescheiben zu sein.`,
+        trivia: [
+                  "Sir Fred: The Legend ist nicht identisch mit dem spanischen Spiel Sir Fred von Made in Spain aus dem Jahr 1986. Die Ubi-Soft-Produktion wurde von Incal Product entwickelt und wird in manchen Datenbanken lediglich als Fred geführt.",
+                  "Philippe Villain und Tuan Do Cao werden als Programmierer genannt, Jean-Marc Torroella und Jérôme Guerry als Designer. Das Szenario stammt von Eric Girod und Charles Callet komponierte die Musik.",
+                  "Jean-Pierre Ferté wird für die Amiga-Veröffentlichung ausdrücklich mit der Box-Art in Verbindung gebracht. Die großen Figuren und cartoonartigen Animationen gehörten zu den von zeitgenössischen Tests besonders hervorgehobenen Eigenschaften des Spiels."
+        ],
+        worthPlaying: `Sir Fred: The Legend ist heute vor allem wegen seiner hübschen Amiga-Grafik, der großen animierten Figuren und seiner ungewöhnlichen Mischung aus Beat'em-up und seitlich scrollendem Actionspiel interessant. Steuerung und Kampfsystem wirken teilweise schwerfällig und die spielerische Abwechslung ist begrenzt, doch die humorvolle Präsentation verleiht dem Spiel einen eigenen Charakter. Für Sammler und Freunde weniger bekannter Ubi-Soft-Titel aus der frühen Amiga-Zeit ist Sir Fred deshalb durchaus einen Blick wert.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/36166/fred/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        "Jean-Pierre Ferté"
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 150,
+        height: 185,
+        depth: 35
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Space Ace ist ReadySofts Amiga-Umsetzung des berühmten interaktiven Laserdisc-Zeichentrickspiels von Don Bluth. Der Weltraumheld Ace wird von Commander Borf mit dem Infanto-Ray getroffen und in sein jugendliches Alter Ego Dexter verwandelt. Nun muss er seine Freundin Kimberly retten, Borf besiegen und dessen Plan zur Unterwerfung der Erde verhindern. Statt klassischer Action verlangt das Spiel vor allem schnelle Reaktionen: In den animierten Szenen müssen im richtigen Augenblick die passenden Joystickrichtungen oder der Feuerknopf betätigt werden.",
+                "history": "Space Ace entstand ursprünglich als aufwendiges Laserdisc-Arcadespiel und wurde vom Team um den ehemaligen Disney-Animator Don Bluth produziert. Nach Dragon's Lair sollte auch Space Ace die Möglichkeiten hochwertiger Zeichentrickanimation mit einem interaktiven Spiel verbinden. Der Spieler steuert den Weltraumhelden Ace, der vom Bösewicht Commander Borf mit dem sogenannten Infanto-Ray getroffen und dadurch in den deutlich jüngeren Dexter verwandelt wird. Im Arcade-Original konnten Spieler an bestimmten Stellen zwischen Dexter und seiner erwachsenen Ace-Form wechseln und je nach gewähltem Schwierigkeitsgrad unterschiedliche Szenen und Wege erleben. Für die 1989 veröffentlichte Amiga-Version übernahm das kanadische Unternehmen ReadySoft die schwierige Aufgabe, das Laserdisc-Konzept auf einen Heimcomputer mit Diskettenlaufwerk zu übertragen. ReadySoft entwickelte und veröffentlichte die Umsetzung; in Großbritannien übernahm Empire Software den Vertrieb. David Foster und Simon Douglas werden als Programmierer geführt. Foster war zusammen mit Jorge Freitas außerdem für Musik und Sound verantwortlich. Das Grafikteam bestand aus mehreren Künstlern, darunter Jorge Freitas, Adam Wolk, David DiMatteo, Hugh MacLeod, Joanne Ashdown, Laurie Williams, Michael Griffith, Murray Foster, Peter Bayes und Sue McComb. Da ein Amiga mit Diskettenlaufwerk unmöglich die vollständigen Videodaten des Laserdisc-Automaten speichern konnte, wurden ausgewählte Szenen des Originals für die Heimcomputerfassung neu gezeichnet und stark reduziert. Die Amiga-Ausgabe benötigt vier Disketten. Spielerisch blieb ReadySoft dem Grundprinzip des Automaten treu. Die Zeichentricksequenzen laufen weitgehend automatisch ab und der Spieler muss an bestimmten Stellen innerhalb eines kurzen Zeitfensters die richtige Richtung wählen oder den Feuerknopf drücken. Eine falsche Entscheidung führt häufig unmittelbar zu einer der zahlreichen Todesanimationen. Gegenüber dem Arcade-Original gingen allerdings zahlreiche Szenen und Funktionen verloren. Die freie Entscheidung, Dexter während bestimmter Situationen wieder in Space Ace zu verwandeln, fehlt beispielsweise in der Heimcomputerfassung. Auch mehrere bekannte Sequenzen des Automaten konnten aufgrund der begrenzten Speicherkapazität nicht übernommen werden. Technisch war Space Ace dennoch eine bemerkenswerte Demonstration dessen, was sich Ende der 1980er Jahre aus einem Amiga herausholen ließ. Große, farbenprächtige Zeichentrickfiguren und flüssige Animationen wirkten spektakulär, wurden allerdings durch häufige Diskettenzugriffe und einen stark eingeschränkten spielerischen Umfang erkauft.",
+                "review": "Space Ace ist eines dieser Spiele, bei denen man 1989 vermutlich zuerst fünf Minuten mit offenem Mund vor dem Amiga saß und erst danach die entscheidende Frage stellte: Moment einmal, was darf ich hier eigentlich selbst machen? Optisch war das Ganze zweifellos beeindruckend. Große Zeichentrickfiguren, richtige Animationen und Don Bluths unverwechselbarer Stil sahen auf einem Heimcomputer spektakulär aus. Wenn man damals Freunden demonstrieren wollte, warum der Amiga etwas Besonderes war, eignete sich Space Ace hervorragend. Schwieriger wird es beim eigentlichen Spiel. Im Grunde schaut man eine kurze Animationssequenz und muss im richtigen Moment links, rechts, hoch, runter oder Feuer drücken. Liegt man daneben, stirbt Dexter und man darf sich eine weitere hübsch animierte Katastrophe ansehen. Das ist anfangs unterhaltsam, verwandelt sich aber schnell in Auswendiglernen. Besonders problematisch ist die Umsetzung auf vier Disketten. Wer die richtige Aktion noch nicht kennt, sieht häufig eine Szene, stirbt, wartet auf den nächsten Diskettenzugriff und versucht es erneut. Irgendwann kennt man dadurch nicht nur die Lösung des Spiels, sondern vermutlich auch jedes Geräusch des Amiga-Diskettenlaufwerks persönlich. Hinzu kommt, dass ReadySoft zahlreiche Szenen des Arcade-Originals streichen musste. Auch die interessante Möglichkeit, Dexter an bestimmten Stellen wieder in Space Ace zu verwandeln, fehlt. Dadurch wird aus dem ohnehin schon eingeschränkten Laserdisc-Spiel eine noch stärker verkürzte Version. Genau deshalb gingen die damaligen Wertungen extrem auseinander. Einige Magazine waren von Grafik und technischer Leistung begeistert, andere kritisierten den geringen spielerischen Gehalt massiv. Beides ist nachvollziehbar. Als technische Demonstration ist Space Ace faszinierend. Als klassisches Computerspiel ist es deutlich schwieriger zu empfehlen. Heute ist die Amiga-Version deshalb vor allem als technisches und historisches Kuriosum interessant: der ziemlich verrückte Versuch, ein auf riesigen Laserdisc-Datenmengen basierendes Zeichentrickspiel auf vier Amiga-Disketten zu quetschen.",
+                "trivia": [
+                    "Die Amiga-Version von Space Ace erschien 1989 bei ReadySoft auf vier Disketten. David Foster und Simon Douglas werden als Programmierer geführt; Foster und Jorge Freitas waren außerdem für Musik und Sound verantwortlich.",
+                    "Das ursprüngliche Space Ace wurde vom Team um Don Bluth als Laserdisc-Arcadespiel entwickelt. Die Heimcomputerfassung verwendet nur ausgewählte Szenen, die für die technischen Möglichkeiten der Rechner neu gezeichnet wurden.",
+                    "Im Gegensatz zum Arcade-Original kann der Spieler in der ReadySoft-Version nicht selbst entscheiden, Dexter in bestimmten Situationen wieder in Space Ace zu verwandeln. Auch mehrere komplette Sequenzen des Automaten fehlen."
+                ],
+                "worthPlaying": "Space Ace ist heute weniger wegen spielerischer Tiefe als wegen seiner technischen und historischen Bedeutung interessant. ReadySoft gelang es, einen Teil von Don Bluths aufwendigem Laserdisc-Zeichentrick auf einen Amiga mit vier Disketten zu übertragen. Die Animationen sind weiterhin sehenswert, während das auf Reaktion und Auswendiglernen basierende Gameplay sowie häufige Ladepausen deutlich gealtert sind. Für Amiga-Sammler und Freunde ungewöhnlicher technischer Experimente ist diese Umsetzung dennoch faszinierend.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Space Ace is ReadySoft's Amiga adaptation of Don Bluth's famous interactive LaserDisc cartoon. Space hero Ace is struck by Commander Borf's Infanto-Ray and transformed into his teenage alter ego Dexter. He must rescue Kimberly, defeat Borf and prevent the destruction of Earth. Rather than conventional action, gameplay relies on reacting to animated sequences by entering the correct direction or pressing the fire button at precisely the right moment.",
+                "history": "Space Ace originated as an elaborate LaserDisc arcade game produced by the team led by former Disney animator Don Bluth. Following Dragon's Lair, it combined high-quality traditional animation with timed player input. The villain Commander Borf transforms hero Ace into the younger Dexter using his Infanto-Ray, forcing Dexter to rescue Kimberly and stop Borf's plans. The original arcade game included selectable difficulty levels, alternate sequences and opportunities to transform Dexter temporarily back into Ace. ReadySoft undertook the difficult task of adapting this concept to home computers in 1989. The company both developed and published the Amiga conversion, with Empire Software distributing it in the United Kingdom. David Foster and Simon Douglas are credited as programmers, while Foster and Jorge Freitas handled audio. A large graphics team recreated selected scenes from the original animation for the much more limited storage capacity of contemporary computers. The Amiga edition was distributed on four floppy disks. Gameplay retains the timed-input structure of the arcade game: animated sequences play automatically until the player must quickly choose a direction or press fire. Incorrect input usually results in one of the many death sequences. Considerable compromises were necessary. Many arcade scenes are absent and the original mechanic allowing players to choose when Dexter transforms into Ace was removed. Despite these limitations, the conversion was a striking technical showcase for the Amiga, presenting large cartoon characters and elaborate animation at the cost of frequent disk access and limited interaction.",
+                "review": "Space Ace was the kind of game that could make an Amiga owner stare at the screen in amazement before eventually asking how much actual playing was involved. Visually, the conversion was remarkable for 1989. Large cartoon characters and elaborate animation made it an impressive demonstration of the machine. The gameplay is considerably more limited. Players watch short animated sequences and must enter the correct direction or press fire at exactly the right moment. Failure produces another animated death and another attempt, turning much of the experience into memorisation. The four-disk format compounds the problem because repeated failures also mean repeated loading. ReadySoft additionally had to remove many scenes from the arcade original, including its more flexible transformation mechanic. Contemporary reviews therefore varied dramatically: some praised the visual achievement while others criticised the lack of substantial interaction. Both perspectives are understandable. As a technical demonstration, the Amiga version is fascinating; as a conventional game, it is far less convincing. Today its greatest appeal is historical, representing an ambitious attempt to compress part of an elaborate LaserDisc cartoon experience onto four Amiga floppy disks.",
+                "trivia": [
+                    "The Amiga version was released by ReadySoft in 1989 on four floppy disks. David Foster and Simon Douglas are credited as programmers, with Foster and Jorge Freitas also handling audio.",
+                    "The original Space Ace was a LaserDisc arcade production created by Don Bluth's animation team. ReadySoft recreated selected scenes for the technical limitations of home computers.",
+                    "Unlike the arcade version, ReadySoft's conversion does not allow players to choose when Dexter transforms back into Space Ace, and several complete arcade sequences are absent."
+                ],
+                "worthPlaying": "Space Ace is now more interesting for its technical and historical significance than for deep gameplay. ReadySoft managed to recreate part of Don Bluth's elaborate LaserDisc animation on an Amiga using only four floppy disks. The animation remains impressive, while the reaction-based gameplay, memorisation and frequent loading have aged considerably. For Amiga collectors and enthusiasts of unusual technical achievements, however, it remains fascinating."
+            }
+        },
+        id: 221,
+        folder: "space_ace",
+        scanBy: "Magisthan",
+        page: "space_ace.html",
+        featured: false,
+        title: "Space Ace",
+        system: "Amiga",
+        year: 1989,
+        publisher: "ReadySoft Incorporated",
+        developer: "ReadySoft Incorporated",
+        genre: ["Action", "Interactive Movie", "Science-Fiction"],
+        description: "Space Ace ist ReadySofts Amiga-Umsetzung des berühmten interaktiven Laserdisc-Zeichentrickspiels von Don Bluth. Der Weltraumheld Ace wird von Commander Borf mit dem Infanto-Ray getroffen und in sein jugendliches Alter Ego Dexter verwandelt. Nun muss er seine Freundin Kimberly retten, Borf besiegen und dessen Plan zur Unterwerfung der Erde verhindern. Statt klassischer Action verlangt das Spiel vor allem schnelle Reaktionen: In den animierten Szenen müssen im richtigen Augenblick die passenden Joystickrichtungen oder der Feuerknopf betätigt werden.",
+        history: `Space Ace entstand ursprünglich als aufwendiges Laserdisc-Arcadespiel und wurde vom Team um den ehemaligen Disney-Animator Don Bluth produziert. Nach Dragon's Lair sollte auch Space Ace die Möglichkeiten hochwertiger Zeichentrickanimation mit einem interaktiven Spiel verbinden. Der Spieler steuert den Weltraumhelden Ace, der vom Bösewicht Commander Borf mit dem sogenannten Infanto-Ray getroffen und dadurch in den deutlich jüngeren Dexter verwandelt wird. Im Arcade-Original konnten Spieler an bestimmten Stellen zwischen Dexter und seiner erwachsenen Ace-Form wechseln und je nach gewähltem Schwierigkeitsgrad unterschiedliche Szenen und Wege erleben. Für die 1989 veröffentlichte Amiga-Version übernahm das kanadische Unternehmen ReadySoft die schwierige Aufgabe, das Laserdisc-Konzept auf einen Heimcomputer mit Diskettenlaufwerk zu übertragen. ReadySoft entwickelte und veröffentlichte die Umsetzung; in Großbritannien übernahm Empire Software den Vertrieb. David Foster und Simon Douglas werden als Programmierer geführt. Foster war zusammen mit Jorge Freitas außerdem für Musik und Sound verantwortlich. Das Grafikteam bestand aus mehreren Künstlern, darunter Jorge Freitas, Adam Wolk, David DiMatteo, Hugh MacLeod, Joanne Ashdown, Laurie Williams, Michael Griffith, Murray Foster, Peter Bayes und Sue McComb. Da ein Amiga mit Diskettenlaufwerk unmöglich die vollständigen Videodaten des Laserdisc-Automaten speichern konnte, wurden ausgewählte Szenen des Originals für die Heimcomputerfassung neu gezeichnet und stark reduziert. Die Amiga-Ausgabe benötigt vier Disketten. Spielerisch blieb ReadySoft dem Grundprinzip des Automaten treu. Die Zeichentricksequenzen laufen weitgehend automatisch ab und der Spieler muss an bestimmten Stellen innerhalb eines kurzen Zeitfensters die richtige Richtung wählen oder den Feuerknopf drücken. Eine falsche Entscheidung führt häufig unmittelbar zu einer der zahlreichen Todesanimationen. Gegenüber dem Arcade-Original gingen allerdings zahlreiche Szenen und Funktionen verloren. Die freie Entscheidung, Dexter während bestimmter Situationen wieder in Space Ace zu verwandeln, fehlt beispielsweise in der Heimcomputerfassung. Auch mehrere bekannte Sequenzen des Automaten konnten aufgrund der begrenzten Speicherkapazität nicht übernommen werden. Technisch war Space Ace dennoch eine bemerkenswerte Demonstration dessen, was sich Ende der 1980er Jahre aus einem Amiga herausholen ließ. Große, farbenprächtige Zeichentrickfiguren und flüssige Animationen wirkten spektakulär, wurden allerdings durch häufige Diskettenzugriffe und einen stark eingeschränkten spielerischen Umfang erkauft.`,
+        review: `Space Ace ist eines dieser Spiele, bei denen man 1989 vermutlich zuerst fünf Minuten mit offenem Mund vor dem Amiga saß und erst danach die entscheidende Frage stellte: Moment einmal, was darf ich hier eigentlich selbst machen? Optisch war das Ganze zweifellos beeindruckend. Große Zeichentrickfiguren, richtige Animationen und Don Bluths unverwechselbarer Stil sahen auf einem Heimcomputer spektakulär aus. Wenn man damals Freunden demonstrieren wollte, warum der Amiga etwas Besonderes war, eignete sich Space Ace hervorragend. Schwieriger wird es beim eigentlichen Spiel. Im Grunde schaut man eine kurze Animationssequenz und muss im richtigen Moment links, rechts, hoch, runter oder Feuer drücken. Liegt man daneben, stirbt Dexter und man darf sich eine weitere hübsch animierte Katastrophe ansehen. Das ist anfangs unterhaltsam, verwandelt sich aber schnell in Auswendiglernen. Besonders problematisch ist die Umsetzung auf vier Disketten. Wer die richtige Aktion noch nicht kennt, sieht häufig eine Szene, stirbt, wartet auf den nächsten Diskettenzugriff und versucht es erneut. Irgendwann kennt man dadurch nicht nur die Lösung des Spiels, sondern vermutlich auch jedes Geräusch des Amiga-Diskettenlaufwerks persönlich. Hinzu kommt, dass ReadySoft zahlreiche Szenen des Arcade-Originals streichen musste. Auch die interessante Möglichkeit, Dexter an bestimmten Stellen wieder in Space Ace zu verwandeln, fehlt. Dadurch wird aus dem ohnehin schon eingeschränkten Laserdisc-Spiel eine noch stärker verkürzte Version. Genau deshalb gingen die damaligen Wertungen extrem auseinander. Einige Magazine waren von Grafik und technischer Leistung begeistert, andere kritisierten den geringen spielerischen Gehalt massiv. Beides ist nachvollziehbar. Als technische Demonstration ist Space Ace faszinierend. Als klassisches Computerspiel ist es deutlich schwieriger zu empfehlen. Heute ist die Amiga-Version deshalb vor allem als technisches und historisches Kuriosum interessant: der ziemlich verrückte Versuch, ein auf riesigen Laserdisc-Datenmengen basierendes Zeichentrickspiel auf vier Amiga-Disketten zu quetschen.`,
+        trivia: [
+                  "Die Amiga-Version von Space Ace erschien 1989 bei ReadySoft auf vier Disketten. David Foster und Simon Douglas werden als Programmierer geführt; Foster und Jorge Freitas waren außerdem für Musik und Sound verantwortlich.",
+                  "Das ursprüngliche Space Ace wurde vom Team um Don Bluth als Laserdisc-Arcadespiel entwickelt. Die Heimcomputerfassung verwendet nur ausgewählte Szenen, die für die technischen Möglichkeiten der Rechner neu gezeichnet wurden.",
+                  "Im Gegensatz zum Arcade-Original kann der Spieler in der ReadySoft-Version nicht selbst entscheiden, Dexter in bestimmten Situationen wieder in Space Ace zu verwandeln. Auch mehrere komplette Sequenzen des Automaten fehlen."
+        ],
+        worthPlaying: `Space Ace ist heute weniger wegen spielerischer Tiefe als wegen seiner technischen und historischen Bedeutung interessant. ReadySoft gelang es, einen Teil von Don Bluths aufwendigem Laserdisc-Zeichentrick auf einen Amiga mit vier Disketten zu übertragen. Die Animationen sind weiterhin sehenswert, während das auf Reaktion und Auswendiglernen basierende Gameplay sowie häufige Ladepausen deutlich gealtert sind. Für Amiga-Sammler und Freunde ungewöhnlicher technischer Experimente ist diese Umsetzung dennoch faszinierend.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/54843/space-ace/",
+        wikipedia: "https://en.wikipedia.org/wiki/Space_Ace",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 2,
+        stars: 2,
+        dimensions: {
+        width: 165,
+        height: 218,
+        depth: 27
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Space Quest IV: Roger Wilco and the Time Rippers ist der vierte Teil von Sierras humorvoller Science-Fiction-Adventure-Serie. Weltraumhausmeister und widerwilliger Held Roger Wilco wird von den Schergen seines alten Gegners Sludge Vohaul durch die Zeit gejagt und landet dabei unter anderem in der düsteren Zukunft von Space Quest XII sowie in der Vergangenheit der Serie. Erstmals verzichtet Space Quest auf die Texteingabe der Vorgänger und verwendet Sierras grafische Point-and-Click-Oberfläche.",
+                "history": "Space Quest IV: Roger Wilco and the Time Rippers wurde von Sierra On-Line entwickelt und von Mark Crowe und Scott Murphy, den Two Guys from Andromeda, entworfen. Scott Murphy fungierte außerdem als Lead Programmer, während Mark Crowe für das Art Design verantwortlich war. Guruka Singh Khalsa produzierte das Spiel, Bill Davis war Creative Director und Mark Seibert Music Director. Die ursprüngliche DOS-Version erschien 1991 und markierte technisch einen deutlichen Schritt gegenüber den ersten drei Space-Quest-Abenteuern. Für Space Quest IV setzte Sierra auf seine SCI-Technologie mit einer vollständig grafischen Benutzeroberfläche. Statt Befehle wie in den Vorgängern einzutippen, wählt der Spieler Symbole für Aktionen wie Gehen, Anschauen, Nehmen, Benutzen oder Sprechen aus. Die Geschichte beginnt nach den Ereignissen von Space Quest III. Roger Wilco entspannt sich in einer Bar, als plötzlich bewaffnete Sequel Police auftauchen. Sie arbeiten für Rogers alten Gegner Sludge Vohaul, der in der Zukunft von Space Quest XII die Macht übernommen hat und Roger beseitigen möchte, bevor dieser Vohauls Pläne vereiteln kann. Im letzten Augenblick wird Roger von Widerstandskämpfern gerettet und durch einen Zeittunnel geschickt. Das zentrale Motiv des Spiels sind anschließend Reisen zwischen verschiedenen Teilen der eigenen Serie. Roger besucht nicht nur die dystopische Zukunft von Space Quest XII, sondern landet beispielsweise auch in einer bewusst überarbeiteten Version des ersten Space Quest. Sierra nutzt dieses Konzept für zahlreiche selbstironische Witze über Fortsetzungen, Computerspiele und die eigene Firmengeschichte. Ein besonders bekannter Abschnitt spielt in der Galaxy Galleria, einem futuristischen Einkaufszentrum mit zahlreichen Parodien und versteckten Anspielungen. Technisch war die PC-Version für ihre damalige Zeit aufwendig und verwendete VGA-Grafik mit 256 Farben. Die Amiga-Umsetzung erschien anschließend kommerziell 1992 und musste an die deutlich eingeschränktere Farbpalette der OCS/ECS-Hardware angepasst werden. Sie wurde auf sieben Disketten ausgeliefert, benötigt 1 MB RAM und unterstützt eine Festplatteninstallation. Gerade die technische Umsetzung entwickelte sich allerdings zum größten Schwachpunkt der Amiga-Version. Die reduzierte Grafik wirkte im direkten Vergleich mit dem PC deutlich weniger attraktiv und auf einem normalen Amiga 500 liefen Animationen und Actionszenen teilweise ausgesprochen langsam. Mit Festplatte und beschleunigtem Amiga verbessert sich die Spielbarkeit erheblich. Inhaltlich blieb das eigentliche Adventure jedoch weitgehend erhalten. Space Quest IV wurde damit auf dem Amiga zu einem ungewöhnlichen Fall: Hinter einer technisch problematischen Konvertierung steckt eines der kreativsten und humorvollsten Abenteuer der gesamten Space-Quest-Serie.",
+                "review": "Space Quest IV ist auf dem Amiga ein Spiel, bei dem man eigentlich zwei Wertungen vergeben möchte. Eine für das Adventure und eine für die Person, die beschlossen hat, dass diese Umsetzung in diesem Zustand eine ausgezeichnete Idee wäre. Denn das eigentliche Space Quest IV ist großartig. Roger Wilco stolpert wieder einmal vollkommen unvorbereitet durch eine intergalaktische Katastrophe und schafft es dabei zuverlässig, ungefähr jede Situation noch komplizierter zu machen. Die Idee, durch verschiedene zukünftige und vergangene Space-Quest-Folgen zu reisen, ist herrlich. Besonders schön ist, wie Sierra dabei die eigene Serie parodiert. Man besucht ein zukünftiges Space Quest XII, obwohl es dieses Spiel natürlich überhaupt nicht gibt, reist zurück in ältere Teile und bekommt im Einkaufszentrum Galaxy Galleria eine ganze Ladung Seitenhiebe auf Computerspiele und Popkultur serviert. Auch die neue Maussteuerung funktioniert wesentlich angenehmer als die Texteingabe der Vorgänger. Leider kommt dann die Amiga-Konvertierung ins Spiel. Auf einem normalen Amiga 500 ist Space Quest IV teilweise quälend langsam. Figuren bewegen sich gemächlich über den Bildschirm und ausgerechnet die Actionszenen, in denen schnelles Reagieren gefragt ist, fühlen sich an, als hätte Roger seine Abenteuer plötzlich unter Wasser verlegt. Sieben Disketten sorgen zusätzlich für reichlich Bewegung – allerdings hauptsächlich mit der Hand zwischen Diskettenbox und Laufwerk. Eine Festplatte verbessert die Situation deutlich und ein beschleunigter Amiga macht das Spiel wesentlich angenehmer. Auch grafisch hat die Umsetzung Federn gelassen. Die farbenprächtige PC-Version musste auf die Amiga-Palette reduziert werden und einige Bilder wirken dadurch erstaunlich grau und detailarm. Das ist besonders schade, weil das eigentliche Design hervorragend ist. Dialoge, Situationen und Rätsel gehören zum Besten der Serie. Der Humor funktioniert auch heute noch, sofern man Sierras teilweise sehr amerikanischen Stil mag. Deshalb ist die Amiga-Version ein kleines Paradoxon. Space Quest IV ist ein sehr gutes Adventure in einer ziemlich mäßigen Umsetzung. Wer ausschließlich einen Amiga zur Verfügung hat, bekommt trotzdem ein witziges und kreatives Abenteuer. Wer allerdings zwischen den Versionen wählen kann, hat wenig Grund, ausgerechnet die technisch schwächste zu nehmen. Für eine Amiga-Sammlung ist sie gerade deshalb interessant: Sie zeigt ziemlich eindrucksvoll, dass ein hervorragendes Spiel nicht automatisch eine hervorragende Konvertierung ergibt.",
+                "trivia": [
+                    "Space Quest IV ist der erste Teil der Serie, der die Texteingabe der Vorgänger vollständig durch Sierras grafisches Point-and-Click-System ersetzt. Mark Crowe und Scott Murphy entwickelten das Spiel gemeinsam.",
+                    "Die Amiga-Version wird auf sieben Disketten ausgeliefert, benötigt 1 MB RAM und kann auf Festplatte installiert werden. Zeitgenössische Tests kritisierten besonders die langsame Geschwindigkeit und die gegenüber der PC-Version stark reduzierte Grafik.",
+                    "Die Produktionsmalerei des bekannten Space-Quest-IV-Covers wurde von Teri Robinson mit Acryl und überwiegend per Airbrush geschaffen. Die ursprüngliche Bleistiftidee für das Motiv stammte von Sierra-Künstler John Gamache."
+                ],
+                "worthPlaying": "Space Quest IV gehört inhaltlich zu den kreativsten Teilen der Serie. Die Zeitreisen, zahlreichen Selbstparodien, Sierras typischer Humor und die komfortablere Point-and-Click-Steuerung funktionieren auch heute noch hervorragend. Die Amiga-Fassung ist allerdings technisch deutlich schwächer als das PC-Original und profitiert enorm von Festplatte und schnellerem Prozessor. Wer speziell die Amiga-Version kennenlernen möchte, bekommt trotzdem ein bemerkenswertes Adventure und zugleich ein interessantes Beispiel dafür, wie stark die Qualität einer Konvertierung die Wahrnehmung eines eigentlich hervorragenden Spiels verändern kann.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Space Quest IV: Roger Wilco and the Time Rippers is the fourth entry in Sierra's humorous science-fiction adventure series. Space janitor and reluctant hero Roger Wilco is pursued through time by the forces of his old enemy Sludge Vohaul, travelling between different eras of the Space Quest universe. It was the first game in the series to replace the text parser of its predecessors with Sierra's graphical point-and-click interface.",
+                "history": "Space Quest IV was developed by Sierra On-Line and designed by Mark Crowe and Scott Murphy, the Two Guys from Andromeda. Murphy also served as lead programmer, while Crowe was art designer. Guruka Singh Khalsa produced the game, Bill Davis was creative director and Mark Seibert directed the music. The original DOS version appeared in 1991 and represented a substantial technical advance over the first three games. It adopted Sierra's SCI technology and a fully graphical interface, replacing typed commands with icons for actions such as walking, looking, taking, using and talking. The story sends Roger Wilco through several different periods of the Space Quest timeline after Sludge Vohaul's forces attempt to eliminate him. Roger visits the dystopian future of Space Quest XII as well as earlier periods in the series, allowing Sierra to parody its own games, sequels and science-fiction conventions. The Amiga conversion was commercially released in 1992. It was supplied on seven disks, requires 1 MB of memory and supports hard-drive installation. Considerable visual compromises were necessary when adapting the colourful PC graphics to OCS/ECS hardware, and performance on a standard Amiga could be very slow. Faster hardware and a hard drive improve the experience considerably. Despite the technical shortcomings of the conversion, the adventure itself remains largely intact and is generally regarded as one of the most inventive entries in the series.",
+                "review": "Space Quest IV on the Amiga almost deserves two separate ratings: one for the adventure itself and another for the conversion. The underlying game is excellent. Roger Wilco's journeys through fictional past and future Space Quest instalments give Sierra countless opportunities to parody its own series, computer games and science-fiction clichés. The Galaxy Galleria sequence is particularly memorable, while the new graphical interface is considerably more convenient than the text parser used by earlier entries. Unfortunately, the Amiga conversion creates substantial problems. On a standard Amiga 500 the game can be painfully slow, particularly during sequences that require quick reactions. Seven floppy disks also mean frequent disk swapping unless the game is installed to a hard drive. Visually, the reduced Amiga palette produces a noticeably duller result than the colourful PC original. Faster Amiga hardware improves the experience considerably, but it cannot completely disguise the compromises. The writing, puzzles and comedy remain strong, making this an excellent adventure trapped inside a mediocre conversion. For Amiga collectors, that contrast is precisely what makes the release historically interesting.",
+                "trivia": [
+                    "Space Quest IV was the first entry in the series to replace the traditional text parser entirely with Sierra's graphical point-and-click interface. Mark Crowe and Scott Murphy jointly designed the game.",
+                    "The Amiga edition was distributed on seven floppy disks, requires 1 MB of RAM and supports hard-drive installation. Contemporary reviewers frequently criticised its slow performance and downgraded graphics.",
+                    "The production painting used for the Space Quest IV box was created by Teri Robinson in acrylic, largely using an airbrush. The original rough concept was created by fellow Sierra artist John Gamache."
+                ],
+                "worthPlaying": "Space Quest IV remains one of the most inventive entries in Sierra's series. Its time-travel concept, self-parody, humour and improved graphical interface still work well today. The Amiga conversion is technically much weaker than the PC original and benefits greatly from a hard drive and faster processor, but it remains an interesting adventure and a revealing example of how conversion quality can affect an otherwise excellent game."
+            }
+        },
+        id: 222,
+        folder: "space_quest_4",
+        scanBy: "Magisthan",
+        page: "space_quest_4.html",
+        featured: false,
+        title: "Space Quest IV: Roger Wilco and the Time Rippers",
+        system: "Amiga",
+        year: 1992,
+        publisher: "Sierra On-Line, Inc.",
+        developer: "Sierra On-Line, Inc.",
+        genre: ["Adventure", "Point-and-Click", "Science-Fiction", "Comedy"],
+        description: "Space Quest IV: Roger Wilco and the Time Rippers ist der vierte Teil von Sierras humorvoller Science-Fiction-Adventure-Serie. Weltraumhausmeister und widerwilliger Held Roger Wilco wird von den Schergen seines alten Gegners Sludge Vohaul durch die Zeit gejagt und landet dabei unter anderem in der düsteren Zukunft von Space Quest XII sowie in der Vergangenheit der Serie. Erstmals verzichtet Space Quest auf die Texteingabe der Vorgänger und verwendet Sierras grafische Point-and-Click-Oberfläche.",
+        history: `Space Quest IV: Roger Wilco and the Time Rippers wurde von Sierra On-Line entwickelt und von Mark Crowe und Scott Murphy, den Two Guys from Andromeda, entworfen. Scott Murphy fungierte außerdem als Lead Programmer, während Mark Crowe für das Art Design verantwortlich war. Guruka Singh Khalsa produzierte das Spiel, Bill Davis war Creative Director und Mark Seibert Music Director. Die ursprüngliche DOS-Version erschien 1991 und markierte technisch einen deutlichen Schritt gegenüber den ersten drei Space-Quest-Abenteuern. Für Space Quest IV setzte Sierra auf seine SCI-Technologie mit einer vollständig grafischen Benutzeroberfläche. Statt Befehle wie in den Vorgängern einzutippen, wählt der Spieler Symbole für Aktionen wie Gehen, Anschauen, Nehmen, Benutzen oder Sprechen aus. Die Geschichte beginnt nach den Ereignissen von Space Quest III. Roger Wilco entspannt sich in einer Bar, als plötzlich bewaffnete Sequel Police auftauchen. Sie arbeiten für Rogers alten Gegner Sludge Vohaul, der in der Zukunft von Space Quest XII die Macht übernommen hat und Roger beseitigen möchte, bevor dieser Vohauls Pläne vereiteln kann. Im letzten Augenblick wird Roger von Widerstandskämpfern gerettet und durch einen Zeittunnel geschickt. Das zentrale Motiv des Spiels sind anschließend Reisen zwischen verschiedenen Teilen der eigenen Serie. Roger besucht nicht nur die dystopische Zukunft von Space Quest XII, sondern landet beispielsweise auch in einer bewusst überarbeiteten Version des ersten Space Quest. Sierra nutzt dieses Konzept für zahlreiche selbstironische Witze über Fortsetzungen, Computerspiele und die eigene Firmengeschichte. Ein besonders bekannter Abschnitt spielt in der Galaxy Galleria, einem futuristischen Einkaufszentrum mit zahlreichen Parodien und versteckten Anspielungen. Technisch war die PC-Version für ihre damalige Zeit aufwendig und verwendete VGA-Grafik mit 256 Farben. Die Amiga-Umsetzung erschien anschließend kommerziell 1992 und musste an die deutlich eingeschränktere Farbpalette der OCS/ECS-Hardware angepasst werden. Sie wurde auf sieben Disketten ausgeliefert, benötigt 1 MB RAM und unterstützt eine Festplatteninstallation. Gerade die technische Umsetzung entwickelte sich allerdings zum größten Schwachpunkt der Amiga-Version. Die reduzierte Grafik wirkte im direkten Vergleich mit dem PC deutlich weniger attraktiv und auf einem normalen Amiga 500 liefen Animationen und Actionszenen teilweise ausgesprochen langsam. Mit Festplatte und beschleunigtem Amiga verbessert sich die Spielbarkeit erheblich. Inhaltlich blieb das eigentliche Adventure jedoch weitgehend erhalten. Space Quest IV wurde damit auf dem Amiga zu einem ungewöhnlichen Fall: Hinter einer technisch problematischen Konvertierung steckt eines der kreativsten und humorvollsten Abenteuer der gesamten Space-Quest-Serie.`,
+        review: `Space Quest IV ist auf dem Amiga ein Spiel, bei dem man eigentlich zwei Wertungen vergeben möchte. Eine für das Adventure und eine für die Person, die beschlossen hat, dass diese Umsetzung in diesem Zustand eine ausgezeichnete Idee wäre. Denn das eigentliche Space Quest IV ist großartig. Roger Wilco stolpert wieder einmal vollkommen unvorbereitet durch eine intergalaktische Katastrophe und schafft es dabei zuverlässig, ungefähr jede Situation noch komplizierter zu machen. Die Idee, durch verschiedene zukünftige und vergangene Space-Quest-Folgen zu reisen, ist herrlich. Besonders schön ist, wie Sierra dabei die eigene Serie parodiert. Man besucht ein zukünftiges Space Quest XII, obwohl es dieses Spiel natürlich überhaupt nicht gibt, reist zurück in ältere Teile und bekommt im Einkaufszentrum Galaxy Galleria eine ganze Ladung Seitenhiebe auf Computerspiele und Popkultur serviert. Auch die neue Maussteuerung funktioniert wesentlich angenehmer als die Texteingabe der Vorgänger. Leider kommt dann die Amiga-Konvertierung ins Spiel. Auf einem normalen Amiga 500 ist Space Quest IV teilweise quälend langsam. Figuren bewegen sich gemächlich über den Bildschirm und ausgerechnet die Actionszenen, in denen schnelles Reagieren gefragt ist, fühlen sich an, als hätte Roger seine Abenteuer plötzlich unter Wasser verlegt. Sieben Disketten sorgen zusätzlich für reichlich Bewegung – allerdings hauptsächlich mit der Hand zwischen Diskettenbox und Laufwerk. Eine Festplatte verbessert die Situation deutlich und ein beschleunigter Amiga macht das Spiel wesentlich angenehmer. Auch grafisch hat die Umsetzung Federn gelassen. Die farbenprächtige PC-Version musste auf die Amiga-Palette reduziert werden und einige Bilder wirken dadurch erstaunlich grau und detailarm. Das ist besonders schade, weil das eigentliche Design hervorragend ist. Dialoge, Situationen und Rätsel gehören zum Besten der Serie. Der Humor funktioniert auch heute noch, sofern man Sierras teilweise sehr amerikanischen Stil mag. Deshalb ist die Amiga-Version ein kleines Paradoxon. Space Quest IV ist ein sehr gutes Adventure in einer ziemlich mäßigen Umsetzung. Wer ausschließlich einen Amiga zur Verfügung hat, bekommt trotzdem ein witziges und kreatives Abenteuer. Wer allerdings zwischen den Versionen wählen kann, hat wenig Grund, ausgerechnet die technisch schwächste zu nehmen. Für eine Amiga-Sammlung ist sie gerade deshalb interessant: Sie zeigt ziemlich eindrucksvoll, dass ein hervorragendes Spiel nicht automatisch eine hervorragende Konvertierung ergibt.`,
+        trivia: [
+                  "Space Quest IV ist der erste Teil der Serie, der die Texteingabe der Vorgänger vollständig durch Sierras grafisches Point-and-Click-System ersetzt. Mark Crowe und Scott Murphy entwickelten das Spiel gemeinsam.",
+                  "Die Amiga-Version wird auf sieben Disketten ausgeliefert, benötigt 1 MB RAM und kann auf Festplatte installiert werden. Zeitgenössische Tests kritisierten besonders die langsame Geschwindigkeit und die gegenüber der PC-Version stark reduzierte Grafik.",
+                  "Die Produktionsmalerei des bekannten Space-Quest-IV-Covers wurde von Teri Robinson mit Acryl und überwiegend per Airbrush geschaffen. Die ursprüngliche Bleistiftidee für das Motiv stammte von Sierra-Künstler John Gamache."
+        ],
+        worthPlaying: `Space Quest IV gehört inhaltlich zu den kreativsten Teilen der Serie. Die Zeitreisen, zahlreichen Selbstparodien, Sierras typischer Humor und die komfortablere Point-and-Click-Steuerung funktionieren auch heute noch hervorragend. Die Amiga-Fassung ist allerdings technisch deutlich schwächer als das PC-Original und profitiert enorm von Festplatte und schnellerem Prozessor. Wer speziell die Amiga-Version kennenlernen möchte, bekommt trotzdem ein bemerkenswertes Adventure und zugleich ein interessantes Beispiel dafür, wie stark die Qualität einer Konvertierung die Wahrnehmung eines eigentlich hervorragenden Spiels verändern kann.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/143/space-quest-iv-roger-wilco-and-the-time-rippers/",
+        wikipedia: "https://en.wikipedia.org/wiki/Space_Quest_IV",
+        gog: "https://www.gog.com/en/game/space_quest_4_5_6"
+        },
+        boxArtists: [
+        "Teri Robinson"
+    ],
+        rating: 1,
+        stars: 1,
+        dimensions: {
+        width: 180,
+        height: 225,
+        depth: 57
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "SpellForce: The Breath of Winter ist das erste Add-on zu SpellForce: The Order of Dawn und setzt die ungewöhnliche Mischung aus Rollenspiel und Echtzeitstrategie fort. Eine neue Bedrohung zieht über die Welt Eo: Der mächtige Eisdrache Aryn ist erwacht und bringt einen unnatürlichen Winter über das Land. Der Spieler führt erneut einen Runenkrieger durch eine umfangreiche Fantasykampagne, entwickelt seinen Helden weiter, rekrutiert Gefährten und errichtet mit verschiedenen Völkern Armeen und Siedlungen.",
+                "history": "SpellForce: The Breath of Winter wurde von Phenomic Game Development entwickelt und 2004 von JoWooD Productions Software AG für Windows-PC veröffentlicht. Es handelt sich um das erste offizielle Add-on zu SpellForce: The Order of Dawn und benötigt das Hauptspiel. Creative Director und Game Designer war erneut Volker Wertich, der bereits maßgeblich für das ursprüngliche SpellForce verantwortlich gewesen war. Martin Löhlein leitete das Projekt, während Arne Oehme für Lead Story & Dialog sowie Lead Mission Design verantwortlich zeichnete. Andreas Liebeskind übernahm das Lead Map Design und Jochen Peketz das Lead Scripting. Die Musik und Soundeffekte entstanden bei Dynamedion, mit Kompositionen von Tilman Sillescu und Pierre Gerwig Langer. The Breath of Winter erzählt eine neue Geschichte in der Welt Eo. Im Mittelpunkt steht der mächtige Eisdrache Aryn, dessen Erwachen einen unnatürlichen Winter über das Land bringt. Der Spieler übernimmt erneut die Kontrolle über einen Runenkrieger und begibt sich auf eine lange Reise durch verschneite Landschaften, alte Ruinen und von neuen Gefahren bedrohte Gebiete. Spielerisch bleibt das Add-on dem ungewöhnlichen Grundkonzept des Hauptspiels treu. In den Rollenspielabschnitten steuert man den eigenen Helden und eine Gruppe von Runenkriegern, erfüllt Quests, sammelt Ausrüstung und entwickelt Fähigkeiten weiter. Auf anderen Karten wechselt das Spiel stärker in Richtung Echtzeitstrategie. Über Monumente werden Arbeiter beschworen, Rohstoffe gesammelt, Gebäude errichtet und schließlich größere Armeen produziert. Die verschiedenen bereits aus dem Hauptspiel bekannten Völker stehen erneut zur Verfügung. Statt das System mit völlig neuen Fraktionen grundlegend umzubauen, konzentrierte sich Phenomic auf eine neue Kampagne, zusätzliche Gegner, Gegenstände, Waffen und Ausrüstung. Ein weiterer Schwerpunkt lag auf dem freien Spiel und dem Mehrspielermodus. Phenomic reagierte damit auf Kritik am ursprünglichen SpellForce, dessen Multiplayer-Komponente vergleichsweise eingeschränkt gewesen war. Allerdings blieben auch im Add-on einige dieser Probleme bestehen. Zeitgenössische Tests lobten vor allem den großen Umfang der neuen Einzelspielerkampagne. Gameswelt sprach von rund 40 Stunden zusätzlicher Spielzeit und hob die neuen Waffen, Gegenstände und Gegner hervor, kritisierte aber, dass spielerisch nur wenige wirklich grundlegende Neuerungen geboten wurden. The Breath of Winter war damit weniger eine Revolution des SpellForce-Konzepts als eine umfangreiche Fortsetzung für Spieler, die nach The Order of Dawn noch nicht genug von der Welt Eo hatten.",
+                "review": "The Breath of Winter macht ziemlich genau das, was ein gutes Add-on eigentlich tun sollte: Es nimmt ein funktionierendes Spiel, erzählt eine neue Geschichte und liefert davon eine ordentliche Portion. Wer allerdings erwartet, dass Phenomic plötzlich sämtliche Grundmechaniken von SpellForce auf den Kopf stellt, wird enttäuscht. Noch immer verbringt man einen Teil der Zeit als Rollenspielheld, sammelt Ausrüstung, verteilt Punkte und zieht mit seinen Gefährten durch die Landschaft. Wenig später steht man wieder an einem Monument, beschwört Arbeiter und beginnt Holz, Stein und andere Rohstoffe zu sammeln. Aus dem einsamen Fantasyhelden wird damit innerhalb weniger Minuten der Geschäftsführer eines mittelgroßen Bauunternehmens mit angeschlossener Armee. Genau diese Mischung bleibt die große Stärke von SpellForce. The Breath of Winter verändert daran wenig, bietet aber eine umfangreiche neue Kampagne. Besonders die winterlichen Landschaften passen hervorragend zur Geschichte rund um den Eisdrachen Aryn und geben dem Add-on eine deutlich eigene Atmosphäre. Grafisch basiert alles auf der bekannten Engine des Hauptspiels, sieht für 2004 aber weiterhin hübsch aus. Wälder, Berge, Wasser und große Fantasybauten erzeugen eine glaubwürdige Welt, und die frei drehbare Kamera erlaubt es, das Geschehen sowohl aus strategischer Entfernung als auch relativ nah am eigenen Helden zu betrachten. Weniger überzeugend ist, dass viele spielerische Probleme des Hauptprogramms weiterhin vorhanden sind. Die Wegfindung größerer Truppenverbände kann gelegentlich dafür sorgen, dass die eigene Armee mehr mit sich selbst als mit dem Gegner kämpft. Auch der Mehrspielermodus wurde zwar erweitert, bleibt aber hinter dem zurück, was man sich von einem Strategiespiel dieser Zeit wünschen könnte. Außerdem fehlen wirklich große Neuerungen bei Völkern und Einheiten. Wer das Hauptspiel bereits ausführlich gespielt hat, wird deshalb vieles sofort wiedererkennen. Das muss aber kein Nachteil sein. The Breath of Winter richtet sich eindeutig an Spieler, denen genau diese Mischung gefallen hat. Und für diese Zielgruppe gibt es eine lange neue Kampagne, zahlreiche Quests, neue Ausrüstung und viele weitere Stunden in Eo. Als Add-on ist das vielleicht nicht besonders revolutionär, aber ausgesprochen solide.",
+                "trivia": [
+                    "The Breath of Winter ist das erste offizielle Add-on zu SpellForce: The Order of Dawn und benötigt das Hauptspiel. Es erschien 2004 für Windows-PC.",
+                    "Volker Wertich fungierte als Creative Director und Game Designer. Arne Oehme war für Lead Story & Dialog sowie Lead Mission Design verantwortlich, während Tilman Sillescu und Pierre Gerwig Langer Musik für das Add-on komponierten.",
+                    "Gameswelt bezifferte den Umfang der neuen Einzelspielerkampagne auf rund 40 Stunden. Das Add-on erweitert außerdem Ausrüstung, Gegner und den freien Spielmodus, führt jedoch keine vollständig neuen spielbaren Völker ein."
+                ],
+                "worthPlaying": "The Breath of Winter lohnt sich heute besonders für Spieler, denen bereits The Order of Dawn gefallen hat. Das Add-on verändert das Grundprinzip kaum, liefert dafür aber eine umfangreiche neue Kampagne mit eigener winterlicher Atmosphäre, vielen Quests und zusätzlicher Ausrüstung. Die Verbindung aus Charakterentwicklung und klassischer Echtzeitstrategie ist weiterhin ungewöhnlich und verleiht SpellForce eine eigene Identität. Wer das Hauptspiel komplett erleben möchte, sollte deshalb auch den Kampf gegen den Eiswinter von Eo nicht auslassen.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "SpellForce: The Breath of Winter is the first expansion for SpellForce: The Order of Dawn and continues its unusual combination of role-playing and real-time strategy. A powerful ice dragon named Aryn has awakened and an unnatural winter spreads across the world of Eo. Players once again control a rune warrior, develop their hero, recruit companions and command settlements and armies belonging to several different races.",
+                "history": "SpellForce: The Breath of Winter was developed by Phenomic Game Development and published for Windows PC by JoWooD Productions Software AG in 2004. It is the first official expansion for SpellForce: The Order of Dawn and requires the original game. Volker Wertich returned as creative director and game designer, Martin Löhlein managed the project and Arne Oehme was responsible for lead story, dialogue and mission design. Andreas Liebeskind served as lead map designer and Jochen Peketz as lead scripting designer. Music and sound were produced by Dynamedion, with compositions by Tilman Sillescu and Pierre Gerwig Langer. The expansion tells a new story centred on Aryn, a powerful ice dragon whose awakening brings an unnatural winter to Eo. Gameplay retains SpellForce's distinctive mixture of genres. Role-playing sections focus on the player's rune warrior and companions, with quests, equipment and character development, while strategy-oriented maps involve activating monuments, gathering resources, constructing settlements and producing armies. Rather than introducing completely new playable races, Phenomic concentrated on a substantial new campaign, additional enemies, weapons and equipment together with improvements to free play and multiplayer. Contemporary reviews particularly praised the length of the campaign while noting that the fundamental gameplay remained very similar to The Order of Dawn. The result was an evolutionary expansion rather than a reinvention of SpellForce.",
+                "review": "The Breath of Winter does exactly what a traditional expansion should do: it takes an established game, provides a substantial new story and gives existing players more of the systems they already enjoy. SpellForce's distinctive combination of role-playing and real-time strategy remains its greatest strength. One moment the player is developing a hero, collecting equipment and completing quests; shortly afterwards workers are gathering resources and an entire settlement is producing an army. The winter landscapes give the new campaign a strong visual identity and the original engine still produces attractive forests, mountains and fantasy architecture. The expansion is less successful when it comes to genuine innovation. Many of the original game's pathfinding and multiplayer limitations remain, and there are no completely new playable races to transform the strategic side of the experience. For players who already enjoyed The Order of Dawn, however, this is unlikely to be a serious problem. The lengthy campaign, additional equipment, enemies and quests provide many more hours in the world of Eo. It is not a revolutionary expansion, but it is a substantial and well-focused continuation.",
+                "trivia": [
+                    "The Breath of Winter is the first official expansion for SpellForce: The Order of Dawn and requires the original game. It was released for Windows PC in 2004.",
+                    "Volker Wertich served as creative director and game designer, while Arne Oehme handled lead story, dialogue and mission design. Tilman Sillescu and Pierre Gerwig Langer composed music for the expansion.",
+                    "Contemporary coverage described the new single-player campaign as offering roughly 40 additional hours. The expansion adds equipment, enemies and free-play content but does not introduce entirely new playable races."
+                ],
+                "worthPlaying": "The Breath of Winter remains worthwhile for anyone who enjoys The Order of Dawn. It changes little about the fundamental design but provides a lengthy new campaign, a distinctive winter atmosphere, numerous quests and additional equipment. SpellForce's mixture of character development and real-time strategy still gives the series a distinctive identity, making this expansion an important part of the original game's complete experience."
+            }
+        },
+        id: 223,
+        folder: "spellforce_the_breath_of_winter",
+        scanBy: "Magisthan",
+        page: "spellforce_the_breath_of_winter.html",
+        featured: false,
+        title: "SpellForce: The Breath of Winter",
+        system: "PC",
+        year: 2004,
+        publisher: "JoWooD Productions Software AG",
+        developer: "Phenomic Game Development",
+        genre: ["Rollenspiel", "Echtzeitstrategie", "Fantasy", "Add-on"],
+        description: "SpellForce: The Breath of Winter ist das erste Add-on zu SpellForce: The Order of Dawn und setzt die ungewöhnliche Mischung aus Rollenspiel und Echtzeitstrategie fort. Eine neue Bedrohung zieht über die Welt Eo: Der mächtige Eisdrache Aryn ist erwacht und bringt einen unnatürlichen Winter über das Land. Der Spieler führt erneut einen Runenkrieger durch eine umfangreiche Fantasykampagne, entwickelt seinen Helden weiter, rekrutiert Gefährten und errichtet mit verschiedenen Völkern Armeen und Siedlungen.",
+        history: `SpellForce: The Breath of Winter wurde von Phenomic Game Development entwickelt und 2004 von JoWooD Productions Software AG für Windows-PC veröffentlicht. Es handelt sich um das erste offizielle Add-on zu SpellForce: The Order of Dawn und benötigt das Hauptspiel. Creative Director und Game Designer war erneut Volker Wertich, der bereits maßgeblich für das ursprüngliche SpellForce verantwortlich gewesen war. Martin Löhlein leitete das Projekt, während Arne Oehme für Lead Story & Dialog sowie Lead Mission Design verantwortlich zeichnete. Andreas Liebeskind übernahm das Lead Map Design und Jochen Peketz das Lead Scripting. Die Musik und Soundeffekte entstanden bei Dynamedion, mit Kompositionen von Tilman Sillescu und Pierre Gerwig Langer. The Breath of Winter erzählt eine neue Geschichte in der Welt Eo. Im Mittelpunkt steht der mächtige Eisdrache Aryn, dessen Erwachen einen unnatürlichen Winter über das Land bringt. Der Spieler übernimmt erneut die Kontrolle über einen Runenkrieger und begibt sich auf eine lange Reise durch verschneite Landschaften, alte Ruinen und von neuen Gefahren bedrohte Gebiete. Spielerisch bleibt das Add-on dem ungewöhnlichen Grundkonzept des Hauptspiels treu. In den Rollenspielabschnitten steuert man den eigenen Helden und eine Gruppe von Runenkriegern, erfüllt Quests, sammelt Ausrüstung und entwickelt Fähigkeiten weiter. Auf anderen Karten wechselt das Spiel stärker in Richtung Echtzeitstrategie. Über Monumente werden Arbeiter beschworen, Rohstoffe gesammelt, Gebäude errichtet und schließlich größere Armeen produziert. Die verschiedenen bereits aus dem Hauptspiel bekannten Völker stehen erneut zur Verfügung. Statt das System mit völlig neuen Fraktionen grundlegend umzubauen, konzentrierte sich Phenomic auf eine neue Kampagne, zusätzliche Gegner, Gegenstände, Waffen und Ausrüstung. Ein weiterer Schwerpunkt lag auf dem freien Spiel und dem Mehrspielermodus. Phenomic reagierte damit auf Kritik am ursprünglichen SpellForce, dessen Multiplayer-Komponente vergleichsweise eingeschränkt gewesen war. Allerdings blieben auch im Add-on einige dieser Probleme bestehen. Zeitgenössische Tests lobten vor allem den großen Umfang der neuen Einzelspielerkampagne. Gameswelt sprach von rund 40 Stunden zusätzlicher Spielzeit und hob die neuen Waffen, Gegenstände und Gegner hervor, kritisierte aber, dass spielerisch nur wenige wirklich grundlegende Neuerungen geboten wurden. The Breath of Winter war damit weniger eine Revolution des SpellForce-Konzepts als eine umfangreiche Fortsetzung für Spieler, die nach The Order of Dawn noch nicht genug von der Welt Eo hatten.`,
+        review: `The Breath of Winter macht ziemlich genau das, was ein gutes Add-on eigentlich tun sollte: Es nimmt ein funktionierendes Spiel, erzählt eine neue Geschichte und liefert davon eine ordentliche Portion. Wer allerdings erwartet, dass Phenomic plötzlich sämtliche Grundmechaniken von SpellForce auf den Kopf stellt, wird enttäuscht. Noch immer verbringt man einen Teil der Zeit als Rollenspielheld, sammelt Ausrüstung, verteilt Punkte und zieht mit seinen Gefährten durch die Landschaft. Wenig später steht man wieder an einem Monument, beschwört Arbeiter und beginnt Holz, Stein und andere Rohstoffe zu sammeln. Aus dem einsamen Fantasyhelden wird damit innerhalb weniger Minuten der Geschäftsführer eines mittelgroßen Bauunternehmens mit angeschlossener Armee. Genau diese Mischung bleibt die große Stärke von SpellForce. The Breath of Winter verändert daran wenig, bietet aber eine umfangreiche neue Kampagne. Besonders die winterlichen Landschaften passen hervorragend zur Geschichte rund um den Eisdrachen Aryn und geben dem Add-on eine deutlich eigene Atmosphäre. Grafisch basiert alles auf der bekannten Engine des Hauptspiels, sieht für 2004 aber weiterhin hübsch aus. Wälder, Berge, Wasser und große Fantasybauten erzeugen eine glaubwürdige Welt, und die frei drehbare Kamera erlaubt es, das Geschehen sowohl aus strategischer Entfernung als auch relativ nah am eigenen Helden zu betrachten. Weniger überzeugend ist, dass viele spielerische Probleme des Hauptprogramms weiterhin vorhanden sind. Die Wegfindung größerer Truppenverbände kann gelegentlich dafür sorgen, dass die eigene Armee mehr mit sich selbst als mit dem Gegner kämpft. Auch der Mehrspielermodus wurde zwar erweitert, bleibt aber hinter dem zurück, was man sich von einem Strategiespiel dieser Zeit wünschen könnte. Außerdem fehlen wirklich große Neuerungen bei Völkern und Einheiten. Wer das Hauptspiel bereits ausführlich gespielt hat, wird deshalb vieles sofort wiedererkennen. Das muss aber kein Nachteil sein. The Breath of Winter richtet sich eindeutig an Spieler, denen genau diese Mischung gefallen hat. Und für diese Zielgruppe gibt es eine lange neue Kampagne, zahlreiche Quests, neue Ausrüstung und viele weitere Stunden in Eo. Als Add-on ist das vielleicht nicht besonders revolutionär, aber ausgesprochen solide.`,
+        trivia: [
+                  "The Breath of Winter ist das erste offizielle Add-on zu SpellForce: The Order of Dawn und benötigt das Hauptspiel. Es erschien 2004 für Windows-PC.",
+                  "Volker Wertich fungierte als Creative Director und Game Designer. Arne Oehme war für Lead Story & Dialog sowie Lead Mission Design verantwortlich, während Tilman Sillescu und Pierre Gerwig Langer Musik für das Add-on komponierten.",
+                  "Gameswelt bezifferte den Umfang der neuen Einzelspielerkampagne auf rund 40 Stunden. Das Add-on erweitert außerdem Ausrüstung, Gegner und den freien Spielmodus, führt jedoch keine vollständig neuen spielbaren Völker ein."
+        ],
+        worthPlaying: `The Breath of Winter lohnt sich heute besonders für Spieler, denen bereits The Order of Dawn gefallen hat. Das Add-on verändert das Grundprinzip kaum, liefert dafür aber eine umfangreiche neue Kampagne mit eigener winterlicher Atmosphäre, vielen Quests und zusätzlicher Ausrüstung. Die Verbindung aus Charakterentwicklung und klassischer Echtzeitstrategie ist weiterhin ungewöhnlich und verleiht SpellForce eine eigene Identität. Wer das Hauptspiel komplett erleben möchte, sollte deshalb auch den Kampf gegen den Eiswinter von Eo nicht auslassen.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/15697/spellforce-the-breath-of-winter/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 150,
+        height: 192,
+        depth: 34
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Star General ist ein rundenbasiertes Science-Fiction-Strategiespiel aus SSIs 5-Star-General-Reihe. Statt historischer Panzerverbände führt der Spieler gewaltige Raumflotten und planetare Bodentruppen in einen galaktischen Krieg zwischen sieben verschiedenen Völkern. Das von Catware entwickelte Spiel verbindet das bekannte Hexfeld-System von Panzer General mit Weltraumkämpfen, planetaren Invasionen, Ressourcenverwaltung und einfacher Forschung.",
+                "history": "Star General wurde von Catware, Inc. entwickelt und 1996 von Strategic Simulations, Inc. für DOS und Windows veröffentlicht. Das Design und die Produktion übernahm Bill Fawcett, während Matthew Fausey, Mike Isely und David Potter für die Programmierung verantwortlich waren. Frank Rinaldo programmierte die künstliche Intelligenz. Die Musik stammt von Danny Pelfrey und Rick Rhodes. Inhaltlich basiert Star General auf dem Universum der Science-Fiction-Anthologien The Fleet, die von David Drake und Bill Fawcett herausgegeben wurden. Nach dem Erfolg von Panzer General hatte SSI das ursprüngliche Konzept schrittweise auf weitere Szenarien übertragen. Allied General beschäftigte sich erneut mit dem Zweiten Weltkrieg, Fantasy General verlegte das Hexfeldprinzip in eine Fantasywelt und Star General sollte schließlich zeigen, wie sich die Mechanik in einem galaktischen Krieg einsetzen ließ. Das Grundprinzip blieb vertraut. Einheiten bewegen sich rundenweise über Felder, besitzen unterschiedliche Kampfwerte und müssen entsprechend ihrer Stärken eingesetzt werden. Weltraumphänomene wie Nebel und andere astronomische Hindernisse übernehmen dabei teilweise die Funktion des Geländes aus den historischen General-Spielen. Star General erweitert das Konzept allerdings um eine zweite strategische Ebene. Nach erfolgreichen Weltraumoperationen können Planeten angegriffen werden. Anschließend wechselt das Spiel auf die Oberfläche, wo separate Bodenschlachten mit eigenen Einheiten stattfinden. Weltraum- und Bodenrunden laufen dabei nicht im gleichen zeitlichen Maßstab ab. Zusätzlich können eroberte Planeten wirtschaftlich genutzt werden. Forschungseinrichtungen ermöglichen technische Verbesserungen, wobei das Forschungssystem mit vier allgemeinen Entwicklungsstufen bewusst relativ einfach gehalten wurde. Insgesamt stehen sieben verschiedene Parteien zur Verfügung. Neben der menschlichen Fleet treten unter anderem die Khalians sowie mehrere weitere außerirdische Völker an. Jede Seite besitzt eigene Einheiten und bestimmte Besonderheiten. Das Spiel enthält rund 100 verschiedene Raumschiffe und eine ähnlich umfangreiche Auswahl an Bodeneinheiten. Neben vorgegebenen Szenarien können zufällig erzeugte Karten gespielt werden, deren Größe vom kleinen Gefecht bis zum umfangreichen galaktischen Krieg reicht. Star General unterstützt außerdem Mehrspielerpartien über Netzwerk, Modem und Internet. Zeitgenössisch wurde besonders die Verbindung von Weltraum- und Bodenkämpfen als interessante Erweiterung des bekannten Systems wahrgenommen. Gleichzeitig kritisierten mehrere Tester die unübersichtliche Darstellung vieler Einheiten, den hohen Schwierigkeitsgrad und die Tatsache, dass sich das Grundprinzip trotz Science-Fiction-Szenario weiterhin sehr stark an Panzer General orientierte. Star General wurde damit zu einem ungewöhnlichen Abschluss der klassischen ersten Phase von SSIs General-Reihe.",
+                "review": "Star General beantwortet eine Frage, die sich nach Panzer General offenbar zwangsläufig stellen musste: Was passiert eigentlich, wenn wir die Panzer einfach durch Raumschiffe ersetzen und das Schlachtfeld ungefähr um eine komplette Galaxie vergrößern? Die Antwort lautet: Es funktioniert erstaunlich gut, aber nicht immer elegant. Wer Panzer General kennt, fühlt sich sofort zu Hause. Einheiten werden rundenweise bewegt, Angriffe müssen geplant und unterschiedliche Kampfstärken berücksichtigt werden. Nur fährt diesmal kein Tiger-Panzer über eine Straße, sondern ein Kreuzer durch einen Nebel. Die interessanteste Idee sind die zwei Kampfebenen. Zuerst kämpft man mit seinen Flotten um ein Sternensystem und anschließend können Truppen auf einem Planeten landen. Dort beginnt praktisch ein zweites Strategiespiel mit Bodeneinheiten. Dadurch entsteht tatsächlich das Gefühl eines größeren galaktischen Feldzuges. Hinzu kommen Planetenverwaltung und ein einfaches Forschungssystem. Allerdings besitzt Star General auch ein Problem, das bei einem Weltraumkrieg mit rund hundert Schiffstypen vielleicht nicht völlig überraschend kommt: Irgendwann sieht man sehr viele kleine Raumschiffe und fragt sich, welches davon gerade der Kreuzer, der leichte Kreuzer oder möglicherweise der Transporter ist. Die Grafik ist funktional, aber nicht besonders übersichtlich. Auch spielerisch kann die Masse an Einheiten schnell anstrengend werden. Große Szenarien entwickeln sich zu gewaltigen Materialschlachten, bei denen man mehr Zeit mit der Verwaltung seiner Flotte verbringt als mit genialen taktischen Manövern. Der Schwierigkeitsgrad ist ebenfalls nicht ohne. Die künstliche Intelligenz kann hartnäckig sein und einige Szenarien verlangen eine ziemlich genaue Planung. Trotzdem besitzt Star General einen gewissen Reiz. Besonders die Kombination aus Weltraum- und Bodenkämpfen unterscheidet das Spiel von vielen anderen Vertretern der General-Reihe. Wer sich darauf einlässt, bekommt ein umfangreiches rundenbasiertes Strategiespiel mit sieben Parteien, zahlreichen Einheiten und sehr langen Partien. Wer dagegen ein Master of Orion mit Panzer-General-Kämpfen erwartet, dürfte von der relativ einfachen Forschung und Wirtschaft enttäuscht sein. Star General ist deshalb kein Höhepunkt der Serie, aber ein interessantes Experiment: SSI nimmt sein bewährtes Kriegsspielsystem, schießt es buchstäblich ins Weltall und schaut, was dort davon übrig bleibt.",
+                "trivia": [
+                    "Star General basiert auf dem Science-Fiction-Hintergrund der Anthologie-Reihe The Fleet von David Drake und Bill Fawcett. Bill Fawcett übernahm auch Design und Produktion des Spiels.",
+                    "Das Spiel verbindet zwei unterschiedliche Kampfebenen. Neben Flottenschlachten im Weltraum können Planeten erobert und anschließend separate Gefechte mit Bodentruppen ausgetragen werden.",
+                    "Ron Walotsky wird in den Credits ausdrücklich für die Illustrationen des Handbuchs genannt. Ein eindeutiger separater Credit für die Illustration der Verkaufsbox lässt sich daraus jedoch nicht ableiten."
+                ],
+                "worthPlaying": "Star General ist heute vor allem für Freunde klassischer rundenbasierter Strategiespiele interessant. Die Verbindung aus Weltraum- und planetaren Bodenkämpfen gibt dem bekannten General-System eine ungewöhnliche zusätzliche Ebene. Die Benutzerführung, Einheitenübersicht und teilweise sehr langen Schlachten sind deutlich gealtert, doch wer Panzer General oder Fantasy General mag und das Grundprinzip einmal in einem Science-Fiction-Szenario erleben möchte, findet hier einen interessanten und umfangreichen Ableger der SSI-Reihe.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Star General is a turn-based science-fiction strategy game in SSI's 5-Star General series. Instead of historical armies, players command enormous space fleets and planetary ground forces in a galactic conflict between seven different factions. Developed by Catware, it adapts the familiar hex-based Panzer General formula to space warfare while adding planetary invasions, resource management and a simple research system.",
+                "history": "Star General was developed by Catware, Inc. and published by Strategic Simulations, Inc. for DOS and Windows in 1996. Bill Fawcett designed and produced the game, while Matthew Fausey, Mike Isely and David Potter handled programming and Frank Rinaldo developed the artificial intelligence. Music was composed by Danny Pelfrey and Rick Rhodes. The setting is based on The Fleet science-fiction anthologies associated with David Drake and Bill Fawcett. Following the success of Panzer General, SSI had already adapted its turn-based hex formula to several different settings, and Star General took the concept into a galactic war. Space fleets move and fight using mechanics broadly comparable to those of earlier General games, with astronomical phenomena functioning much like terrain. The major addition is a second combat layer. After fighting for control of space, players can invade planets and conduct separate battles with ground forces. Conquered worlds also contribute resources, while research facilities provide a relatively simple four-level technology system. Seven factions are available and the game contains a large selection of spacecraft and ground units. Scenarios range from small engagements to extensive galactic wars, with randomly generated maps also available. Multiplayer is supported through network, modem and Internet connections. Contemporary reviewers found the combination of space and ground warfare interesting, but frequently criticised unit identification, difficulty and the game's heavy dependence on the established Panzer General formula.",
+                "review": "Star General takes the familiar Panzer General formula and launches it into space. Movement, attacks and unit strengths remain immediately recognisable to players of SSI's earlier games, but tanks and artillery have been replaced by cruisers, fighters and alien warships. Its most interesting feature is the two-level combat system. Players first fight for control of space and can then invade planets, switching to separate tactical battles with ground forces. Planet management and a simple research system add some strategic context. The problem is scale and clarity. With a very large selection of ships and ground units, identifying exactly what is on the battlefield can become difficult, while larger scenarios can turn into lengthy exercises in fleet management. The game can also be demanding, particularly when scenarios impose difficult strategic objectives. Nevertheless, the combination of space and planetary combat gives Star General a character of its own. It lacks the economic and technological depth of a full 4X game such as Master of Orion, but players looking for a science-fiction variation on SSI's established General system will find a substantial and unusual entry in the series.",
+                "trivia": [
+                    "Star General uses the science-fiction setting of The Fleet anthologies associated with David Drake and Bill Fawcett. Fawcett also designed and produced the game.",
+                    "The game features two distinct levels of combat: fleets fight in space before ground forces can invade and conquer individual planets.",
+                    "Ron Walotsky is specifically credited for manual artwork, but the available credits do not clearly identify a separate artist responsible for the retail box illustration."
+                ],
+                "worthPlaying": "Star General remains interesting for enthusiasts of classic turn-based strategy. Combining fleet warfare with separate planetary ground battles gives the established General formula an unusual additional layer. Its interface, unit readability and very large battles have aged considerably, but fans of Panzer General and Fantasy General may enjoy seeing SSI's familiar system adapted to a science-fiction setting."
+            }
+        },
+        id: 224,
+        folder: "star_general",
+        scanBy: "Magisthan",
+        page: "star_general.html",
+        featured: false,
+        title: "Star General",
+        system: "PC",
+        year: 1996,
+        publisher: "Strategic Simulations, Inc.",
+        developer: "Catware, Inc.",
+        genre: ["Strategie", "Rundenstrategie", "Science-Fiction", "Kriegsspiel"],
+        description: "Star General ist ein rundenbasiertes Science-Fiction-Strategiespiel aus SSIs 5-Star-General-Reihe. Statt historischer Panzerverbände führt der Spieler gewaltige Raumflotten und planetare Bodentruppen in einen galaktischen Krieg zwischen sieben verschiedenen Völkern. Das von Catware entwickelte Spiel verbindet das bekannte Hexfeld-System von Panzer General mit Weltraumkämpfen, planetaren Invasionen, Ressourcenverwaltung und einfacher Forschung.",
+        history: `Star General wurde von Catware, Inc. entwickelt und 1996 von Strategic Simulations, Inc. für DOS und Windows veröffentlicht. Das Design und die Produktion übernahm Bill Fawcett, während Matthew Fausey, Mike Isely und David Potter für die Programmierung verantwortlich waren. Frank Rinaldo programmierte die künstliche Intelligenz. Die Musik stammt von Danny Pelfrey und Rick Rhodes. Inhaltlich basiert Star General auf dem Universum der Science-Fiction-Anthologien The Fleet, die von David Drake und Bill Fawcett herausgegeben wurden. Nach dem Erfolg von Panzer General hatte SSI das ursprüngliche Konzept schrittweise auf weitere Szenarien übertragen. Allied General beschäftigte sich erneut mit dem Zweiten Weltkrieg, Fantasy General verlegte das Hexfeldprinzip in eine Fantasywelt und Star General sollte schließlich zeigen, wie sich die Mechanik in einem galaktischen Krieg einsetzen ließ. Das Grundprinzip blieb vertraut. Einheiten bewegen sich rundenweise über Felder, besitzen unterschiedliche Kampfwerte und müssen entsprechend ihrer Stärken eingesetzt werden. Weltraumphänomene wie Nebel und andere astronomische Hindernisse übernehmen dabei teilweise die Funktion des Geländes aus den historischen General-Spielen. Star General erweitert das Konzept allerdings um eine zweite strategische Ebene. Nach erfolgreichen Weltraumoperationen können Planeten angegriffen werden. Anschließend wechselt das Spiel auf die Oberfläche, wo separate Bodenschlachten mit eigenen Einheiten stattfinden. Weltraum- und Bodenrunden laufen dabei nicht im gleichen zeitlichen Maßstab ab. Zusätzlich können eroberte Planeten wirtschaftlich genutzt werden. Forschungseinrichtungen ermöglichen technische Verbesserungen, wobei das Forschungssystem mit vier allgemeinen Entwicklungsstufen bewusst relativ einfach gehalten wurde. Insgesamt stehen sieben verschiedene Parteien zur Verfügung. Neben der menschlichen Fleet treten unter anderem die Khalians sowie mehrere weitere außerirdische Völker an. Jede Seite besitzt eigene Einheiten und bestimmte Besonderheiten. Das Spiel enthält rund 100 verschiedene Raumschiffe und eine ähnlich umfangreiche Auswahl an Bodeneinheiten. Neben vorgegebenen Szenarien können zufällig erzeugte Karten gespielt werden, deren Größe vom kleinen Gefecht bis zum umfangreichen galaktischen Krieg reicht. Star General unterstützt außerdem Mehrspielerpartien über Netzwerk, Modem und Internet. Zeitgenössisch wurde besonders die Verbindung von Weltraum- und Bodenkämpfen als interessante Erweiterung des bekannten Systems wahrgenommen. Gleichzeitig kritisierten mehrere Tester die unübersichtliche Darstellung vieler Einheiten, den hohen Schwierigkeitsgrad und die Tatsache, dass sich das Grundprinzip trotz Science-Fiction-Szenario weiterhin sehr stark an Panzer General orientierte. Star General wurde damit zu einem ungewöhnlichen Abschluss der klassischen ersten Phase von SSIs General-Reihe.`,
+        review: `Star General beantwortet eine Frage, die sich nach Panzer General offenbar zwangsläufig stellen musste: Was passiert eigentlich, wenn wir die Panzer einfach durch Raumschiffe ersetzen und das Schlachtfeld ungefähr um eine komplette Galaxie vergrößern? Die Antwort lautet: Es funktioniert erstaunlich gut, aber nicht immer elegant. Wer Panzer General kennt, fühlt sich sofort zu Hause. Einheiten werden rundenweise bewegt, Angriffe müssen geplant und unterschiedliche Kampfstärken berücksichtigt werden. Nur fährt diesmal kein Tiger-Panzer über eine Straße, sondern ein Kreuzer durch einen Nebel. Die interessanteste Idee sind die zwei Kampfebenen. Zuerst kämpft man mit seinen Flotten um ein Sternensystem und anschließend können Truppen auf einem Planeten landen. Dort beginnt praktisch ein zweites Strategiespiel mit Bodeneinheiten. Dadurch entsteht tatsächlich das Gefühl eines größeren galaktischen Feldzuges. Hinzu kommen Planetenverwaltung und ein einfaches Forschungssystem. Allerdings besitzt Star General auch ein Problem, das bei einem Weltraumkrieg mit rund hundert Schiffstypen vielleicht nicht völlig überraschend kommt: Irgendwann sieht man sehr viele kleine Raumschiffe und fragt sich, welches davon gerade der Kreuzer, der leichte Kreuzer oder möglicherweise der Transporter ist. Die Grafik ist funktional, aber nicht besonders übersichtlich. Auch spielerisch kann die Masse an Einheiten schnell anstrengend werden. Große Szenarien entwickeln sich zu gewaltigen Materialschlachten, bei denen man mehr Zeit mit der Verwaltung seiner Flotte verbringt als mit genialen taktischen Manövern. Der Schwierigkeitsgrad ist ebenfalls nicht ohne. Die künstliche Intelligenz kann hartnäckig sein und einige Szenarien verlangen eine ziemlich genaue Planung. Trotzdem besitzt Star General einen gewissen Reiz. Besonders die Kombination aus Weltraum- und Bodenkämpfen unterscheidet das Spiel von vielen anderen Vertretern der General-Reihe. Wer sich darauf einlässt, bekommt ein umfangreiches rundenbasiertes Strategiespiel mit sieben Parteien, zahlreichen Einheiten und sehr langen Partien. Wer dagegen ein Master of Orion mit Panzer-General-Kämpfen erwartet, dürfte von der relativ einfachen Forschung und Wirtschaft enttäuscht sein. Star General ist deshalb kein Höhepunkt der Serie, aber ein interessantes Experiment: SSI nimmt sein bewährtes Kriegsspielsystem, schießt es buchstäblich ins Weltall und schaut, was dort davon übrig bleibt.`,
+        trivia: [
+                  "Star General basiert auf dem Science-Fiction-Hintergrund der Anthologie-Reihe The Fleet von David Drake und Bill Fawcett. Bill Fawcett übernahm auch Design und Produktion des Spiels.",
+                  "Das Spiel verbindet zwei unterschiedliche Kampfebenen. Neben Flottenschlachten im Weltraum können Planeten erobert und anschließend separate Gefechte mit Bodentruppen ausgetragen werden.",
+                  "Ron Walotsky wird in den Credits ausdrücklich für die Illustrationen des Handbuchs genannt. Ein eindeutiger separater Credit für die Illustration der Verkaufsbox lässt sich daraus jedoch nicht ableiten."
+        ],
+        worthPlaying: `Star General ist heute vor allem für Freunde klassischer rundenbasierter Strategiespiele interessant. Die Verbindung aus Weltraum- und planetaren Bodenkämpfen gibt dem bekannten General-System eine ungewöhnliche zusätzliche Ebene. Die Benutzerführung, Einheitenübersicht und teilweise sehr langen Schlachten sind deutlich gealtert, doch wer Panzer General oder Fantasy General mag und das Grundprinzip einmal in einem Science-Fiction-Szenario erleben möchte, findet hier einen interessanten und umfangreichen Ableger der SSI-Reihe.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/739/star-general/",
+        wikipedia: "https://en.wikipedia.org/wiki/Star_General",
+        gog: "https://www.gog.com/en/game/star_general"
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 2,
+        stars: 2,
+        dimensions: {
+        width: 182,
+        height: 232,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Steel Empire ist ein ungewöhnlicher Mix aus rundenbasierter Strategie und Action von Silicon Knights. Bis zu fünf Parteien kämpfen auf dem Planeten Orion um die Weltherrschaft und setzen dabei riesige kybernetische Kampfmaschinen ein. Auf der strategischen Karte werden Länder verwaltet, Fabriken errichtet, Cyborgs produziert und Angriffe geplant. Treffen zwei Armeen aufeinander, kann der Spieler anschließend selbst die Kontrolle über einen seiner Kampfroboter übernehmen und die Schlacht in Echtzeit austragen.",
+                "history": "Steel Empire wurde vom kanadischen Entwickler Silicon Knights entwickelt und 1992 für Amiga, Atari ST und DOS veröffentlicht. In Nordamerika erschien das Spiel bei Strategic Simulations unter dem Titel Cyber Empires, während Millennium Interactive die europäische Version unter dem Namen Steel Empire vertrieb. Denis Dyack und Rick Goertz zeichneten für das Spieldesign verantwortlich. Bill Dunn und George MacDonald werden als Producer genannt, Kevin Hoare programmierte die Amiga-Fassung und Richard Joseph komponierte die Musik. An der Grafik arbeiteten unter anderem Paul Barton, Paul Dobson, Robert Swan, Robin Chapman, Tom Wahl und William Yeatts. Steel Empire entstand in einer frühen Phase von Silicon Knights und kombinierte zwei Spielprinzipien, die Anfang der 1990er Jahre normalerweise getrennt voneinander existierten. Der strategische Teil erinnert in seinen Grundzügen an ein komplexeres Brettspiel wie Risiko. Bis zu fünf Parteien kämpfen um die Kontrolle des Planeten Orion. Jeder Spieler beginnt mit einem begrenzten Territorium und finanziellen Mitteln. Das vorhandene Geld kann in Verwaltungsgebäude, Verteidigungsanlagen und Fabriken investiert werden. Fabriken produzieren anschließend die eigentlichen Armeen des Spiels: gewaltige Cyborg-Kampfmaschinen. Insgesamt stehen neun verschiedene Grundtypen zur Verfügung. Sie unterscheiden sich in Größe, Panzerung, Bewaffnung und ihrer Eignung für unterschiedliche Geländearten. Kleine Fabriken sind vergleichsweise günstig, benötigen jedoch längere Zeit für die Produktion. Große Industrieanlagen sind wesentlich teurer, können dafür neue Einheiten schneller bereitstellen. Zusätzlich spielt Aufklärung eine wichtige Rolle. Eine optionale Fog-of-War-Funktion verbirgt gegnerische Aktivitäten, während Investitionen in Spionagesatelliten zusätzliche Informationen liefern können. Sobald auf der strategischen Karte ein Angriff ausgelöst wird, wechselt Steel Empire in einen völlig anderen Spielmodus. Der Spieler kann eine der beteiligten Kampfmaschinen direkt übernehmen und die Schlacht aus einer Top-down-Perspektive selbst austragen. Alternativ lässt sich das Gefecht vom Computer berechnen. Diese Verbindung aus strategischer Planung und direkter Action war die auffälligste Besonderheit des Spiels. Die Amiga-Version erschien auf zwei Disketten und benötigt 1 MB Arbeitsspeicher. Sie unterstützt ein bis fünf Spieler, wobei die Teilnehmer ihre Züge nacheinander durchführen. Die europäische Fassung bietet neben Englisch auch deutsche, französische und italienische Bildschirmtexte. Zeitgenössische Kritiken reagierten sehr unterschiedlich auf das Konzept. Besonders die direkten Roboterkämpfe wurden teilweise gelobt, während andere Tester Steuerung, Präsentation, lange Ladezeiten und den strategischen Teil kritisierten. Silicon Knights griff die Idee einer Verbindung aus strategischer Reichsverwaltung und direkt kontrollierten Kämpfen später erneut auf. Das 1993 veröffentlichte Fantasy Empires entwickelte das Konzept in einer Fantasywelt weiter und gilt deshalb als geistiger Nachfolger von Steel Empire.",
+                "review": "Steel Empire ist eines dieser Spiele, bei denen die Entwickler offenbar während der Besprechung irgendwann gesagt haben: Wir könnten ein Strategiespiel machen. Und jemand anderes antwortete: Ja, aber können wir danach persönlich mit einem riesigen Kampfroboter alles kaputtschießen? Die Antwort war offensichtlich ja. Genau diese Mischung macht Steel Empire interessant. Auf der strategischen Karte fühlt sich das Spiel zunächst wie eine futuristische Variante von Risiko an. Man kontrolliert Länder, baut Fabriken, produziert Cyborgs und überlegt, welcher Nachbar als Nächstes dringend davon überzeugt werden sollte, dass sein Land eigentlich viel besser zu unserem Imperium passt. Geld muss sinnvoll verteilt werden, denn große Fabriken produzieren schneller, sind aber entsprechend teuer. Auch Verteidigungsanlagen und Aufklärung wollen finanziert werden. Sobald zwei Armeen aufeinandertreffen, verwandelt sich Steel Empire plötzlich in ein Actionspiel. Jetzt darf man selbst einen der Kampfroboter übernehmen und über das Schlachtfeld stapfen. Und genau dieser Teil ist gleichzeitig die größte Stärke und Schwäche des Spiels. Die Idee ist hervorragend. Statt nur Zahlen gegeneinander rechnen zu lassen, kann ein guter Spieler eine eigentlich ungünstige Schlacht persönlich beeinflussen. Besonders mit mehreren menschlichen Spielern sorgt das für interessante Situationen. Die Actionsteuerung ist allerdings gewöhnungsbedürftig und nicht immer besonders präzise. Auch grafisch präsentiert sich Steel Empire eher zweckmäßig. Die strategische Karte erfüllt ihren Zweck, wird aber niemanden dazu bringen, ehrfürchtig vor dem Amiga zu sitzen. Dafür laufen die Roboterkämpfe ordentlich und bieten einige nette Soundeffekte und Sprachausgaben. Weniger erfreulich sind die Ladezeiten. Die zwei Disketten werden intensiv beschäftigt und insbesondere bei längeren Partien entwickelt man irgendwann eine erstaunlich persönliche Beziehung zum Diskettenlaufwerk. Auch die deutsche Übersetzung wirkt stellenweise unfreiwillig komisch, weil Umlaute offenbar auf dem Weg nach Orion verloren gegangen sind. Das größte Problem bleibt jedoch, dass beide Spielhälften nicht ganz dieselbe Qualität erreichen. Der strategische Teil besitzt interessante Ideen, bleibt aber relativ überschaubar, während die Actiongefechte auf Dauer repetitiv werden können. Trotzdem ist Steel Empire bemerkenswert. Die Kombination aus Reichsverwaltung und selbst gesteuerten Schlachten war 1992 ungewöhnlich und deutet bereits auf Ideen hin, die Silicon Knights wenig später in Fantasy Empires weiterentwickelte. Kein großer Amiga-Klassiker, aber ein spannendes Experiment mit riesigen Robotern. Und riesige Roboter verbessern bekanntlich fast jede Strategiesitzung.",
+                "trivia": [
+                    "Steel Empire erschien in Nordamerika unter dem Titel Cyber Empires bei Strategic Simulations. Millennium veröffentlichte das gleiche Spiel in Europa unter dem Titel Steel Empire.",
+                    "Denis Dyack und Rick Goertz entwickelten das Spieldesign. Die Amiga-Version wurde von Kevin Hoare programmiert, während Richard Joseph für die Musik verantwortlich war.",
+                    "Steel Empire gilt als direkter Vorläufer von Silicon Knights' Fantasy Empires. Beide Spiele verbinden eine strategische Übersichtsebene mit Kämpfen, bei denen der Spieler einzelne Einheiten direkt kontrollieren kann."
+                ],
+                "worthPlaying": "Steel Empire ist heute vor allem wegen seiner ungewöhnlichen Verbindung aus rundenbasierter Strategie und direkter Roboter-Action interessant. Beide Bestandteile wirken für sich genommen etwas einfach und die Amiga-Version leidet unter langen Ladezeiten, doch gemeinsam ergeben sie ein Spielkonzept, das Anfang der 1990er Jahre ausgesprochen ungewöhnlich war. Für Freunde früher Silicon-Knights-Spiele, Strategiesammler und Spieler, die später Fantasy Empires mochten, ist Steel Empire deshalb ein interessantes Stück Entwicklungsgeschichte.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Steel Empire is an unusual combination of turn-based strategy and action developed by Silicon Knights. Up to five factions fight for control of the planet Orion using enormous cybernetic war machines. Players manage territories, construct factories, produce cyborg armies and plan attacks on a strategic map. When armies meet, the player can take direct control of one combat machine and personally fight the resulting battle.",
+                "history": "Steel Empire was developed by Canadian studio Silicon Knights and released for the Amiga, Atari ST and DOS in 1992. Strategic Simulations published the game in North America as Cyber Empires, while Millennium Interactive released the European edition under the title Steel Empire. Denis Dyack and Rick Goertz designed the game, Bill Dunn and George MacDonald served as producers, Kevin Hoare programmed the Amiga version and Richard Joseph composed the music. The game combines two very different styles. Its strategic layer resembles an elaborate board game in which up to five factions compete for control of Orion. Players manage money, construct administrative buildings, fortresses and factories, and produce armies of cybernetic war machines. Nine basic cyborg models are available, differing in armour, weapons, size and terrain capabilities. An optional fog-of-war system hides enemy activity, while spy satellites can provide additional intelligence. When opposing armies meet, the game switches to a top-down action battle. Players may directly control one cyborg or allow the computer to resolve the engagement automatically. This combination of strategic planning and direct combat became the game's defining feature. The Amiga edition was supplied on two disks, requires 1 MB of memory and supports up to five players taking turns. Contemporary reviews were divided, with some critics enjoying the action battles while others criticised the controls, loading times and comparatively simple strategic layer. Silicon Knights later revisited and expanded the basic concept in Fantasy Empires.",
+                "review": "Steel Empire feels like the result of a strategy design meeting interrupted by someone asking whether the player could personally control a giant combat robot. Surprisingly, the answer was yes. The strategic map involves controlling territories, building factories, producing cyborgs and deciding where to attack next. Money must be divided between industry, defence and intelligence, giving the game a reasonable amount of strategic planning. When armies meet, however, Steel Empire suddenly becomes an action game and allows the player to control a combat machine directly. This is both its most distinctive feature and one of its weaknesses. Skilled players can influence battles that might otherwise be lost, but the action controls are not always precise and the battles eventually become repetitive. The strategic side is functional rather than especially deep, while the Amiga version also suffers from frequent loading. Nevertheless, the combination was highly unusual in 1992 and foreshadowed ideas Silicon Knights would develop further in Fantasy Empires. Steel Empire is not one of the Amiga's essential strategy classics, but it remains an interesting experiment from the early history of Silicon Knights.",
+                "trivia": [
+                    "Steel Empire was released in North America as Cyber Empires by Strategic Simulations, while Millennium used the Steel Empire title for the European release.",
+                    "Denis Dyack and Rick Goertz designed the game. Kevin Hoare programmed the Amiga version and Richard Joseph composed the music.",
+                    "Steel Empire is considered a predecessor to Silicon Knights' Fantasy Empires, which further developed the combination of strategic empire management and directly controlled battles."
+                ],
+                "worthPlaying": "Steel Empire remains interesting because of its unusual combination of turn-based strategy and directly controlled robot combat. Neither half is exceptionally deep and the Amiga version suffers from substantial loading, but together they form a distinctive concept for the early 1990s. Fans of early Silicon Knights games, unusual strategy titles and Fantasy Empires may find it particularly worthwhile."
+            }
+        },
+        id: 225,
+        folder: "steel_empire",
+        scanBy: "Magisthan",
+        page: "steel_empire.html",
+        featured: false,
+        title: "Steel Empire",
+        system: "Amiga",
+        year: 1992,
+        publisher: "Millennium Interactive Ltd.",
+        developer: "Silicon Knights, Inc.",
+        genre: ["Strategie", "Action", "Kriegsspiel", "Science-Fiction"],
+        description: "Steel Empire ist ein ungewöhnlicher Mix aus rundenbasierter Strategie und Action von Silicon Knights. Bis zu fünf Parteien kämpfen auf dem Planeten Orion um die Weltherrschaft und setzen dabei riesige kybernetische Kampfmaschinen ein. Auf der strategischen Karte werden Länder verwaltet, Fabriken errichtet, Cyborgs produziert und Angriffe geplant. Treffen zwei Armeen aufeinander, kann der Spieler anschließend selbst die Kontrolle über einen seiner Kampfroboter übernehmen und die Schlacht in Echtzeit austragen.",
+        history: `Steel Empire wurde vom kanadischen Entwickler Silicon Knights entwickelt und 1992 für Amiga, Atari ST und DOS veröffentlicht. In Nordamerika erschien das Spiel bei Strategic Simulations unter dem Titel Cyber Empires, während Millennium Interactive die europäische Version unter dem Namen Steel Empire vertrieb. Denis Dyack und Rick Goertz zeichneten für das Spieldesign verantwortlich. Bill Dunn und George MacDonald werden als Producer genannt, Kevin Hoare programmierte die Amiga-Fassung und Richard Joseph komponierte die Musik. An der Grafik arbeiteten unter anderem Paul Barton, Paul Dobson, Robert Swan, Robin Chapman, Tom Wahl und William Yeatts. Steel Empire entstand in einer frühen Phase von Silicon Knights und kombinierte zwei Spielprinzipien, die Anfang der 1990er Jahre normalerweise getrennt voneinander existierten. Der strategische Teil erinnert in seinen Grundzügen an ein komplexeres Brettspiel wie Risiko. Bis zu fünf Parteien kämpfen um die Kontrolle des Planeten Orion. Jeder Spieler beginnt mit einem begrenzten Territorium und finanziellen Mitteln. Das vorhandene Geld kann in Verwaltungsgebäude, Verteidigungsanlagen und Fabriken investiert werden. Fabriken produzieren anschließend die eigentlichen Armeen des Spiels: gewaltige Cyborg-Kampfmaschinen. Insgesamt stehen neun verschiedene Grundtypen zur Verfügung. Sie unterscheiden sich in Größe, Panzerung, Bewaffnung und ihrer Eignung für unterschiedliche Geländearten. Kleine Fabriken sind vergleichsweise günstig, benötigen jedoch längere Zeit für die Produktion. Große Industrieanlagen sind wesentlich teurer, können dafür neue Einheiten schneller bereitstellen. Zusätzlich spielt Aufklärung eine wichtige Rolle. Eine optionale Fog-of-War-Funktion verbirgt gegnerische Aktivitäten, während Investitionen in Spionagesatelliten zusätzliche Informationen liefern können. Sobald auf der strategischen Karte ein Angriff ausgelöst wird, wechselt Steel Empire in einen völlig anderen Spielmodus. Der Spieler kann eine der beteiligten Kampfmaschinen direkt übernehmen und die Schlacht aus einer Top-down-Perspektive selbst austragen. Alternativ lässt sich das Gefecht vom Computer berechnen. Diese Verbindung aus strategischer Planung und direkter Action war die auffälligste Besonderheit des Spiels. Die Amiga-Version erschien auf zwei Disketten und benötigt 1 MB Arbeitsspeicher. Sie unterstützt ein bis fünf Spieler, wobei die Teilnehmer ihre Züge nacheinander durchführen. Die europäische Fassung bietet neben Englisch auch deutsche, französische und italienische Bildschirmtexte. Zeitgenössische Kritiken reagierten sehr unterschiedlich auf das Konzept. Besonders die direkten Roboterkämpfe wurden teilweise gelobt, während andere Tester Steuerung, Präsentation, lange Ladezeiten und den strategischen Teil kritisierten. Silicon Knights griff die Idee einer Verbindung aus strategischer Reichsverwaltung und direkt kontrollierten Kämpfen später erneut auf. Das 1993 veröffentlichte Fantasy Empires entwickelte das Konzept in einer Fantasywelt weiter und gilt deshalb als geistiger Nachfolger von Steel Empire.`,
+        review: `Steel Empire ist eines dieser Spiele, bei denen die Entwickler offenbar während der Besprechung irgendwann gesagt haben: Wir könnten ein Strategiespiel machen. Und jemand anderes antwortete: Ja, aber können wir danach persönlich mit einem riesigen Kampfroboter alles kaputtschießen? Die Antwort war offensichtlich ja. Genau diese Mischung macht Steel Empire interessant. Auf der strategischen Karte fühlt sich das Spiel zunächst wie eine futuristische Variante von Risiko an. Man kontrolliert Länder, baut Fabriken, produziert Cyborgs und überlegt, welcher Nachbar als Nächstes dringend davon überzeugt werden sollte, dass sein Land eigentlich viel besser zu unserem Imperium passt. Geld muss sinnvoll verteilt werden, denn große Fabriken produzieren schneller, sind aber entsprechend teuer. Auch Verteidigungsanlagen und Aufklärung wollen finanziert werden. Sobald zwei Armeen aufeinandertreffen, verwandelt sich Steel Empire plötzlich in ein Actionspiel. Jetzt darf man selbst einen der Kampfroboter übernehmen und über das Schlachtfeld stapfen. Und genau dieser Teil ist gleichzeitig die größte Stärke und Schwäche des Spiels. Die Idee ist hervorragend. Statt nur Zahlen gegeneinander rechnen zu lassen, kann ein guter Spieler eine eigentlich ungünstige Schlacht persönlich beeinflussen. Besonders mit mehreren menschlichen Spielern sorgt das für interessante Situationen. Die Actionsteuerung ist allerdings gewöhnungsbedürftig und nicht immer besonders präzise. Auch grafisch präsentiert sich Steel Empire eher zweckmäßig. Die strategische Karte erfüllt ihren Zweck, wird aber niemanden dazu bringen, ehrfürchtig vor dem Amiga zu sitzen. Dafür laufen die Roboterkämpfe ordentlich und bieten einige nette Soundeffekte und Sprachausgaben. Weniger erfreulich sind die Ladezeiten. Die zwei Disketten werden intensiv beschäftigt und insbesondere bei längeren Partien entwickelt man irgendwann eine erstaunlich persönliche Beziehung zum Diskettenlaufwerk. Auch die deutsche Übersetzung wirkt stellenweise unfreiwillig komisch, weil Umlaute offenbar auf dem Weg nach Orion verloren gegangen sind. Das größte Problem bleibt jedoch, dass beide Spielhälften nicht ganz dieselbe Qualität erreichen. Der strategische Teil besitzt interessante Ideen, bleibt aber relativ überschaubar, während die Actiongefechte auf Dauer repetitiv werden können. Trotzdem ist Steel Empire bemerkenswert. Die Kombination aus Reichsverwaltung und selbst gesteuerten Schlachten war 1992 ungewöhnlich und deutet bereits auf Ideen hin, die Silicon Knights wenig später in Fantasy Empires weiterentwickelte. Kein großer Amiga-Klassiker, aber ein spannendes Experiment mit riesigen Robotern. Und riesige Roboter verbessern bekanntlich fast jede Strategiesitzung.`,
+        trivia: [
+                  "Steel Empire erschien in Nordamerika unter dem Titel Cyber Empires bei Strategic Simulations. Millennium veröffentlichte das gleiche Spiel in Europa unter dem Titel Steel Empire.",
+                  "Denis Dyack und Rick Goertz entwickelten das Spieldesign. Die Amiga-Version wurde von Kevin Hoare programmiert, während Richard Joseph für die Musik verantwortlich war.",
+                  "Steel Empire gilt als direkter Vorläufer von Silicon Knights' Fantasy Empires. Beide Spiele verbinden eine strategische Übersichtsebene mit Kämpfen, bei denen der Spieler einzelne Einheiten direkt kontrollieren kann."
+        ],
+        worthPlaying: `Steel Empire ist heute vor allem wegen seiner ungewöhnlichen Verbindung aus rundenbasierter Strategie und direkter Roboter-Action interessant. Beide Bestandteile wirken für sich genommen etwas einfach und die Amiga-Version leidet unter langen Ladezeiten, doch gemeinsam ergeben sie ein Spielkonzept, das Anfang der 1990er Jahre ausgesprochen ungewöhnlich war. Für Freunde früher Silicon-Knights-Spiele, Strategiesammler und Spieler, die später Fantasy Empires mochten, ist Steel Empire deshalb ein interessantes Stück Entwicklungsgeschichte.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1400/cyber-empires/",
+        wikipedia: "https://en.wikipedia.org/wiki/Cyber_Empires",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 2,
+        stars: 2,
+        dimensions: {
+        width: 175,
+        height: 222,
+        depth: 33
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Das Schwarze Auge: Sternenschweif ist der zweite Teil der Nordland-Trilogie von Attic und ein umfangreiches Computer-Rollenspiel nach dem Regelwerk des deutschen Pen-&-Paper-Systems Das Schwarze Auge. Die Heldengruppe reist ins Svellttal, wo sie das zerbrochene Bündnis zwischen Elfen und Zwergen wiederherstellen soll. Im Mittelpunkt steht die Suche nach dem geheimnisvollen Salamanderstein, während Orks und andere Parteien ihre eigenen Pläne verfolgen.",
+                "history": "Das Schwarze Auge: Sternenschweif wurde von Attic Entertainment Software in Zusammenarbeit mit Fantasy Productions entwickelt und erschien 1994 als zweiter Teil der Nordland-Trilogie. Game Director war Hans-Jürgen Brändle, Guido Henkel gehörte zu den zentralen Köpfen hinter Spiel und Geschichte, Werner Fuchs und Jochen Hamma werden als Producer genannt. Spieler können eine neue Heldengruppe erstellen oder ihre Charaktere aus Die Schicksalsklinge importieren. Die Handlung führt ins Svellttal, wo das Bündnis zwischen Zwergen und Elfen zerbrochen ist und gleichzeitig die Bedrohung durch die Orks wächst. Um das Bündnis wiederherzustellen, muss die Gruppe den Salamanderstein finden. Spielerisch verbindet Sternenschweif umfangreiche Charakterentwicklung, Reisen durch Aventurien, Dialoge und Erkundung mit taktischen, rundenbasierten Kämpfen. Gegenüber dem Vorgänger wurden Präsentation und Bedienung verbessert. Die deutsche CD-ROM-Ausgabe erschien auf zwei CDs und ergänzte insbesondere umfangreiche Sprachausgabe. Sternenschweif gilt heute als einer der stärksten Teile der klassischen Nordland-Trilogie.",
+                "review": "Sternenschweif ist genau die Art Rollenspiel, bei der man schon bei der Charaktererschaffung mehr Entscheidungen treffen kann als in manchem modernen Spiel während der gesamten Kampagne. Das DSA-Regelwerk wurde erstaunlich umfassend umgesetzt: Eigenschaften, Talente, Zauber, Krankheiten, Ausrüstung, Reisen und taktische Kämpfe greifen ineinander und erzeugen ein echtes Pen-&-Paper-Gefühl. Gleichzeitig wirkt das Spiel zugänglicher und ausgereifter als Die Schicksalsklinge. Besonders gut gefällt mir die Atmosphäre. Das Svellttal fühlt sich nicht wie eine Ansammlung von Leveln an, sondern wie eine zusammenhängende Fantasywelt mit Städten, Wildnis, Dungeons und zahlreichen kleinen Ereignissen. Die CD-ROM-Version gewinnt zusätzlich durch die Sprachausgabe. Aus heutiger Sicht können die komplexe Bedienung, langsamen Kämpfe und manche wenig erklärten Spielmechaniken abschrecken. Wer sich darauf einlässt, bekommt aber eines der interessantesten deutschen Computer-Rollenspiele der 1990er Jahre und für mich einen der Höhepunkte der Nordland-Trilogie.",
+                "trivia": [
+                    "Sternenschweif ist der zweite Teil der Nordland-Trilogie. Eine Heldengruppe aus Die Schicksalsklinge kann importiert und anschließend nach Schatten über Riva weitergeführt werden.",
+                    "Die ursprüngliche deutsche Veröffentlichung gab es auf acht 3,5-Zoll-Disketten und als Zwei-CD-ROM-Ausgabe. Für die Diskettenfassung erschien zusätzlich ein separates Speech-Pack mit Sprachausgabe.",
+                    "Die internationale Fassung erschien unter dem Titel Realms of Arkania: Star Trail. Das Spiel basiert auf dem deutschen Pen-&-Paper-Rollenspiel Das Schwarze Auge und setzt dessen komplexes Regelwerk ungewöhnlich detailliert um."
+                ],
+                "worthPlaying": "Sternenschweif ist auch heute noch bemerkenswert, wenn man komplexe klassische Rollenspiele mag. Charakterentwicklung, DSA-Regelwerk, taktische Kämpfe und die detaillierte Darstellung Aventuriens erzeugen ein Spielerlebnis, das sich deutlich von moderneren Rollenspielen unterscheidet. Bedienung und Präsentation sind gealtert, doch gerade die Tiefe und die Freiheit machen Sternenschweif zu einem wichtigen deutschen Rollenspielklassiker.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Realms of Arkania: Star Trail is the second game in Attic's Northlands Trilogy and an extensive computer RPG based on the German tabletop role-playing system The Dark Eye. The party travels to the Svellt Valley, where the alliance between elves and dwarves has collapsed. Restoring that alliance requires finding the mysterious Salamander Stone while orcs and several other factions pursue their own objectives.",
+                "history": "Star Trail was developed by Attic Entertainment Software in cooperation with Fantasy Productions and released in 1994 as the second game in the Northlands Trilogy. Hans-Jürgen Brändle served as game director, with Guido Henkel among the key contributors to its design and story. Players can create a new party or import characters from Blade of Destiny. The adventure takes place in the Svellt Valley and centres on restoring the alliance between elves and dwarves by recovering the Salamander Stone. Gameplay combines detailed character development, exploration, travelling, dialogue and turn-based tactical combat. The German CD-ROM edition was released on two CDs and added extensive speech. Star Trail is widely remembered as one of the strongest entries in the original trilogy.",
+                "review": "Star Trail translates an impressive amount of The Dark Eye tabletop system into a computer RPG. Attributes, skills, spells, equipment, travel and tactical combat combine to create an unusually detailed role-playing experience, while the interface and presentation are more refined than in Blade of Destiny. The Svellt Valley also feels like a coherent fantasy region rather than a collection of isolated levels. The CD-ROM edition benefits from its additional speech. Some mechanics, combat sequences and interface elements have aged considerably, but players willing to learn its systems will find one of the most substantial German computer RPGs of the 1990s.",
+                "trivia": [
+                    "Star Trail is the second game in the Northlands Trilogy. Characters can be imported from Blade of Destiny and later transferred to Shadows over Riva.",
+                    "The German game was available on eight 3.5-inch floppy disks and as a two-CD edition. A separate speech pack was also produced for the floppy version.",
+                    "The international title is Realms of Arkania: Star Trail. The game is based on the German tabletop RPG The Dark Eye and reproduces a substantial part of its rules."
+                ],
+                "worthPlaying": "Star Trail remains rewarding for players who enjoy complex classic role-playing games. Its detailed character system, tactical combat and extensive adaptation of The Dark Eye rules give it an identity very different from modern RPGs. The interface has aged, but the depth and freedom still make it an important example of German computer role-playing history."
+            }
+        },
+        id: 226,
+        folder: "das_schwarze_auge_sternenschweif",
+        scanBy: "Magisthan",
+        page: "das_schwarze_auge_sternenschweif.html",
+        featured: false,
+        title: "Das Schwarze Auge: Sternenschweif",
+        system: "PC",
+        year: 1994,
+        publisher: "Fantasy Productions / Schmidt Spiele",
+        developer: "Attic Entertainment Software GmbH",
+        genre: ["Rollenspiel", "Fantasy", "Dungeon Crawler", "Rundenbasiert"],
+        description: "Das Schwarze Auge: Sternenschweif ist der zweite Teil der Nordland-Trilogie von Attic und ein umfangreiches Computer-Rollenspiel nach dem Regelwerk des deutschen Pen-&-Paper-Systems Das Schwarze Auge. Die Heldengruppe reist ins Svellttal, wo sie das zerbrochene Bündnis zwischen Elfen und Zwergen wiederherstellen soll. Im Mittelpunkt steht die Suche nach dem geheimnisvollen Salamanderstein, während Orks und andere Parteien ihre eigenen Pläne verfolgen.",
+        history: `Das Schwarze Auge: Sternenschweif wurde von Attic Entertainment Software in Zusammenarbeit mit Fantasy Productions entwickelt und erschien 1994 als zweiter Teil der Nordland-Trilogie. Game Director war Hans-Jürgen Brändle, Guido Henkel gehörte zu den zentralen Köpfen hinter Spiel und Geschichte, Werner Fuchs und Jochen Hamma werden als Producer genannt. Spieler können eine neue Heldengruppe erstellen oder ihre Charaktere aus Die Schicksalsklinge importieren. Die Handlung führt ins Svellttal, wo das Bündnis zwischen Zwergen und Elfen zerbrochen ist und gleichzeitig die Bedrohung durch die Orks wächst. Um das Bündnis wiederherzustellen, muss die Gruppe den Salamanderstein finden. Spielerisch verbindet Sternenschweif umfangreiche Charakterentwicklung, Reisen durch Aventurien, Dialoge und Erkundung mit taktischen, rundenbasierten Kämpfen. Gegenüber dem Vorgänger wurden Präsentation und Bedienung verbessert. Die deutsche CD-ROM-Ausgabe erschien auf zwei CDs und ergänzte insbesondere umfangreiche Sprachausgabe. Sternenschweif gilt heute als einer der stärksten Teile der klassischen Nordland-Trilogie.`,
+        review: `Sternenschweif ist genau die Art Rollenspiel, bei der man schon bei der Charaktererschaffung mehr Entscheidungen treffen kann als in manchem modernen Spiel während der gesamten Kampagne. Das DSA-Regelwerk wurde erstaunlich umfassend umgesetzt: Eigenschaften, Talente, Zauber, Krankheiten, Ausrüstung, Reisen und taktische Kämpfe greifen ineinander und erzeugen ein echtes Pen-&-Paper-Gefühl. Gleichzeitig wirkt das Spiel zugänglicher und ausgereifter als Die Schicksalsklinge. Besonders gut gefällt mir die Atmosphäre. Das Svellttal fühlt sich nicht wie eine Ansammlung von Leveln an, sondern wie eine zusammenhängende Fantasywelt mit Städten, Wildnis, Dungeons und zahlreichen kleinen Ereignissen. Die CD-ROM-Version gewinnt zusätzlich durch die Sprachausgabe. Aus heutiger Sicht können die komplexe Bedienung, langsamen Kämpfe und manche wenig erklärten Spielmechaniken abschrecken. Wer sich darauf einlässt, bekommt aber eines der interessantesten deutschen Computer-Rollenspiele der 1990er Jahre und für mich einen der Höhepunkte der Nordland-Trilogie.`,
+        trivia: [
+                  "Sternenschweif ist der zweite Teil der Nordland-Trilogie. Eine Heldengruppe aus Die Schicksalsklinge kann importiert und anschließend nach Schatten über Riva weitergeführt werden.",
+                  "Die ursprüngliche deutsche Veröffentlichung gab es auf acht 3,5-Zoll-Disketten und als Zwei-CD-ROM-Ausgabe. Für die Diskettenfassung erschien zusätzlich ein separates Speech-Pack mit Sprachausgabe.",
+                  "Die internationale Fassung erschien unter dem Titel Realms of Arkania: Star Trail. Das Spiel basiert auf dem deutschen Pen-&-Paper-Rollenspiel Das Schwarze Auge und setzt dessen komplexes Regelwerk ungewöhnlich detailliert um."
+        ],
+        worthPlaying: `Sternenschweif ist auch heute noch bemerkenswert, wenn man komplexe klassische Rollenspiele mag. Charakterentwicklung, DSA-Regelwerk, taktische Kämpfe und die detaillierte Darstellung Aventuriens erzeugen ein Spielerlebnis, das sich deutlich von moderneren Rollenspielen unterscheidet. Bedienung und Präsentation sind gealtert, doch gerade die Tiefe und die Freiheit machen Sternenschweif zu einem wichtigen deutschen Rollenspielklassiker.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/3438/realms-of-arkania-star-trail/",
+        wikipedia: "https://de.wikipedia.org/wiki/Das_Schwarze_Auge:_Die_Nordland-Trilogie",
+        gog: "https://www.gog.com/de/game/realms_of_arkania_1_2"
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 188,
+        height: 237,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Street Sports Collection ist eine C64-Sportsammlung von Epyx mit vier Spielen der Street-Sports-Reihe: Street Sports Baseball, Street Sports Basketball, Street Sports Football und Street Sports Soccer. Statt in großen Stadien treten Kinder und Jugendliche auf Hinterhöfen, Parkplätzen und improvisierten Spielfeldern gegeneinander an. Die einzelnen Spiele setzen auf unkomplizierte Zwei-Spieler-Action und verbinden klassische Sportarten mit einer lockeren Straßenatmosphäre.",
+                "history": "Street Sports Collection bündelt vier zuvor einzeln veröffentlichte Epyx-Sportspiele für den Commodore 64. Baseball und Basketball erschienen 1987, Football und Soccer folgten 1988. Die Reihe verlegte bekannte Sportarten bewusst aus professionellen Stadien auf Hinterhöfe, Parkplätze und öffentliche Spielflächen. Dabei besitzen die auswählbaren Jugendlichen teilweise unterschiedliche Fähigkeiten, während Hindernisse auf den Spielfeldern zusätzliche Abwechslung schaffen. Die einzelnen Titel entstanden bei unterschiedlichen Entwicklerteams: Street Sports Baseball wurde von James Wickstead Design Associates entwickelt, während bei Football und Soccer Ogdon Microdesign und K-Byte beteiligt waren. Die 1990 veröffentlichte Collection fasst die vier C64-Titel als gemeinsames Sportpaket zusammen.",
+                "review": "Die Street Sports Collection ist vor allem deshalb sympathisch, weil Epyx Sport nicht besonders ernst nimmt. Statt millionenschwerer Profis stehen Jugendliche auf Parkplätzen und Hinterhöfen, und ein Hindernis auf dem Spielfeld gehört einfach zum Spiel. Besonders Baseball und Basketball funktionieren auch heute noch erstaunlich gut und profitieren stark vom Zwei-Spieler-Modus. Soccer und Football fallen qualitativ etwas ab, sorgen aber für zusätzliche Abwechslung. Als Sammlung ergibt das ein schönes Stück C64-Sportgeschichte: nicht jede Disziplin ist ein Volltreffer, aber die lockere Atmosphäre und der direkte Mehrspielerspaß geben der Reihe einen eigenen Charakter.",
+                "trivia": [
+                    "Die Street Sports Collection enthält Street Sports Baseball, Street Sports Basketball, Street Sports Football und Street Sports Soccer. Die ursprünglichen Einzelveröffentlichungen stammen aus den Jahren 1987 und 1988.",
+                    "Street Sports Basketball lässt Spieler aus zehn Jugendlichen mit unterschiedlichen Stärken und Schwächen ein Dreierteam zusammenstellen. Selbst Hindernisse wie Schlaglöcher oder Ölflecken können auf den improvisierten Spielfeldern eine Rolle spielen.",
+                    "Die vier Spiele wurden nicht von einem einzigen Entwicklerteam produziert. Street Sports Baseball stammt von James Wickstead Design Associates, während an Football und Soccer unter anderem Ogdon Microdesign und K-Byte beteiligt waren."
+                ],
+                "worthPlaying": "Street Sports Collection ist heute besonders als unkomplizierte Mehrspielersammlung interessant. Baseball und Basketball gehören zu den stärkeren C64-Umsetzungen ihrer jeweiligen Sportarten, während Football und Soccer das Paket sinnvoll ergänzen. Die charmante Hinterhofatmosphäre unterscheidet die Reihe deutlich von klassischen Sportsimulationen und macht die Collection zu einem interessanten Epyx-Sammlerstück.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Street Sports Collection is an Epyx sports compilation for the Commodore 64 containing Street Sports Baseball, Street Sports Basketball, Street Sports Football and Street Sports Soccer. Instead of professional stadiums, the games feature youngsters competing on neighbourhood courts, parking lots and improvised playing fields. Each title focuses on accessible sports action and particularly enjoyable two-player competition.",
+                "history": "Street Sports Collection brings together four previously released Epyx sports games for the Commodore 64. Baseball and Basketball originally appeared in 1987, followed by Football and Soccer in 1988. The series deliberately moved familiar sports away from professional stadiums and into neighbourhood environments, with selectable youngsters and improvised playing areas giving the games a distinctive personality. Different development teams worked on the individual titles: James Wickstead Design Associates developed Street Sports Baseball, while Ogdon Microdesign and K-Byte were involved with Football and Soccer. The 1990 collection packages all four C64 games together.",
+                "review": "Street Sports Collection remains appealing because Epyx treats sport as neighbourhood entertainment rather than serious professional competition. Baseball and Basketball are the strongest games in the package and remain particularly enjoyable with two players. Soccer and Football are less accomplished, but provide useful variety. As a compilation, it offers a charming snapshot of C64 sports gaming with a personality quite different from conventional simulations.",
+                "trivia": [
+                    "The collection includes Street Sports Baseball, Street Sports Basketball, Street Sports Football and Street Sports Soccer. The original individual games were released during 1987 and 1988.",
+                    "Street Sports Basketball lets players select a three-person team from ten youngsters with different abilities, while environmental obstacles can influence play.",
+                    "The four games were not created by one single development team. James Wickstead Design Associates developed Baseball, while Ogdon Microdesign and K-Byte were involved with Football and Soccer."
+                ],
+                "worthPlaying": "Street Sports Collection remains particularly enjoyable as a casual multiplayer package. Baseball and Basketball are among the stronger C64 games in their respective sports, while Football and Soccer add variety. The distinctive neighbourhood setting also gives the series a character quite unlike traditional sports simulations."
+            }
+        },
+        id: 227,
+        folder: "street_sports_collection",
+        scanBy: "Magisthan",
+        page: "street_sports_collection.html",
+        featured: false,
+        title: "Street Sports Collection",
+        system: "C64",
+        year: 1990,
+        publisher: "Epyx, Inc.",
+        developer: "Various / Epyx",
+        genre: ["Sport", "Compilation", "Baseball", "Basketball", "Football", "Soccer"],
+        description: "Street Sports Collection ist eine C64-Sportsammlung von Epyx mit vier Spielen der Street-Sports-Reihe: Street Sports Baseball, Street Sports Basketball, Street Sports Football und Street Sports Soccer. Statt in großen Stadien treten Kinder und Jugendliche auf Hinterhöfen, Parkplätzen und improvisierten Spielfeldern gegeneinander an. Die einzelnen Spiele setzen auf unkomplizierte Zwei-Spieler-Action und verbinden klassische Sportarten mit einer lockeren Straßenatmosphäre.",
+        history: `Street Sports Collection bündelt vier zuvor einzeln veröffentlichte Epyx-Sportspiele für den Commodore 64. Baseball und Basketball erschienen 1987, Football und Soccer folgten 1988. Die Reihe verlegte bekannte Sportarten bewusst aus professionellen Stadien auf Hinterhöfe, Parkplätze und öffentliche Spielflächen. Dabei besitzen die auswählbaren Jugendlichen teilweise unterschiedliche Fähigkeiten, während Hindernisse auf den Spielfeldern zusätzliche Abwechslung schaffen. Die einzelnen Titel entstanden bei unterschiedlichen Entwicklerteams: Street Sports Baseball wurde von James Wickstead Design Associates entwickelt, während bei Football und Soccer Ogdon Microdesign und K-Byte beteiligt waren. Die 1990 veröffentlichte Collection fasst die vier C64-Titel als gemeinsames Sportpaket zusammen.`,
+        review: `Die Street Sports Collection ist vor allem deshalb sympathisch, weil Epyx Sport nicht besonders ernst nimmt. Statt millionenschwerer Profis stehen Jugendliche auf Parkplätzen und Hinterhöfen, und ein Hindernis auf dem Spielfeld gehört einfach zum Spiel. Besonders Baseball und Basketball funktionieren auch heute noch erstaunlich gut und profitieren stark vom Zwei-Spieler-Modus. Soccer und Football fallen qualitativ etwas ab, sorgen aber für zusätzliche Abwechslung. Als Sammlung ergibt das ein schönes Stück C64-Sportgeschichte: nicht jede Disziplin ist ein Volltreffer, aber die lockere Atmosphäre und der direkte Mehrspielerspaß geben der Reihe einen eigenen Charakter.`,
+        trivia: [
+                  "Die Street Sports Collection enthält Street Sports Baseball, Street Sports Basketball, Street Sports Football und Street Sports Soccer. Die ursprünglichen Einzelveröffentlichungen stammen aus den Jahren 1987 und 1988.",
+                  "Street Sports Basketball lässt Spieler aus zehn Jugendlichen mit unterschiedlichen Stärken und Schwächen ein Dreierteam zusammenstellen. Selbst Hindernisse wie Schlaglöcher oder Ölflecken können auf den improvisierten Spielfeldern eine Rolle spielen.",
+                  "Die vier Spiele wurden nicht von einem einzigen Entwicklerteam produziert. Street Sports Baseball stammt von James Wickstead Design Associates, während an Football und Soccer unter anderem Ogdon Microdesign und K-Byte beteiligt waren."
+        ],
+        worthPlaying: `Street Sports Collection ist heute besonders als unkomplizierte Mehrspielersammlung interessant. Baseball und Basketball gehören zu den stärkeren C64-Umsetzungen ihrer jeweiligen Sportarten, während Football und Soccer das Paket sinnvoll ergänzen. Die charmante Hinterhofatmosphäre unterscheidet die Reihe deutlich von klassischen Sportsimulationen und macht die Collection zu einem interessanten Epyx-Sammlerstück.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 185,
+        height: 152,
+        depth: 34
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Super Cycle ist ein schnelles Motorrad-Rennspiel von Epyx, das den Spieler aus einer rückwärtigen Perspektive über verschiedene Rennstrecken schickt. Mit einem Dreigang-Motorrad müssen Gegner, Kurven und zunehmend gefährliche Hindernisse überwunden werden, während gleichzeitig die Uhr unerbittlich herunterläuft. Drei Schwierigkeitsgrade und regelmäßige Bonusrunden ergänzen das unkomplizierte Arcade-Rennprinzip.",
+                "history": "Super Cycle wurde von Stephen H. Landrum entworfen und programmiert und erschien 1986 für den Commodore 64. Michael Kosaka war für die Grafik verantwortlich, Bob Vieira komponierte die Musik. Spielerisch orientiert sich Super Cycle deutlich an damaligen Arcade-Motorradrennen wie Segas Hang-On. Der Spieler steuert sein Motorrad aus einer rückwärtigen Perspektive, schaltet manuell durch drei Gänge und muss jeden Streckenabschnitt innerhalb eines Zeitlimits bewältigen. Spätere Kurse erschweren die Fahrt mit Schlaglöchern, Öl, Wasser, Eis und Absperrungen. Zwischen den regulären Rennen gibt es Bonusrunden, in denen zusätzliche Punkte gesammelt werden können. Besonders die schnelle und flüssige Darstellung sorgte 1986 für Aufmerksamkeit und machte Super Cycle zu einem der bekannteren Motorrad-Rennspiele auf dem C64.",
+                "review": "Super Cycle braucht keine komplizierten Meisterschaften, Fahrzeugabstimmungen oder Boxenstrategien. Motorrad auswählen, Gang einlegen und möglichst schnell über die Strecke fahren – das war es im Wesentlichen. Und genau deshalb funktioniert das Spiel auch heute noch erstaunlich gut. Besonders überzeugend ist die Geschwindigkeit. Die gegnerischen Motorräder kommen flüssig auf den Spieler zu und vermitteln für C64-Verhältnisse ein ordentliches Tempo. Dazu kommen abwechslungsreichere Hindernisse in den späteren Strecken und Bob Vieiras gelungene Musik. Langfristig fehlt allerdings etwas Abwechslung: Das Spielprinzip verändert sich kaum und einen Zwei-Spieler-Modus gibt es leider nicht. Für eine schnelle Runde zwischendurch ist Super Cycle trotzdem einer der besseren frühen Arcade-Racer auf dem C64.",
+                "trivia": [
+                    "Stephen H. Landrum war sowohl für das Design als auch für die Programmierung von Super Cycle verantwortlich. Michael Kosaka erstellte die Grafik und Bob Vieira komponierte die Musik.",
+                    "Das Motorrad besitzt drei Gänge und erreicht im Spiel ungefähr 120 Meilen pro Stunde. Drei Schwierigkeitsgrade verändern unter anderem das verfügbare Zeitlimit.",
+                    "Die C64-Kassettenversion wurde gegenüber der Diskettenfassung leicht gekürzt. Nach dem letzten Level endet sie direkt und bietet weder die vollständige Highscore-Funktion noch einen unmittelbaren Neustart."
+                ],
+                "worthPlaying": "Super Cycle ist heute vor allem wegen seiner für den C64 bemerkenswert flüssigen Renndarstellung interessant. Die Steuerung ist schnell verstanden, das Tempo stimmt und die späteren Hindernisse sorgen für zusätzliche Herausforderung. Das Spielprinzip ist zwar einfach und auf Dauer repetitiv, für Fans klassischer Arcade-Rennspiele bietet Super Cycle aber noch immer unterhaltsame kurze Rennen.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Super Cycle is a fast motorcycle racing game from Epyx, presenting the action from behind the rider. Players race a three-speed motorcycle through a series of courses while avoiding opponents, corners and increasingly dangerous obstacles, all against a strict time limit. Three difficulty levels and regular bonus stages complement the straightforward arcade racing formula.",
+                "history": "Super Cycle was designed and programmed by Stephen H. Landrum and released for the Commodore 64 in 1986. Michael Kosaka created the graphics and Bob Vieira composed the music. The game was clearly influenced by contemporary arcade motorcycle racers such as Sega's Hang-On. Players control a three-speed motorcycle from a rear perspective and must complete each course within a time limit. Later stages introduce potholes, oil, water, ice and barriers, while bonus rounds provide opportunities to earn additional points. Its fast and smooth presentation helped make Super Cycle one of the better-known motorcycle racers on the C64.",
+                "review": "Super Cycle keeps its racing formula extremely simple: select a bike, shift through three gears and reach the finish before time expires. That simplicity still works surprisingly well. The smooth movement of rival motorcycles creates an impressive sense of speed for the C64, while later hazards add some welcome challenge. Bob Vieira's music is another highlight. The main weakness is repetition, as the basic racing formula changes very little and there is no two-player mode. Nevertheless, Super Cycle remains an enjoyable early arcade racer for short sessions.",
+                "trivia": [
+                    "Stephen H. Landrum was responsible for both the design and programming of Super Cycle. Michael Kosaka created the graphics and Bob Vieira composed the music.",
+                    "The motorcycle has three gears and reaches approximately 120 mph in the game. Three difficulty levels alter factors including the available time.",
+                    "The Commodore 64 cassette edition was slightly reduced compared with the disk version. After completing the final level, it ends without the full high-score and replay functionality."
+                ],
+                "worthPlaying": "Super Cycle remains notable for its impressively smooth racing presentation on the Commodore 64. The controls are easy to understand, the sense of speed is convincing and later hazards provide additional challenge. Although repetitive over longer sessions, it remains an entertaining choice for fans of classic arcade racing."
+            }
+        },
+        id: 228,
+        folder: "super_cycle",
+        scanBy: "Magisthan",
+        page: "super_cycle.html",
+        featured: false,
+        title: "Super Cycle",
+        system: "C64",
+        year: 1986,
+        publisher: "Epyx, Inc.",
+        developer: "Epyx, Inc.",
+        genre: ["Rennspiel", "Motorrad", "Arcade"],
+        description: "Super Cycle ist ein schnelles Motorrad-Rennspiel von Epyx, das den Spieler aus einer rückwärtigen Perspektive über verschiedene Rennstrecken schickt. Mit einem Dreigang-Motorrad müssen Gegner, Kurven und zunehmend gefährliche Hindernisse überwunden werden, während gleichzeitig die Uhr unerbittlich herunterläuft. Drei Schwierigkeitsgrade und regelmäßige Bonusrunden ergänzen das unkomplizierte Arcade-Rennprinzip.",
+        history: `Super Cycle wurde von Stephen H. Landrum entworfen und programmiert und erschien 1986 für den Commodore 64. Michael Kosaka war für die Grafik verantwortlich, Bob Vieira komponierte die Musik. Spielerisch orientiert sich Super Cycle deutlich an damaligen Arcade-Motorradrennen wie Segas Hang-On. Der Spieler steuert sein Motorrad aus einer rückwärtigen Perspektive, schaltet manuell durch drei Gänge und muss jeden Streckenabschnitt innerhalb eines Zeitlimits bewältigen. Spätere Kurse erschweren die Fahrt mit Schlaglöchern, Öl, Wasser, Eis und Absperrungen. Zwischen den regulären Rennen gibt es Bonusrunden, in denen zusätzliche Punkte gesammelt werden können. Besonders die schnelle und flüssige Darstellung sorgte 1986 für Aufmerksamkeit und machte Super Cycle zu einem der bekannteren Motorrad-Rennspiele auf dem C64.`,
+        review: `Super Cycle braucht keine komplizierten Meisterschaften, Fahrzeugabstimmungen oder Boxenstrategien. Motorrad auswählen, Gang einlegen und möglichst schnell über die Strecke fahren – das war es im Wesentlichen. Und genau deshalb funktioniert das Spiel auch heute noch erstaunlich gut. Besonders überzeugend ist die Geschwindigkeit. Die gegnerischen Motorräder kommen flüssig auf den Spieler zu und vermitteln für C64-Verhältnisse ein ordentliches Tempo. Dazu kommen abwechslungsreichere Hindernisse in den späteren Strecken und Bob Vieiras gelungene Musik. Langfristig fehlt allerdings etwas Abwechslung: Das Spielprinzip verändert sich kaum und einen Zwei-Spieler-Modus gibt es leider nicht. Für eine schnelle Runde zwischendurch ist Super Cycle trotzdem einer der besseren frühen Arcade-Racer auf dem C64.`,
+        trivia: [
+                  "Stephen H. Landrum war sowohl für das Design als auch für die Programmierung von Super Cycle verantwortlich. Michael Kosaka erstellte die Grafik und Bob Vieira komponierte die Musik.",
+                  "Das Motorrad besitzt drei Gänge und erreicht im Spiel ungefähr 120 Meilen pro Stunde. Drei Schwierigkeitsgrade verändern unter anderem das verfügbare Zeitlimit.",
+                  "Die C64-Kassettenversion wurde gegenüber der Diskettenfassung leicht gekürzt. Nach dem letzten Level endet sie direkt und bietet weder die vollständige Highscore-Funktion noch einen unmittelbaren Neustart."
+        ],
+        worthPlaying: `Super Cycle ist heute vor allem wegen seiner für den C64 bemerkenswert flüssigen Renndarstellung interessant. Die Steuerung ist schnell verstanden, das Tempo stimmt und die späteren Hindernisse sorgen für zusätzliche Herausforderung. Das Spielprinzip ist zwar einfach und auf Dauer repetitiv, für Fans klassischer Arcade-Rennspiele bietet Super Cycle aber noch immer unterhaltsame kurze Rennen.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/14129/super-cycle/",
+        wikipedia: "https://de.wikipedia.org/wiki/Super_Cycle",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 150,
+        height: 226,
+        depth: 25
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Syndicate ist ein Echtzeit-Taktikspiel von Bullfrog Productions in einem düsteren Cyberpunk-Szenario. Im Jahr 2096 haben mächtige Konzerne die Kontrolle über die Welt übernommen. Als Leiter eines eigenen Syndikats schickt der Spieler bis zu vier kybernetisch verbesserte Agenten in Einsätze, um Konkurrenten auszuschalten, Personen zu entführen oder Gebiete zu erobern. Forschung, Waffenentwicklung und die Verbesserung der eigenen Cyborgs ergänzen die taktischen Missionen.",
+                "history": "Syndicate wurde von Bullfrog Productions entwickelt und 1993 von Electronic Arts für PC und Amiga veröffentlicht. Peter Molyneux produzierte die ursprüngliche Entwicklung, während die Amiga-Konvertierung von Mike Diskett, Mark Webley und Guy Simmons programmiert wurde. Chris Hill und Paul McLaughlin gestalteten die Grafik, Russell Shaw komponierte Musik und Sound. Das Spiel verbindet eine strategische Weltkarte mit Echtzeitmissionen in isometrisch dargestellten Städten. Bis zu vier Cyborg-Agenten können gleichzeitig kontrolliert, mit neuen Körperteilen verbessert und mit erforschten Waffen ausgerüstet werden. Eroberte Gebiete liefern durch Steuern Geld für weitere Forschung und Expansion. Besonders ungewöhnlich war 1993 die düstere Cyberpunk-Welt, in der Konzerne anstelle von Staaten um die globale Vorherrschaft kämpfen. Die Amiga-Version erschien auf vier Disketten und kann auf Festplatte installiert werden.",
+                "review": "Syndicate gehört zu den Spielen, bei denen Bullfrog aus einer eigentlich ziemlich einfachen Idee eine faszinierende Welt gebaut hat. Vier Cyborgs, ein Missionsziel und jede Menge Waffen reichen aus, um Situationen entstehen zu lassen, die kaum geskriptet wirken. Besonders gelungen ist die Mischung aus taktischen Einsätzen, Forschung und dem Ausbau der eigenen Agenten. Flammenwerfer, Miniguns und Gauss-Kanonen sorgen dabei für eine ziemlich kompromisslose Form der Unternehmensführung. Auf einem normalen Amiga 500 oder 600 zeigt die Umsetzung allerdings ihre Grenzen: Sobald viel auf dem Bildschirm passiert, wird das Spiel merklich langsamer. Trotzdem bleibt die Amiga-Fassung spielerisch hervorragend. Atmosphäre, Missionsdesign und die Freiheit beim Vorgehen machen Syndicate auch heute noch zu einem der interessantesten Bullfrog-Spiele.",
+                "trivia": [
+                    "Syndicate trug während der Entwicklung zeitweise den Arbeitstitel Cyber Assault. Die Entwicklung dauerte ungefähr drei Jahre.",
+                    "Die Amiga-Version wurde von Mike Diskett, Mark Webley und Guy Simmons umgesetzt. Sie erschien auf vier Disketten, benötigt 1 MB RAM und unterstützt eine Festplatteninstallation.",
+                    "Mit Syndicate: American Revolt erschien später eine Erweiterung mit zusätzlichen und deutlich schwierigeren Missionen. Das Original und die Erweiterung wurden anschließend gemeinsam als Syndicate Plus veröffentlicht."
+                ],
+                "worthPlaying": "Syndicate verbindet Cyberpunk-Atmosphäre, Echtzeit-Taktik und strategische Entwicklung auf eine Weise, die bis heute ungewöhnlich wirkt. Die Missionen erlauben unterschiedliche Vorgehensweisen und das Aufrüsten der eigenen Cyborgs sorgt für zusätzliche Motivation. Auf einem Standard-Amiga können größere Gefechte zwar deutlich langsamer werden, spielerisch bleibt Syndicate aber einer der markantesten Bullfrog-Titel der 1990er Jahre.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Syndicate is a real-time tactical game from Bullfrog Productions set in a dark cyberpunk future. By 2096 powerful corporations have replaced governments and compete for global control. As the executive of a syndicate, the player commands up to four cybernetically enhanced agents on missions involving assassination, kidnapping and territorial conquest. Research, weapon development and cybernetic upgrades complement the tactical missions.",
+                "history": "Syndicate was developed by Bullfrog Productions and published by Electronic Arts for DOS and Amiga in 1993. Peter Molyneux produced the original development, while Mike Diskett, Mark Webley and Guy Simmons programmed the Amiga conversion. Chris Hill and Paul McLaughlin created the graphics and Russell Shaw handled music and sound. The game combines a strategic world map with real-time missions played in detailed isometric cities. Up to four agents can be controlled simultaneously, upgraded with cybernetic body parts and equipped with newly researched weapons. Captured territories provide tax income used to finance further expansion and research. The Amiga edition was distributed on four disks and supports hard-drive installation.",
+                "review": "Syndicate turns a relatively simple tactical concept into a remarkably convincing cyberpunk world. Controlling four upgraded agents provides plenty of tactical freedom, while research and cybernetic improvements give the campaign a strong sense of progression. Weapons such as miniguns, flamethrowers and Gauss guns make corporate negotiations rather direct. The Amiga conversion does suffer from slowdown when many units and explosions appear on a standard machine, but the underlying game remains excellent. Its atmosphere, mission design and freedom of approach still make Syndicate one of Bullfrog's most distinctive games.",
+                "trivia": [
+                    "Syndicate was known as Cyber Assault during part of its development and spent roughly three years in production.",
+                    "Mike Diskett, Mark Webley and Guy Simmons programmed the Amiga conversion. It was released on four disks, requires 1 MB of memory and supports hard-drive installation.",
+                    "An expansion titled Syndicate: American Revolt added a collection of considerably more difficult missions. The original game and expansion were later combined as Syndicate Plus."
+                ],
+                "worthPlaying": "Syndicate combines cyberpunk atmosphere, real-time tactics and strategic development in a way that still feels distinctive. Missions allow different approaches and upgrading the cyborg agents provides satisfying progression. Large battles can run slowly on a standard Amiga, but the design remains one of Bullfrog's most memorable achievements of the 1990s."
+            }
+        },
+        id: 229,
+        folder: "syndicate",
+        scanBy: "Magisthan",
+        page: "syndicate.html",
+        featured: false,
+        title: "Syndicate",
+        system: "Amiga",
+        year: 1993,
+        publisher: "Electronic Arts, Inc.",
+        developer: "Bullfrog Productions, Ltd.",
+        genre: ["Strategie", "Echtzeit-Taktik", "Action", "Cyberpunk"],
+        description: "Syndicate ist ein Echtzeit-Taktikspiel von Bullfrog Productions in einem düsteren Cyberpunk-Szenario. Im Jahr 2096 haben mächtige Konzerne die Kontrolle über die Welt übernommen. Als Leiter eines eigenen Syndikats schickt der Spieler bis zu vier kybernetisch verbesserte Agenten in Einsätze, um Konkurrenten auszuschalten, Personen zu entführen oder Gebiete zu erobern. Forschung, Waffenentwicklung und die Verbesserung der eigenen Cyborgs ergänzen die taktischen Missionen.",
+        history: `Syndicate wurde von Bullfrog Productions entwickelt und 1993 von Electronic Arts für PC und Amiga veröffentlicht. Peter Molyneux produzierte die ursprüngliche Entwicklung, während die Amiga-Konvertierung von Mike Diskett, Mark Webley und Guy Simmons programmiert wurde. Chris Hill und Paul McLaughlin gestalteten die Grafik, Russell Shaw komponierte Musik und Sound. Das Spiel verbindet eine strategische Weltkarte mit Echtzeitmissionen in isometrisch dargestellten Städten. Bis zu vier Cyborg-Agenten können gleichzeitig kontrolliert, mit neuen Körperteilen verbessert und mit erforschten Waffen ausgerüstet werden. Eroberte Gebiete liefern durch Steuern Geld für weitere Forschung und Expansion. Besonders ungewöhnlich war 1993 die düstere Cyberpunk-Welt, in der Konzerne anstelle von Staaten um die globale Vorherrschaft kämpfen. Die Amiga-Version erschien auf vier Disketten und kann auf Festplatte installiert werden.`,
+        review: `Syndicate gehört zu den Spielen, bei denen Bullfrog aus einer eigentlich ziemlich einfachen Idee eine faszinierende Welt gebaut hat. Vier Cyborgs, ein Missionsziel und jede Menge Waffen reichen aus, um Situationen entstehen zu lassen, die kaum geskriptet wirken. Besonders gelungen ist die Mischung aus taktischen Einsätzen, Forschung und dem Ausbau der eigenen Agenten. Flammenwerfer, Miniguns und Gauss-Kanonen sorgen dabei für eine ziemlich kompromisslose Form der Unternehmensführung. Auf einem normalen Amiga 500 oder 600 zeigt die Umsetzung allerdings ihre Grenzen: Sobald viel auf dem Bildschirm passiert, wird das Spiel merklich langsamer. Trotzdem bleibt die Amiga-Fassung spielerisch hervorragend. Atmosphäre, Missionsdesign und die Freiheit beim Vorgehen machen Syndicate auch heute noch zu einem der interessantesten Bullfrog-Spiele.`,
+        trivia: [
+                  "Syndicate trug während der Entwicklung zeitweise den Arbeitstitel Cyber Assault. Die Entwicklung dauerte ungefähr drei Jahre.",
+                  "Die Amiga-Version wurde von Mike Diskett, Mark Webley und Guy Simmons umgesetzt. Sie erschien auf vier Disketten, benötigt 1 MB RAM und unterstützt eine Festplatteninstallation.",
+                  "Mit Syndicate: American Revolt erschien später eine Erweiterung mit zusätzlichen und deutlich schwierigeren Missionen. Das Original und die Erweiterung wurden anschließend gemeinsam als Syndicate Plus veröffentlicht."
+        ],
+        worthPlaying: `Syndicate verbindet Cyberpunk-Atmosphäre, Echtzeit-Taktik und strategische Entwicklung auf eine Weise, die bis heute ungewöhnlich wirkt. Die Missionen erlauben unterschiedliche Vorgehensweisen und das Aufrüsten der eigenen Cyborgs sorgt für zusätzliche Motivation. Auf einem Standard-Amiga können größere Gefechte zwar deutlich langsamer werden, spielerisch bleibt Syndicate aber einer der markantesten Bullfrog-Titel der 1990er Jahre.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/281/syndicate/",
+        wikipedia: "https://de.wikipedia.org/wiki/Syndicate_(1993)",
+        gog: "https://www.gog.com/en/game/syndicate"
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 5,
+        stars: 5,
+        dimensions: {
+        width: 185,
+        height: 235,
+        depth: 36
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Tanglewood ist ein ungewöhnliches Science-Fiction-Adventure von Microdeal, das Erkundung, Rätsel und Action miteinander verbindet. Auf dem Planeten T'ng-y-wd muss der Spieler fünf unterschiedliche ferngesteuerte Fahrzeuge einsetzen, um Dokumente zu finden, die Onkel Arthurs Besitz- und Schürfrechte beweisen. Dafür bleiben nur zehn Tage Zeit. Jedes Fahrzeug besitzt eigene Fähigkeiten und kann Gebiete erreichen oder Aufgaben erledigen, an denen die anderen scheitern.",
+                "history": "Tanglewood wurde von Ian Murray-Watson entworfen und programmiert; Pete Lyon war für die Grafik verantwortlich. Microdeal veröffentlichte die Atari-ST-Fassung 1987. Das Spiel entstand ursprünglich aus der Idee, ein Computerspiel zur britischen Zeichentrickserie Willo the Wisp zu entwickeln. Wegen der Lizenzkosten wurde daraus schließlich ein eigenständiges Spiel. Die 16-Bit-Fassung verlegt die Handlung auf einen fremden Planeten und lässt den Spieler fünf unterschiedliche Fahrzeuge kontrollieren. Diese müssen gemeinsam Gegenstände finden, Rätsel lösen und gefährliche Gebiete erkunden. Eine Besonderheit ist der permanente Zeitablauf: Auch ungenutzte Fahrzeuge bleiben Teil der Spielwelt, weshalb ihre Position und Energie sorgfältig geplant werden müssen.",
+                "review": "Tanglewood ist eines dieser Spiele, bei denen man zunächst einige Zeit benötigt, um überhaupt zu verstehen, was die Entwickler eigentlich von einem wollen. Danach entwickelt sich jedoch ein erstaunlich interessantes Adventure. Besonders gut gefällt mir die Idee mit den fünf Fahrzeugen. Jedes besitzt andere Fähigkeiten, sodass viele Rätsel nur durch geschicktes Wechseln zwischen den Einheiten gelöst werden können. Dazu kommt der Zeitdruck von zehn Tagen, der verhindert, dass man vollkommen planlos durch die riesige Spielwelt fährt. Weniger angenehm ist, dass Tanglewood nur wenig erklärt und gerade zu Beginn ziemlich frustrierend sein kann. Wer sich darauf einlässt, bekommt aber ein ungewöhnliches und für seine Zeit ausgesprochen ambitioniertes Atari-ST-Adventure.",
+                "trivia": [
+                    "Tanglewood sollte ursprünglich auf der britischen Zeichentrickserie Willo the Wisp basieren. Wegen der notwendigen Lizenzgebühren entwickelte Ian Murray-Watson daraus schließlich ein eigenständiges Spiel.",
+                    "Die Atari-ST-Version bietet eine große frei erkundbare Spielwelt mit mehr als 1.200 Schauplätzen. Gesteuert wird vollständig mit der Maus, eine Texteingabe wie bei klassischen Adventures ist nicht notwendig.",
+                    "Ian Murray-Watson programmierte Tanglewood, während Pete Lyon die Grafik erstellte. Lyon arbeitete für Microdeal außerdem an Spielen wie Goldrunner und Airball."
+                ],
+                "worthPlaying": "Tanglewood lohnt sich heute besonders für Spieler, die ungewöhnliche Adventures aus der frühen 16-Bit-Ära entdecken möchten. Das Zusammenspiel der fünf Fahrzeuge, die große frei erkundbare Welt und der permanente Zeitdruck ergeben ein Spielkonzept, das sich deutlich von klassischen Grafikadventures unterscheidet. Die geringe Hilfestellung kann frustrieren, macht Tanglewood für geduldige Retro-Spieler aber gleichzeitig zu einer interessanten Herausforderung.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Tanglewood is an unusual science-fiction adventure from Microdeal combining exploration, puzzles and action. On the planet T'ng-y-wd, the player controls five different remote vehicles in a search for documents proving Uncle Arthur's mining rights. Only ten days are available, and each vehicle has unique abilities that allow it to reach locations or perform tasks inaccessible to the others.",
+                "history": "Tanglewood was designed and programmed by Ian Murray-Watson, with graphics by Pete Lyon. Microdeal released the Atari ST version in 1987. The project was originally intended to be based on the British animated television series Willo the Wisp, but licensing costs led to the creation of an original game instead. The 16-bit version takes place on an alien planet and revolves around five specialised vehicles. Players must switch between them to explore, collect objects and solve puzzles while managing their energy and the game's continuous ten-day time limit.",
+                "review": "Tanglewood initially gives the player very little guidance, which can make the opening stages frustrating. Once its systems become clear, however, it develops into an unusually interesting adventure. The five vehicles are its strongest idea, as their different abilities require careful switching and planning to solve puzzles and explore the world. The ten-day limit adds further pressure and prevents completely aimless exploration. It can be demanding and occasionally obscure, but Tanglewood remains an ambitious and distinctive Atari ST adventure.",
+                "trivia": [
+                    "Tanglewood was originally planned as a game based on the British animated series Willo the Wisp, but the licensing costs led Ian Murray-Watson to develop an original concept instead.",
+                    "The Atari ST version features a large world containing more than 1,200 locations. Control is mouse-based and does not require the text parser used by many contemporary adventure games.",
+                    "Ian Murray-Watson programmed Tanglewood and Pete Lyon created the graphics. Lyon also worked on several other Microdeal titles including Goldrunner and Airball."
+                ],
+                "worthPlaying": "Tanglewood remains worthwhile for players interested in unusual adventures from the early 16-bit era. Its five specialised vehicles, large explorable world and continuous time limit create an experience very different from conventional graphic adventures. The lack of guidance can be frustrating, but patient retro players may find its unusual design particularly rewarding."
+            }
+        },
+        id: 230,
+        folder: "tanglewood",
+        scanBy: "Magisthan",
+        page: "tanglewood.html",
+        featured: false,
+        title: "Tanglewood",
+        system: "Atari ST",
+        year: 1987,
+        publisher: "MicroDeal Ltd.",
+        developer: "MicroDeal Ltd.",
+        genre: ["Adventure", "Puzzle", "Action", "Science-Fiction"],
+        description: "Tanglewood ist ein ungewöhnliches Science-Fiction-Adventure von Microdeal, das Erkundung, Rätsel und Action miteinander verbindet. Auf dem Planeten T'ng-y-wd muss der Spieler fünf unterschiedliche ferngesteuerte Fahrzeuge einsetzen, um Dokumente zu finden, die Onkel Arthurs Besitz- und Schürfrechte beweisen. Dafür bleiben nur zehn Tage Zeit. Jedes Fahrzeug besitzt eigene Fähigkeiten und kann Gebiete erreichen oder Aufgaben erledigen, an denen die anderen scheitern.",
+        history: `Tanglewood wurde von Ian Murray-Watson entworfen und programmiert; Pete Lyon war für die Grafik verantwortlich. Microdeal veröffentlichte die Atari-ST-Fassung 1987. Das Spiel entstand ursprünglich aus der Idee, ein Computerspiel zur britischen Zeichentrickserie Willo the Wisp zu entwickeln. Wegen der Lizenzkosten wurde daraus schließlich ein eigenständiges Spiel. Die 16-Bit-Fassung verlegt die Handlung auf einen fremden Planeten und lässt den Spieler fünf unterschiedliche Fahrzeuge kontrollieren. Diese müssen gemeinsam Gegenstände finden, Rätsel lösen und gefährliche Gebiete erkunden. Eine Besonderheit ist der permanente Zeitablauf: Auch ungenutzte Fahrzeuge bleiben Teil der Spielwelt, weshalb ihre Position und Energie sorgfältig geplant werden müssen.`,
+        review: `Tanglewood ist eines dieser Spiele, bei denen man zunächst einige Zeit benötigt, um überhaupt zu verstehen, was die Entwickler eigentlich von einem wollen. Danach entwickelt sich jedoch ein erstaunlich interessantes Adventure. Besonders gut gefällt mir die Idee mit den fünf Fahrzeugen. Jedes besitzt andere Fähigkeiten, sodass viele Rätsel nur durch geschicktes Wechseln zwischen den Einheiten gelöst werden können. Dazu kommt der Zeitdruck von zehn Tagen, der verhindert, dass man vollkommen planlos durch die riesige Spielwelt fährt. Weniger angenehm ist, dass Tanglewood nur wenig erklärt und gerade zu Beginn ziemlich frustrierend sein kann. Wer sich darauf einlässt, bekommt aber ein ungewöhnliches und für seine Zeit ausgesprochen ambitioniertes Atari-ST-Adventure.`,
+        trivia: [
+                  "Tanglewood sollte ursprünglich auf der britischen Zeichentrickserie Willo the Wisp basieren. Wegen der notwendigen Lizenzgebühren entwickelte Ian Murray-Watson daraus schließlich ein eigenständiges Spiel.",
+                  "Die Atari-ST-Version bietet eine große frei erkundbare Spielwelt mit mehr als 1.200 Schauplätzen. Gesteuert wird vollständig mit der Maus, eine Texteingabe wie bei klassischen Adventures ist nicht notwendig.",
+                  "Ian Murray-Watson programmierte Tanglewood, während Pete Lyon die Grafik erstellte. Lyon arbeitete für Microdeal außerdem an Spielen wie Goldrunner und Airball."
+        ],
+        worthPlaying: `Tanglewood lohnt sich heute besonders für Spieler, die ungewöhnliche Adventures aus der frühen 16-Bit-Ära entdecken möchten. Das Zusammenspiel der fünf Fahrzeuge, die große frei erkundbare Welt und der permanente Zeitdruck ergeben ein Spielkonzept, das sich deutlich von klassischen Grafikadventures unterscheidet. Die geringe Hilfestellung kann frustrieren, macht Tanglewood für geduldige Retro-Spieler aber gleichzeitig zu einer interessanten Herausforderung.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/53273/tanglewood/",
+        wikipedia: "https://en.wikipedia.org/wiki/Tanglewood_(1987_video_game)",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 2,
+        stars: 2,
+        dimensions: {
+        width: 182,
+        height: 233,
+        depth: 25
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Tank Attack ist eine ungewöhnliche Mischung aus Computer-Strategiespiel und klassischem Brettspiel. Zwei bis vier Spieler führen die Streitkräfte der fiktiven Länder Armania, Sarapan, Kazaldis und Calderon und versuchen, die gegnerischen Hauptquartiere zu zerstören. Die eigentlichen Einheiten werden auf einer beiliegenden Hexfeld-Karte bewegt, während der C64 als Spielleiter fungiert, Bewegungen verwaltet und die Ergebnisse der Gefechte berechnet.",
+                "history": "Tank Attack erschien 1988 bei CDS Software für den Commodore 64 und wurde von IQ Games entwickelt. Das Spieldesign stammt von Åke Andersson, Henrik Andersson und CDS Software. Eine Besonderheit ist die Verbindung aus physischem Brettspiel und Computersimulation: Zum Spiel gehören eine große Hexfeld-Karte und gepanzerte Einheiten, die von den Spielern tatsächlich auf dem Brett bewegt werden. Der Computer übernimmt dagegen Würfelwürfe, Kampfberechnungen und die Verwaltung der Armeen. Jeder Spieler kontrolliert eines von vier Ländern mit Panzern und gepanzerten Fahrzeugen. Ziel ist es, die gegnerischen Hauptquartiere zu erreichen und zu zerstören. Tank Attack erschien später auch für zahlreiche andere Heimcomputer.",
+                "review": "Tank Attack ist ein interessantes Beispiel dafür, wie Entwickler Ende der 1980er Jahre Brett- und Computerspiele miteinander verbinden wollten. Statt Panzer mit dem Joystick über den Bildschirm zu fahren, sitzt man tatsächlich vor einer Karte und verschiebt seine Einheiten von Hand. Der C64 übernimmt dabei die Rolle eines ziemlich unbestechlichen Spielleiters. Das funktioniert vor allem mit mehreren Spielern überraschend gut und vermittelt echtes Wargame-Gefühl. Alleine lässt sich die C64-Version allerdings nicht sinnvoll spielen, und wer schnelle Action erwartet, ist hier definitiv falsch. Als ungewöhnliches Mehrspieler-Strategiespiel besitzt Tank Attack aber einen ganz eigenen Reiz.",
+                "trivia": [
+                    "Tank Attack wird nicht ausschließlich am Computer gespielt. Der Originalausgabe liegt eine physische Hexfeld-Karte bei, auf der die Spieler ihre gepanzerten Einheiten bewegen.",
+                    "Das Spieldesign wird Åke Andersson, Henrik Andersson und CDS Software zugeschrieben. Åke Andersson entwarf außerdem die Spielfiguren und ließ deren Konstruktion patentieren.",
+                    "Das Cover-Artwork stammt von David John Rowe, während Bill Scolding für die Gestaltung des Spielbretts verantwortlich war."
+                ],
+                "worthPlaying": "Tank Attack ist heute vor allem wegen seines ungewöhnlichen Hybridkonzepts interessant. Computer und klassisches Wargame ergänzen sich hier tatsächlich gegenseitig, statt dass das Brett lediglich dekoratives Zubehör darstellt. Wer mehrere Mitspieler, die vollständige Karte und die Spielfiguren besitzt, bekommt ein ungewöhnliches Stück C64-Geschichte und einen interessanten Vorläufer späterer digital unterstützter Brettspiele.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Tank Attack is an unusual combination of computer strategy game and traditional board game. Two to four players command the forces of the fictional countries Armania, Sarapan, Kazaldis and Calderon and attempt to destroy their opponents' headquarters. Units are physically moved across the supplied hex map, while the Commodore 64 acts as moderator, managing movement and calculating the results of battles.",
+                "history": "Tank Attack was published by CDS Software for the Commodore 64 in 1988 and developed by IQ Games. Game design is credited to Åke Andersson, Henrik Andersson and CDS Software. Its defining feature is the combination of a physical board game with computer-assisted warfare. Players move armoured units across a large hex map, while the computer handles dice rolls, combat calculations and army status. Each player controls one of four countries and attempts to destroy the headquarters of the opposing forces. Tank Attack was subsequently released for numerous other home computers.",
+                "review": "Tank Attack is an interesting example of late-1980s attempts to combine board games with computer simulations. Rather than directly driving tanks with a joystick, players physically move units across a map while the Commodore 64 acts as an impartial referee. With several players the concept works surprisingly well and creates the atmosphere of a traditional tabletop wargame. It is certainly not suitable for anyone expecting fast tank action, and the C64 version requires human opponents, but as an unusual multiplayer strategy game it has considerable character.",
+                "trivia": [
+                    "Tank Attack is not played entirely on the computer. The original package includes a physical hex map on which players move their armoured units.",
+                    "Game design is credited to Åke Andersson, Henrik Andersson and CDS Software. Åke Andersson also designed and patented the physical playing pieces.",
+                    "The cover artwork was created by David John Rowe, while Bill Scolding was responsible for the board artwork."
+                ],
+                "worthPlaying": "Tank Attack remains interesting because of its unusual hybrid design. The computer and traditional wargame elements genuinely complement each other rather than using the physical board as a simple accessory. With several players and a complete original set, it offers an unusual piece of Commodore 64 history."
+            }
+        },
+        id: 231,
+        folder: "tank_attack",
+        scanBy: "Magisthan",
+        page: "tank_attack.html",
+        featured: false,
+        title: "Tank Attack",
+        system: "C64",
+        year: 1988,
+        publisher: "CDS Software Ltd.",
+        developer: "IQ Games",
+        genre: ["Strategie", "Rundenstrategie", "Kriegsspiel", "Brettspiel"],
+        description: "Tank Attack ist eine ungewöhnliche Mischung aus Computer-Strategiespiel und klassischem Brettspiel. Zwei bis vier Spieler führen die Streitkräfte der fiktiven Länder Armania, Sarapan, Kazaldis und Calderon und versuchen, die gegnerischen Hauptquartiere zu zerstören. Die eigentlichen Einheiten werden auf einer beiliegenden Hexfeld-Karte bewegt, während der C64 als Spielleiter fungiert, Bewegungen verwaltet und die Ergebnisse der Gefechte berechnet.",
+        history: `Tank Attack erschien 1988 bei CDS Software für den Commodore 64 und wurde von IQ Games entwickelt. Das Spieldesign stammt von Åke Andersson, Henrik Andersson und CDS Software. Eine Besonderheit ist die Verbindung aus physischem Brettspiel und Computersimulation: Zum Spiel gehören eine große Hexfeld-Karte und gepanzerte Einheiten, die von den Spielern tatsächlich auf dem Brett bewegt werden. Der Computer übernimmt dagegen Würfelwürfe, Kampfberechnungen und die Verwaltung der Armeen. Jeder Spieler kontrolliert eines von vier Ländern mit Panzern und gepanzerten Fahrzeugen. Ziel ist es, die gegnerischen Hauptquartiere zu erreichen und zu zerstören. Tank Attack erschien später auch für zahlreiche andere Heimcomputer.`,
+        review: `Tank Attack ist ein interessantes Beispiel dafür, wie Entwickler Ende der 1980er Jahre Brett- und Computerspiele miteinander verbinden wollten. Statt Panzer mit dem Joystick über den Bildschirm zu fahren, sitzt man tatsächlich vor einer Karte und verschiebt seine Einheiten von Hand. Der C64 übernimmt dabei die Rolle eines ziemlich unbestechlichen Spielleiters. Das funktioniert vor allem mit mehreren Spielern überraschend gut und vermittelt echtes Wargame-Gefühl. Alleine lässt sich die C64-Version allerdings nicht sinnvoll spielen, und wer schnelle Action erwartet, ist hier definitiv falsch. Als ungewöhnliches Mehrspieler-Strategiespiel besitzt Tank Attack aber einen ganz eigenen Reiz.`,
+        trivia: [
+                  "Tank Attack wird nicht ausschließlich am Computer gespielt. Der Originalausgabe liegt eine physische Hexfeld-Karte bei, auf der die Spieler ihre gepanzerten Einheiten bewegen.",
+                  "Das Spieldesign wird Åke Andersson, Henrik Andersson und CDS Software zugeschrieben. Åke Andersson entwarf außerdem die Spielfiguren und ließ deren Konstruktion patentieren.",
+                  "Das Cover-Artwork stammt von David John Rowe, während Bill Scolding für die Gestaltung des Spielbretts verantwortlich war."
+        ],
+        worthPlaying: `Tank Attack ist heute vor allem wegen seines ungewöhnlichen Hybridkonzepts interessant. Computer und klassisches Wargame ergänzen sich hier tatsächlich gegenseitig, statt dass das Brett lediglich dekoratives Zubehör darstellt. Wer mehrere Mitspieler, die vollständige Karte und die Spielfiguren besitzt, bekommt ein ungewöhnliches Stück C64-Geschichte und einen interessanten Vorläufer späterer digital unterstützter Brettspiele.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/56165/tank-attack/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        "David John Rowe"
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 213,
+        height: 152,
+        depth: 33
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Temple of Apshai ist ein früher Vertreter des Computer-Rollenspiels und versetzt den Spieler in die unterirdischen Ruinen des sagenumwobenen Tempels von Apshai. Als einzelner Abenteurer erkundet man vier Dungeon-Ebenen, bekämpft Monster, sucht nach Schätzen und versucht, lebend zum Ausgang zurückzukehren. Charakterwerte, Ausrüstung und taktische Entscheidungen verbinden sich dabei mit einer für die Entstehungszeit ungewöhnlich direkten Darstellung der Dungeons.",
+                "history": "Temple of Apshai entstand ursprünglich 1979 bei Automated Simulations, dem späteren Epyx. Jon Freeman entwickelte das Spielsystem, Jeffrey A. Johnson entwarf die Dungeons und ihre ausführlichen Beschreibungen. Die C64-Version erschien 1983 und wurde von Jim W. Connelley programmiert. Insgesamt umfasst das Abenteuer vier Dungeon-Ebenen mit zahlreichen Räumen, Monstern, Fallen und Schätzen. Eine Besonderheit sind die ausführlichen Raumbeschreibungen im gedruckten Handbuch: Im Spiel erscheint lediglich eine Nummer, deren Text der Spieler anschließend im Begleitbuch nachliest. Damit verbindet Temple of Apshai frühe Computergrafik mit Elementen klassischer Pen-&-Paper-Rollenspiele.",
+                "review": "Temple of Apshai wirkt heute natürlich sehr archaisch. Die Grafik ist schlicht, die Bedienung ungewohnt und für viele Raumbeschreibungen muss tatsächlich das Handbuch zur Hand genommen werden. Gleichzeitig liegt genau darin ein großer Teil seines historischen Charmes. Man merkt, dass hier noch niemand genau wusste, wie ein Computer-Rollenspiel eigentlich auszusehen hatte. Das Erkunden der Dungeons, Kämpfen gegen Monster und Sammeln von Schätzen funktioniert dennoch erstaunlich gut. Wer moderne Komfortfunktionen erwartet, wird schnell verzweifeln. Als Blick auf die Frühgeschichte des Genres ist Temple of Apshai aber ausgesprochen faszinierend.",
+                "trivia": [
+                    "Temple of Apshai erschien ursprünglich bereits 1979 für den TRS-80 und Commodore PET und gehört damit zu den frühesten kommerziell erfolgreichen Computer-Rollenspielen.",
+                    "Da der Speicher früher Heimcomputer für ausführliche Texte nicht ausreichte, wurden die atmosphärischen Beschreibungen der Dungeonräume im gedruckten Handbuch untergebracht. Das Spiel zeigt lediglich die entsprechende Raumnummer an.",
+                    "1985 veröffentlichte Epyx die deutlich überarbeitete Temple of Apshai Trilogy. Sie kombiniert Temple of Apshai mit Upper Reaches of Apshai und Curse of Ra und besitzt verbesserte Grafik und Sound."
+                ],
+                "worthPlaying": "Temple of Apshai ist heute weniger wegen technischer oder spielerischer Raffinesse interessant als wegen seiner enormen historischen Bedeutung. Viele Elemente späterer Dungeon-Rollenspiele sind hier bereits vorhanden: Charakterwerte, Ausrüstung, Monster, Schätze und systematische Dungeon-Erkundung. Wer sich für die Entwicklung des Computer-Rollenspiels interessiert, kann hier einen wichtigen frühen Schritt des Genres selbst erleben.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Temple of Apshai is an early computer role-playing game in which a lone adventurer explores the underground ruins of the legendary Temple of Apshai. Four dungeon levels contain monsters, traps and treasures, while character statistics and equipment introduce role-playing elements to the exploration. Its combination of visual dungeon exploration and tabletop-inspired mechanics was highly unusual when the original game was created.",
+                "history": "Temple of Apshai was originally developed by Automated Simulations, later known as Epyx, in 1979. Jon Freeman designed the game system and Jeffrey A. Johnson created the dungeons and their detailed descriptions. Jim W. Connelley programmed the Commodore 64 version released in 1983. The adventure contains four dungeon levels filled with rooms, monsters, traps and treasure. Because early computers could not conveniently store extensive descriptive text, numbered room descriptions were supplied in the printed manual, creating an unusual combination of computer graphics and tabletop-style storytelling.",
+                "review": "Temple of Apshai inevitably feels archaic today. The graphics are simple, the controls are unusual and players frequently need the printed manual to read room descriptions. Yet this is also a large part of its historical appeal. The game comes from a period when designers were still discovering how computer role-playing games should work. Exploring dungeons, fighting monsters and collecting treasure remains surprisingly engaging, even if modern conveniences are almost entirely absent. As an interactive piece of RPG history, Temple of Apshai remains fascinating.",
+                "trivia": [
+                    "Temple of Apshai originally appeared in 1979 for systems including the TRS-80 and Commodore PET, making it one of the earliest commercially successful computer role-playing games.",
+                    "Detailed room descriptions were stored in the printed manual rather than in the game. Players used room numbers displayed on screen to locate the corresponding descriptive text.",
+                    "Epyx released the substantially updated Temple of Apshai Trilogy in 1985, combining Temple of Apshai with Upper Reaches of Apshai and Curse of Ra while adding improved graphics and sound."
+                ],
+                "worthPlaying": "Temple of Apshai is now most interesting for its historical importance rather than technical sophistication. Character statistics, equipment, monsters, treasure and systematic dungeon exploration already demonstrate many ideas that later became standard features of computer RPGs. For anyone interested in the origins of the genre, it offers a valuable playable piece of history."
+            }
+        },
+        id: 232,
+        folder: "temple_of_apshai",
+        scanBy: "Magisthan",
+        page: "temple_of_apshai.html",
+        featured: false,
+        title: "Temple of Apshai",
+        system: "C64",
+        year: 1983,
+        publisher: "Epyx, Inc.",
+        developer: "Automated Simulations, Inc. / Epyx, Inc.",
+        genre: ["Rollenspiel", "Dungeon Crawler", "Fantasy"],
+        description: "Temple of Apshai ist ein früher Vertreter des Computer-Rollenspiels und versetzt den Spieler in die unterirdischen Ruinen des sagenumwobenen Tempels von Apshai. Als einzelner Abenteurer erkundet man vier Dungeon-Ebenen, bekämpft Monster, sucht nach Schätzen und versucht, lebend zum Ausgang zurückzukehren. Charakterwerte, Ausrüstung und taktische Entscheidungen verbinden sich dabei mit einer für die Entstehungszeit ungewöhnlich direkten Darstellung der Dungeons.",
+        history: `Temple of Apshai entstand ursprünglich 1979 bei Automated Simulations, dem späteren Epyx. Jon Freeman entwickelte das Spielsystem, Jeffrey A. Johnson entwarf die Dungeons und ihre ausführlichen Beschreibungen. Die C64-Version erschien 1983 und wurde von Jim W. Connelley programmiert. Insgesamt umfasst das Abenteuer vier Dungeon-Ebenen mit zahlreichen Räumen, Monstern, Fallen und Schätzen. Eine Besonderheit sind die ausführlichen Raumbeschreibungen im gedruckten Handbuch: Im Spiel erscheint lediglich eine Nummer, deren Text der Spieler anschließend im Begleitbuch nachliest. Damit verbindet Temple of Apshai frühe Computergrafik mit Elementen klassischer Pen-&-Paper-Rollenspiele.`,
+        review: `Temple of Apshai wirkt heute natürlich sehr archaisch. Die Grafik ist schlicht, die Bedienung ungewohnt und für viele Raumbeschreibungen muss tatsächlich das Handbuch zur Hand genommen werden. Gleichzeitig liegt genau darin ein großer Teil seines historischen Charmes. Man merkt, dass hier noch niemand genau wusste, wie ein Computer-Rollenspiel eigentlich auszusehen hatte. Das Erkunden der Dungeons, Kämpfen gegen Monster und Sammeln von Schätzen funktioniert dennoch erstaunlich gut. Wer moderne Komfortfunktionen erwartet, wird schnell verzweifeln. Als Blick auf die Frühgeschichte des Genres ist Temple of Apshai aber ausgesprochen faszinierend.`,
+        trivia: [
+                  "Temple of Apshai erschien ursprünglich bereits 1979 für den TRS-80 und Commodore PET und gehört damit zu den frühesten kommerziell erfolgreichen Computer-Rollenspielen.",
+                  "Da der Speicher früher Heimcomputer für ausführliche Texte nicht ausreichte, wurden die atmosphärischen Beschreibungen der Dungeonräume im gedruckten Handbuch untergebracht. Das Spiel zeigt lediglich die entsprechende Raumnummer an.",
+                  "1985 veröffentlichte Epyx die deutlich überarbeitete Temple of Apshai Trilogy. Sie kombiniert Temple of Apshai mit Upper Reaches of Apshai und Curse of Ra und besitzt verbesserte Grafik und Sound."
+        ],
+        worthPlaying: `Temple of Apshai ist heute weniger wegen technischer oder spielerischer Raffinesse interessant als wegen seiner enormen historischen Bedeutung. Viele Elemente späterer Dungeon-Rollenspiele sind hier bereits vorhanden: Charakterwerte, Ausrüstung, Monster, Schätze und systematische Dungeon-Erkundung. Wer sich für die Entwicklung des Computer-Rollenspiels interessiert, kann hier einen wichtigen frühen Schritt des Genres selbst erleben.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/23891/dunjonquest-temple-of-apshai/",
+        wikipedia: "https://en.wikipedia.org/wiki/Temple_of_Apshai",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 147,
+        height: 224,
+        depth: 28
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Testament ist ein düsterer First-Person-Shooter für AGA-Amigas und gehört zur späten Welle kommerzieller Doom-ähnlicher Spiele auf dem System. Der Spieler übernimmt die Rolle eines Soldaten, der während einer Expedition zur Gruft des mächtigen Magiers Ghuwta von seiner Gruppe getrennt wird. In labyrinthartigen Friedhöfen, Katakomben und Dungeons müssen Monster bekämpft, Schlüssel gefunden und die einzelnen Teile des namensgebenden Testaments aufgespürt werden.",
+                "history": "Testament wurde vom tschechischen Team Insanity entwickelt und in der APC&TCP-Fassung 1997 kommerziell vertrieben. Filip Doksanský programmierte das Spiel und war außerdem für die Soundeffekte verantwortlich, Petr Kadleček erstellte die Grafik und Jaroslav Kašný komponierte die Musik. Technisch orientiert sich Testament stärker an Wolfenstein 3D als an Doom: Die Level befinden sich weitgehend auf einer Ebene, dafür läuft die Engine selbst auf einem nicht erweiterten Amiga 1200 erstaunlich flüssig. Automapping, unterschiedliche Lichtstimmungen und 16 Level sorgen für Abwechslung. Die APC&TCP-Version erschien auf drei Disketten und setzt einen AGA-Amiga voraus. 1998 folgte mit Testament II ein Nachfolger.",
+                "review": "Testament zeigt ziemlich eindrucksvoll, was Entwickler selbst spät in der kommerziellen Amiga-Zeit noch aus einem normalen A1200 herausholen konnten. Die Engine läuft überraschend flüssig, die düsteren Katakomben besitzen eine ordentliche Atmosphäre und dank Automap verliert man in den verwinkelten Levels nicht sofort die Orientierung. Spielerisch bleibt das Ganze allerdings deutlich näher an Wolfenstein 3D als an Doom: Höhenunterschiede fehlen, Gegner und Waffen sind überschaubar und die Suche nach farbigen Schlüsseln wiederholt sich häufig. Trotzdem funktioniert das Spiel erstaunlich gut. Gerade auf dem Amiga ist Testament ein technisch interessantes und angenehm direktes Stück Shooter-Geschichte.",
+                "trivia": [
+                    "Filip Doksanský wollte Testament ursprünglich als Amiga-Portierung von Wolfenstein 3D entwickeln. Daraus entstand schließlich ein eigenständiges Spiel mit Horror- und Fantasy-Thematik.",
+                    "Testament läuft auf einem normalen Amiga 1200 mit AGA-Chipsatz. Die Darstellungsgröße und verschiedene Grafikdetails können reduziert werden, um die Geschwindigkeit zusätzlich zu erhöhen.",
+                    "1998 entwickelte Insanity Testament II. Filip Doksanský und Petr Kadleček arbeiteten später an weiteren Spielen und gehörten zu den Gründern des tschechischen Studios Black Element Software."
+                ],
+                "worthPlaying": "Testament ist heute vor allem für Freunde später Amiga-Spiele und klassischer First-Person-Shooter interessant. Technisch ist bemerkenswert, wie flüssig die Engine auf einem vergleichsweise normalen A1200 arbeitet. Das Leveldesign ist einfacher als bei Doom und modernen Shootern, doch Atmosphäre, Automap und das direkte Spielgefühl machen Testament zu einem interessanten Vertreter der späten kommerziellen Amiga-Ära.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Testament is a dark first-person shooter for AGA Amigas and part of the late wave of commercial Doom-style games released for the system. The player controls a soldier separated from an expedition searching for the crypt of the powerful sorcerer Ghuwta. Graveyards, catacombs and dungeons must be explored while fighting monsters, collecting keys and locating pieces of the mysterious Testament.",
+                "history": "Testament was developed by the Czech team Insanity and commercially distributed in its APC&TCP edition in 1997. Filip Doksanský programmed the game and created its sound effects, Petr Kadleček produced the graphics and Jaroslav Kašný composed the music. Technically the game resembles Wolfenstein 3D more than Doom, with largely single-level environments, but its engine runs remarkably smoothly even on an unexpanded Amiga 1200. Automapping, atmospheric lighting and 16 levels provide additional variety. The APC&TCP edition was supplied on three disks and requires an AGA Amiga. Testament II followed in 1998.",
+                "review": "Testament demonstrates what developers could still achieve with the Amiga late in its commercial life. The engine runs surprisingly smoothly, the gloomy catacombs create a convincing atmosphere and the automap makes the maze-like stages manageable. Its design is much closer to Wolfenstein 3D than Doom, however, with no real vertical level structure, a limited selection of enemies and weapons, and frequent coloured-key searches. Despite these limitations, the game remains enjoyable and technically impressive for the platform.",
+                "trivia": [
+                    "Filip Doksanský originally intended Testament to become an Amiga version of Wolfenstein 3D before the project developed into an original horror-themed game.",
+                    "Testament runs on a standard AGA Amiga 1200. Players can reduce the display size and graphical detail to improve performance further.",
+                    "Insanity developed Testament II in 1998. Filip Doksanský and Petr Kadleček later worked on other games and became associated with the Czech studio Black Element Software."
+                ],
+                "worthPlaying": "Testament remains particularly interesting for fans of late Amiga releases and classic first-person shooters. Its engine performs impressively on comparatively modest A1200 hardware. Although the level design is considerably simpler than Doom, its atmosphere, automap and responsive gameplay make it a noteworthy product of the Amiga's late commercial era."
+            }
+        },
+        id: 233,
+        folder: "testament",
+        scanBy: "Magisthan",
+        page: "testament.html",
+        featured: false,
+        title: "Testament",
+        system: "Amiga",
+        year: 1997,
+        publisher: "APC&TCP",
+        developer: "Insanity",
+        genre: ["First-Person-Shooter", "Action", "Horror", "Fantasy"],
+        description: "Testament ist ein düsterer First-Person-Shooter für AGA-Amigas und gehört zur späten Welle kommerzieller Doom-ähnlicher Spiele auf dem System. Der Spieler übernimmt die Rolle eines Soldaten, der während einer Expedition zur Gruft des mächtigen Magiers Ghuwta von seiner Gruppe getrennt wird. In labyrinthartigen Friedhöfen, Katakomben und Dungeons müssen Monster bekämpft, Schlüssel gefunden und die einzelnen Teile des namensgebenden Testaments aufgespürt werden.",
+        history: `Testament wurde vom tschechischen Team Insanity entwickelt und in der APC&TCP-Fassung 1997 kommerziell vertrieben. Filip Doksanský programmierte das Spiel und war außerdem für die Soundeffekte verantwortlich, Petr Kadleček erstellte die Grafik und Jaroslav Kašný komponierte die Musik. Technisch orientiert sich Testament stärker an Wolfenstein 3D als an Doom: Die Level befinden sich weitgehend auf einer Ebene, dafür läuft die Engine selbst auf einem nicht erweiterten Amiga 1200 erstaunlich flüssig. Automapping, unterschiedliche Lichtstimmungen und 16 Level sorgen für Abwechslung. Die APC&TCP-Version erschien auf drei Disketten und setzt einen AGA-Amiga voraus. 1998 folgte mit Testament II ein Nachfolger.`,
+        review: `Testament zeigt ziemlich eindrucksvoll, was Entwickler selbst spät in der kommerziellen Amiga-Zeit noch aus einem normalen A1200 herausholen konnten. Die Engine läuft überraschend flüssig, die düsteren Katakomben besitzen eine ordentliche Atmosphäre und dank Automap verliert man in den verwinkelten Levels nicht sofort die Orientierung. Spielerisch bleibt das Ganze allerdings deutlich näher an Wolfenstein 3D als an Doom: Höhenunterschiede fehlen, Gegner und Waffen sind überschaubar und die Suche nach farbigen Schlüsseln wiederholt sich häufig. Trotzdem funktioniert das Spiel erstaunlich gut. Gerade auf dem Amiga ist Testament ein technisch interessantes und angenehm direktes Stück Shooter-Geschichte.`,
+        trivia: [
+                  "Filip Doksanský wollte Testament ursprünglich als Amiga-Portierung von Wolfenstein 3D entwickeln. Daraus entstand schließlich ein eigenständiges Spiel mit Horror- und Fantasy-Thematik.",
+                  "Testament läuft auf einem normalen Amiga 1200 mit AGA-Chipsatz. Die Darstellungsgröße und verschiedene Grafikdetails können reduziert werden, um die Geschwindigkeit zusätzlich zu erhöhen.",
+                  "1998 entwickelte Insanity Testament II. Filip Doksanský und Petr Kadleček arbeiteten später an weiteren Spielen und gehörten zu den Gründern des tschechischen Studios Black Element Software."
+        ],
+        worthPlaying: `Testament ist heute vor allem für Freunde später Amiga-Spiele und klassischer First-Person-Shooter interessant. Technisch ist bemerkenswert, wie flüssig die Engine auf einem vergleichsweise normalen A1200 arbeitet. Das Leveldesign ist einfacher als bei Doom und modernen Shootern, doch Atmosphäre, Automap und das direkte Spielgefühl machen Testament zu einem interessanten Vertreter der späten kommerziellen Amiga-Ära.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/32349/testament/",
+        wikipedia: "https://en.wikipedia.org/wiki/Testament_(video_game)",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 163,
+        height: 223,
+        depth: 23
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "The Bard's Tale Construction Set ist ein Rollenspiel-Baukasten von Interplay, mit dem Spieler eigene Abenteuer im Stil der klassischen Bard's-Tale-Reihe erschaffen können. Über verschiedene Editoren lassen sich Dungeons, Städte, Monster, Gegenstände, Zauber und Ereignisse gestalten. Die fertigen Abenteuer verwenden das bekannte Party- und Kampfsystem der Serie und können anschließend als eigenständige Spiele weitergegeben werden. Mit Isil Thania liegt außerdem ein vollständiges Beispielabenteuer bei.",
+                "history": "The Bard's Tale Construction Set wurde von Interplay Productions entwickelt und erschien 1991 für DOS. Timothy Cain, Greg Christensen und John Philip Britt programmierten das System, Thomas R. Decker fungierte als Producer und Brian Fargo als Executive Producer. Ziel war es, Spielern die Technik der Bard's-Tale-Reihe als einfach bedienbaren Rollenspiel-Baukasten zur Verfügung zu stellen. Editoren ermöglichen unter anderem das Erstellen von Karten, Monstern, Gegenständen, Zaubern und geskripteten Ereignissen. Eigene Grafiken können über Deluxe Paint eingebunden werden. Als Demonstration enthält das Paket das umfangreiche Beispielabenteuer Isil Thania. Eine Amiga-Version folgte 1992.",
+                "review": "The Bard's Tale Construction Set ist weniger ein klassisches Spiel als eine Werkzeugkiste für angehende Dungeon-Meister. Gerade Anfang der 1990er Jahre war die Vorstellung faszinierend, ohne Programmierkenntnisse ein eigenes Bard's-Tale-Abenteuer bauen und anschließend sogar weitergeben zu können. Die Karten- und Ereigniseditoren bieten dafür erstaunlich viele Möglichkeiten. Allerdings sind die Grenzen des alten Bard's-Tale-Systems deutlich spürbar: Klassen, grundlegende Regeln und viele Mechaniken sind fest vorgegeben. Wer wirklich ein völlig eigenes Rollenspiel erschaffen möchte, stößt deshalb relativ schnell an Grenzen. Als historischer RPG-Baukasten und für Fans der Serie ist das Construction Set trotzdem ausgesprochen interessant.",
+                "trivia": [
+                    "Zu den drei Programmierern gehörte Timothy Cain, der später als einer der Schöpfer des ursprünglichen Fallout bekannt wurde. Auch der spätere Black-Isle- und Obsidian-Gründer Feargus Urquhart arbeitete als Tester am Construction Set.",
+                    "Mit dem Construction Set erstellte Abenteuer können als eigenständige Programme ausgegeben und weitergegeben werden. Der Empfänger benötigt das ursprüngliche Construction Set nicht, um sie zu spielen.",
+                    "Das mitgelieferte Beispielabenteuer Isil Thania wurde von einem Team aus Thomas R. Decker, Christopher Taylor, Jim Gardner, Timothy Cain und Jacob R. Buchert III gestaltet."
+                ],
+                "worthPlaying": "The Bard's Tale Construction Set ist heute besonders für Rollenspielhistoriker, Bard's-Tale-Fans und Spieler interessant, die sich für frühe Game-Creation-Systeme interessieren. Seine Möglichkeiten sind gegenüber späteren Werkzeugen wie Forgotten Realms: Unlimited Adventures begrenzt, doch 1991 war die Möglichkeit, eigene Dungeon-Rollenspiele ohne Programmierung zu bauen und weiterzugeben, bemerkenswert.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "The Bard's Tale Construction Set is a role-playing game creation system from Interplay that allows players to build their own adventures using the mechanics of the classic Bard's Tale series. Editors are provided for dungeons, towns, monsters, items, spells and scripted events. Completed adventures use the familiar party and combat systems and can be distributed as standalone games. A complete sample adventure, Isil Thania, is also included.",
+                "history": "The Bard's Tale Construction Set was developed by Interplay Productions and released for DOS in 1991. Timothy Cain, Greg Christensen and John Philip Britt programmed the system, Thomas R. Decker served as producer and Brian Fargo as executive producer. The package was designed to give players access to the basic technology behind Bard's Tale through a relatively accessible set of editors. Maps, monsters, items, spells and scripted events can be created, while custom graphics can be imported from Deluxe Paint. The substantial Isil Thania scenario demonstrates the system's capabilities. An Amiga version followed in 1992.",
+                "review": "The Bard's Tale Construction Set is less a conventional game than a toolbox for aspiring dungeon masters. In 1991, being able to create and distribute a Bard's Tale-style RPG without programming was an impressive concept. Its map and event editors offer considerable flexibility, although the fixed classes, rules and underlying Bard's Tale mechanics place clear restrictions on what can be created. As a historical RPG creation system and a tool for dedicated fans of the series, it remains fascinating.",
+                "trivia": [
+                    "Programmer Timothy Cain later became one of the creators of the original Fallout. Future Black Isle and Obsidian founder Feargus Urquhart also worked on the Construction Set as a tester.",
+                    "Adventures created with the Construction Set can be distributed as standalone games. Players receiving them do not need to own the original Construction Set.",
+                    "The included Isil Thania sample adventure was created by a team including Thomas R. Decker, Christopher Taylor, Jim Gardner, Timothy Cain and Jacob R. Buchert III."
+                ],
+                "worthPlaying": "The Bard's Tale Construction Set remains particularly interesting to RPG historians, Bard's Tale fans and anyone interested in early game-creation systems. Its flexibility is limited compared with later tools such as Forgotten Realms: Unlimited Adventures, but in 1991 the ability to build and distribute complete dungeon RPGs without programming was remarkable."
+            }
+        },
+        id: 234,
+        folder: "the_bards_tale_construction_set",
+        scanBy: "Magisthan",
+        page: "the_bards_tale_construction_set.html",
+        featured: false,
+        title: "The Bard's Tale Construction Set",
+        system: "PC",
+        year: 1991,
+        publisher: "Interplay Productions, Inc.",
+        developer: "Interplay Productions, Inc.",
+        genre: ["Rollenspiel", "Construction Set", "Dungeon Crawler", "Fantasy"],
+        description: "The Bard's Tale Construction Set ist ein Rollenspiel-Baukasten von Interplay, mit dem Spieler eigene Abenteuer im Stil der klassischen Bard's-Tale-Reihe erschaffen können. Über verschiedene Editoren lassen sich Dungeons, Städte, Monster, Gegenstände, Zauber und Ereignisse gestalten. Die fertigen Abenteuer verwenden das bekannte Party- und Kampfsystem der Serie und können anschließend als eigenständige Spiele weitergegeben werden. Mit Isil Thania liegt außerdem ein vollständiges Beispielabenteuer bei.",
+        history: `The Bard's Tale Construction Set wurde von Interplay Productions entwickelt und erschien 1991 für DOS. Timothy Cain, Greg Christensen und John Philip Britt programmierten das System, Thomas R. Decker fungierte als Producer und Brian Fargo als Executive Producer. Ziel war es, Spielern die Technik der Bard's-Tale-Reihe als einfach bedienbaren Rollenspiel-Baukasten zur Verfügung zu stellen. Editoren ermöglichen unter anderem das Erstellen von Karten, Monstern, Gegenständen, Zaubern und geskripteten Ereignissen. Eigene Grafiken können über Deluxe Paint eingebunden werden. Als Demonstration enthält das Paket das umfangreiche Beispielabenteuer Isil Thania. Eine Amiga-Version folgte 1992.`,
+        review: `The Bard's Tale Construction Set ist weniger ein klassisches Spiel als eine Werkzeugkiste für angehende Dungeon-Meister. Gerade Anfang der 1990er Jahre war die Vorstellung faszinierend, ohne Programmierkenntnisse ein eigenes Bard's-Tale-Abenteuer bauen und anschließend sogar weitergeben zu können. Die Karten- und Ereigniseditoren bieten dafür erstaunlich viele Möglichkeiten. Allerdings sind die Grenzen des alten Bard's-Tale-Systems deutlich spürbar: Klassen, grundlegende Regeln und viele Mechaniken sind fest vorgegeben. Wer wirklich ein völlig eigenes Rollenspiel erschaffen möchte, stößt deshalb relativ schnell an Grenzen. Als historischer RPG-Baukasten und für Fans der Serie ist das Construction Set trotzdem ausgesprochen interessant.`,
+        trivia: [
+                  "Zu den drei Programmierern gehörte Timothy Cain, der später als einer der Schöpfer des ursprünglichen Fallout bekannt wurde. Auch der spätere Black-Isle- und Obsidian-Gründer Feargus Urquhart arbeitete als Tester am Construction Set.",
+                  "Mit dem Construction Set erstellte Abenteuer können als eigenständige Programme ausgegeben und weitergegeben werden. Der Empfänger benötigt das ursprüngliche Construction Set nicht, um sie zu spielen.",
+                  "Das mitgelieferte Beispielabenteuer Isil Thania wurde von einem Team aus Thomas R. Decker, Christopher Taylor, Jim Gardner, Timothy Cain und Jacob R. Buchert III gestaltet."
+        ],
+        worthPlaying: `The Bard's Tale Construction Set ist heute besonders für Rollenspielhistoriker, Bard's-Tale-Fans und Spieler interessant, die sich für frühe Game-Creation-Systeme interessieren. Seine Möglichkeiten sind gegenüber späteren Werkzeugen wie Forgotten Realms: Unlimited Adventures begrenzt, doch 1991 war die Möglichkeit, eigene Dungeon-Rollenspiele ohne Programmierung zu bauen und weiterzugeben, bemerkenswert.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/2242/the-bards-tale-construction-set/",
+        wikipedia: "https://en.wikipedia.org/wiki/The_Bard%27s_Tale_Construction_Set",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 5,
+        stars: 5,
+        dimensions: {
+        width: 175,
+        height: 226,
+        depth: 34
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "The Legend of Kyrandia ist ein Fantasy-Point-and-Click-Adventure von Westwood Studios. Der böse Hofnarr Malcolm ist aus seiner magischen Gefangenschaft entkommen und bedroht das Königreich Kyrandia. Der junge Brandon macht sich auf den Weg, ihn aufzuhalten und entdeckt dabei seine eigene Verbindung zur königlichen Familie. Das Spiel verbindet eine farbenprächtige Fantasywelt mit Inventarrätseln, Magie und einer besonders einfach gehaltenen Point-and-Click-Steuerung.",
+                "history": "The Legend of Kyrandia wurde von Westwood Studios entwickelt und 1992 für DOS und Amiga veröffentlicht. Brett W. Sperry führte Regie, Michael Legg, Rick Parks und Paul S. Mudra werden für das Design genannt. Rick Gush schrieb die Geschichte, während Frank Klepacki an der Musik beteiligt war. Die Amiga-Umsetzung programmierte Bill Stokes. Kyrandia verzichtet auf die damals üblichen Verb-Menüs vieler Adventures und verwendet stattdessen einen einzigen Mauszeiger für nahezu alle Aktionen. Die Amiga-Version erschien auf neun Disketten und beeindruckte besonders mit ihrer detaillierten Grafik und den Animationen, erforderte ohne Festplatte allerdings häufige Diskettenwechsel. Das Spiel wurde zum Auftakt einer dreiteiligen Adventure-Reihe.",
+                "review": "The Legend of Kyrandia zeigt, dass Westwood nicht nur Rollenspiele und Strategiespiele beherrschte. Die märchenhafte Grafik ist auch auf dem Amiga wunderschön, die Animationen besitzen viel Charme und die einfache Maussteuerung macht den Einstieg angenehm unkompliziert. Besonders gelungen ist die Atmosphäre: Kyrandia wirkt tatsächlich wie eine kleine Fantasywelt und nicht nur wie eine Sammlung von Rätselräumen. Nicht jedes Puzzle ist allerdings perfekt. Einige Lösungen sind ziemlich undurchsichtig und das begrenzte Inventar kann unnötige Laufwege verursachen. Ohne Festplatte kommen außerdem neun Disketten ins Spiel – und das Laufwerk bekommt reichlich Beschäftigung. Trotzdem gehört Kyrandia für mich zu den schönsten klassischen Fantasy-Adventures auf dem Amiga.",
+                "trivia": [
+                    "The Legend of Kyrandia war der erste Teil der von Westwood als Fables & Fiends bezeichneten Adventure-Reihe. Es folgten Hand of Fate und Malcolm's Revenge.",
+                    "Die Amiga-Version wurde von Bill Stokes programmiert und auf neun Disketten ausgeliefert. Sie erschien vollständig auf Deutsch sowie in weiteren europäischen Sprachfassungen.",
+                    "Westwood reduzierte die Bedienung gegenüber vielen zeitgenössischen Adventures stark: Statt verschiedener Befehle wie Öffnen, Benutzen oder Betrachten genügt für fast alle Aktionen ein einziger Mauszeiger."
+                ],
+                "worthPlaying": "The Legend of Kyrandia ist auch heute noch wegen seiner wunderschönen Pixelgrafik, der märchenhaften Atmosphäre und der unkomplizierten Bedienung empfehlenswert. Einige Rätsel und das kleine Inventar sind gealtert, doch die Präsentation besitzt noch immer viel Charme. Für Freunde klassischer Fantasy-Adventures und Westwood-Spiele gehört Kyrandia zu den interessantesten Amiga-Adventures der frühen 1990er Jahre.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "The Legend of Kyrandia is a fantasy point-and-click adventure from Westwood Studios. The evil court jester Malcolm has escaped from magical imprisonment and threatens the kingdom of Kyrandia. Young Brandon sets out to stop him and gradually discovers his own connection to the royal family. The game combines a colourful fantasy world with inventory puzzles, magic and a deliberately simple point-and-click interface.",
+                "history": "The Legend of Kyrandia was developed by Westwood Studios and released for DOS and Amiga in 1992. Brett W. Sperry directed the project, with Michael Legg, Rick Parks and Paul S. Mudra credited for design. Rick Gush wrote the story and Frank Klepacki contributed to the music. Bill Stokes programmed the Amiga version. Kyrandia replaced the verb-based interfaces common in contemporary adventures with a single cursor used for almost every interaction. The Amiga edition was distributed on nine disks and was particularly praised for its detailed graphics and animation, although playing without a hard drive involved substantial disk swapping. The game became the first entry in a trilogy.",
+                "review": "The Legend of Kyrandia demonstrates that Westwood was equally comfortable creating graphic adventures. Its colourful fantasy artwork looks excellent on the Amiga, the animation is charming and the streamlined mouse interface makes the game immediately accessible. Kyrandia itself feels like a coherent fairy-tale world rather than a collection of puzzle rooms. Not every puzzle works equally well, however, and the limited inventory can result in unnecessary backtracking. Nine floppy disks also make playing without a hard drive rather cumbersome. Despite these issues, Kyrandia remains one of the most attractive classic fantasy adventures on the Amiga.",
+                "trivia": [
+                    "The Legend of Kyrandia was the first game in Westwood's Fables & Fiends adventure series. It was followed by Hand of Fate and Malcolm's Revenge.",
+                    "Bill Stokes programmed the Amiga version, which was distributed on nine floppy disks and released in several European languages including German.",
+                    "Westwood greatly simplified interaction compared with many contemporary adventures: almost every action is performed with a single mouse cursor rather than a list of verbs."
+                ],
+                "worthPlaying": "The Legend of Kyrandia remains enjoyable because of its beautiful pixel artwork, fairy-tale atmosphere and accessible interface. Some puzzles and the limited inventory have aged, but the presentation still has considerable charm. For fans of classic fantasy adventures and Westwood games, it remains one of the more memorable Amiga adventures of the early 1990s."
+            }
+        },
+        id: 235,
+        folder: "the_legend_of_kyrandia",
+        scanBy: "Magisthan",
+        page: "the_legend_of_kyrandia.html",
+        featured: false,
+        title: "The Legend of Kyrandia",
+        system: "Amiga",
+        year: 1992,
+        publisher: "Virgin Games, Inc.",
+        developer: "Westwood Studios, Inc.",
+        genre: ["Adventure", "Point-and-Click", "Fantasy"],
+        description: "The Legend of Kyrandia ist ein Fantasy-Point-and-Click-Adventure von Westwood Studios. Der böse Hofnarr Malcolm ist aus seiner magischen Gefangenschaft entkommen und bedroht das Königreich Kyrandia. Der junge Brandon macht sich auf den Weg, ihn aufzuhalten und entdeckt dabei seine eigene Verbindung zur königlichen Familie. Das Spiel verbindet eine farbenprächtige Fantasywelt mit Inventarrätseln, Magie und einer besonders einfach gehaltenen Point-and-Click-Steuerung.",
+        history: `The Legend of Kyrandia wurde von Westwood Studios entwickelt und 1992 für DOS und Amiga veröffentlicht. Brett W. Sperry führte Regie, Michael Legg, Rick Parks und Paul S. Mudra werden für das Design genannt. Rick Gush schrieb die Geschichte, während Frank Klepacki an der Musik beteiligt war. Die Amiga-Umsetzung programmierte Bill Stokes. Kyrandia verzichtet auf die damals üblichen Verb-Menüs vieler Adventures und verwendet stattdessen einen einzigen Mauszeiger für nahezu alle Aktionen. Die Amiga-Version erschien auf neun Disketten und beeindruckte besonders mit ihrer detaillierten Grafik und den Animationen, erforderte ohne Festplatte allerdings häufige Diskettenwechsel. Das Spiel wurde zum Auftakt einer dreiteiligen Adventure-Reihe.`,
+        review: `The Legend of Kyrandia zeigt, dass Westwood nicht nur Rollenspiele und Strategiespiele beherrschte. Die märchenhafte Grafik ist auch auf dem Amiga wunderschön, die Animationen besitzen viel Charme und die einfache Maussteuerung macht den Einstieg angenehm unkompliziert. Besonders gelungen ist die Atmosphäre: Kyrandia wirkt tatsächlich wie eine kleine Fantasywelt und nicht nur wie eine Sammlung von Rätselräumen. Nicht jedes Puzzle ist allerdings perfekt. Einige Lösungen sind ziemlich undurchsichtig und das begrenzte Inventar kann unnötige Laufwege verursachen. Ohne Festplatte kommen außerdem neun Disketten ins Spiel – und das Laufwerk bekommt reichlich Beschäftigung. Trotzdem gehört Kyrandia für mich zu den schönsten klassischen Fantasy-Adventures auf dem Amiga.`,
+        trivia: [
+                  "The Legend of Kyrandia war der erste Teil der von Westwood als Fables & Fiends bezeichneten Adventure-Reihe. Es folgten Hand of Fate und Malcolm's Revenge.",
+                  "Die Amiga-Version wurde von Bill Stokes programmiert und auf neun Disketten ausgeliefert. Sie erschien vollständig auf Deutsch sowie in weiteren europäischen Sprachfassungen.",
+                  "Westwood reduzierte die Bedienung gegenüber vielen zeitgenössischen Adventures stark: Statt verschiedener Befehle wie Öffnen, Benutzen oder Betrachten genügt für fast alle Aktionen ein einziger Mauszeiger."
+        ],
+        worthPlaying: `The Legend of Kyrandia ist auch heute noch wegen seiner wunderschönen Pixelgrafik, der märchenhaften Atmosphäre und der unkomplizierten Bedienung empfehlenswert. Einige Rätsel und das kleine Inventar sind gealtert, doch die Präsentation besitzt noch immer viel Charme. Für Freunde klassischer Fantasy-Adventures und Westwood-Spiele gehört Kyrandia zu den interessantesten Amiga-Adventures der frühen 1990er Jahre.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/394/fables-fiends-the-legend-of-kyrandia-book-one/",
+        wikipedia: "https://en.wikipedia.org/wiki/The_Legend_of_Kyrandia",
+        gog: "https://www.gog.com/en/game/legend_of_kyrandia"
+        },
+        boxArtists: [
+        "Roger Loveless"
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 185,
+        height: 237,
+        depth: 52
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "The Lost Treasures of Infocom ist eine umfangreiche Sammlung von 20 klassischen Textadventures aus dem legendären Infocom-Katalog. Enthalten sind unter anderem Zork I bis III, Beyond Zork, Zork Zero, Planetfall, Stationfall, The Hitchhiker's Guide to the Galaxy und die komplette Enchanter-Trilogie. Die Spiele verzichten weitgehend auf Grafik und werden über Texteingaben gesteuert. Dafür bieten sie komplexe Rätsel, detaillierte Beschreibungen und einige der bekanntesten Geschichten der Interactive-Fiction-Ära.",
+                "history": "The Lost Treasures of Infocom wurde nach dem Ende von Infocom von Activision zusammengestellt. Die ursprüngliche DOS-Sammlung erschien 1991, die Amiga-Version folgte 1992. Insgesamt enthält das Paket 20 klassische Infocom-Adventures aus den Jahren 1980 bis 1989. Besonders aufwendig war die Dokumentation: Anleitungen, Karten und die früher separat erhältlichen InvisiClues-Hinweise wurden für die Sammlung neu zusammengestellt. Die Amiga-Version benötigt lediglich 512 KB RAM und kann auf Festplatte installiert werden. 1992 erschien zusätzlich The Lost Treasures of Infocom II mit weiteren Spielen aus dem Infocom-Archiv.",
+                "review": "The Lost Treasures of Infocom ist weniger eine gewöhnliche Spielesammlung als ein kleines Museum der Textadventure-Geschichte. Zwanzig Infocom-Klassiker in einer Box sind schon beeindruckend, und mit Zork, Planetfall oder Hitchhiker's Guide sind einige der wichtigsten Vertreter des Genres dabei. Natürlich muss man sich heute darauf einlassen können, praktisch ausschließlich Texte zu lesen und Befehle einzutippen. Wer damit nichts anfangen kann, wird hier vermutlich nicht glücklich. Wer dagegen Rätsel, Wortwitz und ausführliche Beschreibungen mag, bekommt eine Sammlung, mit der man sich wahrscheinlich monatelang beschäftigen kann.",
+                "trivia": [
+                    "Die Sammlung enthält 20 Infocom-Spiele: Ballyhoo, Beyond Zork, Deadline, Enchanter, Infidel, Moonmist, Planetfall, Sorcerer, Spellbreaker, Starcross, Stationfall, Suspect, Suspended, The Hitchhiker's Guide to the Galaxy, The Lurking Horror, The Witness, Zork I, Zork II, Zork III und Zork Zero.",
+                    "Die Originalspiele wurden nicht um moderne Grafiken erweitert. Die Sammlung bewahrt damit weitgehend das ursprüngliche textbasierte Spielprinzip der Infocom-Adventures.",
+                    "Die umfangreiche Dokumentation war ein wichtiger Bestandteil der Sammlung. Neben den zusammengefassten Anleitungen wurden auch Karten und die früheren InvisiClues-Hinweise in lesbarer Form mitgeliefert."
+                ],
+                "worthPlaying": "The Lost Treasures of Infocom ist heute vor allem für Adventure-Fans und Spieler interessant, die die Ursprünge der Interactive Fiction kennenlernen möchten. Viele der enthaltenen Spiele gelten als Meilensteine des Genres und zeigen eindrucksvoll, wie viel Atmosphäre, Humor und Spannung allein mit Text erzeugt werden kann. Gleichzeitig ist die Sammlung eine ausgesprochen praktische Möglichkeit, einen großen Teil des klassischen Infocom-Katalogs auf dem Amiga zu erleben.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "The Lost Treasures of Infocom is an extensive collection of 20 classic text adventures from Infocom's legendary catalogue. It includes Zork I through III, Beyond Zork, Zork Zero, Planetfall, Stationfall, The Hitchhiker's Guide to the Galaxy and the complete Enchanter trilogy. Most of the games contain little or no graphics and are controlled through typed commands, relying instead on complex puzzles, detailed descriptions and some of the best-known stories of the interactive-fiction era.",
+                "history": "The Lost Treasures of Infocom was assembled by Activision after Infocom had ceased operations. The original DOS collection appeared in 1991, followed by the Amiga edition in 1992. It contains 20 classic Infocom adventures originally released between 1980 and 1989. Documentation was an important part of the package, with manuals, maps and material based on the original InvisiClues hint books collected for the new release. The Amiga edition requires only 512 KB of RAM and can be installed on a hard drive. The Lost Treasures of Infocom II followed in 1992 with additional games from the Infocom catalogue.",
+                "review": "The Lost Treasures of Infocom feels less like a conventional compilation and more like a museum of text-adventure history. Twenty Infocom classics in one package is impressive, and titles such as Zork, Planetfall and The Hitchhiker's Guide to the Galaxy represent some of the genre's most important games. Modern players must be comfortable reading large amounts of text and typing commands, but those who enjoy puzzles, wordplay and detailed descriptions will find an enormous amount of material here.",
+                "trivia": [
+                    "The collection contains 20 Infocom games: Ballyhoo, Beyond Zork, Deadline, Enchanter, Infidel, Moonmist, Planetfall, Sorcerer, Spellbreaker, Starcross, Stationfall, Suspect, Suspended, The Hitchhiker's Guide to the Galaxy, The Lurking Horror, The Witness, Zork I, Zork II, Zork III and Zork Zero.",
+                    "The original adventures were not redesigned with modern graphics. The collection therefore preserves the predominantly text-based nature of the original Infocom games.",
+                    "Documentation was a major part of the package, collecting manuals, maps and material from the original InvisiClues hint books."
+                ],
+                "worthPlaying": "The Lost Treasures of Infocom remains particularly worthwhile for adventure fans and players interested in the origins of interactive fiction. Many of the included games are landmarks of the genre and demonstrate how effectively atmosphere, humour and suspense can be created almost entirely through text. The collection also provides a convenient way to explore a substantial portion of Infocom's classic catalogue on the Amiga."
+            }
+        },
+        id: 236,
+        folder: "the_lost_treasures_of_infocom",
+        scanBy: "Magisthan",
+        page: "the_lost_treasures_of_infocom.html",
+        featured: false,
+        title: "The Lost Treasures of Infocom",
+        system: "Amiga",
+        year: 1992,
+        publisher: "Activision, Inc.",
+        developer: "Infocom, Inc.",
+        genre: ["Adventure", "Textadventure", "Interactive Fiction", "Compilation"],
+        description: "The Lost Treasures of Infocom ist eine umfangreiche Sammlung von 20 klassischen Textadventures aus dem legendären Infocom-Katalog. Enthalten sind unter anderem Zork I bis III, Beyond Zork, Zork Zero, Planetfall, Stationfall, The Hitchhiker's Guide to the Galaxy und die komplette Enchanter-Trilogie. Die Spiele verzichten weitgehend auf Grafik und werden über Texteingaben gesteuert. Dafür bieten sie komplexe Rätsel, detaillierte Beschreibungen und einige der bekanntesten Geschichten der Interactive-Fiction-Ära.",
+        history: `The Lost Treasures of Infocom wurde nach dem Ende von Infocom von Activision zusammengestellt. Die ursprüngliche DOS-Sammlung erschien 1991, die Amiga-Version folgte 1992. Insgesamt enthält das Paket 20 klassische Infocom-Adventures aus den Jahren 1980 bis 1989. Besonders aufwendig war die Dokumentation: Anleitungen, Karten und die früher separat erhältlichen InvisiClues-Hinweise wurden für die Sammlung neu zusammengestellt. Die Amiga-Version benötigt lediglich 512 KB RAM und kann auf Festplatte installiert werden. 1992 erschien zusätzlich The Lost Treasures of Infocom II mit weiteren Spielen aus dem Infocom-Archiv.`,
+        review: `The Lost Treasures of Infocom ist weniger eine gewöhnliche Spielesammlung als ein kleines Museum der Textadventure-Geschichte. Zwanzig Infocom-Klassiker in einer Box sind schon beeindruckend, und mit Zork, Planetfall oder Hitchhiker's Guide sind einige der wichtigsten Vertreter des Genres dabei. Natürlich muss man sich heute darauf einlassen können, praktisch ausschließlich Texte zu lesen und Befehle einzutippen. Wer damit nichts anfangen kann, wird hier vermutlich nicht glücklich. Wer dagegen Rätsel, Wortwitz und ausführliche Beschreibungen mag, bekommt eine Sammlung, mit der man sich wahrscheinlich monatelang beschäftigen kann.`,
+        trivia: [
+                  "Die Sammlung enthält 20 Infocom-Spiele: Ballyhoo, Beyond Zork, Deadline, Enchanter, Infidel, Moonmist, Planetfall, Sorcerer, Spellbreaker, Starcross, Stationfall, Suspect, Suspended, The Hitchhiker's Guide to the Galaxy, The Lurking Horror, The Witness, Zork I, Zork II, Zork III und Zork Zero.",
+                  "Die Originalspiele wurden nicht um moderne Grafiken erweitert. Die Sammlung bewahrt damit weitgehend das ursprüngliche textbasierte Spielprinzip der Infocom-Adventures.",
+                  "Die umfangreiche Dokumentation war ein wichtiger Bestandteil der Sammlung. Neben den zusammengefassten Anleitungen wurden auch Karten und die früheren InvisiClues-Hinweise in lesbarer Form mitgeliefert."
+        ],
+        worthPlaying: `The Lost Treasures of Infocom ist heute vor allem für Adventure-Fans und Spieler interessant, die die Ursprünge der Interactive Fiction kennenlernen möchten. Viele der enthaltenen Spiele gelten als Meilensteine des Genres und zeigen eindrucksvoll, wie viel Atmosphäre, Humor und Spannung allein mit Text erzeugt werden kann. Gleichzeitig ist die Sammlung eine ausgesprochen praktische Möglichkeit, einen großen Teil des klassischen Infocom-Katalogs auf dem Amiga zu erleben.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/708/the-lost-treasures-of-infocom/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 214,
+        height: 252,
+        depth: 58
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "The Manager ist eine umfangreiche Fußball-Managementsimulation und die internationale beziehungsweise englische Variante von Bundesliga Manager Professional. Bis zu vier Spieler übernehmen einen Verein und kümmern sich nicht nur um Aufstellung, Training und Taktik, sondern auch um Transfers, Sponsoren, Finanzen und den Ausbau des Stadions. Die englische Ausgabe basiert auf den Mannschafts- und Spielerdaten der Saison 1991/92 und begleitet den Verein über einzelne Spielzeiten oder eine langfristige Managerkarriere.",
+                "history": "The Manager wurde von Kron Simulation Software entwickelt und erschien 1992 für Amiga und DOS. Das Spiel basiert auf Bundesliga Manager Professional von Software 2000, wurde für die internationale Veröffentlichung jedoch auf den englischen Fußball zugeschnitten. Werner Krahe und Jens Onnen programmierten die Amiga-Version und entwickelten auch das ursprüngliche Spielkonzept; Tobias Richter und Sebastian Dosch arbeiteten an der Grafik, Sven Appel komponierte die Titelmusik. Neben Mannschaftsaufstellung, Training und Transfers werden auch Sponsoring, Stadionausbau und Vereinsfinanzen simuliert. Bis zu vier Spieler können gleichzeitig teilnehmen. Die Amiga-Version erschien auf drei Disketten und unterstützt auch Rechner mit nur 512 KB RAM, bietet mit 1 MB jedoch mehr Komfort.",
+                "review": "The Manager gehört zu den Fußballmanagern, bei denen man sehr schnell feststellt, dass ein eigentlich unspektakuläres Zahlen- und Menüspiel erstaunlich viel Zeit verschlingen kann. Besonders gelungen ist die Mischung aus sportlichen und wirtschaftlichen Entscheidungen. Transfers, Training, Stadion und Sponsoren greifen sinnvoll ineinander, ohne dass das Spiel vollkommen in Tabellen versinkt. Die kleinen Spielszenen sorgen zusätzlich für Atmosphäre, auch wenn man sie irgendwann alle kennt. Die Bedienung benötigt etwas Eingewöhnung und manche Zusammenhänge werden erst mit dem Handbuch wirklich verständlich. Wer Fußballmanager aus dieser Zeit mag, bekommt trotzdem eine erstaunlich umfangreiche und langfristig motivierende Simulation.",
+                "trivia": [
+                    "The Manager ist im Kern die englische beziehungsweise internationale Ausgabe von Bundesliga Manager Professional. Für die britische Version wurden die Mannschafts- und Spielerdaten an den englischen Fußball der Saison 1991/92 angepasst.",
+                    "Bis zu vier menschliche Manager können gleichzeitig teilnehmen. Neben Ein-, Drei- und unbegrenzten Karrieren bietet das Spiel Transfers, Training, Sponsoring, Stadionausbau und zahlreiche Statistiken.",
+                    "Die Amiga-Version wurde von Werner Krahe und Jens Onnen programmiert. Sie umfasst drei Disketten und läuft bereits mit 512 KB RAM, wobei bei 1 MB mehr Daten im Speicher gehalten und zusätzliche Präsentationselemente genutzt werden können."
+                ],
+                "worthPlaying": "The Manager ist heute besonders für Freunde klassischer Fußballmanager interessant. Die Mischung aus Kaderplanung, Training, Finanzen, Stadionausbau und Mehrspielermodus bietet noch immer erstaunlich viel Substanz. Gleichzeitig vermittelt die Datenbasis der Saison 1991/92 eine gehörige Portion Fußballnostalgie. Wer mit Tabellen, Statistiken und langfristiger Vereinsplanung mehr anfangen kann als mit direkter Fußball-Action, findet hier einen der interessanteren Amiga-Manager seiner Zeit.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "The Manager is an extensive football management simulation and the international English-language variant of Bundesliga Manager Professional. Up to four players can control clubs while handling team selection, training and tactics as well as transfers, sponsorship, finances and stadium development. The English edition uses teams and player data based on the 1991/92 season and allows careers ranging from a single season to an unlimited managerial campaign.",
+                "history": "The Manager was developed by Kron Simulation Software and released for Amiga and DOS in 1992. It is based on Software 2000's Bundesliga Manager Professional but was adapted for the international market with English football data. Werner Krahe and Jens Onnen programmed the Amiga version and contributed to the original concept, while Tobias Richter and Sebastian Dosch worked on graphics and Sven Appel composed the title music. Management covers team selection, training, transfers, sponsorship, stadium development and club finances. Up to four people can play together. The Amiga edition was distributed on three disks and can run with 512 KB of RAM, although 1 MB provides a more complete experience.",
+                "review": "The Manager is the kind of football management game that can consume far more time than its collection of menus and statistics initially suggests. Its strongest feature is the balance between sporting and financial decisions, with transfers, training, stadium development and sponsorship all contributing to the club's progress. Animated match highlights add some atmosphere, although they eventually become repetitive. The interface takes time to learn and the manual is useful for understanding some of the systems, but for fans of early football management simulations it remains impressively detailed and addictive.",
+                "trivia": [
+                    "The Manager is essentially the English and international version of Bundesliga Manager Professional. The British edition adapts the team and player database to English football during the 1991/92 season.",
+                    "Up to four human managers can participate. The game includes one-season, three-season and unlimited careers alongside transfers, training, sponsorship, stadium development and extensive statistics.",
+                    "Werner Krahe and Jens Onnen programmed the Amiga version. It was supplied on three disks and can run with 512 KB of RAM, although a 1 MB Amiga can keep more data in memory and retain additional presentation features."
+                ],
+                "worthPlaying": "The Manager remains particularly appealing to fans of classic football management games. Its combination of squad planning, training, finances, stadium development and multiplayer management still provides considerable depth. The 1991/92 database also adds a strong element of football nostalgia. Players who prefer statistics and long-term club building to direct football action will find plenty to explore."
+            }
+        },
+        id: 237,
+        folder: "the_manager",
+        scanBy: "Magisthan",
+        page: "the_manager.html",
+        featured: false,
+        title: "The Manager",
+        system: "Amiga",
+        year: 1992,
+        publisher: "Software 2000",
+        developer: "Kron Simulation Software",
+        genre: ["Sport", "Fußball", "Management", "Wirtschaftssimulation"],
+        description: "The Manager ist eine umfangreiche Fußball-Managementsimulation und die internationale beziehungsweise englische Variante von Bundesliga Manager Professional. Bis zu vier Spieler übernehmen einen Verein und kümmern sich nicht nur um Aufstellung, Training und Taktik, sondern auch um Transfers, Sponsoren, Finanzen und den Ausbau des Stadions. Die englische Ausgabe basiert auf den Mannschafts- und Spielerdaten der Saison 1991/92 und begleitet den Verein über einzelne Spielzeiten oder eine langfristige Managerkarriere.",
+        history: `The Manager wurde von Kron Simulation Software entwickelt und erschien 1992 für Amiga und DOS. Das Spiel basiert auf Bundesliga Manager Professional von Software 2000, wurde für die internationale Veröffentlichung jedoch auf den englischen Fußball zugeschnitten. Werner Krahe und Jens Onnen programmierten die Amiga-Version und entwickelten auch das ursprüngliche Spielkonzept; Tobias Richter und Sebastian Dosch arbeiteten an der Grafik, Sven Appel komponierte die Titelmusik. Neben Mannschaftsaufstellung, Training und Transfers werden auch Sponsoring, Stadionausbau und Vereinsfinanzen simuliert. Bis zu vier Spieler können gleichzeitig teilnehmen. Die Amiga-Version erschien auf drei Disketten und unterstützt auch Rechner mit nur 512 KB RAM, bietet mit 1 MB jedoch mehr Komfort.`,
+        review: `The Manager gehört zu den Fußballmanagern, bei denen man sehr schnell feststellt, dass ein eigentlich unspektakuläres Zahlen- und Menüspiel erstaunlich viel Zeit verschlingen kann. Besonders gelungen ist die Mischung aus sportlichen und wirtschaftlichen Entscheidungen. Transfers, Training, Stadion und Sponsoren greifen sinnvoll ineinander, ohne dass das Spiel vollkommen in Tabellen versinkt. Die kleinen Spielszenen sorgen zusätzlich für Atmosphäre, auch wenn man sie irgendwann alle kennt. Die Bedienung benötigt etwas Eingewöhnung und manche Zusammenhänge werden erst mit dem Handbuch wirklich verständlich. Wer Fußballmanager aus dieser Zeit mag, bekommt trotzdem eine erstaunlich umfangreiche und langfristig motivierende Simulation.`,
+        trivia: [
+                  "The Manager ist im Kern die englische beziehungsweise internationale Ausgabe von Bundesliga Manager Professional. Für die britische Version wurden die Mannschafts- und Spielerdaten an den englischen Fußball der Saison 1991/92 angepasst.",
+                  "Bis zu vier menschliche Manager können gleichzeitig teilnehmen. Neben Ein-, Drei- und unbegrenzten Karrieren bietet das Spiel Transfers, Training, Sponsoring, Stadionausbau und zahlreiche Statistiken.",
+                  "Die Amiga-Version wurde von Werner Krahe und Jens Onnen programmiert. Sie umfasst drei Disketten und läuft bereits mit 512 KB RAM, wobei bei 1 MB mehr Daten im Speicher gehalten und zusätzliche Präsentationselemente genutzt werden können."
+        ],
+        worthPlaying: `The Manager ist heute besonders für Freunde klassischer Fußballmanager interessant. Die Mischung aus Kaderplanung, Training, Finanzen, Stadionausbau und Mehrspielermodus bietet noch immer erstaunlich viel Substanz. Gleichzeitig vermittelt die Datenbasis der Saison 1991/92 eine gehörige Portion Fußballnostalgie. Wer mit Tabellen, Statistiken und langfristiger Vereinsplanung mehr anfangen kann als mit direkter Fußball-Action, findet hier einen der interessanteren Amiga-Manager seiner Zeit.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/51906/the-manager/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        "Michael Hellmich"
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 185,
+        height: 235,
+        depth: 37
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "The Summoning ist ein isometrisches Action-Rollenspiel von Event Horizon und SSI. Der Spieler erschafft einen einzelnen Helden und schickt ihn in ein riesiges unterirdisches Labyrinth, um den Magier Shadow Weaver aufzuhalten, dessen Armeen die Oberfläche bedrohen. Kämpfe in Echtzeit, Charakterentwicklung, Magie und zahlreiche Rätsel verbinden sich mit einer umfangreichen Dungeonwelt voller Fallen, geheimer Räume und ungewöhnlicher Mechanismen.",
+                "history": "The Summoning wurde von Event Horizon Software entwickelt und 1992 von Strategic Simulations für DOS veröffentlicht. Chris Straka war Lead Programmer und Designer, während Dave Shelley als Producer und ebenfalls als Designer beteiligt war. Das Spiel greift Ideen aus dem früheren Event-Horizon-Titel Dusk of the Gods auf, verlegt sie aber in ein klassisches Fantasy-Szenario. Der Spieler steuert nur einen einzelnen Charakter, dessen Fähigkeiten sich durch Benutzung verbessern. Besonders umfangreich sind die Dungeons: Neben Kämpfen spielen Schalter, Teleporter, Druckplatten, versteckte Durchgänge und kombinierte Gegenstandsrätsel eine wichtige Rolle. Zaubersprüche werden über Kombinationen magischer Gesten ausgelöst.",
+                "review": "The Summoning ist ein Rollenspiel für Leute, die Dungeons wirklich mögen – und zwar sehr viele davon. Die isometrische Darstellung funktioniert gut, das Echtzeit-Kampfsystem ist unkompliziert und die vielen Rätsel sorgen dafür, dass nicht jede Begegnung mit dem Schwert gelöst wird. Besonders interessant finde ich das Magiesystem mit seinen Gesten und die Charakterentwicklung durch tatsächlich eingesetzte Fähigkeiten. Allerdings kann das riesige Labyrinth auf Dauer auch ermüden. Viele Gänge sehen ähnlich aus und ohne sorgfältige Orientierung verliert man schnell den Überblick. Wer komplexe Dungeon-Abenteuer wie Ultima Underworld oder die späteren Ultima-Titel mag, findet hier trotzdem ein erstaunlich umfangreiches SSI-Rollenspiel.",
+                "trivia": [
+                    "The Summoning verwendet keine klassische Erfahrungspunktverteilung. Viele Fähigkeiten verbessern sich stattdessen dadurch, dass der Charakter sie tatsächlich benutzt.",
+                    "Zaubersprüche werden mit einer Kombination aus Handgesten und magischen Komponenten ausgeführt. Neue Gesten und Sprüche müssen im Verlauf des Abenteuers entdeckt beziehungsweise erlernt werden.",
+                    "Entwickler Event Horizon Software wurde kurz nach The Summoning in DreamForge Intertainment umbenannt und entwickelte später unter anderem Ravenloft: Strahd's Possession und Menzoberranzan für SSI."
+                ],
+                "worthPlaying": "The Summoning lohnt sich heute besonders für Freunde umfangreicher Dungeon-Rollenspiele. Die Kombination aus Echtzeitkämpfen, Charakterentwicklung, ungewöhnlichem Magiesystem und zahlreichen Umgebungsrätseln sorgt für deutlich mehr Abwechslung als bei vielen reinen Dungeon Crawlern. Die riesigen und teilweise verwirrenden Labyrinthe verlangen Geduld, machen das Spiel aber gleichzeitig zu einem interessanten Vertreter der frühen 1990er-Jahre-Rollenspiele.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "The Summoning is an isometric action RPG developed by Event Horizon and published by SSI. Players create a single hero and enter an enormous underground labyrinth to stop the sorcerer Shadow Weaver, whose armies threaten the surface world. Real-time combat, character development and magic are combined with extensive dungeon exploration, traps, secret passages and environmental puzzles.",
+                "history": "The Summoning was developed by Event Horizon Software and published by Strategic Simulations for DOS in 1992. Chris Straka served as lead programmer and designer, while Dave Shelley was producer and also contributed to the design. The game develops ideas previously explored in Event Horizon's Dusk of the Gods but places them in a traditional fantasy setting. Players control a single character whose abilities improve through use. Its extensive dungeons feature switches, teleporters, pressure plates, hidden passages and item-based puzzles alongside real-time combat. Magic is performed through combinations of gestures and spell components.",
+                "review": "The Summoning is an RPG for players who genuinely enjoy exploring large dungeons. Its isometric presentation works well, real-time combat is straightforward and the large number of puzzles prevents every problem from being solved with a weapon. The gesture-based magic system and skill development through use are particularly interesting. The enormous labyrinth can become tiring, however, as many areas look similar and navigation demands considerable attention. For players who enjoy complex early-1990s dungeon adventures, it remains an impressively substantial SSI release.",
+                "trivia": [
+                    "The Summoning does not rely on a conventional experience-point system for every skill. Many abilities improve as the character actually uses them.",
+                    "Spells are cast through combinations of hand gestures and magical components. Additional gestures and spells are discovered during the adventure.",
+                    "Event Horizon Software was renamed DreamForge Intertainment shortly after The Summoning and later developed SSI titles including Ravenloft: Strahd's Possession and Menzoberranzan."
+                ],
+                "worthPlaying": "The Summoning remains worthwhile for fans of extensive dungeon-based RPGs. Its combination of real-time combat, character development, an unusual magic system and numerous environmental puzzles provides more variety than many traditional dungeon crawlers. The huge labyrinth demands patience, but it also makes the game a distinctive example of early-1990s computer role-playing design."
+            }
+        },
+        id: 238,
+        folder: "the_summoning",
+        scanBy: "Magisthan",
+        page: "the_summoning.html",
+        featured: false,
+        title: "The Summoning",
+        system: "PC",
+        year: 1992,
+        publisher: "Strategic Simulations, Inc.",
+        developer: "Event Horizon Software, Inc.",
+        genre: ["Rollenspiel", "Action-Rollenspiel", "Dungeon Crawler", "Fantasy"],
+        description: "The Summoning ist ein isometrisches Action-Rollenspiel von Event Horizon und SSI. Der Spieler erschafft einen einzelnen Helden und schickt ihn in ein riesiges unterirdisches Labyrinth, um den Magier Shadow Weaver aufzuhalten, dessen Armeen die Oberfläche bedrohen. Kämpfe in Echtzeit, Charakterentwicklung, Magie und zahlreiche Rätsel verbinden sich mit einer umfangreichen Dungeonwelt voller Fallen, geheimer Räume und ungewöhnlicher Mechanismen.",
+        history: `The Summoning wurde von Event Horizon Software entwickelt und 1992 von Strategic Simulations für DOS veröffentlicht. Chris Straka war Lead Programmer und Designer, während Dave Shelley als Producer und ebenfalls als Designer beteiligt war. Das Spiel greift Ideen aus dem früheren Event-Horizon-Titel Dusk of the Gods auf, verlegt sie aber in ein klassisches Fantasy-Szenario. Der Spieler steuert nur einen einzelnen Charakter, dessen Fähigkeiten sich durch Benutzung verbessern. Besonders umfangreich sind die Dungeons: Neben Kämpfen spielen Schalter, Teleporter, Druckplatten, versteckte Durchgänge und kombinierte Gegenstandsrätsel eine wichtige Rolle. Zaubersprüche werden über Kombinationen magischer Gesten ausgelöst.`,
+        review: `The Summoning ist ein Rollenspiel für Leute, die Dungeons wirklich mögen – und zwar sehr viele davon. Die isometrische Darstellung funktioniert gut, das Echtzeit-Kampfsystem ist unkompliziert und die vielen Rätsel sorgen dafür, dass nicht jede Begegnung mit dem Schwert gelöst wird. Besonders interessant finde ich das Magiesystem mit seinen Gesten und die Charakterentwicklung durch tatsächlich eingesetzte Fähigkeiten. Allerdings kann das riesige Labyrinth auf Dauer auch ermüden. Viele Gänge sehen ähnlich aus und ohne sorgfältige Orientierung verliert man schnell den Überblick. Wer komplexe Dungeon-Abenteuer wie Ultima Underworld oder die späteren Ultima-Titel mag, findet hier trotzdem ein erstaunlich umfangreiches SSI-Rollenspiel.`,
+        trivia: [
+                  "The Summoning verwendet keine klassische Erfahrungspunktverteilung. Viele Fähigkeiten verbessern sich stattdessen dadurch, dass der Charakter sie tatsächlich benutzt.",
+                  "Zaubersprüche werden mit einer Kombination aus Handgesten und magischen Komponenten ausgeführt. Neue Gesten und Sprüche müssen im Verlauf des Abenteuers entdeckt beziehungsweise erlernt werden.",
+                  "Entwickler Event Horizon Software wurde kurz nach The Summoning in DreamForge Intertainment umbenannt und entwickelte später unter anderem Ravenloft: Strahd's Possession und Menzoberranzan für SSI."
+        ],
+        worthPlaying: `The Summoning lohnt sich heute besonders für Freunde umfangreicher Dungeon-Rollenspiele. Die Kombination aus Echtzeitkämpfen, Charakterentwicklung, ungewöhnlichem Magiesystem und zahlreichen Umgebungsrätseln sorgt für deutlich mehr Abwechslung als bei vielen reinen Dungeon Crawlern. Die riesigen und teilweise verwirrenden Labyrinthe verlangen Geduld, machen das Spiel aber gleichzeitig zu einem interessanten Vertreter der frühen 1990er-Jahre-Rollenspiele.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/936/the-summoning/",
+        wikipedia: "https://en.wikipedia.org/wiki/The_Summoning_(video_game)",
+        gog: "https://www.gog.com/en/game/the_summoning"
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 182,
+        height: 232,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Their Finest Hour: The Battle of Britain ist eine historische Luftkampfsimulation von Lucasfilm Games, die den Spieler mitten in die Luftschlacht um England des Jahres 1940 versetzt. Wahlweise kämpft man für die britische Royal Air Force oder die deutsche Luftwaffe und übernimmt unter anderem Spitfire, Hurricane, Bf 109, Stuka oder verschiedene Bomber. Neben einzelnen Trainings- und Kampfeinsätzen bietet das Spiel eine dynamische Kampagne, einen Missionseditor und die Möglichkeit, absolvierte Luftkämpfe aufzuzeichnen und später erneut anzusehen.",
+                "history": "Their Finest Hour wurde von Lawrence Holland entworfen und ursprünglich 1989 für DOS veröffentlicht. Die Amiga-Version folgte 1990, wobei Stefan Schulze an der Programmierung beteiligt war. Nach Battlehawks 1942 war es Lucasfilms zweite historische Luftkampfsimulation. Acht verschiedene Flugzeugtypen stehen zur Verfügung, wobei in größeren Maschinen auch Positionen wie Bordschütze oder Bombenschütze übernommen werden können. Besonders ambitioniert ist die Kampagne: Ergebnisse einzelner Einsätze beeinflussen den weiteren Verlauf der Luftschlacht. Zusätzlich lassen sich eigene Missionen erstellen und geflogene Einsätze als Film aufzeichnen.",
+                "review": "Their Finest Hour gehört zu den Flugsimulationen, die trotz ihres Alters erstaunlich viel Atmosphäre erzeugen. Besonders gefällt mir, dass sich britische und deutsche Maschinen spielen lassen und Bomber nicht einfach nur größere Jagdflugzeuge sind, sondern zusätzliche Besatzungspositionen bieten. Die Kampagne sorgt außerdem dafür, dass einzelne Missionen tatsächlich Bedeutung bekommen. Auf dem Amiga ist die Darstellung allerdings nicht besonders schnell und grafisch eher zweckmäßig. Mit 1 MB RAM und Festplatte spielt es sich deutlich angenehmer. Wer sich mit der gemächlichen Technik arrangieren kann, bekommt aber eine ausgesprochen umfangreiche und spannende historische Flugsimulation.",
+                "trivia": [
+                    "Their Finest Hour ist der zweite Teil von Lucasfilm Games' historischer Luftkampfserie zwischen Battlehawks 1942 und Secret Weapons of the Luftwaffe.",
+                    "Spielbar sind acht Flugzeugtypen: Spitfire, Hurricane, Bf 109, Bf 110, Ju 87 Stuka, Do 17, He 111 und Ju 88. In mehrsitzigen Maschinen können zusätzlich Bordschützen- und Bombenschützenpositionen übernommen werden.",
+                    "Das Spiel besitzt einen Missionseditor und eine Filmfunktion, mit der Luftkämpfe aufgezeichnet, gespeichert und anschließend aus unterschiedlichen Perspektiven betrachtet werden können."
+                ],
+                "worthPlaying": "Their Finest Hour ist heute besonders für Freunde historischer Flugsimulationen interessant. Unterschiedliche Flugzeugtypen, mehrere Besatzungspositionen, die dynamische Kampagne und der Missionseditor bieten für ein Spiel von 1990 erstaunlich viel Substanz. Die niedrige Geschwindigkeit der Amiga-Version verlangt etwas Geduld, doch spielerisch gehört Their Finest Hour zu den bemerkenswertesten Luftkampfsimulationen seiner Zeit.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Their Finest Hour: The Battle of Britain is a historical air-combat simulation from Lucasfilm Games that recreates the Battle of Britain in 1940. Players can fight for either the Royal Air Force or the German Luftwaffe and fly aircraft including the Spitfire, Hurricane, Bf 109, Stuka and several bombers. Alongside training and individual combat missions, the game features a dynamic campaign, a mission builder and the ability to record and replay completed flights.",
+                "history": "Their Finest Hour was created and originally programmed by Lawrence Holland and first released for DOS in 1989. The Amiga version followed in 1990, with Stefan Schulze contributing to the programming. Following Battlehawks 1942, it was Lucasfilm's second historical air-combat simulation. Eight aircraft types are available, and larger aircraft allow players to occupy positions such as gunner and bombardier. Its campaign is particularly ambitious, as the results of individual missions influence the wider battle. Players can also design custom missions and record flights for later playback.",
+                "review": "Their Finest Hour remains remarkably atmospheric despite its age. Being able to fly for both the RAF and Luftwaffe adds considerable variety, while bombers offer additional crew positions rather than simply behaving like larger fighters. The campaign also gives individual missions a sense of consequence. The Amiga version is relatively slow and its graphics are functional rather than spectacular, with a 1 MB machine and hard drive providing a more comfortable experience. Players willing to accept its leisurely performance will find a substantial and engaging historical flight simulation.",
+                "trivia": [
+                    "Their Finest Hour is the second entry in Lucasfilm Games' historical air-combat series, following Battlehawks 1942 and preceding Secret Weapons of the Luftwaffe.",
+                    "Eight aircraft types are available: the Spitfire, Hurricane, Bf 109, Bf 110, Ju 87 Stuka, Do 17, He 111 and Ju 88. Multi-crew aircraft also allow players to operate gunner and bombardier positions.",
+                    "The game includes a mission builder and a film system that allows completed flights to be recorded, saved and replayed from different viewpoints."
+                ],
+                "worthPlaying": "Their Finest Hour remains particularly worthwhile for fans of historical flight simulations. Its varied aircraft, multiple crew positions, dynamic campaign and mission builder provide remarkable depth for a 1990 game. The Amiga version's slow performance requires some patience, but its design still makes it one of the more notable air-combat simulations of its era."
+            }
+        },
+        id: 239,
+        folder: "their_finest_hour",
+        scanBy: "Magisthan",
+        page: "their_finest_hour.html",
+        featured: false,
+        title: "Their Finest Hour: The Battle of Britain",
+        system: "Amiga",
+        year: 1990,
+        publisher: "Lucasfilm Games",
+        developer: "Lucasfilm Games",
+        genre: ["Simulation", "Flugsimulation", "Luftkampf", "Zweiter Weltkrieg"],
+        description: "Their Finest Hour: The Battle of Britain ist eine historische Luftkampfsimulation von Lucasfilm Games, die den Spieler mitten in die Luftschlacht um England des Jahres 1940 versetzt. Wahlweise kämpft man für die britische Royal Air Force oder die deutsche Luftwaffe und übernimmt unter anderem Spitfire, Hurricane, Bf 109, Stuka oder verschiedene Bomber. Neben einzelnen Trainings- und Kampfeinsätzen bietet das Spiel eine dynamische Kampagne, einen Missionseditor und die Möglichkeit, absolvierte Luftkämpfe aufzuzeichnen und später erneut anzusehen.",
+        history: `Their Finest Hour wurde von Lawrence Holland entworfen und ursprünglich 1989 für DOS veröffentlicht. Die Amiga-Version folgte 1990, wobei Stefan Schulze an der Programmierung beteiligt war. Nach Battlehawks 1942 war es Lucasfilms zweite historische Luftkampfsimulation. Acht verschiedene Flugzeugtypen stehen zur Verfügung, wobei in größeren Maschinen auch Positionen wie Bordschütze oder Bombenschütze übernommen werden können. Besonders ambitioniert ist die Kampagne: Ergebnisse einzelner Einsätze beeinflussen den weiteren Verlauf der Luftschlacht. Zusätzlich lassen sich eigene Missionen erstellen und geflogene Einsätze als Film aufzeichnen.`,
+        review: `Their Finest Hour gehört zu den Flugsimulationen, die trotz ihres Alters erstaunlich viel Atmosphäre erzeugen. Besonders gefällt mir, dass sich britische und deutsche Maschinen spielen lassen und Bomber nicht einfach nur größere Jagdflugzeuge sind, sondern zusätzliche Besatzungspositionen bieten. Die Kampagne sorgt außerdem dafür, dass einzelne Missionen tatsächlich Bedeutung bekommen. Auf dem Amiga ist die Darstellung allerdings nicht besonders schnell und grafisch eher zweckmäßig. Mit 1 MB RAM und Festplatte spielt es sich deutlich angenehmer. Wer sich mit der gemächlichen Technik arrangieren kann, bekommt aber eine ausgesprochen umfangreiche und spannende historische Flugsimulation.`,
+        trivia: [
+                  "Their Finest Hour ist der zweite Teil von Lucasfilm Games' historischer Luftkampfserie zwischen Battlehawks 1942 und Secret Weapons of the Luftwaffe.",
+                  "Spielbar sind acht Flugzeugtypen: Spitfire, Hurricane, Bf 109, Bf 110, Ju 87 Stuka, Do 17, He 111 und Ju 88. In mehrsitzigen Maschinen können zusätzlich Bordschützen- und Bombenschützenpositionen übernommen werden.",
+                  "Das Spiel besitzt einen Missionseditor und eine Filmfunktion, mit der Luftkämpfe aufgezeichnet, gespeichert und anschließend aus unterschiedlichen Perspektiven betrachtet werden können."
+        ],
+        worthPlaying: `Their Finest Hour ist heute besonders für Freunde historischer Flugsimulationen interessant. Unterschiedliche Flugzeugtypen, mehrere Besatzungspositionen, die dynamische Kampagne und der Missionseditor bieten für ein Spiel von 1990 erstaunlich viel Substanz. Die niedrige Geschwindigkeit der Amiga-Version verlangt etwas Geduld, doch spielerisch gehört Their Finest Hour zu den bemerkenswertesten Luftkampfsimulationen seiner Zeit.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/227/their-finest-hour-the-battle-of-britain/",
+        wikipedia: "https://de.wikipedia.org/wiki/Their_Finest_Hour:_The_Battle_of_Britain",
+        gog: ""
+        },
+        boxArtists: [
+        "John Batchelor"
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 180,
+        height: 232,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Their Finest Missions: Volume One ist die Missionserweiterung für Lucasfilms Flugsimulation Their Finest Hour: The Battle of Britain. Sie ergänzt das Hauptspiel um 23 neue und deutlich anspruchsvollere Einsätze für die britische RAF und die deutsche Luftwaffe. Das Hauptspiel wird zum Spielen zwingend benötigt.",
+                "history": "Their Finest Missions: Volume One erschien 1991 für Amiga, Atari ST und DOS. Die Erweiterung enthält 23 zusätzliche Missionen für sämtliche Flugzeugtypen aus Their Finest Hour. Einige Einsätze stammen von Lawrence Holland, andere entstanden aus einem Wettbewerb und wurden mit dem Mission Builder des Hauptspiels erstellt. Neue Technik oder Flugzeuge gibt es nicht – der Schwerpunkt liegt vollständig auf neuen Herausforderungen.",
+                "review": "Their Finest Missions richtet sich eindeutig an Spieler, die das Hauptspiel bereits ausgiebig geflogen sind. Die 23 Missionen sind abwechslungsreich und teilweise erheblich schwieriger als die ursprünglichen Einsätze. Technisch gibt es nichts Neues, und ähnliche Missionen könnte man theoretisch mit dem Editor selbst erstellen. Für begeisterte Piloten von Their Finest Hour ist die Diskette trotzdem eine interessante Erweiterung.",
+                "trivia": [
+                    "Die Erweiterung enthält 23 neue Missionen für alle acht Flugzeugtypen des Hauptspiels.",
+                    "Einige Missionen wurden von Lawrence Holland entworfen, weitere entstanden aus einem Wettbewerb und wurden mit dem Mission Builder von Their Finest Hour erstellt.",
+                    "Die deutsche Verpackung wurde gegenüber internationalen Versionen verändert und von nationalsozialistischen Symbolen bereinigt."
+                ],
+                "worthPlaying": "Für Fans von Their Finest Hour bietet die Erweiterung genau das, was ihr Name verspricht: mehr Missionen. Besonders erfahrene Spieler profitieren vom höheren Schwierigkeitsgrad. Ohne das Hauptspiel ist Their Finest Missions allerdings nicht spielbar.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Their Finest Missions: Volume One is a mission expansion for Lucasfilm's Their Finest Hour: The Battle of Britain. It adds 23 new and considerably more challenging missions for both the RAF and Luftwaffe. The original game is required to play.",
+                "history": "Their Finest Missions: Volume One was released for Amiga, Atari ST and DOS in 1991. It contains 23 additional missions covering all aircraft types from Their Finest Hour. Some scenarios were designed by Lawrence Holland, while others originated from a competition and were created with the original game's Mission Builder. No new technology or aircraft were added; the expansion concentrates entirely on additional challenges.",
+                "review": "Their Finest Missions is clearly intended for players who have already spent considerable time with the original game. Its 23 missions are varied and often substantially harder than the standard scenarios. There are no technical improvements, and similar missions could theoretically be created with the built-in editor. For dedicated Their Finest Hour pilots, however, it remains a worthwhile expansion.",
+                "trivia": [
+                    "The expansion contains 23 new missions covering all eight aircraft types from the original game.",
+                    "Some missions were designed by Lawrence Holland, while others originated from a competition and were created using Their Finest Hour's Mission Builder.",
+                    "The German packaging was altered from international editions to remove Nazi symbols."
+                ],
+                "worthPlaying": "For fans of Their Finest Hour, the expansion delivers exactly what its title promises: more missions. Experienced players will particularly appreciate the increased difficulty, although the original game is required."
+            }
+        },
+        id: 240,
+        folder: "their_finest_missions_volume_one",
+        scanBy: "Magisthan",
+        page: "their_finest_missions_volume_one.html",
+        featured: false,
+        title: "Their Finest Missions: Volume One",
+        system: "Amiga",
+        year: 1991,
+        publisher: "Lucasfilm Games",
+        developer: "Lucasfilm Games",
+        genre: ["Simulation", "Flugsimulation", "Luftkampf", "Add-on"],
+        description: "Their Finest Missions: Volume One ist die Missionserweiterung für Lucasfilms Flugsimulation Their Finest Hour: The Battle of Britain. Sie ergänzt das Hauptspiel um 23 neue und deutlich anspruchsvollere Einsätze für die britische RAF und die deutsche Luftwaffe. Das Hauptspiel wird zum Spielen zwingend benötigt.",
+        history: `Their Finest Missions: Volume One erschien 1991 für Amiga, Atari ST und DOS. Die Erweiterung enthält 23 zusätzliche Missionen für sämtliche Flugzeugtypen aus Their Finest Hour. Einige Einsätze stammen von Lawrence Holland, andere entstanden aus einem Wettbewerb und wurden mit dem Mission Builder des Hauptspiels erstellt. Neue Technik oder Flugzeuge gibt es nicht – der Schwerpunkt liegt vollständig auf neuen Herausforderungen.`,
+        review: `Their Finest Missions richtet sich eindeutig an Spieler, die das Hauptspiel bereits ausgiebig geflogen sind. Die 23 Missionen sind abwechslungsreich und teilweise erheblich schwieriger als die ursprünglichen Einsätze. Technisch gibt es nichts Neues, und ähnliche Missionen könnte man theoretisch mit dem Editor selbst erstellen. Für begeisterte Piloten von Their Finest Hour ist die Diskette trotzdem eine interessante Erweiterung.`,
+        trivia: [
+                  "Die Erweiterung enthält 23 neue Missionen für alle acht Flugzeugtypen des Hauptspiels.",
+                  "Einige Missionen wurden von Lawrence Holland entworfen, weitere entstanden aus einem Wettbewerb und wurden mit dem Mission Builder von Their Finest Hour erstellt.",
+                  "Die deutsche Verpackung wurde gegenüber internationalen Versionen verändert und von nationalsozialistischen Symbolen bereinigt."
+        ],
+        worthPlaying: `Für Fans von Their Finest Hour bietet die Erweiterung genau das, was ihr Name verspricht: mehr Missionen. Besonders erfahrene Spieler profitieren vom höheren Schwierigkeitsgrad. Ohne das Hauptspiel ist Their Finest Missions allerdings nicht spielbar.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1035/their-finest-missions-volume-one/",
+        wikipedia: "https://en.wikipedia.org/wiki/Their_Finest_Hour_(video_game)",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 155,
+        height: 184,
+        depth: 17
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Theme Hospital Collector's Edition ist eine Neuauflage von Bullfrogs humorvoller Krankenhaus-Wirtschaftssimulation. Als Krankenhausleiter baut man Behandlungsräume, stellt Ärzte, Pflegekräfte und weiteres Personal ein und versucht, Patienten mit Krankheiten wie aufgeblähten Köpfen oder überlangen Zungen möglichst profitabel zu heilen.",
+                "history": "Theme Hospital erschien ursprünglich 1997 und wurde von Bullfrog Productions für Electronic Arts entwickelt. Die hier erfasste europäische Collector's Edition folgte 2001. Spieler errichten in mehreren Szenarien zunehmend größere Krankenhäuser und müssen dabei Personal, Finanzen, Forschung und Patientenzufriedenheit im Blick behalten. Der typische Bullfrog-Humor macht aus dem eigentlich ernsten Thema eine bewusst überzeichnete Wirtschaftssimulation.",
+                "review": "Theme Hospital ist bis heute eines dieser Spiele, bei denen aus einer einfachen Idee sehr schnell stundenlange Beschäftigung wird. Räume planen, Personal einstellen und gleichzeitig Patientenströme kontrollieren funktioniert hervorragend. Dazu kommen absurde Krankheiten und der typische Bullfrog-Humor. Die KI kann gelegentlich nerven und spätere Krankenhäuser werden ziemlich hektisch, doch gerade dieses kontrollierte Chaos macht einen großen Teil des Reizes aus.",
+                "trivia": [
+                    "Theme Hospital sollte ursprünglich reale Krankheiten verwenden. Bullfrog entschied sich jedoch für erfundene Erkrankungen, um das Thema humorvoll behandeln zu können.",
+                    "Im Intro und im Spiel finden sich Anspielungen auf andere Bullfrog-Titel wie Syndicate, Dungeon Keeper und Hi-Octane.",
+                    "Die hier erfasste europäische Collector's Edition erschien mehrere Jahre nach der ursprünglichen Veröffentlichung des Spiels."
+                ],
+                "worthPlaying": "Theme Hospital verbindet Wirtschaftssimulation und schwarzen Humor auf eine Weise, die auch heute noch funktioniert. Die Bedienung ist schnell verstanden, während die späteren Krankenhäuser genügend Herausforderung bieten. Für Fans klassischer Bullfrog-Spiele gehört es weiterhin zu den stärksten Managementsimulationen der 1990er Jahre.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Theme Hospital Collector's Edition is a later release of Bullfrog's humorous hospital management simulation. Players build treatment rooms, hire doctors, nurses and other staff, and attempt to cure patients suffering from absurd fictional diseases while keeping the hospital profitable.",
+                "history": "Theme Hospital was originally released in 1997 and developed by Bullfrog Productions for Electronic Arts. The European Collector's Edition documented here followed in 2001. Across a series of increasingly demanding scenarios, players manage staff, finances, research and patient satisfaction while expanding their hospitals. Bullfrog's characteristic humour turns the serious subject into a deliberately exaggerated management simulation.",
+                "review": "Theme Hospital remains remarkably addictive. Designing rooms, hiring staff and controlling patient flow creates an excellent management loop, while the bizarre illnesses and Bullfrog humour give the game a distinctive personality. Staff AI can occasionally be frustrating and later hospitals become hectic, but that controlled chaos is also a major part of its appeal.",
+                "trivia": [
+                    "Theme Hospital was originally intended to feature real illnesses, but Bullfrog switched to fictional diseases to allow for a more humorous approach.",
+                    "The introduction and game contain references to other Bullfrog titles including Syndicate, Dungeon Keeper and Hi-Octane.",
+                    "The European Collector's Edition documented here appeared several years after the game's original release."
+                ],
+                "worthPlaying": "Theme Hospital combines management gameplay and dark humour in a way that still works remarkably well. It is easy to understand but becomes increasingly demanding, making it one of Bullfrog's most memorable management games of the 1990s."
+            }
+        },
+        id: 241,
+        folder: "theme_hospital_collectors_edition",
+        scanBy: "Magisthan",
+        page: "theme_hospital_collectors_edition.html",
+        featured: false,
+        title: "Theme Hospital Collector's Edition",
+        system: "PC",
+        year: 2001,
+        publisher: "Electronic Arts, Inc.",
+        developer: "Bullfrog Productions, Ltd.",
+        genre: ["Wirtschaftssimulation", "Management", "Strategie"],
+        description: "Theme Hospital Collector's Edition ist eine Neuauflage von Bullfrogs humorvoller Krankenhaus-Wirtschaftssimulation. Als Krankenhausleiter baut man Behandlungsräume, stellt Ärzte, Pflegekräfte und weiteres Personal ein und versucht, Patienten mit Krankheiten wie aufgeblähten Köpfen oder überlangen Zungen möglichst profitabel zu heilen.",
+        history: `Theme Hospital erschien ursprünglich 1997 und wurde von Bullfrog Productions für Electronic Arts entwickelt. Die hier erfasste europäische Collector's Edition folgte 2001. Spieler errichten in mehreren Szenarien zunehmend größere Krankenhäuser und müssen dabei Personal, Finanzen, Forschung und Patientenzufriedenheit im Blick behalten. Der typische Bullfrog-Humor macht aus dem eigentlich ernsten Thema eine bewusst überzeichnete Wirtschaftssimulation.`,
+        review: `Theme Hospital ist bis heute eines dieser Spiele, bei denen aus einer einfachen Idee sehr schnell stundenlange Beschäftigung wird. Räume planen, Personal einstellen und gleichzeitig Patientenströme kontrollieren funktioniert hervorragend. Dazu kommen absurde Krankheiten und der typische Bullfrog-Humor. Die KI kann gelegentlich nerven und spätere Krankenhäuser werden ziemlich hektisch, doch gerade dieses kontrollierte Chaos macht einen großen Teil des Reizes aus.`,
+        trivia: [
+                  "Theme Hospital sollte ursprünglich reale Krankheiten verwenden. Bullfrog entschied sich jedoch für erfundene Erkrankungen, um das Thema humorvoll behandeln zu können.",
+                  "Im Intro und im Spiel finden sich Anspielungen auf andere Bullfrog-Titel wie Syndicate, Dungeon Keeper und Hi-Octane.",
+                  "Die hier erfasste europäische Collector's Edition erschien mehrere Jahre nach der ursprünglichen Veröffentlichung des Spiels."
+        ],
+        worthPlaying: `Theme Hospital verbindet Wirtschaftssimulation und schwarzen Humor auf eine Weise, die auch heute noch funktioniert. Die Bedienung ist schnell verstanden, während die späteren Krankenhäuser genügend Herausforderung bieten. Für Fans klassischer Bullfrog-Spiele gehört es weiterhin zu den stärksten Managementsimulationen der 1990er Jahre.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/674/theme-hospital/",
+        wikipedia: "https://de.wikipedia.org/wiki/Theme_Hospital",
+        gog: "https://www.gog.com/en/game/theme_hospital"
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 212,
+        height: 250,
+        depth: 52
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "World of Aden: Thunderscape ist ein First-Person-Rollenspiel von SSI, das klassische Fantasy mit Steampunk-Elementen verbindet. Eine Gruppe aus bis zu sechs Abenteurern stellt sich den Kreaturen des Darkfall. Erkundung erfolgt in Echtzeit, während die Kämpfe rundenbasiert ablaufen.",
+                "history": "Thunderscape erschien 1995 für DOS und eröffnete SSIs World-of-Aden-Reihe. Die Gruppe kann aus acht Völkern und elf Charakterklassen zusammengestellt werden. Neben klassischer Magie prägen mechanische Konstruktionen und Schusswaffen die ungewöhnliche Fantasywelt. Noch im selben Jahr folgte mit Entomorph: Plague of the Darkfall ein weiteres Spiel im World-of-Aden-Universum.",
+                "review": "Thunderscape besitzt mit seiner Mischung aus Fantasy und Steampunk eine interessante Atmosphäre. Das rundenbasierte Kampfsystem bietet viele Möglichkeiten und die Charakterentwicklung ist umfangreich. Weniger gelungen sind die teilweise eintönigen Dungeons und die umständliche Orientierung. Trotzdem ist es ein interessantes SSI-Rollenspiel, das heute etwas im Schatten der bekannteren Genrevertreter steht.",
+                "trivia": [
+                    "Die Spielwelt Aden verbindet traditionelle Fantasy mit dampfbetriebener Technik, mechanischen Konstruktionen und Feuerwaffen.",
+                    "Die Gruppe besteht aus bis zu sechs Charakteren, die aus acht Völkern und elf Klassen gewählt werden können.",
+                    "Mit Entomorph: Plague of the Darkfall erschien 1995 ein zweites Computerspiel in der World-of-Aden-Welt."
+                ],
+                "worthPlaying": "Thunderscape lohnt sich vor allem für Freunde klassischer Dungeon-Rollenspiele und ungewöhnlicher Fantasywelten. Das umfangreiche Kampfsystem und die Mischung aus Magie und Technik heben das Spiel von vielen zeitgenössischen Konkurrenten ab.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "World of Aden: Thunderscape is a first-person RPG from SSI that combines traditional fantasy with steampunk elements. A party of up to six adventurers faces the creatures unleashed by the Darkfall. Exploration takes place in real time while combat is turn-based.",
+                "history": "Thunderscape was released for DOS in 1995 and introduced SSI's World of Aden setting. Parties can be assembled from eight races and eleven character classes. Traditional magic is mixed with mechanical inventions and firearms, giving the world a distinctive identity. Entomorph: Plague of the Darkfall followed later that year as another game set in Aden.",
+                "review": "Thunderscape has an appealing atmosphere thanks to its unusual mixture of fantasy and steampunk. Turn-based combat offers plenty of options and character development is extensive. Its repetitive dungeons and awkward navigation are less successful. Even so, it remains an interesting SSI RPG that has become somewhat overlooked compared with better-known games of its era.",
+                "trivia": [
+                    "The world of Aden combines traditional fantasy with steam-powered technology, mechanical inventions and firearms.",
+                    "A party can contain up to six characters chosen from eight races and eleven classes.",
+                    "Entomorph: Plague of the Darkfall was released in 1995 as a second computer game set in the World of Aden."
+                ],
+                "worthPlaying": "Thunderscape is particularly worthwhile for fans of classic dungeon RPGs and unusual fantasy settings. Its extensive combat system and combination of magic and technology help distinguish it from many contemporary RPGs."
+            }
+        },
+        id: 242,
+        folder: "thunderscape",
+        scanBy: "Magisthan",
+        page: "thunderscape.html",
+        featured: false,
+        title: "World of Aden: Thunderscape",
+        system: "PC",
+        year: 1995,
+        publisher: "Strategic Simulations, Inc. / Mindscape, Inc.",
+        developer: "Strategic Simulations, Inc.",
+        genre: ["Rollenspiel", "Dungeon Crawler", "Fantasy", "Steampunk"],
+        description: "World of Aden: Thunderscape ist ein First-Person-Rollenspiel von SSI, das klassische Fantasy mit Steampunk-Elementen verbindet. Eine Gruppe aus bis zu sechs Abenteurern stellt sich den Kreaturen des Darkfall. Erkundung erfolgt in Echtzeit, während die Kämpfe rundenbasiert ablaufen.",
+        history: `Thunderscape erschien 1995 für DOS und eröffnete SSIs World-of-Aden-Reihe. Die Gruppe kann aus acht Völkern und elf Charakterklassen zusammengestellt werden. Neben klassischer Magie prägen mechanische Konstruktionen und Schusswaffen die ungewöhnliche Fantasywelt. Noch im selben Jahr folgte mit Entomorph: Plague of the Darkfall ein weiteres Spiel im World-of-Aden-Universum.`,
+        review: `Thunderscape besitzt mit seiner Mischung aus Fantasy und Steampunk eine interessante Atmosphäre. Das rundenbasierte Kampfsystem bietet viele Möglichkeiten und die Charakterentwicklung ist umfangreich. Weniger gelungen sind die teilweise eintönigen Dungeons und die umständliche Orientierung. Trotzdem ist es ein interessantes SSI-Rollenspiel, das heute etwas im Schatten der bekannteren Genrevertreter steht.`,
+        trivia: [
+                  "Die Spielwelt Aden verbindet traditionelle Fantasy mit dampfbetriebener Technik, mechanischen Konstruktionen und Feuerwaffen.",
+                  "Die Gruppe besteht aus bis zu sechs Charakteren, die aus acht Völkern und elf Klassen gewählt werden können.",
+                  "Mit Entomorph: Plague of the Darkfall erschien 1995 ein zweites Computerspiel in der World-of-Aden-Welt."
+        ],
+        worthPlaying: `Thunderscape lohnt sich vor allem für Freunde klassischer Dungeon-Rollenspiele und ungewöhnlicher Fantasywelten. Das umfangreiche Kampfsystem und die Mischung aus Magie und Technik heben das Spiel von vielen zeitgenössischen Konkurrenten ab.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/5058/world-of-aden-thunderscape/",
+        wikipedia: "https://en.wikipedia.org/wiki/World_of_Aden:_Thunderscape",
+        gog: "https://www.gog.com/en/game/thunderscape"
+        },
+        boxArtists: [
+        "Danté Fuget",
+        "Danilo Gonzalez"
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 182,
+        height: 232,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Time and Magik: The Trilogy ist eine Sammlung von drei klassischen Textadventures von Level 9: Lords of Time, Red Moon und The Price of Magik. Die Spiele verbinden umfangreiche Textbeschreibungen und Parser-Steuerung mit grafischen Szenen und führen durch Zeitreisen, Fantasywelten und magische Abenteuer.",
+                "history": "Time and Magik fasst drei ursprünglich zwischen 1983 und 1986 erschienene Level-9-Adventures zusammen. Für die Compilation wurden die Spiele überarbeitet, erweitert und an das modernere Adventure-System des Studios angepasst. Die europäische Fassung erschien 1988; Datasoft veröffentlichte die C64-Diskettenversion in den USA 1989.",
+                "review": "Time and Magik bietet mit drei umfangreichen Adventures viel Spiel fürs Geld. Der Parser funktioniert gut und die überarbeiteten Fassungen profitieren von zusätzlichen Texten und Grafiken. Nicht alle drei Abenteuer sind gleich stark und die Bildnachladezeiten können stören. Wer klassische Interactive Fiction mag, bekommt trotzdem eine interessante Level-9-Sammlung.",
+                "trivia": [
+                    "Die Sammlung enthält Lords of Time, Red Moon und The Price of Magik.",
+                    "Alle drei Spiele wurden für die Compilation überarbeitet und um längere Texte sowie teilweise neue Grafiken ergänzt.",
+                    "Lords of Time ist erzählerisch weitgehend eigenständig, während Red Moon und The Price of Magik inhaltlich miteinander verbunden sind."
+                ],
+                "worthPlaying": "Time and Magik lohnt sich vor allem für Freunde klassischer Textadventures. Drei umfangreiche Level-9-Spiele in ihren überarbeiteten Fassungen bieten viele Rätsel und einen guten Einblick in die britische Interactive-Fiction-Szene der 1980er Jahre.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Time and Magik: The Trilogy is a collection of three classic Level 9 text adventures: Lords of Time, Red Moon and The Price of Magik. The games combine extensive text descriptions and parser-based interaction with illustrated scenes, covering time travel, fantasy and magical adventures.",
+                "history": "Time and Magik collects three Level 9 adventures originally released between 1983 and 1986. For the compilation, the games were revised, expanded and converted to the studio's later adventure system. The European edition appeared in 1988, while Datasoft released the Commodore 64 disk version in the United States in 1989.",
+                "review": "Time and Magik offers a substantial amount of material with three full adventures. The parser works well and the revised versions benefit from additional text and graphics. The three games vary in quality and loading the illustrations can be slow. For fans of classic interactive fiction, however, it remains an appealing Level 9 collection.",
+                "trivia": [
+                    "The collection contains Lords of Time, Red Moon and The Price of Magik.",
+                    "All three games were revised for the compilation with expanded text and, on suitable versions, additional graphics.",
+                    "Lords of Time is largely independent, while Red Moon and The Price of Magik are narratively connected."
+                ],
+                "worthPlaying": "Time and Magik is particularly worthwhile for fans of classic text adventures. Three substantial Level 9 games in revised form provide plenty of puzzles and an excellent glimpse into British interactive fiction of the 1980s."
+            }
+        },
+        id: 243,
+        folder: "time_and_magik",
+        scanBy: "Magisthan",
+        page: "time_and_magik.html",
+        featured: false,
+        title: "Time and Magik: The Trilogy",
+        system: "C64",
+        year: 1989,
+        publisher: "Datasoft, Inc.",
+        developer: "Level 9 Computing, Ltd.",
+        genre: ["Adventure", "Textadventure", "Interactive Fiction", "Compilation"],
+        description: "Time and Magik: The Trilogy ist eine Sammlung von drei klassischen Textadventures von Level 9: Lords of Time, Red Moon und The Price of Magik. Die Spiele verbinden umfangreiche Textbeschreibungen und Parser-Steuerung mit grafischen Szenen und führen durch Zeitreisen, Fantasywelten und magische Abenteuer.",
+        history: `Time and Magik fasst drei ursprünglich zwischen 1983 und 1986 erschienene Level-9-Adventures zusammen. Für die Compilation wurden die Spiele überarbeitet, erweitert und an das modernere Adventure-System des Studios angepasst. Die europäische Fassung erschien 1988; Datasoft veröffentlichte die C64-Diskettenversion in den USA 1989.`,
+        review: `Time and Magik bietet mit drei umfangreichen Adventures viel Spiel fürs Geld. Der Parser funktioniert gut und die überarbeiteten Fassungen profitieren von zusätzlichen Texten und Grafiken. Nicht alle drei Abenteuer sind gleich stark und die Bildnachladezeiten können stören. Wer klassische Interactive Fiction mag, bekommt trotzdem eine interessante Level-9-Sammlung.`,
+        trivia: [
+                  "Die Sammlung enthält Lords of Time, Red Moon und The Price of Magik.",
+                  "Alle drei Spiele wurden für die Compilation überarbeitet und um längere Texte sowie teilweise neue Grafiken ergänzt.",
+                  "Lords of Time ist erzählerisch weitgehend eigenständig, während Red Moon und The Price of Magik inhaltlich miteinander verbunden sind."
+        ],
+        worthPlaying: `Time and Magik lohnt sich vor allem für Freunde klassischer Textadventures. Drei umfangreiche Level-9-Spiele in ihren überarbeiteten Fassungen bieten viele Rätsel und einen guten Einblick in die britische Interactive-Fiction-Szene der 1980er Jahre.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/28812/time-and-magik-the-trilogy/",
+        wikipedia: "https://en.wikipedia.org/wiki/Time_and_Magik",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 150,
+        height: 226,
+        depth: 27
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Die MLBPA 1993 Players Expansion Disk ist eine Datenerweiterung für Tony La Russa Baseball II. Sie ergänzt das Hauptspiel um mehr als 950 MLBPA-Spieler der Saison 1993 mit aktuellen Statistiken, Bewertungen und digitalisierten Spielerporträts. Tony La Russa Baseball II wird zum Spielen zwingend benötigt.",
+                "history": "SSI unterstützte Tony La Russa Baseball II mit mehreren separat erhältlichen Erweiterungsdisketten. Die 1993 Players Expansion Disk aktualisiert den Spielerbestand auf die MLB-Saison 1993. Neben den aktuellen Kadern enthält sie umfangreiche Leistungsdaten und individuelle Porträts. Damit ließ sich das Hauptspiel mit einer deutlich aktuelleren Datenbasis weiterspielen.",
+                "review": "Die 1993 Players Expansion Disk verändert das eigentliche Spiel nicht, macht Tony La Russa Baseball II für Baseballfans aber wesentlich authentischer. Mehr als 950 Spieler und erstaunlich detaillierte Statistiken waren 1993 ein beachtlicher Umfang. Heute ist die Disk vor allem als zeittypisches Sportspiel-Add-on und Sammlerstück interessant.",
+                "trivia": [
+                    "Die Erweiterung enthält mehr als 950 MLBPA-Spieler der Saison 1993 mit individuellen digitalisierten Porträts.",
+                    "Für jeden Spieler werden 134 statistische Kategorien berücksichtigt, darunter Werte für Batting, Pitching, Base Running und Fielding.",
+                    "Spieler besitzen zusätzliche Bewertungen für Clutch Performance sowie Hot- und Cold-Streaks; Pitcher werden außerdem für vier unterschiedliche Würfe bewertet."
+                ],
+                "worthPlaying": "Für Besitzer von Tony La Russa Baseball II bietet die Disk eine authentische Momentaufnahme der MLB-Saison 1993. Der historische Datenbestand mit Spielern, Porträts und umfangreichen Statistiken macht sie heute besonders für Baseballfans und Sammler interessant.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "The MLBPA 1993 Players Expansion Disk is a data expansion for Tony La Russa Baseball II. It adds more than 950 MLBPA players from the 1993 season with updated statistics, ratings and digitized player portraits. Tony La Russa Baseball II is required to use the expansion.",
+                "history": "SSI supported Tony La Russa Baseball II with several separately sold expansion disks. The 1993 Players Expansion Disk updates the player database for the 1993 MLB season. In addition to contemporary rosters, it provides extensive performance data and individual portraits, allowing owners to continue playing with a substantially updated database.",
+                "review": "The 1993 Players Expansion Disk does not change the underlying game, but it makes Tony La Russa Baseball II considerably more authentic for baseball fans. More than 950 players and an unusually detailed statistical database represented an impressive amount of information in 1993. Today it is particularly interesting as a period sports-game expansion and collectible.",
+                "trivia": [
+                    "The expansion includes more than 950 MLBPA players from the 1993 season with individual digitized portraits.",
+                    "Each player is represented through 134 statistical categories covering areas such as batting, pitching, base running and fielding.",
+                    "Players are also rated for clutch performance and hot or cold streaks, while pitchers receive ratings for four different pitches."
+                ],
+                "worthPlaying": "For owners of Tony La Russa Baseball II, the disk provides an authentic snapshot of the 1993 MLB season. Its historical rosters, portraits and extensive statistics make it particularly interesting for baseball fans and collectors today."
+            }
+        },
+        id: 244,
+        folder: "tony_la_russa_baseball_2_1993_players_expansion_disk",
+        scanBy: "Magisthan",
+        page: "tony_la_russa_baseball_2_1993_players_expansion_disk.html",
+        featured: false,
+        title: "Tony La Russa Baseball II - 1993 Players Expansion Disk",
+        system: "PC",
+        year: 1993,
+        publisher: "Strategic Simulations, Inc.",
+        developer: "Stormfront Studios",
+        genre: ["Sport", "Baseball", "Simulation", "Add-on"],
+        description: "Die MLBPA 1993 Players Expansion Disk ist eine Datenerweiterung für Tony La Russa Baseball II. Sie ergänzt das Hauptspiel um mehr als 950 MLBPA-Spieler der Saison 1993 mit aktuellen Statistiken, Bewertungen und digitalisierten Spielerporträts. Tony La Russa Baseball II wird zum Spielen zwingend benötigt.",
+        history: `SSI unterstützte Tony La Russa Baseball II mit mehreren separat erhältlichen Erweiterungsdisketten. Die 1993 Players Expansion Disk aktualisiert den Spielerbestand auf die MLB-Saison 1993. Neben den aktuellen Kadern enthält sie umfangreiche Leistungsdaten und individuelle Porträts. Damit ließ sich das Hauptspiel mit einer deutlich aktuelleren Datenbasis weiterspielen.`,
+        review: `Die 1993 Players Expansion Disk verändert das eigentliche Spiel nicht, macht Tony La Russa Baseball II für Baseballfans aber wesentlich authentischer. Mehr als 950 Spieler und erstaunlich detaillierte Statistiken waren 1993 ein beachtlicher Umfang. Heute ist die Disk vor allem als zeittypisches Sportspiel-Add-on und Sammlerstück interessant.`,
+        trivia: [
+                  "Die Erweiterung enthält mehr als 950 MLBPA-Spieler der Saison 1993 mit individuellen digitalisierten Porträts.",
+                  "Für jeden Spieler werden 134 statistische Kategorien berücksichtigt, darunter Werte für Batting, Pitching, Base Running und Fielding.",
+                  "Spieler besitzen zusätzliche Bewertungen für Clutch Performance sowie Hot- und Cold-Streaks; Pitcher werden außerdem für vier unterschiedliche Würfe bewertet."
+        ],
+        worthPlaying: `Für Besitzer von Tony La Russa Baseball II bietet die Disk eine authentische Momentaufnahme der MLB-Saison 1993. Der historische Datenbestand mit Spielern, Porträts und umfangreichen Statistiken macht sie heute besonders für Baseballfans und Sammler interessant.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 180,
+        height: 235,
+        depth: 25
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Die AL/NL Stadiums Expansion Disk erweitert Tony La Russa Baseball II um alle 28 Stadien der damaligen American und National League. Die Ballparks werden mit individuellen Spielfeldabmessungen und charakteristischen Details dargestellt. Tony La Russa Baseball II wird zum Spielen benötigt.",
+                "history": "SSI veröffentlichte für Tony La Russa Baseball II mehrere separat erhältliche Erweiterungsdisketten. Die 1993 erschienene AL/NL Stadiums Expansion Disk konzentrierte sich vollständig auf die Spielstätten der Major League Baseball. Enthalten sind alle 28 damaligen Stadien einschließlich der neuen Ballparks in Colorado und Florida.",
+                "review": "Die Stadiums Expansion Disk ist eine kleine, aber für Baseballfans reizvolle Ergänzung. Unterschiedliche Spielfeldabmessungen und bekannte Stadien verleihen den Partien mehr Atmosphäre und Authentizität. Am eigentlichen Spielprinzip ändert sich nichts, weshalb die Erweiterung vor allem für engagierte Spieler des Hauptspiels interessant ist.",
+                "trivia": [
+                    "Die Erweiterung enthält alle 28 Major-League-Stadien der Saison 1993.",
+                    "Auch die neuen Spielstätten der Expansion Teams Colorado Rockies und Florida Marlins sind enthalten.",
+                    "Die Stadien besitzen unterschiedliche Spielfeldabmessungen und individuelle Details bis hin zum Green Monster im Fenway Park."
+                ],
+                "worthPlaying": "Wer Tony La Russa Baseball II möglichst authentisch spielen möchte, erhält mit der Stadiums Disk eine passende Ergänzung. Heute ist sie zudem ein interessantes Beispiel für die modularen Sportspiel-Erweiterungen der frühen 1990er Jahre.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "The AL/NL Stadiums Expansion Disk expands Tony La Russa Baseball II with all 28 American and National League ballparks of the period. The stadiums feature individual field dimensions and recognizable details. Tony La Russa Baseball II is required to use the expansion.",
+                "history": "SSI released several separately sold expansion disks for Tony La Russa Baseball II. The AL/NL Stadiums Expansion Disk, released in 1993, focuses entirely on Major League Baseball venues. It includes all 28 contemporary stadiums, including the new ballparks in Colorado and Florida.",
+                "review": "The Stadiums Expansion Disk is a small but appealing addition for baseball fans. Different field dimensions and recognizable ballparks add atmosphere and authenticity to games. It does not fundamentally alter the gameplay, making it primarily worthwhile for dedicated owners of the base game.",
+                "trivia": [
+                    "The expansion contains all 28 Major League ballparks from the 1993 season.",
+                    "The new venues used by the expansion teams Colorado Rockies and Florida Marlins are included.",
+                    "Ballparks feature different field dimensions and individual details, including Fenway Park's famous Green Monster."
+                ],
+                "worthPlaying": "For players wanting a more authentic Tony La Russa Baseball II experience, the Stadiums Disk is a fitting addition. Today it is also an interesting example of the modular sports-game expansions of the early 1990s."
+            }
+        },
+        id: 245,
+        folder: "tony_la_russa_baseball_2_al_nl_stadiums_expansion_disk",
+        scanBy: "Magisthan",
+        page: "tony_la_russa_baseball_2_al_nl_stadiums_expansion_disk.html",
+        featured: false,
+        title: "Tony La Russa Baseball II - AL/NL Stadiums Expansion Disk",
+        system: "PC",
+        year: 1993,
+        publisher: "Strategic Simulations, Inc.",
+        developer: "Stormfront Studios",
+        genre: ["Sport", "Baseball", "Simulation", "Add-on"],
+        description: "Die AL/NL Stadiums Expansion Disk erweitert Tony La Russa Baseball II um alle 28 Stadien der damaligen American und National League. Die Ballparks werden mit individuellen Spielfeldabmessungen und charakteristischen Details dargestellt. Tony La Russa Baseball II wird zum Spielen benötigt.",
+        history: `SSI veröffentlichte für Tony La Russa Baseball II mehrere separat erhältliche Erweiterungsdisketten. Die 1993 erschienene AL/NL Stadiums Expansion Disk konzentrierte sich vollständig auf die Spielstätten der Major League Baseball. Enthalten sind alle 28 damaligen Stadien einschließlich der neuen Ballparks in Colorado und Florida.`,
+        review: `Die Stadiums Expansion Disk ist eine kleine, aber für Baseballfans reizvolle Ergänzung. Unterschiedliche Spielfeldabmessungen und bekannte Stadien verleihen den Partien mehr Atmosphäre und Authentizität. Am eigentlichen Spielprinzip ändert sich nichts, weshalb die Erweiterung vor allem für engagierte Spieler des Hauptspiels interessant ist.`,
+        trivia: [
+                  "Die Erweiterung enthält alle 28 Major-League-Stadien der Saison 1993.",
+                  "Auch die neuen Spielstätten der Expansion Teams Colorado Rockies und Florida Marlins sind enthalten.",
+                  "Die Stadien besitzen unterschiedliche Spielfeldabmessungen und individuelle Details bis hin zum Green Monster im Fenway Park."
+        ],
+        worthPlaying: `Wer Tony La Russa Baseball II möglichst authentisch spielen möchte, erhält mit der Stadiums Disk eine passende Ergänzung. Heute ist sie zudem ein interessantes Beispiel für die modularen Sportspiel-Erweiterungen der frühen 1990er Jahre.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 180,
+        height: 235,
+        depth: 25
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Die Fantasy Draft Expansion Disk erweitert Tony La Russa Baseball II um einen umfangreichen Fantasy-Draft-Modus. Spieler können eigene Ligen zusammenstellen und verfügbare Baseballspieler auf neu gebildete Teams verteilen. Tony La Russa Baseball II wird zum Spielen benötigt.",
+                "history": "SSI veröffentlichte die Fantasy Draft Expansion Disk 1993 als eines von mehreren Add-ons für Tony La Russa Baseball II. Sie ermöglicht Drafts mit eigenen Ligen und zahlreichen Einstellungen für Teams, Draft-Reihenfolge und Salary Cap. In der späteren 1994 Edition des Hauptspiels wurde die Fantasy-Draft-Funktion direkt integriert.",
+                "review": "Die Fantasy Draft Expansion Disk erweitert das Hauptspiel sinnvoller als eine reine Datenaktualisierung. Eigene Ligen und individuell zusammengestellte Teams eröffnen viele zusätzliche Möglichkeiten, besonders für Statistik- und Managementfans. Am eigentlichen Baseballspiel ändert sich wenig, der strategische Teil gewinnt aber deutlich an Tiefe.",
+                "trivia": [
+                    "Fantasy-Drafts können mit 2 bis 32 Teams und unterschiedlichen Liga- und Divisionsstrukturen durchgeführt werden.",
+                    "Neben klassischen Draft-Runden sind Auktionen sowie Drafts mit oder ohne Salary Cap möglich.",
+                    "Die Fantasy-Draft-Funktion wurde später direkt in die 1994 Edition von Tony La Russa Baseball II integriert."
+                ],
+                "worthPlaying": "Von den Erweiterungen für Tony La Russa Baseball II bietet die Fantasy Draft Disk besonders viel zusätzlichen Spielwert. Eigene Teams und Ligen machen sie vor allem für Spieler interessant, die den Management- und Statistikteil intensiv nutzen.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "The Fantasy Draft Expansion Disk adds an extensive fantasy draft mode to Tony La Russa Baseball II. Players can create custom leagues and distribute available baseball players among newly assembled teams. Tony La Russa Baseball II is required.",
+                "history": "SSI released the Fantasy Draft Expansion Disk in 1993 as one of several add-ons for Tony La Russa Baseball II. It allows players to conduct drafts for custom leagues with numerous options covering teams, draft order and salary caps. The Fantasy Draft feature was later integrated directly into the 1994 Edition of the base game.",
+                "review": "The Fantasy Draft Expansion Disk adds more substantial gameplay options than a simple data update. Custom leagues and individually assembled teams provide considerable additional depth, particularly for statistics and management fans. The baseball action itself changes little, but the strategic side becomes much richer.",
+                "trivia": [
+                    "Fantasy drafts can support 2 to 32 teams with different league and division structures.",
+                    "Players can use traditional draft rounds or auctions, with options for salary caps and different draft orders.",
+                    "The Fantasy Draft feature was later incorporated directly into the 1994 Edition of Tony La Russa Baseball II."
+                ],
+                "worthPlaying": "Among the expansions for Tony La Russa Baseball II, the Fantasy Draft Disk offers particularly strong additional gameplay value. Custom teams and leagues make it especially appealing to players who enjoy the management and statistical side of baseball."
+            }
+        },
+        id: 246,
+        folder: "tony_la_russa_baseball_2_fantasy_draft_expansion_disk",
+        scanBy: "Magisthan",
+        page: "tony_la_russa_baseball_2_fantasy_draft_expansion_disk.html",
+        featured: false,
+        title: "Tony La Russa Baseball II - Fantasy Draft Expansion Disk",
+        system: "PC",
+        year: 1993,
+        publisher: "Strategic Simulations, Inc.",
+        developer: "Stormfront Studios",
+        genre: ["Sport", "Baseball", "Simulation", "Management", "Add-on"],
+        description: "Die Fantasy Draft Expansion Disk erweitert Tony La Russa Baseball II um einen umfangreichen Fantasy-Draft-Modus. Spieler können eigene Ligen zusammenstellen und verfügbare Baseballspieler auf neu gebildete Teams verteilen. Tony La Russa Baseball II wird zum Spielen benötigt.",
+        history: `SSI veröffentlichte die Fantasy Draft Expansion Disk 1993 als eines von mehreren Add-ons für Tony La Russa Baseball II. Sie ermöglicht Drafts mit eigenen Ligen und zahlreichen Einstellungen für Teams, Draft-Reihenfolge und Salary Cap. In der späteren 1994 Edition des Hauptspiels wurde die Fantasy-Draft-Funktion direkt integriert.`,
+        review: `Die Fantasy Draft Expansion Disk erweitert das Hauptspiel sinnvoller als eine reine Datenaktualisierung. Eigene Ligen und individuell zusammengestellte Teams eröffnen viele zusätzliche Möglichkeiten, besonders für Statistik- und Managementfans. Am eigentlichen Baseballspiel ändert sich wenig, der strategische Teil gewinnt aber deutlich an Tiefe.`,
+        trivia: [
+                  "Fantasy-Drafts können mit 2 bis 32 Teams und unterschiedlichen Liga- und Divisionsstrukturen durchgeführt werden.",
+                  "Neben klassischen Draft-Runden sind Auktionen sowie Drafts mit oder ohne Salary Cap möglich.",
+                  "Die Fantasy-Draft-Funktion wurde später direkt in die 1994 Edition von Tony La Russa Baseball II integriert."
+        ],
+        worthPlaying: `Von den Erweiterungen für Tony La Russa Baseball II bietet die Fantasy Draft Disk besonders viel zusätzlichen Spielwert. Eigene Teams und Ligen machen sie vor allem für Spieler interessant, die den Management- und Statistikteil intensiv nutzen.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/243439/tony-la-russa-baseball-ii-fantasy-draft-expansion-disk/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 180,
+        height: 235,
+        depth: 25
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Total Annihilation: Kingdoms überträgt das Echtzeitstrategie-Konzept von Total Annihilation in eine Fantasywelt. Vier Königreiche kämpfen mit Rittern, Monstern, Magiern und mächtigen Kreaturen um die Vorherrschaft auf dem Kontinent Darien. Jede Fraktion besitzt eigene Einheiten und taktische Möglichkeiten.",
+                "history": "Cavedog veröffentlichte Total Annihilation: Kingdoms 1999 als Fantasy-Ableger von Total Annihilation. Statt Commander übernehmen mächtige Monarchen die zentrale Rolle auf dem Schlachtfeld. Die Kampagne wechselt regelmäßig zwischen den vier verfeindeten Reichen und erzählt deren gemeinsamen Konflikt aus unterschiedlichen Perspektiven.",
+                "review": "Kingdoms bietet große Schlachten, interessante Fraktionen und eine attraktive Fantasywelt. Besonders die unterschiedlichen Einheiten sorgen für Abwechslung. Gegenüber Total Annihilation wirken KI, Wegfindung und Spielbalance jedoch weniger ausgereift. Trotzdem bleibt ein ungewöhnlicher und spielenswerter Vertreter der klassischen Echtzeitstrategie.",
+                "trivia": [
+                    "Die vier spielbaren Königreiche heißen Aramon, Taros, Veruna und Zhon.",
+                    "Die Kampagne lässt den Spieler nacheinander alle vier Fraktionen übernehmen.",
+                    "2000 erschien mit The Iron Plague eine Erweiterung, die das Volk Creon hinzufügte."
+                ],
+                "worthPlaying": "Kingdoms ist vor allem für Fans klassischer Echtzeitstrategie interessant, die ein Fantasy-Szenario suchen. Die sehr unterschiedlichen Fraktionen und großen Schlachten verleihen dem Spiel bis heute einen eigenen Charakter.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Total Annihilation: Kingdoms transfers the real-time strategy concept of Total Annihilation into a fantasy world. Four kingdoms battle across the continent of Darien using knights, monsters, mages and powerful creatures. Each faction has its own units and tactical possibilities.",
+                "history": "Cavedog released Total Annihilation: Kingdoms in 1999 as a fantasy spin-off of Total Annihilation. Powerful monarchs replace the Commanders as the central battlefield units. The campaign regularly switches between the four warring kingdoms, presenting their shared conflict from different perspectives.",
+                "review": "Kingdoms offers large battles, interesting factions and an appealing fantasy setting. The highly distinctive unit rosters provide plenty of variety. Compared with Total Annihilation, however, its AI, pathfinding and balance feel less refined. Even so, it remains an unusual and worthwhile classic real-time strategy game.",
+                "trivia": [
+                    "The four playable kingdoms are Aramon, Taros, Veruna and Zhon.",
+                    "The campaign places the player in control of all four factions at different points in the story.",
+                    "The Iron Plague expansion was released in 2000 and introduced the additional Creon faction."
+                ],
+                "worthPlaying": "Kingdoms remains particularly interesting for classic real-time strategy fans looking for a fantasy setting. Its strongly differentiated factions and large battles still give the game a distinctive identity."
+            }
+        },
+        id: 247,
+        folder: "total_annihilation_kingdoms",
+        scanBy: "Magisthan",
+        page: "total_annihilation_kingdoms.html",
+        featured: false,
+        title: "Total Annihilation: Kingdoms",
+        system: "PC",
+        year: 1999,
+        publisher: "Cavedog Entertainment / GT Interactive",
+        developer: "Cavedog Entertainment",
+        genre: ["Strategie", "Echtzeitstrategie", "Fantasy"],
+        description: "Total Annihilation: Kingdoms überträgt das Echtzeitstrategie-Konzept von Total Annihilation in eine Fantasywelt. Vier Königreiche kämpfen mit Rittern, Monstern, Magiern und mächtigen Kreaturen um die Vorherrschaft auf dem Kontinent Darien. Jede Fraktion besitzt eigene Einheiten und taktische Möglichkeiten.",
+        history: `Cavedog veröffentlichte Total Annihilation: Kingdoms 1999 als Fantasy-Ableger von Total Annihilation. Statt Commander übernehmen mächtige Monarchen die zentrale Rolle auf dem Schlachtfeld. Die Kampagne wechselt regelmäßig zwischen den vier verfeindeten Reichen und erzählt deren gemeinsamen Konflikt aus unterschiedlichen Perspektiven.`,
+        review: `Kingdoms bietet große Schlachten, interessante Fraktionen und eine attraktive Fantasywelt. Besonders die unterschiedlichen Einheiten sorgen für Abwechslung. Gegenüber Total Annihilation wirken KI, Wegfindung und Spielbalance jedoch weniger ausgereift. Trotzdem bleibt ein ungewöhnlicher und spielenswerter Vertreter der klassischen Echtzeitstrategie.`,
+        trivia: [
+                  "Die vier spielbaren Königreiche heißen Aramon, Taros, Veruna und Zhon.",
+                  "Die Kampagne lässt den Spieler nacheinander alle vier Fraktionen übernehmen.",
+                  "2000 erschien mit The Iron Plague eine Erweiterung, die das Volk Creon hinzufügte."
+        ],
+        worthPlaying: `Kingdoms ist vor allem für Fans klassischer Echtzeitstrategie interessant, die ein Fantasy-Szenario suchen. Die sehr unterschiedlichen Fraktionen und großen Schlachten verleihen dem Spiel bis heute einen eigenen Charakter.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1952/total-annihilation-kingdoms/",
+        wikipedia: "https://en.wikipedia.org/wiki/Total_Annihilation:_Kingdoms",
+        gog: "https://www.gog.com/en/game/total_annihilation_kingdoms"
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 180,
+        height: 232,
+        depth: 42
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Track & Field ist die C64-Umsetzung von Konamis erfolgreichem Leichtathletik-Arcadespiel. In sechs Disziplinen wie 100-Meter-Lauf, Weitsprung, Speerwurf und Hochsprung kämpfen bis zu vier Spieler um Rekorde und Qualifikationen. Diese Ausgabe erschien 1987 über Konamis Budgetlabel Action City.",
+                "history": "Das Arcade-Original erschien 1983, die erste C64-Umsetzung folgte 1984. Programmiert wurde sie von Joe Simko, Dan Danhof und Matt Decker. 1987 brachte Konami das Spiel in den USA innerhalb seiner neuen Action-City-Budgetreihe erneut auf Diskette heraus.",
+                "review": "Track & Field überträgt das schnelle Arcade-Prinzip überzeugend auf den C64. Besonders mit mehreren Spielern sorgen die sechs Disziplinen für spannende Duelle, auch wenn die Steuerung dem Joystick einiges abverlangt. 1987 wirkte das Konzept bereits etwas betagt, bleibt aber ein unterhaltsamer Klassiker.",
+                "trivia": [
+                    "Die sechs Disziplinen sind 100-Meter-Lauf, Weitsprung, Speerwurf, 110-Meter-Hürdenlauf, Hammerwurf und Hochsprung.",
+                    "Die C64-Version wurde von Joe Simko, Dan Danhof und Matt Decker programmiert.",
+                    "Action City war Konamis 1987 eingeführte Budgetreihe für ältere Arcade-Umsetzungen."
+                ],
+                "worthPlaying": "Track & Field funktioniert besonders gut als Mehrspieler-Wettkampf und vermittelt noch heute den direkten Charakter des Arcade-Originals. Für Fans klassischer Sportspiele ist die Action-City-Ausgabe zudem eine interessante US-Budgetveröffentlichung.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Track & Field is the Commodore 64 conversion of Konami's successful athletics arcade game. Up to four players compete for records and qualification across six events including the 100-meter dash, long jump, javelin and high jump. This edition was reissued through Konami's Action City budget label in 1987.",
+                "history": "The arcade original appeared in 1983, followed by the first Commodore 64 version in 1984. The conversion was programmed by Joe Simko, Dan Danhof and Matt Decker. Konami reissued the game on disk in the United States in 1987 as part of its newly introduced Action City budget range.",
+                "review": "Track & Field translates the fast arcade concept effectively to the Commodore 64. The six events are particularly entertaining with several players, although the controls can be punishing on joysticks. By 1987 the concept was already showing its age, but it remains an enjoyable classic.",
+                "trivia": [
+                    "The six events are the 100-meter dash, long jump, javelin, 110-meter hurdles, hammer throw and high jump.",
+                    "The Commodore 64 version was programmed by Joe Simko, Dan Danhof and Matt Decker.",
+                    "Action City was Konami's budget range for older arcade conversions, introduced in 1987."
+                ],
+                "worthPlaying": "Track & Field remains particularly enjoyable as a multiplayer competition and retains the immediate appeal of the arcade original. The Action City edition is also an interesting US budget release for collectors."
+            }
+        },
+        id: 248,
+        folder: "track_and_field",
+        scanBy: "Magisthan",
+        page: "track_and_field.html",
+        featured: false,
+        title: "Track & Field",
+        system: "C64",
+        year: 1987,
+        publisher: "Action City / Konami",
+        developer: "Konami",
+        genre: ["Sport", "Leichtathletik", "Multi-Event", "Arcade"],
+        description: "Track & Field ist die C64-Umsetzung von Konamis erfolgreichem Leichtathletik-Arcadespiel. In sechs Disziplinen wie 100-Meter-Lauf, Weitsprung, Speerwurf und Hochsprung kämpfen bis zu vier Spieler um Rekorde und Qualifikationen. Diese Ausgabe erschien 1987 über Konamis Budgetlabel Action City.",
+        history: `Das Arcade-Original erschien 1983, die erste C64-Umsetzung folgte 1984. Programmiert wurde sie von Joe Simko, Dan Danhof und Matt Decker. 1987 brachte Konami das Spiel in den USA innerhalb seiner neuen Action-City-Budgetreihe erneut auf Diskette heraus.`,
+        review: `Track & Field überträgt das schnelle Arcade-Prinzip überzeugend auf den C64. Besonders mit mehreren Spielern sorgen die sechs Disziplinen für spannende Duelle, auch wenn die Steuerung dem Joystick einiges abverlangt. 1987 wirkte das Konzept bereits etwas betagt, bleibt aber ein unterhaltsamer Klassiker.`,
+        trivia: [
+                  "Die sechs Disziplinen sind 100-Meter-Lauf, Weitsprung, Speerwurf, 110-Meter-Hürdenlauf, Hammerwurf und Hochsprung.",
+                  "Die C64-Version wurde von Joe Simko, Dan Danhof und Matt Decker programmiert.",
+                  "Action City war Konamis 1987 eingeführte Budgetreihe für ältere Arcade-Umsetzungen."
+        ],
+        worthPlaying: `Track & Field funktioniert besonders gut als Mehrspieler-Wettkampf und vermittelt noch heute den direkten Charakter des Arcade-Originals. Für Fans klassischer Sportspiele ist die Action-City-Ausgabe zudem eine interessante US-Budgetveröffentlichung.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/19505/track-field/",
+        wikipedia: "https://en.wikipedia.org/wiki/Track_%26_Field_(video_game)",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 2,
+        stars: 2,
+        dimensions: {
+        width: 150,
+        height: 192,
+        depth: 22
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Veil of Darkness ist ein düsteres Action-Rollenspiel mit starken Adventure-Elementen. Nach einem Flugzeugabsturz landet der Spieler in einem abgeschotteten Tal in den Karpaten, das vom Vampir Kairn beherrscht wird. Erkundung, Gespräche, Rätsel und Echtzeitkämpfe bestimmen das Abenteuer.",
+                "history": "Veil of Darkness erschien 1993 und wurde von Event Horizon Software für SSI entwickelt. Das Studio nutzte eine weiterentwickelte Version der Technik aus The Summoning, legte diesmal aber deutlich mehr Wert auf Handlung, Atmosphäre und Adventure-Elemente. Event Horizon wurde kurz darauf in DreamForge Intertainment umbenannt.",
+                "review": "Veil of Darkness überzeugt vor allem durch seine ungewöhnlich dichte Horroratmosphäre und die Mischung aus Rollenspiel und Adventure. Rätsel und Erkundung funktionieren auch heute noch gut, während das Kampfsystem etwas schwerfällig wirkt. Gerade die eigenständige Präsentation macht das Spiel zu einem interessanten SSI-Titel.",
+                "trivia": [
+                    "Entwickler Event Horizon Software wurde kurz nach der Veröffentlichung in DreamForge Intertainment umbenannt.",
+                    "Das Spiel verwendet eine weiterentwickelte Technik des zuvor erschienenen Rollenspiels The Summoning.",
+                    "Der Vampir Kairn kann nur besiegt werden, indem der Spieler eine alte Prophezeiung Schritt für Schritt erfüllt."
+                ],
+                "worthPlaying": "Veil of Darkness ist besonders für Spieler interessant, die Rollenspiel, Adventure und klassischen Gothic-Horror mögen. Die Atmosphäre und die ungewöhnliche Genre-Mischung heben es noch heute von vielen anderen Rollenspielen seiner Zeit ab.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Veil of Darkness is a dark action RPG with strong adventure elements. After a plane crash, the player becomes trapped in an isolated Carpathian valley ruled by the vampire Kairn. Exploration, conversations, puzzles and real-time combat shape the adventure.",
+                "history": "Veil of Darkness was released in 1993 and developed by Event Horizon Software for SSI. The studio used an enhanced version of technology previously employed in The Summoning, but placed greater emphasis on story, atmosphere and adventure elements. Event Horizon was renamed DreamForge Intertainment shortly afterwards.",
+                "review": "Veil of Darkness stands out for its unusually strong horror atmosphere and combination of RPG and adventure mechanics. Exploration and puzzles remain enjoyable, although combat can feel somewhat cumbersome. Its distinctive presentation still makes it one of SSI's more unusual releases.",
+                "trivia": [
+                    "Developer Event Horizon Software was renamed DreamForge Intertainment shortly after the game's release.",
+                    "The game uses an enhanced version of technology previously employed in the RPG The Summoning.",
+                    "The vampire Kairn can only be defeated by completing the stages of an ancient prophecy."
+                ],
+                "worthPlaying": "Veil of Darkness remains particularly appealing to players who enjoy RPGs, adventures and classic Gothic horror. Its atmosphere and unusual mixture of genres still distinguish it from many contemporary role-playing games."
+            }
+        },
+        id: 249,
+        folder: "veil_of_darkness",
+        scanBy: "Magisthan",
+        page: "veil_of_darkness.html",
+        featured: false,
+        title: "Veil of Darkness",
+        system: "PC",
+        year: 1993,
+        publisher: "Strategic Simulations, Inc.",
+        developer: "Event Horizon Software, Inc.",
+        genre: ["Rollenspiel", "Action-Rollenspiel", "Adventure", "Horror"],
+        description: "Veil of Darkness ist ein düsteres Action-Rollenspiel mit starken Adventure-Elementen. Nach einem Flugzeugabsturz landet der Spieler in einem abgeschotteten Tal in den Karpaten, das vom Vampir Kairn beherrscht wird. Erkundung, Gespräche, Rätsel und Echtzeitkämpfe bestimmen das Abenteuer.",
+        history: `Veil of Darkness erschien 1993 und wurde von Event Horizon Software für SSI entwickelt. Das Studio nutzte eine weiterentwickelte Version der Technik aus The Summoning, legte diesmal aber deutlich mehr Wert auf Handlung, Atmosphäre und Adventure-Elemente. Event Horizon wurde kurz darauf in DreamForge Intertainment umbenannt.`,
+        review: `Veil of Darkness überzeugt vor allem durch seine ungewöhnlich dichte Horroratmosphäre und die Mischung aus Rollenspiel und Adventure. Rätsel und Erkundung funktionieren auch heute noch gut, während das Kampfsystem etwas schwerfällig wirkt. Gerade die eigenständige Präsentation macht das Spiel zu einem interessanten SSI-Titel.`,
+        trivia: [
+                  "Entwickler Event Horizon Software wurde kurz nach der Veröffentlichung in DreamForge Intertainment umbenannt.",
+                  "Das Spiel verwendet eine weiterentwickelte Technik des zuvor erschienenen Rollenspiels The Summoning.",
+                  "Der Vampir Kairn kann nur besiegt werden, indem der Spieler eine alte Prophezeiung Schritt für Schritt erfüllt."
+        ],
+        worthPlaying: `Veil of Darkness ist besonders für Spieler interessant, die Rollenspiel, Adventure und klassischen Gothic-Horror mögen. Die Atmosphäre und die ungewöhnliche Genre-Mischung heben es noch heute von vielen anderen Rollenspielen seiner Zeit ab.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/2047/veil-of-darkness/",
+        wikipedia: "https://en.wikipedia.org/wiki/Veil_of_Darkness",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 182,
+        height: 232,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+{
+        translations: {
+            "de": {
+                "description": "Victory Road ist die Fortsetzung von Ikari Warriors und verlegt das bekannte Run-and-Gun-Prinzip in eine bizarre Fantasy- und Science-Fiction-Welt. Der Spieler kämpft sich aus der Vogelperspektive durch fünf Abschnitte voller Monster, Geschosse und großer Gegner. Waffen und Power-ups verbessern unterwegs die Kampfkraft.",
+                "history": "SNK veröffentlichte das Arcade-Original 1986 als Nachfolger von Ikari Warriors. Die C64-Umsetzung entstand bei Quicksilver Software und wurde in den USA von Data East veröffentlicht. Statt Soldaten stehen diesmal fantastische Kreaturen und außerirdische Gegner im Mittelpunkt.",
+                "review": "Victory Road bietet viel Action und einige ungewöhnliche Gegner, erreicht auf dem C64 aber nicht die Klasse des Arcade-Vorbilds. Steuerung und Spieltempo wirken teilweise schwerfällig und das Geschehen kann schnell unübersichtlich werden. Als kurioser zweiter Teil der Ikari-Reihe besitzt das Spiel dennoch seinen Reiz.",
+                "trivia": [
+                    "Victory Road ist der zweite Teil der Ikari-Warriors-Reihe und folgt direkt auf das Arcade-Spiel von 1986.",
+                    "Die C64-Portierung wurde von David Bean und Lennard Feddersen programmiert.",
+                    "Die US-Verpackung der Data-East-Version verwendet ein Covermotiv von Comiczeichner Frank Cirocco."
+                ],
+                "worthPlaying": "Victory Road ist vor allem für Fans von Ikari Warriors und klassischen Run-and-Gun-Spielen interessant. Die ungewöhnliche Fantasywelt und die vielen bizarren Gegner unterscheiden den Nachfolger deutlich vom militärischen ersten Teil.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Victory Road is the sequel to Ikari Warriors and moves its familiar run-and-gun gameplay into a bizarre fantasy and science-fiction world. Viewed from above, the player fights through five sections filled with monsters, projectiles and large enemies. Weapons and power-ups improve combat abilities along the way.",
+                "history": "SNK released the original arcade game in 1986 as the sequel to Ikari Warriors. The Commodore 64 conversion was produced by Quicksilver Software and published in the United States by Data East. Instead of soldiers, the sequel focuses on fantastic creatures and alien enemies.",
+                "review": "Victory Road delivers plenty of action and some unusual enemies, but the Commodore 64 conversion falls short of the arcade original. Movement and controls can feel sluggish and the action often becomes difficult to follow. As the strange second chapter of the Ikari series, however, it still has a certain appeal.",
+                "trivia": [
+                    "Victory Road is the second game in the Ikari Warriors series and directly follows the 1986 arcade original.",
+                    "The Commodore 64 conversion was programmed by David Bean and Lennard Feddersen.",
+                    "The US Data East packaging features cover artwork by comic artist Frank Cirocco."
+                ],
+                "worthPlaying": "Victory Road is mainly worth revisiting for fans of Ikari Warriors and classic run-and-gun games. Its unusual fantasy setting and bizarre enemies make it markedly different from the military-themed original."
+            }
+        },
+        id: 250,
+        folder: "victory_road",
+        scanBy: "Magisthan",
+        page: "victory_road.html",
+        featured: false,
+        title: "Victory Road",
+        system: "C64",
+        year: 1988,
+        publisher: "Data East USA, Inc.",
+        developer: "SNK Corporation / Quicksilver Software, Inc.",
+        genre: ["Action", "Shoot'em Up", "Run and Gun", "Fantasy"],
+        description: "Victory Road ist die Fortsetzung von Ikari Warriors und verlegt das bekannte Run-and-Gun-Prinzip in eine bizarre Fantasy- und Science-Fiction-Welt. Der Spieler kämpft sich aus der Vogelperspektive durch fünf Abschnitte voller Monster, Geschosse und großer Gegner. Waffen und Power-ups verbessern unterwegs die Kampfkraft.",
+        history: `SNK veröffentlichte das Arcade-Original 1986 als Nachfolger von Ikari Warriors. Die C64-Umsetzung entstand bei Quicksilver Software und wurde in den USA von Data East veröffentlicht. Statt Soldaten stehen diesmal fantastische Kreaturen und außerirdische Gegner im Mittelpunkt.`,
+        review: `Victory Road bietet viel Action und einige ungewöhnliche Gegner, erreicht auf dem C64 aber nicht die Klasse des Arcade-Vorbilds. Steuerung und Spieltempo wirken teilweise schwerfällig und das Geschehen kann schnell unübersichtlich werden. Als kurioser zweiter Teil der Ikari-Reihe besitzt das Spiel dennoch seinen Reiz.`,
+        trivia: [
+                  "Victory Road ist der zweite Teil der Ikari-Warriors-Reihe und folgt direkt auf das Arcade-Spiel von 1986.",
+                  "Die C64-Portierung wurde von David Bean und Lennard Feddersen programmiert.",
+                  "Die US-Verpackung der Data-East-Version verwendet ein Covermotiv von Comiczeichner Frank Cirocco."
+        ],
+        worthPlaying: `Victory Road ist vor allem für Fans von Ikari Warriors und klassischen Run-and-Gun-Spielen interessant. Die ungewöhnliche Fantasywelt und die vielen bizarren Gegner unterscheiden den Nachfolger deutlich vom militärischen ersten Teil.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/7124/ikari-warriors-ii-victory-road/",
+        wikipedia: "https://en.wikipedia.org/wiki/Victory_Road_(video_game)",
+        gog: ""
+        },
+        boxArtists: [
+        "Frank Cirocco"
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 147,
+        height: 224,
+        depth: 28
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Voyager ist ein futuristischer 3D-Shooter aus der Cockpitperspektive. Als Luke Snayles kämpft der Spieler auf den Monden des Saturn gegen außerirdische Invasoren und ihre Stützpunkte. Polygon-Grafik, verschiedene Waffen und taktische Gegner bilden den Kern des Spiels.",
+                "history": "Voyager erschien 1989 für Amiga, Atari ST und DOS. Entwickelt wurde das Spiel bei Ocean, wobei Dan Gallagher und Mike Crowley maßgeblich an Design und Grafik beteiligt waren. Die Amiga-Version gehörte zu den frühen Actionspielen, die vollständig ausgefüllte 3D-Polygongrafik einsetzten.",
+                "review": "Voyager beeindruckte 1989 vor allem mit seiner schnellen 3D-Darstellung und der futuristischen Atmosphäre. Das Spielprinzip erinnert an eine modernisierte Variante von Battlezone und bietet einige taktische Elemente. Langfristig fehlt etwas Abwechslung, technisch ist der Titel für seine Zeit aber bemerkenswert.",
+                "trivia": [
+                    "Das Spiel führt über die zehn Monde des Saturn, auf denen außerirdische Stützpunkte zerstört werden müssen.",
+                    "Der Verpackung lag ursprünglich eine Audiokassette mit Musik von Jonathan Dunn bei.",
+                    "Das Cover-Artwork stammt vom bekannten Ocean-Künstler Bob Wakelin."
+                ],
+                "worthPlaying": "Voyager ist heute vor allem wegen seiner frühen schnellen Polygon-3D-Grafik auf dem Amiga interessant. Fans experimenteller 3D-Actionspiele der späten 1980er finden hier einen technisch bemerkenswerten Ocean-Titel.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Voyager is a futuristic 3D shooter viewed from the cockpit. Playing as Luke Snayles, the player battles alien invaders and their bases across the moons of Saturn. Polygon graphics, multiple weapons and tactical enemies form the core of the game.",
+                "history": "Voyager was released in 1989 for the Amiga, Atari ST and DOS. Developed at Ocean, the game involved Dan Gallagher and Mike Crowley in key design and graphics roles. The Amiga version was among the early action games to make extensive use of filled 3D polygon graphics.",
+                "review": "Voyager was particularly impressive in 1989 for its fast 3D presentation and futuristic atmosphere. Its gameplay resembles a modernized Battlezone with a few additional tactical elements. It can become repetitive over longer sessions, but technically it remains noteworthy for its time.",
+                "trivia": [
+                    "The game takes place across Saturn's ten moons, where alien bases must be destroyed.",
+                    "The original package included an audio cassette featuring music by Jonathan Dunn.",
+                    "The cover artwork was created by well-known Ocean artist Bob Wakelin."
+                ],
+                "worthPlaying": "Voyager is particularly interesting today as an early example of fast polygon-based 3D action on the Amiga. Fans of experimental late-1980s 3D games will find a technically noteworthy Ocean title."
+            }
+        },
+        id: 251,
+        folder: "voyager",
+        scanBy: "Magisthan",
+        page: "voyager.html",
+        featured: false,
+        title: "Voyager",
+        system: "Amiga",
+        year: 1989,
+        publisher: "Ocean Software Ltd.",
+        developer: "Ocean Software Ltd. / Ocean France",
+        genre: ["Action", "Shoot'em Up", "3D-Shooter", "Science-Fiction"],
+        description: "Voyager ist ein futuristischer 3D-Shooter aus der Cockpitperspektive. Als Luke Snayles kämpft der Spieler auf den Monden des Saturn gegen außerirdische Invasoren und ihre Stützpunkte. Polygon-Grafik, verschiedene Waffen und taktische Gegner bilden den Kern des Spiels.",
+        history: `Voyager erschien 1989 für Amiga, Atari ST und DOS. Entwickelt wurde das Spiel bei Ocean, wobei Dan Gallagher und Mike Crowley maßgeblich an Design und Grafik beteiligt waren. Die Amiga-Version gehörte zu den frühen Actionspielen, die vollständig ausgefüllte 3D-Polygongrafik einsetzten.`,
+        review: `Voyager beeindruckte 1989 vor allem mit seiner schnellen 3D-Darstellung und der futuristischen Atmosphäre. Das Spielprinzip erinnert an eine modernisierte Variante von Battlezone und bietet einige taktische Elemente. Langfristig fehlt etwas Abwechslung, technisch ist der Titel für seine Zeit aber bemerkenswert.`,
+        trivia: [
+                  "Das Spiel führt über die zehn Monde des Saturn, auf denen außerirdische Stützpunkte zerstört werden müssen.",
+                  "Der Verpackung lag ursprünglich eine Audiokassette mit Musik von Jonathan Dunn bei.",
+                  "Das Cover-Artwork stammt vom bekannten Ocean-Künstler Bob Wakelin."
+        ],
+        worthPlaying: `Voyager ist heute vor allem wegen seiner frühen schnellen Polygon-3D-Grafik auf dem Amiga interessant. Fans experimenteller 3D-Actionspiele der späten 1980er finden hier einen technisch bemerkenswerten Ocean-Titel.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/22846/voyager/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        "Bob Wakelin"
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 153,
+        height: 180,
+        depth: 35
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "WarCraft II: Beyond the Dark Portal erweitert Tides of Darkness um neue Kampagnen für Menschen und Orks. Der Krieg führt diesmal durch das Dunkle Portal nach Draenor, der Heimatwelt der Orks. Neue Helden, Karten und Landschaften ergänzen das bekannte Echtzeitstrategie-Spielprinzip.",
+                "history": "Beyond the Dark Portal erschien 1996 als offizielle Erweiterung zu WarCraft II. Entwickelt wurde sie von Cyberlore Studios und von Blizzard veröffentlicht. Zwei neue Kampagnen mit jeweils zwölf Missionen führen die Geschichte des Hauptspiels fort.",
+                "review": "Beyond the Dark Portal bietet vor allem anspruchsvolle und abwechslungsreiche neue Missionen. Helden und Draenor sorgen für frische Akzente, grundlegende neue Einheiten fehlen allerdings. Für Fans des Hauptspiels ist die Erweiterung dennoch eine sehr gelungene Fortsetzung.",
+                "trivia": [
+                    "Die Erweiterung enthält jeweils zwölf neue Kampagnenmissionen für Menschen und Orks.",
+                    "Zusätzlich sind rund 50 neue Karten für Mehrspieler- und freie Partien enthalten.",
+                    "Ein versteckter Audiotrack namens I'm a Medieval Man parodiert Command & Conquers I'm a Mechanical Man."
+                ],
+                "worthPlaying": "Beyond the Dark Portal lohnt sich vor allem wegen seiner anspruchsvolleren Kampagnen und der Fortsetzung der Warcraft-Geschichte. Wer WarCraft II mag, erhält hier praktisch eine zweite große Portion des bewährten Spielprinzips.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "WarCraft II: Beyond the Dark Portal expands Tides of Darkness with new campaigns for both Humans and Orcs. The war now continues through the Dark Portal into Draenor, the Orcish homeworld. New heroes, maps and environments expand the familiar real-time strategy gameplay.",
+                "history": "Beyond the Dark Portal was released in 1996 as the official expansion for WarCraft II. Developed by Cyberlore Studios and published by Blizzard, it continues the story of the original game through two new twelve-mission campaigns.",
+                "review": "Beyond the Dark Portal mainly succeeds through its challenging and varied new missions. Heroes and the Draenor setting provide some fresh ideas, although entirely new standard units are absent. For fans of the original game, it remains an excellent continuation.",
+                "trivia": [
+                    "The expansion contains twelve new campaign missions each for the Humans and Orcs.",
+                    "Around 50 additional maps are included for multiplayer and custom games.",
+                    "A hidden audio track called I'm a Medieval Man parodies Command & Conquer's I'm a Mechanical Man."
+                ],
+                "worthPlaying": "Beyond the Dark Portal remains worthwhile for its tougher campaigns and continuation of the Warcraft storyline. Players who enjoy WarCraft II essentially receive another substantial helping of its proven real-time strategy formula."
+            }
+        },
+        id: 252,
+        folder: "warcraft_2_beyond_the_dark_portal",
+        scanBy: "Magisthan",
+        page: "warcraft_2_beyond_the_dark_portal.html",
+        featured: false,
+        title: "WarCraft II: Beyond the Dark Portal",
+        system: "PC",
+        year: 1996,
+        publisher: "Blizzard Entertainment, Inc.",
+        developer: "Cyberlore Studios, Inc.",
+        genre: ["Strategie", "Echtzeitstrategie", "Fantasy", "Add-on"],
+        description: "WarCraft II: Beyond the Dark Portal erweitert Tides of Darkness um neue Kampagnen für Menschen und Orks. Der Krieg führt diesmal durch das Dunkle Portal nach Draenor, der Heimatwelt der Orks. Neue Helden, Karten und Landschaften ergänzen das bekannte Echtzeitstrategie-Spielprinzip.",
+        history: `Beyond the Dark Portal erschien 1996 als offizielle Erweiterung zu WarCraft II. Entwickelt wurde sie von Cyberlore Studios und von Blizzard veröffentlicht. Zwei neue Kampagnen mit jeweils zwölf Missionen führen die Geschichte des Hauptspiels fort.`,
+        review: `Beyond the Dark Portal bietet vor allem anspruchsvolle und abwechslungsreiche neue Missionen. Helden und Draenor sorgen für frische Akzente, grundlegende neue Einheiten fehlen allerdings. Für Fans des Hauptspiels ist die Erweiterung dennoch eine sehr gelungene Fortsetzung.`,
+        trivia: [
+                  "Die Erweiterung enthält jeweils zwölf neue Kampagnenmissionen für Menschen und Orks.",
+                  "Zusätzlich sind rund 50 neue Karten für Mehrspieler- und freie Partien enthalten.",
+                  "Ein versteckter Audiotrack namens I'm a Medieval Man parodiert Command & Conquers I'm a Mechanical Man."
+        ],
+        worthPlaying: `Beyond the Dark Portal lohnt sich vor allem wegen seiner anspruchsvolleren Kampagnen und der Fortsetzung der Warcraft-Geschichte. Wer WarCraft II mag, erhält hier praktisch eine zweite große Portion des bewährten Spielprinzips.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1377/warcraft-ii-beyond-the-dark-portal/",
+        wikipedia: "https://de.wikipedia.org/wiki/Warcraft_II:_Beyond_the_Dark_Portal",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 185,
+        height: 235,
+        depth: 33
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    
+{
+        translations: {
+            "de": {
+                "description": "Der Warlords II Scenario Builder erweitert das Strategiespiel um umfangreiche Werkzeuge zum Erstellen eigener Szenarien. Karten, Städte, Armeen, Gegenstände und zahlreiche Texte lassen sich verändern. Zusätzlich enthält das Paket 24 fertige neue Szenarien.",
+                "history": "SSG veröffentlichte den Scenario Builder 1994 auf Wunsch der Warlords-II-Spieler. Das separat erhältliche Add-on erweitert das Hauptspiel um Editoren für Karten, Einheiten und Szenariodaten. Bei der Installation wird Warlords II außerdem auf Version 1.11 aktualisiert.",
+                "review": "Der Scenario Builder erweitert Warlords II erheblich und ermöglicht sehr individuelle Szenarien. Die Editoren sind funktional, wenn auch teilweise etwas schlicht. Zusammen mit den 24 mitgelieferten Szenarien bietet das Paket besonders für engagierte Spieler viel zusätzlichen Spielwert.",
+                "trivia": [
+                    "Das Paket enthält 24 zusätzliche Szenarien mit teilweise eigenen Grafiksets.",
+                    "Einheitenwerte, Gegenstände, Städte und nahezu sämtliche Szenariotexte können verändert werden.",
+                    "Die Installation aktualisiert Warlords II automatisch auf Version 1.11."
+                ],
+                "worthPlaying": "Für Fans von Warlords II ist der Scenario Builder eine besonders interessante Erweiterung, weil er eigene Welten und Armeen ermöglicht. Die mitgelieferten Szenarien sorgen zusätzlich für neuen Spielstoff.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "The Warlords II Scenario Builder expands the strategy game with extensive tools for creating custom scenarios. Maps, cities, armies, items and numerous texts can be modified. The package also includes 24 ready-made scenarios.",
+                "history": "SSG released the Scenario Builder in 1994 in response to requests from Warlords II players. Sold separately, the add-on provides editors for maps, units and scenario data. Installing it also updates Warlords II to version 1.11.",
+                "review": "The Scenario Builder substantially expands Warlords II by allowing highly customized scenarios. Its editing tools are functional, although somewhat basic in places. Together with the 24 included scenarios, it offers considerable additional value for dedicated players.",
+                "trivia": [
+                    "The package includes 24 additional scenarios, several featuring their own graphic sets.",
+                    "Unit statistics, items, cities and almost all scenario text can be modified.",
+                    "Installing the Scenario Builder automatically updates Warlords II to version 1.11."
+                ],
+                "worthPlaying": "For Warlords II fans, the Scenario Builder is particularly interesting because it allows players to create their own worlds and armies. The included scenarios also provide plenty of additional content."
+            }
+        },
+        id: 253,
+        folder: "warlords_2_scenario_builder",
+        scanBy: "Magisthan",
+        page: "warlords_2_scenario_builder.html",
+        featured: false,
+        title: "Warlords II Scenario Builder",
+        system: "PC",
+        year: 1994,
+        publisher: "Strategic Studies Group Pty Ltd.",
+        developer: "Strategic Studies Group Pty Ltd.",
+        genre: ["Strategie", "Rundenstrategie", "Scenario Editor", "Add-on"],
+        description: "Der Warlords II Scenario Builder erweitert das Strategiespiel um umfangreiche Werkzeuge zum Erstellen eigener Szenarien. Karten, Städte, Armeen, Gegenstände und zahlreiche Texte lassen sich verändern. Zusätzlich enthält das Paket 24 fertige neue Szenarien.",
+        history: `SSG veröffentlichte den Scenario Builder 1994 auf Wunsch der Warlords-II-Spieler. Das separat erhältliche Add-on erweitert das Hauptspiel um Editoren für Karten, Einheiten und Szenariodaten. Bei der Installation wird Warlords II außerdem auf Version 1.11 aktualisiert.`,
+        review: `Der Scenario Builder erweitert Warlords II erheblich und ermöglicht sehr individuelle Szenarien. Die Editoren sind funktional, wenn auch teilweise etwas schlicht. Zusammen mit den 24 mitgelieferten Szenarien bietet das Paket besonders für engagierte Spieler viel zusätzlichen Spielwert.`,
+        trivia: [
+                  "Das Paket enthält 24 zusätzliche Szenarien mit teilweise eigenen Grafiksets.",
+                  "Einheitenwerte, Gegenstände, Städte und nahezu sämtliche Szenariotexte können verändert werden.",
+                  "Die Installation aktualisiert Warlords II automatisch auf Version 1.11."
+        ],
+        worthPlaying: `Für Fans von Warlords II ist der Scenario Builder eine besonders interessante Erweiterung, weil er eigene Welten und Armeen ermöglicht. Die mitgelieferten Szenarien sorgen zusätzlich für neuen Spielstoff.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/5598/warlords-ii-scenario-builder/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 180,
+        height: 242,
+        depth: 30
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Wayne Gretzky Hockey 3 ist eine umfangreiche Eishockeysimulation von Bethesda. Neben direkter Action auf dem Eis bietet das Spiel zahlreiche taktische Einstellungen, Teamverwaltung und einen Ligamodus. Gespielt werden kann aus der klassischen Draufsicht oder einer neuen 3/4-Perspektive.",
+                "history": "Bethesda veröffentlichte Wayne Gretzky Hockey 3 1992 als dritten Teil seiner erfolgreichen Hockey-Reihe. Die DOS-exklusive Fortsetzung erhielt VGA-Grafik, verbesserte Animationen und umfangreichere Statistiken. Wayne Gretzky war erneut an der Entwicklung der künstlichen Intelligenz beteiligt.",
+                "review": "Wayne Gretzky Hockey 3 verbindet Arcade-Action mit ungewöhnlich vielen Simulations- und Managementoptionen. Die neue Perspektive und verbesserte Präsentation werten den Vorgänger deutlich auf. Die Bedienung verlangt etwas Eingewöhnung, für damalige PC-Hockeyfans war das Gesamtpaket jedoch sehr umfangreich.",
+                "trivia": [
+                    "Neben der klassischen Draufsicht bietet das Spiel eine neue 3/4-Perspektive auf das Spielfeld.",
+                    "Wayne Gretzky selbst wird in den Credits als einer der Mitwirkenden an der künstlichen Intelligenz genannt.",
+                    "Das Spiel kann Daten mit Bethesdas Hockey League Simulator 2 austauschen."
+                ],
+                "worthPlaying": "Wayne Gretzky Hockey 3 ist besonders für Fans früher Sportsimulationen interessant, die neben den Spielen auch Taktik und Teamverwaltung mögen. Die Mischung aus Action und Simulation ist für ein PC-Sportspiel von 1992 bemerkenswert umfangreich.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Wayne Gretzky Hockey 3 is an extensive ice hockey simulation from Bethesda. Alongside direct on-ice action, it offers numerous tactical options, team management and league play. Matches can be viewed from the classic overhead perspective or a new three-quarter view.",
+                "history": "Bethesda released Wayne Gretzky Hockey 3 in 1992 as the third game in its successful hockey series. This DOS-exclusive sequel introduced VGA graphics, improved animation and more extensive statistics. Wayne Gretzky once again contributed to the game's artificial intelligence.",
+                "review": "Wayne Gretzky Hockey 3 combines arcade action with an unusually deep selection of simulation and management options. The new perspective and improved presentation are substantial upgrades over its predecessor. The controls require some practice, but the overall package was remarkably comprehensive for PC hockey fans.",
+                "trivia": [
+                    "In addition to the classic overhead view, the game offers a new three-quarter rink perspective.",
+                    "Wayne Gretzky himself is credited as one of the contributors to the game's artificial intelligence.",
+                    "The game can exchange data with Bethesda's Hockey League Simulator 2."
+                ],
+                "worthPlaying": "Wayne Gretzky Hockey 3 remains particularly interesting for fans of early sports simulations who enjoy tactics and team management alongside direct gameplay. Its combination of action and simulation is impressively extensive for a 1992 PC sports game."
+            }
+        },
+        id: 254,
+        folder: "wayne_gretzky_hockey_3",
+        scanBy: "Magisthan",
+        page: "wayne_gretzky_hockey_3.html",
+        featured: false,
+        title: "Wayne Gretzky Hockey 3",
+        system: "PC",
+        year: 1992,
+        publisher: "Bethesda Softworks LLC",
+        developer: "Bethesda Softworks LLC",
+        genre: ["Sport", "Eishockey", "Simulation", "Management"],
+        description: "Wayne Gretzky Hockey 3 ist eine umfangreiche Eishockeysimulation von Bethesda. Neben direkter Action auf dem Eis bietet das Spiel zahlreiche taktische Einstellungen, Teamverwaltung und einen Ligamodus. Gespielt werden kann aus der klassischen Draufsicht oder einer neuen 3/4-Perspektive.",
+        history: `Bethesda veröffentlichte Wayne Gretzky Hockey 3 1992 als dritten Teil seiner erfolgreichen Hockey-Reihe. Die DOS-exklusive Fortsetzung erhielt VGA-Grafik, verbesserte Animationen und umfangreichere Statistiken. Wayne Gretzky war erneut an der Entwicklung der künstlichen Intelligenz beteiligt.`,
+        review: `Wayne Gretzky Hockey 3 verbindet Arcade-Action mit ungewöhnlich vielen Simulations- und Managementoptionen. Die neue Perspektive und verbesserte Präsentation werten den Vorgänger deutlich auf. Die Bedienung verlangt etwas Eingewöhnung, für damalige PC-Hockeyfans war das Gesamtpaket jedoch sehr umfangreich.`,
+        trivia: [
+                  "Neben der klassischen Draufsicht bietet das Spiel eine neue 3/4-Perspektive auf das Spielfeld.",
+                  "Wayne Gretzky selbst wird in den Credits als einer der Mitwirkenden an der künstlichen Intelligenz genannt.",
+                  "Das Spiel kann Daten mit Bethesdas Hockey League Simulator 2 austauschen."
+        ],
+        worthPlaying: `Wayne Gretzky Hockey 3 ist besonders für Fans früher Sportsimulationen interessant, die neben den Spielen auch Taktik und Teamverwaltung mögen. Die Mischung aus Action und Simulation ist für ein PC-Sportspiel von 1992 bemerkenswert umfangreich.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/41044/wayne-gretzky-hockey-3/",
+        wikipedia: "https://en.wikipedia.org/wiki/Wayne_Gretzky_Hockey_3",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 182,
+        height: 232,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Where in Europe Is Carmen Sandiego? verbindet Detektivspiel und Geografie-Lernspiel. Als ACME-Ermittler verfolgt der Spieler Carmen Sandiego und ihre V.I.L.E.-Gang quer durch Europa. Hinweise zu Ländern, Städten, Kultur und Geschichte führen dabei zum nächsten Reiseziel.",
+                "history": "Brøderbund veröffentlichte Where in Europe Is Carmen Sandiego? 1988 als dritten Teil der erfolgreichen Carmen-Sandiego-Reihe. Nach Welt- und USA-Geografie konzentrierte sich das Spiel vollständig auf Europa. Das bewährte Detektivprinzip wurde dabei weitgehend beibehalten.",
+                "review": "Where in Europe Is Carmen Sandiego? verbindet Lernen und Spielen erstaunlich geschickt. Die Suche nach Hinweisen und Verdächtigen motiviert, während geografisches Wissen tatsächlich hilfreich ist. Aus heutiger Sicht sind einige politische Grenzen veraltet, spielerisch funktioniert das Konzept aber weiterhin gut.",
+                "trivia": [
+                    "Das Spiel erschien nach Where in the World und Where in the U.S.A. als dritter Teil der Reihe.",
+                    "Zur Originalausgabe gehörte ein Europa-Atlas, der beim Lösen der Fälle verwendet wurde.",
+                    "Die Europakarte zeigt noch Staaten und Grenzen der späten 1980er Jahre."
+                ],
+                "worthPlaying": "Das Spiel ist noch heute ein gutes Beispiel dafür, wie Lerninhalte sinnvoll in ein Spielprinzip integriert werden können. Gleichzeitig bietet die historische Europakarte inzwischen einen zusätzlichen Retro-Reiz.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Where in Europe Is Carmen Sandiego? combines detective gameplay with educational geography. As an ACME investigator, the player pursues Carmen Sandiego and her V.I.L.E. gang across Europe. Clues involving countries, cities, culture and history reveal the next destination.",
+                "history": "Brøderbund released Where in Europe Is Carmen Sandiego? in 1988 as the third game in the successful Carmen Sandiego series. Following world and US geography, this installment focused entirely on Europe while retaining the established detective formula.",
+                "review": "Where in Europe Is Carmen Sandiego? combines learning and entertainment remarkably well. Following clues and identifying suspects remains engaging, while geographical knowledge genuinely helps solve cases. Some political borders are outdated today, but the underlying gameplay still works well.",
+                "trivia": [
+                    "The game followed Where in the World and Where in the U.S.A. as the third title in the series.",
+                    "The original package included a European atlas used while solving cases.",
+                    "Its map of Europe reflects the countries and political borders of the late 1980s."
+                ],
+                "worthPlaying": "The game remains a good example of educational material being integrated naturally into an entertaining game. Its now-historical map of Europe also adds an interesting retro dimension."
+            }
+        },
+        id: 255,
+        folder: "where_in_europe_is_carmen_sandiego",
+        scanBy: "Magisthan",
+        page: "where_in_europe_is_carmen_sandiego.html",
+        featured: false,
+        title: "Where in Europe Is Carmen Sandiego?",
+        system: "C64",
+        year: 1988,
+        publisher: "Brøderbund Software, Inc.",
+        developer: "Brøderbund Software, Inc.",
+        genre: ["Adventure", "Lernspiel", "Geografie", "Detektivspiel"],
+        description: "Where in Europe Is Carmen Sandiego? verbindet Detektivspiel und Geografie-Lernspiel. Als ACME-Ermittler verfolgt der Spieler Carmen Sandiego und ihre V.I.L.E.-Gang quer durch Europa. Hinweise zu Ländern, Städten, Kultur und Geschichte führen dabei zum nächsten Reiseziel.",
+        history: `Brøderbund veröffentlichte Where in Europe Is Carmen Sandiego? 1988 als dritten Teil der erfolgreichen Carmen-Sandiego-Reihe. Nach Welt- und USA-Geografie konzentrierte sich das Spiel vollständig auf Europa. Das bewährte Detektivprinzip wurde dabei weitgehend beibehalten.`,
+        review: `Where in Europe Is Carmen Sandiego? verbindet Lernen und Spielen erstaunlich geschickt. Die Suche nach Hinweisen und Verdächtigen motiviert, während geografisches Wissen tatsächlich hilfreich ist. Aus heutiger Sicht sind einige politische Grenzen veraltet, spielerisch funktioniert das Konzept aber weiterhin gut.`,
+        trivia: [
+                  "Das Spiel erschien nach Where in the World und Where in the U.S.A. als dritter Teil der Reihe.",
+                  "Zur Originalausgabe gehörte ein Europa-Atlas, der beim Lösen der Fälle verwendet wurde.",
+                  "Die Europakarte zeigt noch Staaten und Grenzen der späten 1980er Jahre."
+        ],
+        worthPlaying: `Das Spiel ist noch heute ein gutes Beispiel dafür, wie Lerninhalte sinnvoll in ein Spielprinzip integriert werden können. Gleichzeitig bietet die historische Europakarte inzwischen einen zusätzlichen Retro-Reiz.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/4943/where-in-europe-is-carmen-sandiego/",
+        wikipedia: "https://en.wikipedia.org/wiki/Where_in_Europe_Is_Carmen_Sandiego",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 5,
+        stars: 5,
+        dimensions: {
+        width: 180,
+        height: 230,
+        depth: 37
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Where in the World Is Carmen Sandiego? verbindet Detektivspiel und Geografie-Lernspiel. Als ACME-Ermittler verfolgt der Spieler Carmen und ihre V.I.L.E.-Gang rund um den Globus. Hinweise zu Ländern und Kulturen führen dabei zum nächsten Reiseziel.",
+                "history": "Brøderbund veröffentlichte das erste Carmen-Sandiego-Spiel 1985, die C64-Version folgte 1986. Das ungewöhnliche Konzept kombinierte geografisches Wissen mit einer Verbrecherjagd und begründete eine langlebige Spielereihe.",
+                "review": "Die Jagd nach Carmen verbindet Lernen und Spielen auf clevere Weise. Hinweise sammeln, Reiseziele bestimmen und Verdächtige identifizieren funktioniert auch heute noch gut. Die C64-Präsentation ist allerdings schlicht und einige Informationen sind inzwischen historisch überholt.",
+                "trivia": [
+                    "Where in the World Is Carmen Sandiego? ist der erste Teil der Carmen-Sandiego-Reihe.",
+                    "Die C64-Version wurde von Scott Shumway programmiert.",
+                    "Der Originalausgabe lag The World Almanac and Book of Facts als wichtiges Recherchewerk bei."
+                ],
+                "worthPlaying": "Das Spiel ist ein Klassiker des Edutainment-Genres und zeigt, wie sich Wissen sinnvoll mit einem Detektivspiel verbinden lässt. Besonders die inzwischen historische Darstellung der Welt besitzt heute zusätzlichen Retro-Reiz.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Where in the World Is Carmen Sandiego? combines detective gameplay with educational geography. As an ACME investigator, the player pursues Carmen and her V.I.L.E. gang around the globe. Clues about countries and cultures reveal the next destination.",
+                "history": "Brøderbund released the first Carmen Sandiego game in 1985, with the Commodore 64 version following in 1986. Its unusual combination of geographical knowledge and criminal investigation established a long-running series.",
+                "review": "The hunt for Carmen cleverly combines learning with entertainment. Gathering clues, choosing destinations and identifying suspects still works well today. The Commodore 64 presentation is rather basic, however, and some geographical information is now historically outdated.",
+                "trivia": [
+                    "Where in the World Is Carmen Sandiego? is the first game in the Carmen Sandiego series.",
+                    "The Commodore 64 version was programmed by Scott Shumway.",
+                    "The original release included The World Almanac and Book of Facts as an important research tool."
+                ],
+                "worthPlaying": "The game is a classic of the edutainment genre and demonstrates how knowledge can be integrated naturally into detective gameplay. Its now-historical view of the world also adds an extra layer of retro appeal."
+            }
+        },
+        id: 256,
+        folder: "where_in_the_world_is_carmen_sandiego",
+        scanBy: "Magisthan",
+        page: "where_in_the_world_is_carmen_sandiego.html",
+        featured: false,
+        title: "Where in the World Is Carmen Sandiego?",
+        system: "C64",
+        year: 1986,
+        publisher: "Brøderbund Software, Inc.",
+        developer: "Brøderbund Software, Inc.",
+        genre: ["Adventure", "Lernspiel", "Geografie", "Detektivspiel"],
+        description: "Where in the World Is Carmen Sandiego? verbindet Detektivspiel und Geografie-Lernspiel. Als ACME-Ermittler verfolgt der Spieler Carmen und ihre V.I.L.E.-Gang rund um den Globus. Hinweise zu Ländern und Kulturen führen dabei zum nächsten Reiseziel.",
+        history: `Brøderbund veröffentlichte das erste Carmen-Sandiego-Spiel 1985, die C64-Version folgte 1986. Das ungewöhnliche Konzept kombinierte geografisches Wissen mit einer Verbrecherjagd und begründete eine langlebige Spielereihe.`,
+        review: `Die Jagd nach Carmen verbindet Lernen und Spielen auf clevere Weise. Hinweise sammeln, Reiseziele bestimmen und Verdächtige identifizieren funktioniert auch heute noch gut. Die C64-Präsentation ist allerdings schlicht und einige Informationen sind inzwischen historisch überholt.`,
+        trivia: [
+                  "Where in the World Is Carmen Sandiego? ist der erste Teil der Carmen-Sandiego-Reihe.",
+                  "Die C64-Version wurde von Scott Shumway programmiert.",
+                  "Der Originalausgabe lag The World Almanac and Book of Facts als wichtiges Recherchewerk bei."
+        ],
+        worthPlaying: `Das Spiel ist ein Klassiker des Edutainment-Genres und zeigt, wie sich Wissen sinnvoll mit einem Detektivspiel verbinden lässt. Besonders die inzwischen historische Darstellung der Welt besitzt heute zusätzlichen Retro-Reiz.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/163/where-in-the-world-is-carmen-sandiego/",
+        wikipedia: "https://en.wikipedia.org/wiki/Where_in_the_World_Is_Carmen_Sandiego%3F_(1985_video_game)",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 1,
+        stars: 1,
+        dimensions: {
+        width: 180,
+        height: 230,
+        depth: 45
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Where in Time Is Carmen Sandiego? verbindet Detektivspiel und Geschichtsunterricht. Mit einer Zeitmaschine verfolgt der Spieler Carmen und ihre V.I.L.E.-Gang durch verschiedene Epochen. Historische Hinweise führen dabei zum richtigen Ort und Zeitpunkt.",
+                "history": "Brøderbund veröffentlichte Where in Time Is Carmen Sandiego? 1989, die C64-Version folgte 1990. Nach geografischen Reisen rückte die Serie diesmal die Weltgeschichte in den Mittelpunkt. Die C64-Umsetzung programmierte David Lubar.",
+                "review": "Das bekannte Carmen-Sandiego-Prinzip funktioniert auch mit Zeitreisen ausgezeichnet. Die historischen Fälle sind abwechslungsreich und verbinden Recherche geschickt mit Unterhaltung. Technisch bleibt die C64-Version schlicht, spielerisch gehört sie aber zu den interessanteren Teilen der Reihe.",
+                "trivia": [
+                    "Die C64-Version wurde von David Lubar programmiert.",
+                    "Zum Spiel gehörte The New American Desk Encyclopedia als Nachschlagewerk.",
+                    "Neben dem richtigen Ort muss diesmal auch die korrekte historische Epoche ermittelt werden."
+                ],
+                "worthPlaying": "Where in Time erweitert das bewährte Detektivprinzip sinnvoll um Weltgeschichte und Zeitreisen. Besonders für Fans klassischer Edutainment-Spiele ist der Titel noch heute interessant.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Where in Time Is Carmen Sandiego? combines detective gameplay with world history. Using a time machine, the player pursues Carmen and her V.I.L.E. gang through different historical periods. Historical clues reveal the correct place and time.",
+                "history": "Brøderbund released Where in Time Is Carmen Sandiego? in 1989, with the Commodore 64 version following in 1990. After focusing on geography, the series now turned to world history. David Lubar programmed the C64 conversion.",
+                "review": "The familiar Carmen Sandiego formula works particularly well with time travel. Its historical cases are varied and cleverly combine research with entertainment. The C64 presentation is fairly simple, but it remains one of the more interesting entries in the series.",
+                "trivia": [
+                    "The Commodore 64 version was programmed by David Lubar.",
+                    "The game included The New American Desk Encyclopedia as a reference book.",
+                    "Players must identify both the correct location and the correct historical period."
+                ],
+                "worthPlaying": "Where in Time successfully expands the established detective formula with world history and time travel. It remains particularly interesting for fans of classic educational games."
+            }
+        },
+        id: 257,
+        folder: "where_in_time_is_carmen_sandiego",
+        scanBy: "Magisthan",
+        page: "where_in_time_is_carmen_sandiego.html",
+        featured: false,
+        title: "Where in Time Is Carmen Sandiego?",
+        system: "C64",
+        year: 1990,
+        publisher: "Brøderbund Software, Inc.",
+        developer: "Brøderbund Software, Inc.",
+        genre: ["Adventure", "Lernspiel", "Geschichte", "Detektivspiel"],
+        description: "Where in Time Is Carmen Sandiego? verbindet Detektivspiel und Geschichtsunterricht. Mit einer Zeitmaschine verfolgt der Spieler Carmen und ihre V.I.L.E.-Gang durch verschiedene Epochen. Historische Hinweise führen dabei zum richtigen Ort und Zeitpunkt.",
+        history: `Brøderbund veröffentlichte Where in Time Is Carmen Sandiego? 1989, die C64-Version folgte 1990. Nach geografischen Reisen rückte die Serie diesmal die Weltgeschichte in den Mittelpunkt. Die C64-Umsetzung programmierte David Lubar.`,
+        review: `Das bekannte Carmen-Sandiego-Prinzip funktioniert auch mit Zeitreisen ausgezeichnet. Die historischen Fälle sind abwechslungsreich und verbinden Recherche geschickt mit Unterhaltung. Technisch bleibt die C64-Version schlicht, spielerisch gehört sie aber zu den interessanteren Teilen der Reihe.`,
+        trivia: [
+                  "Die C64-Version wurde von David Lubar programmiert.",
+                  "Zum Spiel gehörte The New American Desk Encyclopedia als Nachschlagewerk.",
+                  "Neben dem richtigen Ort muss diesmal auch die korrekte historische Epoche ermittelt werden."
+        ],
+        worthPlaying: `Where in Time erweitert das bewährte Detektivprinzip sinnvoll um Weltgeschichte und Zeitreisen. Besonders für Fans klassischer Edutainment-Spiele ist der Titel noch heute interessant.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/6564/where-in-time-is-carmen-sandiego/",
+        wikipedia: "https://en.wikipedia.org/wiki/Where_in_Time_Is_Carmen_Sandiego%3F_(1989_video_game)",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 180,
+        height: 230,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Wild Cup Soccer verbindet Fußball mit der kompromisslosen Action von Brutal Sports. Zwei Teams kämpfen nicht nur um Tore, sondern dürfen ihre Gegner auch mit Fouls und Waffen außer Gefecht setzen. Dadurch spielt es sich eher wie ein Actionspiel mit Fußballregeln als eine klassische Sportsimulation.",
+                "history": "Wild Cup Soccer erschien 1994 für den Amiga und wurde von Teque London entwickelt. Das Spiel übernahm Technik und Stil von Brutal Sports Series: Football und übertrug dessen brutale Sportidee auf Fußball. Millennium Interactive veröffentlichte die Amiga-Version.",
+                "review": "Wild Cup Soccer ist schnell, chaotisch und bewusst übertrieben. Die Mischung aus Fußball, Prügelei und schwarzem Humor funktioniert besonders im Mehrspielermodus. Spielerisch fehlt es etwas an Tiefe, als ungewöhnliches Arcade-Sportspiel besitzt es aber viel Charme.",
+                "trivia": [
+                    "Wild Cup Soccer basiert auf der Technik von Brutal Sports Series: Football.",
+                    "Gegner können durch harte Attacken zeitweise oder vollständig aus dem Spiel genommen werden.",
+                    "Neben Toren spielen Power-ups und auf dem Spielfeld auftauchende Waffen eine wichtige Rolle."
+                ],
+                "worthPlaying": "Wer klassische Fußballsimulationen zu ernst findet, bekommt hier eine herrlich chaotische Alternative. Besonders mit zwei Spielern entfaltet die Mischung aus Fußball und Prügelei ihren Reiz.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Wild Cup Soccer combines football with the uncompromising action of Brutal Sports. Teams not only compete for goals but can also disable opponents through fouls and weapons. The result plays more like an action game with football rules than a traditional sports simulation.",
+                "history": "Wild Cup Soccer was released for the Amiga in 1994 and developed by Teque London. It reused the technology and style of Brutal Sports Series: Football while applying its violent sporting concept to association football. Millennium Interactive published the Amiga version.",
+                "review": "Wild Cup Soccer is fast, chaotic and deliberately excessive. Its mixture of football, fighting and dark humour works particularly well with two players. It lacks some long-term depth, but remains a charming and unusual arcade sports game.",
+                "trivia": [
+                    "Wild Cup Soccer is based on the technology used for Brutal Sports Series: Football.",
+                    "Heavy attacks can temporarily or permanently remove opposing players from the match.",
+                    "Power-ups and weapons appearing on the pitch are almost as important as scoring goals."
+                ],
+                "worthPlaying": "Players who find conventional football simulations too serious will discover a wonderfully chaotic alternative here. The combination of football and fighting is especially entertaining with two players."
+            }
+        },
+        id: 258,
+        folder: "wild_cup_soccer",
+        scanBy: "Magisthan",
+        page: "wild_cup_soccer.html",
+        featured: false,
+        title: "Wild Cup Soccer",
+        system: "Amiga",
+        year: 1994,
+        publisher: "Millennium Interactive Ltd.",
+        developer: "Teque London Ltd.",
+        genre: ["Sport", "Fußball", "Action", "Arcade"],
+        description: "Wild Cup Soccer verbindet Fußball mit der kompromisslosen Action von Brutal Sports. Zwei Teams kämpfen nicht nur um Tore, sondern dürfen ihre Gegner auch mit Fouls und Waffen außer Gefecht setzen. Dadurch spielt es sich eher wie ein Actionspiel mit Fußballregeln als eine klassische Sportsimulation.",
+        history: `Wild Cup Soccer erschien 1994 für den Amiga und wurde von Teque London entwickelt. Das Spiel übernahm Technik und Stil von Brutal Sports Series: Football und übertrug dessen brutale Sportidee auf Fußball. Millennium Interactive veröffentlichte die Amiga-Version.`,
+        review: `Wild Cup Soccer ist schnell, chaotisch und bewusst übertrieben. Die Mischung aus Fußball, Prügelei und schwarzem Humor funktioniert besonders im Mehrspielermodus. Spielerisch fehlt es etwas an Tiefe, als ungewöhnliches Arcade-Sportspiel besitzt es aber viel Charme.`,
+        trivia: [
+                  "Wild Cup Soccer basiert auf der Technik von Brutal Sports Series: Football.",
+                  "Gegner können durch harte Attacken zeitweise oder vollständig aus dem Spiel genommen werden.",
+                  "Neben Toren spielen Power-ups und auf dem Spielfeld auftauchende Waffen eine wichtige Rolle."
+        ],
+        worthPlaying: `Wer klassische Fußballsimulationen zu ernst findet, bekommt hier eine herrlich chaotische Alternative. Besonders mit zwei Spielern entfaltet die Mischung aus Fußball und Prügelei ihren Reiz.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/6476/wild-cup-soccer/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 185,
+        height: 236,
+        depth: 40
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "The Secret Missions 2: Crusade ist die zweite Erweiterung für Wing Commander. In 16 neuen Missionen kämpft die Tiger's Claw um den Planeten Firekka und greift eine wichtige religiöse Zeremonie der Kilrathi an. Neue Gegner und eine stärkere Handlung ergänzen das bekannte Weltraumkampf-System.",
+                "history": "Origin veröffentlichte Crusade 1991 als zweite Erweiterung für Wing Commander. Regie und Drehbuch übernahm Ellen Guon Beeman, während Chris Roberts als Produzent und Programmierer beteiligt war. Die Kampagne bereitet mehrere Figuren und Ereignisse von Wing Commander II vor.",
+                "review": "Crusade bietet im Kern mehr Wing Commander, legt aber deutlich größeren Wert auf Handlung und schwierigere Gegner. Besonders die Missionen mit dem erbeuteten Dralthi sorgen für Abwechslung. Wer das Hauptspiel mochte, bekommt eine kurze, aber starke Zusatzkampagne.",
+                "trivia": [
+                    "Die Kampagne umfasst 16 neue Missionen rund um den Planeten Firekka.",
+                    "Der Spieler darf erstmals selbst einen erbeuteten Kilrathi-Jäger vom Typ Dralthi Mk II fliegen.",
+                    "Crusade führt mehrere Figuren ein, die später für Wing Commander II wichtig werden."
+                ],
+                "worthPlaying": "Crusade lohnt sich besonders für Fans der Geschichte des Wing-Commander-Universums. Die schwierigeren Gefechte und ungewöhnlichen Dralthi-Missionen machen die Erweiterung auch spielerisch interessant.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "The Secret Missions 2: Crusade is the second expansion for Wing Commander. Across 16 new missions, the Tiger's Claw fights for the planet Firekka and disrupts an important Kilrathi religious ceremony. New enemies and a stronger storyline expand the familiar space combat formula.",
+                "history": "Origin released Crusade in 1991 as the second Wing Commander expansion. Ellen Guon Beeman served as director and writer, while Chris Roberts contributed as producer and programmer. Its campaign introduces several characters and events that lead into Wing Commander II.",
+                "review": "Crusade essentially offers more Wing Commander but places greater emphasis on story and tougher opponents. Missions flown in a captured Dralthi provide a particularly welcome change of pace. Fans of the original receive a short but strong additional campaign.",
+                "trivia": [
+                    "The campaign contains 16 new missions centred around the planet Firekka.",
+                    "For the first time, the player can fly a captured Kilrathi Dralthi Mk II fighter.",
+                    "Crusade introduces several characters who later become important in Wing Commander II."
+                ],
+                "worthPlaying": "Crusade is particularly worthwhile for fans of the Wing Commander universe and its storyline. Tougher combat and the unusual Dralthi missions also make the expansion interesting to play."
+            }
+        },
+        id: 259,
+        folder: "wing_commander_secret_missions_2_crusade",
+        scanBy: "Magisthan",
+        page: "wing_commander_secret_missions_2_crusade.html",
+        featured: false,
+        title: "Wing Commander: The Secret Missions 2 - Crusade",
+        system: "PC",
+        year: 1991,
+        publisher: "ORIGIN Systems, Inc.",
+        developer: "ORIGIN Systems, Inc.",
+        genre: ["Simulation", "Weltraumkampf", "Science-Fiction", "Add-on"],
+        description: "The Secret Missions 2: Crusade ist die zweite Erweiterung für Wing Commander. In 16 neuen Missionen kämpft die Tiger's Claw um den Planeten Firekka und greift eine wichtige religiöse Zeremonie der Kilrathi an. Neue Gegner und eine stärkere Handlung ergänzen das bekannte Weltraumkampf-System.",
+        history: `Origin veröffentlichte Crusade 1991 als zweite Erweiterung für Wing Commander. Regie und Drehbuch übernahm Ellen Guon Beeman, während Chris Roberts als Produzent und Programmierer beteiligt war. Die Kampagne bereitet mehrere Figuren und Ereignisse von Wing Commander II vor.`,
+        review: `Crusade bietet im Kern mehr Wing Commander, legt aber deutlich größeren Wert auf Handlung und schwierigere Gegner. Besonders die Missionen mit dem erbeuteten Dralthi sorgen für Abwechslung. Wer das Hauptspiel mochte, bekommt eine kurze, aber starke Zusatzkampagne.`,
+        trivia: [
+                  "Die Kampagne umfasst 16 neue Missionen rund um den Planeten Firekka.",
+                  "Der Spieler darf erstmals selbst einen erbeuteten Kilrathi-Jäger vom Typ Dralthi Mk II fliegen.",
+                  "Crusade führt mehrere Figuren ein, die später für Wing Commander II wichtig werden."
+        ],
+        worthPlaying: `Crusade lohnt sich besonders für Fans der Geschichte des Wing-Commander-Universums. Die schwierigeren Gefechte und ungewöhnlichen Dralthi-Missionen machen die Erweiterung auch spielerisch interessant.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/1105/wing-commander-the-secret-missions-2-crusade/",
+        wikipedia: "https://de.wikipedia.org/wiki/Wing_Commander_(Computerspiel)",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 165,
+        height: 217,
+        depth: 17
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Wiz 'n' Liz ist ein rasantes Plattformspiel, in dem zwei Zauberer entlaufene Wabbits einfangen. Dabei werden Buchstaben und Früchte gesammelt, aus denen sich im Zauberkessel zahlreiche Effekte erzeugen lassen. Besonders der gleichzeitige Zwei-Spieler-Modus sorgt für hektische Unterhaltung.",
+                "history": "Wiz 'n' Liz erschien 1993 bei Psygnosis. Das Original wurde von Martyn Chudley und Mike Waterworth entwickelt, während Lunatic Software die Amiga-Version umsetzte. Die Portierung erhielt eigene Grafik und Musik.",
+                "review": "Wiz 'n' Liz lebt von hohem Tempo, einfacher Steuerung und vielen verrückten Ideen. Besonders zu zweit macht die Wabbit-Jagd viel Spaß. Spielerisch bleibt das Grundprinzip recht simpel, die zahlreichen Geheimnisse und Fruchtkombinationen sorgen aber für Abwechslung.",
+                "trivia": [
+                    "Die Amiga-Version wurde von Lunatic Software umgesetzt.",
+                    "Verschiedene Früchte können im Zauberkessel kombiniert werden und lösen zahlreiche unterschiedliche Effekte aus.",
+                    "Die Cover-Illustration der Amiga-Ausgabe stammt von Dave Pether."
+                ],
+                "worthPlaying": "Wiz 'n' Liz ist ein ungewöhnlich schnelles und charmantes Plattformspiel. Besonders der Zwei-Spieler-Modus und die vielen kuriosen Fruchtkombinationen machen es auch heute noch interessant.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Wiz 'n' Liz is a fast-paced platform game in which two wizards rescue runaway wabbits. Players collect letters and fruit, which can be mixed in a cauldron to produce numerous effects. Its simultaneous two-player mode is particularly frantic and entertaining.",
+                "history": "Wiz 'n' Liz was published by Psygnosis in 1993. The original game was created by Martyn Chudley and Mike Waterworth, while Lunatic Software handled the Amiga conversion. The port received its own graphics and music.",
+                "review": "Wiz 'n' Liz thrives on speed, simple controls and plenty of strange ideas. The wabbit hunt is especially entertaining with two players. Its basic gameplay is fairly simple, but numerous secrets and fruit combinations provide welcome variety.",
+                "trivia": [
+                    "The Amiga version was converted by Lunatic Software.",
+                    "Different fruits can be mixed in the cauldron to trigger numerous different effects.",
+                    "The Amiga cover illustration was created by Dave Pether."
+                ],
+                "worthPlaying": "Wiz 'n' Liz remains an unusually fast and charming platform game. Its two-player mode and many bizarre fruit combinations still make it worth revisiting today."
+            }
+        },
+        id: 260,
+        folder: "wiz_n_liz",
+        scanBy: "Magisthan",
+        page: "wiz_n_liz.html",
+        featured: false,
+        title: "Wiz 'n' Liz",
+        system: "Amiga",
+        year: 1993,
+        publisher: "Psygnosis Limited",
+        developer: "Lunatic Software",
+        genre: ["Action", "Platformer", "Arcade"],
+        description: "Wiz 'n' Liz ist ein rasantes Plattformspiel, in dem zwei Zauberer entlaufene Wabbits einfangen. Dabei werden Buchstaben und Früchte gesammelt, aus denen sich im Zauberkessel zahlreiche Effekte erzeugen lassen. Besonders der gleichzeitige Zwei-Spieler-Modus sorgt für hektische Unterhaltung.",
+        history: `Wiz 'n' Liz erschien 1993 bei Psygnosis. Das Original wurde von Martyn Chudley und Mike Waterworth entwickelt, während Lunatic Software die Amiga-Version umsetzte. Die Portierung erhielt eigene Grafik und Musik.`,
+        review: `Wiz 'n' Liz lebt von hohem Tempo, einfacher Steuerung und vielen verrückten Ideen. Besonders zu zweit macht die Wabbit-Jagd viel Spaß. Spielerisch bleibt das Grundprinzip recht simpel, die zahlreichen Geheimnisse und Fruchtkombinationen sorgen aber für Abwechslung.`,
+        trivia: [
+                  "Die Amiga-Version wurde von Lunatic Software umgesetzt.",
+                  "Verschiedene Früchte können im Zauberkessel kombiniert werden und lösen zahlreiche unterschiedliche Effekte aus.",
+                  "Die Cover-Illustration der Amiga-Ausgabe stammt von Dave Pether."
+        ],
+        worthPlaying: `Wiz 'n' Liz ist ein ungewöhnlich schnelles und charmantes Plattformspiel. Besonders der Zwei-Spieler-Modus und die vielen kuriosen Fruchtkombinationen machen es auch heute noch interessant.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/6625/wiz-n-liz/",
+        wikipedia: "https://en.wikipedia.org/wiki/Wiz_%27n%27_Liz",
+        gog: ""
+        },
+        boxArtists: [
+        "Dave Pether"
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 187,
+        height: 237,
+        depth: 42
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Wonderland ist ein grafisches Textadventure nach Lewis Carrolls Alice im Wunderland. Als Alice erkundet der Spieler eine bizarre Welt voller bekannter Figuren und anspruchsvoller Rätsel. Das flexible Magnetic-Windows-System verbindet Texteingabe mit Maussteuerung, Karte und Inventar.",
+                "history": "Magnetic Scrolls entwickelte Wonderland als technisch ambitioniertes Adventure mit dem neuen Magnetic-Windows-System. Die Amiga-Version erschien 1991 bei Virgin Mastertronic und benötigte mindestens 1 MB RAM. David Bishop schrieb Szenario und Texte.",
+                "review": "Wonderland bietet hervorragende Texte, anspruchsvolle Rätsel und eine für Textadventures ungewöhnlich komfortable Oberfläche. Auf einem Standard-Amiga bremsen allerdings lange Ladezeiten und hohe Hardwareanforderungen. Inhaltlich gehört es dennoch zu den stärksten Adventures von Magnetic Scrolls.",
+                "trivia": [
+                    "Das Magnetic-Windows-System erlaubt frei verschiebbare Fenster für Text, Grafik, Karte, Inventar und Navigation.",
+                    "Die Amiga-Version wird auf vier Disketten ausgeliefert und unterstützt eine Festplatteninstallation.",
+                    "Das Cover-Artwork stammt vom britischen Comic- und Fantasyzeichner Dermot Power."
+                ],
+                "worthPlaying": "Wonderland ist besonders für Fans anspruchsvoller Text- und Grafikadventures interessant. Das ungewöhnliche Fenstersystem und die starke Umsetzung von Alice im Wunderland machen den Titel bis heute sehenswert.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Wonderland is a graphical text adventure based on Lewis Carroll's Alice's Adventures in Wonderland. Playing as Alice, the player explores a bizarre world filled with familiar characters and challenging puzzles. Its flexible Magnetic Windows system combines text input with mouse control, mapping and inventory management.",
+                "history": "Magnetic Scrolls developed Wonderland as an ambitious adventure built around its new Magnetic Windows interface. The Amiga version was released by Virgin Mastertronic in 1991 and required at least 1 MB of RAM. David Bishop wrote the scenario and text.",
+                "review": "Wonderland offers excellent writing, challenging puzzles and an unusually comfortable interface for a text adventure. Long loading times and demanding hardware requirements hamper it on a standard Amiga. In terms of content, however, it remains one of Magnetic Scrolls' strongest adventures.",
+                "trivia": [
+                    "The Magnetic Windows system provides movable windows for text, graphics, maps, inventory and navigation.",
+                    "The Amiga version was supplied on four disks and supports hard-drive installation.",
+                    "The cover artwork was created by British comic and fantasy artist Dermot Power."
+                ],
+                "worthPlaying": "Wonderland remains particularly interesting for fans of sophisticated text and graphic adventures. Its unusual windowing interface and strong adaptation of Alice in Wonderland still make it worth exploring."
+            }
+        },
+        id: 261,
+        folder: "wonderland",
+        scanBy: "Magisthan",
+        page: "wonderland.html",
+        featured: false,
+        title: "Wonderland",
+        system: "Amiga",
+        year: 1991,
+        publisher: "Virgin Mastertronic Ltd.",
+        developer: "Magnetic Scrolls",
+        genre: ["Adventure", "Textadventure", "Interactive Fiction", "Fantasy"],
+        description: "Wonderland ist ein grafisches Textadventure nach Lewis Carrolls Alice im Wunderland. Als Alice erkundet der Spieler eine bizarre Welt voller bekannter Figuren und anspruchsvoller Rätsel. Das flexible Magnetic-Windows-System verbindet Texteingabe mit Maussteuerung, Karte und Inventar.",
+        history: `Magnetic Scrolls entwickelte Wonderland als technisch ambitioniertes Adventure mit dem neuen Magnetic-Windows-System. Die Amiga-Version erschien 1991 bei Virgin Mastertronic und benötigte mindestens 1 MB RAM. David Bishop schrieb Szenario und Texte.`,
+        review: `Wonderland bietet hervorragende Texte, anspruchsvolle Rätsel und eine für Textadventures ungewöhnlich komfortable Oberfläche. Auf einem Standard-Amiga bremsen allerdings lange Ladezeiten und hohe Hardwareanforderungen. Inhaltlich gehört es dennoch zu den stärksten Adventures von Magnetic Scrolls.`,
+        trivia: [
+                  "Das Magnetic-Windows-System erlaubt frei verschiebbare Fenster für Text, Grafik, Karte, Inventar und Navigation.",
+                  "Die Amiga-Version wird auf vier Disketten ausgeliefert und unterstützt eine Festplatteninstallation.",
+                  "Das Cover-Artwork stammt vom britischen Comic- und Fantasyzeichner Dermot Power."
+        ],
+        worthPlaying: `Wonderland ist besonders für Fans anspruchsvoller Text- und Grafikadventures interessant. Das ungewöhnliche Fenstersystem und die starke Umsetzung von Alice im Wunderland machen den Titel bis heute sehenswert.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/97/wonderland/",
+        wikipedia: "https://de.wikipedia.org/wiki/Wonderland_(Computerspiel)",
+        gog: ""
+        },
+        boxArtists: [
+        "Dermot Power"
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 183,
+        height: 232,
+        depth: 30
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "X-COM: Apocalypse ist ein Strategie- und Taktikspiel, in dem X-COM die futuristische Stadt Mega-Primus gegen eine neue Alien-Bedrohung verteidigt. Der Spieler verwaltet Basen, Forschung und Ausrüstung und führt taktische Einsätze wahlweise rundenbasiert oder in Echtzeit.",
+                "history": "Mythos Games entwickelte X-COM: Apocalypse als dritten Hauptteil der klassischen X-COM-Reihe. MicroProse veröffentlichte das Spiel 1997 für den PC. Statt einer Weltkarte steht diesmal die riesige Stadt Mega-Primus mit zahlreichen rivalisierenden Organisationen im Mittelpunkt.",
+                "review": "X-COM: Apocalypse erweitert die bekannte Mischung aus Strategie, Forschung und taktischen Kämpfen um eine lebendige Stadt und viele miteinander verknüpfte Organisationen. Das Spiel ist komplex und anfangs etwas sperrig, bietet dafür aber ungewöhnlich viele Freiheiten und eine hohe Langzeitmotivation.",
+                "trivia": [
+                    "Taktische Kämpfe können wahlweise rundenbasiert oder in Echtzeit gespielt werden.",
+                    "Die Handlung spielt im Jahr 2084 in der Megastadt Mega-Primus.",
+                    "Die verschiedenen Organisationen der Stadt reagieren dynamisch auf die Aktionen des Spielers."
+                ],
+                "worthPlaying": "X-COM: Apocalypse lohnt sich besonders für Spieler, die komplexe Strategie und taktische Kämpfe mögen. Die dynamische Stadt und die vielen miteinander verbundenen Systeme geben dem Spiel bis heute einen eigenständigen Charakter.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "X-COM: Apocalypse is a strategy and tactics game in which X-COM defends the futuristic city of Mega-Primus against a new alien threat. The player manages bases, research and equipment while tactical missions can be fought either turn-based or in real time.",
+                "history": "Mythos Games developed X-COM: Apocalypse as the third main entry in the classic X-COM series. MicroProse released the game for PC in 1997. Instead of a global map, the game focuses on the massive city of Mega-Primus and its many competing organizations.",
+                "review": "X-COM: Apocalypse expands the familiar mix of strategy, research and tactical combat with a living city and many interconnected organizations. It is complex and can feel awkward at first, but offers an unusual amount of freedom and excellent long-term replay value.",
+                "trivia": [
+                    "Tactical battles can be played either turn-based or in real time.",
+                    "The story takes place in 2084 in the mega-city of Mega-Primus.",
+                    "The city's different organizations react dynamically to the player's actions."
+                ],
+                "worthPlaying": "X-COM: Apocalypse remains worthwhile for players who enjoy complex strategy and tactical combat. Its dynamic city and interconnected systems still give the game a distinctive identity."
+            }
+        },
+        id: 262,
+        folder: "xcom_apocalypse",
+        scanBy: "Magisthan",
+        page: "xcom_apocalypse.html",
+        featured: false,
+        title: "X-COM: Apocalypse",
+        system: "PC",
+        year: 1997,
+        publisher: "MicroProse",
+        developer: "Mythos Games",
+        genre: ["Strategie", "Taktik", "Science-Fiction"],
+        description: "X-COM: Apocalypse ist ein Strategie- und Taktikspiel, in dem X-COM die futuristische Stadt Mega-Primus gegen eine neue Alien-Bedrohung verteidigt. Der Spieler verwaltet Basen, Forschung und Ausrüstung und führt taktische Einsätze wahlweise rundenbasiert oder in Echtzeit.",
+        history: `Mythos Games entwickelte X-COM: Apocalypse als dritten Hauptteil der klassischen X-COM-Reihe. MicroProse veröffentlichte das Spiel 1997 für den PC. Statt einer Weltkarte steht diesmal die riesige Stadt Mega-Primus mit zahlreichen rivalisierenden Organisationen im Mittelpunkt.`,
+        review: `X-COM: Apocalypse erweitert die bekannte Mischung aus Strategie, Forschung und taktischen Kämpfen um eine lebendige Stadt und viele miteinander verknüpfte Organisationen. Das Spiel ist komplex und anfangs etwas sperrig, bietet dafür aber ungewöhnlich viele Freiheiten und eine hohe Langzeitmotivation.`,
+        trivia: [
+                  "Taktische Kämpfe können wahlweise rundenbasiert oder in Echtzeit gespielt werden.",
+                  "Die Handlung spielt im Jahr 2084 in der Megastadt Mega-Primus.",
+                  "Die verschiedenen Organisationen der Stadt reagieren dynamisch auf die Aktionen des Spielers."
+        ],
+        worthPlaying: `X-COM: Apocalypse lohnt sich besonders für Spieler, die komplexe Strategie und taktische Kämpfe mögen. Die dynamische Stadt und die vielen miteinander verbundenen Systeme geben dem Spiel bis heute einen eigenständigen Charakter.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/349/x-com-apocalypse/",
+        wikipedia: "https://de.wikipedia.org/wiki/X-COM:_Apocalypse",
+        gog: "https://www.gog.com/en/game/xcom_apocalypse"
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 188,
+        height: 240,
+        depth: 45
+    },
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
 ];
 
 //--------------------------------------------------

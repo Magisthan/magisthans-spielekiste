@@ -54,8 +54,6 @@
 
         initializeViewerStage();
 
-        initializeMobileViewerPanels();
-
         initializeMobileFilters();
 
     }
@@ -148,75 +146,6 @@
         observer.observe(viewerStage);
 
         updateViewerStage();
-
-    }
-
-    function initializeMobileViewerPanels() {
-
-        const mobilePanels = document.getElementById(
-            "viewer-mobile-panels"
-        );
-
-        const communityPanel = document.getElementById(
-            "community-panel"
-        );
-
-        const infoPanel = document.getElementById(
-            "viewer-info-panel"
-        );
-
-        if (!mobilePanels || !communityPanel || !infoPanel) return;
-
-        const communityAnchor = document.createComment(
-            "community-panel-anchor"
-        );
-
-        const infoAnchor = document.createComment(
-            "viewer-info-panel-anchor"
-        );
-
-        communityPanel.parentNode.insertBefore(
-            communityAnchor,
-            communityPanel
-        );
-
-        infoPanel.parentNode.insertBefore(
-            infoAnchor,
-            infoPanel
-        );
-
-        const mediaQuery = window.matchMedia("(max-width:1200px)");
-
-        const updatePanelLayout = () => {
-
-            if (mediaQuery.matches) {
-
-                mobilePanels.append(
-                    communityPanel,
-                    infoPanel
-                );
-
-            } else {
-
-                communityAnchor.parentNode.insertBefore(
-                    communityPanel,
-                    communityAnchor.nextSibling
-                );
-
-                infoAnchor.parentNode.insertBefore(
-                    infoPanel,
-                    infoAnchor.nextSibling
-                );
-
-            }
-
-            window.dispatchEvent(new Event("resize"));
-
-        };
-
-        mediaQuery.addEventListener("change", updatePanelLayout);
-
-        updatePanelLayout();
 
     }
 

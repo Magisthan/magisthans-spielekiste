@@ -105,7 +105,6 @@ function moveShelf(direction) {
 
     setTimeout(() => {
         isAnimating = false;
-        hideCommunity();
     }, SHELF_ANIMATION_TIME);
 }
 
@@ -132,7 +131,6 @@ async function spinShelf(targetIndex) {
     if (viewer) viewer.style.visibility = "hidden";
     hideViewerActions();
     hideFullscreenButton();
-    hideCommunity();
 
     if (button) {
         button.classList.add("is-spinning");

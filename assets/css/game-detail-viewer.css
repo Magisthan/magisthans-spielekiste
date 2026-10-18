@@ -247,19 +247,48 @@
         gap:3px;
         padding:7px 9px;
         font-size:.66rem;
+        opacity:1;
+        visibility:visible;
+        transform:translateY(0);
+        transition:
+            opacity .3s ease,
+            transform .3s ease,
+            visibility 0s;
+    }
+
+    .game-detail-viewer-controls.is-dismissed{
+        opacity:0;
+        visibility:hidden;
+        transform:translateY(6px);
+        transition:
+            opacity .3s ease,
+            transform .3s ease,
+            visibility 0s linear .3s;
     }
 
     .game-detail-viewer-actions{
-        right:12px;
-        bottom:76px;
-        flex-direction:column;
-        align-items:flex-end;
+        inset:0;
+        display:block;
+        pointer-events:none;
+    }
+
+    .game-detail-viewer-actions button{
+        pointer-events:auto;
     }
 
     .game-detail-viewer-open{
+        position:absolute;
+        top:12px;
+        left:12px;
         min-height:40px;
         padding:8px 10px;
         font-size:.62rem;
+    }
+
+    .game-detail-viewer-fullscreen{
+        position:absolute;
+        right:12px;
+        bottom:76px;
     }
 
     .game-detail-viewer-scan-credit{

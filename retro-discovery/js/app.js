@@ -51,6 +51,7 @@ const SYSTEM_GROUPS = {
         "Atari STE",
         "Atari Falcon",
         "Atari TT",
+        "Atari 800",
         "Atari 8-Bit",
         "Atari XL",
         "Atari XE"
