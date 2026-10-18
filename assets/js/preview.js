@@ -95,7 +95,7 @@ if(canvas && window.BABYLON && window.Package){
 
         async function loadGame(gameData){
             const folder = gameData.folder;
-            const [front,back,left,right,top,bottom,insideLeft,insideRight,insideSpin] =
+            const [front,back,left,right,top,bottom,insideLeft,insideRight,insideSpin,insideMiddle,insideRightRight,extendedTop,extendedBottom,foldSpine] =
                 await Promise.all([
                     loadImage(folder,"front"),
                     loadImage(folder,"back"),
@@ -105,12 +105,27 @@ if(canvas && window.BABYLON && window.Package){
                     loadImage(folder,"bottom"),
                     loadImage(folder,"inside_left",true),
                     loadImage(folder,"inside_right",true),
-                    loadImage(folder,"inside_spin",true)
+                    loadImage(folder,"inside_spin",true),
+                    gameData.package?.type === "extended-flatpack"
+                        ? loadImage(folder,gameData.package.extendedFlatpack?.insideMiddleTexture || "inside_middle",true)
+                        : Promise.resolve(null),
+                    gameData.package?.type === "extended-flatpack"
+                        ? loadImage(folder,gameData.package.extendedFlatpack?.insideRightRightTexture || "inside_right_right",true)
+                        : Promise.resolve(null),
+                    gameData.package?.type === "extended-flatpack"
+                        ? loadImage(folder,gameData.package.extendedFlatpack?.extendedTopTexture || "extended-top",true)
+                        : Promise.resolve(null),
+                    gameData.package?.type === "extended-flatpack"
+                        ? loadImage(folder,gameData.package.extendedFlatpack?.extendedBottomTexture || "extended-bottom",true)
+                        : Promise.resolve(null),
+                    gameData.package?.type === "extended-flatpack"
+                        ? loadImage(folder,gameData.package.extendedFlatpack?.foldSpineTexture || "extended-fold-spine",true)
+                        : Promise.resolve(null)
                 ]);
 
             const dimensions = gameData.dimensions || {};
             return {
-                images:{ front,back,left,right,top,bottom,insideLeft,insideRight,insideSpin },
+                images:{ front,back,left,right,top,bottom,insideLeft,insideRight,insideSpin,insideMiddle,insideRightRight,extendedTop,extendedBottom,foldSpine },
                 width:(dimensions.width || 200) * BOX_SCALE,
                 height:(dimensions.height || 260) * BOX_SCALE,
                 depth:Math.max(dimensions.depth || 20,3) * BOX_SCALE,

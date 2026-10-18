@@ -28,7 +28,8 @@ const SCALE = 0.014;
 // Viewer Position
 //--------------------------------------------------
 
-const BOX_Y_OFFSET = 0.08;
+// Manuelle vertikale Startposition der 3D-Box: höherer Wert = weiter oben.
+const BOX_Y_OFFSET = 0.26;
 
 //--------------------------------------------------
 // Hero Pose
@@ -53,6 +54,7 @@ const CAMERA_RADIUS = 7.5;
 let pivot = null;
 let currentPackage = null;
 let packageHintDismissed = false;
+let lastAnimatedPackageHint = null;
 
 //--------------------------------------------------
 // Showcase Rotation
@@ -72,7 +74,6 @@ const SHOWCASE_DELAY = 5000;
 
 function hideViewerActions(){
     closeEditorialDialog({ restoreFocus:false });
-    window.ScanContributionDialog?.close();
 
     if(window.ViewerUI?.getState().enabled){
         window.ViewerUI.reset("spin-started");
@@ -648,7 +649,27 @@ async function tryLoadImage(file){
         ? await tryLoadImage("inside_right")
         : null,
 
-    insideSpin : gameData.hasInside && gameData.package?.type !== "flatpack"
+    insideMiddle : gameData.package?.type === "extended-flatpack"
+        ? await tryLoadImage(gameData.package.extendedFlatpack?.insideMiddleTexture || "inside_middle")
+        : null,
+
+    insideRightRight : gameData.package?.type === "extended-flatpack"
+        ? await tryLoadImage(gameData.package.extendedFlatpack?.insideRightRightTexture || "inside_right_right")
+        : null,
+
+    extendedTop : gameData.package?.type === "extended-flatpack"
+        ? await tryLoadImage(gameData.package.extendedFlatpack?.extendedTopTexture || "extended-top")
+        : null,
+
+    extendedBottom : gameData.package?.type === "extended-flatpack"
+        ? await tryLoadImage(gameData.package.extendedFlatpack?.extendedBottomTexture || "extended-bottom")
+        : null,
+
+    foldSpine : gameData.package?.type === "extended-flatpack"
+        ? await tryLoadImage(gameData.package.extendedFlatpack?.foldSpineTexture || "extended-fold-spine")
+        : null,
+
+    insideSpin : gameData.hasInside && !["flatpack", "extended-flatpack"].includes(gameData.package?.type)
         ? await tryLoadImage("inside_spin")
         : null,
 
@@ -1039,7 +1060,11 @@ function toggleCurrentPackage(){
 
     stopShowcaseRotation();
 
+    const hint = document.getElementById("package-open-hint");
+
     if(currentPackage.openAmount > 0.5){
+        setPackageHintState(hint,false);
+        hint?.classList.add("is-transitioning");
         Package.close(scene, currentPackage, () => {
             packageHintDismissed = false;
         });
@@ -1047,6 +1072,8 @@ function toggleCurrentPackage(){
     }
 
     packageHintDismissed = true;
+    setPackageHintState(hint,true);
+    hint?.classList.add("is-transitioning");
 
     if(currentPackage.type === "flatpack"){
         alignFlatpackForOpening(() => Package.open(scene, currentPackage));
@@ -1057,17 +1084,75 @@ function toggleCurrentPackage(){
 
 }
 
+function setPackageHintState(hint,isOpen){
+
+    if(!hint) return;
+
+    const i18n = window.RDI18n || window.SiteI18n;
+    const fullText = i18n?.t(isOpen ? "viewer.closeBox" : "viewer.openBox")
+        || (isOpen ? "BOX SCHLIESSEN" : "BOX ÖFFNEN");
+
+    hint.setAttribute("aria-label",fullText);
+    hint.setAttribute("aria-pressed",String(isOpen));
+    hint.classList.toggle("is-open",isOpen);
+    hint.dataset.packageState = isOpen ? "open" : "closed";
+    hint.dataset.labelLanguage = document.documentElement.lang || "de";
+
+}
+
 function updatePackageOpenHint(){
 
     const hint = document.getElementById("package-open-hint");
+    const extensionHint = document.getElementById("package-extension-hint");
 
-    if(!hint || !scene || !engine || !canvas || !currentPackage?.isOpenable || packageHintDismissed || showcaseRotation ||
-        currentPackage.isAnimating || currentPackage.openAmount > 0.02){
+    if(!hint || !scene || !engine || !canvas || !currentPackage?.isOpenable){
         hint?.classList.remove("visible");
+        extensionHint?.classList.remove("visible");
+        if(extensionHint) extensionHint.hidden = true;
         return;
     }
 
+    if(currentPackage.isAnimating){
+        extensionHint?.classList.remove("visible");
+        if(extensionHint) extensionHint.hidden = true;
+        if(lastAnimatedPackageHint !== currentPackage){
+            hint.classList.remove("visible","is-transitioning");
+        }else if(hint.classList.contains("visible")){
+            hint.classList.add("is-transitioning");
+        }
+        return;
+    }
+
+    const isOpen = currentPackage.openAmount > 0.5;
+    const packageState = isOpen ? "open" : "closed";
+    const language = document.documentElement.lang || "de";
+
+    if(hint.dataset.packageState !== packageState || hint.dataset.labelLanguage !== language){
+        setPackageHintState(hint,isOpen);
+    }
+
+    if(extensionHint){
+        const showExtension = currentPackage.type === "extended-flatpack" && currentPackage.openAmount >= .995;
+        extensionHint.hidden = !showExtension;
+        extensionHint.classList.toggle("visible",showExtension);
+        extensionHint.disabled = Boolean(currentPackage.extension?.isAnimating || currentPackage.isAnimating);
+        if(showExtension){
+            const extended = currentPackage.extension?.openAmount > .5;
+            const key = extended ? "viewer.closeExtension" : "viewer.openExtension";
+            const fallback = extended ? "↔ ZUSATZFLÜGEL SCHLIESSEN" : "↔ WEITER AUFKLAPPEN";
+            const label = window.RDI18n?.t?.(key) || window.SiteI18n?.t?.(key) || fallback;
+            extensionHint.setAttribute("aria-label",label);
+            const target = extensionHint.querySelector(".package-extension-label");
+            if(target) target.textContent = label.replace(/^↔\s*/,"");
+        }
+    }
+
+    hint.classList.remove("is-transitioning");
+
+    const shouldAnimate = lastAnimatedPackageHint !== currentPackage;
+    hint.classList.toggle("animate-entry",shouldAnimate);
     hint.classList.add("visible");
+    if(shouldAnimate) lastAnimatedPackageHint = currentPackage;
 
 }
 
@@ -1270,6 +1355,12 @@ document.getElementById("package-open-hint").addEventListener("click", () => {
     toggleCurrentPackage();
 });
 
+document.getElementById("package-extension-hint")?.addEventListener("click", () => {
+    if(!currentPackage || currentPackage.type !== "extended-flatpack") return;
+    stopShowcaseRotation();
+    Package.toggleExtension(scene,currentPackage);
+});
+
 //--------------------------------------------------
 // Zoom Einstellungen
 //--------------------------------------------------
@@ -1463,6 +1554,79 @@ scene.imageProcessingConfiguration.toneMappingType =
     BABYLON.ImageProcessingConfiguration.TONEMAPPING_ACES;
 scene.imageProcessingConfiguration.contrast = 1.06;
 scene.imageProcessingConfiguration.exposure = 1.05;
+
+//--------------------------------------------------
+// Viewer presentation lighting profiles
+//--------------------------------------------------
+
+const viewerLightingProfiles = Object.freeze({
+    standard:Object.freeze({
+        hemiIntensity:0.82,
+        hemiGround:[0.05,0.05,0.05],
+        viewerFillIntensity:1.95,
+        keyIntensity:0.80,
+        rimIntensity:0.30,
+        environmentIntensity:0.45,
+        contrast:1.06,
+        exposure:1.05,
+        lightColor:[1,1,1]
+    }),
+    retro:Object.freeze({
+        hemiIntensity:0.78,
+        hemiGround:[0.03,0.035,0.045],
+        viewerFillIntensity:1.85,
+        keyIntensity:0.72,
+        rimIntensity:0.38,
+        environmentIntensity:0.42,
+        contrast:1.08,
+        exposure:1.03,
+        lightColor:[0.96,0.985,1]
+    }),
+    museum:Object.freeze({
+        hemiIntensity:0.92,
+        hemiGround:[0.16,0.16,0.16],
+        viewerFillIntensity:1.55,
+        keyIntensity:0.34,
+        rimIntensity:0.10,
+        environmentIntensity:0.28,
+        contrast:1.0,
+        exposure:1.02,
+        lightColor:[1,1,1]
+    })
+});
+
+let activeViewerLightingProfile = "standard";
+
+function applyViewerLightingProfile(profileName){
+    const normalizedName = ["standard","retro","museum"].includes(profileName)
+        ? profileName
+        : "standard";
+    const profile = viewerLightingProfiles[normalizedName];
+
+    hemi.intensity = profile.hemiIntensity;
+    hemi.groundColor.copyFromFloats(...profile.hemiGround);
+    hemi.diffuse.copyFromFloats(...profile.lightColor);
+    viewerFill.intensity = profile.viewerFillIntensity;
+    viewerFill.diffuse.copyFromFloats(...profile.lightColor);
+    keyLightLeft.intensity = profile.keyIntensity;
+    keyLightLeft.diffuse.copyFromFloats(...profile.lightColor);
+    rimLight.intensity = profile.rimIntensity;
+    rimLight.diffuse.copyFromFloats(...profile.lightColor);
+    scene.environmentIntensity = profile.environmentIntensity;
+    scene.imageProcessingConfiguration.contrast = profile.contrast;
+    scene.imageProcessingConfiguration.exposure = profile.exposure;
+    activeViewerLightingProfile = normalizedName;
+
+    return activeViewerLightingProfile;
+}
+
+window.ViewerLighting = Object.freeze({
+    applyProfile:applyViewerLightingProfile,
+    getProfile:()=>activeViewerLightingProfile,
+    profiles:viewerLightingProfiles
+});
+
+document.dispatchEvent(new CustomEvent("viewerlightingready"));
 
 }
 

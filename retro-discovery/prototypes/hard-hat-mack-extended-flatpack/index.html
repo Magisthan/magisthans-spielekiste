@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>One on One – Extended Flatpack Test</title>
+    <link rel="stylesheet" href="extended-flatpack-test.css">
+</head>
+<body>
+    <main class="prototype-shell">
+        <canvas id="viewer" aria-label="Interaktiver Testviewer für eine Extended-Flatpack-Box"></canvas>
+
+        <section class="test-panel" aria-labelledby="test-title">
+            <p class="eyebrow">ISOLIERTE BASIS-TESTUMGEBUNG</p>
+            <h1 id="test-title">One on One: Erving vs. Bird – Extended Flatpack</h1>
+            <p class="description">
+                Prototyp mit einem zweifach gelagerten Falz zwischen inside_middle und dem Zusatzflügel.
+                Falz, Oberkante und Unterkante verwenden die separaten Extended-Texturen.
+            </p>
+
+            <div class="button-row">
+                <button type="button" id="primary-toggle">Box öffnen</button>
+                <button type="button" id="extension-toggle" disabled>Zusatzflügel öffnen</button>
+                <button type="button" id="diagnostic-toggle" class="secondary" aria-pressed="false">Scharnier zeigen</button>
+                <button type="button" id="reset-view" class="secondary">Ansicht zurücksetzen</button>
+            </div>
+
+            <label for="primary-progress">Normale Boxöffnung <output id="primary-output">0 %</output></label>
+            <input id="primary-progress" type="range" min="0" max="1" step="0.01" value="0">
+
+            <label for="extension-progress">Zusatzflügel <output id="extension-output">0 %</output></label>
+            <input id="extension-progress" type="range" min="0" max="1" step="0.01" value="0" disabled>
+
+            <label for="crop-progress">Grauen Rand links beschneiden <output id="crop-output">2.9 %</output></label>
+            <input id="crop-progress" type="range" min="0" max="0.05" step="0.001" value="0.029">
+
+            <p id="state" class="state" role="status">Geschlossen</p>
+        </section>
+
+        <button type="button" id="extension-hotspot" class="extension-hotspot" aria-label="Zusatzflügel öffnen" hidden>
+            <span aria-hidden="true">↔</span>
+            <span id="hotspot-label">Weiter aufklappen</span>
+        </button>
+
+        <aside class="legend" aria-label="Bedienhinweise">
+            <span>Linke Maustaste: drehen</span>
+            <span>Mausrad: zoomen</span>
+            <span>Doppelklick: öffnen/schließen</span>
+        </aside>
+    </main>
+
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="../../js/package-materials.js"></script>
+    <script src="../../js/package-builder.js"></script>
+    <script src="../../js/flatpack-builder.js"></script>
+    <script src="../../js/package.js"></script>
+    <script src="extended-flatpack-addon.js?v=20261014-3"></script>
+    <script src="extended-flatpack-test.js?v=20261014-3"></script>
+</body>
+</html>

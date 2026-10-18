@@ -84,7 +84,11 @@
                 container:stage,
                 onInteraction:()=>{ autoRotate = false; }
             });
-            const updateLanguage = ()=>localizeViewer(stage,gameData,boxIsOpen);
+            let updateExtensionButton = ()=>{};
+            const updateLanguage = ()=>{
+                localizeViewer(stage,gameData,boxIsOpen);
+                updateExtensionButton();
+            };
             updateLanguage();
             document.addEventListener("siteLanguageChanged",updateLanguage);
             pivot = new BABYLON.TransformNode("gameDetailPivot",scene);
@@ -93,6 +97,28 @@
             const game = await loadGameTextures(gameData);
             const current = { gameData,game };
             currentPackage = Package.create(scene,pivot,current);
+
+            if(currentPackage.type === "extended-flatpack" && openButton){
+                const extensionButton = document.createElement("button");
+                extensionButton.type = "button";
+                extensionButton.className = "game-detail-viewer-open game-detail-viewer-extension";
+                extensionButton.hidden = true;
+                openButton.insertAdjacentElement("afterend",extensionButton);
+                updateExtensionButton = ()=>{
+                    const extended = currentPackage.extension?.openAmount > .5;
+                    extensionButton.hidden = currentPackage.openAmount < .995;
+                    extensionButton.textContent = viewerText(
+                        extended ? "viewer.closeExtension" : "viewer.openExtension",
+                        {},
+                        extended ? "↔ Zusatzflügel schließen" : "↔ Weiter aufklappen"
+                    );
+                };
+                extensionButton.addEventListener("click",()=>{
+                    autoRotate = false;
+                    Package.toggleExtension(scene,currentPackage,updateExtensionButton);
+                    updateExtensionButton();
+                });
+            }
 
             pivot.scaling.set(.86,.86,.86);
             animatePresentation(scene,pivot);
@@ -107,6 +133,7 @@
                         boxIsOpen = currentPackage.openAmount > .5;
                         updateLanguage();
                         camera.radius = boxIsOpen ? 8.3 : 7;
+                        updateExtensionButton();
                     });
                 });
             }
@@ -367,7 +394,7 @@
             image.src = `${TEXTURE_BASE}/${gameData.folder}/${name}.webp`;
         });
 
-        const [front,back,left,right,top,bottom,insideLeft,insideRight,insideSpin] =
+        const [front,back,left,right,top,bottom,insideLeft,insideRight,insideSpin,insideMiddle,insideRightRight,extendedTop,extendedBottom,foldSpine] =
             await Promise.all([
                 loadImage("front"),
                 loadImage("back"),
@@ -377,12 +404,27 @@
                 loadImage("bottom"),
                 loadImage("inside_left",true),
                 loadImage("inside_right",true),
-                loadImage("inside_spin",true)
+                loadImage("inside_spin",true),
+                gameData.package?.type === "extended-flatpack"
+                    ? loadImage(gameData.package.extendedFlatpack?.insideMiddleTexture || "inside_middle",true)
+                    : Promise.resolve(null),
+                gameData.package?.type === "extended-flatpack"
+                    ? loadImage(gameData.package.extendedFlatpack?.insideRightRightTexture || "inside_right_right",true)
+                    : Promise.resolve(null),
+                gameData.package?.type === "extended-flatpack"
+                    ? loadImage(gameData.package.extendedFlatpack?.extendedTopTexture || "extended-top",true)
+                    : Promise.resolve(null),
+                gameData.package?.type === "extended-flatpack"
+                    ? loadImage(gameData.package.extendedFlatpack?.extendedBottomTexture || "extended-bottom",true)
+                    : Promise.resolve(null),
+                gameData.package?.type === "extended-flatpack"
+                    ? loadImage(gameData.package.extendedFlatpack?.foldSpineTexture || "extended-fold-spine",true)
+                    : Promise.resolve(null)
             ]);
 
         const dimensions = gameData.dimensions || {};
         return {
-            images:{ front,back,left,right,top,bottom,insideLeft,insideRight,insideSpin },
+            images:{ front,back,left,right,top,bottom,insideLeft,insideRight,insideSpin,insideMiddle,insideRightRight,extendedTop,extendedBottom,foldSpine },
             width:(dimensions.width || 200) * BOX_SCALE,
             height:(dimensions.height || 260) * BOX_SCALE,
             depth:Math.max(dimensions.depth || 20,3) * BOX_SCALE,

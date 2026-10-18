@@ -1,0 +1,22 @@
+retro-discovery/js/extended-flatpack-builder.js
+retro-discovery/js/package.js
+retro-discovery/js/package-materials.js
+retro-discovery/js/viewer.js
+assets/js/game.js
+assets/js/game-detail-viewer.js
+assets/js/gamebox.js
+assets/js/preview.js
+retro-discovery/index.html
+index.html
+spiele/hard_hat_mack.html
+spiele/one_on_one_erving_vs_bird.html
+retro-discovery/prototypes/hard-hat-mack-extended-flatpack/extended-flatpack-addon.js
+
+HTML pages receiving the shared builder include during migration:
+spiele/age_of_adventure.html
+spiele/arcticfox.html
+spiele/cromwell_house.html
+spiele/earth_orbit_stations.html
+spiele/patton_vs_rommel.html
+spiele/phm_pegasus.html
+spiele/super_boulder_dash.html

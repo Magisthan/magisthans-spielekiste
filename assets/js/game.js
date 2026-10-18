@@ -21268,6 +21268,1926 @@ const GAMES = [
 ]
     },
 
+    {
+        translations: {
+            "de": {
+                "description": "Hard Hat Mack ist ein frühes Single-Screen-Jump-'n'-Run auf einer Baustelle. Als Bauarbeiter Mack erledigt der Spieler verschiedene Aufgaben, nutzt Aufzüge, Sprungbretter und Förderbänder und weicht dabei Gegnern und Gefahren aus.",
+                "history": "Hard Hat Mack erschien 1983 bei Electronic Arts und gehörte zu den frühen Veröffentlichungen des jungen Publishers. Das Spiel wurde ursprünglich von Michael Abbot und Matthew Alexander entwickelt; noch im selben Jahr folgte die C64-Version.",
+                "review": "Hard Hat Mack ist einfach aufgebaut, aber überraschend fordernd. Die drei unterschiedlichen Baustellen bieten abwechslungsreiche Aufgaben und verlangen gutes Timing. Aus heutiger Sicht wirkt das Spiel schlicht, besitzt aber viel Charme und typisches Arcade-Flair der frühen 1980er.",
+                "trivia": [
+                    "Hard Hat Mack gehörte zu den ersten veröffentlichten Spielen von Electronic Arts.",
+                    "Das Spiel besteht aus drei unterschiedlichen Levels, die anschließend mit höherem Tempo wiederholt werden.",
+                    "Neben dem C64 erschienen Versionen unter anderem für Apple II, Atari 8-Bit und IBM PC."
+                ],
+                "worthPlaying": "Hard Hat Mack ist vor allem als früher Electronic-Arts-Titel und klassisches Arcade-Jump-'n'-Run interessant. Die kurzen Levels, unterschiedlichen Aufgaben und das hohe Tempo eignen sich auch heute noch gut für eine schnelle Runde.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Hard Hat Mack is an early single-screen platform game set on a construction site. Playing as worker Mack, the player completes different tasks, uses elevators, springboards and conveyor belts, and avoids enemies and hazards.",
+                "history": "Hard Hat Mack was released by Electronic Arts in 1983 and was among the young publisher's early titles. The game was originally created by Michael Abbot and Matthew Alexander, with the Commodore 64 version following in the same year.",
+                "review": "Hard Hat Mack is simple in structure but surprisingly demanding. Its three construction-site stages offer varied objectives and require precise timing. It feels basic by modern standards, but still has plenty of charm and classic early-1980s arcade appeal.",
+                "trivia": [
+                    "Hard Hat Mack was one of Electronic Arts' earliest published games.",
+                    "The game contains three different stages that repeat at a faster pace after completion.",
+                    "Besides the Commodore 64, versions were released for systems including the Apple II, Atari 8-bit and IBM PC."
+                ],
+                "worthPlaying": "Hard Hat Mack remains interesting as an early Electronic Arts title and a classic arcade platform game. Its short stages, varied objectives and fast pace still work well for a quick session."
+            }
+        },
+        id: 263,
+        folder: "hard_hat_mack",
+        scanBy: "Magisthan",
+        page: "hard_hat_mack.html",
+        featured: false,
+        title: "Hard Hat Mack",
+        system: "C64",
+        year: 1983,
+        publisher: "Electronic Arts",
+        developer: "Electronic Arts",
+        genre: ["Jump 'n' Run", "Arcade", "Plattformer"],
+        description: "Hard Hat Mack ist ein frühes Single-Screen-Jump-'n'-Run auf einer Baustelle. Als Bauarbeiter Mack erledigt der Spieler verschiedene Aufgaben, nutzt Aufzüge, Sprungbretter und Förderbänder und weicht dabei Gegnern und Gefahren aus.",
+        history: `Hard Hat Mack erschien 1983 bei Electronic Arts und gehörte zu den frühen Veröffentlichungen des jungen Publishers. Das Spiel wurde ursprünglich von Michael Abbot und Matthew Alexander entwickelt; noch im selben Jahr folgte die C64-Version.`,
+        review: `Hard Hat Mack ist einfach aufgebaut, aber überraschend fordernd. Die drei unterschiedlichen Baustellen bieten abwechslungsreiche Aufgaben und verlangen gutes Timing. Aus heutiger Sicht wirkt das Spiel schlicht, besitzt aber viel Charme und typisches Arcade-Flair der frühen 1980er.`,
+        trivia: [
+                  "Hard Hat Mack gehörte zu den ersten veröffentlichten Spielen von Electronic Arts.",
+                  "Das Spiel besteht aus drei unterschiedlichen Levels, die anschließend mit höherem Tempo wiederholt werden.",
+                  "Neben dem C64 erschienen Versionen unter anderem für Apple II, Atari 8-Bit und IBM PC."
+        ],
+        worthPlaying: `Hard Hat Mack ist vor allem als früher Electronic-Arts-Titel und klassisches Arcade-Jump-'n'-Run interessant. Die kurzen Levels, unterschiedlichen Aufgaben und das hohe Tempo eignen sich auch heute noch gut für eine schnelle Runde.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/577/hard-hat-mack/",
+        wikipedia: "https://de.wikipedia.org/wiki/Hard_Hat_Mack",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                // Hard Hat Mack behält ausdrücklich die bereits freigegebene
+                // ursprüngliche Falzgeometrie.
+                legacyFoldLayout: true,
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended-top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Kalibrierter Beschnitt des beweglichen inside_right-Blatts
+                insideRightCropLeft: 0.029
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Arcticfox ist eine futuristische 3D-Panzersimulation, in der der Spieler die Antarktis gegen außerirdische Invasoren verteidigt. Mit dem Superpanzer Arcticfox werden feindliche Fahrzeuge, Anlagen und schließlich die Hauptfestung der Aliens bekämpft.",
+                "history": "Dynamix entwickelte Arcticfox als Science-Fiction-Panzersimulation und geistigen Nachfolger von Stellar 7. Die C64-Version erschien 1986 bei Electronic Arts. Das Spiel kombinierte frühe 3D-Grafik mit taktischem Vorgehen und unterschiedlichen Waffensystemen.",
+                "review": "Arcticfox wirkt heute technisch schlicht, war auf dem C64 aber ein beeindruckender Versuch, eine frei befahrbare 3D-Landschaft mit taktischen Kämpfen zu verbinden. Die Steuerung braucht etwas Eingewöhnung, doch Atmosphäre und Spielidee funktionieren noch immer gut.",
+                "trivia": [
+                    "Arcticfox wurde von Dynamix entwickelt und von Electronic Arts veröffentlicht.",
+                    "Die Handlung spielt im Jahr 2005 in einer von Aliens besetzten Antarktis.",
+                    "Das Spiel gilt als Nachfolger von Stellar 7 und erhielt später mit Nova 9 einen weiteren Serienteil."
+                ],
+                "worthPlaying": "Arcticfox ist besonders für Fans früher 3D-Simulationen und klassischer Electronic-Arts-Titel interessant. Die Mischung aus Erkundung, Fahrzeugkampf und Science-Fiction vermittelt noch heute gut, wie ambitioniert 3D-Spiele Mitte der 1980er waren.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Arcticfox is a futuristic 3D tank simulation in which the player defends Antarctica against alien invaders. Piloting the Arcticfox super tank, the objective is to destroy enemy vehicles, installations and ultimately the aliens' main fortress.",
+                "history": "Dynamix developed Arcticfox as a science-fiction tank simulation and spiritual successor to Stellar 7. The Commodore 64 version was released by Electronic Arts in 1986. The game combined early 3D graphics with tactical movement and several weapon systems.",
+                "review": "Arcticfox looks technically simple today, but on the Commodore 64 it was an impressive attempt to combine a freely explorable 3D landscape with tactical combat. The controls take some practice, yet the atmosphere and core concept still work well.",
+                "trivia": [
+                    "Arcticfox was developed by Dynamix and published by Electronic Arts.",
+                    "The story is set in 2005 in an Antarctica occupied by alien forces.",
+                    "The game is considered a successor to Stellar 7 and was later followed by Nova 9."
+                ],
+                "worthPlaying": "Arcticfox remains particularly interesting for fans of early 3D simulations and classic Electronic Arts games. Its mix of exploration, vehicle combat and science fiction still shows how ambitious 3D games were in the mid-1980s."
+            }
+        },
+        id: 264,
+        folder: "arcticfox",
+        scanBy: "Magisthan",
+        page: "arcticfox.html",
+        featured: false,
+        title: "Arcticfox",
+        system: "C64",
+        year: 1986,
+        publisher: "Electronic Arts",
+        developer: "Dynamix",
+        genre: ["Simulation", "Action", "Science-Fiction"],
+        description: "Arcticfox ist eine futuristische 3D-Panzersimulation, in der der Spieler die Antarktis gegen außerirdische Invasoren verteidigt. Mit dem Superpanzer Arcticfox werden feindliche Fahrzeuge, Anlagen und schließlich die Hauptfestung der Aliens bekämpft.",
+        history: `Dynamix entwickelte Arcticfox als Science-Fiction-Panzersimulation und geistigen Nachfolger von Stellar 7. Die C64-Version erschien 1986 bei Electronic Arts. Das Spiel kombinierte frühe 3D-Grafik mit taktischem Vorgehen und unterschiedlichen Waffensystemen.`,
+        review: `Arcticfox wirkt heute technisch schlicht, war auf dem C64 aber ein beeindruckender Versuch, eine frei befahrbare 3D-Landschaft mit taktischen Kämpfen zu verbinden. Die Steuerung braucht etwas Eingewöhnung, doch Atmosphäre und Spielidee funktionieren noch immer gut.`,
+        trivia: [
+                  "Arcticfox wurde von Dynamix entwickelt und von Electronic Arts veröffentlicht.",
+                  "Die Handlung spielt im Jahr 2005 in einer von Aliens besetzten Antarktis.",
+                  "Das Spiel gilt als Nachfolger von Stellar 7 und erhielt später mit Nova 9 einen weiteren Serienteil."
+        ],
+        worthPlaying: `Arcticfox ist besonders für Fans früher 3D-Simulationen und klassischer Electronic-Arts-Titel interessant. Die Mischung aus Erkundung, Fahrzeugkampf und Science-Fiction vermittelt noch heute gut, wie ambitioniert 3D-Spiele Mitte der 1980er waren.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/5474/arcticfox/",
+        wikipedia: "https://de.wikipedia.org/wiki/Arcticfox",
+        gog: ""
+        },
+        boxArtists: [
+        "John Mattos"
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "flatpack",
+            spineTexture: "right"
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Age of Adventure vereint die beiden Rollenspiel-Adventures Ali Baba and the Forty Thieves und The Return of Heracles. In beiden Spielen steuert der Spieler mehrere Figuren aus der Vogelperspektive, erkundet große Spielwelten, sammelt Gegenstände und kämpft gegen zahlreiche Gegner.",
+                "history": "Electronic Arts veröffentlichte Age of Adventure als Sammlung zweier früher Spiele von Stuart Smith. Die C64-Version erschien 1987 und enthält Ali Baba and the Forty Thieves sowie The Return of Heracles in überarbeiteten Fassungen mit verbesserter Grafik und Sound.",
+                "review": "Age of Adventure wirkt heute archaisch, bietet aber erstaunlich viel Freiheit und Rollenspieltiefe. Beide Spiele verbinden Erkundung, Kämpfe und Charakterverwaltung mit einer ungewöhnlichen Mehrfiguren-Steuerung. Wer frühe Computer-Rollenspiele mag, findet hier viel historischen Reiz.",
+                "trivia": [
+                    "Die Sammlung enthält Ali Baba and the Forty Thieves und The Return of Heracles.",
+                    "Beide Spiele stammen von Stuart Smith und nutzen verwandte Spielsysteme.",
+                    "Die C64-Fassungen wurden gegenüber den ursprünglichen Versionen grafisch und akustisch überarbeitet."
+                ],
+                "worthPlaying": "Age of Adventure ist vor allem für Fans früher Rollenspiele und historischer Electronic-Arts-Veröffentlichungen interessant. Die beiden Spiele zeigen viele Ideen, die Stuart Smith später in Adventure Construction Set weiterentwickelte.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Age of Adventure combines the role-playing adventures Ali Baba and the Forty Thieves and The Return of Heracles. In both games, the player controls several characters from a top-down perspective, explores large worlds, collects items and fights numerous enemies.",
+                "history": "Electronic Arts released Age of Adventure as a collection of two earlier games by Stuart Smith. The Commodore 64 version appeared in 1987 and includes Ali Baba and the Forty Thieves and The Return of Heracles in revised versions with improved graphics and sound.",
+                "review": "Age of Adventure feels archaic today, but still offers an impressive amount of freedom and role-playing depth. Both games combine exploration, combat and character management with unusual multi-character control. Fans of early computer RPGs will find plenty of historical appeal.",
+                "trivia": [
+                    "The collection includes Ali Baba and the Forty Thieves and The Return of Heracles.",
+                    "Both games were created by Stuart Smith and use closely related game systems.",
+                    "The Commodore 64 versions feature improved graphics and sound compared with the original releases."
+                ],
+                "worthPlaying": "Age of Adventure remains especially interesting for fans of early role-playing games and historic Electronic Arts releases. The two games contain many ideas that Stuart Smith later developed further in Adventure Construction Set."
+            }
+        },
+        id: 265,
+        folder: "age_of_adventure",
+        scanBy: "Magisthan",
+        page: "age_of_adventure.html",
+        featured: false,
+        title: "Age of Adventure",
+        system: "C64",
+        year: 1987,
+        publisher: "Electronic Arts",
+        developer: "Stuart Smith",
+        genre: ["Compilation", "Rollenspiel", "Adventure"],
+        description: "Age of Adventure vereint die beiden Rollenspiel-Adventures Ali Baba and the Forty Thieves und The Return of Heracles. In beiden Spielen steuert der Spieler mehrere Figuren aus der Vogelperspektive, erkundet große Spielwelten, sammelt Gegenstände und kämpft gegen zahlreiche Gegner.",
+        history: `Electronic Arts veröffentlichte Age of Adventure als Sammlung zweier früher Spiele von Stuart Smith. Die C64-Version erschien 1987 und enthält Ali Baba and the Forty Thieves sowie The Return of Heracles in überarbeiteten Fassungen mit verbesserter Grafik und Sound.`,
+        review: `Age of Adventure wirkt heute archaisch, bietet aber erstaunlich viel Freiheit und Rollenspieltiefe. Beide Spiele verbinden Erkundung, Kämpfe und Charakterverwaltung mit einer ungewöhnlichen Mehrfiguren-Steuerung. Wer frühe Computer-Rollenspiele mag, findet hier viel historischen Reiz.`,
+        trivia: [
+                  "Die Sammlung enthält Ali Baba and the Forty Thieves und The Return of Heracles.",
+                  "Beide Spiele stammen von Stuart Smith und nutzen verwandte Spielsysteme.",
+                  "Die C64-Fassungen wurden gegenüber den ursprünglichen Versionen grafisch und akustisch überarbeitet."
+        ],
+        worthPlaying: `Age of Adventure ist vor allem für Fans früher Rollenspiele und historischer Electronic-Arts-Veröffentlichungen interessant. Die beiden Spiele zeigen viele Ideen, die Stuart Smith später in Adventure Construction Set weiterentwickelte.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/18001/age-of-adventure/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        "Triad"
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "flatpack",
+            spineTexture: "right"
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+{
+        translations: {
+            "de": {
+                "description": "Cromwell House ist ein deutschsprachiges Krimi-Textadventure. Als Scotland-Yard-Agent untersucht der Spieler den Tod von Lord Higginbottom in einer Villa bei Oxford, befragt Verdächtige, durchsucht Räume und versucht, den Täter zu überführen.",
+                "history": "Cromwell House wurde von Jürgen Römer geschrieben und mit Unterstützung von Axis Komputerkunst umgesetzt. Ariolasoft veröffentlichte das Spiel 1985 für C64 und Atari 8-Bit. Römer verzichtete bewusst weitgehend auf Grafik und setzte auf ausführliche Texte und klassische Detektivarbeit.",
+                "review": "Cromwell House lebt von seiner Krimi-Atmosphäre, den detaillierten Beschreibungen und dem trockenen Humor. Der Parser ist aus heutiger Sicht eingeschränkt und verlangt genaue Eingaben, doch als deutschsprachiges Detektiv-Adventure besitzt das Spiel weiterhin einen besonderen Reiz.",
+                "trivia": [
+                    "Die Verpackung enthielt Baupläne der Villa sowie Tatort- und Beweisfotos im Polaroid-Stil.",
+                    "Jürgen Römer programmierte das Spiel zunächst in BASIC und ließ es anschließend kompilieren.",
+                    "Auf der Verpackung heißt das Spiel Cromwell-House, im Spiel selbst Cromwell House."
+                ],
+                "worthPlaying": "Cromwell House ist besonders für Fans klassischer Textadventures und deutschsprachiger Computerspielgeschichte interessant. Die ungewöhnliche Krimi-Präsentation und das umfangreiche Begleitmaterial machen den Titel bis heute bemerkenswert.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Cromwell House is a German-language detective text adventure. As a Scotland Yard agent, the player investigates the death of Lord Higginbottom in a mansion near Oxford, questions suspects, searches rooms and tries to identify the murderer.",
+                "history": "Cromwell House was written by Jürgen Römer and produced with support from Axis Komputerkunst. Ariolasoft released the game for the Commodore 64 and Atari 8-bit in 1985. Römer deliberately relied mainly on detailed text rather than graphics and focused on classic detective work.",
+                "review": "Cromwell House stands out for its detective atmosphere, detailed descriptions and dry humour. The parser is limited by modern standards and requires precise input, but as a German-language mystery adventure it still has a distinctive appeal.",
+                "trivia": [
+                    "The package included floor plans of the mansion as well as crime-scene and evidence photographs styled like Polaroids.",
+                    "Jürgen Römer originally programmed the game in BASIC before it was compiled.",
+                    "The box uses the title Cromwell-House, while the game itself uses Cromwell House."
+                ],
+                "worthPlaying": "Cromwell House remains particularly interesting for fans of classic text adventures and German computer-game history. Its unusual detective presentation and extensive physical extras still make it noteworthy today."
+            }
+        },
+        id: 266,
+        folder: "cromwell_house",
+        scanBy: "Magisthan",
+        page: "cromwell_house.html",
+        featured: false,
+        title: "Cromwell House",
+        system: "C64",
+        year: 1985,
+        publisher: "Ariolasoft",
+        developer: "Axis Komputerkunst",
+        genre: ["Adventure", "Textadventure", "Krimi"],
+        description: "Cromwell House ist ein deutschsprachiges Krimi-Textadventure. Als Scotland-Yard-Agent untersucht der Spieler den Tod von Lord Higginbottom in einer Villa bei Oxford, befragt Verdächtige, durchsucht Räume und versucht, den Täter zu überführen.",
+        history: `Cromwell House wurde von Jürgen Römer geschrieben und mit Unterstützung von Axis Komputerkunst umgesetzt. Ariolasoft veröffentlichte das Spiel 1985 für C64 und Atari 8-Bit. Römer verzichtete bewusst weitgehend auf Grafik und setzte auf ausführliche Texte und klassische Detektivarbeit.`,
+        review: `Cromwell House lebt von seiner Krimi-Atmosphäre, den detaillierten Beschreibungen und dem trockenen Humor. Der Parser ist aus heutiger Sicht eingeschränkt und verlangt genaue Eingaben, doch als deutschsprachiges Detektiv-Adventure besitzt das Spiel weiterhin einen besonderen Reiz.`,
+        trivia: [
+                  "Die Verpackung enthielt Baupläne der Villa sowie Tatort- und Beweisfotos im Polaroid-Stil.",
+                  "Jürgen Römer programmierte das Spiel zunächst in BASIC und ließ es anschließend kompilieren.",
+                  "Auf der Verpackung heißt das Spiel Cromwell-House, im Spiel selbst Cromwell House."
+        ],
+        worthPlaying: `Cromwell House ist besonders für Fans klassischer Textadventures und deutschsprachiger Computerspielgeschichte interessant. Die ungewöhnliche Krimi-Präsentation und das umfangreiche Begleitmaterial machen den Titel bis heute bemerkenswert.`,
+        letsPlay: "",
+        links: {
+        mobygames: "",
+        wikipedia: "https://de.wikipedia.org/wiki/Cromwell_House",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 314,
+        height: 310,
+        depth: 4
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "flatpack",
+            spineTexture: "right"
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Earth Orbit Stations ist eine Wirtschafts- und Raumstationssimulation. Der Spieler finanziert, baut und erweitert private Raumstationen, betreibt Forschung, reagiert auf Marktbedürfnisse und plant Missionen zu Planeten und Monden.",
+                "history": "Karl Buiter entwickelte Earth Orbit Stations für Electronic Arts. Die C64-Version erschien 1987 und verband Raumfahrt-Simulation mit Wirtschaftsstrategie. Statt militärischer Ziele stehen Finanzierung, Forschung, Handel und langfristiger Ausbau im Mittelpunkt.",
+                "review": "Earth Orbit Stations ist trocken präsentiert, bietet aber erstaunlich viel strategische Tiefe. Der Aufbau eigener Stationen, Forschung und Marktbeobachtung greifen gut ineinander. Wer sich auf die textlastige Oberfläche einlässt, findet eine ungewöhnlich komplexe Wirtschaftssimulation.",
+                "trivia": [
+                    "Das Spiel bietet mehrere Szenarien mit unterschiedlichen Zielen und Schwierigkeitsgraden.",
+                    "Bis zu vier Spieler können gegeneinander antreten.",
+                    "Die integrierte Bibliothek enthält Informationen zu Planeten, Monden und Raumfahrttechnik."
+                ],
+                "worthPlaying": "Earth Orbit Stations ist besonders für Fans früher Wirtschaftssimulationen und Raumfahrtspiele interessant. Die Mischung aus Stationsbau, Forschung und Handel wirkt heute sperrig, ist spielerisch aber weiterhin ungewöhnlich ambitioniert.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Earth Orbit Stations is a business and space-station simulation. The player finances, builds and expands private space stations, conducts research, reacts to market demand and plans missions to planets and moons.",
+                "history": "Karl Buiter developed Earth Orbit Stations for Electronic Arts. The Commodore 64 version was released in 1987 and combined spaceflight simulation with business strategy. Rather than military objectives, the focus is on finance, research, trade and long-term expansion.",
+                "review": "Earth Orbit Stations is presented in a dry, text-heavy style, but offers surprising strategic depth. Station construction, research and market observation work well together. Players willing to learn its interface will find an unusually complex business simulation.",
+                "trivia": [
+                    "The game offers several scenarios with different objectives and difficulty levels.",
+                    "Up to four players can compete against each other.",
+                    "The built-in library contains information about planets, moons and space technology."
+                ],
+                "worthPlaying": "Earth Orbit Stations remains particularly interesting for fans of early business simulations and space games. Its mix of station building, research and trade feels demanding today, but is still remarkably ambitious."
+            }
+        },
+        id: 267,
+        folder: "earth_orbit_stations",
+        scanBy: "Magisthan",
+        page: "earth_orbit_stations.html",
+        featured: false,
+        title: "Earth Orbit Stations",
+        system: "C64",
+        year: 1987,
+        publisher: "Electronic Arts",
+        developer: "Karl Buiter",
+        genre: ["Simulation", "Wirtschaftssimulation", "Strategie", "Science-Fiction"],
+        description: "Earth Orbit Stations ist eine Wirtschafts- und Raumstationssimulation. Der Spieler finanziert, baut und erweitert private Raumstationen, betreibt Forschung, reagiert auf Marktbedürfnisse und plant Missionen zu Planeten und Monden.",
+        history: `Karl Buiter entwickelte Earth Orbit Stations für Electronic Arts. Die C64-Version erschien 1987 und verband Raumfahrt-Simulation mit Wirtschaftsstrategie. Statt militärischer Ziele stehen Finanzierung, Forschung, Handel und langfristiger Ausbau im Mittelpunkt.`,
+        review: `Earth Orbit Stations ist trocken präsentiert, bietet aber erstaunlich viel strategische Tiefe. Der Aufbau eigener Stationen, Forschung und Marktbeobachtung greifen gut ineinander. Wer sich auf die textlastige Oberfläche einlässt, findet eine ungewöhnlich komplexe Wirtschaftssimulation.`,
+        trivia: [
+                  "Das Spiel bietet mehrere Szenarien mit unterschiedlichen Zielen und Schwierigkeitsgraden.",
+                  "Bis zu vier Spieler können gegeneinander antreten.",
+                  "Die integrierte Bibliothek enthält Informationen zu Planeten, Monden und Raumfahrttechnik."
+        ],
+        worthPlaying: `Earth Orbit Stations ist besonders für Fans früher Wirtschaftssimulationen und Raumfahrtspiele interessant. Die Mischung aus Stationsbau, Forschung und Handel wirkt heute sperrig, ist spielerisch aber weiterhin ungewöhnlich ambitioniert.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/17545/earth-orbit-stations/",
+        wikipedia: "https://en.wikipedia.org/wiki/Earth_Orbit_Stations",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "flatpack",
+            spineTexture: "right"
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Patton vs. Rommel ist ein rundenbasiertes Strategiespiel über den Kampf um die Normandie 1944. Der Spieler übernimmt die alliierte oder deutsche Seite, bewegt Verbände über die Karte und versucht, wichtige Gebiete zu kontrollieren und möglichst viele Punkte zu erzielen.",
+                "history": "Chris Crawford entwarf Patton vs. Rommel ursprünglich für den Macintosh. Die C64-Version wurde von Sculptured Software umgesetzt und erschien bei Electronic Arts. Das Spiel setzt auf überschaubare Regeln, verdeckte Truppenbewegungen und einen schnellen Zugang statt auf maximale historische Detailtiefe.",
+                "review": "Patton vs. Rommel ist vergleichsweise zugänglich und verzichtet auf übermäßig komplexe Tabellen. Die einfache Darstellung täuscht über ein interessantes Stellungsspiel mit Aufklärung und verdeckten Informationen hinweg. Für Wargame-Einsteiger ist der Titel noch immer gut nachvollziehbar.",
+                "trivia": [
+                    "Das Spiel simuliert einen fiktiven direkten Schlagabtausch zwischen Patton und Rommel in der Normandie.",
+                    "Verdeckte Einheiten und Kontrollzonen erzeugen einen frühen Fog-of-War-Effekt.",
+                    "Das ursprüngliche Spieldesign stammt von Chris Crawford."
+                ],
+                "worthPlaying": "Patton vs. Rommel eignet sich besonders für Spieler, die klassische Wargames ohne übermäßige Regelkomplexität kennenlernen möchten. Die klaren Ziele und verdeckten Truppenbewegungen sorgen auch heute noch für interessante Partien.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Patton vs. Rommel is a turn-based strategy game about the battle for Normandy in 1944. The player commands either the Allied or German side, moves formations across the map and tries to control important areas while scoring as many points as possible.",
+                "history": "Chris Crawford originally designed Patton vs. Rommel for the Macintosh. The Commodore 64 version was adapted by Sculptured Software and published by Electronic Arts. The game favors accessible rules, hidden troop movement and quick play over maximum historical detail.",
+                "review": "Patton vs. Rommel is relatively approachable and avoids excessive tables and statistics. Its simple presentation hides an interesting positional game built around reconnaissance and incomplete information. It still works well as an introduction to computer wargames.",
+                "trivia": [
+                    "The game presents a fictional direct confrontation between Patton and Rommel in Normandy.",
+                    "Hidden units and zones of control create an early form of fog of war.",
+                    "The original game design was created by Chris Crawford."
+                ],
+                "worthPlaying": "Patton vs. Rommel remains a good choice for players who want to explore classic wargames without excessive rules complexity. Its clear objectives and hidden troop movements can still produce interesting matches today."
+            }
+        },
+        id: 268,
+        folder: "patton_vs_rommel",
+        scanBy: "Magisthan",
+        page: "patton_vs_rommel.html",
+        featured: false,
+        title: "Patton vs. Rommel",
+        system: "C64",
+        year: 1987,
+        publisher: "Electronic Arts",
+        developer: "Sculptured Software",
+        genre: ["Strategie", "Wargame", "Zweiter Weltkrieg"],
+        description: "Patton vs. Rommel ist ein rundenbasiertes Strategiespiel über den Kampf um die Normandie 1944. Der Spieler übernimmt die alliierte oder deutsche Seite, bewegt Verbände über die Karte und versucht, wichtige Gebiete zu kontrollieren und möglichst viele Punkte zu erzielen.",
+        history: `Chris Crawford entwarf Patton vs. Rommel ursprünglich für den Macintosh. Die C64-Version wurde von Sculptured Software umgesetzt und erschien bei Electronic Arts. Das Spiel setzt auf überschaubare Regeln, verdeckte Truppenbewegungen und einen schnellen Zugang statt auf maximale historische Detailtiefe.`,
+        review: `Patton vs. Rommel ist vergleichsweise zugänglich und verzichtet auf übermäßig komplexe Tabellen. Die einfache Darstellung täuscht über ein interessantes Stellungsspiel mit Aufklärung und verdeckten Informationen hinweg. Für Wargame-Einsteiger ist der Titel noch immer gut nachvollziehbar.`,
+        trivia: [
+                  "Das Spiel simuliert einen fiktiven direkten Schlagabtausch zwischen Patton und Rommel in der Normandie.",
+                  "Verdeckte Einheiten und Kontrollzonen erzeugen einen frühen Fog-of-War-Effekt.",
+                  "Das ursprüngliche Spieldesign stammt von Chris Crawford."
+        ],
+        worthPlaying: `Patton vs. Rommel eignet sich besonders für Spieler, die klassische Wargames ohne übermäßige Regelkomplexität kennenlernen möchten. Die klaren Ziele und verdeckten Truppenbewegungen sorgen auch heute noch für interessante Partien.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/11854/patton-vs-rommel/",
+        wikipedia: "https://en.wikipedia.org/wiki/Patton_Versus_Rommel",
+        gog: ""
+        },
+        boxArtists: [
+        "Mitchell Heinze"
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "flatpack",
+            spineTexture: "right"
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "PHM Pegasus ist eine Marine-Simulation, in der der Spieler ein bewaffnetes Tragflügelboot kommandiert. Aus der Ego-Perspektive werden Radar, Geschütze und Raketen eingesetzt, um feindliche Schiffe und andere Ziele in verschiedenen Missionen zu bekämpfen.",
+                "history": "PHM Pegasus wurde von Lucasfilm Games entwickelt und von Noah Falstein designt. Electronic Arts veröffentlichte die C64-Version 1987. Das Spiel verband eine zugängliche Echtzeit-Simulation mit taktischer Navigation, Radarüberwachung und mehreren Waffensystemen.",
+                "review": "PHM Pegasus ist heute technisch schlicht, vermittelt aber noch immer ein gutes Gefühl für schnelle Seegefechte. Radar, Navigation und Waffen greifen sinnvoll ineinander, ohne die Bedienung unnötig kompliziert zu machen. Für eine Simulation der 1980er ist der Einstieg angenehm direkt.",
+                "trivia": [
+                    "Noah Falstein war Designer und leitender Programmierer des Spiels.",
+                    "Die C64-Version wurde von Lawrence Holland und Edwin Reich programmiert.",
+                    "PHM Pegasus erhielt mit Strike Fleet einen inoffiziellen Nachfolger."
+                ],
+                "worthPlaying": "PHM Pegasus ist besonders für Fans klassischer Militär- und Fahrzeugsimulationen interessant. Die Mischung aus Navigation, Radar und direktem Kampf funktioniert trotz einfacher Grafik noch immer überraschend gut.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "PHM Pegasus is a naval simulation in which the player commands an armed hydrofoil craft. From a first-person perspective, radar, guns and missiles are used to engage enemy ships and other targets across a series of missions.",
+                "history": "PHM Pegasus was developed by Lucasfilm Games and designed by Noah Falstein. Electronic Arts released the Commodore 64 version in 1987. The game combined an accessible real-time simulation with tactical navigation, radar monitoring and several weapon systems.",
+                "review": "PHM Pegasus looks technically simple today, but still conveys the speed and tension of naval combat well. Radar, navigation and weapons work together without making the controls unnecessarily complicated. For a 1980s simulation, it remains relatively easy to approach.",
+                "trivia": [
+                    "Noah Falstein served as designer and lead programmer.",
+                    "The Commodore 64 version was programmed by Lawrence Holland and Edwin Reich.",
+                    "PHM Pegasus was followed by the unofficial sequel Strike Fleet."
+                ],
+                "worthPlaying": "PHM Pegasus remains especially interesting for fans of classic military and vehicle simulations. Its combination of navigation, radar and direct combat still works surprisingly well despite the simple graphics."
+            }
+        },
+        id: 269,
+        folder: "phm_pegasus",
+        scanBy: "Magisthan",
+        page: "phm_pegasus.html",
+        featured: false,
+        title: "PHM Pegasus",
+        system: "C64",
+        year: 1987,
+        publisher: "Electronic Arts",
+        developer: "Lucasfilm Games",
+        genre: ["Simulation", "Action", "Marine"],
+        description: "PHM Pegasus ist eine Marine-Simulation, in der der Spieler ein bewaffnetes Tragflügelboot kommandiert. Aus der Ego-Perspektive werden Radar, Geschütze und Raketen eingesetzt, um feindliche Schiffe und andere Ziele in verschiedenen Missionen zu bekämpfen.",
+        history: `PHM Pegasus wurde von Lucasfilm Games entwickelt und von Noah Falstein designt. Electronic Arts veröffentlichte die C64-Version 1987. Das Spiel verband eine zugängliche Echtzeit-Simulation mit taktischer Navigation, Radarüberwachung und mehreren Waffensystemen.`,
+        review: `PHM Pegasus ist heute technisch schlicht, vermittelt aber noch immer ein gutes Gefühl für schnelle Seegefechte. Radar, Navigation und Waffen greifen sinnvoll ineinander, ohne die Bedienung unnötig kompliziert zu machen. Für eine Simulation der 1980er ist der Einstieg angenehm direkt.`,
+        trivia: [
+                  "Noah Falstein war Designer und leitender Programmierer des Spiels.",
+                  "Die C64-Version wurde von Lawrence Holland und Edwin Reich programmiert.",
+                  "PHM Pegasus erhielt mit Strike Fleet einen inoffiziellen Nachfolger."
+        ],
+        worthPlaying: `PHM Pegasus ist besonders für Fans klassischer Militär- und Fahrzeugsimulationen interessant. Die Mischung aus Navigation, Radar und direktem Kampf funktioniert trotz einfacher Grafik noch immer überraschend gut.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/6847/phm-pegasus/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "flatpack",
+            spineTexture: "right"
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Super Boulder Dash vereint Boulder Dash und Boulder Dash II: Rockford's Revenge in einer Sammlung. Als Rockford gräbt sich der Spieler durch Höhlen, sammelt Diamanten, weicht Gegnern aus und nutzt fallende Felsen geschickt zu seinem Vorteil.",
+                "history": "Electronic Arts veröffentlichte Super Boulder Dash 1986 für den C64. Die Sammlung kombiniert die beiden ersten Boulder-Dash-Spiele von Peter Liepa und First Star Software und bot damit eine umfangreiche Zusammenstellung der frühen Abenteuer von Rockford.",
+                "review": "Super Boulder Dash verbindet Action und Denksport auf eine zeitlos funktionierende Weise. Die Höhlen werden schnell anspruchsvoll und verlangen Planung, gutes Timing und ein Verständnis der verschiedenen Spielelemente. Durch zwei komplette Spiele bietet die Sammlung besonders viel Inhalt.",
+                "trivia": [
+                    "Die Sammlung enthält Boulder Dash und Boulder Dash II: Rockford's Revenge.",
+                    "Peter Liepa war für Design und Programmierung verantwortlich.",
+                    "Das Verpackungsdesign stammt von Jamie Davison, die Cover- und Innenfotografie von Steven Unze."
+                ],
+                "worthPlaying": "Super Boulder Dash ist eine sehr gute Möglichkeit, die klassischen Boulder-Dash-Spiele auf dem C64 kennenzulernen. Das einfache Grundprinzip, die cleveren Höhlen und die Mischung aus Geschicklichkeit und Logik funktionieren auch heute noch hervorragend.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Super Boulder Dash combines Boulder Dash and Boulder Dash II: Rockford's Revenge in one collection. As Rockford, the player digs through caves, collects diamonds, avoids enemies and uses falling boulders to their advantage.",
+                "history": "Electronic Arts released Super Boulder Dash for the Commodore 64 in 1986. The collection combines the first two Boulder Dash games by Peter Liepa and First Star Software, providing a substantial compilation of Rockford's early adventures.",
+                "review": "Super Boulder Dash combines action and puzzle solving in a way that still works extremely well. The caves quickly become demanding and require planning, timing and an understanding of the different game elements. With two complete games included, the collection offers plenty of content.",
+                "trivia": [
+                    "The collection includes Boulder Dash and Boulder Dash II: Rockford's Revenge.",
+                    "Peter Liepa was responsible for design and programming.",
+                    "The package was designed by Jamie Davison, with cover and inside photography by Steven Unze."
+                ],
+                "worthPlaying": "Super Boulder Dash remains an excellent way to experience the classic Boulder Dash games on the Commodore 64. Its simple concept, clever cave designs and mix of skill and logic still work remarkably well today."
+            }
+        },
+        id: 270,
+        folder: "super_boulder_dash",
+        scanBy: "Magisthan",
+        page: "super_boulder_dash.html",
+        featured: false,
+        title: "Super Boulder Dash",
+        system: "C64",
+        year: 1986,
+        publisher: "Electronic Arts",
+        developer: "First Star Software",
+        genre: ["Action", "Puzzle", "Arcade", "Compilation"],
+        description: "Super Boulder Dash vereint Boulder Dash und Boulder Dash II: Rockford's Revenge in einer Sammlung. Als Rockford gräbt sich der Spieler durch Höhlen, sammelt Diamanten, weicht Gegnern aus und nutzt fallende Felsen geschickt zu seinem Vorteil.",
+        history: `Electronic Arts veröffentlichte Super Boulder Dash 1986 für den C64. Die Sammlung kombiniert die beiden ersten Boulder-Dash-Spiele von Peter Liepa und First Star Software und bot damit eine umfangreiche Zusammenstellung der frühen Abenteuer von Rockford.`,
+        review: `Super Boulder Dash verbindet Action und Denksport auf eine zeitlos funktionierende Weise. Die Höhlen werden schnell anspruchsvoll und verlangen Planung, gutes Timing und ein Verständnis der verschiedenen Spielelemente. Durch zwei komplette Spiele bietet die Sammlung besonders viel Inhalt.`,
+        trivia: [
+                  "Die Sammlung enthält Boulder Dash und Boulder Dash II: Rockford's Revenge.",
+                  "Peter Liepa war für Design und Programmierung verantwortlich.",
+                  "Das Verpackungsdesign stammt von Jamie Davison, die Cover- und Innenfotografie von Steven Unze."
+        ],
+        worthPlaying: `Super Boulder Dash ist eine sehr gute Möglichkeit, die klassischen Boulder-Dash-Spiele auf dem C64 kennenzulernen. Das einfache Grundprinzip, die cleveren Höhlen und die Mischung aus Geschicklichkeit und Logik funktionieren auch heute noch hervorragend.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/11789/super-boulder-dash/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        "Steven Unze"
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "flatpack",
+            spineTexture: "right"
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "One on One: Erving vs. Bird ist ein Basketballspiel, in dem Julius Erving und Larry Bird direkt gegeneinander antreten. Gespielt wird auf einen Korb mit Würfen, Blocks, Dunks und schnellen Richtungswechseln.",
+                "history": "Eric Hammond entwickelte One on One für Electronic Arts. Die C64-Version erschien 1984 und gehörte zu den frühen Sportspielen mit bekannten Profisportlern als zentrale Figuren. Das Spiel setzte auf flüssige Animationen und ein direktes Duell statt kompletter Mannschaften.",
+                "review": "One on One ist einfach zugänglich und lebt vom direkten Duell zwischen zwei klar unterschiedlichen Spielern. Timing bei Würfen, Blocks und Dunks ist entscheidend. Trotz des Alters funktioniert die Mischung aus Sportspiel und Arcade-Action noch immer erstaunlich gut.",
+                "trivia": [
+                    "Julius Erving und Larry Bird wurden als spielbare Basketballstars lizenziert.",
+                    "Besonders gelungene Aktionen werden in Zeitlupe wiederholt.",
+                    "Bei einem besonders harten Dunk kann das Backboard zerbrechen und ein Hausmeister erscheint auf dem Spielfeld."
+                ],
+                "worthPlaying": "One on One ist ein wichtiger früher Vertreter lizenzierter Sportspiele. Das direkte Duell, die klare Steuerung und kleine Details wie Zeitlupen und zerbrechende Backboards machen den Titel auch heute noch sehenswert.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "One on One: Erving vs. Bird is a basketball game in which Julius Erving and Larry Bird face each other directly. The game is played on a single basket with shooting, blocking, dunks and quick directional moves.",
+                "history": "Eric Hammond developed One on One for Electronic Arts. The Commodore 64 version was released in 1984 and became one of the early sports games built around licensed professional athletes. It focused on smooth animation and a direct duel instead of full teams.",
+                "review": "One on One is easy to approach and works because of the direct contest between two distinctive players. Timing shots, blocks and dunks is essential. Despite its age, the mix of sports simulation and arcade action still holds up surprisingly well.",
+                "trivia": [
+                    "Julius Erving and Larry Bird appeared as licensed playable basketball stars.",
+                    "Especially good plays are shown again in slow-motion replays.",
+                    "A powerful dunk can shatter the backboard, bringing an angry janitor onto the court."
+                ],
+                "worthPlaying": "One on One remains an important early example of a licensed sports game. Its direct competition, simple controls and memorable details such as slow-motion replays and breakable backboards still make it worth revisiting."
+            }
+        },
+        id: 271,
+        folder: "one_on_one_erving_vs_bird",
+        scanBy: "Magisthan",
+        page: "one_on_one_erving_vs_bird.html",
+        featured: false,
+        title: "One on One: Erving vs. Bird",
+        system: "C64",
+        year: 1984,
+        publisher: "Electronic Arts",
+        developer: "Eric Hammond",
+        genre: ["Sport", "Basketball", "Arcade"],
+        description: "One on One: Erving vs. Bird ist ein Basketballspiel, in dem Julius Erving und Larry Bird direkt gegeneinander antreten. Gespielt wird auf einen Korb mit Würfen, Blocks, Dunks und schnellen Richtungswechseln.",
+        history: `Eric Hammond entwickelte One on One für Electronic Arts. Die C64-Version erschien 1984 und gehörte zu den frühen Sportspielen mit bekannten Profisportlern als zentrale Figuren. Das Spiel setzte auf flüssige Animationen und ein direktes Duell statt kompletter Mannschaften.`,
+        review: `One on One ist einfach zugänglich und lebt vom direkten Duell zwischen zwei klar unterschiedlichen Spielern. Timing bei Würfen, Blocks und Dunks ist entscheidend. Trotz des Alters funktioniert die Mischung aus Sportspiel und Arcade-Action noch immer erstaunlich gut.`,
+        trivia: [
+                  "Julius Erving und Larry Bird wurden als spielbare Basketballstars lizenziert.",
+                  "Besonders gelungene Aktionen werden in Zeitlupe wiederholt.",
+                  "Bei einem besonders harten Dunk kann das Backboard zerbrechen und ein Hausmeister erscheint auf dem Spielfeld."
+        ],
+        worthPlaying: `One on One ist ein wichtiger früher Vertreter lizenzierter Sportspiele. Das direkte Duell, die klare Steuerung und kleine Details wie Zeitlupen und zerbrechende Backboards machen den Titel auch heute noch sehenswert.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/488/one-on-one/",
+        wikipedia: "https://de.wikipedia.org/wiki/One_on_One:_Dr._J_vs._Larry_Bird",
+        gog: ""
+        },
+        boxArtists: [
+        "Norman Seeff"
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended-top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Kalibrierter Beschnitt des beweglichen inside_right-Blatts
+                insideRightCropLeft: 0.029,
+                insideRightTextureCropLeft: 0.038
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Music Construction Set ist ein Musikprogramm, mit dem Noten direkt auf ein virtuelles Notenblatt gesetzt und anschließend abgespielt werden können. Stücke lassen sich bearbeiten, speichern, transponieren und in Tempo, Lautstärke und Klang anpassen.",
+                "history": "Will Harvey entwickelte das ursprüngliche Konzept von Music Construction Set, Electronic Arts veröffentlichte die C64-Version 1984. Das Programm setzte früh auf eine grafische, symbolbasierte Bedienung und machte Musikkomposition auf Heimcomputern vergleichsweise zugänglich.",
+                "review": "Music Construction Set ist weniger Spiel als kreatives Werkzeug. Die Bedienung wirkt heute einfach, war für die Zeit aber ausgesprochen intuitiv. Besonders auf dem C64 zeigt das Programm schön, wie ernst Heimcomputer bereits Mitte der 1980er als Musikwerkzeuge genommen wurden.",
+                "trivia": [
+                    "Das ursprüngliche Konzept stammt von Will Harvey.",
+                    "Auf dem C64 werden drei Stimmen, acht Instrumente und mehrere Soundeffekte unterstützt.",
+                    "Zum Funktionsumfang gehören Cut-and-Paste, Transponieren sowie Tempo- und Lautstärkeregelung."
+                ],
+                "worthPlaying": "Music Construction Set ist vor allem für Fans früher Kreativsoftware und Computermusik interessant. Als historisches Musikwerkzeug zeigt es sehr anschaulich, wie grafische Benutzerführung und digitale Komposition schon 1984 zusammengeführt wurden.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Music Construction Set is a music program that lets users place notes directly onto a virtual staff and play the result back. Compositions can be edited, saved, transposed and adjusted for tempo, volume and sound.",
+                "history": "Will Harvey created the original concept for Music Construction Set, and Electronic Arts released the Commodore 64 version in 1984. The program used an early graphical, icon-based interface that made music composition comparatively accessible on home computers.",
+                "review": "Music Construction Set is more a creative tool than a traditional game. Its interface feels simple today, but was remarkably intuitive for its time. On the Commodore 64 in particular, it demonstrates how seriously home computers were already being used as music tools in the mid-1980s.",
+                "trivia": [
+                    "The original concept was created by Will Harvey.",
+                    "The Commodore 64 version supports three voices, eight instruments and several sound effects.",
+                    "Features include cut and paste, transposition, and tempo and volume controls."
+                ],
+                "worthPlaying": "Music Construction Set remains especially interesting for fans of early creative software and computer music. As a historical music tool, it clearly shows how graphical interfaces and digital composition were already being combined in 1984."
+            }
+        },
+        id: 272,
+        folder: "music_construction_set",
+        scanBy: "Magisthan",
+        page: "music_construction_set.html",
+        featured: false,
+        title: "Music Construction Set",
+        system: "C64",
+        year: 1984,
+        publisher: "Electronic Arts",
+        developer: "Will Harvey",
+        genre: ["Musik", "Kreativsoftware", "Educational"],
+        description: "Music Construction Set ist ein Musikprogramm, mit dem Noten direkt auf ein virtuelles Notenblatt gesetzt und anschließend abgespielt werden können. Stücke lassen sich bearbeiten, speichern, transponieren und in Tempo, Lautstärke und Klang anpassen.",
+        history: `Will Harvey entwickelte das ursprüngliche Konzept von Music Construction Set, Electronic Arts veröffentlichte die C64-Version 1984. Das Programm setzte früh auf eine grafische, symbolbasierte Bedienung und machte Musikkomposition auf Heimcomputern vergleichsweise zugänglich.`,
+        review: `Music Construction Set ist weniger Spiel als kreatives Werkzeug. Die Bedienung wirkt heute einfach, war für die Zeit aber ausgesprochen intuitiv. Besonders auf dem C64 zeigt das Programm schön, wie ernst Heimcomputer bereits Mitte der 1980er als Musikwerkzeuge genommen wurden.`,
+        trivia: [
+                  "Das ursprüngliche Konzept stammt von Will Harvey.",
+                  "Auf dem C64 werden drei Stimmen, acht Instrumente und mehrere Soundeffekte unterstützt.",
+                  "Zum Funktionsumfang gehören Cut-and-Paste, Transponieren sowie Tempo- und Lautstärkeregelung."
+        ],
+        worthPlaying: `Music Construction Set ist vor allem für Fans früher Kreativsoftware und Computermusik interessant. Als historisches Musikwerkzeug zeigt es sehr anschaulich, wie grafische Benutzerführung und digitale Komposition schon 1984 zusammengeführt wurden.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/151/will-harveys-music-construction-set/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended_top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Kalibrierter Beschnitt des beweglichen inside_right-Blatts
+                insideRightCropLeft: 0.029
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Bill Budge Pinball Construction Set ist ein Baukasten für eigene virtuelle Flipperautomaten. Der Spieler platziert Flipper, Bumper, Ziele und andere Elemente frei auf dem Spielfeld und kann die fertigen Tische anschließend direkt ausprobieren.",
+                "history": "Bill Budge entwickelte Pinball Construction Set ursprünglich für den Apple II. Electronic Arts veröffentlichte die C64-Version 1983. Das Programm wurde zu einem frühen Klassiker der Construction-Set-Idee und machte das Erstellen eigener Spielinhalte ungewöhnlich zugänglich.",
+                "review": "Pinball Construction Set ist weniger ein fertiges Spiel als ein kreativer Werkzeugkasten. Die Bedienung ist einfach, die Möglichkeiten erstaunlich flexibel und selbst gebaute Tische lassen sich sofort testen. Gerade diese Freiheit macht das Programm bis heute interessant.",
+                "trivia": [
+                    "Bill Budge entwarf und programmierte das ursprüngliche Pinball Construction Set.",
+                    "Die C64-Konvertierung wird Olaf Lubeck zugeschrieben.",
+                    "Selbst erstellte Flipper konnten gespeichert und mit anderen Spielern ausgetauscht werden."
+                ],
+                "worthPlaying": "Pinball Construction Set ist ein wichtiger Meilenstein früher Kreativ- und Editorsoftware. Wer sich für User Generated Content und die Geschichte von Baukasten-Spielen interessiert, findet hier einen besonders einflussreichen Vertreter.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Bill Budge Pinball Construction Set is a toolkit for creating custom virtual pinball tables. Players can freely place flippers, bumpers, targets and other elements on the playfield and immediately test the finished table.",
+                "history": "Bill Budge originally developed Pinball Construction Set for the Apple II. Electronic Arts released the Commodore 64 version in 1983. The program became an early classic of the construction-set concept and made user-created game content unusually accessible.",
+                "review": "Pinball Construction Set is less a finished game than a creative toolkit. The controls are straightforward, the possibilities are surprisingly flexible, and custom tables can be tested immediately. That freedom is what still makes the program interesting today.",
+                "trivia": [
+                    "Bill Budge designed and programmed the original Pinball Construction Set.",
+                    "The Commodore 64 conversion is credited to Olaf Lubeck.",
+                    "Custom pinball tables could be saved and shared with other players."
+                ],
+                "worthPlaying": "Pinball Construction Set is an important milestone in the history of creative and editor software. Anyone interested in user-generated content and construction-set games will find an especially influential early example here."
+            }
+        },
+        id: 273,
+        folder: "bill_budge_pinball_construction_set",
+        scanBy: "Magisthan",
+        page: "bill_budge_pinball_construction_set.html",
+        featured: false,
+        title: "Bill Budge Pinball Construction Set",
+        system: "C64",
+        year: 1983,
+        publisher: "Electronic Arts",
+        developer: "Bill Budge",
+        genre: ["Pinball", "Construction Set", "Kreativsoftware"],
+        description: "Bill Budge Pinball Construction Set ist ein Baukasten für eigene virtuelle Flipperautomaten. Der Spieler platziert Flipper, Bumper, Ziele und andere Elemente frei auf dem Spielfeld und kann die fertigen Tische anschließend direkt ausprobieren.",
+        history: `Bill Budge entwickelte Pinball Construction Set ursprünglich für den Apple II. Electronic Arts veröffentlichte die C64-Version 1983. Das Programm wurde zu einem frühen Klassiker der Construction-Set-Idee und machte das Erstellen eigener Spielinhalte ungewöhnlich zugänglich.`,
+        review: `Pinball Construction Set ist weniger ein fertiges Spiel als ein kreativer Werkzeugkasten. Die Bedienung ist einfach, die Möglichkeiten erstaunlich flexibel und selbst gebaute Tische lassen sich sofort testen. Gerade diese Freiheit macht das Programm bis heute interessant.`,
+        trivia: [
+                  "Bill Budge entwarf und programmierte das ursprüngliche Pinball Construction Set.",
+                  "Die C64-Konvertierung wird Olaf Lubeck zugeschrieben.",
+                  "Selbst erstellte Flipper konnten gespeichert und mit anderen Spielern ausgetauscht werden."
+        ],
+        worthPlaying: `Pinball Construction Set ist ein wichtiger Meilenstein früher Kreativ- und Editorsoftware. Wer sich für User Generated Content und die Geschichte von Baukasten-Spielen interessiert, findet hier einen besonders einflussreichen Vertreter.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/255/pinball-construction-set/",
+        wikipedia: "https://de.wikipedia.org/wiki/Pinball_Construction_Set",
+        gog: ""
+        },
+        boxArtists: [
+        "Steinhilber, Deutsch and Gard"
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended-top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Kalibrierter Beschnitt des beweglichen inside_right-Blatts
+                insideRightCropLeft: 0.029,
+                insideRightTextureCropLeft: 0.063
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "M.U.L.E. ist eine Wirtschafts- und Strategiesimulation für bis zu vier Spieler. Auf dem Planeten Irata kaufen die Teilnehmer Land, setzen M.U.L.E.-Arbeitsgeräte ein und produzieren Nahrung, Energie, Erz und Crystite.",
+                "history": "M.U.L.E. wurde von Ozark Softscape entwickelt und 1983 von Electronic Arts veröffentlicht. Das Spiel verbindet Aufbau, Handel und direkte Konkurrenz mit einer dynamischen Angebots- und Nachfragewirtschaft und wurde zu einem der bekanntesten Mehrspieler-Titel seiner Zeit.",
+                "review": "M.U.L.E. wirkt grafisch schlicht, besitzt aber ein erstaunlich modernes Wirtschaftssystem. Besonders im Mehrspielermodus entstehen ständig neue Allianzen, Konkurrenzsituationen und Preiskämpfe. Die Mischung aus Kooperation und Eigennutz funktioniert bis heute hervorragend.",
+                "trivia": [
+                    "Der Planet Irata heißt rückwärts gelesen Atari.",
+                    "Bis zu vier Spieler können an einer Partie teilnehmen.",
+                    "Lou Beach gestaltete die Verpackungsillustration."
+                ],
+                "worthPlaying": "M.U.L.E. ist auch heute noch ein hervorragendes Beispiel für zugängliche Wirtschaftssimulation mit starkem Mehrspielerfokus. Das einfache Regelwerk erzeugt überraschend komplexe Entscheidungen und macht jede Partie anders.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "M.U.L.E. is an economic strategy game for up to four players. On the planet Irata, players acquire land, deploy M.U.L.E. work units and produce food, energy, ore and Crystite.",
+                "history": "M.U.L.E. was developed by Ozark Softscape and published by Electronic Arts in 1983. It combines development, trading and direct competition with a dynamic supply-and-demand economy and became one of the best-known multiplayer computer games of its era.",
+                "review": "M.U.L.E. looks visually simple, but its economic system still feels remarkably modern. Multiplayer sessions constantly create new alliances, rivalries and price battles. The balance between cooperation and self-interest remains highly effective.",
+                "trivia": [
+                    "The planet Irata is Atari spelled backwards.",
+                    "Up to four players can take part in a game.",
+                    "Lou Beach created the package artwork."
+                ],
+                "worthPlaying": "M.U.L.E. remains an excellent example of an accessible economic simulation built around multiplayer interaction. Its simple rules create surprisingly complex decisions and make every session play differently."
+            }
+        },
+        id: 274,
+        folder: "mule",
+        scanBy: "Magisthan",
+        page: "mule.html",
+        featured: false,
+        title: "M.U.L.E.",
+        system: "C64",
+        year: 1983,
+        publisher: "Electronic Arts",
+        developer: "Ozark Softscape",
+        genre: ["Strategie", "Wirtschaftssimulation", "Science-Fiction", "Multiplayer"],
+        description: "M.U.L.E. ist eine Wirtschafts- und Strategiesimulation für bis zu vier Spieler. Auf dem Planeten Irata kaufen die Teilnehmer Land, setzen M.U.L.E.-Arbeitsgeräte ein und produzieren Nahrung, Energie, Erz und Crystite.",
+        history: `M.U.L.E. wurde von Ozark Softscape entwickelt und 1983 von Electronic Arts veröffentlicht. Das Spiel verbindet Aufbau, Handel und direkte Konkurrenz mit einer dynamischen Angebots- und Nachfragewirtschaft und wurde zu einem der bekanntesten Mehrspieler-Titel seiner Zeit.`,
+        review: `M.U.L.E. wirkt grafisch schlicht, besitzt aber ein erstaunlich modernes Wirtschaftssystem. Besonders im Mehrspielermodus entstehen ständig neue Allianzen, Konkurrenzsituationen und Preiskämpfe. Die Mischung aus Kooperation und Eigennutz funktioniert bis heute hervorragend.`,
+        trivia: [
+                  "Der Planet Irata heißt rückwärts gelesen Atari.",
+                  "Bis zu vier Spieler können an einer Partie teilnehmen.",
+                  "Lou Beach gestaltete die Verpackungsillustration."
+        ],
+        worthPlaying: `M.U.L.E. ist auch heute noch ein hervorragendes Beispiel für zugängliche Wirtschaftssimulation mit starkem Mehrspielerfokus. Das einfache Regelwerk erzeugt überraschend komplexe Entscheidungen und macht jede Partie anders.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/9752/mule/",
+        wikipedia: "https://de.wikipedia.org/wiki/M.U.L.E.",
+        gog: ""
+        },
+        boxArtists: [
+        "Lou Beach"
+    ],
+        rating: 5,
+        stars: 5,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended-top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Physische Aufteilung zwischen Falz und inside_right.
+                // Dieser Wert verändert die Geometrie.
+                insideRightCropLeft: 0.029,
+
+                // Ausschließlich visueller Beschnitt des eingescannten
+                // linken Randes von inside_right.
+                // Dieser Wert verändert nicht die Geometrie.
+                insideRightTextureCropLeft: 0.035
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "The Bard's Tale III: Thief of Fate ist ein klassisches Fantasy-Rollenspiel aus der Ego-Perspektive. Die Heldengruppe reist durch verschiedene Dimensionen, kämpft rundenbasiert gegen Monster und entwickelt ihre Charaktere mit neuen Klassen und Zaubern weiter.",
+                "history": "Interplay Productions entwickelte The Bard's Tale III, Electronic Arts veröffentlichte die C64-Version 1988. Der dritte Teil erweiterte die Reihe um Automapping, Dimensionsreisen und neue Charakterklassen und führte die Geschichte der Vorgänger fort.",
+                "review": "The Bard's Tale III ist anspruchsvoll, umfangreich und deutlich komfortabler als seine Vorgänger. Automapping und neue Klassen erleichtern den Einstieg, während Kämpfe und Charakterentwicklung weiterhin viel Planung verlangen. Für Fans klassischer Computer-Rollenspiele bleibt der Titel sehr reizvoll.",
+                "trivia": [
+                    "Die C64-Version erschien 1988 bei Electronic Arts.",
+                    "Rebecca Ann Heineman war für die Programmierung verantwortlich.",
+                    "Das Front-Cover-Artwork stammt von Randy Berrett."
+                ],
+                "worthPlaying": "The Bard's Tale III ist einer der stärksten Teile der klassischen Trilogie. Die Kombination aus Dungeon-Erkundung, Gruppenentwicklung und Dimensionsreisen funktioniert auch heute noch gut, wenn man sich auf das hohe Anspruchsniveau einlässt.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "The Bard's Tale III: Thief of Fate is a classic first-person fantasy role-playing game. The party travels through different dimensions, fights monsters in turn-based combat and develops its characters with new classes and spells.",
+                "history": "Interplay Productions developed The Bard's Tale III, and Electronic Arts released the Commodore 64 version in 1988. The third game expanded the series with automapping, dimensional travel and new character classes while continuing the story of its predecessors.",
+                "review": "The Bard's Tale III is demanding, extensive and considerably more convenient than the earlier games. Automapping and new classes improve accessibility, while combat and character development still require careful planning. It remains highly rewarding for fans of classic computer RPGs.",
+                "trivia": [
+                    "The Commodore 64 version was released by Electronic Arts in 1988.",
+                    "Rebecca Ann Heineman handled the programming.",
+                    "The front cover artwork was created by Randy Berrett."
+                ],
+                "worthPlaying": "The Bard's Tale III is one of the strongest entries in the original trilogy. Its combination of dungeon exploration, party development and dimensional travel still works well for players comfortable with its high level of difficulty."
+            }
+        },
+        id: 275,
+        folder: "the_bards_tale_3_thief_of_fate",
+        scanBy: "Magisthan",
+        page: "the_bards_tale_3_thief_of_fate.html",
+        featured: false,
+        title: "The Bard's Tale III: Thief of Fate",
+        system: "C64",
+        year: 1988,
+        publisher: "Electronic Arts",
+        developer: "Interplay Productions",
+        genre: ["Rollenspiel", "Dungeon Crawler", "Fantasy"],
+        description: "The Bard's Tale III: Thief of Fate ist ein klassisches Fantasy-Rollenspiel aus der Ego-Perspektive. Die Heldengruppe reist durch verschiedene Dimensionen, kämpft rundenbasiert gegen Monster und entwickelt ihre Charaktere mit neuen Klassen und Zaubern weiter.",
+        history: `Interplay Productions entwickelte The Bard's Tale III, Electronic Arts veröffentlichte die C64-Version 1988. Der dritte Teil erweiterte die Reihe um Automapping, Dimensionsreisen und neue Charakterklassen und führte die Geschichte der Vorgänger fort.`,
+        review: `The Bard's Tale III ist anspruchsvoll, umfangreich und deutlich komfortabler als seine Vorgänger. Automapping und neue Klassen erleichtern den Einstieg, während Kämpfe und Charakterentwicklung weiterhin viel Planung verlangen. Für Fans klassischer Computer-Rollenspiele bleibt der Titel sehr reizvoll.`,
+        trivia: [
+                  "Die C64-Version erschien 1988 bei Electronic Arts.",
+                  "Rebecca Ann Heineman war für die Programmierung verantwortlich.",
+                  "Das Front-Cover-Artwork stammt von Randy Berrett."
+        ],
+        worthPlaying: `The Bard's Tale III ist einer der stärksten Teile der klassischen Trilogie. Die Kombination aus Dungeon-Erkundung, Gruppenentwicklung und Dimensionsreisen funktioniert auch heute noch gut, wenn man sich auf das hohe Anspruchsniveau einlässt.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/2509/the-bards-tale-iii-thief-of-fate/",
+        wikipedia: "https://en.wikipedia.org/wiki/The_Bard%27s_Tale_III:_Thief_of_Fate",
+        gog: ""
+        },
+        boxArtists: [
+        "Randy Berrett"
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended-top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Physische Aufteilung zwischen Falz und inside_right.
+                // Dieser Wert verändert die Geometrie.
+                insideRightCropLeft: 0.035,
+
+                // Ausschließlich visueller Beschnitt des eingescannten
+                // linken Randes von inside_right.
+                // Dieser Wert verändert nicht die Geometrie.
+                insideRightTextureCropLeft: 0.055,
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Starflight verbindet Weltraumerkundung, Handel, Rollenspiel und taktische Kämpfe in einem großen Science-Fiction-Universum. Der Spieler stellt eine Crew zusammen, rüstet sein Schiff aus und erkundet hunderte Sternensysteme und Planeten.",
+                "history": "Starflight wurde von Binary Systems entwickelt und 1989 von Electronic Arts für den C64 veröffentlicht. Die Umsetzung behielt das offene Spielprinzip des Originals bei und kombinierte freie Erkundung mit Rohstoffsuche, Diplomatie und einer übergeordneten Handlung.",
+                "review": "Starflight ist umfangreich, offen und für seine Zeit erstaunlich ambitioniert. Die Mischung aus Entdeckung, Handel und Crew-Management erzeugt ein starkes Gefühl von Freiheit. Die C64-Version verlangt Geduld, belohnt sie aber mit ungewöhnlich viel spielerischer Tiefe.",
+                "trivia": [
+                    "Die C64-Version erschien 1989 bei Electronic Arts.",
+                    "Alec Kercso war für Programmierung und Redesign der C64-Fassung verantwortlich.",
+                    "Die Verpackungsillustration stammt von Alan Okamoto."
+                ],
+                "worthPlaying": "Starflight ist ein wichtiger Vorläufer moderner Open-World-Weltraumspiele. Wer Erkundung, Handel und Science-Fiction-Rollenspiele mag, findet hier trotz des Alters noch immer ein bemerkenswert freies Spielerlebnis.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Starflight combines space exploration, trading, role-playing and tactical combat in a large science-fiction universe. The player assembles a crew, equips a starship and explores hundreds of star systems and planets.",
+                "history": "Starflight was developed by Binary Systems and released for the Commodore 64 by Electronic Arts in 1989. The conversion retained the open-ended structure of the original, combining free exploration with resource gathering, diplomacy and an overarching story.",
+                "review": "Starflight is expansive, open-ended and remarkably ambitious for its time. Its mix of exploration, trading and crew management creates a strong sense of freedom. The Commodore 64 version requires patience, but rewards it with unusual depth.",
+                "trivia": [
+                    "The Commodore 64 version was released by Electronic Arts in 1989.",
+                    "Alec Kercso handled programming and redesign for the Commodore 64 version.",
+                    "The package illustration was created by Alan Okamoto."
+                ],
+                "worthPlaying": "Starflight remains an important predecessor to modern open-world space games. Players who enjoy exploration, trading and science-fiction role-playing can still find a remarkably free-form experience here."
+            }
+        },
+        id: 276,
+        folder: "starflight",
+        scanBy: "Magisthan",
+        page: "starflight.html",
+        featured: false,
+        title: "Starflight",
+        system: "C64",
+        year: 1989,
+        publisher: "Electronic Arts",
+        developer: "Binary Systems",
+        genre: ["Rollenspiel", "Weltraumsimulation", "Strategie", "Science-Fiction"],
+        description: "Starflight verbindet Weltraumerkundung, Handel, Rollenspiel und taktische Kämpfe in einem großen Science-Fiction-Universum. Der Spieler stellt eine Crew zusammen, rüstet sein Schiff aus und erkundet hunderte Sternensysteme und Planeten.",
+        history: `Starflight wurde von Binary Systems entwickelt und 1989 von Electronic Arts für den C64 veröffentlicht. Die Umsetzung behielt das offene Spielprinzip des Originals bei und kombinierte freie Erkundung mit Rohstoffsuche, Diplomatie und einer übergeordneten Handlung.`,
+        review: `Starflight ist umfangreich, offen und für seine Zeit erstaunlich ambitioniert. Die Mischung aus Entdeckung, Handel und Crew-Management erzeugt ein starkes Gefühl von Freiheit. Die C64-Version verlangt Geduld, belohnt sie aber mit ungewöhnlich viel spielerischer Tiefe.`,
+        trivia: [
+                  "Die C64-Version erschien 1989 bei Electronic Arts.",
+                  "Alec Kercso war für Programmierung und Redesign der C64-Fassung verantwortlich.",
+                  "Die Verpackungsillustration stammt von Alan Okamoto."
+        ],
+        worthPlaying: `Starflight ist ein wichtiger Vorläufer moderner Open-World-Weltraumspiele. Wer Erkundung, Handel und Science-Fiction-Rollenspiele mag, findet hier trotz des Alters noch immer ein bemerkenswert freies Spielerlebnis.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/115/starflight/",
+        wikipedia: "https://en.wikipedia.org/wiki/Starflight",
+        gog: ""
+        },
+        boxArtists: [
+        "Alan Okamoto"
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended-top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Physische Aufteilung zwischen Falz und inside_right.
+                // Dieser Wert verändert die Geometrie.
+                insideRightCropLeft: 0.029,
+
+                // Ausschließlich visueller Beschnitt des eingescannten
+                // linken Randes von inside_right.
+                // Dieser Wert verändert nicht die Geometrie.
+                insideRightTextureCropLeft: 0.060
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Axis Assassin ist ein schneller Science-Fiction-Shooter, in dem der Spieler über gitterartige Spielfelder fliegt und die Armee des Master Arachnid bekämpft. Laserfeuer, Ausweichmanöver und der gezielte Einsatz einer Pulse Bomb bestimmen das Spielgeschehen.",
+                "history": "Axis Assassin wurde von John Field entwickelt und 1983 von Electronic Arts veröffentlicht. Die C64-Version erschien im selben Jahr und gehörte zu den frühen Titeln des jungen Publishers. Spielerisch erinnert das Konzept deutlich an Tempest.",
+                "review": "Axis Assassin ist simpel aufgebaut, aber schnell und fordernd. Die abstrakten Spielfelder und das hohe Tempo sorgen für typisches Arcade-Feeling. Heute wirkt das Spiel technisch schlicht, besitzt aber noch immer einen eigenständigen Reiz.",
+                "trivia": [
+                    "Axis Assassin gehörte zu den frühen Veröffentlichungen von Electronic Arts.",
+                    "Das Spieldesign stammt von John Field.",
+                    "Rick Strand war für das Package Design verantwortlich."
+                ],
+                "worthPlaying": "Axis Assassin ist vor allem als frühes Electronic-Arts-Spiel und ungewöhnlicher Tempest-Verwandter interessant. Wer klassische Arcade-Shooter mag, bekommt hier ein kurzes, schnelles und historisch spannendes Spiel.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Axis Assassin is a fast science-fiction shooter in which the player moves across grid-like playfields and fights the army of the Master Arachnid. Laser fire, evasive movement and the careful use of a Pulse Bomb define the action.",
+                "history": "Axis Assassin was developed by John Field and published by Electronic Arts in 1983. The Commodore 64 version appeared the same year and was among the young publisher's early releases. Its basic concept is clearly reminiscent of Tempest.",
+                "review": "Axis Assassin is simple in structure but fast and demanding. Its abstract playfields and high speed create a strong arcade feel. It looks technically basic today, but still has a distinctive character.",
+                "trivia": [
+                    "Axis Assassin was one of Electronic Arts' early releases.",
+                    "The game was designed by John Field.",
+                    "Rick Strand was responsible for the package design."
+                ],
+                "worthPlaying": "Axis Assassin is especially interesting as an early Electronic Arts title and an unusual relative of Tempest. Fans of classic arcade shooters will find a short, fast and historically notable game."
+            }
+        },
+        id: 277,
+        folder: "axis_assassin",
+        scanBy: "Magisthan",
+        page: "axis_assassin.html",
+        featured: false,
+        title: "Axis Assassin",
+        system: "C64",
+        year: 1983,
+        publisher: "Electronic Arts",
+        developer: "John Field",
+        genre: ["Action", "Shooter", "Arcade", "Science-Fiction"],
+        description: "Axis Assassin ist ein schneller Science-Fiction-Shooter, in dem der Spieler über gitterartige Spielfelder fliegt und die Armee des Master Arachnid bekämpft. Laserfeuer, Ausweichmanöver und der gezielte Einsatz einer Pulse Bomb bestimmen das Spielgeschehen.",
+        history: `Axis Assassin wurde von John Field entwickelt und 1983 von Electronic Arts veröffentlicht. Die C64-Version erschien im selben Jahr und gehörte zu den frühen Titeln des jungen Publishers. Spielerisch erinnert das Konzept deutlich an Tempest.`,
+        review: `Axis Assassin ist simpel aufgebaut, aber schnell und fordernd. Die abstrakten Spielfelder und das hohe Tempo sorgen für typisches Arcade-Feeling. Heute wirkt das Spiel technisch schlicht, besitzt aber noch immer einen eigenständigen Reiz.`,
+        trivia: [
+                  "Axis Assassin gehörte zu den frühen Veröffentlichungen von Electronic Arts.",
+                  "Das Spieldesign stammt von John Field.",
+                  "Rick Strand war für das Package Design verantwortlich."
+        ],
+        worthPlaying: `Axis Assassin ist vor allem als frühes Electronic-Arts-Spiel und ungewöhnlicher Tempest-Verwandter interessant. Wer klassische Arcade-Shooter mag, bekommt hier ein kurzes, schnelles und historisch spannendes Spiel.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/27032/axis-assassin/",
+        wikipedia: "https://en.wikipedia.org/wiki/Axis_Assassin",
+        gog: ""
+        },
+        boxArtists: [
+        "California Film"
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended-top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Physische Aufteilung zwischen Falz und inside_right.
+                // Dieser Wert verändert die Geometrie.
+                insideRightCropLeft: 0.029,
+
+                // Ausschließlich visueller Beschnitt des eingescannten
+                // linken Randes von inside_right.
+                // Dieser Wert verändert nicht die Geometrie.
+                insideRightTextureCropLeft: 0.055
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "The Standing Stones ist ein Fantasy-Dungeon-Crawler aus der Ego-Perspektive. Der Spieler erkundet ein mehrstöckiges Labyrinth, kämpft gegen Monster und sucht nach dem Heiligen Gral und Excalibur.",
+                "history": "The Standing Stones wurde von Peter Schmuckal und Dan Sommers entwickelt und 1984 für den C64 veröffentlicht. Electronic Arts brachte das Spiel in den USA heraus, während Ariolasoft die europäische Veröffentlichung übernahm.",
+                "review": "The Standing Stones ist heute deutlich sperriger als moderne Rollenspiele, besitzt aber einen eigenwilligen Charme. Die einfache 3D-Darstellung, Zufallswerte und 15 Dungeon-Ebenen vermitteln ein sehr frühes Dungeon-Crawler-Gefühl.",
+                "trivia": [
+                    "Die C64-Version erschien 1984.",
+                    "Das Spiel wurde von Peter Schmuckal und Dan Sommers entwickelt.",
+                    "Die Handlung greift Motive um Merlin, Lancelot, Excalibur und den Heiligen Gral auf."
+                ],
+                "worthPlaying": "The Standing Stones ist vor allem für Fans früher Computer-Rollenspiele interessant. Es zeigt anschaulich, wie Dungeon-Erkundung und einfache RPG-Systeme auf dem C64 in der frühen Phase des Genres umgesetzt wurden.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "The Standing Stones is a first-person fantasy dungeon crawler. The player explores a multi-level maze, fights monsters and searches for the Holy Grail and Excalibur.",
+                "history": "The Standing Stones was developed by Peter Schmuckal and Dan Sommers and released for the Commodore 64 in 1984. Electronic Arts published the game in the United States, while Ariolasoft handled the European release.",
+                "review": "The Standing Stones feels considerably rougher than modern role-playing games, but it has a distinctive charm. Its simple 3D presentation, randomized character values and 15 dungeon levels create a very early dungeon-crawling experience.",
+                "trivia": [
+                    "The Commodore 64 version was released in 1984.",
+                    "The game was developed by Peter Schmuckal and Dan Sommers.",
+                    "Its story draws on Merlin, Lancelot, Excalibur and the Holy Grail."
+                ],
+                "worthPlaying": "The Standing Stones is mainly interesting for fans of early computer role-playing games. It clearly shows how dungeon exploration and basic RPG systems were implemented on the Commodore 64 during the genre's formative years."
+            }
+        },
+        id: 278,
+        folder: "the_standing_stones",
+        scanBy: "Magisthan",
+        page: "the_standing_stones.html",
+        featured: false,
+        title: "The Standing Stones",
+        system: "C64",
+        year: 1984,
+        publisher: "Electronic Arts",
+        developer: "Peter Schmuckal, Dan Sommers",
+        genre: ["Rollenspiel", "Dungeon Crawler", "Fantasy", "Adventure"],
+        description: "The Standing Stones ist ein Fantasy-Dungeon-Crawler aus der Ego-Perspektive. Der Spieler erkundet ein mehrstöckiges Labyrinth, kämpft gegen Monster und sucht nach dem Heiligen Gral und Excalibur.",
+        history: `The Standing Stones wurde von Peter Schmuckal und Dan Sommers entwickelt und 1984 für den C64 veröffentlicht. Electronic Arts brachte das Spiel in den USA heraus, während Ariolasoft die europäische Veröffentlichung übernahm.`,
+        review: `The Standing Stones ist heute deutlich sperriger als moderne Rollenspiele, besitzt aber einen eigenwilligen Charme. Die einfache 3D-Darstellung, Zufallswerte und 15 Dungeon-Ebenen vermitteln ein sehr frühes Dungeon-Crawler-Gefühl.`,
+        trivia: [
+                  "Die C64-Version erschien 1984.",
+                  "Das Spiel wurde von Peter Schmuckal und Dan Sommers entwickelt.",
+                  "Die Handlung greift Motive um Merlin, Lancelot, Excalibur und den Heiligen Gral auf."
+        ],
+        worthPlaying: `The Standing Stones ist vor allem für Fans früher Computer-Rollenspiele interessant. Es zeigt anschaulich, wie Dungeon-Erkundung und einfache RPG-Systeme auf dem C64 in der frühen Phase des Genres umgesetzt wurden.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/63817/the-standing-stones/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended-top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Physische Aufteilung zwischen Falz und inside_right.
+                // Dieser Wert verändert die Geometrie.
+                insideRightCropLeft: 0.029,
+
+                // Ausschließlich visueller Beschnitt des eingescannten
+                // linken Randes von inside_right.
+                // Dieser Wert verändert nicht die Geometrie.
+                insideRightTextureCropLeft: 0.065
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "D-Bug ist ein Lernspiel, das Computerfehler spielerisch erklärt. Während einer einfachen Spielsequenz treten Störungen auf, die der Spieler möglichst schnell erkennen und beheben muss.",
+                "history": "D-Bug wurde von ChildWare entwickelt und 1983 für den C64 veröffentlicht. Electronic Arts vertrieb das Spiel in den USA, während Ariolasoft unter anderem die europäische Veröffentlichung übernahm.",
+                "review": "D-Bug ist ungewöhnlich, weil es Unterhaltung und Computerwissen direkt miteinander verbindet. Spielerisch bleibt es einfach, doch die Idee, Fehler im laufenden System zu diagnostizieren, verleiht dem Titel einen eigenen Charme.",
+                "trivia": [
+                    "D-Bug wurde von ChildWare entwickelt.",
+                    "Die C64-Version erschien 1983.",
+                    "In Europa wurde das Spiel unter anderem von Ariolasoft vertrieben."
+                ],
+                "worthPlaying": "D-Bug ist vor allem als frühes Edutainment-Spiel interessant. Es zeigt, wie Computerwissen bereits Anfang der 1980er spielerisch vermittelt wurde.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "D-Bug is an educational game that teaches basic computer troubleshooting through play. During a simple game sequence, faults appear and the player must identify and repair them as quickly as possible.",
+                "history": "D-Bug was developed by ChildWare and released for the Commodore 64 in 1983. Electronic Arts published the game in the United States, while Ariolasoft handled releases in parts of Europe.",
+                "review": "D-Bug is unusual because it directly combines entertainment with basic computer knowledge. The gameplay is simple, but diagnosing faults inside the running system gives it a distinctive identity.",
+                "trivia": [
+                    "D-Bug was developed by ChildWare.",
+                    "The Commodore 64 version was released in 1983.",
+                    "Ariolasoft distributed the game in parts of Europe."
+                ],
+                "worthPlaying": "D-Bug is mainly interesting as an early example of edutainment software. It shows how basic computer knowledge was already being taught through games in the early 1980s."
+            }
+        },
+        id: 279,
+        folder: "dbug",
+        scanBy: "Magisthan",
+        page: "d_bug.html",
+        featured: false,
+        title: "D-Bug",
+        system: "C64",
+        year: 1983,
+        publisher: "Electronic Arts",
+        developer: "ChildWare",
+        genre: ["Lernspiel", "Educational", "Puzzle"],
+        description: "D-Bug ist ein Lernspiel, das Computerfehler spielerisch erklärt. Während einer einfachen Spielsequenz treten Störungen auf, die der Spieler möglichst schnell erkennen und beheben muss.",
+        history: `D-Bug wurde von ChildWare entwickelt und 1983 für den C64 veröffentlicht. Electronic Arts vertrieb das Spiel in den USA, während Ariolasoft unter anderem die europäische Veröffentlichung übernahm.`,
+        review: `D-Bug ist ungewöhnlich, weil es Unterhaltung und Computerwissen direkt miteinander verbindet. Spielerisch bleibt es einfach, doch die Idee, Fehler im laufenden System zu diagnostizieren, verleiht dem Titel einen eigenen Charme.`,
+        trivia: [
+                  "D-Bug wurde von ChildWare entwickelt.",
+                  "Die C64-Version erschien 1983.",
+                  "In Europa wurde das Spiel unter anderem von Ariolasoft vertrieben."
+        ],
+        worthPlaying: `D-Bug ist vor allem als frühes Edutainment-Spiel interessant. Es zeigt, wie Computerwissen bereits Anfang der 1980er spielerisch vermittelt wurde.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/134918/d-bug/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended-top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Physische Aufteilung zwischen Falz und inside_right.
+                // Dieser Wert verändert die Geometrie.
+                insideRightCropLeft: 0.029,
+
+                // Ausschließlich visueller Beschnitt des eingescannten
+                // linken Randes von inside_right.
+                // Dieser Wert verändert nicht die Geometrie.
+                insideRightTextureCropLeft: 0.055
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Worms? ist ein abstraktes Strategie- und Puzzlespiel mit trainierbaren, wurmartigen Kreaturen auf einem hexagonalen Raster. Der Spieler beeinflusst ihr Verhalten und versucht, möglichst viel Fläche zu kontrollieren.",
+                "history": "Worms? wurde von David Maynard entwickelt und 1983 von Electronic Arts veröffentlicht. Die C64-Version gehörte zu den frühen Veröffentlichungen des Publishers und verband einfache Regeln mit einem ungewöhnlich experimentellen Spielkonzept.",
+                "review": "Worms? ist ungewöhnlich, eigenwillig und deutlich strategischer, als der Titel vermuten lässt. Das Trainieren der Würmer und ihr zunehmend selbstständiges Verhalten sorgen für ein faszinierendes Spielgefühl, das sich klar von klassischen Arcade-Titeln abhebt.",
+                "trivia": [
+                    "Worms? erschien 1983 für den C64 bei Electronic Arts.",
+                    "Das ursprüngliche Spieldesign stammt von David Maynard.",
+                    "1987 wurde das Spiel in Europa erneut unter dem Titel IQ veröffentlicht."
+                ],
+                "worthPlaying": "Worms? ist vor allem wegen seines ungewöhnlichen Konzepts interessant. Wer frühe Experimente mit künstlichem Verhalten, Strategie und abstraktem Spieldesign mag, findet hier einen bemerkenswert eigenständigen C64-Titel.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Worms? is an abstract strategy and puzzle game featuring trainable worm-like creatures on a hexagonal grid. The player influences their behaviour and tries to control as much territory as possible.",
+                "history": "Worms? was developed by David Maynard and published by Electronic Arts in 1983. The Commodore 64 version was among the publisher's early releases and combined simple rules with an unusually experimental game concept.",
+                "review": "Worms? is unusual, distinctive and far more strategic than its title suggests. Training the worms and watching them become increasingly independent creates a fascinating experience that stands apart from conventional arcade games.",
+                "trivia": [
+                    "Worms? was released for the Commodore 64 by Electronic Arts in 1983.",
+                    "The original game design was created by David Maynard.",
+                    "In 1987 the game was re-released in Europe under the title IQ."
+                ],
+                "worthPlaying": "Worms? remains especially interesting because of its unusual concept. Players interested in early experiments with artificial behaviour, strategy and abstract game design will find a remarkably distinctive Commodore 64 title."
+            }
+        },
+        id: 280,
+        folder: "worms",
+        scanBy: "Magisthan",
+        page: "worms.html",
+        featured: false,
+        title: "Worms?",
+        system: "C64",
+        year: 1983,
+        publisher: "Electronic Arts",
+        developer: "David Maynard, Steven Hayes",
+        genre: ["Strategie", "Puzzle", "Simulation"],
+        description: "Worms? ist ein abstraktes Strategie- und Puzzlespiel mit trainierbaren, wurmartigen Kreaturen auf einem hexagonalen Raster. Der Spieler beeinflusst ihr Verhalten und versucht, möglichst viel Fläche zu kontrollieren.",
+        history: `Worms? wurde von David Maynard entwickelt und 1983 von Electronic Arts veröffentlicht. Die C64-Version gehörte zu den frühen Veröffentlichungen des Publishers und verband einfache Regeln mit einem ungewöhnlich experimentellen Spielkonzept.`,
+        review: `Worms? ist ungewöhnlich, eigenwillig und deutlich strategischer, als der Titel vermuten lässt. Das Trainieren der Würmer und ihr zunehmend selbstständiges Verhalten sorgen für ein faszinierendes Spielgefühl, das sich klar von klassischen Arcade-Titeln abhebt.`,
+        trivia: [
+                  "Worms? erschien 1983 für den C64 bei Electronic Arts.",
+                  "Das ursprüngliche Spieldesign stammt von David Maynard.",
+                  "1987 wurde das Spiel in Europa erneut unter dem Titel IQ veröffentlicht."
+        ],
+        worthPlaying: `Worms? ist vor allem wegen seines ungewöhnlichen Konzepts interessant. Wer frühe Experimente mit künstlichem Verhalten, Strategie und abstraktem Spieldesign mag, findet hier einen bemerkenswert eigenständigen C64-Titel.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/65383/worms/",
+        wikipedia: "https://en.wikipedia.org/wiki/Worms%3F",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended-top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Physische Aufteilung zwischen Falz und inside_right.
+                // Dieser Wert verändert die Geometrie.
+                insideRightCropLeft: 0.029,
+
+                // Ausschließlich visueller Beschnitt des eingescannten
+                // linken Randes von inside_right.
+                // Dieser Wert verändert nicht die Geometrie.
+                insideRightTextureCropLeft: 0.029
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Word Flyer ist ein Lernspiel für Kinder, bei dem Buchstaben und kurze Wörter möglichst schnell richtig zugeordnet werden müssen. Mit dem Joystick werden passende Zeichen aus einem Buchstabenturm ausgewählt und mit den heranfliegenden Vorgaben kombiniert.",
+                "history": "Word Flyer wurde von ChildWare entwickelt und 1983 von Electronic Arts veröffentlicht. Das Lernspiel verbindet Worterkennung, Lesen und Rechtschreibung mit einer einfachen Echtzeit-Spielmechanik und richtet sich vor allem an jüngere Spieler.",
+                "review": "Word Flyer ist spielerisch sehr einfach, erfüllt seinen Lernzweck aber klar und verständlich. Die Kombination aus Zeitdruck und Worterkennung sorgt für etwas mehr Dynamik als bei vielen klassischen Lernprogrammen der Zeit.",
+                "trivia": [
+                    "Word Flyer erschien 1983 für den C64 bei Electronic Arts.",
+                    "Das Spiel unterstützt einen oder zwei Spieler im kooperativen Modus.",
+                    "Das Cover-Artwork stammt von Dugald Stermer."
+                ],
+                "worthPlaying": "Word Flyer ist vor allem als frühes Beispiel für Edutainment auf dem C64 interessant. Es zeigt gut, wie Electronic Arts und ChildWare Lerninhalte mit einfachen Spielmechaniken verbinden wollten.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Word Flyer is an educational game for children in which letters and short words must be matched as quickly as possible. Using the joystick, players select the correct characters from a letter tower and align them with incoming prompts.",
+                "history": "Word Flyer was developed by ChildWare and published by Electronic Arts in 1983. The educational game combines word recognition, reading and spelling with a simple real-time game mechanic aimed mainly at younger players.",
+                "review": "Word Flyer is very simple as a game, but its educational purpose is clear and easy to understand. The combination of time pressure and word recognition gives it more energy than many traditional learning programs of the period.",
+                "trivia": [
+                    "Word Flyer was released for the Commodore 64 by Electronic Arts in 1983.",
+                    "The game supports one or two players in cooperative play.",
+                    "The cover artwork was created by Dugald Stermer."
+                ],
+                "worthPlaying": "Word Flyer is mainly interesting as an early example of edutainment on the Commodore 64. It shows how Electronic Arts and ChildWare tried to combine learning content with simple game mechanics."
+            }
+        },
+        id: 281,
+        folder: "word_flyer",
+        scanBy: "Magisthan",
+        page: "word_flyer.html",
+        featured: false,
+        title: "Word Flyer",
+        system: "C64",
+        year: 1983,
+        publisher: "Electronic Arts",
+        developer: "ChildWare",
+        genre: ["Lernspiel", "Educational", "Wortspiel"],
+        description: "Word Flyer ist ein Lernspiel für Kinder, bei dem Buchstaben und kurze Wörter möglichst schnell richtig zugeordnet werden müssen. Mit dem Joystick werden passende Zeichen aus einem Buchstabenturm ausgewählt und mit den heranfliegenden Vorgaben kombiniert.",
+        history: `Word Flyer wurde von ChildWare entwickelt und 1983 von Electronic Arts veröffentlicht. Das Lernspiel verbindet Worterkennung, Lesen und Rechtschreibung mit einer einfachen Echtzeit-Spielmechanik und richtet sich vor allem an jüngere Spieler.`,
+        review: `Word Flyer ist spielerisch sehr einfach, erfüllt seinen Lernzweck aber klar und verständlich. Die Kombination aus Zeitdruck und Worterkennung sorgt für etwas mehr Dynamik als bei vielen klassischen Lernprogrammen der Zeit.`,
+        trivia: [
+                  "Word Flyer erschien 1983 für den C64 bei Electronic Arts.",
+                  "Das Spiel unterstützt einen oder zwei Spieler im kooperativen Modus.",
+                  "Das Cover-Artwork stammt von Dugald Stermer."
+        ],
+        worthPlaying: `Word Flyer ist vor allem als frühes Beispiel für Edutainment auf dem C64 interessant. Es zeigt gut, wie Electronic Arts und ChildWare Lerninhalte mit einfachen Spielmechaniken verbinden wollten.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/134919/word-flyer/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        "Dugald Stermer"
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended-top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Physische Aufteilung zwischen Falz und inside_right.
+                // Dieser Wert verändert die Geometrie.
+                insideRightCropLeft: 0.029,
+
+                // Ausschließlich visueller Beschnitt des eingescannten
+                // linken Randes von inside_right.
+                // Dieser Wert verändert nicht die Geometrie.
+                insideRightTextureCropLeft: 0.055
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Fight Night ist ein Boxspiel mit Training, Sparring und regulären Kämpfen. Der Spieler wählt einen Boxer oder erstellt einen eigenen Kämpfer und tritt anschließend gegen unterschiedliche Gegner an.",
+                "history": "Fight Night wurde von Sydney Development Corp. entwickelt und 1985 von Accolade für den C64 veröffentlicht. Das Spiel kombinierte Arcade-Boxen mit einem einfachen Boxer-Editor und mehreren Spielmodi.",
+                "review": "Fight Night ist zugänglich, abwechslungsreich und für ein Boxspiel der Zeit erstaunlich umfangreich. Besonders der Editor und die unterschiedlichen Gegner sorgen für zusätzlichen Reiz, auch wenn Steuerung und Animationen heute etwas behäbig wirken.",
+                "trivia": [
+                    "Die C64-Version erschien im Dezember 1985.",
+                    "Das Spieldesign stammt von Rick Banks und Michael Bate.",
+                    "Neben Training und Sparring gibt es einen Main-Event-Modus sowie in bestimmten Versionen ein Turnier."
+                ],
+                "worthPlaying": "Fight Night ist ein interessanter früher Vertreter der Boxspiele auf dem C64. Die Mischung aus Kämpfen, Training und eigenem Boxer bietet auch heute noch mehr Abwechslung als viele vergleichbare Sportspiele der Zeit.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Fight Night is a boxing game featuring training, sparring and regular matches. Players can choose an existing boxer or create their own fighter before taking on a series of opponents.",
+                "history": "Fight Night was developed by Sydney Development Corp. and published for the Commodore 64 by Accolade in 1985. The game combined arcade-style boxing with a simple boxer editor and several play modes.",
+                "review": "Fight Night is accessible, varied and surprisingly feature-rich for a boxing game of its era. The editor and different opponents add lasting appeal, although the controls and animation feel somewhat slow by modern standards.",
+                "trivia": [
+                    "The Commodore 64 version was released in December 1985.",
+                    "The game was designed by Rick Banks and Michael Bate.",
+                    "Alongside training and sparring, the game includes a Main Event mode and, in some versions, a Tournament."
+                ],
+                "worthPlaying": "Fight Night is an interesting early boxing game for the Commodore 64. Its mix of matches, training and custom boxer creation still gives it more variety than many comparable sports titles from the period."
+            }
+        },
+        id: 282,
+        folder: "fight_night",
+        scanBy: "Magisthan",
+        page: "fight_night.html",
+        featured: false,
+        title: "Fight Night",
+        system: "C64",
+        year: 1985,
+        publisher: "Accolade",
+        developer: "Sydney Development Corp.",
+        genre: ["Sport", "Boxen", "Action"],
+        description: "Fight Night ist ein Boxspiel mit Training, Sparring und regulären Kämpfen. Der Spieler wählt einen Boxer oder erstellt einen eigenen Kämpfer und tritt anschließend gegen unterschiedliche Gegner an.",
+        history: `Fight Night wurde von Sydney Development Corp. entwickelt und 1985 von Accolade für den C64 veröffentlicht. Das Spiel kombinierte Arcade-Boxen mit einem einfachen Boxer-Editor und mehreren Spielmodi.`,
+        review: `Fight Night ist zugänglich, abwechslungsreich und für ein Boxspiel der Zeit erstaunlich umfangreich. Besonders der Editor und die unterschiedlichen Gegner sorgen für zusätzlichen Reiz, auch wenn Steuerung und Animationen heute etwas behäbig wirken.`,
+        trivia: [
+                  "Die C64-Version erschien im Dezember 1985.",
+                  "Das Spieldesign stammt von Rick Banks und Michael Bate.",
+                  "Neben Training und Sparring gibt es einen Main-Event-Modus sowie in bestimmten Versionen ein Turnier."
+        ],
+        worthPlaying: `Fight Night ist ein interessanter früher Vertreter der Boxspiele auf dem C64. Die Mischung aus Kämpfen, Training und eigenem Boxer bietet auch heute noch mehr Abwechslung als viele vergleichbare Sportspiele der Zeit.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/11241/fight-night/",
+        wikipedia: "",
+        gog: ""
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 3,
+        stars: 3,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended-top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Physische Aufteilung zwischen Falz und inside_right.
+                // Dieser Wert verändert die Geometrie.
+                insideRightCropLeft: 0.029,
+
+                // Ausschließlich visueller Beschnitt des eingescannten
+                // linken Randes von inside_right.
+                // Dieser Wert verändert nicht die Geometrie.
+                insideRightTextureCropLeft: 0.055
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
+    {
+        translations: {
+            "de": {
+                "description": "Psi 5 Trading Co. ist eine Echtzeit-Weltraumsimulation, in der der Spieler als Captain eines Frachters eine Crew auswählt und während gefährlicher Missionen kommandiert. Entscheidungen zu Navigation, Energie, Reparaturen und Verteidigung müssen unter Zeitdruck getroffen werden.",
+                "history": "Psi 5 Trading Co. wurde von Accolade entwickelt und 1986 für den C64 veröffentlicht. Designer und Programmierer Mike Lorenzen setzte auf Crew-Management statt direkte Raumschiffsteuerung und verband Strategie, Simulation und Science-Fiction.",
+                "review": "Psi 5 Trading Co. ist ungewöhnlich anspruchsvoll und lebt von ständigem Multitasking. Die unterschiedlichen Crew-Mitglieder und ihre Eigenheiten sorgen für Atmosphäre, während der Zeitdruck jede Mission spannend macht. Der Einstieg ist fordernd, aber das Konzept wirkt bis heute eigenständig.",
+                "trivia": [
+                    "Mike Lorenzen war Designer und Programmierer der C64-Version.",
+                    "Die Grafik stammt von Mimi Doggett, die Musik von Ed Bogas.",
+                    "Der Spieler kann seine Crew aus rund 30 unterschiedlichen Kandidaten zusammenstellen."
+                ],
+                "worthPlaying": "Psi 5 Trading Co. ist besonders für Fans früher Echtzeit-Strategie und komplexer Simulationen interessant. Das Crew-Management und die indirekte Steuerung des Schiffes verleihen dem Spiel bis heute einen ungewöhnlichen Charakter.",
+                "screenshotCaptions": {
+                    "screen1.webp": "",
+                    "screen2.webp": "",
+                    "screen3.webp": ""
+                }
+            },
+            "en": {
+                "description": "Psi 5 Trading Co. is a real-time space simulation in which the player commands a freighter, selects a crew and manages dangerous missions. Navigation, power, repairs and defence must be handled under constant time pressure.",
+                "history": "Psi 5 Trading Co. was developed by Accolade and released for the Commodore 64 in 1986. Designer and programmer Mike Lorenzen focused on crew management rather than direct ship control, combining strategy, simulation and science fiction.",
+                "review": "Psi 5 Trading Co. is unusually demanding and built around constant multitasking. The different crew members and their personalities add atmosphere, while the time pressure keeps every mission tense. It is difficult to learn, but the concept remains distinctive.",
+                "trivia": [
+                    "Mike Lorenzen designed and programmed the Commodore 64 version.",
+                    "Graphics were created by Mimi Doggett and music by Ed Bogas.",
+                    "The player can assemble a crew from around 30 different candidates."
+                ],
+                "worthPlaying": "Psi 5 Trading Co. is especially interesting for fans of early real-time strategy and complex simulations. Its crew management and indirect ship control still give the game a distinctive identity."
+            }
+        },
+        id: 283,
+        folder: "psi_5_trading_co",
+        scanBy: "Magisthan",
+        page: "psi_5_trading_co.html",
+        featured: false,
+        title: "Psi 5 Trading Co.",
+        system: "C64",
+        year: 1986,
+        publisher: "Accolade",
+        developer: "Accolade",
+        genre: ["Strategie", "Weltraumsimulation", "Science-Fiction"],
+        description: "Psi 5 Trading Co. ist eine Echtzeit-Weltraumsimulation, in der der Spieler als Captain eines Frachters eine Crew auswählt und während gefährlicher Missionen kommandiert. Entscheidungen zu Navigation, Energie, Reparaturen und Verteidigung müssen unter Zeitdruck getroffen werden.",
+        history: `Psi 5 Trading Co. wurde von Accolade entwickelt und 1986 für den C64 veröffentlicht. Designer und Programmierer Mike Lorenzen setzte auf Crew-Management statt direkte Raumschiffsteuerung und verband Strategie, Simulation und Science-Fiction.`,
+        review: `Psi 5 Trading Co. ist ungewöhnlich anspruchsvoll und lebt von ständigem Multitasking. Die unterschiedlichen Crew-Mitglieder und ihre Eigenheiten sorgen für Atmosphäre, während der Zeitdruck jede Mission spannend macht. Der Einstieg ist fordernd, aber das Konzept wirkt bis heute eigenständig.`,
+        trivia: [
+                  "Mike Lorenzen war Designer und Programmierer der C64-Version.",
+                  "Die Grafik stammt von Mimi Doggett, die Musik von Ed Bogas.",
+                  "Der Spieler kann seine Crew aus rund 30 unterschiedlichen Kandidaten zusammenstellen."
+        ],
+        worthPlaying: `Psi 5 Trading Co. ist besonders für Fans früher Echtzeit-Strategie und komplexer Simulationen interessant. Das Crew-Management und die indirekte Steuerung des Schiffes verleihen dem Spiel bis heute einen ungewöhnlichen Charakter.`,
+        letsPlay: "",
+        links: {
+        mobygames: "https://www.mobygames.com/game/13147/psi-5-trading-co/",
+        wikipedia: "https://de.wikipedia.org/wiki/PSI-5_Trading_Company",
+        gog: "https://www.gog.com/en/game/psi_5_trading_company"
+        },
+        boxArtists: [
+        ""
+    ],
+        rating: 4,
+        stars: 4,
+        dimensions: {
+        width: 222,
+        height: 222,
+        depth: 7
+    },
+
+        hasInside: true,
+
+        package: {
+            type: "extended-flatpack",
+            spineTexture: "right",
+
+            extendedFlatpack: {
+                insideMiddleTexture: "inside_middle",
+                insideRightRightTexture: "inside_right_right",
+                extendedTopTexture: "extended-top",
+                extendedBottomTexture: "extended-bottom",
+                foldSpineTexture: "extended-fold-spine",
+
+                // Physische Aufteilung zwischen Falz und inside_right.
+                // Dieser Wert verändert die Geometrie.
+                insideRightCropLeft: 0.029,
+
+                // Ausschließlich visueller Beschnitt des eingescannten
+                // linken Randes von inside_right.
+                // Dieser Wert verändert nicht die Geometrie.
+                insideRightTextureCropLeft: 0.055
+            }
+        },
+
+        screenshots: [
+    { file: "screen1.webp", caption: "" },
+    { file: "screen2.webp", caption: "" },
+    { file: "screen3.webp", caption: "" }
+]
+    },
+
 ];
 
 //--------------------------------------------------

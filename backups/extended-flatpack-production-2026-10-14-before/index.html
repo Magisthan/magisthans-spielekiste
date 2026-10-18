@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Retro News Flash, C64, Amiga, Homebrew und Demoszene" data-i18n-content="home.metaDescription">
+    <title data-i18n="home.title">Magisthans Spielekiste</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/i18n/site-bootstrap.js"></script>
+</head>
+
+<body class="home-page" data-i18n-catalogs="home">
+
+<header class="hero">
+    <img src="assets/images/banner.webp"
+         alt="Magisthans Spielekiste"
+             width="1920"
+             height="550"
+             decoding="async"
+             fetchpriority="high">
+</header>
+
+<nav>
+    <a href="index.html">Startseite</a>
+    <a href="retro-news-flash.html">Retro News Flash</a>
+
+    <a href="pixelkumpel.html" class="pixelkumpel-link">
+        <img src="assets/images/pixelkumpel-icon.webp"
+             alt="Die Pixelkumpel"
+             width="48"
+             height="36"
+             decoding="async"
+             loading="lazy">
+        Die Pixelkumpel
+    </a>
+
+    <a href="sammlung.html">Meine Sammlung</a>
+    <a href="ueber-mich.html">Über mich</a>
+</nav>
+
+<div class="container">
+
+    
+<div class="card legal-content">
+
+    <div class="layout">
+
+        <main>
+
+            <div class="retro-wissen">
+
+                <div class="retro-wissen-label" data-i18n="home.retroFactLabel">
+                    💾 Wusstest du schon?
+                </div>
+
+                <div class="retro-ticker">
+
+                    <div id="retro-fact-text"
+                         class="retro-ticker-content"
+                         data-i18n="common.loading">
+                        Wird geladen...
+                    </div>
+
+                </div>
+
+            </div>
+  
+<div class="welcome-box">
+
+    <div class="welcome-text">
+
+        <h2 data-i18n="home.welcomeTitle">Willkommen in meiner Spielekiste</h2>
+
+        <p data-i18n="home.welcomeIntro">
+            Über 90 Retro News Flash Folgen.
+            Mehr als 700 Videos.
+            C64 • Amiga • Demoszene • Interviews
+        </p>
+
+        <a href="ueber-mich.html" class="welcome-button" data-i18n="home.aboutButton">
+            Mehr über mich
+        </a>
+
+    </div>
+
+    <div class="welcome-image">
+
+        <img src="assets/images/c64-showcase.webp"
+             alt="Commodore 64"
+             width="312"
+             height="211"
+             decoding="async"
+             loading="lazy">
+
+    </div>
+  
+</div>
+            
+<section class="box-of-day">
+
+    <div class="box-day-image">
+
+        <img id="botd-image"
+             src=""
+             alt=""
+             loading="lazy"
+             decoding="async">
+
+    </div>
+
+    <div class="box-day-content">
+
+        <div class="box-day-label" data-i18n="home.archiveLabel">
+            🎮 RETRO BOX ARCHIVE
+        </div>
+
+        <h2 id="botd-title"></h2>
+
+        <div id="botd-subtitle"
+             class="box-day-subtitle">
+        </div>
+
+        <div id="botd-description"
+             class="box-day-description">
+        </div>
+
+        <a id="botd-link"
+           class="box-day-button"
+           data-i18n="home.learnMore">
+
+            Mehr erfahren
+
+        </a>
+
+    </div>
+
+</section>
+            
+<h2 data-i18n="home.latestVideo">Neuestes Video</h2>
+
+<div id="featured-video"></div>
+
+<h2 data-i18n="home.recentVideos">Letzte Videos</h2>
+
+<div class="latest-videos-modern"
+     id="latest-videos">
+</div> 
+            
+<h2 data-i18n="home.newsArchiveTitle">Retro News Flash Archiv</h2>
+
+<div class="card archive-card">
+
+    <p data-i18n="home.newsArchiveDescription">
+        Alle bisherigen Retro News Flash Folgen mit News rund um
+        C64, Amiga, Homebrew, Demoszene und Retro-Hardware.
+    </p>
+
+    <a class="archive-button"
+       href="https://www.youtube.com/playlist?list=PL2UVSU7imqhEoDV4Ce4sjrgz0y3OmRkJ-"
+       target="_blank"
+       rel="noopener noreferrer"
+       data-i18n="home.newsArchiveButton">
+
+       ▶ Zum Retro News Flash Archiv
+
+    </a>
+
+</div>
+
+</main>
+
+<aside>
+
+<!-- =====================================================
+     3D Big Box Preview
+====================================================== -->
+
+<section class="viewer-preview">
+
+    <div class="viewer-preview-card">
+
+        <div class="viewer-preview-header">
+
+    <a
+    href="sammlung.html#viewer3d"
+    class="viewer-badge"
+    data-i18n="home.viewerDiscover">
+
+    ✨ 3D Boxen entdecken
+
+</a>
+
+</div>
+
+        <div class="viewer-preview-stage">
+
+            <canvas id="preview-viewer" data-i18n-aria-label="viewer.rotate"></canvas>
+
+        </div>
+
+        
+
+    </div>
+
+</section>
+
+<div class="card">
+
+    <h3 data-i18n="home.playlistsTitle">Playlists & Serien</h3>
+
+    <ul class="playlist-list">
+
+    <li>
+    <a href="https://www.youtube.com/playlist?list=PL2UVSU7imqhEpkozn5HZem-OeUd8NZQb2"
+       target="_blank"
+       class="playlist-bg patrizier-bg">
+
+        <img src="assets/playlists/patrizier.webp" alt="" class="playlist-image" loading="lazy" decoding="async"
+             width="800"
+             height="200">
+
+        <span class="playlist-title">▶ Let's Play Der Patrizier</span>
+
+        <span class="platform-tag">
+            <img src="assets/images/icons/PC.webp" alt="PC"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+        </span>
+
+    </a>
+</li>
+
+        <li>
+            <a href="https://www.youtube.com/playlist?list=PL2UVSU7imqhFIBMBMGTT1nxPunUGUCW4P" 
+                target="_blank"
+                class="playlist-bg megalomania-bg">
+
+        <img src="assets/playlists/megalomania.webp" alt="" class="playlist-image" loading="lazy" decoding="async"
+             width="800"
+             height="200">
+
+        <span class="playlist-title">▶ Let's Play Mega Lo Mania</span>
+
+        <span class="platform-tag">
+            <img src="assets/images/icons/Amiga.webp" alt="Amiga"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+        </span>
+
+    </a>
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com/playlist?list=PL2UVSU7imqhGuYX7BBd5tm8gbGakWtIuz" 
+                target="_blank"
+                class="playlist-bg max1869-bg">
+
+        <img src="assets/playlists/max1869.webp" alt="" class="playlist-image" loading="lazy" decoding="async"
+             width="800"
+             height="200">
+
+        <span class="playlist-title">▶ Let's Play 1869</span>
+
+        <span class="platform-tag">
+            <img src="assets/images/icons/Amiga.webp" alt="Amiga"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+        </span>
+
+    </a>
+        
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com/playlist?list=PL2UVSU7imqhF0hgXlf-YIMDurN-zZzoF1" 
+                target="_blank"
+                class="playlist-bg fugger-bg">
+
+        <img src="assets/playlists/fugger.webp" alt="" class="playlist-image" loading="lazy" decoding="async"
+             width="800"
+             height="200">
+
+        <span class="playlist-title">▶ Let's Play Fugger</span>
+
+        <span class="platform-tag">
+            <img src="assets/images/icons/C64.webp" alt="C64"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+        </span>
+
+    </a>
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com/playlist?list=PL2UVSU7imqhEybkp6FFLG9a8q0GoBs0AH" 
+                target="_blank"
+                class="playlist-bg fugger2-bg">
+
+        <img src="assets/playlists/fugger2.webp" alt="" class="playlist-image" loading="lazy" decoding="async"
+             width="800"
+             height="200">
+
+        <span class="playlist-title">▶ Let's Play Die Fugger 2</span>
+
+        <span class="platform-tag">
+            <img src="assets/images/icons/PC.webp" alt="PC"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+        </span>
+
+    </a>
+    </li>
+        <li>
+            <a href="https://www.youtube.com/playlist?list=PL2UVSU7imqhHvTYddBq_fyTqZoxLJrty8" 
+                target="_blank"
+                class="playlist-bg ringsofmedusa-bg">
+
+        <img src="assets/playlists/ringsofmedusa.webp" alt="" class="playlist-image" loading="lazy" decoding="async"
+             width="800"
+             height="200">
+
+        <span class="playlist-title">▶ Let's Play Rings of Medusa</span>
+
+        <span class="platform-tag">
+            <img src="assets/images/icons/Amiga.webp" alt="Amiga"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+        </span>
+
+    </a>
+    </li>
+        <li>
+            <a href="https://www.youtube.com/playlist?list=PL2UVSU7imqhH-0I79QlPiGmYC0Dj-teTj" 
+                target="_blank"
+                class="playlist-bg burntime-bg">
+
+        <img src="assets/playlists/burntime.webp" alt="" class="playlist-image" loading="lazy" decoding="async"
+             width="800"
+             height="200">
+
+        <span class="playlist-title">▶ Let's Play Burntime</span>
+
+        <span class="platform-tag">
+            <img src="assets/images/icons/Amiga.webp" alt="Amiga"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+        </span>
+
+    </a>
+    </li>
+
+        <li>
+            <a href="https://www.youtube.com/playlist?list=PL2UVSU7imqhG39cERcupPM1VK2o5GLhWS" 
+                target="_blank"
+                class="playlist-bg cok-bg">
+
+        <img src="assets/playlists/cok.webp" alt="" class="playlist-image" loading="lazy" decoding="async"
+             width="800"
+             height="200">
+
+        <span class="playlist-title">▶ Let's Play Champions of Krynn</span>
+
+        <span class="platform-tag">
+            <img src="assets/images/icons/Amiga.webp" alt="Amiga"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+        </span>
+
+    </a>
+    </li>
+        <li>
+    <a href="https://www.youtube.com/playlist?list=PL2UVSU7imqhFH3ABW4Tevb2xdJ7A1Zwrv"
+       target="_blank"
+       class="playlist-bg vermeer-bg">
+
+        <img src="assets/playlists/vermeer.webp" alt="" class="playlist-image" loading="lazy" decoding="async"
+             width="800"
+             height="200">
+
+        <span class="playlist-title">
+            ▶ Let's Play Vermeer
+        </span>
+
+        <span class="platform-icons">
+
+            <span class="platform-tag">
+                <img src="assets/images/icons/Amiga.webp" alt="Amiga"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+            </span>
+
+            <span class="platform-tag">
+                <img src="assets/images/icons/C64.webp" alt="C64"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+            </span>
+
+        </span>
+
+    </a>
+</li>
+
+        <li>
+            <a href="https://www.youtube.com/playlist?list=PL2UVSU7imqhFU8Qi_xGF2_n3Pvlt85LXt" 
+                target="_blank"
+                class="playlist-bg piratesamiga-bg">
+
+        <img src="assets/playlists/piratesamiga.webp" alt="" class="playlist-image" loading="lazy" decoding="async"
+             width="800"
+             height="198">
+
+        <span class="playlist-title">▶ Let's Play Sid Meiers Pirates</span>
+
+        <span class="platform-tag">
+            <img src="assets/images/icons/Amiga.webp" alt="Amiga"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+        </span>
+
+    </a>
+    </li>
+    </ul>
+
+</div>
+  
+<div class="card seo-box">
+
+    <h3 data-i18n="home.portalTitle">Retro Gaming Portal</h3>
+
+   <p data-i18n="home.portalParagraph1">
+Magisthans Spielekiste berichtet über neue Spiele,
+Homebrew-Projekte, Demoszene-Produktionen und
+Retro-Hardware für C64 und Amiga.
+</p>
+
+<p data-i18n="home.portalParagraph2">
+Neben dem Retro News Flash findest du Let's Plays,
+die Pixelkumpel sowie Interviews mit interessanten
+Leuten aus der Vergangenheit und der Szene.
+</p>
+
+</div>
+    
+<div class="card social">
+
+    <h3 data-i18n="home.socialTitle">Social</h3>
+
+    <ul class="social-list">
+
+        <li>
+            <a href="https://www.youtube.com/@MagisthansSpielekiste" target="_blank">
+                <img src="assets/images/icons/youtube.webp" alt="YouTube"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+                <span>YouTube</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://github.com/Magisthan" target="_blank">
+                <img src="assets/images/icons/github.webp" alt="GitHub"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+                <span>GitHub</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.facebook.com/MagisthansSpielekiste" target="_blank">
+                <img src="assets/images/icons/facebook.webp" alt="Facebook"
+             width="25"
+             height="25"
+             decoding="async"
+             loading="lazy">
+                <span>Facebook</span>
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+    </aside>
+
+</div> <!-- layout -->
+</div> <!-- container -->
+</div>
+<footer>
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a>
+</footer>
+
+
+<div id="achievement-popup" class="achievement-popup">
+
+    <div class="achievement-icon">🏆</div>
+
+    <div class="achievement-text">
+
+        <span class="achievement-label" data-i18n="home.achievement.defaultLabel">
+
+    ACHIEVEMENT
+
+</span>
+
+        <strong data-i18n="home.achievement.welcome.title">Willkommen in der Spielekiste!</strong>
+
+        <small data-i18n="home.achievement.welcome.text">+10 Retro Erfahrung</small>
+
+    </div>
+
+</div>
+
+    <script src="assets/js/latest-videos.js"></script>
+    <script src="assets/js/retro-facts.js"></script>
+    <script src="assets/js/achievement.js"></script>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="assets/js/game.js"></script>
+    <script src="assets/js/game-localization.js"></script>
+    <script src="retro-discovery/js/package-builder.js"></script>
+    <script src="retro-discovery/js/package-materials.js"></script>
+    <script src="retro-discovery/js/package-animation.js"></script>
+    <script src="retro-discovery/js/flatpack-builder.js"></script><script src="retro-discovery/js/extended-flatpack-builder.js"></script>
+    <script src="retro-discovery/js/hinged-box-builder.js"></script>
+    <script src="retro-discovery/js/package.js"></script>
+    <script src="assets/js/homepage.js"></script>
+    <script src="assets/js/viewer-input-controls.js"></script>
+    <script src="assets/js/preview.js"></script>   
+    
+</body>
+</html>
+
+

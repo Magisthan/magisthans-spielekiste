@@ -1,0 +1,1798 @@
+/* ==========================================
+   Retro Discovery
+   Viewer
+========================================== */
+
+let canvas = null;
+let engine = null;
+let scene = null;
+let guideTimeout;
+let guideCanShow = true;
+let isFullscreen = false;
+let currentInfoGameData = null;
+let editorialDialogReturnFocus = null;
+let editorialDialogInitialized = false;
+let currentEditorialHeadingKey = null;
+
+function viewerText(key){
+    return window.RDI18n?.t(`info.${key}`) ?? key;
+}
+
+//--------------------------------------------------
+// Viewer
+//--------------------------------------------------
+
+const SCALE = 0.014;
+
+//--------------------------------------------------
+// Viewer Position
+//--------------------------------------------------
+
+// Manuelle vertikale Startposition der 3D-Box: höherer Wert = weiter oben.
+const BOX_Y_OFFSET = 0.26;
+
+//--------------------------------------------------
+// Hero Pose
+//--------------------------------------------------
+
+const HERO_ROTATION_X = BABYLON.Tools.ToRadians(-2);
+
+const HERO_ROTATION_Y = Math.PI - BABYLON.Tools.ToRadians(28);
+
+const HERO_ROTATION_Z = 0;
+
+//--------------------------------------------------
+// Kamera Startposition
+//--------------------------------------------------
+
+const CAMERA_ALPHA = -Math.PI / 2;
+
+const CAMERA_BETA = Math.PI / 2.5;
+
+const CAMERA_RADIUS = 7.5;
+
+let pivot = null;
+let currentPackage = null;
+let packageHintDismissed = false;
+let lastAnimatedPackageHint = null;
+
+//--------------------------------------------------
+// Showcase Rotation
+//--------------------------------------------------
+
+let showcaseRotation = true;
+
+let showcaseIdleTimer = null;
+
+const SHOWCASE_SPEED = 0.0060;
+
+const SHOWCASE_DELAY = 5000;
+
+//--------------------------------------------------
+// Viewer Actions
+//--------------------------------------------------
+
+function hideViewerActions(){
+    closeEditorialDialog({ restoreFocus:false });
+
+    if(window.ViewerUI?.getState().enabled){
+        window.ViewerUI.reset("spin-started");
+        window.ViewerUI.setCurrentGame(null);
+    }
+}
+
+function showViewerActions(){
+    showFullscreenButton();
+}
+
+function showFullscreenButton(){
+    document.getElementById("fullscreen-btn")?.classList.add("visible");
+}
+
+function hideFullscreenButton(){
+    document.getElementById("fullscreen-btn")?.classList.remove("visible");
+}
+
+//--------------------------------------------------
+// Editorial reading dialog
+//--------------------------------------------------
+
+function openEditorialDialog(headingKey,content,trigger){
+
+    const dialog = document.getElementById("editorial-dialog");
+    const title = document.getElementById("editorial-dialog-heading");
+    const game = document.getElementById("editorial-dialog-game");
+    const copy = document.getElementById("editorial-dialog-copy");
+    const closeButton = document.getElementById("editorial-dialog-close");
+
+    if(!dialog || !title || !game || !copy) return;
+
+    if(typeof setContributionDialogOpen === "function"){
+        setContributionDialogOpen(false);
+    }
+
+    currentEditorialHeadingKey = headingKey;
+    title.textContent = viewerText(headingKey);
+    game.textContent = currentInfoGameData?.title || "";
+    copy.textContent = content;
+    editorialDialogReturnFocus = trigger || document.activeElement;
+
+    dialog.classList.add("is-open");
+    dialog.setAttribute("aria-hidden","false");
+    dialog.removeAttribute("inert");
+    document.body.classList.add("editorial-dialog-open");
+
+    requestAnimationFrame(()=>closeButton?.focus());
+
+}
+
+function closeEditorialDialog({ restoreFocus=true }={}){
+
+    const dialog = document.getElementById("editorial-dialog");
+    if(!dialog?.classList.contains("is-open")) return;
+
+    dialog.classList.remove("is-open");
+    dialog.setAttribute("aria-hidden","true");
+    dialog.setAttribute("inert","");
+    document.body.classList.remove("editorial-dialog-open");
+
+    const returnFocus = editorialDialogReturnFocus;
+    editorialDialogReturnFocus = null;
+    currentEditorialHeadingKey = null;
+
+    if(restoreFocus && returnFocus?.isConnected){
+        requestAnimationFrame(()=>returnFocus.focus());
+    }
+
+}
+
+function initEditorialDialog(){
+
+    if(editorialDialogInitialized) return;
+    editorialDialogInitialized = true;
+
+    const dialog = document.getElementById("editorial-dialog");
+    if(!dialog) return;
+
+    document.getElementById("editorial-dialog-close")
+        ?.addEventListener("click",()=>closeEditorialDialog());
+
+    document.getElementById("editorial-dialog-cancel")
+        ?.addEventListener("click",()=>closeEditorialDialog());
+
+    dialog.querySelector("[data-editorial-dialog-close]")
+        ?.addEventListener("click",()=>closeEditorialDialog());
+
+    document.addEventListener("keydown",event=>{
+
+        if(!dialog.classList.contains("is-open")) return;
+
+        if(event.key === "Escape"){
+            event.preventDefault();
+            closeEditorialDialog();
+            return;
+        }
+
+        if(event.key !== "Tab") return;
+
+        const focusable = Array.from(dialog.querySelectorAll(
+            'a[href],button:not([disabled]),[tabindex]:not([tabindex="-1"])'
+        ));
+
+        if(!focusable.length) return;
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if(event.shiftKey && document.activeElement === first){
+            event.preventDefault();
+            last.focus();
+        }else if(!event.shiftKey && document.activeElement === last){
+            event.preventDefault();
+            first.focus();
+        }
+
+    });
+
+}
+
+//--------------------------------------------------
+// Info Panel Daten
+//--------------------------------------------------
+
+function updateInfoPanel(gameData){
+
+    if(!gameData) return;
+
+    currentInfoGameData = gameData;
+
+    window.ViewerUI?.setCurrentGame(gameData);
+
+}
+
+document.addEventListener("rdlanguagechange",()=>{
+    updateFullscreenButtonState();
+
+    if(currentInfoGameData){
+        const localizedGame = window.GameLocalization?.localizeGame(
+            currentInfoGameData.__sourceGame || currentInfoGameData
+        ) ?? currentInfoGameData;
+        currentInfoGameData = localizedGame;
+        window.ViewerUI?.setCurrentGame(localizedGame);
+
+        const copy = document.getElementById("editorial-dialog-copy");
+        if(copy && currentEditorialHeadingKey){
+            const editorialContent = {
+                reviewHeading:localizedGame.review,
+                worthPlayingHeading:localizedGame.worthPlaying,
+                triviaHeading:localizedGame.trivia
+            }[currentEditorialHeadingKey];
+            copy.textContent = Array.isArray(editorialContent)
+                ? editorialContent.join("\n\n")
+                : editorialContent || "";
+        }
+    }
+
+    const dialog = document.getElementById("editorial-dialog");
+    const heading = document.getElementById("editorial-dialog-heading");
+    if(dialog?.classList.contains("is-open") && heading && currentEditorialHeadingKey){
+        heading.textContent = viewerText(currentEditorialHeadingKey);
+    }
+});
+
+
+
+//--------------------------------------------------
+// Viewer
+//--------------------------------------------------
+
+function initViewer() {
+
+    console.log("initViewer gestartet");
+
+    canvas = document.getElementById("viewer3d");
+
+    const fullscreenBtn =
+    document.getElementById("fullscreen-btn");
+
+    fullscreenBtn.addEventListener(
+
+    "click",
+
+    toggleFullscreen
+
+);
+
+    initEditorialDialog();
+
+    showViewerGuide();
+
+    const viewer =
+    document.getElementById("viewer-container");
+
+viewer.addEventListener(
+
+    "mouseleave",
+
+    ()=>{
+
+        enableGuideAgain();
+
+    }
+
+);
+
+viewer.addEventListener(
+
+    "mouseenter",
+
+    ()=>{
+
+        if(guideCanShow){
+
+            showViewerGuide();
+
+        }
+
+    }
+
+);
+
+    console.log("Canvas:", canvas);
+
+    engine = new BABYLON.Engine(canvas, true);
+
+    console.log("Vor resize:", canvas.width, canvas.height);
+
+    resizeCanvas();
+
+    console.log("Nach resize:", canvas.width, canvas.height);
+
+    createScene();
+
+}
+
+function animateViewerZoom(targetRadius) {
+
+    if (!window.viewerCamera) return;
+
+    const animation = new BABYLON.Animation(
+        "viewerZoom",
+        "radius",
+        60,
+        BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+        BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT
+    );
+
+    animation.setKeys([
+        {
+            frame: 0,
+            value: window.viewerCamera.radius
+        },
+        {
+            frame: 20,
+            value: targetRadius
+        }
+    ]);
+
+    window.viewerCamera.animations = [];
+
+    window.viewerCamera.animations.push(animation);
+
+    scene.beginAnimation(
+        window.viewerCamera,
+        0,
+        20,
+        false
+    );
+
+}
+
+//--------------------------------------------------
+// Fullscreen
+//--------------------------------------------------
+
+async function toggleFullscreen(){
+
+    const stage =
+        document.getElementById("viewer-stage");
+
+    try{
+
+        if(!document.fullscreenElement){
+
+            await stage.requestFullscreen();
+
+            await new Promise(resolve=>setTimeout(resolve,100));
+
+        }
+
+        else{
+
+            await document.exitFullscreen();
+
+            await new Promise(resolve=>setTimeout(resolve,100));
+
+        }
+
+    }
+
+    catch(error){
+
+        console.error(error);
+
+    }
+
+}
+
+function updateFullscreenButtonState(){
+
+    const stage =
+        document.getElementById("viewer-stage");
+
+    const button =
+        document.getElementById("fullscreen-btn");
+
+    if(!stage || !button) return;
+
+    const stageIsFullscreen =
+        document.fullscreenElement === stage;
+
+    const labelKey = stageIsFullscreen
+        ? "viewer.exitFullscreen"
+        : "viewer.enterFullscreen";
+
+    button.textContent =
+        stageIsFullscreen ? "↙" : "⛶";
+
+    button.setAttribute(
+        "aria-label",
+        window.RDI18n?.t?.(labelKey) || (
+            stageIsFullscreen
+                ? "Vollbildansicht schließen"
+                : "3D-Ansicht im Vollbild öffnen"
+        )
+    );
+
+    button.dataset.i18nAriaLabel = labelKey;
+
+}
+
+//--------------------------------------------------
+// Premium Viewer Guide
+//--------------------------------------------------
+
+function showViewerGuide(){
+
+    if(!guideCanShow) return;
+
+    const guide = document.getElementById("viewer-guide");
+
+    if(!guide) return;
+
+    guide.classList.remove("hide");
+
+    guide.classList.add("show");
+
+    clearTimeout(guideTimeout);
+
+    guideTimeout = setTimeout(()=>{
+
+        guide.classList.remove("show");
+
+        guide.classList.add("hide");
+
+    },5000);
+
+}
+
+function enableGuideAgain(){
+
+    guideCanShow = false;
+
+    setTimeout(()=>{
+
+        guideCanShow = true;
+
+    },10000);
+
+}
+
+//--------------------------------------------------
+// Material
+//--------------------------------------------------
+
+function createMaterial(image) {
+
+    const material =
+    new BABYLON.StandardMaterial(
+        "mat",
+        scene
+    );
+    
+    material.diffuseTexture =
+    new BABYLON.Texture(
+        image.src,
+        scene
+    );
+
+material.diffuseTexture.uScale = -1;
+material.diffuseTexture.uOffset = 1;
+
+material.diffuseTexture.anisotropicFilteringLevel = 16;
+
+//--------------------------------------------------
+// Texture Calibration
+//--------------------------------------------------
+
+material.diffuseTexture.gammaSpace = true;
+
+material.diffuseTexture.level = 1.0;
+
+material.diffuseTexture.updateSamplingMode(
+    BABYLON.Texture.TRILINEAR_SAMPLINGMODE
+);
+
+
+
+//--------------------------------------------------
+// Premium Cardboard
+//--------------------------------------------------
+
+material.ambientColor =
+    new BABYLON.Color3(
+        0.30,
+        0.30,
+        0.30
+    );
+
+material.specularColor =
+    new BABYLON.Color3(
+        0.08,
+        0.08,
+        0.08
+    );
+
+material.specularPower = 140;
+
+material.emissiveColor =
+    new BABYLON.Color3(
+        0.045,
+        0.045,
+        0.045
+    );
+
+material.backFaceCulling = false;
+material.twoSidedLighting = true;
+
+return material;
+
+}
+
+//--------------------------------------------------
+// Box entfernen
+//--------------------------------------------------
+
+function disposeBox(box){
+
+    if(!box) return;
+
+    box.front.dispose();
+    box.back.dispose();
+    box.left.dispose();
+    box.right.dispose();
+    box.top.dispose();
+    box.bottom.dispose();
+
+}
+
+//--------------------------------------------------
+// Physikalische Boxgröße berechnen
+//--------------------------------------------------
+
+function getBoxSize(gameData){
+
+    const d = gameData.dimensions;
+
+    return{
+
+        width  : d.width  * SCALE,
+        height : d.height * SCALE,
+        depth  : d.depth  * SCALE
+
+    };
+
+}
+
+/* ==========================================
+   Viewer Fade Animation
+========================================== */
+
+function fadeInBox() {
+
+    const canvas = document.getElementById("viewer3d");
+
+    canvas.classList.remove("viewer-fade-in");
+
+    void canvas.offsetWidth;
+
+    canvas.classList.add("viewer-fade-in");
+
+}
+
+//--------------------------------------------------
+// Spiel laden
+//--------------------------------------------------
+
+async function loadGame(gameData){
+
+    const folder = gameData.folder;
+
+    function loadImage(file, optional = false){
+
+    return new Promise((resolve, reject)=>{
+
+        const img = new Image();
+
+        img.onload = () => resolve(img);
+
+        img.onerror = () => {
+
+            if(optional){
+
+                resolve(null);
+
+            }else{
+
+                reject(new Error(`Datei ${file}.webp nicht gefunden`));
+
+            }
+
+        };
+
+        img.src =
+            `../assets/textures/${folder}/${file}.webp`;
+
+    });
+
+}
+
+//--------------------------------------------------
+// Try Load Image
+//--------------------------------------------------
+
+async function tryLoadImage(file){
+
+    try{
+
+        return await loadImage(file);
+
+    }catch{
+
+        return null;
+
+    }
+
+}
+
+    const images = {
+
+    front : await loadImage("front"),
+
+    back : await loadImage("back"),
+
+    insideLeft : gameData.hasInside
+        ? await tryLoadImage("inside_left")
+        : null,
+
+    insideRight : gameData.hasInside
+        ? await tryLoadImage("inside_right")
+        : null,
+
+    insideSpin : gameData.hasInside && gameData.package?.type !== "flatpack"
+        ? await tryLoadImage("inside_spin")
+        : null,
+
+    left : await loadImage("left"),
+
+    right : await loadImage("right"),
+
+    top : await loadImage("top"),
+
+    bottom : await loadImage("bottom")
+
+};
+
+console.log("=== IMAGES ===");
+console.log(images);
+console.log("insideLeft:", images.insideLeft);
+console.log("insideRight:", images.insideRight);
+    
+    const size = getBoxSize(gameData);
+
+return{
+
+    images,
+
+    width  : size.width,
+    height : size.height,
+    depth  : size.depth,
+
+    // A package becomes interactive only when both interior images loaded.
+    // This keeps all ordinary boxes closed even when a data entry is incomplete.
+    hasInside : Boolean(
+        gameData.hasInside &&
+        images.insideLeft &&
+        images.insideRight
+    )
+
+};
+    
+}
+
+//--------------------------------------------------
+// Box erzeugen
+//--------------------------------------------------
+
+function buildBox(scene,pivot,current){
+
+    const game = current.game;
+
+    const materials = current.materials;
+
+    const boxWidth  = game.width;
+    const boxHeight = game.height;
+    const boxDepth  = game.depth;
+
+    const halfW = boxWidth / 2;
+    const halfH = boxHeight / 2;
+    const halfD = boxDepth / 2;
+
+    //--------------------------------------------------
+    // Front
+    //--------------------------------------------------
+
+    const front = BABYLON.MeshBuilder.CreatePlane(
+        "front",
+        {
+            width: boxWidth,
+            height: boxHeight
+        },
+        scene
+    );
+
+    front.parent = pivot;
+    front.position.z = halfD;
+    front.material = materials.front;
+
+    //--------------------------------------------------
+    // Back
+    //--------------------------------------------------
+
+    const back = BABYLON.MeshBuilder.CreatePlane(
+        "backLight",
+        {
+            width: boxWidth,
+            height: boxHeight
+        },
+        scene
+    );
+
+    back.parent = pivot;
+    back.position.z = -halfD;
+    back.rotation.y = Math.PI;
+    back.material = materials.back;
+
+    //--------------------------------------------------
+    // Left
+    //--------------------------------------------------
+
+    const left = BABYLON.MeshBuilder.CreatePlane(
+        "left",
+        {
+            width: boxDepth,
+            height: boxHeight
+        },
+        scene
+    );
+
+    left.parent = pivot;
+    left.position.x = -halfW;
+    left.rotation.y = -Math.PI / 2;
+    left.material = materials.left;
+
+    //--------------------------------------------------
+    // Right
+    //--------------------------------------------------
+
+    const right = BABYLON.MeshBuilder.CreatePlane(
+        "right",
+        {
+            width: boxDepth,
+            height: boxHeight
+        },
+        scene
+    );
+
+    right.parent = pivot;
+    right.position.x = halfW;
+    right.rotation.y = Math.PI / 2;
+    right.material = materials.right;
+
+    //--------------------------------------------------
+    // Top
+    //--------------------------------------------------
+
+    const top = BABYLON.MeshBuilder.CreatePlane(
+        "top",
+        {
+            width: boxWidth,
+            height: boxDepth
+        },
+        scene
+    );
+
+    top.parent = pivot;
+    top.position.y = halfH;
+    top.rotation.x = Math.PI / 2;
+    top.material = materials.top;
+
+    //--------------------------------------------------
+    // Bottom
+    //--------------------------------------------------
+
+    const bottom = BABYLON.MeshBuilder.CreatePlane(
+        "bottom",
+        {
+            width: boxWidth,
+            height: boxDepth
+        },
+        scene
+    );
+
+    bottom.parent = pivot;
+    bottom.position.y = -halfH;
+    bottom.rotation.x = Math.PI / 2;
+    bottom.material = materials.bottom;
+
+    return {
+
+        front,
+        back,
+        left,
+        right,
+        top,
+        bottom
+
+    };
+
+}
+
+//--------------------------------------------------
+// Präsentationsanimation
+//--------------------------------------------------
+
+function playPresentationAnimation(materials){
+
+    //----------------------------------------------
+    // Scale
+    //----------------------------------------------
+
+    const scaleAnimation = new BABYLON.Animation(
+
+        "boxScale",
+
+        "scaling",
+
+        60,
+
+        BABYLON.Animation.ANIMATIONTYPE_VECTOR3,
+
+        BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT
+
+    );
+
+    scaleAnimation.setKeys([
+
+        {
+
+            frame:0,
+
+            value:new BABYLON.Vector3(.82,.82,.82)
+
+        },
+
+        {
+
+            frame:25,
+
+            value:new BABYLON.Vector3(1,1,1)
+
+        }
+
+    ]);
+
+    pivot.animations=[];
+
+    pivot.animations.push(scaleAnimation);
+
+    scene.beginAnimation(
+
+        pivot,
+
+        0,
+
+        25,
+
+        false
+
+    );
+
+    //----------------------------------------------
+    // Fade
+    //----------------------------------------------
+
+    Object.values(materials).filter(Boolean).forEach(material=>{
+
+        BABYLON.Animation.CreateAndStartAnimation(
+
+            "fade",
+
+            material,
+
+            "alpha",
+
+            60,
+
+            25,
+
+            0,
+
+            1,
+
+            BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT
+
+        );
+
+    });
+
+}
+
+//--------------------------------------------------
+// Hero Pose
+//--------------------------------------------------
+
+function animateHeroPose(){
+
+    if(!pivot) return;
+
+    const animation = new BABYLON.Animation(
+
+        "heroPose",
+
+        "rotation.y",
+
+        60,
+
+        BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+
+        BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT
+
+    );
+
+    animation.setKeys([
+
+        {
+            frame:0,
+            value:Math.PI
+        },
+
+        {
+            frame:35,
+            value:HERO_ROTATION_Y
+        }
+
+    ]);
+
+    pivot.animations.push(animation);
+
+    scene.beginAnimation(
+
+        pivot,
+
+        0,
+
+        35,
+
+        false
+
+    );
+
+}
+
+//--------------------------------------------------
+// Showcase Rotation
+//--------------------------------------------------
+
+function startShowcaseRotation(){
+
+    showcaseRotation = true;
+
+}
+
+function stopShowcaseRotation(){
+
+    showcaseRotation = false;
+
+    clearTimeout(showcaseIdleTimer);
+
+    showcaseIdleTimer = setTimeout(
+
+        ()=>{
+
+            showcaseRotation = true;
+
+        },
+
+        SHOWCASE_DELAY
+
+    );
+
+}
+
+// A flatpack starts from the same approved front pose as a newly loaded
+// closed package. This makes the hand-off to its opening model predictable.
+function alignFlatpackForOpening(onComplete){
+
+    if(!pivot){
+        onComplete?.();
+        return;
+    }
+
+    const pose = new BABYLON.Animation(
+        "flatpackFrontPose",
+        "rotation.y",
+        60,
+        BABYLON.Animation.ANIMATIONTYPE_FLOAT,
+        BABYLON.Animation.ANIMATIONLOOPMODE_CONSTANT
+    );
+
+    pose.setKeys([
+        { frame:0, value:pivot.rotation.y },
+        { frame:18, value:HERO_ROTATION_Y }
+    ]);
+
+    window.viewerCamera.alpha = CAMERA_ALPHA;
+    window.viewerCamera.beta = CAMERA_BETA;
+    window.viewerCamera.radius = CAMERA_RADIUS;
+    pivot.rotation.x = HERO_ROTATION_X;
+    pivot.rotation.z = HERO_ROTATION_Z;
+
+    scene.beginDirectAnimation(pivot, [pose], 0, 18, false, 1, onComplete);
+
+}
+
+function toggleCurrentPackage(){
+
+    if(!currentPackage?.isOpenable) return;
+
+    if(packageHintDismissed && currentPackage.openAmount <= 0.02) return;
+
+    stopShowcaseRotation();
+
+    const hint = document.getElementById("package-open-hint");
+
+    if(currentPackage.openAmount > 0.5){
+        setPackageHintState(hint,false);
+        hint?.classList.add("is-transitioning");
+        Package.close(scene, currentPackage, () => {
+            packageHintDismissed = false;
+        });
+        return;
+    }
+
+    packageHintDismissed = true;
+    setPackageHintState(hint,true);
+    hint?.classList.add("is-transitioning");
+
+    if(currentPackage.type === "flatpack"){
+        alignFlatpackForOpening(() => Package.open(scene, currentPackage));
+        return;
+    }
+
+    Package.open(scene, currentPackage);
+
+}
+
+function setPackageHintState(hint,isOpen){
+
+    if(!hint) return;
+
+    const i18n = window.RDI18n || window.SiteI18n;
+    const fullText = i18n?.t(isOpen ? "viewer.closeBox" : "viewer.openBox")
+        || (isOpen ? "BOX SCHLIESSEN" : "BOX ÖFFNEN");
+
+    hint.setAttribute("aria-label",fullText);
+    hint.setAttribute("aria-pressed",String(isOpen));
+    hint.classList.toggle("is-open",isOpen);
+    hint.dataset.packageState = isOpen ? "open" : "closed";
+    hint.dataset.labelLanguage = document.documentElement.lang || "de";
+
+}
+
+function updatePackageOpenHint(){
+
+    const hint = document.getElementById("package-open-hint");
+
+    if(!hint || !scene || !engine || !canvas || !currentPackage?.isOpenable){
+        hint?.classList.remove("visible");
+        return;
+    }
+
+    if(currentPackage.isAnimating){
+        if(lastAnimatedPackageHint !== currentPackage){
+            hint.classList.remove("visible","is-transitioning");
+        }else if(hint.classList.contains("visible")){
+            hint.classList.add("is-transitioning");
+        }
+        return;
+    }
+
+    const isOpen = currentPackage.openAmount > 0.5;
+    const packageState = isOpen ? "open" : "closed";
+    const language = document.documentElement.lang || "de";
+
+    if(hint.dataset.packageState !== packageState || hint.dataset.labelLanguage !== language){
+        setPackageHintState(hint,isOpen);
+    }
+
+    hint.classList.remove("is-transitioning");
+
+    const shouldAnimate = lastAnimatedPackageHint !== currentPackage;
+    hint.classList.toggle("animate-entry",shouldAnimate);
+    hint.classList.add("visible");
+    if(shouldAnimate) lastAnimatedPackageHint = currentPackage;
+
+}
+
+//--------------------------------------------------
+// Spiel anzeigen
+//--------------------------------------------------
+
+async function showGame(gameData){
+
+    if(!gameData) return;
+
+    const game =
+    await loadGame(
+        gameData
+    );
+
+        const current = {
+
+        gameData,
+        game
+
+    };
+
+        if(currentPackage){
+
+            Package.dispose(currentPackage);
+
+        }
+
+        currentPackage =
+
+            Package.create(
+
+                scene,
+
+                pivot,
+
+                current
+
+            );
+
+        packageHintDismissed = false;
+
+        // The visible package owns the only material set. The former duplicate
+        // materials made the fade animation run on meshes that were not shown.
+        Object.values(currentPackage.materials).filter(Boolean).forEach(material => {
+
+            material.alpha = 0;
+
+        });
+
+        //--------------------------------------------------
+// Kamera zurücksetzen
+//--------------------------------------------------
+
+if (window.viewerCamera) {
+
+    window.viewerCamera.alpha = CAMERA_ALPHA;
+
+    window.viewerCamera.beta = CAMERA_BETA;
+
+    window.viewerCamera.radius = CAMERA_RADIUS;
+
+}
+
+
+        playPresentationAnimation(currentPackage.materials);
+        
+        animateHeroPose();
+
+        showcaseRotation = false;
+
+clearTimeout(showcaseIdleTimer);
+
+showcaseIdleTimer = setTimeout(
+
+    ()=>{
+
+        showcaseRotation = true;
+
+    },
+
+    2200
+
+);
+
+//--------------------------------------------------
+// Fade-In vorbereiten
+//--------------------------------------------------
+
+pivot.scaling.set(0.85,0.85,0.85);
+
+let fade = 0;
+
+        //--------------------------------------------------
+// Startposition
+//--------------------------------------------------
+
+pivot.rotation.x = HERO_ROTATION_X;
+
+pivot.rotation.y = Math.PI;
+
+pivot.rotation.z = HERO_ROTATION_Z;
+
+pivot.position.x = 0;
+const STANDARD_HEIGHT = 275 * SCALE;
+
+pivot.position.y =
+    BOX_Y_OFFSET
+    - ((game.height - STANDARD_HEIGHT) * 0.08);
+pivot.position.z = 0;
+
+updateInfoPanel(gameData);
+
+}
+
+function createScene() {
+
+    console.log("1");
+
+    scene = new BABYLON.Scene(engine);
+
+//--------------------------------------------------
+// Studio Environment
+//--------------------------------------------------
+
+scene.environmentTexture =
+    BABYLON.CubeTexture.CreateFromPrefilteredData(
+
+        "https://assets.babylonjs.com/environments/studio.env",
+
+        scene
+
+    );
+
+scene.environmentIntensity = 0.45;
+
+    console.log("2");
+
+    window.debugScene = scene;
+
+    console.log("3");
+
+    scene.clearColor = new BABYLON.Color4(
+    0,
+    0,
+    0,
+    0
+);
+
+    console.log("4");
+
+    const camera =
+new BABYLON.ArcRotateCamera(
+    "camera",
+    CAMERA_ALPHA,
+    CAMERA_BETA,
+    CAMERA_RADIUS,
+    BABYLON.Vector3.Zero(),
+    scene
+);
+
+// Kamera global merken
+window.viewerCamera = camera;
+
+window.viewerCameraDefaultRadius = camera.radius;
+
+    console.log("5");
+
+    camera.attachControl(canvas, true);
+
+    canvas.addEventListener(
+
+    "pointerdown",
+
+    stopShowcaseRotation
+
+);
+
+// A short tap on an eligible package opens or closes it. Babylon emits
+// POINTERTAP only when the pointer was not dragged, so camera orbit gestures
+// remain untouched.
+scene.onPointerObservable.add((pointerInfo) => {
+
+    if (pointerInfo.type !== BABYLON.PointerEventTypes.POINTERTAP) return;
+
+    const pickedMesh = pointerInfo.pickInfo?.pickedMesh;
+
+    if (!pickedMesh || !currentPackage?.isOpenable) return;
+
+    const packageMeshes = Object.values(currentPackage.meshes);
+
+    if (!packageMeshes.includes(pickedMesh)) return;
+
+    toggleCurrentPackage();
+
+});
+
+document.getElementById("package-open-hint").addEventListener("click", () => {
+    toggleCurrentPackage();
+});
+
+//--------------------------------------------------
+// Zoom Einstellungen
+//--------------------------------------------------
+
+// minimaler Zoom
+camera.lowerRadiusLimit = 2.0;
+
+// maximaler Zoom
+camera.upperRadiusLimit = 9.0;
+
+window.ViewerInputControls?.setup({
+    camera,
+    canvas,
+    onInteraction:stopShowcaseRotation
+});
+
+console.log("6");
+
+scene.activeCamera = camera;
+
+camera.setTarget(
+    new BABYLON.Vector3(
+        0,
+        0.10,
+        0
+    )
+);
+
+console.log("7");
+
+pivot = new BABYLON.TransformNode(
+    "pivot",
+    scene
+);
+
+pivot.position.y = 0.0;
+pivot.rotation.y = Math.PI;
+
+//--------------------------------------------------
+// Fenstergröße ändern
+//--------------------------------------------------
+
+window.addEventListener("resize", () => {
+
+    if (!engine) return;
+
+    engine.resize();
+
+    if (isFullscreen) {
+
+        animateViewerZoom(
+            window.viewerCameraDefaultRadius * 0.88
+        );
+
+    } else {
+
+        animateViewerZoom(
+            window.viewerCameraDefaultRadius
+        );
+
+    }
+
+});
+
+//--------------------------------------------------
+// Render Loop
+//--------------------------------------------------
+
+engine.runRenderLoop(() => {
+
+    if (showcaseRotation && pivot) {
+
+        pivot.rotation.y += SHOWCASE_SPEED;
+
+    }
+
+    updatePackageOpenHint();
+    scene.render();
+
+});
+
+//--------------------------------------------------
+// Studio Lighting
+//--------------------------------------------------
+
+// Grundlicht
+const hemi = new BABYLON.HemisphericLight(
+
+    "hemi",
+
+    new BABYLON.Vector3(0,1,0),
+
+    scene
+
+);
+
+hemi.intensity = 0.82;
+
+hemi.groundColor =
+    new BABYLON.Color3(
+        0.05,
+        0.05,
+        0.05
+    );
+
+hemi.diffuse =
+    new BABYLON.Color3(
+        1,
+        1,
+        1
+    );
+
+const viewerFill = new BABYLON.PointLight(
+    "viewerCameraFill",
+    BABYLON.Vector3.Zero(),
+    scene
+);
+viewerFill.intensity = 1.95;
+scene.onBeforeRenderObservable.add(() => {
+    viewerFill.position.copyFrom(camera.globalPosition);
+});
+
+//--------------------------------------------------
+// Key Light Left
+//--------------------------------------------------
+
+const keyLightLeft =
+    new BABYLON.DirectionalLight(
+
+        "keyLightLeft",
+
+        new BABYLON.Vector3(
+
+            -0.28,
+            -1,
+            0.12
+
+        ),
+
+        scene
+
+);
+
+keyLightLeft.position =
+    new BABYLON.Vector3(
+
+        1.5,
+        2.5,
+        -0.8
+
+);
+
+keyLightLeft.intensity = 0.80;
+
+
+
+//--------------------------------------------------
+// Rim Light
+//--------------------------------------------------
+
+const rimLight =
+    new BABYLON.PointLight(
+
+        "rimLight",
+
+        new BABYLON.Vector3(
+
+            -1.4,
+            5.5,
+            -4
+
+        ),
+
+        scene
+
+);
+
+rimLight.intensity = 0.30;
+
+rimLight.diffuse =
+    new BABYLON.Color3(
+
+        1,
+        1,
+        1
+
+);
+
+scene.imageProcessingConfiguration.toneMappingEnabled = true;
+scene.imageProcessingConfiguration.toneMappingType =
+    BABYLON.ImageProcessingConfiguration.TONEMAPPING_ACES;
+scene.imageProcessingConfiguration.contrast = 1.06;
+scene.imageProcessingConfiguration.exposure = 1.05;
+
+//--------------------------------------------------
+// Viewer presentation lighting profiles
+//--------------------------------------------------
+
+const viewerLightingProfiles = Object.freeze({
+    standard:Object.freeze({
+        hemiIntensity:0.82,
+        hemiGround:[0.05,0.05,0.05],
+        viewerFillIntensity:1.95,
+        keyIntensity:0.80,
+        rimIntensity:0.30,
+        environmentIntensity:0.45,
+        contrast:1.06,
+        exposure:1.05,
+        lightColor:[1,1,1]
+    }),
+    retro:Object.freeze({
+        hemiIntensity:0.78,
+        hemiGround:[0.03,0.035,0.045],
+        viewerFillIntensity:1.85,
+        keyIntensity:0.72,
+        rimIntensity:0.38,
+        environmentIntensity:0.42,
+        contrast:1.08,
+        exposure:1.03,
+        lightColor:[0.96,0.985,1]
+    }),
+    museum:Object.freeze({
+        hemiIntensity:0.92,
+        hemiGround:[0.16,0.16,0.16],
+        viewerFillIntensity:1.55,
+        keyIntensity:0.34,
+        rimIntensity:0.10,
+        environmentIntensity:0.28,
+        contrast:1.0,
+        exposure:1.02,
+        lightColor:[1,1,1]
+    })
+});
+
+let activeViewerLightingProfile = "standard";
+
+function applyViewerLightingProfile(profileName){
+    const normalizedName = ["standard","retro","museum"].includes(profileName)
+        ? profileName
+        : "standard";
+    const profile = viewerLightingProfiles[normalizedName];
+
+    hemi.intensity = profile.hemiIntensity;
+    hemi.groundColor.copyFromFloats(...profile.hemiGround);
+    hemi.diffuse.copyFromFloats(...profile.lightColor);
+    viewerFill.intensity = profile.viewerFillIntensity;
+    viewerFill.diffuse.copyFromFloats(...profile.lightColor);
+    keyLightLeft.intensity = profile.keyIntensity;
+    keyLightLeft.diffuse.copyFromFloats(...profile.lightColor);
+    rimLight.intensity = profile.rimIntensity;
+    rimLight.diffuse.copyFromFloats(...profile.lightColor);
+    scene.environmentIntensity = profile.environmentIntensity;
+    scene.imageProcessingConfiguration.contrast = profile.contrast;
+    scene.imageProcessingConfiguration.exposure = profile.exposure;
+    activeViewerLightingProfile = normalizedName;
+
+    return activeViewerLightingProfile;
+}
+
+window.ViewerLighting = Object.freeze({
+    applyProfile:applyViewerLightingProfile,
+    getProfile:()=>activeViewerLightingProfile,
+    profiles:viewerLightingProfiles
+});
+
+document.dispatchEvent(new CustomEvent("viewerlightingready"));
+
+}
+
+
+
+//--------------------------------------------------
+// Events
+//--------------------------------------------------
+
+let viewerGameTitleSequence = 0;
+
+function waitForViewerTitle(duration){
+    return new Promise(resolve=>window.setTimeout(resolve,duration));
+}
+
+function splitViewerTitle(text){
+
+    if(typeof Intl?.Segmenter === "function"){
+        const segmenter = new Intl.Segmenter("de",{ granularity:"grapheme" });
+        return Array.from(segmenter.segment(text),part=>part.segment);
+    }
+
+    return Array.from(text);
+
+}
+
+async function showViewerGameTitle(gameData){
+
+    const title = document.getElementById("viewer-game-title");
+    const visualText = document.getElementById("viewer-game-title-text");
+    const scanCredit = document.getElementById("viewer-scan-credit");
+    const status = document.getElementById("viewer-game-title-status");
+
+    if(!title || !visualText || !scanCredit || !status || !gameData?.title) return;
+
+    const sequence = ++viewerGameTitleSequence;
+    const fullTitle = gameData.title;
+
+    title.classList.remove("shine-ready","has-scan-credit");
+    title.classList.add("has-title","is-typing");
+    visualText.textContent = "";
+    scanCredit.replaceChildren();
+    if(gameData.scanBy){
+        scanCredit.append(`SCANNED BY \u00B7 ${gameData.scanBy}`);
+        if(gameData.scanUrl){
+            scanCredit.append(" - ");
+            const scanLink = document.createElement("a");
+            scanLink.href = gameData.scanUrl;
+            scanLink.target = "_blank";
+            scanLink.rel = "noopener noreferrer";
+            scanLink.textContent = gameData.scanUrl;
+            scanCredit.append(scanLink);
+        }
+    }
+    status.textContent = "";
+
+    const characters = splitViewerTitle(fullTitle);
+    const totalDuration = Math.min(2400,Math.max(900,characters.length*75));
+    const characterDelay = totalDuration / Math.max(1,characters.length);
+
+    for(const character of characters){
+        if(sequence !== viewerGameTitleSequence) return;
+        visualText.textContent += character;
+        await waitForViewerTitle(characterDelay);
+    }
+
+    if(sequence !== viewerGameTitleSequence) return;
+
+    await waitForViewerTitle(320);
+
+    if(sequence !== viewerGameTitleSequence) return;
+
+    title.classList.remove("is-typing");
+    title.classList.toggle("has-scan-credit",Boolean(gameData.scanBy));
+    title.classList.add("shine-ready");
+    status.textContent = gameData.scanBy
+        ? `${fullTitle}. Scanned by ${gameData.scanBy}.`
+        : fullTitle;
+
+
+}
+
+function hideViewerGameTitle(){
+
+    const title = document.getElementById("viewer-game-title");
+    if(!title) return;
+
+    viewerGameTitleSequence += 1;
+    title.classList.remove(
+        "has-title",
+        "is-typing",
+        "shine-ready",
+        "has-scan-credit"
+    );
+
+    const visualText = document.getElementById("viewer-game-title-text");
+    const scanCredit = document.getElementById("viewer-scan-credit");
+    const status = document.getElementById("viewer-game-title-status");
+
+    if(visualText) visualText.textContent = "";
+    if(scanCredit) scanCredit.textContent = "";
+    if(status) status.textContent = "";
+
+}
+
+document.addEventListener(
+
+    "gameChanged",
+
+    async(event)=>{
+
+        await showGame(
+            event.detail
+        );
+
+        await showViewerGameTitle(event.detail);
+
+    }
+
+);
+
+function resizeCanvas() {
+
+    console.log(
+        "client:",
+        canvas.clientWidth,
+        canvas.clientHeight
+    );
+
+    canvas.width = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
+
+    console.log(
+        "gesetzt:",
+        canvas.width,
+        canvas.height
+    );
+
+    engine.resize();
+
+}
+
+//--------------------------------------------------
+// Fullscreen Events
+//--------------------------------------------------
+
+document.addEventListener(
+
+    "fullscreenchange",
+
+    ()=>{
+
+        const fullscreenStage =
+            document.getElementById("viewer-stage");
+
+        isFullscreen =
+            document.fullscreenElement === fullscreenStage;
+
+        const button =
+            document.getElementById(
+                "fullscreen-btn"
+            );
+
+        button.textContent =
+            isFullscreen ? "🡼" : "⛶";
+
+        updateFullscreenButtonState();
+
+        //--------------------------------------------------
+// Fullscreen UI
+//--------------------------------------------------
+
+const bottomChassis =
+    document.querySelector(".rd-console-bottom");
+
+if (bottomChassis) {
+
+    bottomChassis.style.display =
+        isFullscreen ? "none" : "";
+
+}
+
+        setTimeout(()=>{
+
+    engine.resize();
+
+    //----------------------------------
+    // Kamera aktualisieren
+    //----------------------------------
+
+    if(window.viewerCamera){
+
+        window.viewerCamera.rebuildAnglesAndRadius();
+
+        window.viewerCamera.getProjectionMatrix(true);
+
+    }
+
+    //----------------------------------
+    // Szene einmal neu rendern
+    //----------------------------------
+
+    if(scene){
+
+        scene.render();
+
+    }
+
+},80);
+
+    }
+
+);
+
+
+

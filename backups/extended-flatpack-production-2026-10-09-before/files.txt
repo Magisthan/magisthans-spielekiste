@@ -1,0 +1,10 @@
+﻿retro-discovery/js/package-materials.js
+retro-discovery/js/package.js
+retro-discovery/js/viewer.js
+retro-discovery/index.html
+assets/js/game-detail-viewer.js
+assets/js/gamebox.js
+assets/js/preview.js
+assets/js/i18n/ui.de.js
+assets/js/i18n/ui.en.js
+assets/css/game-detail-viewer.css

@@ -753,70 +753,152 @@ body.editorial-dialog-open{
 
 }
 
-/* Contextual hint for packages that can be opened. Its position is updated
-   by viewer.js from the projected 3D package position. */
+/* Contextual action for hinged and flatpack packages. It occupies a dedicated
+   side position so it cannot compete with fullscreen or presentation modes. */
 #package-open-hint{
 
     position:absolute;
     z-index:145;
     display:none;
-    place-items:center;
-    width:42px;
-    height:42px;
+    align-items:center;
+    justify-content:center;
+    width:164px;
+    min-height:44px;
     padding:0;
-    color:#ff5147;
-    background:rgba(15,17,24,.86);
-    border:1px solid rgba(255,81,71,.92);
-    border-radius:50%;
-    box-shadow:0 5px 14px rgba(0,0,0,.38), 0 0 16px rgba(255,81,71,.5);
+    color:#f4f7fb;
+    background:
+        radial-gradient(circle at 18% 0,rgba(101,184,255,.13),transparent 48%),
+        linear-gradient(145deg,rgba(65,83,105,.88),rgba(30,43,59,.9));
+    border:1px solid rgba(232,189,85,.42);
+    border-radius:13px;
+    box-shadow:0 12px 28px rgba(3,8,15,.3),inset 0 1px rgba(255,255,255,.1);
+    backdrop-filter:blur(12px) saturate(112%);
+    -webkit-backdrop-filter:blur(12px) saturate(112%);
     cursor:pointer;
     opacity:0;
     pointer-events:none;
-    top:55px;
-    left:552px;
-    transform:none;
-    transition:opacity .2s ease, transform .2s ease, border-color .2s ease;
-    animation:package-open-hint-pulse 1.35s ease-in-out infinite;
+    top:42%;
+    right:clamp(22px,4vw,64px);
+    left:auto;
+    transform:translateY(-50%);
+    font:750 clamp(.64rem,.78vw,.76rem)/1 "Orbitron",system-ui,sans-serif;
+    letter-spacing:.08em;
+    transition:opacity .2s ease,transform .2s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease;
 }
+
+#package-extension-hint{
+    position:absolute;
+    z-index:145;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    width:184px;
+    min-height:44px;
+    top:52%;
+    right:clamp(22px,4vw,64px);
+    transform:translateY(-50%);
+    color:#f4f7fb;
+    background:linear-gradient(145deg,rgba(65,83,105,.9),rgba(30,43,59,.92));
+    border:1px solid rgba(101,184,255,.5);
+    border-radius:13px;
+    box-shadow:0 12px 28px rgba(3,8,15,.3),inset 0 1px rgba(255,255,255,.1);
+    font:750 clamp(.64rem,.78vw,.76rem)/1 "Orbitron",system-ui,sans-serif;
+    letter-spacing:.06em;
+    cursor:pointer;
+}
+#package-extension-hint.visible{display:flex;}
+#package-extension-hint:disabled{opacity:.55;cursor:progress;}
 
 #package-open-hint.visible{
 
-    display:grid;
+    display:flex;
     opacity:1;
     pointer-events:auto;
+}
+
+#package-open-hint.visible.animate-entry{
+    animation:package-open-hint-enter 680ms cubic-bezier(.22,1,.36,1) both;
 
 }
 
 #package-open-hint:hover{
 
-    border-color:#ff938c;
-    transform:translateY(-2px);
+    border-color:rgba(141,203,255,.68);
+    background:
+        radial-gradient(circle at 18% 0,rgba(101,184,255,.2),transparent 50%),
+        linear-gradient(145deg,rgba(80,105,134,.94),rgba(40,58,78,.94));
+    box-shadow:0 16px 34px rgba(3,8,15,.34),0 0 18px rgba(101,184,255,.13),inset 0 1px rgba(255,255,255,.12);
+    transform:translateY(-50%) translateY(-2px);
 
+}
+
+#package-open-hint.is-open{
+    border-color:rgba(141,203,255,.52);
+    background:
+        radial-gradient(circle at 18% 0,rgba(101,184,255,.18),transparent 50%),
+        linear-gradient(145deg,rgba(65,91,116,.92),rgba(30,50,69,.92));
+}
+
+#package-open-hint.is-transitioning{
+    cursor:progress;
+    pointer-events:none;
+}
+
+.package-hint-flip{
+    position:relative;
+    display:block;
+    width:100%;
+    min-height:42px;
+    transform-style:preserve-3d;
+    transition:transform 720ms cubic-bezier(.23,.92,.32,1);
+}
+
+#package-open-hint.is-open .package-hint-flip{
+    transform:rotateX(180deg);
+}
+
+.package-hint-face{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:8px 11px;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+}
+
+.package-hint-face-close{
+    color:#f4f7fb;
+    transform:rotateX(180deg);
+}
+
+.package-hint-face-close svg{
+    color:#8dcbff;
+    transform:rotate(180deg);
 }
 
 #package-open-hint svg{
 
-    width:19px;
-    height:19px;
+    width:20px;
+    height:20px;
+    flex:0 0 20px;
     fill:currentColor;
+    color:#e8bd55;
+    transition:color .2s ease;
 
 }
 
-@keyframes package-open-hint-pulse{
-
-    0%, 100%{ box-shadow:0 5px 14px rgba(0,0,0,.38), 0 0 7px rgba(255,81,71,.34); }
-    50%{ box-shadow:0 5px 16px rgba(0,0,0,.42), 0 0 22px rgba(255,81,71,.88); }
-
+.package-open-label-short{
+    display:none;
 }
 
-/* Keep the hint next to the fullscreen control on the scaled desktop canvas. */
-@media (min-width:1025px){
-
-    #package-open-hint{
-        top:calc(6.794% + var(--viewer-upper-ui-shift));
-        left:calc(29.412% + 52px);
-    }
-
+@keyframes package-open-hint-enter{
+    0%{opacity:0;transform:translateY(-50%) translateX(14px) scale(.96);}
+    55%{opacity:1;transform:translateY(-50%) translateX(0) scale(1.025);}
+    100%{opacity:1;transform:translateY(-50%) translateX(0) scale(1);}
 }
 
 /* ==========================================

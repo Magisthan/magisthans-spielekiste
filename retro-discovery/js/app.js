@@ -231,6 +231,10 @@ function refreshUI() {
 
     renderer.assignInitialGames(currentGameIndex);
 
+    if (typeof setDiscoveryBrowseEnabled === "function") {
+        setDiscoveryBrowseEnabled(false);
+    }
+
 }
 
 
@@ -365,6 +369,50 @@ Sprint 35.4
 ==================================================
 */
 
+function buildDiscoveryResultGroup(games,targetIndex,size = 5) {
+
+    if (!Array.isArray(games) || !games.length || targetIndex < 0) return [];
+
+    const groupSize = Math.min(size,games.length);
+    const winnerPosition = Math.floor(groupSize / 2);
+
+    return Array.from({ length:groupSize },(_,position) => {
+        const sourceIndex = targetIndex - winnerPosition + position;
+        const wrappedIndex = ((sourceIndex % games.length) + games.length) % games.length;
+        return games[wrappedIndex];
+    });
+}
+
+function shuffleDiscoveryPool(games,random = Math.random) {
+
+    const shuffledGames = Array.isArray(games) ? [...games] : [];
+
+    for (let index = shuffledGames.length - 1; index > 0; index -= 1) {
+        const randomIndex = Math.floor(random() * (index + 1));
+        [shuffledGames[index],shuffledGames[randomIndex]] =
+            [shuffledGames[randomIndex],shuffledGames[index]];
+    }
+
+    return shuffledGames;
+}
+
+function finalizeDiscoveryResultGroup(targetIndex) {
+
+    const spinPool = visibleGames;
+    const selectedGame = spinPool[targetIndex];
+    const resultGroup = buildDiscoveryResultGroup(spinPool,targetIndex);
+
+    if (!selectedGame || !resultGroup.length) return targetIndex;
+
+    visibleGames = resultGroup;
+    currentGameIndex = resultGroup.findIndex(game => game.id === selectedGame.id);
+    renderer.setGames(visibleGames);
+    renderer.setCurrentIndex(currentGameIndex);
+    renderer.showGroup(currentGameIndex,false);
+
+    return currentGameIndex;
+}
+
 function spinDiscovery() {
 
     hideViewerActions();
@@ -382,8 +430,6 @@ function spinDiscovery() {
     // Die Discovery bestimmt,
     // welche Spiele sichtbar sind.
 
-    visibleGames = [...discoverySession.games];
-
     const selectedGame = selectDiscoveryGame();
 
     if (!selectedGame) {
@@ -391,6 +437,13 @@ function spinDiscovery() {
         return;
 
 }
+
+    // Der komplette gefilterte Bestand bleibt bis zum Stillstand im Spin.
+    // Erst danach werden die fünf sichtbar gelandeten Spiele festgehalten.
+    visibleGames = shuffleDiscoveryPool(discoverySession.games);
+    currentGameIndex = 0;
+    renderer.setGames(visibleGames);
+    renderer.setCurrentIndex(currentGameIndex);
 
     // Sicherheitsprüfung
 

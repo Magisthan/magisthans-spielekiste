@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flatpack Animation Lab</title>
+    <link rel="stylesheet" href="lab.css">
+</head>
+<body>
+    <main class="lab-shell">
+        <section class="viewer-card">
+            <canvas id="viewer" aria-label="Flatpack-Testviewer"></canvas>
+            <div class="viewer-badge"><strong id="viewer-title">–</strong><span id="viewer-state">Lädt …</span></div>
+        </section>
+
+        <aside class="control-panel">
+            <p class="eyebrow">ISOLIERTE TESTUMGEBUNG</p>
+            <h1>Flatpack Animation Lab</h1>
+            <p class="intro">Vergleicht den aktuellen Produktionsablauf mit einer experimentellen, kamerunabhängigen Variante. Änderungen in diesem Ordner beeinflussen keinen regulären Viewer.</p>
+
+            <div class="field-grid">
+                <label>Referenzbox
+                    <select id="game-select">
+                        <option value="7cities_of_gold_c64">Seven Cities of Gold · Flatpack</option>
+                        <option value="hard_hat_mack">Hard Hat Mack · Legacy Extended</option>
+                        <option value="one_on_one_erving_vs_bird">One on One · Extended</option>
+                        <option value="the_standing_stones">The Standing Stones · Problemfall</option>
+                    </select>
+                </label>
+                <label>Versuchsmodus
+                    <select id="mode-select">
+                        <option value="experimental">Experimentell</option>
+                        <option value="production">Aktueller Produktionsstand</option>
+                    </select>
+                </label>
+            </div>
+
+            <section class="state-section" aria-labelledby="states-title">
+                <h2 id="states-title">Referenzzustände</h2>
+                <div class="state-buttons" id="state-buttons">
+                    <button data-state="closed">1 · Geschlossen</button>
+                    <button data-state="primary-start">2 · Beginn Öffnung</button>
+                    <button data-state="primary-half">3 · Mitte Öffnung</button>
+                    <button data-state="primary-open">4 · Erste Öffnung</button>
+                    <button data-state="extension-half">5 · Mitte Zusatzflügel</button>
+                    <button data-state="extended">6 · Vollständig geöffnet</button>
+                </div>
+            </section>
+
+            <div class="button-row">
+                <button id="play-open" class="primary">Komplett öffnen</button>
+                <button id="play-close">Komplett schließen</button>
+                <button id="reset-view">Ansicht zurücksetzen</button>
+                <button id="save-frame">Bild speichern</button>
+            </div>
+
+            <label class="range-label" for="primary-progress">Erste Öffnung <output id="primary-output">0 %</output></label>
+            <input id="primary-progress" type="range" min="0" max="1" step="0.01" value="0">
+            <label class="range-label" for="extension-progress">Zweite Öffnung <output id="extension-output">0 %</output></label>
+            <input id="extension-progress" type="range" min="0" max="1" step="0.01" value="0" disabled>
+
+            <details open>
+                <summary>Experimentelle Regeln</summary>
+                <ul>
+                    <li>Innenflächenbreiten aus 222 + 7 mm statt aus Bildpixeln</li>
+                    <li>Scharnierseite fest rechts; keine Kameraprojektion</li>
+                    <li>Vorbereitete Übergabe vor der zweiten Rotation</li>
+                    <li>Weiches Ausblenden der geschlossenen Kanten bei 92–100 %</li>
+                    <li>Gemeinsame Dauer und weiche Kameradistanz</li>
+                </ul>
+            </details>
+
+            <section class="diagnostics">
+                <h2>Diagnose</h2>
+                <dl id="diagnostic-values"></dl>
+                <p id="warning" class="warning" hidden></p>
+            </section>
+        </aside>
+    </main>
+
+    <script src="../../../assets/libs/babylon.js"></script>
+    <script src="../../../assets/js/game.js"></script>
+    <script src="../../js/package-materials.js"></script>
+    <script src="../../js/package-builder.js"></script>
+    <script src="../../js/flatpack-builder.js"></script>
+    <script src="../../js/extended-flatpack-builder.js"></script>
+    <script src="../../js/package.js"></script>
+    <script src="lab.js?v=20261016-12"></script>
+</body>
+</html>

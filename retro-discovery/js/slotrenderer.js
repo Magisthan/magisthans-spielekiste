@@ -29,6 +29,10 @@ class SlotRenderer {
         this.initialized = false;
         this.coverCache = new Map();
         this.preloadPromise = Promise.resolve();
+        this.browseEnabled = false;
+        this.browseControls = [];
+        this.browseMediaQuery = null;
+        this.handleBrowseViewportChange = () => this.updateInteractiveSlots();
     }
 
     init(games) {
@@ -42,6 +46,7 @@ class SlotRenderer {
         this.createLighting();
         this.createSlots();
         this.createSelectionGate();
+        this.createBrowseControls();
         this.setGames(games);
         this.initialized = true;
     }
@@ -72,6 +77,14 @@ class SlotRenderer {
         this.slots = Array.from({ length: SLOT_COUNT }, (_, position) => {
             const element = document.createElement("div");
             element.className = "rd-cover-slot";
+            element.setAttribute("role","button");
+            element.tabIndex = -1;
+            element.addEventListener("click",()=>this.activateSlot(element));
+            element.addEventListener("keydown",event=>{
+                if(event.key !== "Enter" && event.key !== " ") return;
+                event.preventDefault();
+                this.activateSlot(element);
+            });
             const images = Array.from({ length: 2 }, (_, imageIndex) => {
                 const image = document.createElement("img");
                 image.className = "rd-cover-image";
@@ -103,6 +116,78 @@ class SlotRenderer {
         gate.innerHTML = "<span>SELECT</span>";
         this.track.append(gate);
         this.selectionGate = gate;
+    }
+
+    createBrowseControls() {
+        this.browseControls = [-1,1].map(direction => {
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = `rd-reel-nav rd-reel-nav-${direction < 0 ? "previous" : "next"}`;
+            button.dataset.direction = String(direction);
+            button.hidden = true;
+            button.disabled = true;
+            button.innerHTML = `<span aria-hidden="true">${direction < 0 ? "‹" : "›"}</span>`;
+            button.addEventListener("click",()=>{
+                document.dispatchEvent(new CustomEvent("reelnavigate",{
+                    detail:{ direction }
+                }));
+            });
+            this.track.append(button);
+            return button;
+        });
+        this.updateBrowseLabels();
+        document.addEventListener("rdlanguagechange",()=>this.updateBrowseLabels());
+        this.browseMediaQuery = window.matchMedia?.("(max-width:768px)") || null;
+        this.browseMediaQuery?.addEventListener?.("change",this.handleBrowseViewportChange);
+    }
+
+    updateBrowseLabels() {
+        const previous = window.RDI18n?.t("slot.previous") || "Previous box";
+        const next = window.RDI18n?.t("slot.next") || "Next box";
+        this.browseControls[0]?.setAttribute("aria-label",previous);
+        this.browseControls[1]?.setAttribute("aria-label",next);
+    }
+
+    activateSlot(element) {
+        if(!this.browseEnabled) return;
+        const slot = this.slots.find(entry => entry.element === element);
+        const offset = slot?.position - CENTER_SLOT;
+        if(!offset) return;
+        document.dispatchEvent(new CustomEvent("reelslotactivate",{
+            detail:{ offset }
+        }));
+    }
+
+    setBrowseEnabled(enabled) {
+        this.browseEnabled = Boolean(enabled && this.games.length > 1);
+        this.track?.classList.toggle("rd-reel-browse-enabled",this.browseEnabled);
+        if(this.track) this.track.tabIndex = this.browseEnabled ? 0 : -1;
+        this.browseControls.forEach(button=>{
+            button.hidden = !this.browseEnabled;
+            button.disabled = !this.browseEnabled;
+        });
+        this.updateInteractiveSlots();
+    }
+
+    updateInteractiveSlots() {
+        const mobile = window.matchMedia?.("(max-width:768px)").matches;
+        this.slots.forEach(slot=>{
+            const interactive = this.browseEnabled
+                && slot.position > 0
+                && slot.position < SLOT_COUNT - 1
+                && slot.position !== CENTER_SLOT
+                && (!mobile || slot.position === CENTER_SLOT - 1 || slot.position === CENTER_SLOT + 1);
+            slot.element.tabIndex = interactive ? 0 : -1;
+            slot.element.setAttribute("aria-disabled",String(!interactive));
+            if(interactive){
+                const title = slot.game?.title || "";
+                const label = window.RDI18n?.t("slot.openNeighbour",{ title })
+                    || `Show ${title}`;
+                slot.element.setAttribute("aria-label",label);
+            }else{
+                slot.element.removeAttribute("aria-label");
+            }
+        });
     }
 
     wrap(index) {
@@ -281,6 +366,8 @@ class SlotRenderer {
             this.applyLayout(slot, SLOT_LAYOUT[position]);
         });
 
+        this.updateInteractiveSlots();
+
         if (animate) this.triggerStep();
     }
 
@@ -330,6 +417,8 @@ class SlotRenderer {
             slot.position = position;
             this.applyLayout(slot, SLOT_LAYOUT[position]);
         });
+
+        this.updateInteractiveSlots();
 
         if (animate) this.triggerStep();
     }
@@ -387,11 +476,15 @@ class SlotRenderer {
 
     destroy() {
         if (!this.track) return;
+        this.browseMediaQuery?.removeEventListener?.("change",this.handleBrowseViewportChange);
         this.track.replaceChildren();
         this.track.classList.remove("rd-cover-reel", "rd-cover-step");
         this.slots = [];
         this.games = [];
         this.coverCache.clear();
+        this.browseControls = [];
+        this.browseMediaQuery = null;
+        this.browseEnabled = false;
         this.currentCenter = 0;
         this.running = false;
         this.initialized = false;

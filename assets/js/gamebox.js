@@ -99,7 +99,7 @@ resizeCanvas();
 
         }
 
-        const [front, back, left, right, top, bottom, insideLeft, insideRight, insideSpin] =
+        const [front, back, left, right, top, bottom, insideLeft, insideRight, insideSpin, insideMiddle, insideRightRight, extendedTop, extendedBottom, foldSpine] =
             await Promise.all([
                 loadImage("front"),
                 loadImage("back"),
@@ -109,7 +109,22 @@ resizeCanvas();
                 loadImage("bottom"),
                 loadImage("inside_left", true),
                 loadImage("inside_right", true),
-                loadImage("inside_spin", true)
+                loadImage("inside_spin", true),
+                gameData.package?.type === "extended-flatpack"
+                    ? loadImage(gameData.package.extendedFlatpack?.insideMiddleTexture || "inside_middle", true)
+                    : Promise.resolve(null),
+                gameData.package?.type === "extended-flatpack"
+                    ? loadImage(gameData.package.extendedFlatpack?.insideRightRightTexture || "inside_right_right", true)
+                    : Promise.resolve(null),
+                gameData.package?.type === "extended-flatpack"
+                    ? loadImage(gameData.package.extendedFlatpack?.extendedTopTexture || "extended-top", true)
+                    : Promise.resolve(null),
+                gameData.package?.type === "extended-flatpack"
+                    ? loadImage(gameData.package.extendedFlatpack?.extendedBottomTexture || "extended-bottom", true)
+                    : Promise.resolve(null),
+                gameData.package?.type === "extended-flatpack"
+                    ? loadImage(gameData.package.extendedFlatpack?.foldSpineTexture || "extended-fold-spine", true)
+                    : Promise.resolve(null)
             ]);
 
         const images = {
@@ -121,7 +136,12 @@ resizeCanvas();
             bottom,
             insideLeft,
             insideRight,
-            insideSpin
+            insideSpin,
+            insideMiddle,
+            insideRightRight,
+            extendedTop,
+            extendedBottom,
+            foldSpine
         };
 
         const dimensions = gameData.dimensions || {};

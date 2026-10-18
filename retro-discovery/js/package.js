@@ -9,7 +9,9 @@ window.Package = {
             packageOptions.closed
         );
 
-        if (current.game.hasInside && packageOptions.type !== "flatpack") {
+        const isFlatpack = packageOptions.type === "flatpack" || packageOptions.type === "extended-flatpack";
+
+        if (current.game.hasInside && !isFlatpack) {
             if (packageOptions.type === "hinged-box") {
                 current.hingedBoxMaterials = PackageMaterials.createHingedBox(
                     scene,
@@ -39,7 +41,7 @@ window.Package = {
         // Flatpacks use the stable standard closed builder until the user
         // opens the package. Their opening geometry is isolated in the new
         // FlatpackBuilder and is enabled only for explicitly marked games.
-        if (current.game.hasInside && packageOptions.type === "flatpack") {
+        if (current.game.hasInside && isFlatpack) {
             current.flatpackMaterials = PackageMaterials.createFlatpack(
                 scene,
                 current.game.images,
@@ -63,6 +65,15 @@ window.Package = {
             flatpack.closed = closed;
             flatpack.meshes = { ...closed.meshes, ...flatpack.meshes };
             flatpack.materials = { ...current.closedMaterials, ...current.flatpackMaterials };
+            if (packageOptions.type === "extended-flatpack") {
+                flatpack.type = "extended-flatpack";
+                flatpack.extension = ExtendedFlatpackBuilder.create(
+                    scene,
+                    flatpack,
+                    current.game.images,
+                    packageOptions.extendedFlatpack || {}
+                );
+            }
             return flatpack;
         }
 
@@ -73,7 +84,7 @@ window.Package = {
         if (pkg?.type === "hinged-box") {
             return HingedBoxBuilder.animateTo(scene, pkg, amount, onComplete);
         }
-        if (pkg?.type === "flatpack") {
+        if (pkg?.type === "flatpack" || pkg?.type === "extended-flatpack") {
             if (pkg.isAnimating) return false;
             const opening = amount > 0.5;
 
@@ -81,14 +92,24 @@ window.Package = {
                 pkg.closed.root.setEnabled(false);
                 pkg.root.setEnabled(true);
                 FlatpackBuilder.setOpenProgress(pkg, 0);
-                return FlatpackBuilder.open(scene, pkg, onComplete);
+                return FlatpackBuilder.open(scene, pkg, () => {
+                    if (pkg.extension) ExtendedFlatpackBuilder.setPrimaryOpen(pkg.extension, true);
+                    onComplete?.(pkg);
+                });
             }
 
-            return FlatpackBuilder.close(scene, pkg, () => {
+            const closePrimary = () => {
+                if (pkg.extension) ExtendedFlatpackBuilder.setPrimaryOpen(pkg.extension, false);
+                return FlatpackBuilder.close(scene, pkg, () => {
                 pkg.root.setEnabled(false);
                 pkg.closed.root.setEnabled(true);
                 onComplete?.(pkg);
-            });
+                });
+            };
+            if (pkg.extension?.openAmount > 0.001) {
+                return ExtendedFlatpackBuilder.animateTo(pkg.extension, 0, closePrimary);
+            }
+            return closePrimary();
         }
         return PackageAnimation.animateTo(scene, pkg, amount, onComplete);
     },
@@ -106,6 +127,17 @@ window.Package = {
         return this.setOpen(scene, pkg, pkg.openAmount > 0.5 ? 0 : 1, onComplete);
     },
 
+    toggleExtension(scene, pkg, onComplete) {
+        if (pkg?.type !== "extended-flatpack" || !pkg.extension) return false;
+        if (pkg.openAmount < 0.995 || pkg.isAnimating || pkg.extension.isAnimating) return false;
+        return ExtendedFlatpackBuilder.toggle(pkg.extension, () => onComplete?.(pkg));
+    },
+
+    closeExtension(scene, pkg, onComplete) {
+        if (pkg?.type !== "extended-flatpack" || !pkg.extension) return false;
+        return ExtendedFlatpackBuilder.animateTo(pkg.extension, 0, () => onComplete?.(pkg));
+    },
+
     dispose(pkg) {
         if (!pkg) return;
         if (pkg.type === "hinged-box") {
@@ -113,7 +145,8 @@ window.Package = {
             PackageMaterials.dispose(pkg.materials);
             return;
         }
-        if (pkg.type === "flatpack") {
+        if (pkg.type === "flatpack" || pkg.type === "extended-flatpack") {
+            if (pkg.extension) ExtendedFlatpackBuilder.dispose(pkg.extension);
             FlatpackBuilder.dispose(pkg);
             Object.values(pkg.closed?.meshes || {}).forEach((mesh) => mesh?.dispose());
             pkg.closed?.root?.dispose();

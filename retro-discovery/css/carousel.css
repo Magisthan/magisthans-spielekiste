@@ -631,6 +631,86 @@ carousel.css
         inset 0 1px rgba(255,255,255,.1);
 }
 
+/* Post-spin archive browsing. The arrows live in the unused chassis areas;
+   the reel remains the only source of truth for the selected game. */
+.rd-reel-nav{
+    position:absolute;
+    /* Die Track-HÃ¼lle hat im Desktop-Chassis keine eigene HÃ¶he. Deshalb wird
+       die vertikale Mitte der 378px hohen .rd-carousel-section vom unteren
+       Rand der 1700x420-ReferenzflÃ¤che aus bestimmt. */
+    top:auto;
+    bottom:60px;
+    z-index:220;
+    display:grid;
+    place-items:center;
+    width:62px;
+    height:82px;
+    padding:0;
+    border:1px solid rgba(235,192,100,.42);
+    border-radius:16px;
+    color:#f4d381;
+    background:linear-gradient(145deg,rgba(55,59,61,.92),rgba(16,19,21,.96));
+    box-shadow:0 14px 28px rgba(0,0,0,.48),inset 0 1px rgba(255,255,255,.11);
+    transform:translateY(-50%);
+    cursor:pointer;
+    transition:transform .2s ease,border-color .2s ease,background .2s ease,box-shadow .2s ease;
+}
+
+.rd-reel-nav[hidden]{
+    display:none;
+}
+
+.rd-reel-nav-previous{
+    left:118px;
+}
+
+.rd-reel-nav-next{
+    right:118px;
+}
+
+.rd-reel-nav span{
+    margin-top:-5px;
+    font:400 4.15rem/1 Georgia,serif;
+    text-shadow:0 0 14px rgba(238,183,71,.32);
+}
+
+.rd-reel-nav:hover,
+.rd-reel-nav:focus-visible{
+    border-color:rgba(255,215,130,.86);
+    background:linear-gradient(145deg,rgba(72,77,79,.97),rgba(22,25,27,.98));
+    box-shadow:0 16px 32px rgba(0,0,0,.5),0 0 18px rgba(230,172,54,.2),inset 0 1px rgba(255,255,255,.16);
+    transform:translateY(-50%) scale(1.055);
+    outline:2px solid rgba(255,220,145,.75);
+    outline-offset:3px;
+}
+
+.rd-reel-nav:disabled{
+    opacity:.42;
+    cursor:wait;
+}
+
+.rd-reel-browse-enabled .rd-cover-slot[aria-disabled="false"]{
+    cursor:pointer;
+}
+
+.rd-reel-browse-enabled .rd-cover-slot[aria-disabled="false"]:hover,
+.rd-reel-browse-enabled .rd-cover-slot[aria-disabled="false"]:focus-visible{
+    border-color:rgba(244,198,99,.72);
+    box-shadow:0 14px 28px rgba(0,0,0,.68),0 0 18px rgba(236,179,58,.24),inset 0 1px rgba(255,255,255,.16);
+    outline:2px solid rgba(250,210,124,.62);
+    outline-offset:3px;
+}
+
+.rd-reel-browse-enabled .rd-cover-slot[aria-disabled="false"]:hover .rd-cover-image,
+.rd-reel-browse-enabled .rd-cover-slot[aria-disabled="false"]:focus-visible .rd-cover-image{
+    filter:brightness(1.07) drop-shadow(0 20px 24px rgba(0,0,0,.5));
+}
+
+.rd-reel-browse-moving .rd-reel-nav,
+.rd-reel-browse-moving .rd-cover-slot{
+    pointer-events:none;
+}
+
 .rd-selection-gate{
     position:absolute;
     left:50%;

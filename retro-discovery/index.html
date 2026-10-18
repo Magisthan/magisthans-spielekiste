@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="css/viewer.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/scan-dialog.css">
     <link rel="stylesheet" href="css/top-discoveries.css">
     <link rel="stylesheet" href="css/viewer-redesign.css">
 
@@ -470,66 +469,6 @@
             <div class="ui-vignette"></div>
 
             <div
-                id="scan-contribution-dialog"
-                class="scan-contribution-dialog"
-                role="dialog"
-                aria-modal="true"
-                aria-labelledby="scan-dialog-title"
-                aria-describedby="scan-dialog-description"
-                aria-hidden="true"
-                inert>
-
-                <div class="scan-contribution-backdrop" data-scan-dialog-close></div>
-
-                <div class="scan-contribution-dialog-panel" role="document">
-
-                    <button
-                        id="scan-dialog-close"
-                        class="scan-dialog-close"
-                        type="button"
-                        aria-label="Dialog schließen"
-                        data-i18n-aria-label="scan.closeLabel">
-                        ×
-                    </button>
-
-                    <div id="scan-dialog-kicker" class="scan-dialog-kicker" data-i18n="scan.kicker">ARCHIV UNTERSTÜTZEN</div>
-                    <h3 id="scan-dialog-title" data-i18n="scan.title">BOX-SCANS BEITRAGEN</h3>
-
-                    <p id="scan-dialog-description" class="scan-dialog-lead" data-i18n="scan.description">Du hast eine seltene Spielebox? Hilf mit, sie digital zu bewahren.</p>
-
-                    <ul class="scan-dialog-checklist">
-                        <li id="scan-guideline-sides" data-i18n="scan.sides">Vorderseite, Rückseite und Seitenflächen (insgesamt 6 Bilder)</li>
-                        <li id="scan-guideline-content" data-i18n="scan.content">Inhalt und Beilagen gerne separat auf einem Bild</li>
-                        <li id="scan-guideline-angle" data-i18n="scan.angle">Gerade fotografiert oder gescannt</li>
-                        <li id="scan-guideline-resolution" data-i18n="scan.resolution">Auflösung mindestens 300 dpi</li>
-                        <li id="scan-guideline-compression" data-i18n="scan.compression">Möglichst ohne vorherige Komprimierung</li>
-                    </ul>
-
-                    <a
-                        id="scan-contribution-email"
-                        class="scan-contribution-email"
-                        href="mailto:magisthansspielekiste@disroot.org"
-                        data-i18n="scan.email">
-                        SCANS PER E-MAIL SENDEN
-                    </a>
-
-                    <p id="scan-dialog-note" class="scan-dialog-note" data-i18n="scan.note">
-                        Für größere Dateien kannst du mir zunächst schreiben.
-                    </p>
-
-                    <button
-                        id="scan-dialog-cancel"
-                        class="scan-dialog-cancel"
-                        type="button"
-                        data-i18n="scan.close">
-                        SCHLIESSEN
-                    </button>
-
-                </div>
-
-            </div>
-
-            <div
                 id="editorial-dialog"
                 class="editorial-dialog"
                 role="dialog"
@@ -579,6 +518,33 @@
                 <canvas id="viewer3d"></canvas>
 
             </div> <!-- viewer-container -->
+
+            <div
+                id="viewer-scanlines-layer"
+                class="viewer-scanlines-layer"
+                aria-hidden="true">
+            </div>
+
+            <div
+                id="viewer-presentation-modes"
+                class="viewer-presentation-modes"
+                role="group"
+                data-i18n-aria-label="viewer.presentationModesLabel"
+                aria-label="Viewer-Ansicht">
+                <span class="viewer-presentation-label" data-i18n="viewer.presentation">ANSICHT</span>
+                <button type="button" data-viewer-mode="standard" aria-pressed="true">
+                    <span aria-hidden="true">&#9675;</span>
+                    <span data-i18n="viewer.modeStandard">STANDARD</span>
+                </button>
+                <button type="button" data-viewer-mode="retro" aria-pressed="false">
+                    <span aria-hidden="true">&#9644;</span>
+                    <span data-i18n="viewer.modeRetro">RETRO</span>
+                </button>
+                <button type="button" data-viewer-mode="museum" aria-pressed="false">
+                    <span aria-hidden="true">&#9671;</span>
+                    <span data-i18n="viewer.modeMuseum">MUSEUM</span>
+                </button>
+            </div>
 
             <!--
                 Viewer-Redesign: parallele UI-Hülle.
@@ -653,6 +619,9 @@
                         class="viewer-reaction-panel"
                         aria-labelledby="viewer-reaction-question">
 
+                        <div class="viewer-reaction-card">
+                            <div class="viewer-reaction-face viewer-reaction-front">
+
                         <h2
                             id="viewer-reaction-question"
                             class="viewer-reaction-question"
@@ -668,7 +637,7 @@
                                 data-reaction="like"
                                 aria-pressed="false"
                                 data-i18n-aria-label="viewer.like">
-                                <span aria-hidden="true">👍</span>
+                                <span class="viewer-reaction-thumb viewer-reaction-thumb-like" aria-hidden="true">👍︎</span>
                                 <strong id="viewer-reaction-like-count">0</strong>
                             </button>
 
@@ -679,9 +648,28 @@
                                 data-reaction="dislike"
                                 aria-pressed="false"
                                 data-i18n-aria-label="viewer.dislike">
-                                <span aria-hidden="true">👎</span>
+                                <span class="viewer-reaction-thumb viewer-reaction-thumb-dislike" aria-hidden="true">👎︎</span>
                                 <strong id="viewer-reaction-dislike-count">0</strong>
                             </button>
+                        </div>
+
+                            </div>
+
+                            <div class="viewer-reaction-face viewer-reaction-back" aria-hidden="true">
+
+                        <div class="viewer-reaction-results" aria-hidden="true" inert>
+                            <span class="viewer-reaction-result" data-result-reaction="like">
+                                <span class="viewer-reaction-thumb-like" aria-hidden="true">👍︎</span>
+                                <strong id="viewer-reaction-like-percent">0%</strong>
+                            </span>
+                            <span class="viewer-reaction-result" data-result-reaction="dislike">
+                                <span class="viewer-reaction-thumb-dislike" aria-hidden="true">👎︎</span>
+                                <strong id="viewer-reaction-dislike-percent">0%</strong>
+                            </span>
+                            <p id="viewer-reaction-total">0 Bewertungen</p>
+                        </div>
+
+                            </div>
                         </div>
 
                         <p
@@ -693,27 +681,43 @@
 
                     </section>
 
-                    <nav
-                        class="viewer-compact-actions"
-                        data-i18n-aria-label="viewer.actionsLabel"
-                        aria-label="Viewer-Aktionen">
+                    <section
+                        id="viewer-discovery-actions"
+                        class="viewer-discovery-actions"
+                        aria-labelledby="viewer-discovery-actions-heading">
+
+                        <h2
+                            id="viewer-discovery-actions-heading"
+                            class="viewer-discovery-actions-heading"
+                            data-i18n="viewer.discoverMore">
+                            MEHR ENTDECKEN
+                        </h2>
+
+                        <nav
+                            class="viewer-compact-actions"
+                            data-i18n-aria-label="viewer.actionsLabel"
+                            aria-label="Viewer-Aktionen">
 
                         <button
                             id="viewer-contents-button"
                             class="viewer-compact-action"
                             type="button"
                             disabled
-                            aria-disabled="true"
-                            data-i18n="viewer.contents">
-                            Box-Inhalt
+                            aria-disabled="true">
+                            <svg class="viewer-compact-action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="m3 7.7 9 5 9-5L12 3 3 7.7Z" fill="currentColor" fill-opacity=".3" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+                                <path d="M3 7.7v8.6l9 4.9 9-4.9V7.7M12 12.7v8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="m7.4 5.4 9.2 4.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                            <span data-i18n="viewer.contents">Box-Inhalt</span>
                         </button>
 
                         <button
                             id="viewer-compact-info-button"
                             class="viewer-compact-action"
-                            type="button"
-                            data-i18n="viewer.info">
-                            Info
+                            type="button">
+                            <img src="assets/icons/info.svg" alt="" aria-hidden="true">
+                            <span data-i18n="viewer.info">Info</span>
                         </button>
 
                         <button
@@ -721,13 +725,15 @@
                             class="viewer-compact-action"
                             type="button"
                             aria-haspopup="dialog"
-                            aria-controls="scan-contribution-dialog"
-                            aria-expanded="false"
-                            data-i18n="viewer.contribute">
-                            Mitmachen
+                            aria-controls="viewer-contribution-overlay"
+                            aria-expanded="false">
+                            <img src="assets/icons/contribute.svg" alt="" aria-hidden="true">
+                            <span data-i18n="viewer.contribute">Mitmachen</span>
                         </button>
 
-                    </nav>
+                        </nav>
+
+                    </section>
 
                 </div>
 
@@ -774,6 +780,67 @@
                     </div>
                 </aside>
 
+                <aside
+                    id="viewer-contribution-overlay"
+                    class="viewer-redesign-overlay viewer-contribution-overlay"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="viewer-contribution-title"
+                    aria-describedby="viewer-contribution-description"
+                    aria-hidden="true"
+                    inert
+                    hidden>
+
+                    <div class="viewer-redesign-overlay-content viewer-contribution-content">
+                        <button
+                            id="viewer-contribution-close"
+                            class="viewer-overlay-close"
+                            type="button"
+                            aria-label="Dialog schließen"
+                            data-i18n-aria-label="scan.closeLabel">
+                            <span aria-hidden="true">×</span>
+                        </button>
+
+                        <p class="scan-dialog-kicker" data-i18n="scan.kicker">ARCHIV UNTERSTÜTZEN</p>
+                        <h2 id="viewer-contribution-title" data-i18n="scan.title">BOX-SCANS BEITRAGEN</h2>
+
+                        <p
+                            id="viewer-contribution-description"
+                            class="scan-dialog-lead"
+                            data-i18n="scan.description">
+                            Du hast eine seltene Spielebox? Hilf mit, sie digital zu bewahren.
+                        </p>
+
+                        <ul class="scan-dialog-checklist">
+                            <li data-i18n="scan.sides">Vorderseite, Rückseite und Seitenflächen (insgesamt 6 Bilder)</li>
+                            <li data-i18n="scan.content">Inhalt und Beilagen gerne separat auf einem Bild</li>
+                            <li data-i18n="scan.angle">Gerade fotografiert oder gescannt</li>
+                            <li data-i18n="scan.resolution">Auflösung mindestens 300 dpi</li>
+                            <li data-i18n="scan.compression">Möglichst ohne vorherige Komprimierung</li>
+                        </ul>
+
+                        <a
+                            id="viewer-contribution-email"
+                            class="scan-contribution-email"
+                            href="mailto:magisthansspielekiste@disroot.org"
+                            data-i18n="scan.email">
+                            SCANS PER E-MAIL SENDEN
+                        </a>
+
+                        <p class="scan-dialog-note" data-i18n="scan.note">
+                            Für größere Dateien kannst du mir zunächst schreiben.
+                        </p>
+
+                        <button
+                            id="viewer-contribution-cancel"
+                            class="scan-dialog-cancel"
+                            type="button"
+                            data-i18n="scan.close">
+                            SCHLIESSEN
+                        </button>
+                    </div>
+                </aside>
+
             </div>
 
             <div
@@ -809,10 +876,32 @@
 
             </div>
 
-            <button id="package-open-hint" type="button" aria-label="Box öffnen">
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M8.4 11.2V5.9a1.55 1.55 0 0 1 3.1 0v4.35l.6-.6a1.5 1.5 0 0 1 2.12 0l.58.58.35-.35a1.5 1.5 0 0 1 2.12 0l.64.63.2-.2a1.5 1.5 0 0 1 2.12 0l.56.57c.75.74.9 1.88.36 2.78l-2.28 3.8a4.2 4.2 0 0 1-3.6 2.04h-2.6a4.2 4.2 0 0 1-3.07-1.33l-3.5-3.7a1.55 1.55 0 0 1 2.25-2.13l.13.14Z" />
-                </svg>
+            <button
+                id="package-open-hint"
+                type="button"
+                data-i18n-aria-label="viewer.openBox"
+                aria-label="Box öffnen">
+                <span class="package-hint-flip" aria-hidden="true">
+                    <span class="package-hint-face package-hint-face-open">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M8.4 11.2V5.9a1.55 1.55 0 0 1 3.1 0v4.35l.6-.6a1.5 1.5 0 0 1 2.12 0l.58.58.35-.35a1.5 1.5 0 0 1 2.12 0l.64.63.2-.2a1.5 1.5 0 0 1 2.12 0l.56.57c.75.74.9 1.88.36 2.78l-2.28 3.8a4.2 4.2 0 0 1-3.6 2.04h-2.6a4.2 4.2 0 0 1-3.07-1.33l-3.5-3.7a1.55 1.55 0 0 1 2.25-2.13l.13.14Z" />
+                        </svg>
+                        <span class="package-open-label-full" data-i18n="viewer.openBox">BOX ÖFFNEN</span>
+                        <span class="package-open-label-short" data-i18n="viewer.openBoxShort">ÖFFNEN</span>
+                    </span>
+                    <span class="package-hint-face package-hint-face-close">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M8.4 11.2V5.9a1.55 1.55 0 0 1 3.1 0v4.35l.6-.6a1.5 1.5 0 0 1 2.12 0l.58.58.35-.35a1.5 1.5 0 0 1 2.12 0l.64.63.2-.2a1.5 1.5 0 0 1 2.12 0l.56.57c.75.74.9 1.88.36 2.78l-2.28 3.8a4.2 4.2 0 0 1-3.6 2.04h-2.6a4.2 4.2 0 0 1-3.07-1.33l-3.5-3.7a1.55 1.55 0 0 1 2.25-2.13l.13.14Z" />
+                        </svg>
+                        <span class="package-open-label-full" data-i18n="viewer.closeBox">BOX SCHLIESSEN</span>
+                        <span class="package-open-label-short" data-i18n="viewer.closeBoxShort">SCHLIESSEN</span>
+                    </span>
+                </span>
+            </button>
+
+            <button id="package-extension-hint" type="button" aria-label="Weiter aufklappen" hidden>
+                <span aria-hidden="true">↔</span>
+                <span class="package-extension-label">WEITER AUFKLAPPEN</span>
             </button>
 
             <!-- Rahmen ganz zum Schluss -->
@@ -899,12 +988,16 @@
 <script src="js/package-materials.js"></script>
 <script src="js/package-animation.js"></script>
 <script src="js/flatpack-builder.js"></script>
+<script src="js/extended-flatpack-builder.js"></script>
 <script src="js/hinged-box-builder.js"></script>
 <script src="js/package.js"></script>
 <script src="../assets/js/viewer-input-controls.js"></script>
 <script src="../assets/js/content-image-enhancer.js"></script>
 
+<script src="js/viewer-scanlines.js"></script>
 <script src="js/viewer.js"></script>
+<script src="js/viewer-presentation-modes.js"></script>
+<script src="js/reaction-store.js"></script>
 <script src="js/viewer-ui-controller.js"></script>
 <script src="js/viewer-content.js"></script>
 <script src="js/filters.js"></script>
@@ -914,7 +1007,6 @@
 <script src="js/events.js"></script>
 <script src="js/navigation.js"></script>
 <script src="js/ui.js"></script>
-<script src="js/community.js"></script>
 <script src="js/top-discoveries.js"></script>
 </body>
 

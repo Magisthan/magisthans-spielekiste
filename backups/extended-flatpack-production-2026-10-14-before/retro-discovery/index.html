@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title data-i18n="header.pageTitle">Gamebox Discovery</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/viewer.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/top-discoveries.css">
+    <link rel="stylesheet" href="css/viewer-redesign.css">
+
+</head>
+
+<body>
+
+<main id="app">
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="rd-header">
+
+    <div class="rd-header-left">
+
+        <div class="rd-logo">
+
+            <img
+                src="assets/icons/logo.webp"
+                alt="Gamebox Discovery Logo">
+
+        </div>
+
+        <div class="rd-title">
+
+            <h1 data-i18n="header.title">GAMEBOX DISCOVERY</h1>
+
+            <p class="rd-title-tagline" data-i18n="header.tagline">
+                Entdecke Spieleklassiker und ihre Boxen in 3D
+            </p>
+
+            <div class="rd-publisher-label" aria-label="Eine Magisthans Spielekiste Produktion">
+                <span>A MAGISTHANS SPIELEKISTE PRODUCTION</span>
+                <i aria-hidden="true">◆</i>
+                <span>CURATED RETRO COLLECTION</span>
+            </div>
+
+        </div>
+
+    </div>    
+
+    <div class="rd-language-selector" role="group" aria-label="Sprache wählen">
+        <button type="button" data-rd-language="de" data-i18n-aria-label="language.german" aria-label="Deutsch" aria-pressed="true">
+            <svg class="rd-language-flag" viewBox="0 0 30 18" aria-hidden="true" focusable="false">
+                <rect width="30" height="6" y="0" fill="#151515"></rect>
+                <rect width="30" height="6" y="6" fill="#d71920"></rect>
+                <rect width="30" height="6" y="12" fill="#f7ce38"></rect>
+            </svg>
+            <span>DE</span>
+        </button>
+        <span class="rd-language-divider" aria-hidden="true"></span>
+        <button type="button" data-rd-language="en" data-i18n-aria-label="language.english" aria-label="Englisch" aria-pressed="false">
+            <svg class="rd-language-flag" viewBox="0 0 60 36" aria-hidden="true" focusable="false">
+                <rect width="60" height="36" fill="#21468b"></rect>
+                <path d="M0 0 60 36M60 0 0 36" stroke="#fff" stroke-width="8"></path>
+                <path d="M0 0 60 36M60 0 0 36" stroke="#cf142b" stroke-width="4"></path>
+                <path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="12"></path>
+                <path d="M30 0v36M0 18h60" stroke="#cf142b" stroke-width="7"></path>
+            </svg>
+            <span>EN</span>
+        </button>
+    </div>
+
+</header>
+
+<!-- Mobile nutzt LCD und Drehknopf ohne das große obere Chassis. -->
+<section id="mobile-discovery-console" aria-label="Discovery Terminal">
+    <div id="mobile-lcd-mount"></div>
+    <div id="mobile-discovery-knob-mount"></div>
+</section>
+
+<!-- ==========================================
+     DISCOVERY CONSOLE
+========================================== -->
+
+<div class="rd-console">
+
+<!-- ==========================================
+     TOP CONSOLE
+========================================== -->
+
+<section class="rd-console-top">
+
+    <img
+        class="rd-console-chassis"
+        src="assets/ui/console_chassis_top.webp"
+        alt="">
+
+<div class="rd-console-overlay">
+
+    <div id="rd-lcd">
+
+    <img
+        class="rd-lcd-glass"
+        src="assets/ui/lcd-glass.webp"
+        alt="LCD">
+
+    <div class="rd-lcd-screen">
+
+        <!-- ======================================
+             READY SCREEN
+        ======================================= -->
+
+        <div id="lcd-ready" class="rd-lcd-page">
+
+            <div class="rd-lcd-title">RD // COLLECTION TERMINAL</div>
+
+            <div class="rd-lcd-status lcd-status-ready">
+                <i aria-hidden="true"></i> SYSTEM READY
+            </div>
+
+            <div class="rd-lcd-divider"></div>
+
+            <div class="rd-lcd-body">
+
+                <div class="rd-lcd-label">
+                    GAME
+                </div>
+
+                <div class="rd-lcd-colon">
+                    :
+                </div>
+
+                <div class="rd-lcd-value">
+                    <span id="rd-current-game">0</span>
+                    /
+                    <span id="rd-total-games">0</span>
+                </div>
+
+                <div class="rd-lcd-label">
+                    SYSTEMS
+                </div>
+
+                <div class="rd-lcd-colon">
+                    :
+                </div>
+
+                <div class="rd-lcd-value">
+                    <span id="lcd-systems">ALL</span>
+                </div>
+
+                <div class="rd-lcd-label">
+                    GENRES
+                </div>
+
+                <div class="rd-lcd-colon">
+                    :
+                </div>
+
+                <div class="rd-lcd-value">
+                    <span id="lcd-genres">ALL</span>
+                </div>
+
+            </div>
+
+            <div class="rd-lcd-divider rd-lcd-divider-bottom"></div>
+
+            <div class="rd-lcd-footer">PRESS DISCOVERY TO BEGIN<span class="rd-lcd-cursor" aria-hidden="true">_</span></div>
+
+        </div>
+
+        <!-- ======================================
+             SEARCHING SCREEN
+        ======================================= -->
+
+        <div id="lcd-searching"
+     class="rd-lcd-page hidden">
+
+    <div class="rd-lcd-title">RD // COLLECTION TERMINAL</div>
+
+    <div
+        id="lcd-search-status"
+        class="rd-lcd-status lcd-status-searching"><i aria-hidden="true"></i> SEARCHING ARCHIVE</div>
+
+    <div class="rd-lcd-divider"></div>
+
+    <div
+        id="lcd-search-progress"
+        class="rd-lcd-progress">
+
+        █░░░░░░░░░
+
+    </div>
+
+    <div class="rd-lcd-search-detail">MATCHING SYSTEM + GENRE DATA</div>
+
+    <div class="rd-lcd-divider rd-lcd-divider-bottom"></div>
+
+    <div class="rd-lcd-footer">PLEASE WAIT<span class="rd-lcd-cursor" aria-hidden="true">_</span></div>
+
+</div>
+
+<!-- ======================================
+     FOUND SCREEN
+====================================== -->
+
+<div id="lcd-found"
+     class="rd-lcd-page hidden">
+
+    <div class="rd-lcd-title">RD // COLLECTION TERMINAL</div>
+
+    <div class="rd-lcd-status lcd-status-found"><i aria-hidden="true"></i> DISCOVERY FOUND</div>
+
+    <div class="rd-lcd-divider"></div>
+
+    <div
+        id="lcd-found-title"
+        class="rd-lcd-found-title">
+
+        GAME
+
+    </div>
+
+    <div
+        id="lcd-found-system"
+        class="rd-lcd-found-system">
+
+        SYSTEM
+
+    </div>
+
+    <div
+        id="lcd-found-year"
+        class="rd-lcd-found-year">
+
+        YEAR
+
+    </div>
+
+    <div class="rd-lcd-divider rd-lcd-divider-bottom"></div>
+
+    <div class="rd-lcd-footer">LOADING PACKAGE VIEW…</div>
+
+</div>
+
+<!-- ======================================
+     NO MATCH SCREEN
+====================================== -->
+
+<div id="lcd-nomatch"
+     class="rd-lcd-page hidden">
+
+    <div class="rd-lcd-title">RD // COLLECTION TERMINAL</div>
+
+    <div class="rd-lcd-status lcd-status-nomatch"><i aria-hidden="true"></i> NO MATCH</div>
+
+    <div class="rd-lcd-divider"></div>
+
+    <div class="rd-lcd-found-title">
+
+        CHANGE FILTERS
+
+    </div>
+
+    <div class="rd-lcd-found-system">
+
+        TRY AGAIN
+
+    </div>
+
+    <div class="rd-lcd-divider rd-lcd-divider-bottom"></div>
+
+    <div class="rd-lcd-footer">ADJUST FILTER PARAMETERS</div>
+
+</div>
+
+    </div>
+
+</div>
+
+<!-- Community-Rangliste: wird zunächst mit lokalen Testdaten gespeist. -->
+<section
+    id="top-discoveries"
+    aria-label="Top Discoveries der Community">
+
+    <header class="top-discoveries-header">
+        <span class="top-discoveries-live">
+            LIVE <i aria-hidden="true"></i>
+        </span>
+    </header>
+
+    <div class="top-discoveries-viewport">
+        <div
+            id="top-discoveries-track"
+            class="top-discoveries-track">
+        </div>
+    </div>
+
+</section>
+
+<!-- Discovery Button -->
+
+        <div
+            id="discovery-button"
+            class="rd-discovery">
+
+            <img
+                src="assets/icons/drehbutton.webp"
+                class="rd-discovery-knob"
+                alt="Discovery Knopf">
+
+            <!--<div class="rd-discovery-text">
+
+                <h3>DREH AM KNOPF</h3>
+
+                <p>und lass dich überraschen!</p>
+
+            </div>-->
+
+        </div> <!-- rd-discovery -->
+
+        <!-- ======================================
+             CONTROL PANEL
+        ======================================= -->
+
+        <section id="rd-control-panel">
+
+            <div class="rd-filter-group">
+
+                <div
+                    id="system-filter-container"
+                    class="rd-filter-buttons">
+                </div>
+
+            </div>
+
+            <div class="rd-filter-group">
+
+                <div
+                    id="genre-filter-container"
+                    class="rd-filter-buttons">
+                </div>
+
+            </div>
+
+        </section> <!-- rd-control-panel -->
+
+    </div> <!-- rd-console-overlay -->
+
+</section> <!-- rd-console-top -->
+
+<!-- Mobile Bedienoberfläche für die unveränderten System- und Genrefilter. -->
+<section
+    id="mobile-filter-panel"
+    aria-label="Discovery-Filter"
+    data-i18n-aria-label="filters.mobilePanel">
+
+    <div class="mobile-filter-group">
+        <h2 data-i18n="filters.systems">SYSTEME</h2>
+        <div id="mobile-system-filter-mount"></div>
+    </div>
+
+    <div class="mobile-filter-group">
+        <h2 data-i18n="filters.genres">GENRES</h2>
+        <div id="mobile-genre-filter-mount"></div>
+    </div>
+
+</section>
+
+<!-- Mobiler Laufkanal; verwendet denselben SlotRenderer wie die Desktop-Konsole. -->
+<section id="mobile-spin-frame" aria-label="Discovery Spin">
+    <div id="mobile-spin-track-mount"></div>
+</section>
+
+<!-- Auf kleinen Bildschirmen bewusst außerhalb der skalierten Chassis-Fläche. -->
+<section
+    id="top-discoveries-mobile"
+    aria-label="Top Discoveries der Community">
+
+    <header class="top-discoveries-mobile-header">
+        <span>TOP DISCOVERIES</span>
+        <span class="top-discoveries-live">
+            LIVE <i aria-hidden="true"></i>
+        </span>
+    </header>
+
+    <div
+        id="top-discoveries-mobile-current"
+        class="top-discoveries-mobile-current"
+        aria-live="polite">
+    </div>
+
+    <p class="top-discoveries-mobile-note">
+        Community-Rangliste · Top 20
+    </p>
+
+</section>
+
+<!-- ==========================================
+     MIDDLE CONSOLE
+========================================== -->
+
+<section class="rd-console-shelf">
+
+    <img
+        class="rd-console-chassis"
+        src="assets/ui/console_chassis_middle.webp"
+        alt="">
+
+    <div class="rd-console-overlay">
+
+        <section class="rd-carousel-section">
+
+            <div class="rd-stage-background"></div>
+
+            <div class="rd-grid"></div>
+
+            <div class="rd-shelf-light"></div>
+
+            <div class="rd-shelf-image">                
+
+                <div
+                    id="rd-carousel-track"
+                    class="rd-carousel-track">
+                </div>
+
+            </div> <!-- rd-shelf-image -->
+
+        </section> <!-- rd-carousel-section -->
+
+    </div> <!-- rd-console-overlay -->
+
+</section> <!-- rd-console-shelf -->
+<!-- ==========================================
+     VIEWER CONSOLE
+========================================== -->
+
+<section class="rd-console-viewer">
+
+    <div class="rd-main-layout">
+
+        <!-- ======================================
+             VIEWER
+        ======================================= -->
+
+        <section id="viewer-stage">
+
+            <!-- Hintergrund -->
+
+            <div id="viewer-background">
+
+                <div class="floor-glow"></div>
+
+                <div id="viewer-vignette"></div>
+
+            </div>
+
+            <div class="ui-vignette"></div>
+
+            <div
+                id="editorial-dialog"
+                class="editorial-dialog"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="editorial-dialog-heading"
+                aria-describedby="editorial-dialog-copy"
+                aria-hidden="true"
+                inert>
+
+                <div class="editorial-dialog-backdrop" data-editorial-dialog-close></div>
+
+                <article class="editorial-dialog-panel">
+
+                    <button
+                        id="editorial-dialog-close"
+                        class="editorial-dialog-close"
+                        type="button"
+                        aria-label="Lesefenster schließen"
+                        data-i18n-aria-label="info.readerClose">
+                        ×
+                    </button>
+
+                    <div id="editorial-dialog-kicker" class="editorial-dialog-kicker">
+                        GAMEBOX DISCOVERY ARCHIVE
+                    </div>
+
+                    <h2 id="editorial-dialog-heading">MAGISTHANS REVIEW</h2>
+                    <div id="editorial-dialog-game" class="editorial-dialog-game"></div>
+                    <div id="editorial-dialog-copy" class="editorial-dialog-copy"></div>
+
+                    <button
+                        id="editorial-dialog-cancel"
+                        class="editorial-dialog-cancel"
+                        type="button"
+                        data-i18n="info.closeButton">
+                        SCHLIESSEN
+                    </button>
+
+                </article>
+
+            </div>
+
+            <!-- Babylon Viewer -->
+
+            <div id="viewer-container">
+
+                <canvas id="viewer3d"></canvas>
+
+            </div> <!-- viewer-container -->
+
+            <div
+                id="viewer-scanlines-layer"
+                class="viewer-scanlines-layer"
+                aria-hidden="true">
+            </div>
+
+            <div
+                id="viewer-presentation-modes"
+                class="viewer-presentation-modes"
+                role="group"
+                data-i18n-aria-label="viewer.presentationModesLabel"
+                aria-label="Viewer-Ansicht">
+                <span class="viewer-presentation-label" data-i18n="viewer.presentation">ANSICHT</span>
+                <button type="button" data-viewer-mode="standard" aria-pressed="true">
+                    <span aria-hidden="true">&#9675;</span>
+                    <span data-i18n="viewer.modeStandard">STANDARD</span>
+                </button>
+                <button type="button" data-viewer-mode="retro" aria-pressed="false">
+                    <span aria-hidden="true">&#9644;</span>
+                    <span data-i18n="viewer.modeRetro">RETRO</span>
+                </button>
+                <button type="button" data-viewer-mode="museum" aria-pressed="false">
+                    <span aria-hidden="true">&#9671;</span>
+                    <span data-i18n="viewer.modeMuseum">MUSEUM</span>
+                </button>
+            </div>
+
+            <!--
+                Viewer-Redesign: parallele UI-Hülle.
+                Sie bleibt bis zur schrittweisen Migration deaktiviert und
+                verändert weder den Babylon-Viewer noch die bestehende UI.
+            -->
+            <div
+                id="viewer-redesign-shell"
+                class="viewer-redesign-shell"
+                data-presentation-mode="box"
+                data-active-overlay="none"
+                aria-hidden="true"
+                inert
+                hidden>
+
+                <div
+                    id="viewer-redesign-scrim"
+                    class="viewer-redesign-scrim"
+                    aria-hidden="true">
+                </div>
+
+                <section
+                    id="viewer-contents-exhibit"
+                    class="viewer-contents-exhibit"
+                    aria-hidden="true"
+                    hidden>
+                    <div class="viewer-contents-exhibit-inner">
+                        <figure class="viewer-contents-figure">
+                            <div class="viewer-contents-image-frame">
+                                <p class="viewer-contents-kicker" data-i18n="viewer.contentsHeading">WAS IST IN DER BOX?</p>
+                                <img id="viewer-contents-image" alt="" decoding="async">
+                                <div id="viewer-contents-loading" class="viewer-contents-loading" role="status" aria-live="polite"></div>
+                                <button
+                                    id="viewer-contents-zoom"
+                                    class="viewer-contents-zoom"
+                                    type="button"
+                                    data-i18n-aria-label="viewer.contentsEnlarge"
+                                    aria-label="Inhaltsbild vergrößern"
+                                    hidden>
+                                    <span aria-hidden="true">⌕</span>
+                                </button>
+                                <figcaption>
+                                    <strong id="viewer-contents-game-title"></strong>
+                                    <span id="viewer-contents-caption" data-i18n="viewer.contentsCaption">Originaler Boxinhalt</span>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </section>
+
+                <dialog
+                    id="viewer-contents-dialog"
+                    class="viewer-contents-dialog"
+                    data-i18n-aria-label="viewer.contentsDialog"
+                    aria-label="Vergrößertes Inhaltsbild">
+                    <div class="viewer-contents-dialog-panel">
+                        <button
+                            id="viewer-contents-dialog-close"
+                            class="viewer-contents-dialog-close"
+                            type="button"
+                            data-i18n-aria-label="viewer.contentsClose"
+                            aria-label="Bild schließen">×</button>
+                        <img id="viewer-contents-dialog-image" class="viewer-contents-dialog-image" alt="">
+                    </div>
+                </dialog>
+
+                <div
+                    id="viewer-redesign-interactions"
+                    class="viewer-redesign-interactions">
+
+                    <section
+                        class="viewer-reaction-panel"
+                        aria-labelledby="viewer-reaction-question">
+
+                        <div class="viewer-reaction-card">
+                            <div class="viewer-reaction-face viewer-reaction-front">
+
+                        <h2
+                            id="viewer-reaction-question"
+                            class="viewer-reaction-question"
+                            data-i18n="viewer.reactionQuestion">
+                            Gefällt dir diese Box?
+                        </h2>
+
+                        <div class="viewer-reaction-options">
+                            <button
+                                id="viewer-reaction-like"
+                                class="viewer-reaction-button"
+                                type="button"
+                                data-reaction="like"
+                                aria-pressed="false"
+                                data-i18n-aria-label="viewer.like">
+                                <span class="viewer-reaction-thumb viewer-reaction-thumb-like" aria-hidden="true">👍︎</span>
+                                <strong id="viewer-reaction-like-count">0</strong>
+                            </button>
+
+                            <button
+                                id="viewer-reaction-dislike"
+                                class="viewer-reaction-button"
+                                type="button"
+                                data-reaction="dislike"
+                                aria-pressed="false"
+                                data-i18n-aria-label="viewer.dislike">
+                                <span class="viewer-reaction-thumb viewer-reaction-thumb-dislike" aria-hidden="true">👎︎</span>
+                                <strong id="viewer-reaction-dislike-count">0</strong>
+                            </button>
+                        </div>
+
+                            </div>
+
+                            <div class="viewer-reaction-face viewer-reaction-back" aria-hidden="true">
+
+                        <div class="viewer-reaction-results" aria-hidden="true" inert>
+                            <span class="viewer-reaction-result" data-result-reaction="like">
+                                <span class="viewer-reaction-thumb-like" aria-hidden="true">👍︎</span>
+                                <strong id="viewer-reaction-like-percent">0%</strong>
+                            </span>
+                            <span class="viewer-reaction-result" data-result-reaction="dislike">
+                                <span class="viewer-reaction-thumb-dislike" aria-hidden="true">👎︎</span>
+                                <strong id="viewer-reaction-dislike-percent">0%</strong>
+                            </span>
+                            <p id="viewer-reaction-total">0 Bewertungen</p>
+                        </div>
+
+                            </div>
+                        </div>
+
+                        <p
+                            id="viewer-reaction-status"
+                            class="viewer-visually-hidden"
+                            role="status"
+                            aria-live="polite">
+                        </p>
+
+                    </section>
+
+                    <section
+                        id="viewer-discovery-actions"
+                        class="viewer-discovery-actions"
+                        aria-labelledby="viewer-discovery-actions-heading">
+
+                        <h2
+                            id="viewer-discovery-actions-heading"
+                            class="viewer-discovery-actions-heading"
+                            data-i18n="viewer.discoverMore">
+                            MEHR ENTDECKEN
+                        </h2>
+
+                        <nav
+                            class="viewer-compact-actions"
+                            data-i18n-aria-label="viewer.actionsLabel"
+                            aria-label="Viewer-Aktionen">
+
+                        <button
+                            id="viewer-contents-button"
+                            class="viewer-compact-action"
+                            type="button"
+                            disabled
+                            aria-disabled="true">
+                            <svg class="viewer-compact-action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="m3 7.7 9 5 9-5L12 3 3 7.7Z" fill="currentColor" fill-opacity=".3" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+                                <path d="M3 7.7v8.6l9 4.9 9-4.9V7.7M12 12.7v8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="m7.4 5.4 9.2 4.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                            </svg>
+                            <span data-i18n="viewer.contents">Box-Inhalt</span>
+                        </button>
+
+                        <button
+                            id="viewer-compact-info-button"
+                            class="viewer-compact-action"
+                            type="button">
+                            <img src="assets/icons/info.svg" alt="" aria-hidden="true">
+                            <span data-i18n="viewer.info">Info</span>
+                        </button>
+
+                        <button
+                            id="viewer-contribute-button"
+                            class="viewer-compact-action"
+                            type="button"
+                            aria-haspopup="dialog"
+                            aria-controls="viewer-contribution-overlay"
+                            aria-expanded="false">
+                            <img src="assets/icons/contribute.svg" alt="" aria-hidden="true">
+                            <span data-i18n="viewer.contribute">Mitmachen</span>
+                        </button>
+
+                        </nav>
+
+                    </section>
+
+                </div>
+
+                <aside
+                    id="viewer-redesign-overlay"
+                    class="viewer-redesign-overlay"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="viewer-overlay-title"
+                    aria-hidden="true"
+                    hidden>
+
+                    <div class="viewer-redesign-overlay-content">
+                        <button id="viewer-overlay-close" class="viewer-overlay-close" type="button" data-i18n-aria-label="info.close" aria-label="Info schließen"><span aria-hidden="true">×</span></button>
+
+                        <header class="viewer-overlay-header">
+                            <p class="viewer-overlay-kicker">GAMEBOX DISCOVERY ARCHIVE</p>
+                            <h2 id="viewer-overlay-title">–</h2>
+                            <p id="viewer-overlay-meta" class="viewer-overlay-meta">–</p>
+                        </header>
+
+                        <dl class="viewer-overlay-facts">
+                            <div><dt data-i18n="info.developer">Entwickler</dt><dd id="viewer-overlay-developer">–</dd></div>
+                            <div><dt data-i18n="info.publisher">Verleger</dt><dd id="viewer-overlay-publisher">–</dd></div>
+                            <div><dt data-i18n="info.boxArt">Box-Art</dt><dd id="viewer-overlay-boxartist">–</dd></div>
+                        </dl>
+
+                        <div class="viewer-overlay-editorial-actions">
+                            <button id="viewer-overlay-review" type="button"><span data-i18n="info.review">★ Magisthans Review</span><span aria-hidden="true">›</span></button>
+                            <button id="viewer-overlay-worth-playing" type="button"><span data-i18n="info.worthPlaying">◆ Heute noch spielenswert?</span><span aria-hidden="true">›</span></button>
+                        </div>
+
+                        <section id="viewer-overlay-links" class="viewer-overlay-links" aria-labelledby="viewer-overlay-links-title">
+                            <h3 id="viewer-overlay-links-title" data-i18n="info.links">Weiterführende Links</h3>
+                            <div>
+                                <a id="viewer-overlay-mobygames" target="_blank" rel="noopener noreferrer" hidden>🌐 MobyGames <span aria-hidden="true">↗</span></a>
+                                <a id="viewer-overlay-wikipedia" target="_blank" rel="noopener noreferrer" hidden>📖 Wikipedia <span aria-hidden="true">↗</span></a>
+                                <a id="viewer-overlay-gog" target="_blank" rel="noopener noreferrer" hidden>🎮 GOG <span aria-hidden="true">↗</span></a>
+                                <a id="viewer-overlay-letsplay" target="_blank" rel="noopener noreferrer" hidden>▶ Let's Play <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </section>
+
+                        <button id="viewer-overlay-share" class="viewer-overlay-share" type="button" data-i18n="info.share">Spiel teilen</button>
+                    </div>
+                </aside>
+
+                <aside
+                    id="viewer-contribution-overlay"
+                    class="viewer-redesign-overlay viewer-contribution-overlay"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="viewer-contribution-title"
+                    aria-describedby="viewer-contribution-description"
+                    aria-hidden="true"
+                    inert
+                    hidden>
+
+                    <div class="viewer-redesign-overlay-content viewer-contribution-content">
+                        <button
+                            id="viewer-contribution-close"
+                            class="viewer-overlay-close"
+                            type="button"
+                            aria-label="Dialog schließen"
+                            data-i18n-aria-label="scan.closeLabel">
+                            <span aria-hidden="true">×</span>
+                        </button>
+
+                        <p class="scan-dialog-kicker" data-i18n="scan.kicker">ARCHIV UNTERSTÜTZEN</p>
+                        <h2 id="viewer-contribution-title" data-i18n="scan.title">BOX-SCANS BEITRAGEN</h2>
+
+                        <p
+                            id="viewer-contribution-description"
+                            class="scan-dialog-lead"
+                            data-i18n="scan.description">
+                            Du hast eine seltene Spielebox? Hilf mit, sie digital zu bewahren.
+                        </p>
+
+                        <ul class="scan-dialog-checklist">
+                            <li data-i18n="scan.sides">Vorderseite, Rückseite und Seitenflächen (insgesamt 6 Bilder)</li>
+                            <li data-i18n="scan.content">Inhalt und Beilagen gerne separat auf einem Bild</li>
+                            <li data-i18n="scan.angle">Gerade fotografiert oder gescannt</li>
+                            <li data-i18n="scan.resolution">Auflösung mindestens 300 dpi</li>
+                            <li data-i18n="scan.compression">Möglichst ohne vorherige Komprimierung</li>
+                        </ul>
+
+                        <a
+                            id="viewer-contribution-email"
+                            class="scan-contribution-email"
+                            href="mailto:magisthansspielekiste@disroot.org"
+                            data-i18n="scan.email">
+                            SCANS PER E-MAIL SENDEN
+                        </a>
+
+                        <p class="scan-dialog-note" data-i18n="scan.note">
+                            Für größere Dateien kannst du mir zunächst schreiben.
+                        </p>
+
+                        <button
+                            id="viewer-contribution-cancel"
+                            class="scan-dialog-cancel"
+                            type="button"
+                            data-i18n="scan.close">
+                            SCHLIESSEN
+                        </button>
+                    </div>
+                </aside>
+
+            </div>
+
+            <div
+                id="viewer-game-title"
+                class="viewer-game-title">
+
+                <span class="viewer-game-title-line">
+
+                    <span
+                        id="viewer-game-title-text"
+                        class="viewer-game-title-text"
+                        aria-hidden="true">
+                    </span>
+
+                    <span
+                        class="viewer-game-title-cursor"
+                        aria-hidden="true">
+                    </span>
+
+                </span>
+
+                <span
+                    id="viewer-scan-credit"
+                    class="viewer-scan-credit">
+                </span>
+
+                <span
+                    id="viewer-game-title-status"
+                    class="viewer-game-title-status"
+                    role="status"
+                    aria-live="polite">
+                </span>
+
+            </div>
+
+            <button
+                id="package-open-hint"
+                type="button"
+                data-i18n-aria-label="viewer.openBox"
+                aria-label="Box öffnen">
+                <span class="package-hint-flip" aria-hidden="true">
+                    <span class="package-hint-face package-hint-face-open">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M8.4 11.2V5.9a1.55 1.55 0 0 1 3.1 0v4.35l.6-.6a1.5 1.5 0 0 1 2.12 0l.58.58.35-.35a1.5 1.5 0 0 1 2.12 0l.64.63.2-.2a1.5 1.5 0 0 1 2.12 0l.56.57c.75.74.9 1.88.36 2.78l-2.28 3.8a4.2 4.2 0 0 1-3.6 2.04h-2.6a4.2 4.2 0 0 1-3.07-1.33l-3.5-3.7a1.55 1.55 0 0 1 2.25-2.13l.13.14Z" />
+                        </svg>
+                        <span class="package-open-label-full" data-i18n="viewer.openBox">BOX ÖFFNEN</span>
+                        <span class="package-open-label-short" data-i18n="viewer.openBoxShort">ÖFFNEN</span>
+                    </span>
+                    <span class="package-hint-face package-hint-face-close">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M8.4 11.2V5.9a1.55 1.55 0 0 1 3.1 0v4.35l.6-.6a1.5 1.5 0 0 1 2.12 0l.58.58.35-.35a1.5 1.5 0 0 1 2.12 0l.64.63.2-.2a1.5 1.5 0 0 1 2.12 0l.56.57c.75.74.9 1.88.36 2.78l-2.28 3.8a4.2 4.2 0 0 1-3.6 2.04h-2.6a4.2 4.2 0 0 1-3.07-1.33l-3.5-3.7a1.55 1.55 0 0 1 2.25-2.13l.13.14Z" />
+                        </svg>
+                        <span class="package-open-label-full" data-i18n="viewer.closeBox">BOX SCHLIESSEN</span>
+                        <span class="package-open-label-short" data-i18n="viewer.closeBoxShort">SCHLIESSEN</span>
+                    </span>
+                </span>
+            </button>
+
+            <button id="package-extension-hint" type="button" aria-label="Weiter aufklappen" hidden>
+                <span aria-hidden="true">↔</span>
+                <span class="package-extension-label">WEITER AUFKLAPPEN</span>
+            </button>
+
+            <!-- Rahmen ganz zum Schluss -->
+
+<button
+    id="fullscreen-btn"
+    aria-label="3D-Ansicht im Vollbild öffnen"
+    data-i18n-aria-label="viewer.enterFullscreen">
+
+    ⛶
+
+</button>
+
+            <img
+                class="rd-console-chassis rd-console-bottom"
+                src="assets/ui/console_chassis_bottom.webp"
+                alt="">
+
+        <div id="viewer-ui">
+
+    <div id="viewer-guide">
+
+        <div class="guide-item">
+
+            <div class="guide-icon">🖱</div>
+
+            <div>
+
+                <div class="guide-title" data-i18n="controls.leftButton">Linke Taste</div>
+
+                <div class="guide-text" data-i18n="controls.rotate">Drehen</div>
+
+            </div>
+
+        </div>
+
+        <div class="guide-divider"></div>
+
+        <div class="guide-item">
+
+            <div class="guide-icon">🖱</div>
+
+            <div>
+
+                <div class="guide-title" data-i18n="controls.rightButton">Rechte Taste</div>
+
+                <div class="guide-text" data-i18n="controls.zoom">Ziehen zum Zoomen</div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</div>
+
+        </section> <!-- viewer-stage -->
+
+</div> <!-- rd-main-layout -->
+
+</section> <!-- rd-console-viewer -->
+
+<!-- ==========================================
+     BESCHREIBUNG
+========================================== -->
+
+</div> <!-- rd-console -->
+
+</main>
+
+<!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+<script src="https://cdn.babylonjs.com/babylon.js"></script>
+
+<script src="../assets/js/game.js"></script>
+<script src="../assets/js/i18n/i18n-core.js"></script>
+<script src="../assets/js/i18n/ui.de.js"></script>
+<script src="../assets/js/i18n/ui.en.js"></script>
+<script src="../assets/js/game-localization.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/package-builder.js"></script>
+<script src="js/package-materials.js"></script>
+<script src="js/package-animation.js"></script>
+<script src="js/flatpack-builder.js"></script>
+<script src="js/extended-flatpack-builder.js"></script>
+<script src="js/hinged-box-builder.js"></script>
+<script src="js/package.js"></script>
+<script src="../assets/js/viewer-input-controls.js"></script>
+<script src="../assets/js/content-image-enhancer.js"></script>
+
+<script src="js/viewer-scanlines.js"></script>
+<script src="js/viewer.js"></script>
+<script src="js/viewer-presentation-modes.js"></script>
+<script src="js/reaction-store.js"></script>
+<script src="js/viewer-ui-controller.js"></script>
+<script src="js/viewer-content.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/app.js"></script>
+<script src="js/console-scale.js"></script>
+<script src="js/slotrenderer.js"></script>
+<script src="js/events.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/top-discoveries.js"></script>
+</body>
+
+</html>

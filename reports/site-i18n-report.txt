@@ -1,17 +1,17 @@
 SITE I18N AND RESPONSIVE AUDIT
-Generated: 2026-10-06T07:28:54.518Z
+Generated: 2026-10-09T12:50:09.983Z
 
 Catalog files: 16
-Localized HTML pages: 269
-Translation keys: 613
+Localized HTML pages: 270
+Translation keys: 634
 Errors: 0
 Warnings: 1
 
 NOTES
 - 16 site catalogs evaluated
-- 269 localized main-site HTML pages checked (262 game pages)
+- 270 localized main-site HTML pages checked (263 game pages)
 - 1 unregistered HTML game pages found
-- 613 registered translation keys found
+- 634 registered translation keys found
 - Responsive check is structural; final pixel-level inspection still requires an available browser
 
 ERRORS

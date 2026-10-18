@@ -2,7 +2,7 @@
    Retro Discovery – Navigation und Cover-Slot-o-mat
 ========================================================= */
 
-const SHELF_ANIMATION_TIME = 120;
+const SHELF_ANIMATION_TIME = 340;
 const DISCOVERY_LAUNCH_DELAYS = [320, 250, 190, 145, 110, 90];
 const DISCOVERY_CRUISE_CHANGES = 60;
 const DISCOVERY_CRUISE_DELAY = 82;
@@ -11,6 +11,19 @@ const DISCOVERY_BUFFER_SIZE = 30;
 
 let isAnimating = false;
 let isSpinning = false;
+let discoveryBrowseEnabled = false;
+
+function setDiscoveryBrowseEnabled(enabled) {
+    discoveryBrowseEnabled = Boolean(enabled && visibleGames.length > 1);
+    renderer.setBrowseEnabled(discoveryBrowseEnabled);
+}
+
+function setDiscoveryBrowseBusy(busy) {
+    renderer.track?.classList.toggle("rd-reel-browse-moving",Boolean(busy));
+    renderer.browseControls.forEach(button=>{
+        button.disabled = Boolean(busy) || !discoveryBrowseEnabled;
+    });
+}
 
 function waitForDiscoveryStep(duration) {
     return new Promise(resolve => setTimeout(resolve, duration));
@@ -96,16 +109,36 @@ async function runDiscoveryReel(sequence) {
     }
 }
 
-function moveShelf(direction) {
-    if (isAnimating || isSpinning || !visibleGames.length) return;
-    isAnimating = true;
-    currentGameIndex = wrapVisibleGameIndex(currentGameIndex + direction);
-    renderer.showGroup(currentGameIndex, true);
-    loadGameCounter();
+async function moveShelf(direction) {
+    if (!discoveryBrowseEnabled || isAnimating || isSpinning || !visibleGames.length) return;
+    const steps = Math.max(-2,Math.min(2,Math.trunc(direction)));
+    if(!steps) return;
 
-    setTimeout(() => {
+    isAnimating = true;
+    setDiscoveryBrowseBusy(true);
+
+    try {
+        const stepDirection = Math.sign(steps);
+        const targetIndex = wrapVisibleGameIndex(currentGameIndex + steps);
+        await Promise.all([
+            renderer.prepareGroups([targetIndex]),
+            renderer.prepareAhead(targetIndex,8,stepDirection)
+        ]);
+
+        for(let step = 0; step < Math.abs(steps); step += 1){
+            currentGameIndex = wrapVisibleGameIndex(currentGameIndex + stepDirection);
+            await renderer.stepTo(currentGameIndex,true);
+            await waitForDiscoveryStep(SHELF_ANIMATION_TIME);
+        }
+
+        loadGameCounter();
+        dispatchGameChanged();
+        setLCDMode("found",visibleGames[currentGameIndex]);
+        window.setTimeout(()=>setLCDMode("ready"),1200);
+    } finally {
         isAnimating = false;
-    }, SHELF_ANIMATION_TIME);
+        setDiscoveryBrowseBusy(false);
+    }
 }
 
 function nextGame() {
@@ -121,6 +154,7 @@ async function spinShelf(targetIndex) {
     if (isAnimating || isSpinning) return;
 
     isSpinning = true;
+    setDiscoveryBrowseEnabled(false);
     const viewer = document.getElementById("viewer3d");
     const button = document.getElementById("discovery-button");
 
@@ -164,6 +198,11 @@ async function spinShelf(targetIndex) {
         renderer.showGroup(currentGameIndex, false);
         renderer.track?.classList.remove("rd-cover-step");
         setReelPhase("locked");
+
+        // Die fünf beim Stillstand sichtbaren Spiele werden erst jetzt zur
+        // zyklisch durchsuchbaren Ergebnisgruppe. Die sichtbaren Slots 2–6
+        // behalten dabei exakt dieselbe Reihenfolge und springen nicht.
+        currentGameIndex = finalizeDiscoveryResultGroup(targetIndex);
         loadGameCounter();
 
         await waitForDiscoveryStep(520);
@@ -172,7 +211,11 @@ async function spinShelf(targetIndex) {
         if (viewer) viewer.style.visibility = "visible";
         showViewerActions();
         showFullscreenButton();
+        document.dispatchEvent(new CustomEvent("discoveryspincomplete",{
+            detail:{ game:visibleGames[currentGameIndex] }
+        }));
         setLCDMode("found", visibleGames[currentGameIndex]);
+        setDiscoveryBrowseEnabled(true);
 
         setTimeout(() => {
             setLCDMode("ready");
@@ -187,7 +230,24 @@ async function spinShelf(targetIndex) {
     }
 }
 
+document.addEventListener("reelnavigate",event=>{
+    moveShelf(event.detail?.direction || 0);
+});
+
+document.addEventListener("reelslotactivate",event=>{
+    moveShelf(event.detail?.offset || 0);
+});
+
 document.addEventListener("keydown", event => {
-    if (event.key === "ArrowLeft") previousGame();
-    if (event.key === "ArrowRight") nextGame();
+    if(!discoveryBrowseEnabled) return;
+    const track = renderer.track;
+    if(!track || (document.activeElement !== track && !track.contains(document.activeElement))) return;
+    if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        previousGame();
+    }
+    if (event.key === "ArrowRight") {
+        event.preventDefault();
+        nextGame();
+    }
 });

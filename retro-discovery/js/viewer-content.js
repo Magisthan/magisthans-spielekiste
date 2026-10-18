@@ -31,12 +31,16 @@
         if(!button) return;
 
         const inContents = global.ViewerUI?.getState().presentationMode === "contents";
+        const label = button.querySelector("span");
         button.disabled = !currentGame;
         button.setAttribute("aria-disabled",String(!currentGame));
         button.setAttribute("aria-pressed",String(inContents));
-        button.textContent = inContents
-            ? text("viewer.backToBox","Zurück zur Box")
-            : text("viewer.contents","Box-Inhalt");
+        if(label){
+            label.dataset.i18n = inContents ? "viewer.backToBox" : "viewer.contents";
+            label.textContent = inContents
+                ? text("viewer.backToBox","Zurück zur Box")
+                : text("viewer.contents","Box-Inhalt");
+        }
     }
 
     function updateCopy(isMissing=false){
